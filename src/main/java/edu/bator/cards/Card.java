@@ -1,26 +1,31 @@
 package edu.bator.cards;
 
-import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import edu.bator.enums.EnumParser;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.commons.lang3.StringUtils;
+
+import static edu.bator.cards.enums.CardEnums.Ability;
+import static edu.bator.cards.enums.CardEnums.AttackType;
+import static edu.bator.cards.enums.CardEnums.CardType;
+import static edu.bator.cards.enums.CardEnums.HeroClass;
+import static edu.bator.cards.enums.CardEnums.ItemSubType;
+import static edu.bator.cards.enums.CardEnums.Side;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Card {
+
+public class Card implements Cloneable {
 
     String code;
     String rarity;
     String name;
     Side side;
-    HeroType heroType;
+    HeroClass heroClass;
 
     String description;
 
@@ -34,39 +39,34 @@ public class Card {
 
     AttackType attackType;
 
-    public enum AttackType {
-        CLAW, SWORD, ICE, ELECTRIC, FIRE, BOW, ARCANE;
+    Set<Ability> abilities = new HashSet<>();
 
-        public static AttackType parse(String str) {
-            return new EnumParser<>(AttackType.class).parse(str);
-        }
-    }
-
-    public enum ItemSubType {
-        WEAPON, ARMOR, ARTIFACT;
-
-        public static ItemSubType parse(String str) {
-            return new EnumParser<>(ItemSubType.class).parse(str);
-        }
-    }
-
-    public enum CardType {
-        HERO, ALLY, ITEM, ABILITY, LOCATION;
-
-        public static CardType parse(String str) {
-            return new EnumParser<>(CardType.class).parse(str);
-        }
-    }
-
-    public enum Side {
-        SHADOW, HUMAN
-    }
-
-    public enum HeroType {
-        WARRIOR, PRIEST, ROGUE, MAGE, HUNTER, VULVEN, ELEMENTAL, NEUTRAL;
-
-        public static HeroType parse(String str) {
-            return new EnumParser<>(HeroType.class).parse(str);
-        }
+    public Card(
+            String code,
+            String rarity,
+            String name,
+            Side side,
+            HeroClass heroClass,
+            String description,
+            CardType cardType,
+            Integer resourceCost,
+            Integer attack,
+            Integer initialHp,
+            ItemSubType itemSubType,
+            AttackType attackType,
+            Set<Ability> abilities) {
+        this.code = code;
+        this.rarity = rarity;
+        this.name = name;
+        this.side = side;
+        this.heroClass = heroClass;
+        this.description = description;
+        this.cardType = cardType;
+        this.resourceCost = resourceCost;
+        this.attack = attack;
+        this.initialHp = initialHp;
+        this.itemSubType = itemSubType;
+        this.attackType = attackType;
+        this.abilities = new HashSet<>(abilities);
     }
 }
