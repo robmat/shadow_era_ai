@@ -3,7 +3,6 @@ package edu.bator.cards;
 import java.util.HashSet;
 import java.util.Set;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,7 +17,6 @@ import static edu.bator.cards.enums.CardEnums.Side;
 @Data
 @NoArgsConstructor
 @Builder
-
 public class Card implements Cloneable {
 
     String code;
