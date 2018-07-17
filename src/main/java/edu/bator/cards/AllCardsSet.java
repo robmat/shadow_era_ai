@@ -1,7 +1,6 @@
 package edu.bator.cards;
 
 import java.io.File;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -11,7 +10,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
 
 @Data
@@ -36,11 +34,21 @@ public class AllCardsSet {
         }
     }
 
-    public Card findByName(String name) {
-        return allCards
+    public Card cloneByName(String name) {
+        Card found = allCards
                 .stream()
                 .filter(card -> Objects.equals(name, card.getName()))
                 .findFirst()
                 .orElse(null);
+        if (Objects.nonNull(found)) {
+            found.setCurrentHp(found.getInitialHp());
+        }
+        try {
+            return Objects.isNull(found) ? null : (Card) found.clone();
+        } catch (CloneNotSupportedException e) {
+            log.error("Clone dead:", e);
+            System.exit(1);
+            return null;
+        }
     }
 }
