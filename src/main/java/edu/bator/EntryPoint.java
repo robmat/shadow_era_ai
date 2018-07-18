@@ -2,8 +2,16 @@ package edu.bator;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.function.Function;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.bator.cards.AllCardsSet;
+import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.GamePainter;
@@ -76,8 +84,26 @@ public class EntryPoint extends Application {
 
         gamePainter.getLoadButton().setOnMouseClicked((event) -> {
             try {
+                AllCardsSet allCardsSet = gameState.getAllCardsSet();
                 gameState = new ObjectMapper().readValue(new File("save.json"), GameState.class);
                 gameState.setGamePainter(gamePainter);
+                gameState.setEnemyHero(allCardsSet.replaceWithImplementingCard(gameState.getEnemyHero()));
+                gameState.setYourHero(allCardsSet.replaceWithImplementingCard(gameState.getYourHero()));
+
+                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyAllies());
+                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyDeck());
+                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyGraveyard());
+                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyHand());
+                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyResources());
+                replaceCardsWithImplementors(allCardsSet, gameState.getEnemySupport());
+
+                replaceCardsWithImplementors(allCardsSet, gameState.getYourAllies());
+                replaceCardsWithImplementors(allCardsSet, gameState.getYourDeck());
+                replaceCardsWithImplementors(allCardsSet, gameState.getYourGraveyard());
+                replaceCardsWithImplementors(allCardsSet, gameState.getYourHand());
+                replaceCardsWithImplementors(allCardsSet, gameState.getYourResources());
+                replaceCardsWithImplementors(allCardsSet, gameState.getYourSupport());
+
                 gameState.repaint();
             } catch (Exception e) {
                 log.error("Load crashed.", e);
@@ -91,5 +117,11 @@ public class EntryPoint extends Application {
                 log.error("Save crashed.", e);
             }
         });
+    }
+
+    private void replaceCardsWithImplementors(AllCardsSet allCardsSet, LinkedList<Card> originalCards) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+        for (int i = 0; i < originalCards.size(); i++) {
+            originalCards.set(i, allCardsSet.replaceWithImplementingCard(originalCards.get(i)));
+        }
     }
 }

@@ -55,6 +55,27 @@ public class Card implements Cloneable {
         readied = true;
     }
 
+    public Card(Card cloneFrom) {
+        this.code = cloneFrom.code;
+        this.rarity = cloneFrom.rarity;
+        this.name = cloneFrom.name;
+        this.side = cloneFrom.side;
+        this.heroClass = cloneFrom.heroClass;
+        this.description = cloneFrom.description;
+        this.cardType = cloneFrom.cardType;
+        this.resourceCost = cloneFrom.resourceCost;
+        this.attack = cloneFrom.attack;
+        this.initialHp = cloneFrom.initialHp;
+        this.currentHp = cloneFrom.currentHp;
+        this.itemSubType = cloneFrom.itemSubType;
+        this.attackType = cloneFrom.attackType;
+        this.abilities = new HashSet<>(cloneFrom.abilities);
+        this.readied = cloneFrom.readied;
+        this.castable = cloneFrom.castable;
+        this.possibleAttackTarget = cloneFrom.possibleAttackTarget;
+        this.uniqueId = UUID.randomUUID().toString();
+    }
+
     @Override
     protected Object clone() throws CloneNotSupportedException {
         Card clone = (Card) super.clone();
@@ -93,7 +114,7 @@ public class Card implements Cloneable {
         if (Objects.nonNull(attackSource.getAttack()) && Objects.nonNull(getCurrentHp())) {
             setCurrentHp(getCurrentHp() - attackSource.getAttack());
         }
-        if (!cardIsDead()) {
+        if (!cardIsDead() && !attackSource.getAbilities().contains(Ability.AMBUSH)) {
             if (Objects.nonNull(attackSource.getCurrentHp()) && Objects.nonNull(getAttack())) {
                 attackSource.setCurrentHp(attackSource.getCurrentHp() - getAttack());
             }

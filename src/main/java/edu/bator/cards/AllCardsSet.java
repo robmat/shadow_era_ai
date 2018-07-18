@@ -1,7 +1,10 @@
 package edu.bator.cards;
 
 import java.io.File;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
@@ -19,7 +22,7 @@ public class AllCardsSet {
 
     private static final Logger log = Logger.getLogger(AllCardsSet.class);
 
-    List<Card> allCards = new ArrayList<>();
+    LinkedList<Card> allCards = new LinkedList<>();
 
     public AllCardsSet() {
         readCards();
@@ -27,11 +30,28 @@ public class AllCardsSet {
 
     private void readCards() {
         try {
-            allCards = new ObjectMapper().readValue(new File(this.getClass().getResource("/cards.json").toURI()), new TypeReference<List<Card>>() {});
+            LinkedList<Card> cardsList = new LinkedList<>();
+            ObjectMapper objectMapper = new ObjectMapper();
+            allCards = objectMapper.readValue(new File(this.getClass().getResource("/cards.json").toURI()), new TypeReference<LinkedList<Card>>() {});
+            for (Card card : allCards) {
+                Card replaceCard = replaceWithImplementingCard(card);
+                cardsList.add(replaceCard);
+            }
+            allCards = cardsList;
         } catch (Exception e) {
             log.error("Cards not read:", e);
             System.exit(1);
         }
+    }
+
+    @SuppressWarnings("unchecked")
+    public Card replaceWithImplementingCard(Card card) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        /*String className = "edu.bator.cards.todo." + card.getName().replaceAll("[ :'!,-]", "");
+        Class<? extends Card> clazz = (Class<? extends Card>) Class.forName(className);
+        Constructor<? extends Card> constructor = clazz.getConstructor(Card.class);
+        Card readValue = constructor.newInstance(card);
+        return readValue;*/
+        return card;
     }
 
     public Card cloneByName(String name) {
