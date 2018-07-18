@@ -1,0 +1,45 @@
+package edu.bator.ui.events;
+
+import java.util.Arrays;
+
+import edu.bator.cards.Card;
+import edu.bator.game.GameEngine;
+import edu.bator.game.GamePhase;
+import edu.bator.game.GameState;
+import javafx.event.EventHandler;
+import javafx.scene.input.MouseEvent;
+import org.apache.log4j.Logger;
+
+public class CardCastClickedEvent  implements EventHandler<MouseEvent> {
+
+    private static final Logger log = Logger.getLogger(CardCastClickedEvent.class);
+
+    private final GameState gameState;
+    private final Card card;
+
+    public CardCastClickedEvent(GameState gameState, Card card) {
+        this.gameState = gameState;
+        this.card = card;
+    }
+
+    @Override
+    public void handle(MouseEvent event) {
+       if (gameState.isCardInHand(card) && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
+           if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
+               if (gameState.getEnemyHand().remove(card)) {
+                   gameState.getEnemyAllies().add(card);
+                   gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - card.getResourceCost());
+               }
+           }
+           if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
+               if (gameState.getYourHand().remove(card)) {
+                   gameState.getYourAllies().add(card);
+                   gameState.setYourCurrentResources(gameState.getYourCurrentResources() - card.getResourceCost());
+               }
+           }
+           card.wasCasted(gameState);
+           gameState.repaint();
+           log.info("Casted: " + card);
+       }
+    }
+}

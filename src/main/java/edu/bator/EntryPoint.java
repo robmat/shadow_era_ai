@@ -1,5 +1,9 @@
 package edu.bator;
 
+import java.io.File;
+import java.io.IOException;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.GamePainter;
@@ -54,19 +58,38 @@ public class EntryPoint extends Application {
 
         mainGridPane.add(gamePainter.getYourAllies(), 1, 3);
 
+        mainGridPane.add(gamePainter.getEndTurnButton(), 0, 6);
+        mainGridPane.add(gamePainter.getSkipSacrificeButton(), 1, 6);
+
+        mainGridPane.add(gamePainter.getLoadButton(), 0, 7);
+        mainGridPane.add(gamePainter.getSaveButton(), 1, 7);
+
         primaryStage.show();
 
         gameState.init();
         gameState.setGamePainter(gamePainter);
-        gamePainter.paint(gameState);
+        gameState.repaint();
 
         new GameEngine().checkGameState(gameState);
 
         log.info("Started.");
-    }
 
-    private void prepareGame() {
+        gamePainter.getLoadButton().setOnMouseClicked((event) -> {
+            try {
+                gameState = new ObjectMapper().readValue(new File("save.json"), GameState.class);
+                gameState.setGamePainter(gamePainter);
+                gameState.repaint();
+            } catch (Exception e) {
+                log.error("Load crashed.", e);
+            }
+        });
 
-
+        gamePainter.getSaveButton().setOnMouseClicked((event) -> {
+            try {
+                new ObjectMapper().writeValue(new File("save.json"), gameState);
+            } catch (Exception e) {
+                log.error("Save crashed.", e);
+            }
+        });
     }
 }

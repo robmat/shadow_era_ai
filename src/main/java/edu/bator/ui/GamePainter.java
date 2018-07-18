@@ -1,9 +1,15 @@
 package edu.bator.ui;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 import edu.bator.cards.Card;
+import edu.bator.game.GameEngine;
+import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import edu.bator.ui.events.SkipSacrificeClickedEvent;
+import edu.bator.ui.events.TurnSkipClickedEvent;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import lombok.AllArgsConstructor;
@@ -32,6 +38,12 @@ public class GamePainter {
     GridPane yourGraveyard = new GridPane();
     GridPane yourAllies = new GridPane();
 
+    Button endTurnButton = new Button("End turn.");
+    Button skipSacrificeButton = new Button("Skip sacrifice.");
+
+    Button saveButton = new Button("Save game.");
+    Button loadButton = new Button("Load game.");
+
     CardPainter cardPainter = new CardPainter();
 
     public void paint(GameState gameState) {
@@ -39,7 +51,7 @@ public class GamePainter {
 
         enemyDeck.add(new Label("Cards in deck: " + gameState.getEnemyDeck().size()), 0, 0);
         paintCardList(gameState.getEnemyHand(), enemyHand, gameState);
-        enemyResources.add(new Label("Resources: " + gameState.getEnemyResources().size()), 0, 0);
+        enemyResources.add(new Label("Resources: " + gameState.getEnemyCurrentResources()), 0, 0);
         cardPainter.paint(gameState.getEnemyHero(), enemyHero, 0, gameState);
         paintCardList(gameState.getEnemySupport(), enemySupport, gameState);
         enemyGraveyard.add(new Label("Graveyard: " + gameState.getEnemyGraveyard().size()), 0, 0);
@@ -47,11 +59,17 @@ public class GamePainter {
 
         yourDeck.add(new Label("Cards in deck: " + gameState.getYourDeck().size()), 0, 0);
         paintCardList(gameState.getYourHand(), yourHand, gameState);
-        yourResources.add(new Label("Resources: " + gameState.getYourResources().size()), 0, 0);
+        yourResources.add(new Label("Resources: " + gameState.getYourCurrentResources()), 0, 0);
         cardPainter.paint(gameState.getYourHero(), yourHero, 0, gameState);
         paintCardList(gameState.getYourSupport(), yourSupport, gameState);
         yourGraveyard.add(new Label("Graveyard: " + gameState.getYourGraveyard().size()), 0, 0);
         paintCardList(gameState.getYourAllies(), yourAllies, gameState);
+
+        endTurnButton.setVisible(GameEngine.ACTION_PHASES.contains(gameState.getGamePhase()));
+        endTurnButton.setOnMouseClicked(new TurnSkipClickedEvent(gameState));
+
+        skipSacrificeButton.setVisible(GameEngine.SACRIFICE_PHASES.contains(gameState.getGamePhase()));
+        skipSacrificeButton.setOnMouseClicked(new SkipSacrificeClickedEvent(gameState));
     }
 
     private void clear() {

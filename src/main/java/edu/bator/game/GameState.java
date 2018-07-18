@@ -1,7 +1,11 @@
 package edu.bator.game;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.google.common.base.Objects;
 import edu.bator.cards.AllCardsSet;
 import edu.bator.cards.Card;
 import edu.bator.ui.GamePainter;
@@ -18,7 +22,7 @@ import org.apache.log4j.Logger;
 public class GameState {
     private static final Logger log = Logger.getLogger(GameState.class);
 
-    int currentTurn = 1;
+    int currentTurn = 0;
 
     Card enemyHero;
     Card yourHero;
@@ -35,6 +39,8 @@ public class GameState {
     LinkedList<Card> enemyResources = new LinkedList<>();
     LinkedList<Card> yourResources = new LinkedList<>();
 
+    Integer yourCurrentResources, enemyCurrentResources = 0;
+
     LinkedList<Card> enemyAllies = new LinkedList<>();
     LinkedList<Card> yourAllies = new LinkedList<>();
 
@@ -45,6 +51,7 @@ public class GameState {
 
     GamePhase gamePhase = GamePhase.YOU_PREPARE;
 
+    @JsonIgnore
     private GamePainter gamePainter;
 
     public void init() {
@@ -62,5 +69,19 @@ public class GameState {
         }
 
         log.info("Init done.");
+    }
+
+    public boolean isCardInHand(Card card) {
+        return (Arrays.asList(GamePhase.YOU_ACTION, GamePhase.YOU_SACRIFICE).contains(gamePhase) && yourHand.stream().anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId()))) ||
+                (Arrays.asList(GamePhase.ENEMY_ACTION, GamePhase.ENEMY_SACRIFICE).contains(gamePhase) && enemyHand.stream().anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId())));
+    }
+
+    public boolean isCardInAllies(Card card) {
+        return (java.util.Objects.equals(GamePhase.YOU_ACTION, gamePhase) && yourAllies.stream().anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId()))) ||
+                (java.util.Objects.equals(GamePhase.ENEMY_ACTION, gamePhase) && enemyAllies.stream().anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId())));
+    }
+
+    public void repaint() {
+        if (java.util.Objects.nonNull(gamePainter)) gamePainter.paint(this);
     }
 }

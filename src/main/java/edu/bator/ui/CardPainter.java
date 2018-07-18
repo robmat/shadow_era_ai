@@ -1,37 +1,44 @@
 package edu.bator.ui;
 
-import java.util.HashMap;
+import java.util.Arrays;
 import java.util.Objects;
 
 import edu.bator.cards.Card;
+import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
-import javafx.event.Event;
-import javafx.event.EventTarget;
+import edu.bator.ui.events.AttackClickedEvent;
+import edu.bator.ui.events.CardCastClickedEvent;
+import edu.bator.ui.events.CardSacrificeClickedEvent;
 import javafx.geometry.Insets;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Border;
+import javafx.scene.layout.BorderStroke;
+import javafx.scene.layout.BorderStrokeStyle;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
 import org.apache.log4j.Logger;
 
-public class CardPainter {
+class CardPainter {
 
     private static final Logger log = Logger.getLogger(CardPainter.class);
 
     @SuppressWarnings("unchecked")
-    public void paint(Card card, GridPane enemyHand, int index, GameState gameState) {
+    void paint(Card card, GridPane enemyHand, int index, GameState gameState) {
         GridPane gridPane = new GridPane();
-        HashMap<Object, Object> userData = new HashMap<>();
-        userData.put("card", card);
-        userData.put("gameState", gameState);
-        gridPane.setUserData(userData);
+        gridPane.setId(card.getUniqueId());
         gridPane.setPadding(new Insets(3));
         enemyHand.add(gridPane, index, 0);
 
         //Image image = new Image(getClass().getResourceAsStream("/images/" + card.getCode() + ".jpg"), 190, 265, false, true);
         Image image = new Image(getClass().getResourceAsStream("/images/" + card.getCode() + ".jpg"), 80, 133, true, true);
         ImageView cardImage = new ImageView(image);
+        Tooltip.install(cardImage, new Tooltip(card.getDescription()));
         gridPane.add(cardImage, 0, 0, 2, 1);
 
         if (Objects.nonNull(card.getAttack())) {
@@ -42,14 +49,22 @@ public class CardPainter {
             gridPane.add(new Label("  HP: " + card.getCurrentHp()), 1, 1);
         }
 
-        cardImage.setOnMouseClicked((event) -> {
-            if (gameState.getGamePhase().equals(GamePhase.YOU_ACTION)) {
-                ImageView eventTarget = (ImageView) event.getTarget();
-                HashMap<Object, Object> data = (HashMap<Object, Object>) eventTarget.getUserData();
-                Card c = (Card) data.get("card");
-                GameState gs = (GameState) data.get("gameState");
-            }
-        });
+        if (gameState.isCardInHand(card) && GameEngine.SACRIFICE_PHASES.contains(gameState.getGamePhase())) {
+            gridPane.setOnMouseClicked(new CardSacrificeClickedEvent(card, gameState));
+            gridPane.setBorder(new Border(new BorderStroke(Color.RED, BorderStrokeStyle.DASHED, CornerRadii.EMPTY, BorderStroke.DEFAULT_WIDTHS)));
+        }
+
+        if (gameState.isCardInHand(card) && card.isCastable() && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
+            gridPane.setOnMouseClicked(new CardCastClickedEvent(gameState, card));
+            gridPane.setBorder(new Border(new BorderStroke(Color.LIGHTGREEN, BorderStrokeStyle.DASHED, CornerRadii.EMPTY, BorderStroke.DEFAULT_WIDTHS)));
+        }
+
+        if (gameState.isCardInAllies(card) && card.isReadied() && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
+            Button attackButton = new Button("Attack.");
+            attackButton.setOnMouseClicked(new AttackClickedEvent(card, gameState));
+            gridPane.add(attackButton, 0, 2, 2, 1);
+            gridPane.setBorder(new Border(new BorderStroke(Color.LIGHTGREEN, BorderStrokeStyle.DASHED, CornerRadii.EMPTY, BorderStroke.DEFAULT_WIDTHS)));
+        }
     }
 }
 

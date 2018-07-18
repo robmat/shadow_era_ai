@@ -4,10 +4,12 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import edu.bator.game.GamePhase;
+import edu.bator.game.GameState;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import static edu.bator.cards.enums.CardEnums.Ability;
@@ -44,9 +46,13 @@ public class Card implements Cloneable {
 
     Set<Ability> abilities = new HashSet<>();
 
-    boolean readied = false;
+    boolean readied, castable, possibleAttackTarget = false;
 
     String uniqueId = UUID.randomUUID().toString();
+
+    public void tryToReady() {
+        readied = true;
+    }
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
@@ -54,5 +60,40 @@ public class Card implements Cloneable {
         clone.setAbilities(new HashSet<>(abilities));
         clone.setUniqueId(UUID.randomUUID().toString());
         return clone;
+    }
+
+    public void determineCastable(Card card, GameState gameState) {
+        boolean you = gameState.getGamePhase().equals(GamePhase.YOU_ACTION) && gameState.getYourCurrentResources() >= card.getResourceCost();
+        boolean enemy = gameState.getGamePhase().equals(GamePhase.ENEMY_ACTION) && gameState.getEnemyCurrentResources() >= card.getResourceCost();
+        this.castable = you || enemy;
+    }
+
+    public void wasCasted(GameState gameState) {
+
+    }
+
+    public void calculatePossibleAttackTarget(Card attackSource) {
+        setPossibleAttackTarget(cardIsAnAlly() || cardIsAHero());
+    }
+
+    public boolean cardIsAnAlly() {
+        return CardType.ALLY.equals(cardType);
+    }
+
+    private boolean cardIsAHero() {
+        return CardType.HERO.equals(cardType);
+    }
+
+    public boolean hasAbility() {
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "name='" + name + '\'' +
+                ", currentHp=" + currentHp +
+                ", uniqueId='" + uniqueId + '\'' +
+                '}';
     }
 }
