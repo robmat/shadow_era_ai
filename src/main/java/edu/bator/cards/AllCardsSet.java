@@ -46,12 +46,10 @@ public class AllCardsSet {
 
     @SuppressWarnings("unchecked")
     public Card replaceWithImplementingCard(Card card) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        /*String className = "edu.bator.cards.todo." + card.getName().replaceAll("[ :'!,-]", "");
+        String className = "edu.bator.cards.todo." + card.getName().replaceAll("[ :'!,-]", "");
         Class<? extends Card> clazz = (Class<? extends Card>) Class.forName(className);
         Constructor<? extends Card> constructor = clazz.getConstructor(Card.class);
-        Card readValue = constructor.newInstance(card);
-        return readValue;*/
-        return card;
+        return constructor.newInstance(card);
     }
 
     public Card cloneByName(String name) {

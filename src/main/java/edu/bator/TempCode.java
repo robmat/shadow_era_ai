@@ -32,7 +32,7 @@ public class TempCode {
         });*/
 
         //write specific card classes
-         for (Card card : new AllCardsSet().getAllCards()) {
+        /* for (Card card : new AllCardsSet().getAllCards()) {
                 try {
                     String name = card.getName().replaceAll("[ :'!,-]", "");
                     Files.write(Paths.get("src","main","java","edu","bator","cards","todo", name + ".java"), String.format("package edu.bator.cards.todo;\n" +
@@ -47,6 +47,6 @@ public class TempCode {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
+            }*/
         }
 }
