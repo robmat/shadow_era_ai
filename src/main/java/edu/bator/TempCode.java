@@ -40,7 +40,10 @@ public class TempCode {
                             "import edu.bator.cards.Card;\n" +
                             "\n" +
                             "public class %s extends Card {\n" +
-                            "}", name).getBytes());
+                            "    public %s(Card cloneFrom) {\n" +
+                            "        super(cloneFrom);\n" +
+                            "    }\n" +
+                            "}", name, name).getBytes());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
