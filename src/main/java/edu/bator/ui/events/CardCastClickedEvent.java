@@ -1,7 +1,5 @@
 package edu.bator.ui.events;
 
-import java.util.Arrays;
-
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
@@ -24,17 +22,19 @@ public class CardCastClickedEvent  implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
-       if (gameState.isCardInHand(card) && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
+       if (gameState.cardIsInHand(card) && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
            if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
                if (gameState.getEnemyHand().remove(card)) {
                    gameState.getEnemyAllies().add(card);
                    gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - card.getResourceCost());
+                   gameState.getEnemyHand().forEach(card -> card.determineCastable(card, gameState));
                }
            }
            if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
                if (gameState.getYourHand().remove(card)) {
                    gameState.getYourAllies().add(card);
                    gameState.setYourCurrentResources(gameState.getYourCurrentResources() - card.getResourceCost());
+                   gameState.getYourHand().forEach(card -> card.determineCastable(card, gameState));
                }
            }
            card.wasCasted(gameState);

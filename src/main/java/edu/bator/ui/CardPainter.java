@@ -1,13 +1,12 @@
 package edu.bator.ui;
 
-import java.util.Arrays;
 import java.util.Objects;
 
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
-import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import edu.bator.ui.events.AttackClickedEvent;
+import edu.bator.ui.events.AttackTargetClickedEvent;
 import edu.bator.ui.events.CardCastClickedEvent;
 import edu.bator.ui.events.CardSacrificeClickedEvent;
 import javafx.geometry.Insets;
@@ -49,21 +48,28 @@ class CardPainter {
             gridPane.add(new Label("  HP: " + card.getCurrentHp()), 1, 1);
         }
 
-        if (gameState.isCardInHand(card) && GameEngine.SACRIFICE_PHASES.contains(gameState.getGamePhase())) {
+        if (gameState.cardIsInHand(card) && GameEngine.SACRIFICE_PHASES.contains(gameState.getGamePhase())) {
             gridPane.setOnMouseClicked(new CardSacrificeClickedEvent(card, gameState));
             gridPane.setBorder(new Border(new BorderStroke(Color.RED, BorderStrokeStyle.DASHED, CornerRadii.EMPTY, BorderStroke.DEFAULT_WIDTHS)));
         }
 
-        if (gameState.isCardInHand(card) && card.isCastable() && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
+        if (gameState.cardIsInHand(card) && card.isCastable() && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
             gridPane.setOnMouseClicked(new CardCastClickedEvent(gameState, card));
             gridPane.setBorder(new Border(new BorderStroke(Color.LIGHTGREEN, BorderStrokeStyle.DASHED, CornerRadii.EMPTY, BorderStroke.DEFAULT_WIDTHS)));
         }
 
-        if (gameState.isCardInAllies(card) && card.isReadied() && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
+        if (gameState.cardIsInAllies(card) && card.isReadied() && GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
             Button attackButton = new Button("Attack.");
-            attackButton.setOnMouseClicked(new AttackClickedEvent(card, gameState));
+            attackButton.setOnMouseClicked(new AttackClickedEvent(gameState, card));
             gridPane.add(attackButton, 0, 2, 2, 1);
             gridPane.setBorder(new Border(new BorderStroke(Color.LIGHTGREEN, BorderStrokeStyle.DASHED, CornerRadii.EMPTY, BorderStroke.DEFAULT_WIDTHS)));
+        }
+
+        if (GameEngine.ACTION_PHASES.contains(gameState.getGamePhase()) && card.isPossibleAttackTarget()) {
+            Button attackButton = new Button("Target.");
+            attackButton.setOnMouseClicked(new AttackTargetClickedEvent(gameState, card));
+            gridPane.add(attackButton, 0, 2, 2, 1);
+            gridPane.setBorder(new Border(new BorderStroke(Color.ORANGE, BorderStrokeStyle.DASHED, CornerRadii.EMPTY, BorderStroke.DEFAULT_WIDTHS)));
         }
     }
 }

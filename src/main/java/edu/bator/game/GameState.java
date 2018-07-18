@@ -1,8 +1,9 @@
 package edu.bator.game;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.LinkedList;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;
@@ -54,6 +55,8 @@ public class GameState {
     @JsonIgnore
     private GamePainter gamePainter;
 
+    private Card attackSource;
+
     public void init() {
         enemyHero = allCardsSet.cloneByName("Boris Skullcrusher");
         yourHero = allCardsSet.cloneByName("Boris Skullcrusher");
@@ -71,17 +74,40 @@ public class GameState {
         log.info("Init done.");
     }
 
-    public boolean isCardInHand(Card card) {
+    public boolean cardIsInHand(Card card) {
         return (Arrays.asList(GamePhase.YOU_ACTION, GamePhase.YOU_SACRIFICE).contains(gamePhase) && yourHand.stream().anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId()))) ||
                 (Arrays.asList(GamePhase.ENEMY_ACTION, GamePhase.ENEMY_SACRIFICE).contains(gamePhase) && enemyHand.stream().anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId())));
     }
 
-    public boolean isCardInAllies(Card card) {
+    public boolean cardIsInAllies(Card card) {
         return (java.util.Objects.equals(GamePhase.YOU_ACTION, gamePhase) && yourAllies.stream().anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId()))) ||
                 (java.util.Objects.equals(GamePhase.ENEMY_ACTION, gamePhase) && enemyAllies.stream().anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId())));
     }
 
     public void repaint() {
         if (java.util.Objects.nonNull(gamePainter)) gamePainter.paint(this);
+    }
+
+    public void resetPossibleAttackTargets() {
+        heroesAlliesAndSupportCards().forEach(card -> card.setPossibleAttackTarget(false));
+    }
+
+    private LinkedList<Card> heroesAlliesAndSupportCards() {
+        LinkedList<Card> cardList = Stream.concat(allAllies().stream(), allSupports().stream()).collect(Collectors.toCollection(LinkedList::new));
+        cardList.add(enemyHero);
+        cardList.add(yourHero);
+        return cardList;
+    }
+
+    private LinkedList<Card> allAllies() {
+        return Stream.concat(enemyAllies.stream(), yourAllies.stream()).collect(Collectors.toCollection(LinkedList::new));
+    }
+
+    private LinkedList<Card> allSupports() {
+        return Stream.concat(enemySupport.stream(), yourSupport.stream()).collect(Collectors.toCollection(LinkedList::new));
+    }
+
+    public void resetAttackSource() {
+        attackSource = null;
     }
 }

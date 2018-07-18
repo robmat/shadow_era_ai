@@ -1,6 +1,7 @@
 package edu.bator.cards;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 
@@ -80,8 +81,23 @@ public class Card implements Cloneable {
         return CardType.ALLY.equals(cardType);
     }
 
-    private boolean cardIsAHero() {
+    public boolean cardIsAHero() {
         return CardType.HERO.equals(cardType);
+    }
+
+    public boolean cardIsDead() {
+        return Objects.nonNull(getCurrentHp()) && getCurrentHp() <= 0;
+    }
+
+    public void attackedBy(GameState gameState, Card attackSource) {
+        if (Objects.nonNull(attackSource.getAttack()) && Objects.nonNull(getCurrentHp())) {
+            setCurrentHp(getCurrentHp() - attackSource.getAttack());
+        }
+        if (!cardIsDead()) {
+            if (Objects.nonNull(attackSource.getCurrentHp()) && Objects.nonNull(getAttack())) {
+                attackSource.setCurrentHp(attackSource.getCurrentHp() - getAttack());
+            }
+        }
     }
 
     public boolean hasAbility() {

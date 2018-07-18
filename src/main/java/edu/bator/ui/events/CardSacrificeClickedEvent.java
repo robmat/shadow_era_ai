@@ -23,7 +23,7 @@ public class CardSacrificeClickedEvent implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
-        if (gameState.isCardInHand(card)) {
+        if (gameState.cardIsInHand(card)) {
             if (GamePhase.YOU_SACRIFICE.equals(gameState.getGamePhase())) {
                 gameState.getYourHand().remove(card);
                 gameState.getYourResources().add(card);
