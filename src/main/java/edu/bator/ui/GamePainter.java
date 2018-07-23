@@ -1,11 +1,9 @@
 package edu.bator.ui;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
-import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import edu.bator.ui.events.SkipSacrificeClickedEvent;
 import edu.bator.ui.events.TurnSkipClickedEvent;

@@ -1,22 +1,9 @@
 package edu.bator;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Arrays;
-
-import edu.bator.cards.AllCardsSet;
-import edu.bator.cards.Card;
-import org.apache.commons.io.IOUtils;
-
 public class TempCode {
 
     public static void main(String[] args) {
-       //download images
+        //download images
         /* AllCardsSet allCardsSet = new AllCardsSet();
         allCardsSet.getAllCards().forEach(card -> {
             try {
@@ -48,5 +35,5 @@ public class TempCode {
                     e.printStackTrace();
                 }
             }*/
-        }
+    }
 }

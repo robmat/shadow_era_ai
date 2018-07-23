@@ -56,6 +56,7 @@ public class GameState {
     private GamePainter gamePainter;
 
     private Card attackSource;
+    private Card abilitySource;
 
     public void init() {
         enemyHero = allCardsSet.cloneByName("Boris Skullcrusher");
@@ -107,7 +108,23 @@ public class GameState {
         return Stream.concat(enemySupport.stream(), yourSupport.stream()).collect(Collectors.toCollection(LinkedList::new));
     }
 
-    public void resetAttackSource() {
-        attackSource = null;
+    void increaseSE(Card hero) {
+        hero.setShadowEnergy(hero.getShadowEnergy() + 1);
+    }
+
+    public LinkedList<Card> enemyHeroAlliesAndSupportCards() {
+        LinkedList<Card> cards = new LinkedList<>();
+        cards.add(enemyHero);
+        cards.addAll(enemyAllies);
+        cards.addAll(enemySupport);
+        return cards;
+    }
+
+    public LinkedList<Card> yourHeroAlliesAndSupportCards() {
+        LinkedList<Card> cards = new LinkedList<>();
+        cards.add(yourHero);
+        cards.addAll(yourAllies);
+        cards.addAll(yourSupport);
+        return cards;
     }
 }

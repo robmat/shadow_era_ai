@@ -5,7 +5,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.AllArgsConstructor;
@@ -40,6 +39,7 @@ public class Card implements Cloneable {
     Integer attack;
     Integer initialHp;
     Integer currentHp;
+    Integer shadowEnergy = 0;
 
     ItemSubType itemSubType;
 
@@ -47,7 +47,7 @@ public class Card implements Cloneable {
 
     Set<Ability> abilities = new HashSet<>();
 
-    boolean readied, castable, possibleAttackTarget = false;
+    boolean readied, castable, possibleAttackTarget, possibleAbilityTarget = false;
 
     String uniqueId = UUID.randomUUID().toString();
 
@@ -74,6 +74,8 @@ public class Card implements Cloneable {
         this.castable = cloneFrom.castable;
         this.possibleAttackTarget = cloneFrom.possibleAttackTarget;
         this.uniqueId = UUID.randomUUID().toString();
+        this.shadowEnergy = cloneFrom.shadowEnergy;
+        this.possibleAbilityTarget = cloneFrom.possibleAbilityTarget;
     }
 
     @Override
@@ -121,15 +123,25 @@ public class Card implements Cloneable {
         }
     }
 
-    public boolean hasAbility() {
+    public boolean hasAbilityToUse(GameState gameState) {
         return false;
+    }
+
+    public void calculatePossibleAbilityTarget(Card abilitySource) {
+        this.possibleAbilityTarget = abilitySource.eligibleForAbility(this);
+    }
+
+    public boolean eligibleForAbility(Card card) {
+        return false;
+    }
+
+    public void applyAbility(Card card, GameState gameState) {
     }
 
     @Override
     public String toString() {
-        return "Card{" +
-                "name='" + name + '\'' +
-                ", currentHp=" + currentHp +
+        return this.getClass().getSimpleName() + "{" +
+                "currentHp=" + currentHp +
                 ", uniqueId='" + uniqueId + '\'' +
                 '}';
     }

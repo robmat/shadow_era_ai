@@ -3,9 +3,7 @@ package edu.bator.cards;
 import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Objects;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -32,7 +30,8 @@ public class AllCardsSet {
         try {
             LinkedList<Card> cardsList = new LinkedList<>();
             ObjectMapper objectMapper = new ObjectMapper();
-            allCards = objectMapper.readValue(new File(this.getClass().getResource("/cards.json").toURI()), new TypeReference<LinkedList<Card>>() {});
+            allCards = objectMapper.readValue(new File(this.getClass().getResource("/cards.json").toURI()), new TypeReference<LinkedList<Card>>() {
+            });
             for (Card card : allCards) {
                 Card replaceCard = replaceWithImplementingCard(card);
                 cardsList.add(replaceCard);
@@ -47,7 +46,12 @@ public class AllCardsSet {
     @SuppressWarnings("unchecked")
     public Card replaceWithImplementingCard(Card card) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         String className = "edu.bator.cards.todo." + card.getName().replaceAll("[ :'!,-]", "");
-        Class<? extends Card> clazz = (Class<? extends Card>) Class.forName(className);
+        Class<? extends Card> clazz = null;
+        try {
+            clazz = (Class<? extends Card>) Class.forName(className);
+        } catch (ClassNotFoundException e) {
+            clazz = (Class<? extends Card>) Class.forName(className.replaceAll("todo", "done"));
+        }
         Constructor<? extends Card> constructor = clazz.getConstructor(Card.class);
         return constructor.newInstance(card);
     }

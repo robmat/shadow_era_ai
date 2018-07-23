@@ -1,7 +1,5 @@
 package edu.bator.ui.events;
 
-import java.util.Arrays;
-
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;

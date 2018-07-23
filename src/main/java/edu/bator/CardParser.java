@@ -55,7 +55,7 @@ public class CardParser {
         List<Card> cards = new LinkedList<>();
 
         Document cardDoc = null;
-            cardDoc = Jsoup.parse(new URL("http://www.shadowera.com/cards.php"), 10000);
+        cardDoc = Jsoup.parse(new URL("http://www.shadowera.com/cards.php"), 10000);
 
         Elements allRows = cardDoc.getElementsByTag("tr");
         for (Element row : allRows) {

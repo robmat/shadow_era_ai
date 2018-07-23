@@ -26,6 +26,7 @@ public class GameEngine {
                 break;
             }
             case YOU_ACTION: {
+                if (gameState.currentTurn != 1) gameState.increaseSE(gameState.getYourHero());
                 gameState.setYourCurrentResources(gameState.getYourResources().size());
                 readyAllies(gameState.getYourAllies());
                 readyHandCards(gameState.getYourHand(), gameState);
@@ -43,6 +44,7 @@ public class GameEngine {
             }
             case ENEMY_ACTION: {
                 gameState.setEnemyCurrentResources(gameState.getEnemyResources().size());
+                gameState.increaseSE(gameState.getEnemyHero());
                 readyAllies(gameState.getEnemyAllies());
                 readyHandCards(gameState.getEnemyHand(), gameState);
                 break;

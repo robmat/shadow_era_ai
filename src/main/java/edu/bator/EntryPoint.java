@@ -1,13 +1,8 @@
 package edu.bator;
 
 import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.function.Function;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.bator.cards.AllCardsSet;
@@ -42,7 +37,7 @@ public class EntryPoint extends Application {
         GridPane mainGridPane = new GridPane();
         mainGridPane.setPadding(new Insets(5));
         ScrollPane scrollPane = new ScrollPane(mainGridPane);
-        Scene scene  = new Scene(scrollPane);
+        Scene scene = new Scene(scrollPane);
         primaryStage.setScene(scene);
         primaryStage.setMaximized(true);
 
@@ -112,7 +107,7 @@ public class EntryPoint extends Application {
 
         gamePainter.getSaveButton().setOnMouseClicked((event) -> {
             try {
-                new ObjectMapper().writeValue(new File("save.json"), gameState);
+                new ObjectMapper().writerWithDefaultPrettyPrinter().writeValue(new File("save.json"), gameState);
             } catch (Exception e) {
                 log.error("Save crashed.", e);
             }
