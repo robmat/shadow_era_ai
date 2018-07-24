@@ -127,4 +127,8 @@ public class GameState {
         cards.addAll(yourSupport);
         return cards;
     }
+
+    public void resetPossibleAbiltyTargets() {
+        heroesAlliesAndSupportCards().forEach(card -> card.setPossibleAbilityTarget(false));
+    }
 }

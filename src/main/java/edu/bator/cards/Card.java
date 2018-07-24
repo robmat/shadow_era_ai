@@ -47,7 +47,7 @@ public class Card implements Cloneable {
 
     Set<Ability> abilities = new HashSet<>();
 
-    boolean readied, castable, possibleAttackTarget, possibleAbilityTarget = false;
+    boolean readied, castable, possibleAttackTarget, possibleAbilityTarget, abilityReadied = false;
 
     String uniqueId = UUID.randomUUID().toString();
 
@@ -76,6 +76,7 @@ public class Card implements Cloneable {
         this.uniqueId = UUID.randomUUID().toString();
         this.shadowEnergy = cloneFrom.shadowEnergy;
         this.possibleAbilityTarget = cloneFrom.possibleAbilityTarget;
+        this.abilityReadied = cloneFrom.abilityReadied;
     }
 
     @Override

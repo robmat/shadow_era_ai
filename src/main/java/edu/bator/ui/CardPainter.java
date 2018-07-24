@@ -6,6 +6,7 @@ import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.events.AbilityClickedEvent;
+import edu.bator.ui.events.AbilityTargetClickedEvent;
 import edu.bator.ui.events.AttackClickedEvent;
 import edu.bator.ui.events.AttackTargetClickedEvent;
 import edu.bator.ui.events.CardCastClickedEvent;
@@ -77,7 +78,12 @@ class CardPainter {
 
         if (GameEngine.ACTION_PHASES.contains(gameState.getGamePhase()) && (card.isPossibleAttackTarget() || card.isPossibleAbilityTarget())) {
             Button attackButton = new Button("Target.");
-            attackButton.setOnMouseClicked(new AttackTargetClickedEvent(gameState, card));
+            if (card.isPossibleAttackTarget()) {
+                attackButton.setOnMouseClicked(new AttackTargetClickedEvent(gameState, card));
+            }
+            if (card.isPossibleAbilityTarget()) {
+                attackButton.setOnMouseClicked(new AbilityTargetClickedEvent(gameState, card));
+            }
             gridPane.add(attackButton, 0, 3, 2, 1);
             gridPane.setBorder(ORANGE_BORDER);
         }
