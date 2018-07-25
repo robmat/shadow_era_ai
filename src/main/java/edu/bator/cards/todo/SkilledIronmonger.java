@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class SkilledIronmonger extends Card {
-    public SkilledIronmonger(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public SkilledIronmonger(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

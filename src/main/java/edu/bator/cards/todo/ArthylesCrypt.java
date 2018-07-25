@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class ArthylesCrypt extends Card {
-    public ArthylesCrypt(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public ArthylesCrypt(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

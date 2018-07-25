@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class GraveResistance extends Card {
-    public GraveResistance(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public GraveResistance(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class StandFirm extends Card {
-    public StandFirm(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public StandFirm(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class LoomofFate extends Card {
-    public LoomofFate(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public LoomofFate(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

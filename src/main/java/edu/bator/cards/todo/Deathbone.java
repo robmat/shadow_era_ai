@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class Deathbone extends Card {
-    public Deathbone(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public Deathbone(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

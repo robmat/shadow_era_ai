@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class RaikkaSpellseeker extends Card {
-    public RaikkaSpellseeker(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public RaikkaSpellseeker(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

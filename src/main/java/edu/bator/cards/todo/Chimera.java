@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class Chimera extends Card {
-    public Chimera(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public Chimera(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

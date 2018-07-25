@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class VenomflameArcher extends Card {
-    public VenomflameArcher(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public VenomflameArcher(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

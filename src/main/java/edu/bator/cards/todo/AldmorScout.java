@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class AldmorScout extends Card {
-    public AldmorScout(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public AldmorScout(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

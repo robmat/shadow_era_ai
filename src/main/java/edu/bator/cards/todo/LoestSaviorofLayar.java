@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class LoestSaviorofLayar extends Card {
-    public LoestSaviorofLayar(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public LoestSaviorofLayar(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

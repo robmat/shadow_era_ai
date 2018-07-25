@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class DemetreyoTwilightExtremist extends Card {
-    public DemetreyoTwilightExtremist(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public DemetreyoTwilightExtremist(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

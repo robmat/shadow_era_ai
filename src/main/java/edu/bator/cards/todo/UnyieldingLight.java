@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class UnyieldingLight extends Card {
-    public UnyieldingLight(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public UnyieldingLight(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

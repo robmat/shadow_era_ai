@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class TreasuredHeirloom extends Card {
-    public TreasuredHeirloom(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public TreasuredHeirloom(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

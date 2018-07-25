@@ -2,8 +2,8 @@ package edu.bator;
 
 public class TempCode {
 
-    public static void main(String[] args) {
-        //download images
+  public static void main(String[] args) {
+    //download images
         /* AllCardsSet allCardsSet = new AllCardsSet();
         allCardsSet.getAllCards().forEach(card -> {
             try {
@@ -18,7 +18,7 @@ public class TempCode {
             }
         });*/
 
-        //write specific card classes
+    //write specific card classes
         /* for (Card card : new AllCardsSet().getAllCards()) {
                 try {
                     String name = card.getName().replaceAll("[ :'!,-]", "");
@@ -35,5 +35,5 @@ public class TempCode {
                     e.printStackTrace();
                 }
             }*/
-    }
+  }
 }

@@ -3,7 +3,8 @@ package edu.bator.cards.todo;
 import edu.bator.cards.Card;
 
 public class SpiritWarden extends Card {
-    public SpiritWarden(Card cloneFrom) {
-        super(cloneFrom);
-    }
+
+  public SpiritWarden(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }
