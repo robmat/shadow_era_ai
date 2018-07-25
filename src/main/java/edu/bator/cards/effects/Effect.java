@@ -7,7 +7,7 @@ import lombok.Data;
 public class Effect {
 
   EffectType effectType;
-  GamePhase gamePhase;
+  GamePhase gamePhaseWhenExpires;
   Integer turnEffectExpires;
 
   public enum EffectType {IN_LOVE, ON_FIRE, POISONED}
