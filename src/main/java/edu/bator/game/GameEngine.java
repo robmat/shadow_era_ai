@@ -4,6 +4,7 @@ import edu.bator.cards.Card;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 import org.apache.log4j.Logger;
 
 public class GameEngine {
@@ -22,6 +23,8 @@ public class GameEngine {
         gameState.setGamePhase(GamePhase.YOU_SACRIFICE);
         readyAllies(gameState.getEnemyAllies());
         readyHero(gameState.getEnemyHero());
+        expireEffects(gameState);
+        applyEffects(gameState.yourHeroAlliesAndSupportCards());
         checkGameState(gameState);
         break;
       }
@@ -44,6 +47,8 @@ public class GameEngine {
           readyAllies(gameState.getYourAllies());
         }
         readyHero(gameState.getYourHero());
+        expireEffects(gameState);
+        applyEffects(gameState.enemyHeroAlliesAndSupportCards());
         checkGameState(gameState);
         break;
       }
@@ -60,9 +65,29 @@ public class GameEngine {
     gameState.repaint();
   }
 
+  private void applyEffects(LinkedList<Card> cards) {
+    cards.stream()
+        .filter(card -> !card.getEffects().isEmpty())
+        .forEach(card -> {
+          card.getEffects().forEach(effect -> effect.applyEffect(card));
+        });
+  }
+
+  private void expireEffects(GameState gameState) {
+    LinkedList<Card> cards = gameState.getGamePhase().equals(GamePhase.YOU_PREPARE) ?
+        gameState.yourHeroAlliesAndSupportCards() : gameState.enemyHeroAlliesAndSupportCards();
+    cards.stream()
+        .filter(card -> !card.getEffects().isEmpty())
+        .forEach(card -> {
+          card.getEffects().removeIf(effect ->
+              Objects.equals(effect.getTurnEffectExpires(), gameState.getCurrentTurn()) &&
+                  Objects.equals(effect.getGamePhaseWhenExpires(), gameState.getGamePhase()));
+        });
+  }
+
   private void readyHero(Card hero) {
     hero.setAbilityReadied(true);
-    hero.setReadied(true);
+    hero.setAttackReadied(true);
   }
 
   private void readyHandCards(LinkedList<Card> hand, GameState gameState) {

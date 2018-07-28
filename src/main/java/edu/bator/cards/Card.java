@@ -48,7 +48,7 @@ public class Card implements Cloneable {
 
   Set<Ability> abilities = new HashSet<>();
 
-  boolean readied, castable, possibleAttackTarget, possibleAbilityTarget, abilityReadied = false;
+  boolean attackReadied, castable, possibleAttackTarget, possibleAbilityTarget, abilityReadied = false;
 
   LinkedList<Effect> effects = new LinkedList<>();
 
@@ -69,17 +69,18 @@ public class Card implements Cloneable {
     this.itemSubType = cloneFrom.itemSubType;
     this.attackType = cloneFrom.attackType;
     this.abilities = new HashSet<>(cloneFrom.abilities);
-    this.readied = cloneFrom.readied;
+    this.attackReadied = cloneFrom.attackReadied;
     this.castable = cloneFrom.castable;
     this.possibleAttackTarget = cloneFrom.possibleAttackTarget;
     this.uniqueId = UUID.randomUUID().toString();
     this.shadowEnergy = cloneFrom.shadowEnergy;
     this.possibleAbilityTarget = cloneFrom.possibleAbilityTarget;
     this.abilityReadied = cloneFrom.abilityReadied;
+    this.effects = new LinkedList<>(cloneFrom.effects);
   }
 
   public void tryToReady() {
-    readied = true;
+    attackReadied = true;
   }
 
   public void tryToReadyAbility() {

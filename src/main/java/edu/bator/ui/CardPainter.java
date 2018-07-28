@@ -1,6 +1,7 @@
 package edu.bator.ui;
 
 import edu.bator.cards.Card;
+import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.events.AbilityClickedEvent;
@@ -10,6 +11,7 @@ import edu.bator.ui.events.AttackTargetClickedEvent;
 import edu.bator.ui.events.CardCastClickedEvent;
 import edu.bator.ui.events.CardSacrificeClickedEvent;
 import java.util.Objects;
+import java.util.stream.Collectors;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -74,7 +76,7 @@ class CardPainter {
     }
 
     //row 4
-    if (gameState.cardIsInAllies(card) && card.isReadied() && GameEngine.ACTION_PHASES
+    if (gameState.cardIsInAllies(card) && card.isAttackReadied() && GameEngine.ACTION_PHASES
         .contains(gameState.getGamePhase())) {
       Button attackButton = new Button("Attack.");
       attackButton.setOnMouseClicked(new AttackClickedEvent(gameState, card));
@@ -94,7 +96,16 @@ class CardPainter {
       gridPane.add(attackButton, 0, 3, 2, 1);
       gridPane.setBorder(ORANGE_BORDER);
     }
-    //end row 4
+    //row 5
+    if (!card.getEffects().isEmpty()) {
+      String effectsString = card.getEffects()
+          .stream()
+          .map(Effect::getEffectType)
+          .collect(Collectors.toList())
+          .toString();
+      gridPane.add(new Label(effectsString.substring(1, effectsString.length() - 1)), 0, 4, 2, 1);
+    }
+    //end row 5
 
     if (gameState.cardIsInHand(card) && GameEngine.SACRIFICE_PHASES
         .contains(gameState.getGamePhase())) {
