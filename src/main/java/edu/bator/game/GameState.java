@@ -7,6 +7,7 @@ import edu.bator.cards.Card;
 import edu.bator.ui.GamePainter;
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import lombok.AllArgsConstructor;
@@ -146,5 +147,9 @@ public class GameState {
 
   public void resetPossibleAbiltyTargets() {
     heroesAlliesAndSupportCards().forEach(card -> card.setPossibleAbilityTarget(false));
+  }
+
+  public List<Card> allCardsInPlay() {
+    return Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()).collect(Collectors.toList());
   }
 }

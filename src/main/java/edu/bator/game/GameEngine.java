@@ -1,6 +1,7 @@
 package edu.bator.game;
 
 import edu.bator.cards.Card;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,11 +10,11 @@ import org.apache.log4j.Logger;
 
 public class GameEngine {
 
-  public static final List<GamePhase> ACTION_PHASES = Arrays
-      .asList(GamePhase.YOU_ACTION, GamePhase.ENEMY_ACTION);
-  public static final List<GamePhase> SACRIFICE_PHASES = Arrays
-      .asList(GamePhase.YOU_SACRIFICE, GamePhase.ENEMY_SACRIFICE);
-  private static final Logger log = Logger.getLogger(GameEngine.class);
+    public static final List<GamePhase> ACTION_PHASES = Arrays
+            .asList(GamePhase.YOU_ACTION, GamePhase.ENEMY_ACTION);
+    public static final List<GamePhase> SACRIFICE_PHASES = Arrays
+            .asList(GamePhase.YOU_SACRIFICE, GamePhase.ENEMY_SACRIFICE);
+    private static final Logger log = Logger.getLogger(GameEngine.class);
 
   public void checkGameState(GameState gameState) {
     switch (gameState.getGamePhase()) {
@@ -25,6 +26,7 @@ public class GameEngine {
         readyHero(gameState.getEnemyHero());
         expireEffects(gameState);
         applyEffects(gameState.yourHeroAlliesAndSupportCards());
+        clearAbilityAndAttackTargets(gameState);
         checkGameState(gameState);
         break;
       }
@@ -49,6 +51,7 @@ public class GameEngine {
         readyHero(gameState.getYourHero());
         expireEffects(gameState);
         applyEffects(gameState.enemyHeroAlliesAndSupportCards());
+        clearAbilityAndAttackTargets(gameState);
         checkGameState(gameState);
         break;
       }
@@ -64,6 +67,14 @@ public class GameEngine {
     }
     gameState.repaint();
   }
+
+    private void clearAbilityAndAttackTargets(GameState gameState) {
+        gameState.allCardsInPlay().forEach(card -> {
+            card.setPossibleAbilityTarget(false);
+            card.setPossibleAttackTarget(false);
+        });
+    }
+
 
   private void applyEffects(LinkedList<Card> cards) {
     cards.stream()
@@ -90,20 +101,20 @@ public class GameEngine {
     hero.setAttackReadied(true);
   }
 
-  private void readyHandCards(LinkedList<Card> hand, GameState gameState) {
-    hand.forEach(card -> card.determineCastable(card, gameState));
-  }
-
-  private void pickACard(LinkedList<Card> deck, LinkedList<Card> hand) {
-    if (!deck.isEmpty() && hand.size() < 7) {
-      Card card = deck.poll();
-      hand.push(card);
-      log.info("Picked: " + card);
+    private void readyHandCards(LinkedList<Card> hand, GameState gameState) {
+        hand.forEach(card -> card.determineCastable(card, gameState));
     }
-  }
 
-  private void readyAllies(LinkedList<Card> allies) {
-    allies.forEach(Card::tryToReady);
-    allies.forEach(Card::tryToReadyAbility);
-  }
+    private void pickACard(LinkedList<Card> deck, LinkedList<Card> hand) {
+        if (!deck.isEmpty() && hand.size() < 7) {
+            Card card = deck.poll();
+            hand.push(card);
+            log.info("Picked: " + card);
+        }
+    }
+
+    private void readyAllies(LinkedList<Card> allies) {
+        allies.forEach(Card::tryToReady);
+        allies.forEach(Card::tryToReadyAbility);
+    }
 }
