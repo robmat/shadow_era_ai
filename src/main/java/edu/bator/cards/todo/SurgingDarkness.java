@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SurgingDarkness extends Card {
 
-  public SurgingDarkness(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SurgingDarkness(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

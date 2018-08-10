@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class RampantKrygon extends Card {
 
-  public RampantKrygon(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public RampantKrygon(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

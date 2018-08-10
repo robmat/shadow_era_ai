@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Supernova extends Card {
 
-  public Supernova(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Supernova(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

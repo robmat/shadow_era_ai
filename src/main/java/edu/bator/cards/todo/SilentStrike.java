@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SilentStrike extends Card {
 
-  public SilentStrike(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SilentStrike(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

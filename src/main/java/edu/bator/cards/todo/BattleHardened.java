@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class BattleHardened extends Card {
 
-  public BattleHardened(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public BattleHardened(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

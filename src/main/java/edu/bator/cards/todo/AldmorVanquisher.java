@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AldmorVanquisher extends Card {
 
-  public AldmorVanquisher(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AldmorVanquisher(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

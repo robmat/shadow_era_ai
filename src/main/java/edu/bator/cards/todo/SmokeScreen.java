@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SmokeScreen extends Card {
 
-  public SmokeScreen(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SmokeScreen(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

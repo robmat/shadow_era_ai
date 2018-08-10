@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class PoisonGas extends Card {
 
-  public PoisonGas(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public PoisonGas(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

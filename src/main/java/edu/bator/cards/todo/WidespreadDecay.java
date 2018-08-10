@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class WidespreadDecay extends Card {
 
-  public WidespreadDecay(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public WidespreadDecay(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

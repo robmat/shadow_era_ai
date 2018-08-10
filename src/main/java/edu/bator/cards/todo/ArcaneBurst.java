@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ArcaneBurst extends Card {
 
-  public ArcaneBurst(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ArcaneBurst(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

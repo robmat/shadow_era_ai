@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class OldIronDagger extends Card {
 
-  public OldIronDagger(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public OldIronDagger(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

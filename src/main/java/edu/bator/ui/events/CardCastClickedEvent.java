@@ -10,39 +10,39 @@ import org.apache.log4j.Logger;
 
 public class CardCastClickedEvent implements EventHandler<MouseEvent> {
 
-  private static final Logger log = Logger.getLogger(CardCastClickedEvent.class);
+    private static final Logger log = Logger.getLogger(CardCastClickedEvent.class);
 
-  private final GameState gameState;
-  private final Card card;
+    private final GameState gameState;
+    private final Card card;
 
-  public CardCastClickedEvent(GameState gameState, Card card) {
-    this.gameState = gameState;
-    this.card = card;
-  }
-
-  @Override
-  public void handle(MouseEvent event) {
-    if (gameState.cardIsInHand(card) && GameEngine.ACTION_PHASES
-        .contains(gameState.getGamePhase())) {
-      if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-        if (gameState.getEnemyHand().remove(card)) {
-          gameState.getEnemyAllies().add(card);
-          gameState.setEnemyCurrentResources(
-              gameState.getEnemyCurrentResources() - card.getResourceCost());
-          gameState.getEnemyHand().forEach(card -> card.determineCastable(card, gameState));
-        }
-      }
-      if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-        if (gameState.getYourHand().remove(card)) {
-          gameState.getYourAllies().add(card);
-          gameState.setYourCurrentResources(
-              gameState.getYourCurrentResources() - card.getResourceCost());
-          gameState.getYourHand().forEach(card -> card.determineCastable(card, gameState));
-        }
-      }
-      card.wasCasted(gameState);
-      gameState.repaint();
-      log.info("Casted: " + card);
+    public CardCastClickedEvent(GameState gameState, Card card) {
+        this.gameState = gameState;
+        this.card = card;
     }
-  }
+
+    @Override
+    public void handle(MouseEvent event) {
+        if (gameState.cardIsInHand(card) && GameEngine.ACTION_PHASES
+                .contains(gameState.getGamePhase())) {
+            if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
+                if (gameState.getEnemyHand().remove(card)) {
+                    gameState.getEnemyAllies().add(card);
+                    gameState.setEnemyCurrentResources(
+                            gameState.getEnemyCurrentResources() - card.getResourceCost());
+                    gameState.getEnemyHand().forEach(card -> card.determineCastable(card, gameState));
+                }
+            }
+            if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
+                if (gameState.getYourHand().remove(card)) {
+                    gameState.getYourAllies().add(card);
+                    gameState.setYourCurrentResources(
+                            gameState.getYourCurrentResources() - card.getResourceCost());
+                    gameState.getYourHand().forEach(card -> card.determineCastable(card, gameState));
+                }
+            }
+            card.wasCasted(gameState);
+            gameState.repaint();
+            log.info("Casted: " + card);
+        }
+    }
 }

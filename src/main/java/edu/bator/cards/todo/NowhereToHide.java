@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class NowhereToHide extends Card {
 
-  public NowhereToHide(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public NowhereToHide(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

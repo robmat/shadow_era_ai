@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class BlessedCharge extends Card {
 
-  public BlessedCharge(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public BlessedCharge(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

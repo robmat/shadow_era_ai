@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class WulvenTinker extends Card {
 
-  public WulvenTinker(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public WulvenTinker(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

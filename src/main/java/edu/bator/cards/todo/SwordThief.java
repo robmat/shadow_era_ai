@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SwordThief extends Card {
 
-  public SwordThief(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SwordThief(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

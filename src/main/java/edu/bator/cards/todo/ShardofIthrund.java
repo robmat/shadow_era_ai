@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ShardofIthrund extends Card {
 
-  public ShardofIthrund(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ShardofIthrund(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

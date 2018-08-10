@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class WildfangWulvenRenegade extends Card {
 
-  public WildfangWulvenRenegade(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public WildfangWulvenRenegade(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

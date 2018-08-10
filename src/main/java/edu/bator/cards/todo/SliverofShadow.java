@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SliverofShadow extends Card {
 
-  public SliverofShadow(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SliverofShadow(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

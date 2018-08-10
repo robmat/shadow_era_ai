@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class DarkFlayer extends Card {
 
-  public DarkFlayer(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public DarkFlayer(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

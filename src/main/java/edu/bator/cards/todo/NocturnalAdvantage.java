@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class NocturnalAdvantage extends Card {
 
-  public NocturnalAdvantage(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public NocturnalAdvantage(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

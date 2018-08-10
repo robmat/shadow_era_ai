@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class PhoenixUrigon extends Card {
 
-  public PhoenixUrigon(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public PhoenixUrigon(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

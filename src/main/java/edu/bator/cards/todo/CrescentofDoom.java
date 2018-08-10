@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class CrescentofDoom extends Card {
 
-  public CrescentofDoom(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public CrescentofDoom(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

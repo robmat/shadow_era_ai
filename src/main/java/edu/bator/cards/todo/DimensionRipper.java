@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class DimensionRipper extends Card {
 
-  public DimensionRipper(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public DimensionRipper(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

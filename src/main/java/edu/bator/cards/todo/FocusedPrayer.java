@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class FocusedPrayer extends Card {
 
-  public FocusedPrayer(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public FocusedPrayer(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

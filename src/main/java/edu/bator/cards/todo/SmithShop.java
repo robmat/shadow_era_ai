@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SmithShop extends Card {
 
-  public SmithShop(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SmithShop(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

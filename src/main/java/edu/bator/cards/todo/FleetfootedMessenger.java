@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class FleetfootedMessenger extends Card {
 
-  public FleetfootedMessenger(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public FleetfootedMessenger(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

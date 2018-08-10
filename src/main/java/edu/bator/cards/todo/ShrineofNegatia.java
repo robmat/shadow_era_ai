@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ShrineofNegatia extends Card {
 
-  public ShrineofNegatia(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ShrineofNegatia(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

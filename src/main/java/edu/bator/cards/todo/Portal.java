@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Portal extends Card {
 
-  public Portal(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Portal(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

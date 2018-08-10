@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class GoldenKatar extends Card {
 
-  public GoldenKatar(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public GoldenKatar(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

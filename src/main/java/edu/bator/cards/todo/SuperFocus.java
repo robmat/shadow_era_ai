@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SuperFocus extends Card {
 
-  public SuperFocus(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SuperFocus(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

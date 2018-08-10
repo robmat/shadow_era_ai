@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AnarchicLooting extends Card {
 
-  public AnarchicLooting(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AnarchicLooting(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

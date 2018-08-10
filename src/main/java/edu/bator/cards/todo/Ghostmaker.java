@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Ghostmaker extends Card {
 
-  public Ghostmaker(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Ghostmaker(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class GoodContacts extends Card {
 
-  public GoodContacts(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public GoodContacts(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

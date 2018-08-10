@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class FlurryofBlows extends Card {
 
-  public FlurryofBlows(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public FlurryofBlows(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

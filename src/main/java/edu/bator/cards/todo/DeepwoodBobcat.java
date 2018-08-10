@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class DeepwoodBobcat extends Card {
 
-  public DeepwoodBobcat(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public DeepwoodBobcat(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

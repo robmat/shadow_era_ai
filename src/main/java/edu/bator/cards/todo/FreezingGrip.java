@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class FreezingGrip extends Card {
 
-  public FreezingGrip(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public FreezingGrip(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

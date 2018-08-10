@@ -1,19 +1,20 @@
 package edu.bator.cards.effects;
 
+import java.util.UUID;
+
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
-import java.util.UUID;
 import lombok.Data;
 
 @Data
 public abstract class Effect {
 
-  EffectType effectType;
-  GamePhase gamePhaseWhenExpires;
-  Integer turnEffectExpires;
-  String uniqueId = UUID.randomUUID().toString();
+    EffectType effectType;
+    GamePhase gamePhaseWhenExpires;
+    Integer turnEffectExpires;
+    String uniqueId = UUID.randomUUID().toString();
 
-  public abstract void applyEffect(Card card);
+    public abstract void applyEffect(Card card);
 
-  public enum EffectType {IN_LOVE, ON_FIRE, POISONED}
+    public enum EffectType {IN_LOVE, ON_FIRE, POISONED}
 }

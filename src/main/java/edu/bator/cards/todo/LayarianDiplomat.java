@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class LayarianDiplomat extends Card {
 
-  public LayarianDiplomat(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public LayarianDiplomat(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

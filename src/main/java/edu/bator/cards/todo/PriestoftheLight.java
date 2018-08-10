@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class PriestoftheLight extends Card {
 
-  public PriestoftheLight(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public PriestoftheLight(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

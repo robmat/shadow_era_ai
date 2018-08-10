@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class DeathfromAbove extends Card {
 
-  public DeathfromAbove(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public DeathfromAbove(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

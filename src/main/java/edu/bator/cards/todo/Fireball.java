@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Fireball extends Card {
 
-  public Fireball(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Fireball(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

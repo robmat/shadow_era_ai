@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class MeteorShower extends Card {
 
-  public MeteorShower(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public MeteorShower(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

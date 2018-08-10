@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Reverberate extends Card {
 
-  public Reverberate(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Reverberate(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Skervox extends Card {
 
-  public Skervox(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Skervox(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

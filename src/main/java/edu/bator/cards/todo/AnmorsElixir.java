@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AnmorsElixir extends Card {
 
-  public AnmorsElixir(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AnmorsElixir(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class EnergyDischarge extends Card {
 
-  public EnergyDischarge(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public EnergyDischarge(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

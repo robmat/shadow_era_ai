@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SnowlandSpotter extends Card {
 
-  public SnowlandSpotter(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SnowlandSpotter(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

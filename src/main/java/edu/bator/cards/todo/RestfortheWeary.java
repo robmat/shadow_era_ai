@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class RestfortheWeary extends Card {
 
-  public RestfortheWeary(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public RestfortheWeary(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

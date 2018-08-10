@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ShieldBash extends Card {
 
-  public ShieldBash(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ShieldBash(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

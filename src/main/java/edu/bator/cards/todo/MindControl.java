@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class MindControl extends Card {
 
-  public MindControl(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public MindControl(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

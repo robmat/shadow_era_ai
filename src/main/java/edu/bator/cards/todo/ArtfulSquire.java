@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ArtfulSquire extends Card {
 
-  public ArtfulSquire(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ArtfulSquire(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SabreenHandofUnaxio extends Card {
 
-  public SabreenHandofUnaxio(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SabreenHandofUnaxio(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

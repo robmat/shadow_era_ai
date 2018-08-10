@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class WhatBigTeeth extends Card {
 
-  public WhatBigTeeth(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public WhatBigTeeth(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

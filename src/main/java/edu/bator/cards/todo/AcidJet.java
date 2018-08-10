@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AcidJet extends Card {
 
-  public AcidJet(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AcidJet(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

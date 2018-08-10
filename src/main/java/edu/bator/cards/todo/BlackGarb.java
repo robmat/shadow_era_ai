@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class BlackGarb extends Card {
 
-  public BlackGarb(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public BlackGarb(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

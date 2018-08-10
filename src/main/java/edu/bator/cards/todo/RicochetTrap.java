@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class RicochetTrap extends Card {
 
-  public RicochetTrap(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public RicochetTrap(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

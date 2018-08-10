@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class PlatinumChainmail extends Card {
 
-  public PlatinumChainmail(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public PlatinumChainmail(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class KnightofUnaxio extends Card {
 
-  public KnightofUnaxio(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public KnightofUnaxio(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class RejuvenationPod extends Card {
 
-  public RejuvenationPod(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public RejuvenationPod(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

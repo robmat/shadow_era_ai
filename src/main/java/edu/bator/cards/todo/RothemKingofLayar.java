@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class RothemKingofLayar extends Card {
 
-  public RothemKingofLayar(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public RothemKingofLayar(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

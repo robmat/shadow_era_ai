@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SpecialDelivery extends Card {
 
-  public SpecialDelivery(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SpecialDelivery(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

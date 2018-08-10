@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ArthylesPassDeadMansBreach extends Card {
 
-  public ArthylesPassDeadMansBreach(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ArthylesPassDeadMansBreach(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

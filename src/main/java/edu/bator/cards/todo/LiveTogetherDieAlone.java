@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class LiveTogetherDieAlone extends Card {
 
-  public LiveTogetherDieAlone(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public LiveTogetherDieAlone(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

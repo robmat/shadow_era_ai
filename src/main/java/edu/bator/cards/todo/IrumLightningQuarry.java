@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class IrumLightningQuarry extends Card {
 
-  public IrumLightningQuarry(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public IrumLightningQuarry(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Sanctuary extends Card {
 
-  public Sanctuary(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Sanctuary(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

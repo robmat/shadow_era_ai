@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ForUnaxio extends Card {
 
-  public ForUnaxio(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ForUnaxio(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

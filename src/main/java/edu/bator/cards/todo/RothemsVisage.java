@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class RothemsVisage extends Card {
 
-  public RothemsVisage(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public RothemsVisage(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

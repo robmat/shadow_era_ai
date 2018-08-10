@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class YariVanguard extends Card {
 
-  public YariVanguard(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public YariVanguard(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

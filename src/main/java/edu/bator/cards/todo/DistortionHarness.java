@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class DistortionHarness extends Card {
 
-  public DistortionHarness(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public DistortionHarness(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

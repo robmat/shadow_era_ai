@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ResoluteHornbeam extends Card {
 
-  public ResoluteHornbeam(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ResoluteHornbeam(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

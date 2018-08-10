@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Nightshade extends Card {
 
-  public Nightshade(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Nightshade(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

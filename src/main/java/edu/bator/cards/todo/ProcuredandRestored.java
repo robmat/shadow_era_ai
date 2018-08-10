@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ProcuredandRestored extends Card {
 
-  public ProcuredandRestored(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ProcuredandRestored(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

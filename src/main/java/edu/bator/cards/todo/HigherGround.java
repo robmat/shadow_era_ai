@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class HigherGround extends Card {
 
-  public HigherGround(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public HigherGround(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

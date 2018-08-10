@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class TwilightLifebringer extends Card {
 
-  public TwilightLifebringer(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public TwilightLifebringer(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

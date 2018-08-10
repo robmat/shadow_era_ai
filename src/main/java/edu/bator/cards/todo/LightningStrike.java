@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class LightningStrike extends Card {
 
-  public LightningStrike(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public LightningStrike(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

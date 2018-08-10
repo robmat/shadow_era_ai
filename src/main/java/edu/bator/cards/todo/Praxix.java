@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Praxix extends Card {
 
-  public Praxix(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Praxix(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AsynMountKazarr extends Card {
 
-  public AsynMountKazarr(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AsynMountKazarr(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

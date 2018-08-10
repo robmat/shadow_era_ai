@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AuraofRetribution extends Card {
 
-  public AuraofRetribution(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AuraofRetribution(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ClericoftheAsyn extends Card {
 
-  public ClericoftheAsyn(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ClericoftheAsyn(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

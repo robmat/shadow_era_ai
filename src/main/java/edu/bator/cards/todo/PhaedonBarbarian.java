@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class PhaedonBarbarian extends Card {
 
-  public PhaedonBarbarian(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public PhaedonBarbarian(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

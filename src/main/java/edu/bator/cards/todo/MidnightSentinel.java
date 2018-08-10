@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class MidnightSentinel extends Card {
 
-  public MidnightSentinel(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public MidnightSentinel(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

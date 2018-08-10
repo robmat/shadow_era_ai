@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Sinkhole extends Card {
 
-  public Sinkhole(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Sinkhole(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

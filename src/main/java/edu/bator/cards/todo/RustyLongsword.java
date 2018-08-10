@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class RustyLongsword extends Card {
 
-  public RustyLongsword(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public RustyLongsword(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

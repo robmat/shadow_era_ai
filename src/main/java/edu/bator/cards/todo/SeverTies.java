@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SeverTies extends Card {
 
-  public SeverTies(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SeverTies(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AssumedCommand extends Card {
 
-  public AssumedCommand(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AssumedCommand(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

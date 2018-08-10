@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class VoiceofWinter extends Card {
 
-  public VoiceofWinter(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public VoiceofWinter(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

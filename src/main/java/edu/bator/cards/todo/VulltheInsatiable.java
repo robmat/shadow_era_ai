@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class VulltheInsatiable extends Card {
 
-  public VulltheInsatiable(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public VulltheInsatiable(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

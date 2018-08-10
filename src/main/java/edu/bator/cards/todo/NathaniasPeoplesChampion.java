@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class NathaniasPeoplesChampion extends Card {
 
-  public NathaniasPeoplesChampion(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public NathaniasPeoplesChampion(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class LingeringEssence extends Card {
 
-  public LingeringEssence(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public LingeringEssence(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

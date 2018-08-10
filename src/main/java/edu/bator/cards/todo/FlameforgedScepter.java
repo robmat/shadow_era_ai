@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class FlameforgedScepter extends Card {
 
-  public FlameforgedScepter(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public FlameforgedScepter(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

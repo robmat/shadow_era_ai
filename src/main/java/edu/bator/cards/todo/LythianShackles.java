@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class LythianShackles extends Card {
 
-  public LythianShackles(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public LythianShackles(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class DivineConnection extends Card {
 
-  public DivineConnection(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public DivineConnection(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

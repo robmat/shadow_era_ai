@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class PlateArmor extends Card {
 
-  public PlateArmor(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public PlateArmor(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class DerkantheBoneKing extends Card {
 
-  public DerkantheBoneKing(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public DerkantheBoneKing(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class BlakeWindrunner extends Card {
 
-  public BlakeWindrunner(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public BlakeWindrunner(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

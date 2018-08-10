@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class PackWolf extends Card {
 
-  public PackWolf(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public PackWolf(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

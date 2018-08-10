@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class HitList extends Card {
 
-  public HitList(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public HitList(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ShriekofRevulsion extends Card {
 
-  public ShriekofRevulsion(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ShriekofRevulsion(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

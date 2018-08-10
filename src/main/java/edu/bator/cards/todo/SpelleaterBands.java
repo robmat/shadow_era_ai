@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SpelleaterBands extends Card {
 
-  public SpelleaterBands(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SpelleaterBands(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class BloodpackShaman extends Card {
 
-  public BloodpackShaman(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public BloodpackShaman(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

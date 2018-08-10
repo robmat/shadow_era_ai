@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class BlazingShield extends Card {
 
-  public BlazingShield(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public BlazingShield(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

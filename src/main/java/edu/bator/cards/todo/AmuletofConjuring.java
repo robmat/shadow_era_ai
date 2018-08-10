@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AmuletofConjuring extends Card {
 
-  public AmuletofConjuring(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AmuletofConjuring(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

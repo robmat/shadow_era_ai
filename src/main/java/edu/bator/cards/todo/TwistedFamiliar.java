@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class TwistedFamiliar extends Card {
 
-  public TwistedFamiliar(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public TwistedFamiliar(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

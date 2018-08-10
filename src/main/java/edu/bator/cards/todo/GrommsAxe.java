@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class GrommsAxe extends Card {
 
-  public GrommsAxe(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public GrommsAxe(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

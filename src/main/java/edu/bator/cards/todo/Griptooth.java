@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Griptooth extends Card {
 
-  public Griptooth(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Griptooth(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

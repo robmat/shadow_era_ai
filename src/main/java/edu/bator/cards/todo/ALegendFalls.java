@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class ALegendFalls extends Card {
 
-  public ALegendFalls(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public ALegendFalls(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

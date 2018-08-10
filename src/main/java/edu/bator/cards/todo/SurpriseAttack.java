@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class SurpriseAttack extends Card {
 
-  public SurpriseAttack(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public SurpriseAttack(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

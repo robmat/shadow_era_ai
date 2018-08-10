@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class IncendiaryCurse extends Card {
 
-  public IncendiaryCurse(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public IncendiaryCurse(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AldmorScavenger extends Card {
 
-  public AldmorScavenger(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AldmorScavenger(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

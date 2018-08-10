@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class VioletThunderstorm extends Card {
 
-  public VioletThunderstorm(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public VioletThunderstorm(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

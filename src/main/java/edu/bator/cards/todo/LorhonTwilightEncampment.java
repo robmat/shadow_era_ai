@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class LorhonTwilightEncampment extends Card {
 
-  public LorhonTwilightEncampment(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public LorhonTwilightEncampment(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

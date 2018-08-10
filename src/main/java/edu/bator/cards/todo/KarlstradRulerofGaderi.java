@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class KarlstradRulerofGaderi extends Card {
 
-  public KarlstradRulerofGaderi(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public KarlstradRulerofGaderi(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class VoidwalkersGauntlet extends Card {
 
-  public VoidwalkersGauntlet(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public VoidwalkersGauntlet(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

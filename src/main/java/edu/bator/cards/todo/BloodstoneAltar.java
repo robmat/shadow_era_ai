@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class BloodstoneAltar extends Card {
 
-  public BloodstoneAltar(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public BloodstoneAltar(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

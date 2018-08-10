@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AuralBattery extends Card {
 
-  public AuralBattery(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AuralBattery(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

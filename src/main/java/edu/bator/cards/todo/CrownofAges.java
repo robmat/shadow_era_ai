@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class CrownofAges extends Card {
 
-  public CrownofAges(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public CrownofAges(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

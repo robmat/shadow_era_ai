@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class LanceShadowstalker extends Card {
 
-  public LanceShadowstalker(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public LanceShadowstalker(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

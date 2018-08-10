@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class RoadLessTraveled extends Card {
 
-  public RoadLessTraveled(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public RoadLessTraveled(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class AscendantoftheHero extends Card {
 
-  public AscendantoftheHero(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public AscendantoftheHero(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

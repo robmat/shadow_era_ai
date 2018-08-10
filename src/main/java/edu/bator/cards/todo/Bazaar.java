@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Bazaar extends Card {
 
-  public Bazaar(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Bazaar(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

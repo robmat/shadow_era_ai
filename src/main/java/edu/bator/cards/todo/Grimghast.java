@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Grimghast extends Card {
 
-  public Grimghast(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Grimghast(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

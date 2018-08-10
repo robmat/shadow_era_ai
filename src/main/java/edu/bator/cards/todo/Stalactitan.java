@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Stalactitan extends Card {
 
-  public Stalactitan(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Stalactitan(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

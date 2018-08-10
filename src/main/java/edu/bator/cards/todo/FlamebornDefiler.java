@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class FlamebornDefiler extends Card {
 
-  public FlamebornDefiler(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public FlamebornDefiler(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }

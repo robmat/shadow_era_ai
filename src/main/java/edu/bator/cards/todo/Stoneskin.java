@@ -4,7 +4,7 @@ import edu.bator.cards.Card;
 
 public class Stoneskin extends Card {
 
-  public Stoneskin(Card cloneFrom) {
-    super(cloneFrom);
-  }
+    public Stoneskin(Card cloneFrom) {
+        super(cloneFrom);
+    }
 }
