@@ -69,15 +69,14 @@ public class GameState {
             yourDeck.add(allCardsSet.cloneByName("Dirk Saber"));
         }
 
-        for (int i = 0; i < 3; i++) {
-            enemyHand.add(allCardsSet.cloneByName("Dirk Saber"));
-            yourHand.add(allCardsSet.cloneByName("Dirk Saber"));
-        }
+        enemyHand.add(allCardsSet.cloneByName("Dirk Saber"));
+        yourHand.add(allCardsSet.cloneByName("Dirk Saber"));
 
-        for (int i = 0; i < 3; i++) {
-            enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
-            yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
-        }
+        enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
+        yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
+
+        enemyHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
+        yourHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
 
         log.info("Init done.");
     }
@@ -150,7 +149,15 @@ public class GameState {
         heroesAlliesAndSupportCards().forEach(card -> card.setPossibleAbilityTarget(false));
     }
 
-    public List<Card> allCardsInPlay() {
+    List<Card> allCardsInPlay() {
         return Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()).collect(Collectors.toList());
+    }
+
+    public int enemyResourcesSize() {
+        return enemyResources.size();
+    }
+
+    public int yourResourcesSize() {
+        return yourResources.size();
     }
 }

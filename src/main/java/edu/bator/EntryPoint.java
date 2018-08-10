@@ -2,6 +2,8 @@ package edu.bator;
 
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.util.LinkedList;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,6 +16,7 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
@@ -33,6 +36,11 @@ public class EntryPoint extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        try {
+            primaryStage.getIcons().add(new Image(getClass().getResource("/icon.png").toURI().toURL().toString()));
+        } catch (MalformedURLException | URISyntaxException e) {
+            log.error("Error loading icon.", e);
+        }
         primaryStage.setTitle("Shadow Era.");
         GridPane mainGridPane = new GridPane();
         mainGridPane.setPadding(new Insets(5));
