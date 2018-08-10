@@ -39,7 +39,7 @@ public class GameEngine {
                 if (gameState.currentTurn != 1) {
                     gameState.increaseSE(gameState.getYourHero());
                 }
-                gameState.setYourCurrentResources(gameState.getYourResources().size());
+                gameState.setYourCurrentResources(gameState.yourResourcesSize());
                 readyHandCards(gameState.getYourHand(), gameState);
                 break;
             }
@@ -61,7 +61,7 @@ public class GameEngine {
                 break;
             }
             case ENEMY_ACTION: {
-                gameState.setEnemyCurrentResources(gameState.getEnemyResources().size());
+                gameState.setEnemyCurrentResources(gameState.enemyResourcesSize());
                 gameState.increaseSE(gameState.getEnemyHero());
                 readyHandCards(gameState.getEnemyHand(), gameState);
                 break;
