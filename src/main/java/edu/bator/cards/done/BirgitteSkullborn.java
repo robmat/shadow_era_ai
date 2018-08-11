@@ -1,4 +1,4 @@
-package edu.bator.cards.todo;
+package edu.bator.cards.done;
 
 import edu.bator.cards.Card;
 

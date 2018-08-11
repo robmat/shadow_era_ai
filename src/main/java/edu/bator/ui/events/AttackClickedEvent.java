@@ -22,13 +22,13 @@ public class AttackClickedEvent implements EventHandler<MouseEvent> {
     @Override
     public void handle(MouseEvent event) {
         if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-            gameState.getEnemyHero().calculatePossibleAttackTarget(card);
-            gameState.getEnemyAllies().forEach(target -> target.calculatePossibleAttackTarget(card));
+            gameState.getEnemyHero().calculatePossibleAttackTarget(card, gameState);
+            gameState.getEnemyAllies().forEach(target -> target.calculatePossibleAttackTarget(card, gameState));
 
         }
         if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-            gameState.getYourHero().calculatePossibleAttackTarget(card);
-            gameState.getYourAllies().forEach(target -> target.calculatePossibleAttackTarget(card));
+            gameState.getYourHero().calculatePossibleAttackTarget(card, gameState);
+            gameState.getYourAllies().forEach(target -> target.calculatePossibleAttackTarget(card, gameState));
         }
 
         gameState.setAttackSource(card);

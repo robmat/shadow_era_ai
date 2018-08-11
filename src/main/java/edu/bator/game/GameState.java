@@ -65,8 +65,8 @@ public class GameState {
         yourHero = allCardsSet.cloneByName("Boris Skullcrusher");
 
         for (int i = 0; i < 40; i++) {
-            enemyDeck.add(allCardsSet.cloneByName("Dirk Saber"));
-            yourDeck.add(allCardsSet.cloneByName("Dirk Saber"));
+            enemyDeck.add(allCardsSet.cloneByName("Kristoffer Wyld"));
+            yourDeck.add(allCardsSet.cloneByName("Kristoffer Wyld"));
         }
 
         enemyHand.add(allCardsSet.cloneByName("Lily Rosecult"));
@@ -84,17 +84,17 @@ public class GameState {
     public boolean cardIsInHand(Card card) {
         return (Arrays.asList(GamePhase.YOU_ACTION, GamePhase.YOU_SACRIFICE).contains(gamePhase)
                 && yourHand.stream()
-                .anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId()))) ||
+                .anyMatch(inHand -> Objects.equal(card, inHand))) ||
                 (Arrays.asList(GamePhase.ENEMY_ACTION, GamePhase.ENEMY_SACRIFICE).contains(gamePhase)
                         && enemyHand.stream()
-                        .anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId())));
+                        .anyMatch(inHand -> Objects.equal(card, inHand)));
     }
 
     public boolean cardIsInAllies(Card card) {
         return (java.util.Objects.equals(GamePhase.YOU_ACTION, gamePhase) && yourAllies.stream()
-                .anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId()))) ||
+                .anyMatch(inHand -> Objects.equal(card, inHand))) ||
                 (java.util.Objects.equals(GamePhase.ENEMY_ACTION, gamePhase) && enemyAllies.stream()
-                        .anyMatch(inHand -> Objects.equal(card.getUniqueId(), inHand.getUniqueId())));
+                        .anyMatch(inHand -> Objects.equal(card, inHand)));
     }
 
     public void repaint() {
@@ -159,5 +159,11 @@ public class GameState {
 
     public int yourResourcesSize() {
         return yourResources.size();
+    }
+
+    public List<Card> currentEnemyHandBasedOnPhase() {
+        if (GamePhase.YOU_ACTION.equals(gamePhase)) return getEnemyHand();
+        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) return getYourHand();
+        return null;
     }
 }

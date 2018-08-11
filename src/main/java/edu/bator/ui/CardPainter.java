@@ -29,13 +29,13 @@ import org.apache.log4j.Logger;
 
 class CardPainter {
 
-    public static final Border ORANGE_BORDER = new Border(
+    private static final Border ORANGE_BORDER = new Border(
             new BorderStroke(Color.ORANGE, BorderStrokeStyle.DASHED, CornerRadii.EMPTY,
                     BorderStroke.MEDIUM));
-    public static final Border RED_BORDER = new Border(
+    private static final Border RED_BORDER = new Border(
             new BorderStroke(Color.RED, BorderStrokeStyle.DASHED, CornerRadii.EMPTY,
                     BorderStroke.MEDIUM));
-    public static final Border LIGHTGREEN_BORDER = new Border(
+    private static final Border LIGHTGREEN_BORDER = new Border(
             new BorderStroke(Color.LIGHTGREEN, BorderStrokeStyle.DASHED, CornerRadii.EMPTY,
                     BorderStroke.MEDIUM));
     private static final Logger log = Logger.getLogger(CardPainter.class);
@@ -51,7 +51,9 @@ class CardPainter {
         Image image = new Image(getClass().getResourceAsStream("/images/" + card.getCode() + ".jpg"),
                 80, 133, true, true);
         ImageView cardImage = new ImageView(image);
-        Tooltip.install(cardImage, new Tooltip(card.getDescription()));
+        String tootipText = card.getDescription() + " Cost: " + card.getResourceCost() + " " + card.getAbilities();
+        Tooltip tooltip = new Tooltip(tootipText);
+        Tooltip.install(cardImage, tooltip);
 
         //row 1
         gridPane.add(cardImage, 0, 0, 2, 1);

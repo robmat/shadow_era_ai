@@ -2,6 +2,7 @@ package edu.bator.cards;
 
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
@@ -105,11 +106,22 @@ public class Card implements Cloneable {
     }
 
     public void wasCasted(GameState gameState) {
-
+        if (abilities.contains(Ability.HASTE)) {
+            setAttackReadied(true);
+            setAbilityReadied(true);
+        }
     }
 
-    public void calculatePossibleAttackTarget(Card attackSource) {
-        setPossibleAttackTarget(cardIsAnAlly() || cardIsAHero());
+    public void calculatePossibleAttackTarget(Card attackSource, GameState gameState) {
+        if (cardIsAHero()) {
+            setPossibleAttackTarget(true);
+        } else if (cardIsAnAlly() && abilities.contains(Ability.PROTECTOR)) {
+            setPossibleAttackTarget(true);
+        }
+       gameState.currentEnemyHandBasedOnPhase()
+               .stream()
+               .filter(card -> !Objects.equals(card, this))
+
     }
 
     public boolean cardIsAnAlly() {
@@ -140,10 +152,10 @@ public class Card implements Cloneable {
     }
 
     public void calculatePossibleAbilityTarget(Card abilitySource) {
-        this.possibleAbilityTarget = abilitySource.eligibleForAbility(this);
+        this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this);
     }
 
-    public boolean eligibleForAbility(Card card) {
+    public boolean ableToApplyAbilityTo(Card card) {
         return false;
     }
 
@@ -156,6 +168,19 @@ public class Card implements Cloneable {
         setAbilityReadied(false);
         setAttackReadied(false);
         setCastable(false);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Card)) return false;
+        Card card = (Card) o;
+        return Objects.equals(getUniqueId(), card.getUniqueId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getUniqueId());
     }
 
     @Override
