@@ -150,6 +150,14 @@ public class Card implements Cloneable {
     public void applyAbility(Card card, GameState gameState) {
     }
 
+    public void resetFlags() {
+        setPossibleAttackTarget(false);
+        setPossibleAbilityTarget(false);
+        setAbilityReadied(false);
+        setAttackReadied(false);
+        setCastable(false);
+    }
+
     @Override
     public String toString() {
         return this.getClass().getSimpleName() + "{" +

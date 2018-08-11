@@ -36,8 +36,8 @@ public class GameState {
     LinkedList<Card> enemyHand = new LinkedList<>();
     LinkedList<Card> yourHand = new LinkedList<>();
 
-    LinkedList<Card> enemyGraveyard = new LinkedList<>();
-    LinkedList<Card> yourGraveyard = new LinkedList<>();
+    LinkedList<Card> enemyGraveyard = new GraveyardLinkedList();
+    LinkedList<Card> yourGraveyard = new GraveyardLinkedList();
 
     LinkedList<Card> enemyResources = new LinkedList<>();
     LinkedList<Card> yourResources = new LinkedList<>();
@@ -69,8 +69,8 @@ public class GameState {
             yourDeck.add(allCardsSet.cloneByName("Dirk Saber"));
         }
 
-        enemyHand.add(allCardsSet.cloneByName("Dirk Saber"));
-        yourHand.add(allCardsSet.cloneByName("Dirk Saber"));
+        enemyHand.add(allCardsSet.cloneByName("Lily Rosecult"));
+        yourHand.add(allCardsSet.cloneByName("Lily Rosecult"));
 
         enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
         yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
