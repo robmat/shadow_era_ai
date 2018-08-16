@@ -65,8 +65,8 @@ public class GameState {
         yourHero = allCardsSet.cloneByName("Boris Skullcrusher");
 
         for (int i = 0; i < 40; i++) {
-            enemyDeck.add(allCardsSet.cloneByName("Kristoffer Wyld"));
-            yourDeck.add(allCardsSet.cloneByName("Kristoffer Wyld"));
+            enemyDeck.add(allCardsSet.cloneByName("Birgitte Skullborn"));
+            yourDeck.add(allCardsSet.cloneByName("Birgitte Skullborn"));
         }
 
         enemyHand.add(allCardsSet.cloneByName("Lily Rosecult"));
@@ -145,6 +145,12 @@ public class GameState {
         return cards;
     }
 
+    public List<Card> currentHeroAlliesAndSupportCardsBasedOnPhase() {
+        if (GamePhase.YOU_ACTION.equals(gamePhase)) return enemyHeroAlliesAndSupportCards();
+        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) return yourHeroAlliesAndSupportCards();
+        return null;
+    }
+
     public void resetPossibleAbiltyTargets() {
         heroesAlliesAndSupportCards().forEach(card -> card.setPossibleAbilityTarget(false));
     }
@@ -165,5 +171,18 @@ public class GameState {
         if (GamePhase.YOU_ACTION.equals(gamePhase)) return getEnemyHand();
         if (GamePhase.ENEMY_ACTION.equals(gamePhase)) return getYourHand();
         return null;
+    }
+
+    public List<Card> currentEnemyHeroAndAlliesBasedOnPhase() {
+        List<Card> cards = new LinkedList<>();
+        if (GamePhase.YOU_ACTION.equals(gamePhase)) {
+            cards.add(enemyHero);
+            cards.addAll(enemyAllies);
+        }
+        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) {
+            cards.add(yourHero);
+            cards.addAll(yourAllies);
+        }
+        return cards;
     }
 }

@@ -79,7 +79,7 @@ class CardPainter {
         }
 
         //row 4
-        if (gameState.cardIsInAllies(card) && card.isAttackReadied() && GameEngine.ACTION_PHASES
+        if (gameState.cardIsInAllies(card) && card.canAttack() && GameEngine.ACTION_PHASES
                 .contains(gameState.getGamePhase())) {
             Button attackButton = new Button("Attack.");
             attackButton.setOnMouseClicked(new AttackClickedEvent(gameState, card));

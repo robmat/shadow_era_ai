@@ -1,7 +1,6 @@
 package edu.bator.ui.events;
 
 import edu.bator.cards.Card;
-import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
@@ -21,15 +20,12 @@ public class AbilityClickedEvent implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
-        if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-            gameState.enemyHeroAlliesAndSupportCards()
-                    .forEach(target -> target.calculatePossibleAbilityTarget(card));
-
-        }
-        if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-            gameState.yourHeroAlliesAndSupportCards()
-                    .forEach(target -> target.calculatePossibleAbilityTarget(card));
-        }
+        gameState.currentHeroAlliesAndSupportCardsBasedOnPhase()
+                .forEach(target -> {
+                    target.setPossibleAttackTarget(false);
+                    target.setPossibleAbilityTarget(false);
+                    target.calculatePossibleAbilityTarget(card, gameState);
+                });
 
         gameState.setAbilitySource(card);
         gameState.repaint();

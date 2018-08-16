@@ -1,5 +1,7 @@
 package edu.bator.ui.events;
 
+import java.util.stream.Stream;
+
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
@@ -21,15 +23,11 @@ public class AttackClickedEvent implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
-        if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-            gameState.getEnemyHero().calculatePossibleAttackTarget(card, gameState);
-            gameState.getEnemyAllies().forEach(target -> target.calculatePossibleAttackTarget(card, gameState));
-
-        }
-        if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-            gameState.getYourHero().calculatePossibleAttackTarget(card, gameState);
-            gameState.getYourAllies().forEach(target -> target.calculatePossibleAttackTarget(card, gameState));
-        }
+       gameState.currentEnemyHeroAndAlliesBasedOnPhase().forEach(target -> {
+           target.setPossibleAttackTarget(false);
+           target.setPossibleAbilityTarget(false);
+           target.calculatePossibleAttackTarget(card, gameState);
+       });
 
         gameState.setAttackSource(card);
         gameState.repaint();

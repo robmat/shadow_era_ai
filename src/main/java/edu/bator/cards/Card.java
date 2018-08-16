@@ -2,12 +2,12 @@ package edu.bator.cards;
 
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 
 import edu.bator.cards.effects.Effect;
+import edu.bator.cards.enums.CardEnums;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.AllArgsConstructor;
@@ -113,15 +113,24 @@ public class Card implements Cloneable {
     }
 
     public void calculatePossibleAttackTarget(Card attackSource, GameState gameState) {
+        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
+
         if (cardIsAHero()) {
             setPossibleAttackTarget(true);
-        } else if (cardIsAnAlly() && abilities.contains(Ability.PROTECTOR)) {
-            setPossibleAttackTarget(true);
+        } else {
+            setPossibleAttackTarget(possibleAllyTarget);
         }
-       gameState.currentEnemyHandBasedOnPhase()
-               .stream()
-               .filter(card -> !Objects.equals(card, this))
+    }
 
+    private boolean calculatePossibleAllyTarget(GameState gameState) {
+        boolean otherAllyHasProtector = gameState.currentEnemyHeroAndAlliesBasedOnPhase()
+                .stream()
+                .filter(card -> !Objects.equals(card, this))
+                .anyMatch(card -> card.getAbilities().contains(Ability.PROTECTOR));
+        boolean hasProtector = getAbilities().contains(Ability.PROTECTOR);
+        boolean isAllyWithProtector = cardIsAnAlly() && hasProtector;
+        boolean isAllyAndNoOtherHasProtector = cardIsAnAlly() && !otherAllyHasProtector;
+        return isAllyWithProtector || isAllyAndNoOtherHasProtector;
     }
 
     public boolean cardIsAnAlly() {
@@ -151,8 +160,12 @@ public class Card implements Cloneable {
         return false;
     }
 
-    public void calculatePossibleAbilityTarget(Card abilitySource) {
-        this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this);
+    public void calculatePossibleAbilityTarget(Card abilitySource, GameState gameState) {
+        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
+
+        if (possibleAllyTarget) {
+            this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this);
+        }
     }
 
     public boolean ableToApplyAbilityTo(Card card) {
@@ -181,6 +194,10 @@ public class Card implements Cloneable {
     @Override
     public int hashCode() {
         return Objects.hash(getUniqueId());
+    }
+
+    public boolean canAttack() {
+        return isAttackReadied() && getAttack() > 0;
     }
 
     @Override

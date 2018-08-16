@@ -15,10 +15,12 @@ public class JasmineRosecult extends Card {
     public boolean hasAbilityToUse(GameState gameState) {
         boolean you = GamePhase.YOU_ACTION.equals(gameState.getGamePhase()) &&
                 gameState.yourHeroAlliesAndSupportCards().contains(this) &&
-                gameState.getEnemyAllies().stream().anyMatch(Card::cardIsAnAlly);
+                gameState.getEnemyAllies().stream().anyMatch(Card::cardIsAnAlly) &&
+                gameState.getYourCurrentResources() >= 2;
         boolean enemy = GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase()) &&
                 gameState.enemyHeroAlliesAndSupportCards().contains(this) &&
-                gameState.getYourAllies().stream().anyMatch(Card::cardIsAnAlly);
+                gameState.getYourAllies().stream().anyMatch(Card::cardIsAnAlly) &&
+                gameState.getEnemyCurrentResources() >= 2;
         boolean abilityReadied = isAbilityReadied();
         return (you || enemy) && abilityReadied;
     }
@@ -33,9 +35,11 @@ public class JasmineRosecult extends Card {
         GamePhase gamePhase = gameState.getGamePhase();
         int turnWhenExpires = gameState.getCurrentTurn() + 1;
         if (gamePhase.equals(GamePhase.YOU_ACTION)) {
+            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - 2);
             gamePhase = GamePhase.ENEMY_PREPARE;
         }
         if (gamePhase.equals(GamePhase.ENEMY_ACTION)) {
+            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - 2);
             gamePhase = GamePhase.YOU_PREPARE;
             turnWhenExpires++;
         }

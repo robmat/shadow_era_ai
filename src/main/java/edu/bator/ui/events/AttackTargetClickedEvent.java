@@ -31,6 +31,7 @@ public class AttackTargetClickedEvent implements EventHandler<MouseEvent> {
         log.info(String.format("%s attacked %s", attackTarget, attackSource));
         gameState.resetPossibleAttackTargets();
         attackSource.setAttackReadied(false);
+        attackSource.setAbilityReadied(false);
         gameState.setAttackSource(null);
         gameState.repaint();
     }
