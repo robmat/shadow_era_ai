@@ -2746,7 +2746,8 @@
     "initialHp": 4,
     "itemSubType": "WEAPON",
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "availableForHeroClasses": ["WARRIOR", "PRIEST"]
   },
   {
     "code": "se182",

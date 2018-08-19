@@ -62,7 +62,10 @@ public class GameState {
 
     public void init() {
         enemyHero = allCardsSet.cloneByName("Boris Skullcrusher");
+        enemyHero.setWeapon(allCardsSet.cloneByName("Mournblade"));
+
         yourHero = allCardsSet.cloneByName("Boris Skullcrusher");
+        enemyHero.setWeapon(allCardsSet.cloneByName("Mournblade"));
 
         for (int i = 0; i < 40; i++) {
             enemyDeck.add(allCardsSet.cloneByName("Birgitte Skullborn"));
@@ -104,25 +107,7 @@ public class GameState {
     }
 
     public void resetPossibleAttackTargets() {
-        heroesAlliesAndSupportCards().forEach(card -> card.setPossibleAttackTarget(false));
-    }
-
-    private LinkedList<Card> heroesAlliesAndSupportCards() {
-        LinkedList<Card> cardList = Stream.concat(allAllies().stream(), allSupports().stream())
-                .collect(Collectors.toCollection(LinkedList::new));
-        cardList.add(enemyHero);
-        cardList.add(yourHero);
-        return cardList;
-    }
-
-    private LinkedList<Card> allAllies() {
-        return Stream.concat(enemyAllies.stream(), yourAllies.stream())
-                .collect(Collectors.toCollection(LinkedList::new));
-    }
-
-    private LinkedList<Card> allSupports() {
-        return Stream.concat(enemySupport.stream(), yourSupport.stream())
-                .collect(Collectors.toCollection(LinkedList::new));
+        allCardsInPlay().forEach(card -> card.setPossibleAttackTarget(false));
     }
 
     void increaseSE(Card hero) {
@@ -152,7 +137,7 @@ public class GameState {
     }
 
     public void resetPossibleAbiltyTargets() {
-        heroesAlliesAndSupportCards().forEach(card -> card.setPossibleAbilityTarget(false));
+        allCardsInPlay().forEach(card -> card.setPossibleAbilityTarget(false));
     }
 
     List<Card> allCardsInPlay() {

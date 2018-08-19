@@ -26,7 +26,12 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                 .contains(gameState.getGamePhase())) {
             if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
                 if (gameState.getEnemyHand().remove(card)) {
-                    gameState.getEnemyAllies().add(card);
+                    if (card.cardIsAnAlly()) {
+                        gameState.getEnemyAllies().add(card);
+                    }
+                    if (card.cardIsAWeapon()) {
+                        gameState.getEnemyHero().setWeapon(card);
+                    }
                     gameState.setEnemyCurrentResources(
                             gameState.getEnemyCurrentResources() - card.getResourceCost());
                     gameState.getEnemyHand().forEach(card -> card.determineCastable(card, gameState));
@@ -34,7 +39,12 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
             }
             if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
                 if (gameState.getYourHand().remove(card)) {
-                    gameState.getYourAllies().add(card);
+                    if (card.cardIsAnAlly()) {
+                        gameState.getYourAllies().add(card);
+                    }
+                    if (card.cardIsAWeapon()) {
+                        gameState.getYourHero().setWeapon(card);
+                    }
                     gameState.setYourCurrentResources(
                             gameState.getYourCurrentResources() - card.getResourceCost());
                     gameState.getYourHand().forEach(card -> card.determineCastable(card, gameState));

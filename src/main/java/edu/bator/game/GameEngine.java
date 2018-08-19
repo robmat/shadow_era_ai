@@ -121,4 +121,15 @@ public class GameEngine {
         allies.forEach(Card::tryToReady);
         allies.forEach(Card::tryToReadyAbility);
     }
+
+    public void cardDied(Card card, GameState gameState) {
+        if (gameState.getEnemyAllies().remove(card)) {
+            gameState.getEnemyGraveyard().add(card);
+            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+        }
+        if (gameState.getYourAllies().remove(card)) {
+            gameState.getYourGraveyard().add(card);
+            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+        }
+    }
 }

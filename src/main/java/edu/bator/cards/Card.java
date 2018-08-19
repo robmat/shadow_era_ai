@@ -3,6 +3,7 @@ package edu.bator.cards;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
 
@@ -54,6 +55,10 @@ public class Card implements Cloneable {
 
     LinkedList<Effect> effects = new LinkedList<>();
 
+    Card weapon;
+
+    Set<HeroClass> availableForHeroClasses = new HashSet<>();
+
     String uniqueId = UUID.randomUUID().toString();
 
     public Card(Card cloneFrom) {
@@ -79,6 +84,8 @@ public class Card implements Cloneable {
         this.possibleAbilityTarget = cloneFrom.possibleAbilityTarget;
         this.abilityReadied = cloneFrom.abilityReadied;
         this.effects = new LinkedList<>(cloneFrom.effects);
+        this.weapon = cloneFrom.weapon;
+        this.availableForHeroClasses = cloneFrom.availableForHeroClasses;
     }
 
     public void tryToReady() {
@@ -198,6 +205,14 @@ public class Card implements Cloneable {
 
     public boolean canAttack() {
         return isAttackReadied() && getAttack() > 0;
+    }
+
+    public void cardHasDiedEvent(Card card, GameState gameState) {
+        Optional.ofNullable(weapon).ifPresent(w -> w.cardHasDiedEvent(card, gameState));
+    }
+
+    public boolean cardIsAWeapon() {
+        return ItemSubType.WEAPON.equals(getItemSubType());
     }
 
     @Override

@@ -1,6 +1,7 @@
 package edu.bator.ui.events;
 
 import edu.bator.cards.Card;
+import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
@@ -38,12 +39,7 @@ public class AttackTargetClickedEvent implements EventHandler<MouseEvent> {
 
     private void moveToGraveyardIfDead(Card card) {
         if (card.cardIsDead()) {
-            if (gameState.getEnemyAllies().remove(card)) {
-                gameState.getEnemyGraveyard().add(card);
-            }
-            if (gameState.getYourAllies().remove(card)) {
-                gameState.getYourGraveyard().add(card);
-            }
+            new GameEngine().cardDied(card, gameState);
         }
     }
 }
