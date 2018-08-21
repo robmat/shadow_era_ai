@@ -2,11 +2,12 @@ package edu.bator.cards.done;
 
 import java.util.Random;
 
+import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 
-public class SandraTrueblade extends Card {
+public class SandraTrueblade extends Ally {
 
     public SandraTrueblade(Card cloneFrom) {
         super(cloneFrom);
