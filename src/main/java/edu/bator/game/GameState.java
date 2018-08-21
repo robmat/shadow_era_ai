@@ -65,7 +65,7 @@ public class GameState {
         enemyHero.setWeapon(allCardsSet.cloneByName("Mournblade"));
 
         yourHero = allCardsSet.cloneByName("Boris Skullcrusher");
-        enemyHero.setWeapon(allCardsSet.cloneByName("Mournblade"));
+        yourHero.setWeapon(allCardsSet.cloneByName("Mournblade"));
 
         for (int i = 0; i < 40; i++) {
             enemyDeck.add(allCardsSet.cloneByName("Birgitte Skullborn"));
@@ -77,6 +77,9 @@ public class GameState {
 
         enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
         yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
+
+        enemyHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
+        yourHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
 
         enemyHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
         yourHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
@@ -93,7 +96,7 @@ public class GameState {
                         .anyMatch(inHand -> Objects.equal(card, inHand)));
     }
 
-    public boolean cardIsInAllies(Card card) {
+    public boolean cardIsInCurrentAllies(Card card) {
         return (java.util.Objects.equals(GamePhase.YOU_ACTION, gamePhase) && yourAllies.stream()
                 .anyMatch(inHand -> Objects.equal(card, inHand))) ||
                 (java.util.Objects.equals(GamePhase.ENEMY_ACTION, gamePhase) && enemyAllies.stream()
@@ -169,5 +172,15 @@ public class GameState {
             cards.addAll(yourAllies);
         }
         return cards;
+    }
+
+    public boolean cardIsCurrentHero(Card card) {
+        if (GamePhase.YOU_ACTION.equals(gamePhase)) {
+            return card.equals(getYourHero());
+        }
+        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) {
+            return card.equals(getEnemyHero());
+        }
+        return false;
     }
 }

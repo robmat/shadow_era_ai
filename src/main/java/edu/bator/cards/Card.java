@@ -22,6 +22,7 @@ import static edu.bator.cards.enums.CardEnums.CardType;
 import static edu.bator.cards.enums.CardEnums.HeroClass;
 import static edu.bator.cards.enums.CardEnums.ItemSubType;
 import static edu.bator.cards.enums.CardEnums.Side;
+import static java.util.Objects.nonNull;
 
 @Data
 @NoArgsConstructor
@@ -88,7 +89,7 @@ public class Card implements Cloneable {
         this.availableForHeroClasses = cloneFrom.availableForHeroClasses;
     }
 
-    public void tryToReady() {
+    public void tryToReadyAttack() {
         attackReadied = true;
     }
 
@@ -101,6 +102,8 @@ public class Card implements Cloneable {
         Card clone = (Card) super.clone();
         clone.setAbilities(new HashSet<>(abilities));
         clone.setUniqueId(UUID.randomUUID().toString());
+        clone.setEffects(new LinkedList<>(effects));
+        clone.setAvailableForHeroClasses(new HashSet<>(availableForHeroClasses));
         return clone;
     }
 
@@ -149,15 +152,15 @@ public class Card implements Cloneable {
     }
 
     public boolean cardIsDead() {
-        return Objects.nonNull(getCurrentHp()) && getCurrentHp() <= 0;
+        return nonNull(getCurrentHp()) && getCurrentHp() <= 0;
     }
 
     public void attackedBy(GameState gameState, Card attackSource) {
-        if (Objects.nonNull(attackSource.getAttack()) && Objects.nonNull(getCurrentHp())) {
+        if (nonNull(attackSource.getAttack()) && nonNull(getCurrentHp())) {
             setCurrentHp(getCurrentHp() - attackSource.getAttack());
         }
         if (!cardIsDead() && !attackSource.getAbilities().contains(Ability.AMBUSH)) {
-            if (Objects.nonNull(attackSource.getCurrentHp()) && Objects.nonNull(getAttack())) {
+            if (nonNull(attackSource.getCurrentHp()) && nonNull(getAttack())) {
                 attackSource.setCurrentHp(attackSource.getCurrentHp() - getAttack());
             }
         }
@@ -204,11 +207,10 @@ public class Card implements Cloneable {
     }
 
     public boolean canAttack() {
-        return isAttackReadied() && getAttack() > 0;
+        return isAttackReadied() && nonNull(getAttack()) && getAttack() > 0;
     }
 
     public void cardHasDiedEvent(Card card, GameState gameState) {
-        Optional.ofNullable(weapon).ifPresent(w -> w.cardHasDiedEvent(card, gameState));
     }
 
     public boolean cardIsAWeapon() {

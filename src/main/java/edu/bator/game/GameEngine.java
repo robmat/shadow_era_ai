@@ -118,7 +118,7 @@ public class GameEngine {
     }
 
     private void readyAllies(LinkedList<Card> allies) {
-        allies.forEach(Card::tryToReady);
+        allies.forEach(Card::tryToReadyAttack);
         allies.forEach(Card::tryToReadyAbility);
     }
 

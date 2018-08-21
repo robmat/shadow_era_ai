@@ -1,10 +1,11 @@
 package edu.bator.cards.done;
 
 import edu.bator.cards.Card;
+import edu.bator.cards.Hero;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 
-public class BorisSkullcrusher extends Card {
+public class BorisSkullcrusher extends Hero {
 
     public BorisSkullcrusher(Card cloneFrom) {
         super(cloneFrom);

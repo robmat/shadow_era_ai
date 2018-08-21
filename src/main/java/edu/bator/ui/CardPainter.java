@@ -1,6 +1,7 @@
 package edu.bator.ui;
 
 import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import edu.bator.cards.Card;
@@ -27,6 +28,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import org.apache.log4j.Logger;
 
+import static com.google.common.base.Strings.nullToEmpty;
+
 class CardPainter {
 
     private static final Border ORANGE_BORDER = new Border(
@@ -51,8 +54,18 @@ class CardPainter {
         Image image = new Image(getClass().getResourceAsStream("/images/" + card.getCode() + ".jpg"),
                 80, 133, true, true);
         ImageView cardImage = new ImageView(image);
-        String tootipText = card.getDescription() + " Cost: " + card.getResourceCost() + " " + card.getAbilities();
-        Tooltip tooltip = new Tooltip(tootipText);
+        StringBuilder tooltipBuilder = new StringBuilder()
+                .append(card.getDescription())
+                .append(" Cost: ")
+                .append(nullToEmpty(card.getResourceCost() + ""))
+                .append(" ")
+                .append(card.getAbilities().isEmpty() ? "" : card.getAbilities());
+
+        buildWeaponText(card, tooltipBuilder);
+
+        String tooltipText = tooltipBuilder.toString();
+
+        Tooltip tooltip = new Tooltip(tooltipText);
         Tooltip.install(cardImage, tooltip);
 
         //row 1
@@ -69,7 +82,10 @@ class CardPainter {
 
         //row 3
         if (card.cardIsAHero()) {
-            gridPane.add(new Label("SE: " + card.getShadowEnergy()), 0, 2);
+            StringBuilder text = new StringBuilder("SE: " + card.getShadowEnergy());
+            buildWeaponText(card, text);
+
+            gridPane.add(new Label(text.toString()), 0, 2);
         }
         if (card.hasAbilityToUse(gameState)) {
             Button abilityButton = new Button("Ability.");
@@ -79,8 +95,7 @@ class CardPainter {
         }
 
         //row 4
-        if (gameState.cardIsInAllies(card) && card.canAttack() && GameEngine.ACTION_PHASES
-                .contains(gameState.getGamePhase())) {
+        if ((gameState.cardIsCurrentHero(card) || gameState.cardIsInCurrentAllies(card)) && card.canAttack()) {
             Button attackButton = new Button("Attack.");
             attackButton.setOnMouseClicked(new AttackClickedEvent(gameState, card));
             gridPane.add(attackButton, 0, 3, 2, 1);
@@ -122,6 +137,18 @@ class CardPainter {
             gridPane.setBorder(LIGHTGREEN_BORDER);
         }
 
+    }
+
+    private void buildWeaponText(Card card, StringBuilder text) {
+        Optional.ofNullable(card.getWeapon()).ifPresent(weapon -> {
+            text
+                    .append("\nWeapon: ")
+                    .append(weapon.getName())
+                    .append(" DUR: ")
+                    .append(weapon.getCurrentHp())
+                    .append(" ATK: ")
+                    .append(weapon.getAttack());
+        });
     }
 }
 

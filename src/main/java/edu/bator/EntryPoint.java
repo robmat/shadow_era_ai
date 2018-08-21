@@ -93,6 +93,9 @@ public class EntryPoint extends Application {
                 gameState.setEnemyHero(allCardsSet.replaceWithImplementingCard(gameState.getEnemyHero()));
                 gameState.setYourHero(allCardsSet.replaceWithImplementingCard(gameState.getYourHero()));
 
+                gameState.getEnemyHero().setWeapon(allCardsSet.replaceWithImplementingCard(gameState.getEnemyHero().getWeapon()));
+                gameState.getYourHero().setWeapon(allCardsSet.replaceWithImplementingCard(gameState.getYourHero().getWeapon()));
+
                 replaceCardsWithImplementors(allCardsSet, gameState.getEnemyAllies());
                 replaceCardsWithImplementors(allCardsSet, gameState.getEnemyDeck());
                 replaceCardsWithImplementors(allCardsSet, gameState.getEnemyGraveyard());
