@@ -2,6 +2,7 @@ package edu.bator.cards.done;
 
 import edu.bator.cards.Card;
 import edu.bator.cards.Hero;
+import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 
@@ -34,16 +35,7 @@ public class BorisSkullcrusher extends Hero {
     @Override
     public void applyAbility(Card card, GameState gameState) {
         if (card.cardIsAnAlly() && card.getResourceCost() <= 4) {
-            if (gameState.getGamePhase().equals(GamePhase.YOU_ACTION)) {
-                if (gameState.getEnemyAllies().remove(card)) {
-                    gameState.getEnemyGraveyard().add(card);
-                }
-            }
-            if (gameState.getGamePhase().equals(GamePhase.ENEMY_ACTION)) {
-                if (gameState.getYourAllies().remove(card)) {
-                    gameState.getYourGraveyard().add(card);
-                }
-            }
+            new GameEngine().cardDied(card, gameState);
             setShadowEnergy(getShadowEnergy() - 4);
         }
     }

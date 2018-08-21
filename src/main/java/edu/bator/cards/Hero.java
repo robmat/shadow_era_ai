@@ -3,7 +3,10 @@ package edu.bator.cards;
 import java.util.Objects;
 import java.util.Optional;
 
+import edu.bator.cards.enums.CardEnums;
 import edu.bator.game.GameState;
+
+import static java.util.Objects.nonNull;
 
 public class Hero extends Card {
 

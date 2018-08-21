@@ -85,7 +85,13 @@ public class Card implements Cloneable {
         this.possibleAbilityTarget = cloneFrom.possibleAbilityTarget;
         this.abilityReadied = cloneFrom.abilityReadied;
         this.effects = new LinkedList<>(cloneFrom.effects);
-        this.weapon = cloneFrom.weapon;
+        try {
+            if (nonNull(cloneFrom.weapon)) {
+                this.weapon = (Card) cloneFrom.weapon.clone();
+            }
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
         this.availableForHeroClasses = cloneFrom.availableForHeroClasses;
     }
 
@@ -156,12 +162,29 @@ public class Card implements Cloneable {
     }
 
     public void attackedBy(GameState gameState, Card attackSource) {
-        if (nonNull(attackSource.getAttack()) && nonNull(getCurrentHp())) {
-            setCurrentHp(getCurrentHp() - attackSource.getAttack());
+        if (attackSource.cardIsAnAlly()) {
+            if (nonNull(attackSource.getAttack()) && nonNull(getCurrentHp())) {
+                setCurrentHp(getCurrentHp() - attackSource.getAttack());
+            }
+            attackBack(attackSource);
         }
+        Card weapon = attackSource.getWeapon();
+        if (attackSource.cardIsAHero() && nonNull(weapon)) {
+            setCurrentHp(getCurrentHp() - weapon.getAttack());
+            if (nonNull(weapon.getCurrentHp())) {
+                weapon.setCurrentHp(weapon.getCurrentHp() - 1);
+            }
+            attackBack(attackSource);
+        }
+    }
+
+    private void attackBack(Card attackSource) {
         if (!cardIsDead() && !attackSource.getAbilities().contains(Ability.AMBUSH)) {
             if (nonNull(attackSource.getCurrentHp()) && nonNull(getAttack())) {
                 attackSource.setCurrentHp(attackSource.getCurrentHp() - getAttack());
+            }
+            if (nonNull(attackSource.getCurrentHp()) && nonNull(getWeapon()) && nonNull(getWeapon().getAttack())) {
+                attackSource.setCurrentHp(attackSource.getCurrentHp() - getWeapon().getAttack());
             }
         }
     }
