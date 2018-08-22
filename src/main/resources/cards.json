@@ -1048,7 +1048,8 @@
     "initialHp": null,
     "itemSubType": null,
     "attackType": null,
-    "abilities": []
+    "abilities": [],
+    "availableForHeroClasses": ["WARRIOR"]
   },
   {
     "code": "se070",

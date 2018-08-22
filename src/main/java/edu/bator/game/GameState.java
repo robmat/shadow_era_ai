@@ -1,6 +1,7 @@
 package edu.bator.game;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -84,6 +85,10 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
         yourHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
 
+        enemyHand.add(allCardsSet.cloneByName("Shield Bash"));
+        yourHand.add(allCardsSet.cloneByName("Shield Bash"));
+
+
         log.info("Init done.");
     }
 
@@ -143,7 +148,7 @@ public class GameState {
         allCardsInPlay().forEach(card -> card.setPossibleAbilityTarget(false));
     }
 
-    List<Card> allCardsInPlay() {
+    public List<Card> allCardsInPlay() {
         return Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()).collect(Collectors.toList());
     }
 
@@ -182,5 +187,15 @@ public class GameState {
             return card.equals(getEnemyHero());
         }
         return false;
+    }
+
+    public List<Card> currentEnemyAlliesBasedOnPhase() {
+        if (GamePhase.YOU_ACTION.equals(gamePhase)) {
+            return enemyAllies;
+        }
+        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) {
+            return yourAllies;
+        }
+        return null;
     }
 }

@@ -152,6 +152,10 @@ public class Card implements Cloneable {
         return CardType.ALLY.equals(cardType);
     }
 
+    public boolean cardIsAnAbility() {
+        return CardType.ABILITY.equals(cardType);
+    }
+
     public boolean cardIsAHero() {
         return CardType.HERO.equals(cardType);
     }
@@ -204,11 +208,11 @@ public class Card implements Cloneable {
         boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
 
         if (possibleAllyTarget) {
-            this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this);
+            this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this, gameState);
         }
     }
 
-    public boolean ableToApplyAbilityTo(Card card) {
+    public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
         return false;
     }
 

@@ -27,7 +27,7 @@ public class JasmineRosecult extends Ally {
     }
 
     @Override
-    public boolean ableToApplyAbilityTo(Card card) {
+    public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
         return card.cardIsAnAlly();
     }
 
