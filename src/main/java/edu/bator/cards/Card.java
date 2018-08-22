@@ -185,6 +185,9 @@ public class Card implements Cloneable {
             }
             if (nonNull(attackSource.getCurrentHp()) && nonNull(getWeapon()) && nonNull(getWeapon().getAttack())) {
                 attackSource.setCurrentHp(attackSource.getCurrentHp() - getWeapon().getAttack());
+                if (nonNull(weapon.getCurrentHp())) {
+                    weapon.setCurrentHp(weapon.getCurrentHp() - 1);
+                }
             }
         }
     }

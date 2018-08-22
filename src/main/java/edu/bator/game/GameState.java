@@ -36,8 +36,8 @@ public class GameState {
     LinkedList<Card> enemyHand = new LinkedList<>();
     LinkedList<Card> yourHand = new LinkedList<>();
 
-    LinkedList<Card> enemyGraveyard = new GraveyardLinkedList();
-    LinkedList<Card> yourGraveyard = new GraveyardLinkedList();
+    GraveyardLinkedList enemyGraveyard = new GraveyardLinkedList();
+    GraveyardLinkedList yourGraveyard = new GraveyardLinkedList();
 
     LinkedList<Card> enemyResources = new LinkedList<>();
     LinkedList<Card> yourResources = new LinkedList<>();
