@@ -131,5 +131,15 @@ public class GameEngine {
             gameState.getYourGraveyard().add(card);
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
         }
+        if (card.equals(gameState.getEnemyHero().getWeapon())) {
+            gameState.getEnemyHero().setWeapon(null);
+            gameState.getEnemyGraveyard().add(card);
+            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+        }
+        if (card.equals(gameState.getYourHero().getWeapon())) {
+            gameState.getYourHero().setWeapon(null);
+            gameState.getYourGraveyard().add(card);
+            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+        }
     }
 }

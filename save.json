@@ -1,5 +1,5 @@
 {
-  "currentTurn" : 4,
+  "currentTurn" : 7,
   "enemyHero" : {
     "code" : "se001",
     "rarity" : "H",
@@ -11,8 +11,8 @@
     "resourceCost" : null,
     "attack" : null,
     "initialHp" : 30,
-    "currentHp" : 30,
-    "shadowEnergy" : 4,
+    "currentHp" : 19,
+    "shadowEnergy" : 2,
     "itemSubType" : null,
     "attackType" : null,
     "abilities" : [ ],
@@ -31,9 +31,9 @@
       "description" : "When an ally is killed, Mournblade gains +1 base attack up to a maximum of 5.",
       "cardType" : "ITEM",
       "resourceCost" : 5,
-      "attack" : 0,
+      "attack" : 6,
       "initialHp" : 4,
-      "currentHp" : 4,
+      "currentHp" : 0,
       "shadowEnergy" : 0,
       "itemSubType" : "WEAPON",
       "attackType" : "SWORD",
@@ -45,11 +45,11 @@
       "abilityReadied" : false,
       "effects" : [ ],
       "weapon" : null,
-      "availableForHeroClasses" : [ "WARRIOR", "PRIEST" ],
-      "uniqueId" : "ff419c2a-80c4-4662-88e9-e9c2aacf0a17"
+      "availableForHeroClasses" : [ "PRIEST", "WARRIOR" ],
+      "uniqueId" : "90b6cc1b-891c-42f5-9e72-d69788ab0b1d"
     },
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "a1b7ba5d-63c2-4aae-9f18-e90d43b069b7"
+    "uniqueId" : "9cc74f06-e598-4ad3-aca5-094bcfb619b6"
   },
   "yourHero" : {
     "code" : "se001",
@@ -62,8 +62,8 @@
     "resourceCost" : null,
     "attack" : null,
     "initialHp" : 30,
-    "currentHp" : 30,
-    "shadowEnergy" : 3,
+    "currentHp" : 18,
+    "shadowEnergy" : 2,
     "itemSubType" : null,
     "attackType" : null,
     "abilities" : [ ],
@@ -82,9 +82,9 @@
       "description" : "When an ally is killed, Mournblade gains +1 base attack up to a maximum of 5.",
       "cardType" : "ITEM",
       "resourceCost" : 5,
-      "attack" : 0,
+      "attack" : 6,
       "initialHp" : 4,
-      "currentHp" : 4,
+      "currentHp" : 1,
       "shadowEnergy" : 0,
       "itemSubType" : "WEAPON",
       "attackType" : "SWORD",
@@ -96,11 +96,11 @@
       "abilityReadied" : false,
       "effects" : [ ],
       "weapon" : null,
-      "availableForHeroClasses" : [ "WARRIOR", "PRIEST" ],
-      "uniqueId" : "e3a87488-24c7-46f8-807d-2c4d7b4fcf79"
+      "availableForHeroClasses" : [ "PRIEST", "WARRIOR" ],
+      "uniqueId" : "36177b6a-4473-4b53-9f60-5e7968198a6b"
     },
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "3c31d221-e05c-411b-b96a-24099fed5d80"
+    "uniqueId" : "c0c0a33d-b69f-48a3-bd34-c40e1550a54f"
   },
   "enemyDeck" : [ {
     "code" : "se027",
@@ -126,7 +126,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "51f1cecb-c5d5-45f2-9d39-4e3d9797013e"
+    "uniqueId" : "c6cb08e1-a8b4-49bb-b942-5de066ff0da9"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -151,7 +151,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "64dd3d83-4ccf-4a61-bb24-bdcbd348d180"
+    "uniqueId" : "c141d222-1095-43fc-91d5-27caac9138b1"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -176,7 +176,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "fb717f18-fd08-4216-bf78-02ef7544c929"
+    "uniqueId" : "d34462eb-6436-4187-9d72-8edcd1f2b80a"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -201,7 +201,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "dcd9d42c-1e22-4af8-865f-094bf6938361"
+    "uniqueId" : "2c7602eb-464a-4e66-9d06-90159814f95b"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -226,7 +226,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "0417f174-645b-4fd9-83f8-338ccf15e04d"
+    "uniqueId" : "23eb8f6a-ac30-464c-b041-dbf0cff21376"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -251,7 +251,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "6123b52c-be0f-464e-b2da-598a7e045a06"
+    "uniqueId" : "d62bcc57-987c-4d5c-a1bc-99ea63ce45c7"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -276,7 +276,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "462bd41b-c525-4e5a-a6a5-6eb12bb55657"
+    "uniqueId" : "be58f370-ee74-4b47-b80a-1420fedde441"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -301,7 +301,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "437d2c11-e316-42b1-9a6c-b71e640486f5"
+    "uniqueId" : "a2d2c218-5112-40c9-b0ae-b79c5012f3da"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -326,7 +326,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "bdf7f4e4-41e2-4478-a77c-30f2a8d3be29"
+    "uniqueId" : "1e112668-27c5-408f-98c7-b15d20d0e9eb"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -351,7 +351,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "361a49ea-0885-4f3c-b417-7862d224f672"
+    "uniqueId" : "5f54f35f-5e10-4b66-bb29-40301cfe3a37"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -376,7 +376,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "612f1708-697b-4b79-86ae-055bd7b7e4b4"
+    "uniqueId" : "445d3d10-091a-4fed-aab3-03c57bd5761e"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -401,7 +401,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "88597ad9-8d96-4201-b0d5-bb19fa34a235"
+    "uniqueId" : "a74838b4-2995-43d2-b68d-c6af50d1d2f7"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -426,7 +426,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "ae179139-3d7d-424a-b593-fc307a45e330"
+    "uniqueId" : "ad3b02d2-8bd4-496b-91d4-9294c63169f0"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -451,7 +451,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "03dc3cca-c4f7-456c-9aad-5e76b34bfa67"
+    "uniqueId" : "5a758fd7-938a-4114-ba00-01b9015e8320"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -476,7 +476,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "c1ec4955-517a-489f-82ee-492ce896f232"
+    "uniqueId" : "257eb9a9-c4ca-47e3-a141-91a04b3679b9"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -501,7 +501,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "51195b05-4c4d-49b7-a6eb-ed2362f7d5ed"
+    "uniqueId" : "99444de4-605a-4a49-a68f-5ad05ff36cbf"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -526,7 +526,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "0187a197-67b9-457c-86ef-880834e91890"
+    "uniqueId" : "181196ff-bce0-49c6-8a2a-ed1bebc634a7"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -551,7 +551,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "11bb4a5d-ce30-4b71-8fec-45a94d78fa44"
+    "uniqueId" : "f9e1bbd6-b480-497b-ac8c-3da44a89509d"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -576,7 +576,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "41946970-2726-4002-9c4d-0d933cdad884"
+    "uniqueId" : "531bce67-cc23-46b7-b7e5-ced540be2f83"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -601,7 +601,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "542076de-1e71-4fee-a80a-0afc750eda1b"
+    "uniqueId" : "44c550c3-84bc-4674-8ac1-622da4806337"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -626,7 +626,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "39fc2a23-4e14-4e7a-8663-1627a2d57634"
+    "uniqueId" : "affc8c9b-fa06-4bad-b72a-138a550d2447"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -651,7 +651,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "3dc0a6a5-1d10-42d8-847c-83fead394486"
+    "uniqueId" : "0b8e4479-a0f7-41f7-b265-a74352bba29a"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -676,7 +676,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "e4568ada-2a11-4bd5-9ee8-a3b95f3fc8dd"
+    "uniqueId" : "d40681a2-c8bc-44a5-97a8-223a3d832bff"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -701,7 +701,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "720d1508-2ea8-47ee-91b9-c01cbf5148f8"
+    "uniqueId" : "f0b409f5-1953-4b8c-8674-600d33c58c77"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -726,7 +726,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "02cfdc6d-d849-4956-bcce-6c7436277ea3"
+    "uniqueId" : "654b6a70-d0bf-433d-93b4-d42934ff74d1"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -751,7 +751,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "cb0d6306-dbf9-4279-a481-9135a8e5bb72"
+    "uniqueId" : "5965e803-f1be-4d34-ba35-87428df81232"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -776,7 +776,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "73e16e5e-26d0-4db4-a96b-3b24068b8315"
+    "uniqueId" : "472965bb-5cbd-4ced-912c-50f178c2b07d"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -801,7 +801,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "860b6006-05e3-490c-b4cb-4d5c6a326b62"
+    "uniqueId" : "81b509b6-3e21-4c8b-8ce8-8ee8928cb1df"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -826,7 +826,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "228f60a0-19ea-49d5-bf71-ea213251b728"
+    "uniqueId" : "e0406b90-8369-4a45-a24c-0b567842c7ef"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -851,7 +851,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "ea1f0e14-a6bc-4595-b989-e30efe81b3bf"
+    "uniqueId" : "f3a49ae9-66fc-402f-b6f8-f7fc383e59f2"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -876,7 +876,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "e98c032f-e74f-46df-96d6-79af21341c45"
+    "uniqueId" : "87873ac5-e273-4e19-a2b2-4ebc7e6b370b"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -901,7 +901,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "e31391ed-f7ab-4ccf-9fe3-bb3b464bdd43"
+    "uniqueId" : "2234dc9a-352d-4a48-b62e-f015a7bf6ef8"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -926,7 +926,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "ad1805de-9f44-4349-b599-ca68d5e9e814"
+    "uniqueId" : "0ce5fa1f-e837-42ce-8456-54be769f9e77"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -951,57 +951,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "bd194eb6-c675-4046-8481-7c61161d8077"
-  }, {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "attack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "PROTECTOR" ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "effects" : [ ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ ],
-    "uniqueId" : "0a15b052-d1cd-431e-a3a2-91e727ccad56"
-  }, {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "attack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "PROTECTOR" ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "effects" : [ ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ ],
-    "uniqueId" : "6d8f8fb1-0fe6-4b23-9bee-bb594ae14e53"
+    "uniqueId" : "a7039c23-4043-4c4b-8be1-7aa39db8eb12"
   } ],
   "yourDeck" : [ {
     "code" : "se027",
@@ -1027,7 +977,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "2ae5fc7c-13ac-4299-ad2b-943f553d6dc3"
+    "uniqueId" : "28cde3c8-6fb7-47a5-b24c-cb35823031d9"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1052,7 +1002,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "b44cdab9-842b-4d6b-aaa3-711a043f45d7"
+    "uniqueId" : "fdd0560d-82f7-4d53-81a3-d83dd2e42b64"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1077,7 +1027,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "93f695b2-2364-4f21-99b1-765de46bed93"
+    "uniqueId" : "1f20e690-66d7-4195-a9c5-bbce75455036"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1102,7 +1052,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "f304ef8d-7234-4cbf-bd9c-8942eeacfb45"
+    "uniqueId" : "bf734006-c289-4aae-94ef-93f9e55dca16"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1127,7 +1077,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "d53bab36-e2a9-4257-8c85-7019c39f1463"
+    "uniqueId" : "f283b0fc-9bb1-43a4-9190-7d9bd68ada11"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1152,7 +1102,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "3f868b90-876a-430c-b16b-7052a51c0c8c"
+    "uniqueId" : "8f6a0483-585e-48c8-846f-781006f3e056"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1177,7 +1127,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "3aca5c51-ee46-4782-8385-d1c3c75a1a4e"
+    "uniqueId" : "3498ddc9-c9db-4330-9193-8ebb6458e9e5"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1202,7 +1152,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "e7fa8e57-47b5-43b6-91f1-fee0b1f6cea8"
+    "uniqueId" : "34e29b63-deff-4b81-b736-8380cdf2b85a"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1227,7 +1177,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "6c98f8fa-4b51-40b8-9abf-284fd09a7e0c"
+    "uniqueId" : "99fecb90-e9b0-410f-b5f8-6c153b62cd86"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1252,7 +1202,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "ea1a2bb5-18ee-4019-98df-1ebcaf8130fd"
+    "uniqueId" : "0b62eeec-ef6c-4229-9806-3b7f1ae3b68d"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1277,7 +1227,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "bc56d996-15a7-40ea-b9bd-022d8dd6ee6b"
+    "uniqueId" : "11161169-c80f-4404-9b07-a9c4e0301b08"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1302,7 +1252,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "98b01ce7-4d78-4e92-ae05-3b5bf38b7cd0"
+    "uniqueId" : "6b5b38af-125b-4604-8238-ceb6a3da67db"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1327,7 +1277,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "6a233fd7-38be-4382-939c-85586f139e6e"
+    "uniqueId" : "efa6037e-ab99-4cc9-a38f-35c8e7bed172"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1352,7 +1302,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "b82fd708-01b7-402e-bc6f-e6ee64a91deb"
+    "uniqueId" : "fb4efd2b-12a4-4ff4-b65c-a056acc8a0d5"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1377,7 +1327,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "70a37cec-034e-4e96-aad3-9ab34344e5c9"
+    "uniqueId" : "7b366693-99a9-4b04-b70f-544375f8a154"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1402,7 +1352,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "50b0b462-424f-46f0-b6fd-830f96d77006"
+    "uniqueId" : "7d60a3f8-985b-4b9f-9454-156512023cd4"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1427,7 +1377,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "b92acfcb-f1fa-4873-b7c2-62378fbd09c7"
+    "uniqueId" : "cfdc4d56-4dd4-4752-909f-3ee09a7b888a"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1452,7 +1402,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "9a729fd3-65e6-4978-821f-7af8dc651abf"
+    "uniqueId" : "d6463ec6-e6c7-4f07-92f5-1b229eb0ed5a"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1477,7 +1427,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "d7f1fff1-b7ea-4f01-a29a-f646a5791690"
+    "uniqueId" : "dda14216-8b24-4fa3-a8e8-6bd194081129"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1502,7 +1452,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "94f268ed-a356-471f-9dca-ce8f1009254a"
+    "uniqueId" : "13c51abf-1b3a-4dcd-898e-442a8012d70c"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1527,7 +1477,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "cc21e32a-e03f-43cb-b339-0ce0f05ce872"
+    "uniqueId" : "8d10ad04-b45d-4ba5-9042-fd36ad3ebedc"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1552,7 +1502,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "7e79c208-caee-4de7-979a-a79551659057"
+    "uniqueId" : "4ecca84c-3ef2-4ec0-92f3-4ed9ee045ab4"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1577,7 +1527,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "7b2c8a92-2593-4c87-985a-e50617244f1a"
+    "uniqueId" : "72031341-51ee-43eb-86a9-8404a9b74bd0"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1602,7 +1552,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "6cb6b34c-fd7d-4a7c-a68c-5494e12ce817"
+    "uniqueId" : "0c11f102-fdcb-4cba-a355-bc123732d63a"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1627,7 +1577,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "0f5c11d0-c273-455b-9272-8dc9fedf49ed"
+    "uniqueId" : "70494c76-c4d9-4fd8-88fa-56b6260863a0"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1652,7 +1602,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "494391cc-38d1-441b-909c-5827230c02e9"
+    "uniqueId" : "d64f13eb-8596-4e13-8404-c270485704ff"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1677,7 +1627,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "0fa3a7ad-4592-476e-abad-938660b23ae0"
+    "uniqueId" : "9ee62c10-6b25-4191-97ce-da5bc9ffa9ef"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1702,7 +1652,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "85a40837-5b70-4a75-a729-d2ae0ea67c35"
+    "uniqueId" : "8181a625-3af4-4a91-b54f-90f02b45243c"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1727,7 +1677,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "ab1f726c-9941-4ccb-bc4d-9a1f5b5eb3a0"
+    "uniqueId" : "b3789323-e50e-4c4a-92c5-c320decf8921"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1752,7 +1702,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "ea959021-768f-4919-a037-a9b274c7b153"
+    "uniqueId" : "9fc004fe-b7a4-4f62-a058-fb519dd23f5e"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1777,7 +1727,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "e4c3490b-419d-4a68-9905-2031b3bbe980"
+    "uniqueId" : "a5942fee-2439-4279-b1d1-e0a0d0f8c411"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1802,7 +1752,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "352681c3-8eb6-484c-afa8-cba3b66010d5"
+    "uniqueId" : "a721546d-26e1-4d09-9e27-edd978e5704d"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -1827,159 +1777,34 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "1ea4d3c0-f7d1-423a-9836-3f3bb132d311"
-  }, {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "attack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "PROTECTOR" ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "effects" : [ ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ ],
-    "uniqueId" : "b58e18af-939d-4433-83e1-bf9b587af70f"
-  }, {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "attack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "PROTECTOR" ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "effects" : [ ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ ],
-    "uniqueId" : "55386d39-acde-417b-ac50-bd6532f3fa80"
-  }, {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "attack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "PROTECTOR" ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "effects" : [ ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ ],
-    "uniqueId" : "221efc0a-17fe-4d33-869d-3a9be6492f51"
+    "uniqueId" : "120cb409-9e60-4f93-913b-9abf9ddebb11"
   } ],
-  "enemyHand" : [ {
-    "code" : "se024",
-    "rarity" : "U",
-    "name" : "Lily Rosecult",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "When Lily is summoned, return the top item from your graveyard to your hand.",
-    "cardType" : "ALLY",
-    "resourceCost" : 4,
-    "attack" : 3,
-    "initialHp" : 4,
-    "currentHp" : 4,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ ],
-    "attackReadied" : false,
-    "castable" : true,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "effects" : [ ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ ],
-    "uniqueId" : "52814629-5407-4adb-bb7b-26383b1416f0"
-  }, {
-    "code" : "se023",
-    "rarity" : null,
-    "name" : "Sandra Trueblade",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "When Sandra is summoned, target player removes one of their resources from play if their resources are greater than or equal to yours.",
-    "cardType" : "ALLY",
-    "resourceCost" : 4,
-    "attack" : 2,
-    "initialHp" : 3,
-    "currentHp" : 3,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ ],
-    "attackReadied" : false,
-    "castable" : true,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "effects" : [ ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ ],
-    "uniqueId" : "84a47e1f-f5a8-4f25-9c8c-5e401d08b90e"
-  } ],
+  "enemyHand" : [ ],
   "yourHand" : [ {
-    "code" : "se024",
-    "rarity" : "U",
-    "name" : "Lily Rosecult",
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
     "side" : "HUMAN",
     "heroClass" : null,
-    "description" : "When Lily is summoned, return the top item from your graveyard to your hand.",
+    "description" : "Protector (Allies without protector can't be targeted.)",
     "cardType" : "ALLY",
-    "resourceCost" : 4,
-    "attack" : 3,
-    "initialHp" : 4,
-    "currentHp" : 4,
+    "resourceCost" : 1,
+    "attack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-    "abilities" : [ ],
+    "abilities" : [ "PROTECTOR" ],
     "attackReadied" : false,
-    "castable" : false,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "6f51c3f2-40d8-4be0-b98f-c3e8c66567eb"
+    "uniqueId" : "74351b27-3995-4e11-a9ab-e728fd47480e"
   } ],
   "enemyGraveyard" : [ {
     "code" : "se027",
@@ -2005,9 +1830,109 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "d15c630d-7773-4929-8dd7-ea74a506d81d"
+    "uniqueId" : "ddf7eec3-e4eb-479d-8ac7-355dffb81526"
+  }, {
+    "code" : "se024",
+    "rarity" : "U",
+    "name" : "Lily Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "When Lily is summoned, return the top item from your graveyard to your hand.",
+    "cardType" : "ALLY",
+    "resourceCost" : 4,
+    "attack" : 3,
+    "initialHp" : 4,
+    "currentHp" : -1,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "effects" : [ ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ ],
+    "uniqueId" : "0795dcaa-1b80-4a08-940d-68eec42428cd"
   } ],
-  "yourGraveyard" : [ ],
+  "yourGraveyard" : [ {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "attack" : 0,
+    "initialHp" : 2,
+    "currentHp" : -1,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "PROTECTOR" ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "effects" : [ ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ ],
+    "uniqueId" : "1e96cd1c-bd74-4165-9ebe-89706c9bee02"
+  }, {
+    "code" : "se023",
+    "rarity" : null,
+    "name" : "Sandra Trueblade",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "When Sandra is summoned, target player removes one of their resources from play if their resources are greater than or equal to yours.",
+    "cardType" : "ALLY",
+    "resourceCost" : 4,
+    "attack" : 2,
+    "initialHp" : 3,
+    "currentHp" : -2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "effects" : [ ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ ],
+    "uniqueId" : "6c13a0a4-13cc-42d0-91ae-6a3b6fc7eb32"
+  }, {
+    "code" : "se024",
+    "rarity" : "U",
+    "name" : "Lily Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "When Lily is summoned, return the top item from your graveyard to your hand.",
+    "cardType" : "ALLY",
+    "resourceCost" : 4,
+    "attack" : 3,
+    "initialHp" : 4,
+    "currentHp" : 0,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "effects" : [ ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ ],
+    "uniqueId" : "394e1275-943e-4817-af9e-4b3b1fffdc1a"
+  } ],
   "enemyResources" : [ {
     "code" : "se023",
     "rarity" : null,
@@ -2032,7 +1957,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "a48fa078-c3ad-4f26-9a31-ff0fff9c36d3"
+    "uniqueId" : "5ec3bca6-db2e-4dbe-870e-ec72a850e7aa"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -2057,7 +1982,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "920191fe-94a8-46fa-826c-93bb0748591a"
+    "uniqueId" : "0929d365-6b81-4af2-8a26-7c3afe9a74b3"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -2082,7 +2007,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "72b9951d-bc0d-4571-a145-00e0f3ca88ea"
+    "uniqueId" : "0f378894-0ac3-4c64-9e5e-c64faf7ba038"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -2107,7 +2032,57 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "ee2f539b-2d14-4130-b82c-5aa04a116770"
+    "uniqueId" : "7fe9a4fb-2f6f-4565-b7b6-2838f813830d"
+  }, {
+    "code" : "se023",
+    "rarity" : null,
+    "name" : "Sandra Trueblade",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "When Sandra is summoned, target player removes one of their resources from play if their resources are greater than or equal to yours.",
+    "cardType" : "ALLY",
+    "resourceCost" : 4,
+    "attack" : 2,
+    "initialHp" : 3,
+    "currentHp" : 3,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ ],
+    "attackReadied" : false,
+    "castable" : true,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "effects" : [ ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ ],
+    "uniqueId" : "81ee3c2f-456a-424c-a374-ee17fb198d9d"
+  }, {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "attack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "PROTECTOR" ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "effects" : [ ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ ],
+    "uniqueId" : "1e23907c-9a83-42af-bced-207cfa97fdc5"
   } ],
   "yourResources" : [ {
     "code" : "se023",
@@ -2133,7 +2108,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "17a370b9-5f2a-4515-868b-4ed23840630f"
+    "uniqueId" : "a693af5e-1d63-4170-894e-369b9d265873"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -2158,7 +2133,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "b35570d1-f8f4-47a4-9fcc-fee32d0d8e5e"
+    "uniqueId" : "4f480b99-bf5d-4e82-b646-5e8f8b088605"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -2183,7 +2158,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "0c1b683e-de9c-4582-8333-09d6af3e065d"
+    "uniqueId" : "a206eb85-281b-4bd6-8e0d-c7cb02b80721"
   }, {
     "code" : "se027",
     "rarity" : null,
@@ -2208,11 +2183,61 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "e61e6946-033e-4b00-b9a1-7d75dff1679d"
+    "uniqueId" : "1201ef9a-ef30-458a-847c-4eeac5b6b657"
+  }, {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "attack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "PROTECTOR" ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "effects" : [ ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ ],
+    "uniqueId" : "2fcfe964-ead3-44b3-b1e3-b01a53bba74f"
   } ],
-  "yourCurrentResources" : 0,
-  "enemyCurrentResources" : 4,
+  "yourCurrentResources" : 5,
+  "enemyCurrentResources" : 3,
   "enemyAllies" : [ {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "attack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "PROTECTOR" ],
+    "attackReadied" : true,
+    "castable" : true,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : true,
+    "effects" : [ ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ ],
+    "uniqueId" : "378b4859-8101-46c5-a861-7ec447631ec6"
+  }, {
     "code" : "se021",
     "rarity" : "U",
     "name" : "Jasmine Rosecult",
@@ -2223,7 +2248,7 @@
     "resourceCost" : 3,
     "attack" : 3,
     "initialHp" : 4,
-    "currentHp" : 4,
+    "currentHp" : 2,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
@@ -2236,34 +2261,9 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "483b545b-e4ec-426b-b341-f5fdcddf5592"
+    "uniqueId" : "27b8572d-1a62-4764-b241-d77e33632c9e"
   } ],
   "yourAllies" : [ {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "attack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "PROTECTOR" ],
-    "attackReadied" : true,
-    "castable" : true,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : true,
-    "effects" : [ ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ ],
-    "uniqueId" : "2690a820-437e-479e-9950-d31a0c5f84de"
-  }, {
     "code" : "se021",
     "rarity" : "U",
     "name" : "Jasmine Rosecult",
@@ -2287,23 +2287,23 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "a8d2239a-6180-45f9-a660-30729033ad06"
+    "uniqueId" : "fc7f48e0-127d-4c8e-ac8e-115969acebff"
   }, {
-    "code" : "se023",
+    "code" : "se027",
     "rarity" : null,
-    "name" : "Sandra Trueblade",
+    "name" : "Birgitte Skullborn",
     "side" : "HUMAN",
     "heroClass" : null,
-    "description" : "When Sandra is summoned, target player removes one of their resources from play if their resources are greater than or equal to yours.",
+    "description" : "Protector (Allies without protector can't be targeted.)",
     "cardType" : "ALLY",
-    "resourceCost" : 4,
-    "attack" : 2,
-    "initialHp" : 3,
-    "currentHp" : 3,
+    "resourceCost" : 1,
+    "attack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-    "abilities" : [ ],
+    "abilities" : [ "PROTECTOR" ],
     "attackReadied" : true,
     "castable" : true,
     "possibleAttackTarget" : false,
@@ -2312,7 +2312,7 @@
     "effects" : [ ],
     "weapon" : null,
     "availableForHeroClasses" : [ ],
-    "uniqueId" : "90cb54e4-6e8d-44bb-a699-52eeabaf6af5"
+    "uniqueId" : "c4b8f50c-f332-4192-bff5-53d614acd277"
   } ],
   "enemySupport" : [ ],
   "yourSupport" : [ ],
@@ -6840,7 +6840,7 @@
       "abilityReadied" : false,
       "effects" : [ ],
       "weapon" : null,
-      "availableForHeroClasses" : [ "WARRIOR", "PRIEST" ],
+      "availableForHeroClasses" : [ "PRIEST", "WARRIOR" ],
       "uniqueId" : "5f76dd18-9327-4df6-a18a-15e290fe501b"
     }, {
       "code" : "se182",
@@ -9882,7 +9882,7 @@
       "shadowEnergy" : 0,
       "itemSubType" : null,
       "attackType" : null,
-      "abilities" : [ "PROTECTOR", "STEALTH" ],
+      "abilities" : [ "STEALTH", "PROTECTOR" ],
       "attackReadied" : false,
       "castable" : false,
       "possibleAttackTarget" : false,
@@ -11182,7 +11182,7 @@
       "shadowEnergy" : 0,
       "itemSubType" : null,
       "attackType" : null,
-      "abilities" : [ "AMBUSH", "PROTECTOR", "STEALTH" ],
+      "abilities" : [ "AMBUSH", "STEALTH", "PROTECTOR" ],
       "attackReadied" : false,
       "castable" : false,
       "possibleAttackTarget" : false,
@@ -20219,7 +20219,7 @@
       "uniqueId" : "f8de7a6b-80c2-4c3b-be02-1ffa4af08367"
     } ]
   },
-  "gamePhase" : "ENEMY_ACTION",
+  "gamePhase" : "YOU_ACTION",
   "attackSource" : null,
   "abilitySource" : null
 }

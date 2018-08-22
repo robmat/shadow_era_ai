@@ -3,12 +3,11 @@ package edu.bator.cards;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Objects;
-import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
 
 import edu.bator.cards.effects.Effect;
-import edu.bator.cards.enums.CardEnums;
+import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.AllArgsConstructor;
@@ -166,28 +165,33 @@ public class Card implements Cloneable {
             if (nonNull(attackSource.getAttack()) && nonNull(getCurrentHp())) {
                 setCurrentHp(getCurrentHp() - attackSource.getAttack());
             }
-            attackBack(attackSource);
+            attackBack(attackSource, gameState);
         }
         Card weapon = attackSource.getWeapon();
         if (attackSource.cardIsAHero() && nonNull(weapon)) {
             setCurrentHp(getCurrentHp() - weapon.getAttack());
-            if (nonNull(weapon.getCurrentHp())) {
-                weapon.setCurrentHp(weapon.getCurrentHp() - 1);
-            }
-            attackBack(attackSource);
+            reduceWeaponHp(gameState, weapon);
+            attackBack(attackSource, gameState);
         }
     }
 
-    private void attackBack(Card attackSource) {
+    private void reduceWeaponHp(GameState gameState, Card weapon) {
+        if (nonNull(weapon.getCurrentHp())) {
+            weapon.setCurrentHp(weapon.getCurrentHp() - 1);
+            if (weapon.cardIsDead()) {
+                new GameEngine().cardDied(weapon, gameState);
+            }
+        }
+    }
+
+    private void attackBack(Card attackSource, GameState gameState) {
         if (!cardIsDead() && !attackSource.getAbilities().contains(Ability.AMBUSH)) {
             if (nonNull(attackSource.getCurrentHp()) && nonNull(getAttack())) {
                 attackSource.setCurrentHp(attackSource.getCurrentHp() - getAttack());
             }
             if (nonNull(attackSource.getCurrentHp()) && nonNull(getWeapon()) && nonNull(getWeapon().getAttack())) {
                 attackSource.setCurrentHp(attackSource.getCurrentHp() - getWeapon().getAttack());
-                if (nonNull(weapon.getCurrentHp())) {
-                    weapon.setCurrentHp(weapon.getCurrentHp() - 1);
-                }
+                reduceWeaponHp(gameState, weapon);
             }
         }
     }
