@@ -88,6 +88,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Shield Bash"));
         yourHand.add(allCardsSet.cloneByName("Shield Bash"));
 
+        enemyHand.add(allCardsSet.cloneByName("Erika Shadowhunter"));
+        yourHand.add(allCardsSet.cloneByName("Erika Shadowhunter"));
 
         log.info("Init done.");
     }

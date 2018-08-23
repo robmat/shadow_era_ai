@@ -7,6 +7,7 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.function.BiConsumer;
 
+import com.google.common.collect.Iterables;
 import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
@@ -133,7 +134,8 @@ public class Card implements Cloneable {
     }
 
     public void calculatePossibleAttackTarget(Card attackSource, GameState gameState) {
-        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
+        boolean isNotStealth = !getAbilities().contains(Ability.STEALTH);
+        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState) && isNotStealth;
 
         if (cardIsAHero()) {
             setPossibleAttackTarget(true);
@@ -150,6 +152,7 @@ public class Card implements Cloneable {
         boolean hasProtector = getAbilities().contains(Ability.PROTECTOR);
         boolean isAllyWithProtector = cardIsAnAlly() && hasProtector;
         boolean isAllyAndNoOtherHasProtector = cardIsAnAlly() && !otherAllyHasProtector;
+
         return isAllyWithProtector || isAllyAndNoOtherHasProtector;
     }
 

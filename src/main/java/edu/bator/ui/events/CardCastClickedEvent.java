@@ -22,6 +22,8 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
+        gameState.resetPossibleAbiltyTargets();
+        gameState.resetPossibleAttackTargets();
         if (gameState.cardIsInHand(card) && GameEngine.ACTION_PHASES
                 .contains(gameState.getGamePhase())) {
             if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {

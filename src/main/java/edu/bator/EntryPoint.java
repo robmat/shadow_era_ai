@@ -12,11 +12,17 @@ import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.GamePainter;
+import edu.bator.ui.LogginExceptionHandler;
+import edu.bator.ui.events.SkipSacrificeClickedEvent;
+import edu.bator.ui.events.TurnSkipClickedEvent;
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyCharacterCombination;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
@@ -38,6 +44,7 @@ public class EntryPoint extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        Thread.setDefaultUncaughtExceptionHandler(new LogginExceptionHandler());
         try {
             primaryStage.getIcons().add(new Image(getClass().getResource("/icon.png").toURI().toURL().toString()));
         } catch (MalformedURLException | URISyntaxException e) {
@@ -87,7 +94,7 @@ public class EntryPoint extends Application {
 
         log.info("Started.");
 
-        gamePainter.getLoadButton().setOnMouseClicked((event) -> {
+        EventHandler<MouseEvent> loadEvent = (event) -> {
             try {
                 AllCardsSet allCardsSet = gameState.getAllCardsSet();
                 gameState = objectJsonMapper.readValue(new File("save.json"), GameState.class);
@@ -116,16 +123,23 @@ public class EntryPoint extends Application {
             } catch (Exception e) {
                 log.error("Load crashed.", e);
             }
-        });
+        };
+        gamePainter.getLoadButton().setOnMouseClicked(loadEvent);
 
-        gamePainter.getSaveButton().setOnMouseClicked((event) -> {
+        EventHandler<MouseEvent> saveEvent = (event) -> {
             try {
                 objectJsonMapper.writerWithDefaultPrettyPrinter()
                         .writeValue(new File("save.json"), gameState);
             } catch (Exception e) {
                 log.error("Save crashed.", e);
             }
-        });
+        };
+        gamePainter.getSaveButton().setOnMouseClicked(saveEvent);
+
+        scene.getAccelerators().put(new KeyCharacterCombination("l"), () -> loadEvent.handle(null));
+        scene.getAccelerators().put(new KeyCharacterCombination("s"), () -> saveEvent.handle(null));
+        scene.getAccelerators().put(new KeyCharacterCombination("e"), () -> new TurnSkipClickedEvent(gameState).handle(null));
+        scene.getAccelerators().put(new KeyCharacterCombination("s"), () -> new SkipSacrificeClickedEvent(gameState).handle(null));
     }
 
     private void replaceCardsWithImplementors(AllCardsSet allCardsSet, LinkedList<Card> originalCards)

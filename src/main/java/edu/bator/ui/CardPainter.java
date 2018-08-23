@@ -41,7 +41,6 @@ class CardPainter {
     private static final Border LIGHTGREEN_BORDER = new Border(
             new BorderStroke(Color.LIGHTGREEN, BorderStrokeStyle.DASHED, CornerRadii.EMPTY,
                     BorderStroke.MEDIUM));
-    private static final Logger log = Logger.getLogger(CardPainter.class);
 
     @SuppressWarnings("unchecked")
     void paint(Card card, GridPane enemyHand, int index, GameState gameState) {
