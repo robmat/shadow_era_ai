@@ -22,6 +22,7 @@ import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
 
+import static edu.bator.EntryPoint.objectJsonMapper;
 import static edu.bator.cards.enums.CardEnums.Ability;
 import static edu.bator.cards.enums.CardEnums.AttackType;
 import static edu.bator.cards.enums.CardEnums.CardType;
@@ -196,7 +197,7 @@ public class CardParser {
         Path resultPath = Paths.get("result.txt");
         Files.write(resultPath, cards.stream().map(Card::toString).collect(Collectors.toList()));
         Files.write(Paths.get("src", "main", "resources", "cards.json"),
-                new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));
+                objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));
     }
 
     public static Integer parseIntInChildIfPresent(Node node) {

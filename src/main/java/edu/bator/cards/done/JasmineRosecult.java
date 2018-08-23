@@ -1,5 +1,7 @@
 package edu.bator.cards.done;
 
+import java.util.function.BiConsumer;
+
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.cards.effects.InLoveEffect;
@@ -33,17 +35,20 @@ public class JasmineRosecult extends Ally {
 
     @Override
     public void applyAbility(Card card, GameState gameState) {
-        GamePhase gamePhase = gameState.getGamePhase();
-        int turnWhenExpires = gameState.getCurrentTurn() + 1;
-        if (gamePhase.equals(GamePhase.YOU_ACTION)) {
-            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - 2);
-            gamePhase = GamePhase.ENEMY_PREPARE;
-        }
-        if (gamePhase.equals(GamePhase.ENEMY_ACTION)) {
-            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - 2);
-            gamePhase = GamePhase.YOU_PREPARE;
-            turnWhenExpires++;
-        }
-        card.getEffects().add(new InLoveEffect(turnWhenExpires, gamePhase));
+        BiConsumer<Card, GameState> abilityFunction = (card1, gameState1) -> {
+            GamePhase gamePhase = gameState1.getGamePhase();
+            int turnWhenExpires = gameState1.getCurrentTurn() + 1;
+            if (gamePhase.equals(GamePhase.YOU_ACTION)) {
+                gameState1.setYourCurrentResources(gameState1.getYourCurrentResources() - 2);
+                gamePhase = GamePhase.ENEMY_PREPARE;
+            }
+            if (gamePhase.equals(GamePhase.ENEMY_ACTION)) {
+                gameState1.setEnemyCurrentResources(gameState1.getEnemyCurrentResources() - 2);
+                gamePhase = GamePhase.YOU_PREPARE;
+                turnWhenExpires++;
+            }
+            card1.getEffects().add(new InLoveEffect(turnWhenExpires, gamePhase));
+        };
+       card.applyAbility(abilityFunction, gameState);
     }
 }

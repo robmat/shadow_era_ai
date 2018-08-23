@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
+import java.util.function.BiConsumer;
 
 import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
@@ -217,6 +218,9 @@ public class Card implements Cloneable {
     }
 
     public void applyAbility(Card card, GameState gameState) {
+    }
+    public void applyAbility(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {
+        abilityFunction.accept(this, gameState);
     }
 
     public void resetFlags() {

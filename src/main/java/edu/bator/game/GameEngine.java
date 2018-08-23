@@ -142,4 +142,13 @@ public class GameEngine {
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
         }
     }
+
+    public void moveToGraveYard(Card card, GameState gameState) {
+        if (gameState.getEnemyHand().remove(card)) {
+            gameState.getEnemyGraveyard().add(card);
+        }
+        if (gameState.getYourHand().remove(card)) {
+            gameState.getYourGraveyard().add(card);
+        }
+    }
 }

@@ -13,6 +13,9 @@ public class InLoveEffect extends Effect {
 
     boolean inLoveEffect = true;
 
+    public InLoveEffect() {
+    }
+
     public InLoveEffect(Integer turn, GamePhase gamePhase) {
         setEffectType(EffectType.IN_LOVE);
         setGamePhaseWhenExpires(gamePhase);

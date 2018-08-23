@@ -1,5 +1,7 @@
 package edu.bator.cards.done;
 
+import java.util.function.BiConsumer;
+
 import edu.bator.cards.Card;
 import edu.bator.cards.Hero;
 import edu.bator.game.GameEngine;
@@ -34,9 +36,15 @@ public class BorisSkullcrusher extends Hero {
 
     @Override
     public void applyAbility(Card card, GameState gameState) {
-        if (card.cardIsAnAlly() && card.getResourceCost() <= 4) {
-            new GameEngine().cardDied(card, gameState);
-            setShadowEnergy(getShadowEnergy() - 4);
-        }
+        BiConsumer<Card, GameState> abilityFunction = new BiConsumer<Card, GameState>() {
+            @Override
+            public void accept(Card card, GameState gameState) {
+                if (card.cardIsAnAlly() && card.getResourceCost() <= 4) {
+                    new GameEngine().cardDied(card, gameState);
+                    setShadowEnergy(getShadowEnergy() - 4);
+                }
+            }
+        };
+        card.applyAbility(abilityFunction, gameState);
     }
 }

@@ -1,6 +1,7 @@
 package edu.bator.ui.events;
 
 import edu.bator.cards.Card;
+import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
@@ -22,8 +23,11 @@ public class AbilityTargetClickedEvent implements EventHandler<MouseEvent> {
     public void handle(MouseEvent event) {
         gameState.getAbilitySource().applyAbility(this.card, gameState);
         gameState.getAbilitySource().setAbilityReadied(false);
-        gameState.setAbilitySource(null);
         gameState.resetPossibleAbiltyTargets();
+        if (gameState.getAbilitySource().cardIsAnAbility()) {
+            new GameEngine().moveToGraveYard(gameState.getAbilitySource(), gameState);
+        }
+        gameState.setAbilitySource(null);
         gameState.repaint();
     }
 }

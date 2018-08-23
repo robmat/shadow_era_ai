@@ -28,9 +28,11 @@ public class EntryPoint extends Application {
     private static final Logger log = getLogger(EntryPoint.class);
     private GameState gameState = new GameState();
     private GamePainter gamePainter = new GamePainter();
+    public static ObjectMapper objectJsonMapper = new ObjectMapper();
 
     public static void main(String[] args) {
         log.info("Starting.");
+        objectJsonMapper.enableDefaultTyping();
         launch(args);
     }
 
@@ -88,7 +90,7 @@ public class EntryPoint extends Application {
         gamePainter.getLoadButton().setOnMouseClicked((event) -> {
             try {
                 AllCardsSet allCardsSet = gameState.getAllCardsSet();
-                gameState = new ObjectMapper().readValue(new File("save.json"), GameState.class);
+                gameState = objectJsonMapper.readValue(new File("save.json"), GameState.class);
                 gameState.setGamePainter(gamePainter);
                 gameState.setEnemyHero(allCardsSet.replaceWithImplementingCard(gameState.getEnemyHero()));
                 gameState.setYourHero(allCardsSet.replaceWithImplementingCard(gameState.getYourHero()));
@@ -118,7 +120,7 @@ public class EntryPoint extends Application {
 
         gamePainter.getSaveButton().setOnMouseClicked((event) -> {
             try {
-                new ObjectMapper().writerWithDefaultPrettyPrinter()
+                objectJsonMapper.writerWithDefaultPrettyPrinter()
                         .writeValue(new File("save.json"), gameState);
             } catch (Exception e) {
                 log.error("Save crashed.", e);

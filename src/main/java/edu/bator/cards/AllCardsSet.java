@@ -13,6 +13,8 @@ import lombok.Builder;
 import lombok.Data;
 import org.apache.log4j.Logger;
 
+import static edu.bator.EntryPoint.objectJsonMapper;
+
 @Data
 @AllArgsConstructor
 @Builder
@@ -29,8 +31,7 @@ public class AllCardsSet {
     private void readCards() {
         try {
             LinkedList<Card> cardsList = new LinkedList<>();
-            ObjectMapper objectMapper = new ObjectMapper();
-            allCards = objectMapper
+            allCards = new ObjectMapper()
                     .readValue(new File(this.getClass().getResource("/cards.json").toURI()),
                             new TypeReference<LinkedList<Card>>() {
                             });

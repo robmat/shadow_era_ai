@@ -9,6 +9,7 @@ public class GraveyardLinkedList extends LinkedList<Card> {
     @Override
     public boolean add(Card card) {
         card.resetFlags();
+        card.getEffects().clear();
         return super.add(card);
     }
 }

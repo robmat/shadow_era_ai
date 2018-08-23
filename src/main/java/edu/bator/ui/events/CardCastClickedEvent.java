@@ -27,6 +27,7 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
             if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
                 if (card.cardIsAnAbility()) {
                     gameState.allCardsInPlay().forEach(target -> target.calculatePossibleAbilityTarget(card, gameState));
+                    gameState.setAbilitySource(card);
                 } else if (gameState.getEnemyHand().remove(card)) {
                     if (card.cardIsAnAlly()) {
                         gameState.getEnemyAllies().add(card);
@@ -43,6 +44,7 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
             if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
                 if (card.cardIsAnAbility()) {
                     gameState.allCardsInPlay().forEach(target -> target.calculatePossibleAbilityTarget(card, gameState));
+                    gameState.setAbilitySource(card);
                 } else if (gameState.getYourHand().remove(card)) {
                     if (card.cardIsAnAlly()) {
                         gameState.getYourAllies().add(card);
