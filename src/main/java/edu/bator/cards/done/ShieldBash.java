@@ -4,11 +4,12 @@ import java.util.Objects;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
+import edu.bator.cards.Ability;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 
-public class ShieldBash extends Card {
+public class ShieldBash extends Ability {
 
     public ShieldBash(Card cloneFrom) {
         super(cloneFrom);

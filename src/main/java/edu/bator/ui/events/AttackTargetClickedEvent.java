@@ -24,9 +24,11 @@ public class AttackTargetClickedEvent implements EventHandler<MouseEvent> {
         Card attackTarget = this.card;
         Card attackSource = gameState.getAttackSource();
 
-        attackTarget.attackedBy(gameState, attackSource);
+        attackSource.attackTarget(gameState, attackTarget);
 
-        moveToGraveyardIfDead(attackTarget);
+        if (moveToGraveyardIfDead(attackTarget)) { TODO test attacks!
+            attackTarget.attackTarget(gameState, attackSource);
+        }
         moveToGraveyardIfDead(attackSource);
 
         log.info(String.format("%s attacked %s", attackTarget, attackSource));
@@ -37,9 +39,11 @@ public class AttackTargetClickedEvent implements EventHandler<MouseEvent> {
         gameState.repaint();
     }
 
-    private void moveToGraveyardIfDead(Card card) {
+    private boolean moveToGraveyardIfDead(Card card) {
         if (card.cardIsDead()) {
             new GameEngine().cardDied(card, gameState);
+            return true;
         }
+        return false;
     }
 }

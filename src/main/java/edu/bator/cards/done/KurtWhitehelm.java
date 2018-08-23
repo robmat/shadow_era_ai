@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
 
+import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GameState;
 
-public class KurtWhitehelm extends Card {
+public class KurtWhitehelm extends Ally {
 
     public KurtWhitehelm(Card cloneFrom) {
         super(cloneFrom);

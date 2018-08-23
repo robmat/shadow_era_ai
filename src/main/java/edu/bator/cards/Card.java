@@ -7,18 +7,14 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.function.BiConsumer;
 
-import com.google.common.collect.Iterables;
 import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
-import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import static edu.bator.cards.enums.CardEnums.Ability;
 import static edu.bator.cards.enums.CardEnums.AttackType;
@@ -176,38 +172,18 @@ public class Card implements Cloneable {
         return nonNull(getCurrentHp()) && getCurrentHp() <= 0;
     }
 
-    public void attackedBy(GameState gameState, Card attackSource) {
-        if (attackSource.cardIsAnAlly()) {
-            if (nonNull(attackSource.getAttack(gameState)) && nonNull(getCurrentHp())) {
-                setCurrentHp(getCurrentHp() - attackSource.getAttack(gameState));
-            }
-            attackBack(attackSource, gameState);
-        }
-        Card weapon = attackSource.getWeapon();
-        if (attackSource.cardIsAHero() && nonNull(weapon)) {
-            setCurrentHp(getCurrentHp() - weapon.getAttack(gameState));
-            reduceWeaponHp(gameState, weapon);
-            attackBack(attackSource, gameState);
-        }
+    public void attackTarget(GameState gameState, Card target) {
     }
 
-    private void reduceWeaponHp(GameState gameState, Card weapon) {
+    void attackTarget(BiConsumer<GameState, Card> attackEvent, Card target, GameState gameState) {
+        attackEvent.accept(gameState, target);
+    }
+
+    void reduceWeaponHp(GameState gameState, Card weapon) {
         if (nonNull(weapon.getCurrentHp())) {
             weapon.setCurrentHp(weapon.getCurrentHp() - 1);
             if (weapon.cardIsDead()) {
                 new GameEngine().cardDied(weapon, gameState);
-            }
-        }
-    }
-
-    private void attackBack(Card attackSource, GameState gameState) {
-        if (!cardIsDead() && !attackSource.getAbilities().contains(Ability.AMBUSH)) {
-            if (nonNull(attackSource.getCurrentHp()) && nonNull(getAttack(gameState))) {
-                attackSource.setCurrentHp(attackSource.getCurrentHp() - getAttack(gameState));
-            }
-            if (nonNull(attackSource.getCurrentHp()) && nonNull(getWeapon()) && nonNull(getWeapon().getAttack(gameState))) {
-                attackSource.setCurrentHp(attackSource.getCurrentHp() - getWeapon().getAttack(gameState));
-                reduceWeaponHp(gameState, weapon);
             }
         }
     }
