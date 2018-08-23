@@ -13,7 +13,7 @@ public class Mournblade extends Weapon {
     @Override
     public void cardHasDiedEvent(Card card, GameState gameState) {
         if (card.cardIsAnAlly()) {
-            setAttack(getAttack() + 1);
+            setAttack(getAttack(gameState) + 1);
         }
     }
 }

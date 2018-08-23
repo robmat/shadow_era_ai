@@ -11,10 +11,13 @@ import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import static edu.bator.cards.enums.CardEnums.Ability;
 import static edu.bator.cards.enums.CardEnums.AttackType;
@@ -52,7 +55,7 @@ public class Card implements Cloneable {
 
     Set<Ability> abilities = new HashSet<>();
 
-    boolean attackReadied, castable, possibleAttackTarget, possibleAbilityTarget, abilityReadied = false;
+    boolean attackReadied, castable, possibleAttackTarget, possibleAbilityTarget, abilityReadied, unique = false;
 
     LinkedList<Effect> effects = new LinkedList<>();
 
@@ -93,6 +96,7 @@ public class Card implements Cloneable {
             throw new RuntimeException(e);
         }
         this.availableForHeroClasses = cloneFrom.availableForHeroClasses;
+        this.unique = cloneFrom.unique;
     }
 
     public void tryToReadyAttack() {
@@ -161,20 +165,24 @@ public class Card implements Cloneable {
         return CardType.HERO.equals(cardType);
     }
 
+    public boolean cardIsAWeapon() {
+        return ItemSubType.WEAPON.equals(getItemSubType());
+    }
+
     public boolean cardIsDead() {
         return nonNull(getCurrentHp()) && getCurrentHp() <= 0;
     }
 
     public void attackedBy(GameState gameState, Card attackSource) {
         if (attackSource.cardIsAnAlly()) {
-            if (nonNull(attackSource.getAttack()) && nonNull(getCurrentHp())) {
-                setCurrentHp(getCurrentHp() - attackSource.getAttack());
+            if (nonNull(attackSource.getAttack(gameState)) && nonNull(getCurrentHp())) {
+                setCurrentHp(getCurrentHp() - attackSource.getAttack(gameState));
             }
             attackBack(attackSource, gameState);
         }
         Card weapon = attackSource.getWeapon();
         if (attackSource.cardIsAHero() && nonNull(weapon)) {
-            setCurrentHp(getCurrentHp() - weapon.getAttack());
+            setCurrentHp(getCurrentHp() - weapon.getAttack(gameState));
             reduceWeaponHp(gameState, weapon);
             attackBack(attackSource, gameState);
         }
@@ -191,11 +199,11 @@ public class Card implements Cloneable {
 
     private void attackBack(Card attackSource, GameState gameState) {
         if (!cardIsDead() && !attackSource.getAbilities().contains(Ability.AMBUSH)) {
-            if (nonNull(attackSource.getCurrentHp()) && nonNull(getAttack())) {
-                attackSource.setCurrentHp(attackSource.getCurrentHp() - getAttack());
+            if (nonNull(attackSource.getCurrentHp()) && nonNull(getAttack(gameState))) {
+                attackSource.setCurrentHp(attackSource.getCurrentHp() - getAttack(gameState));
             }
-            if (nonNull(attackSource.getCurrentHp()) && nonNull(getWeapon()) && nonNull(getWeapon().getAttack())) {
-                attackSource.setCurrentHp(attackSource.getCurrentHp() - getWeapon().getAttack());
+            if (nonNull(attackSource.getCurrentHp()) && nonNull(getWeapon()) && nonNull(getWeapon().getAttack(gameState))) {
+                attackSource.setCurrentHp(attackSource.getCurrentHp() - getWeapon().getAttack(gameState));
                 reduceWeaponHp(gameState, weapon);
             }
         }
@@ -231,6 +239,17 @@ public class Card implements Cloneable {
         setCastable(false);
     }
 
+    public boolean canAttack(GameState gameState) {
+        return isAttackReadied() && nonNull(getAttack(gameState)) && getAttack(gameState).compareTo(0) > 0;
+    }
+
+    public Integer getAttack(GameState gameState) {
+        return attack;
+    }
+
+    public void cardHasDiedEvent(Card card, GameState gameState) {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -242,17 +261,6 @@ public class Card implements Cloneable {
     @Override
     public int hashCode() {
         return Objects.hash(getUniqueId());
-    }
-
-    public boolean canAttack() {
-        return isAttackReadied() && nonNull(getAttack()) && getAttack() > 0;
-    }
-
-    public void cardHasDiedEvent(Card card, GameState gameState) {
-    }
-
-    public boolean cardIsAWeapon() {
-        return ItemSubType.WEAPON.equals(getItemSubType());
     }
 
     @Override

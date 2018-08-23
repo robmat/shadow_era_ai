@@ -82,8 +82,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
         yourHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
 
-        enemyHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
-        yourHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
+        enemyHand.add(allCardsSet.cloneByName("Kurt Whitehelm"));
+        yourHand.add(allCardsSet.cloneByName("Kurt Whitehelm"));
 
         enemyHand.add(allCardsSet.cloneByName("Shield Bash"));
         yourHand.add(allCardsSet.cloneByName("Shield Bash"));
@@ -141,7 +141,7 @@ public class GameState {
     public List<Card> currentHeroAlliesAndSupportCardsBasedOnPhase() {
         if (GamePhase.YOU_ACTION.equals(gamePhase)) return enemyHeroAlliesAndSupportCards();
         if (GamePhase.ENEMY_ACTION.equals(gamePhase)) return yourHeroAlliesAndSupportCards();
-        return null;
+        return new LinkedList<>();
     }
 
     public void resetPossibleAbiltyTargets() {
@@ -163,7 +163,7 @@ public class GameState {
     public List<Card> currentEnemyHandBasedOnPhase() {
         if (GamePhase.YOU_ACTION.equals(gamePhase)) return getEnemyHand();
         if (GamePhase.ENEMY_ACTION.equals(gamePhase)) return getYourHand();
-        return null;
+        return new LinkedList<>();
     }
 
     public List<Card> currentEnemyHeroAndAlliesBasedOnPhase() {
@@ -196,6 +196,16 @@ public class GameState {
         if (GamePhase.ENEMY_ACTION.equals(gamePhase)) {
             return yourAllies;
         }
-        return null;
+        return new LinkedList<>();
+    }
+
+    public List<Card> currentYourAlliesBasedOnPhase() {
+        if (GamePhase.YOU_ACTION.equals(gamePhase)) {
+            return yourAllies;
+        }
+        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) {
+            return enemyAllies;
+        }
+        return new LinkedList<>();
     }
 }

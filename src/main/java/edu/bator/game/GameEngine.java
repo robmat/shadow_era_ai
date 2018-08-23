@@ -151,4 +151,9 @@ public class GameEngine {
             gameState.getYourGraveyard().add(card);
         }
     }
+
+    public void clearAllAbilityAndAttackTargets(GameState gameState) {
+        gameState.allCardsInPlay().forEach(card -> card.setPossibleAbilityTarget(false));
+        gameState.allCardsInPlay().forEach(card -> card.setPossibleAttackTarget(false));
+    }
 }

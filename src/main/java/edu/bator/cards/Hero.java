@@ -14,8 +14,8 @@ public class Hero extends Card {
         super(cloneFrom);
     }
 
-    public boolean canAttack() {
-        return isAttackReadied() && Objects.nonNull(weapon) && weapon.getCurrentHp() > 0 && weapon.getAttack() > 0;
+    public boolean canAttack(GameState gameState) {
+        return isAttackReadied() && Objects.nonNull(weapon) && weapon.getCurrentHp() > 0 && weapon.getAttack(gameState) > 0;
     }
 
     @Override

@@ -61,7 +61,7 @@ class CardPainter {
                 .append(" ")
                 .append(card.getAbilities().isEmpty() ? "" : card.getAbilities());
 
-        buildWeaponText(card, tooltipBuilder);
+        buildWeaponText(card, tooltipBuilder, gameState);
 
         String tooltipText = tooltipBuilder.toString();
 
@@ -72,8 +72,8 @@ class CardPainter {
         gridPane.add(cardImage, 0, 0, 2, 1);
 
         //row 2
-        if (Objects.nonNull(card.getAttack())) {
-            gridPane.add(new Label("ATK: " + card.getAttack() + " (" + card.getAttackType() + ")"), 0, 1);
+        if (Objects.nonNull(card.getAttack(gameState))) {
+            gridPane.add(new Label("ATK: " + card.getAttack(gameState) + " (" + card.getAttackType() + ")"), 0, 1);
         }
 
         if (Objects.nonNull(card.getCurrentHp())) {
@@ -83,7 +83,7 @@ class CardPainter {
         //row 3
         if (card.cardIsAHero()) {
             StringBuilder text = new StringBuilder("SE: " + card.getShadowEnergy());
-            buildWeaponText(card, text);
+            buildWeaponText(card, text, gameState);
 
             gridPane.add(new Label(text.toString()), 0, 2);
         }
@@ -95,7 +95,7 @@ class CardPainter {
         }
 
         //row 4
-        if ((gameState.cardIsCurrentHero(card) || gameState.cardIsInCurrentAllies(card)) && card.canAttack()) {
+        if ((gameState.cardIsCurrentHero(card) || gameState.cardIsInCurrentAllies(card)) && card.canAttack(gameState)) {
             Button attackButton = new Button("Attack.");
             attackButton.setOnMouseClicked(new AttackClickedEvent(gameState, card));
             gridPane.add(attackButton, 0, 3, 2, 1);
@@ -139,7 +139,7 @@ class CardPainter {
 
     }
 
-    private void buildWeaponText(Card card, StringBuilder text) {
+    private void buildWeaponText(Card card, StringBuilder text, GameState gameState) {
         Optional.ofNullable(card.getWeapon()).ifPresent(weapon -> {
             text
                     .append("\nWeapon: ")
@@ -147,7 +147,7 @@ class CardPainter {
                     .append(" DUR: ")
                     .append(weapon.getCurrentHp())
                     .append(" ATK: ")
-                    .append(weapon.getAttack());
+                    .append(weapon.getAttack(gameState));
         });
     }
 }
