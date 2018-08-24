@@ -31,7 +31,7 @@ public class BorisSkullcrusher extends Hero {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        return card.cardIsAnAlly() && card.getResourceCost() <= 4;
+        return card.cardIsAnAlly() && card.getResourceCost() <= 4 && gameState.currentEnemyAlliesBasedOnPhase().contains(card);
     }
 
     @Override

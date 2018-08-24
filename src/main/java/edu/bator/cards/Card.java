@@ -105,7 +105,7 @@ public class Card implements Cloneable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    public Object clone() throws CloneNotSupportedException {
         Card clone = (Card) super.clone();
         clone.setAbilities(new HashSet<>(abilities));
         clone.setUniqueId(UUID.randomUUID().toString());
@@ -198,13 +198,16 @@ public class Card implements Cloneable {
         if (possibleAllyTarget) {
             this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this, gameState);
         }
+        if (cardIsAHero()) {
+            this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this, gameState);
+        }
     }
 
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
         return false;
     }
 
-    public void applyAbility(Card card, GameState gameState) {
+    public void applyAbility(Card target, GameState gameState) {
     }
     public void applyAbility(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {
         abilityFunction.accept(this, gameState);
@@ -230,6 +233,11 @@ public class Card implements Cloneable {
     }
 
     public Integer modifiesAllyAttack(Ally ally, GameState gameState) { return 0; }
+
+    public void resetAttackAnHp() {
+        currentHp = initialHp;
+        baseAttack = new AllCardsSet().cloneByName(name).getBaseAttack();
+    }
 
     @Override
     public boolean equals(Object o) {

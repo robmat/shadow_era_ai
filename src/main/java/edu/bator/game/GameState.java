@@ -1,8 +1,6 @@
 package edu.bator.game;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -83,8 +81,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Raven Wildheart"));
         yourHand.add(allCardsSet.cloneByName("Raven Wildheart"));
 
-        enemyHand.add(allCardsSet.cloneByName("Kurt Whitehelm"));
-        yourHand.add(allCardsSet.cloneByName("Kurt Whitehelm"));
+        enemyHand.add(allCardsSet.cloneByName("Zoe Silversmith"));
+        yourHand.add(allCardsSet.cloneByName("Zoe Silversmith"));
 
         enemyHand.add(allCardsSet.cloneByName("Shield Bash"));
         yourHand.add(allCardsSet.cloneByName("Shield Bash"));
@@ -210,5 +208,15 @@ public class GameState {
             return enemyAllies;
         }
         return new LinkedList<>();
+    }
+
+    public Card yourHeroBasedOnPhase() {
+        if (GamePhase.YOU_ACTION.equals(gamePhase)) {
+            return yourHero;
+        }
+        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) {
+            return enemyHero;
+        }
+        return null;
     }
 }

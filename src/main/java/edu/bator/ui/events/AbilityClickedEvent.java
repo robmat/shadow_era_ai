@@ -20,7 +20,7 @@ public class AbilityClickedEvent implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
-        gameState.currentHeroAlliesAndSupportCardsBasedOnPhase()
+        gameState.allCardsInPlay()
                 .forEach(target -> {
                     target.setPossibleAttackTarget(false);
                     target.setPossibleAbilityTarget(false);

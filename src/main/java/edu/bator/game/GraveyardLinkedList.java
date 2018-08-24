@@ -12,4 +12,11 @@ public class GraveyardLinkedList extends LinkedList<Card> {
         card.getEffects().clear();
         return super.add(card);
     }
+
+    @Override
+    public Card removeLast() {
+        Card card = super.removeLast();
+        card.resetAttackAnHp();
+        return card;
+    }
 }

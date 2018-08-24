@@ -156,4 +156,13 @@ public class GameEngine {
         gameState.allCardsInPlay().forEach(card -> card.setPossibleAbilityTarget(false));
         gameState.allCardsInPlay().forEach(card -> card.setPossibleAttackTarget(false));
     }
+
+    public void decreaseCurrentPlayerResources(GameState gameState, int resources) {
+        if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
+            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - 2);
+        }
+        if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
+            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - 2);
+        }
+    }
 }

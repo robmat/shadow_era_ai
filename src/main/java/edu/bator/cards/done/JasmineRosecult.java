@@ -30,7 +30,7 @@ public class JasmineRosecult extends Ally {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        return card.cardIsAnAlly();
+        return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card);
     }
 
     @Override
