@@ -17,7 +17,7 @@ public class RavenWildheart extends Ally {
         int hpBefore = target.getCurrentHp();
         attackEvent.accept(gameState, target);
         if (hpBefore > target.getCurrentHp()) {
-            target.setAttack(0);
+            target.setBaseAttack(0);
         }
     }
 }

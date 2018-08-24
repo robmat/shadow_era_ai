@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.bator.cards.Card;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
@@ -130,9 +129,9 @@ public class CardParser {
                 }
 
                 if (!longerTableRow) {
-                    card.setAttack(parseIntInChildIfPresent(row.childNode(5)));
+                    card.setBaseAttack(parseIntInChildIfPresent(row.childNode(5)));
                 } else {
-                    card.setAttack(parseIntInChildIfPresent(row.childNode(10)));
+                    card.setBaseAttack(parseIntInChildIfPresent(row.childNode(10)));
                 }
 
                 if (!longerTableRow) {
@@ -167,7 +166,7 @@ public class CardParser {
                 if (Arrays.asList(ItemSubType.ARMOR, ItemSubType.ARTIFACT, ItemSubType.TRAP)
                         .contains(card.getItemSubType()) ||
                         card.getCardType().equals(CardType.ABILITY)) {
-                    card.setAttack(null);
+                    card.setBaseAttack(null);
                 }
 
                 if (card.getCardType().equals(CardType.ALLY) || ItemSubType.WEAPON

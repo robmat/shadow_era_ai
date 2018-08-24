@@ -41,7 +41,7 @@ public class Card implements Cloneable {
     CardType cardType;
 
     Integer resourceCost;
-    Integer attack;
+    Integer baseAttack;
     Integer initialHp;
     Integer currentHp;
     Integer shadowEnergy = 0;
@@ -71,7 +71,7 @@ public class Card implements Cloneable {
         this.description = cloneFrom.description;
         this.cardType = cloneFrom.cardType;
         this.resourceCost = cloneFrom.resourceCost;
-        this.attack = cloneFrom.attack;
+        this.baseAttack = cloneFrom.baseAttack;
         this.initialHp = cloneFrom.initialHp;
         this.currentHp = cloneFrom.currentHp;
         this.itemSubType = cloneFrom.itemSubType;
@@ -223,7 +223,7 @@ public class Card implements Cloneable {
     }
 
     public Integer getAttack(GameState gameState) {
-        return attack;
+        return baseAttack;
     }
 
     public void cardHasDiedEvent(Card card, GameState gameState) {
