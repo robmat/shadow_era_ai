@@ -1,5 +1,6 @@
 package edu.bator.game;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -88,8 +89,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Shield Bash"));
         yourHand.add(allCardsSet.cloneByName("Shield Bash"));
 
-        enemyHand.add(allCardsSet.cloneByName("Erika Shadowhunter"));
-        yourHand.add(allCardsSet.cloneByName("Erika Shadowhunter"));
+        enemyHand.add(allCardsSet.cloneByName("Aldon the Brave"));
+        yourHand.add(allCardsSet.cloneByName("Aldon the Brave"));
 
         log.info("Init done.");
     }
@@ -151,7 +152,7 @@ public class GameState {
     }
 
     public List<Card> allCardsInPlay() {
-        return Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()).collect(Collectors.toList());
+        return Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()).distinct().collect(Collectors.toList());
     }
 
     public int enemyResourcesSize() {

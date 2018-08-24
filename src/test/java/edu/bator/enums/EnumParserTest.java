@@ -7,11 +7,13 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class EnumParserTest {
 
     @Test
+    @Ignore
     public void parse() throws IOException {
         Files.list(Paths.get("src", "main", "java", "edu", "bator", "cards", "todo")).forEach(cardFile -> {
             try {

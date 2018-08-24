@@ -1,29 +1,17 @@
-2018-08-24 12:38:04 INFO            edu.bator.EntryPoint:  40 - Starting.
-2018-08-24 12:38:07 INFO        edu.bator.game.GameState:  94 - Init done.
-2018-08-24 12:38:07 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='9a5e7eec-2e18-4f8f-b3bb-dd7dc6336559'}
-2018-08-24 12:38:07 INFO            edu.bator.EntryPoint:  95 - Started.
-2018-08-24 12:38:14 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='373ac7de-8c7c-4305-b110-43df72445221'}
-2018-08-24 12:38:15 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='3b18dbf1-ec32-4a83-b44b-07284a8ffe64'}
-2018-08-24 12:38:16 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='3b18dbf1-ec32-4a83-b44b-07284a8ffe64'}
-2018-08-24 12:38:16 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='a44e8490-4ae1-4a10-9ca2-f12db4694f8b'}
-2018-08-24 12:38:17 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='a44e8490-4ae1-4a10-9ca2-f12db4694f8b'}
-2018-08-24 12:38:18 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='1cdc4169-ef14-40e2-b96f-2af0371cf35f'}
-2018-08-24 12:38:18 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='1cdc4169-ef14-40e2-b96f-2af0371cf35f'}
-2018-08-24 12:38:19 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='8549004a-ed0a-43b2-b9a4-01fc3ca76173'}
-2018-08-24 12:38:19 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='8549004a-ed0a-43b2-b9a4-01fc3ca76173'}
-2018-08-24 12:38:20 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='b7198ffd-bedf-446f-97fb-0545e719a948'}
-2018-08-24 12:38:20 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='b7198ffd-bedf-446f-97fb-0545e719a948'}
-2018-08-24 12:38:21 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='9018e69e-0dc5-45ea-8127-18d61374861c'}
-2018-08-24 12:38:22 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='9018e69e-0dc5-45ea-8127-18d61374861c'}
-2018-08-24 12:38:22 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='02d695de-145a-456c-aa04-c2ce3d3df880'}
-2018-08-24 12:38:23 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='02d695de-145a-456c-aa04-c2ce3d3df880'}
-2018-08-24 12:38:24 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='8e71cd02-4e33-4014-bb7f-25d57dea1056'}
-2018-08-24 12:38:25 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='8e71cd02-4e33-4014-bb7f-25d57dea1056'}
-2018-08-24 12:38:26 INFO  ui.events.CardCastClickedEvent:  62 - Casted: RavenWildheart{currentHp=6, uniqueId='880e7ad0-dcbc-45b9-96ca-3fc2290be94d'}
-2018-08-24 12:38:27 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='7266909f-0c3f-4cd1-89ff-b2db49e36bbe'}
-2018-08-24 12:38:27 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='7266909f-0c3f-4cd1-89ff-b2db49e36bbe'}
-2018-08-24 12:38:29 INFO  ui.events.CardCastClickedEvent:  62 - Casted: RavenWildheart{currentHp=6, uniqueId='e7eae94f-0b89-4237-bea5-fd6ee8576782'}
-2018-08-24 12:38:31 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='10494a35-1677-443f-ab85-e9b7463de262'}
-2018-08-24 12:38:33 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='10494a35-1677-443f-ab85-e9b7463de262'}
-2018-08-24 12:38:39 INFO  r.ui.events.AttackClickedEvent:  35 - RavenWildheart{currentHp=6, uniqueId='880e7ad0-dcbc-45b9-96ca-3fc2290be94d'} ready to attack.
-2018-08-24 12:38:41 INFO  vents.AttackTargetClickedEvent:  34 - RavenWildheart{currentHp=3, uniqueId='e7eae94f-0b89-4237-bea5-fd6ee8576782'} attacked RavenWildheart{currentHp=6, uniqueId='880e7ad0-dcbc-45b9-96ca-3fc2290be94d'}
+2018-08-24 14:44:26 INFO            edu.bator.EntryPoint:  40 - Starting.
+2018-08-24 14:44:28 INFO        edu.bator.game.GameState:  95 - Init done.
+2018-08-24 14:44:29 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='f3fdcd50-4941-4d80-b009-35073bd1806c'}
+2018-08-24 14:44:29 INFO            edu.bator.EntryPoint:  95 - Started.
+2018-08-24 14:44:42 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='08dc9bf3-4037-4248-950a-5ff001465dec'}
+2018-08-24 14:44:43 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='08dc9bf3-4037-4248-950a-5ff001465dec'}
+2018-08-24 14:44:48 INFO  ui.events.CardCastClickedEvent:  62 - Casted: AldontheBrave{currentHp=4, uniqueId='8e0d0e9b-86e1-4600-8b00-2fe2188ef657'}
+2018-08-24 14:44:54 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='e8e39952-4867-4429-a41a-696e385ed33f'}
+2018-08-24 14:44:55 INFO  ents.SkipSacrificeClickedEvent:  32 - Skipped sacrifice.
+2018-08-24 14:44:57 INFO  r.ui.events.AttackClickedEvent:  35 - AldontheBrave{currentHp=4, uniqueId='422ec5ec-3693-4c84-b375-bdb1b190f61d'} ready to attack.
+2018-08-24 14:44:58 INFO  vents.AttackTargetClickedEvent:  34 - AldontheBrave{currentHp=1, uniqueId='8e0d0e9b-86e1-4600-8b00-2fe2188ef657'} attacked AldontheBrave{currentHp=2, uniqueId='422ec5ec-3693-4c84-b375-bdb1b190f61d'}
+2018-08-24 14:45:00 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='2f48b52d-38d0-45c7-8b53-184fbd32b1d9'}
+2018-08-24 14:45:02 INFO  ents.SkipSacrificeClickedEvent:  32 - Skipped sacrifice.
+2018-08-24 14:45:03 INFO  r.ui.events.AttackClickedEvent:  35 - AldontheBrave{currentHp=1, uniqueId='8e0d0e9b-86e1-4600-8b00-2fe2188ef657'} ready to attack.
+2018-08-24 14:45:05 INFO  vents.AttackTargetClickedEvent:  34 - AldontheBrave{currentHp=-1, uniqueId='422ec5ec-3693-4c84-b375-bdb1b190f61d'} attacked AldontheBrave{currentHp=1, uniqueId='8e0d0e9b-86e1-4600-8b00-2fe2188ef657'}
+2018-08-24 14:45:08 INFO  r.ui.events.AttackClickedEvent:  35 - BorisSkullcrusher{currentHp=30, uniqueId='1946044d-7606-4604-a8ab-c272630e165a'} ready to attack.
+2018-08-24 14:45:10 INFO  vents.AttackTargetClickedEvent:  34 - BorisSkullcrusher{currentHp=29, uniqueId='d941f1d5-bf9b-48b6-b54c-14a3ebe790e1'} attacked BorisSkullcrusher{currentHp=29, uniqueId='1946044d-7606-4604-a8ab-c272630e165a'}

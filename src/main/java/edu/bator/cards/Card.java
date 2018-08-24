@@ -229,6 +229,8 @@ public class Card implements Cloneable {
     public void cardHasDiedEvent(Card card, GameState gameState) {
     }
 
+    public Integer modifiesAllyAttack(Ally ally, GameState gameState) { return 0; }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
