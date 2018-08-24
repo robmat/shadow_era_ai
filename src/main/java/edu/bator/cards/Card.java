@@ -175,7 +175,7 @@ public class Card implements Cloneable {
     public void attackTarget(GameState gameState, Card target) {
     }
 
-    void attackTarget(BiConsumer<GameState, Card> attackEvent, Card target, GameState gameState) {
+    public void attackTarget(BiConsumer<GameState, Card> attackEvent, Card target, GameState gameState) {
         attackEvent.accept(gameState, target);
     }
 

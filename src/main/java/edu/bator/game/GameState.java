@@ -79,8 +79,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
         yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
 
-        enemyHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
-        yourHand.add(allCardsSet.cloneByName("Sandra Trueblade"));
+        enemyHand.add(allCardsSet.cloneByName("Raven Wildheart"));
+        yourHand.add(allCardsSet.cloneByName("Raven Wildheart"));
 
         enemyHand.add(allCardsSet.cloneByName("Kurt Whitehelm"));
         yourHand.add(allCardsSet.cloneByName("Kurt Whitehelm"));
