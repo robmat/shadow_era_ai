@@ -26,7 +26,7 @@ public class AttackTargetClickedEvent implements EventHandler<MouseEvent> {
 
         attackSource.attackTarget(gameState, attackTarget);
 
-        if (moveToGraveyardIfDead(attackTarget)) { TODO test attacks!
+        if (!moveToGraveyardIfDead(attackTarget)) {
             attackTarget.attackTarget(gameState, attackSource);
         }
         moveToGraveyardIfDead(attackSource);
