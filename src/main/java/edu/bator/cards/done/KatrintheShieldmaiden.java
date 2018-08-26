@@ -8,9 +8,11 @@ import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 public class KatrintheShieldmaiden extends Ally {
@@ -40,12 +42,12 @@ public class KatrintheShieldmaiden extends Ally {
         boolean you = GamePhase.YOU_ACTION.equals(gameState.getGamePhase()) &&
                 gameState.getYourAllies().contains(this) &&
                 gameState.getYourAllies().stream().filter(card -> !card.equals(this)).anyMatch(Card::cardIsAnAlly) &&
-                gameState.getYourAllies().stream().anyMatch(card -> !card.equals(target)) &&
+                !gameState.getYourAllies().contains(target) &&
                 gameState.getYourCurrentResources() >= 1;
         boolean enemy = GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase()) &&
                 gameState.getEnemyAllies().contains(this) &&
                 gameState.getEnemyAllies().stream().filter(card -> !card.equals(this)).anyMatch(Card::cardIsAnAlly) &&
-                gameState.getEnemyAllies().stream().anyMatch(card -> !card.equals(target)) &&
+                !gameState.getEnemyAllies().contains(target) &&
                 gameState.getEnemyCurrentResources() >= 1;
         boolean abilityReadied = isAbilityReadied();
         return (you || enemy) && abilityReadied;
@@ -53,7 +55,8 @@ public class KatrintheShieldmaiden extends Ally {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        return card.cardIsAnAlly() && gameState.currentYourAlliesBasedOnPhase().contains(card); TODO
+        boolean inYourHand = gameState.currentYourAlliesBasedOnPhase().contains(card);
+        return card.cardIsAnAlly() && inYourHand && !this.equals(card);
     }
 
     @Override

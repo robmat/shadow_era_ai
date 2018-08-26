@@ -1,6 +1,17 @@
-2018-08-26 11:28:16 INFO            edu.bator.EntryPoint:  40 - Starting.
-2018-08-26 11:28:19 INFO        edu.bator.game.GameState:  93 - Init done.
-2018-08-26 11:28:19 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='b3a8255b-c282-4b56-aaa0-1a02b4b1c362'}
-2018-08-26 11:28:19 INFO            edu.bator.EntryPoint:  95 - Started.
-2018-08-26 11:28:43 INFO  .ui.events.AbilityClickedEvent:  33 - JasmineRosecult{currentHp=4, uniqueId='73cebbb5-3a2c-490b-9530-ec7e6aa6da0f'} ready to use ability.
-2018-08-26 11:28:45 INFO  .ui.events.AbilityClickedEvent:  33 - KatrintheShieldmaiden(target=null) ready to use ability.
+2018-08-26 14:06:09 INFO            edu.bator.EntryPoint:  40 - Starting.
+2018-08-26 14:06:11 INFO        edu.bator.game.GameState:  93 - Init done.
+2018-08-26 14:06:11 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='870d9f07-80fb-40a9-9703-5a9c8ab2aa54'}
+2018-08-26 14:06:11 INFO            edu.bator.EntryPoint:  95 - Started.
+2018-08-26 14:06:33 INFO  .ui.events.AbilityClickedEvent:  33 - KatrintheShieldmaiden(target=null) ready to use ability.
+2018-08-26 14:06:39 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='c385a695-3111-4781-b1c3-e9e504fc87d5'}
+2018-08-26 14:06:41 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='c385a695-3111-4781-b1c3-e9e504fc87d5'}
+2018-08-26 14:06:44 INFO  .ui.events.AbilityClickedEvent:  33 - KatrintheShieldmaiden(target=null) ready to use ability.
+2018-08-26 14:06:52 INFO  .ui.events.AbilityClickedEvent:  33 - JasmineRosecult{currentHp=6, uniqueId='2ddb18d2-f3d0-4ecc-98f5-5711b1bebc4f'} ready to use ability.
+2018-08-26 14:06:59 INFO  r.ui.events.AttackClickedEvent:  35 - JasmineRosecult{currentHp=6, uniqueId='2ddb18d2-f3d0-4ecc-98f5-5711b1bebc4f'} ready to attack.
+2018-08-26 14:07:00 INFO  vents.AttackTargetClickedEvent:  34 - JasmineRosecult{currentHp=3, uniqueId='08b041e7-1faf-4b30-a988-6490f5bca5c0'} attacked JasmineRosecult{currentHp=3, uniqueId='2ddb18d2-f3d0-4ecc-98f5-5711b1bebc4f'}
+2018-08-26 14:07:02 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='c01017cf-3780-4dcd-b98d-0bf074a2ac10'}
+2018-08-26 14:07:02 DEBUG      edu.bator.game.GameEngine:  95 - Card Jasmine Rosecult has effects [InLoveEffect(super=Effect(effectType=IN_LOVE, gamePhaseWhenExpires=YOU_PREPARE, turnEffectExpires=6, uniqueId=4c46feb5-9ff1-450d-a6e0-a00890b9d17b), inLoveEffect=true)]
+2018-08-26 14:07:02 DEBUG      edu.bator.game.GameEngine:  96 - Turn 5 pahse YOU_PREPARE
+2018-08-26 14:07:03 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='c01017cf-3780-4dcd-b98d-0bf074a2ac10'}
+2018-08-26 14:07:07 INFO  .ui.events.AbilityClickedEvent:  33 - JasmineRosecult{currentHp=3, uniqueId='08b041e7-1faf-4b30-a988-6490f5bca5c0'} ready to use ability.
+2018-08-26 14:07:15 INFO  .ui.events.AbilityClickedEvent:  33 - KatrintheShieldmaiden(target=JasmineRosecult{currentHp=3, uniqueId='08b041e7-1faf-4b30-a988-6490f5bca5c0'}) ready to use ability.

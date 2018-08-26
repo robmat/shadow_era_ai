@@ -26,9 +26,9 @@ public class EnumParserTest {
                         cardName = lines.get(i).substring(12, lines.get(i).indexOf(" extends ")).trim();
                     }
                 }
-                lines.add(index + 1, "");
-                lines.add(index + 2, "public " + cardName + "() {};");
-                Files.write(cardFile, lines);
+                lines.add(2, "import lombok.EqualsAndHashCode;");
+                lines.add(index - 1, "public " + cardName + "() {};");
+                //Files.write(cardFile, lines);
             } catch (IOException e) {
                 e.printStackTrace();
             }
