@@ -53,7 +53,7 @@ public class KatrintheShieldmaiden extends Ally {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        return card.cardIsAnAlly() && gameState.currentYourAlliesBasedOnPhase().contains(card);
+        return card.cardIsAnAlly() && gameState.currentYourAlliesBasedOnPhase().contains(card); TODO
     }
 
     @Override
