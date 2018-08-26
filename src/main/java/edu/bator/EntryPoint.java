@@ -38,7 +38,7 @@ public class EntryPoint extends Application {
 
     public static void main(String[] args) {
         log.info("Starting.");
-        objectJsonMapper.enableDefaultTyping();
+        objectJsonMapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
         launch(args);
     }
 

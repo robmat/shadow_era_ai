@@ -2,13 +2,14 @@ package edu.bator.cards.done;
 
 import java.util.Objects;
 import java.util.function.BiConsumer;
-import java.util.function.Function;
 
 import edu.bator.cards.Ability;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 public class ShieldBash extends Ability {
 
     public ShieldBash(Card cloneFrom) {
@@ -17,7 +18,8 @@ public class ShieldBash extends Ability {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card);
+        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
+        return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card) && possibleAllyTarget;
     }
 
     @Override

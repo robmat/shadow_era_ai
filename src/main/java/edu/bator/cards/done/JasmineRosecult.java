@@ -7,7 +7,9 @@ import edu.bator.cards.Card;
 import edu.bator.cards.effects.InLoveEffect;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 public class JasmineRosecult extends Ally {
 
     public JasmineRosecult(Card cloneFrom) {
@@ -30,7 +32,8 @@ public class JasmineRosecult extends Ally {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card);
+        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
+        return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card) && possibleAllyTarget;
     }
 
     @Override

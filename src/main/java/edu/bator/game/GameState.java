@@ -72,8 +72,8 @@ public class GameState {
             yourDeck.add(allCardsSet.cloneByName("Birgitte Skullborn"));
         }
 
-        enemyHand.add(allCardsSet.cloneByName("Lily Rosecult"));
-        yourHand.add(allCardsSet.cloneByName("Lily Rosecult"));
+        enemyHand.add(allCardsSet.cloneByName("Katrin the Shieldmaiden"));
+        yourHand.add(allCardsSet.cloneByName("Katrin the Shieldmaiden"));
 
         enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
         yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));

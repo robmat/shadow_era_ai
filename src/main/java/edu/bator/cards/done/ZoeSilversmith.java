@@ -8,9 +8,11 @@ import edu.bator.cards.effects.InLoveEffect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import lombok.NoArgsConstructor;
 
 import static java.util.Objects.nonNull;
 
+@NoArgsConstructor
 public class ZoeSilversmith extends Ally {
 
     public ZoeSilversmith(Card cloneFrom) {

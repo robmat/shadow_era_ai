@@ -6,9 +6,11 @@ import java.util.function.BiConsumer;
 
 import edu.bator.cards.enums.CardEnums;
 import edu.bator.game.GameState;
+import lombok.NoArgsConstructor;
 
 import static java.util.Objects.nonNull;
 
+@NoArgsConstructor
 public class Hero extends Card {
 
     public Hero(Card cloneFrom) {

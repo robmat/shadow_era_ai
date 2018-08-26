@@ -1,12 +1,13 @@
 package edu.bator.cards;
 
 import java.util.function.BiConsumer;
-import java.util.function.BinaryOperator;
 
 import edu.bator.game.GameState;
+import lombok.NoArgsConstructor;
 
 import static java.util.Objects.nonNull;
 
+@NoArgsConstructor
 public class Ally extends Card {
     public Ally(Card cloneFrom) {
         super(cloneFrom);

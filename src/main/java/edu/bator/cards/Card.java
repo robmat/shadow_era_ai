@@ -140,7 +140,7 @@ public class Card implements Cloneable {
         }
     }
 
-    private boolean calculatePossibleAllyTarget(GameState gameState) {
+    protected boolean calculatePossibleAllyTarget(GameState gameState) {
         boolean otherAllyHasProtector = gameState.currentEnemyHeroAndAlliesBasedOnPhase()
                 .stream()
                 .filter(card -> !Objects.equals(card, this))
@@ -193,14 +193,7 @@ public class Card implements Cloneable {
     }
 
     public void calculatePossibleAbilityTarget(Card abilitySource, GameState gameState) {
-        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
-
-        if (possibleAllyTarget) {
-            this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this, gameState);
-        }
-        if (cardIsAHero()) {
-            this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this, gameState);
-        }
+        this.possibleAbilityTarget = abilitySource.ableToApplyAbilityTo(this, gameState);
     }
 
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
@@ -209,6 +202,7 @@ public class Card implements Cloneable {
 
     public void applyAbility(Card target, GameState gameState) {
     }
+
     public void applyAbility(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {
         abilityFunction.accept(this, gameState);
     }
@@ -232,7 +226,9 @@ public class Card implements Cloneable {
     public void cardHasDiedEvent(Card card, GameState gameState) {
     }
 
-    public Integer modifiesAllyAttack(Ally ally, GameState gameState) { return 0; }
+    public Integer modifiesAllyAttack(Ally ally, GameState gameState) {
+        return 0;
+    }
 
     public void resetAttackAnHp() {
         currentHp = initialHp;

@@ -7,7 +7,9 @@ import edu.bator.cards.Hero;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 public class BorisSkullcrusher extends Hero {
 
     public BorisSkullcrusher(Card cloneFrom) {
@@ -31,7 +33,11 @@ public class BorisSkullcrusher extends Hero {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        return card.cardIsAnAlly() && card.getResourceCost() <= 4 && gameState.currentEnemyAlliesBasedOnPhase().contains(card);
+        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
+        return card.cardIsAnAlly() &&
+                card.getResourceCost() <= 4 &&
+                gameState.currentEnemyAlliesBasedOnPhase().contains(card) &&
+                possibleAllyTarget;
     }
 
     @Override

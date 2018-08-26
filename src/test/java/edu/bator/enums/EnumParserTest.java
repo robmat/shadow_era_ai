@@ -27,7 +27,7 @@ public class EnumParserTest {
                     }
                 }
                 lines.add(index + 1, "");
-                lines.add(index + 2, "public boolean is" + cardName + ";");
+                lines.add(index + 2, "public " + cardName + "() {};");
                 Files.write(cardFile, lines);
             } catch (IOException e) {
                 e.printStackTrace();

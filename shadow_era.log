@@ -1,36 +1,72 @@
-2018-08-24 15:24:04 INFO            edu.bator.EntryPoint:  40 - Starting.
-2018-08-24 15:24:06 INFO        edu.bator.game.GameState:  93 - Init done.
-2018-08-24 15:24:07 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='663df7a4-9cf4-4033-a129-7f863ace5fef'}
-2018-08-24 15:24:07 INFO            edu.bator.EntryPoint:  95 - Started.
-2018-08-24 15:24:11 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='cfebcfc6-ac03-4ac9-a997-ecfa72b9f614'}
-2018-08-24 15:24:12 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='cfebcfc6-ac03-4ac9-a997-ecfa72b9f614'}
-2018-08-24 15:24:12 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='f5a33ffe-1b5f-4f87-a102-29219995a24b'}
-2018-08-24 15:24:14 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='f5a33ffe-1b5f-4f87-a102-29219995a24b'}
-2018-08-24 15:24:14 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='11304c72-47df-4729-8e47-73b8041641a1'}
-2018-08-24 15:24:15 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='11304c72-47df-4729-8e47-73b8041641a1'}
-2018-08-24 15:24:15 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='e2511aed-8f24-420e-96a2-cf70001d0bbe'}
-2018-08-24 15:24:16 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='e2511aed-8f24-420e-96a2-cf70001d0bbe'}
-2018-08-24 15:24:17 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='a59cbfa1-ed37-482b-b5d5-e40da79bc6a1'}
-2018-08-24 15:24:18 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='a59cbfa1-ed37-482b-b5d5-e40da79bc6a1'}
-2018-08-24 15:24:20 INFO  ui.events.CardCastClickedEvent:  62 - Casted: RavenWildheart{currentHp=6, uniqueId='0bbe5b87-6d39-4d46-b4af-4b7d91f809fe'}
-2018-08-24 15:24:20 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='b7a3c925-fbef-4984-b545-6cdd4fcc43a6'}
-2018-08-24 15:24:21 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='b7a3c925-fbef-4984-b545-6cdd4fcc43a6'}
-2018-08-24 15:24:23 INFO  ui.events.CardCastClickedEvent:  62 - Casted: RavenWildheart{currentHp=6, uniqueId='caa0c0ad-0f4c-4b23-83cd-306320e5db43'}
-2018-08-24 15:24:24 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='81b0676e-cbac-4863-8c7c-e9bc1e53c3f8'}
-2018-08-24 15:24:25 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='81b0676e-cbac-4863-8c7c-e9bc1e53c3f8'}
-2018-08-24 15:24:27 INFO  r.ui.events.AttackClickedEvent:  35 - RavenWildheart{currentHp=6, uniqueId='0bbe5b87-6d39-4d46-b4af-4b7d91f809fe'} ready to attack.
-2018-08-24 15:24:30 INFO  vents.AttackTargetClickedEvent:  34 - RavenWildheart{currentHp=3, uniqueId='caa0c0ad-0f4c-4b23-83cd-306320e5db43'} attacked RavenWildheart{currentHp=6, uniqueId='0bbe5b87-6d39-4d46-b4af-4b7d91f809fe'}
-2018-08-24 15:24:36 INFO  r.ui.events.AttackClickedEvent:  35 - ZoeSilversmith{currentHp=4, uniqueId='e32582c9-ca9d-4a83-9916-6292b9ca5896'} ready to attack.
-2018-08-24 15:24:37 INFO  vents.AttackTargetClickedEvent:  34 - RavenWildheart{currentHp=1, uniqueId='caa0c0ad-0f4c-4b23-83cd-306320e5db43'} attacked ZoeSilversmith{currentHp=4, uniqueId='e32582c9-ca9d-4a83-9916-6292b9ca5896'}
-2018-08-24 15:24:39 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='d7a16fdd-84e3-4eca-83d9-d8b4a4f97ddf'}
-2018-08-24 15:24:40 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='d7a16fdd-84e3-4eca-83d9-d8b4a4f97ddf'}
-2018-08-24 15:24:46 INFO  .ui.events.AbilityClickedEvent:  33 - ZoeSilversmith{currentHp=4, uniqueId='01ba0b6d-3688-444d-afb3-309a6e108ad2'} ready to use ability.
-2018-08-24 15:24:51 INFO  r.ui.events.AttackClickedEvent:  35 - ZoeSilversmith{currentHp=4, uniqueId='01ba0b6d-3688-444d-afb3-309a6e108ad2'} ready to attack.
-2018-08-24 15:24:52 INFO  vents.AttackTargetClickedEvent:  34 - RavenWildheart{currentHp=4, uniqueId='0bbe5b87-6d39-4d46-b4af-4b7d91f809fe'} attacked ZoeSilversmith{currentHp=1, uniqueId='01ba0b6d-3688-444d-afb3-309a6e108ad2'}
-2018-08-24 15:24:59 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='a1c04d37-0a1d-4801-a2ef-a0eb57d63654'}
-2018-08-24 15:25:00 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='a1c04d37-0a1d-4801-a2ef-a0eb57d63654'}
-2018-08-24 15:25:02 INFO  r.ui.events.AttackClickedEvent:  35 - RavenWildheart{currentHp=4, uniqueId='0bbe5b87-6d39-4d46-b4af-4b7d91f809fe'} ready to attack.
-2018-08-24 15:25:03 INFO  vents.AttackTargetClickedEvent:  34 - RavenWildheart{currentHp=-2, uniqueId='caa0c0ad-0f4c-4b23-83cd-306320e5db43'} attacked RavenWildheart{currentHp=4, uniqueId='0bbe5b87-6d39-4d46-b4af-4b7d91f809fe'}
-2018-08-24 15:25:05 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='68fcfc1b-5bc3-4243-bd6c-15ea41bc9f65'}
-2018-08-24 15:25:06 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='68fcfc1b-5bc3-4243-bd6c-15ea41bc9f65'}
-2018-08-24 15:25:12 INFO  ui.events.CardCastClickedEvent:  62 - Casted: LilyRosecult{currentHp=4, uniqueId='9e78738b-70af-454d-a5b5-9106a22a098f'}
+2018-08-25 22:21:27 INFO            edu.bator.EntryPoint:  40 - Starting.
+2018-08-25 22:21:30 INFO        edu.bator.game.GameState:  93 - Init done.
+2018-08-25 22:21:30 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='9d5953dd-9804-48d3-b513-0e0c600484fc'}
+2018-08-25 22:21:30 INFO            edu.bator.EntryPoint:  95 - Started.
+2018-08-25 22:21:35 ERROR           edu.bator.EntryPoint: 124 - Load crashed.
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `edu.bator.cards.todo.AmberRain` (no Creators, like default construct, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (File); line: 2545, column: 7] (through reference chain: edu.bator.game.GameState["allCardsSet"]->edu.bator.cards.AllCardsSet["allCards"]->java.util.LinkedList[1])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1451)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1027)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1290)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:326)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:159)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:116)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeWithType(BeanDeserializerBase.java:1171)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:245)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:27)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:116)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromArray(AsArrayTypeDeserializer.java:53)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserializeWithType(CollectionDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:116)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeWithType(BeanDeserializerBase.java:1171)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:116)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeWithType(BeanDeserializerBase.java:1171)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:68)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4001)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2890)
+	at edu.bator.EntryPoint.lambda$start$0(EntryPoint.java:100)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3589)
+	at javafx.graphics/javafx.scene.Scene$ClickGenerator.access$8300(Scene.java:3517)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3885)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.access$1300(Scene.java:3604)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1874)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2613)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:844)
