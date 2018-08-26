@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class UrgentBusiness extends Card {
 
+public UrgentBusiness() {};
+
     public UrgentBusiness(Card cloneFrom) {
         super(cloneFrom);
     }

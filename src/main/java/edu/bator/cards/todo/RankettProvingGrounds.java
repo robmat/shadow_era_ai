@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class RankettProvingGrounds extends Card {
 
+public RankettProvingGrounds() {};
+
     public RankettProvingGrounds(Card cloneFrom) {
         super(cloneFrom);
     }

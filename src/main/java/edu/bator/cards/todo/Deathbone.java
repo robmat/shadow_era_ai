@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class Deathbone extends Card {
 
+    public Deathbone() {
+    }
+
+    ;
+
     public Deathbone(Card cloneFrom) {
         super(cloneFrom);
     }

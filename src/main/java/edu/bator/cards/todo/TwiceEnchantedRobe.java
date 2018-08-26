@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class TwiceEnchantedRobe extends Card {
 
+public TwiceEnchantedRobe() {};
+
     public TwiceEnchantedRobe(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class BrimstoneDevourer extends Card {
 
+public BrimstoneDevourer() {};
+
     public BrimstoneDevourer(Card cloneFrom) {
         super(cloneFrom);
     }

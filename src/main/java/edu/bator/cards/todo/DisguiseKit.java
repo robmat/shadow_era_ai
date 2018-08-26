@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class DisguiseKit extends Card {
 
+    public DisguiseKit() {
+    }
+
+    ;
+
     public DisguiseKit(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class Feedback extends Card {
 
+    public Feedback() {
+    }
+
+    ;
+
     public Feedback(Card cloneFrom) {
         super(cloneFrom);
     }

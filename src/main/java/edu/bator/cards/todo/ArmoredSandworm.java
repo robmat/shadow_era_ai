@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class ArmoredSandworm extends Card {
 
+public ArmoredSandworm() {};
+
     public ArmoredSandworm(Card cloneFrom) {
         super(cloneFrom);
     }

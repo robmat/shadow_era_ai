@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class Zantonite extends Card {
 
+    public Zantonite() {
+    }
+
+    ;
+
     public Zantonite(Card cloneFrom) {
         super(cloneFrom);
     }

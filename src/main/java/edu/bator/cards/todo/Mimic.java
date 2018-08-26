@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class Mimic extends Card {
 
+    public Mimic() {
+    }
+
+    ;
+
     public Mimic(Card cloneFrom) {
         super(cloneFrom);
     }

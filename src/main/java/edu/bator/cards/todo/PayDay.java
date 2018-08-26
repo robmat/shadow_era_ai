@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class PayDay extends Card {
 
+    public PayDay() {
+    }
+
+    ;
+
     public PayDay(Card cloneFrom) {
         super(cloneFrom);
     }

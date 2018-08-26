@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class EarthenProtector extends Card {
 
+public EarthenProtector() {};
+
     public EarthenProtector(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class Spark extends Card {
 
+    public Spark() {
+    }
+
+    ;
+
     public Spark(Card cloneFrom) {
         super(cloneFrom);
     }

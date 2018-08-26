@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class WulvenTracker extends Card {
 
+    public WulvenTracker() {
+    }
+
+    ;
+
     public WulvenTracker(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class NightProwler extends Card {
 
+    public NightProwler() {
+    }
+
+    ;
+
     public NightProwler(Card cloneFrom) {
         super(cloneFrom);
     }

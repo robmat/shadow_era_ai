@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class LoganStonebreaker extends Card {
 
+public LoganStonebreaker() {};
+
     public LoganStonebreaker(Card cloneFrom) {
         super(cloneFrom);
     }

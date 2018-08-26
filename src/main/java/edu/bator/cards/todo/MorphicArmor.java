@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class MorphicArmor extends Card {
 
+    public MorphicArmor() {
+    }
+
+    ;
+
     public MorphicArmor(Card cloneFrom) {
         super(cloneFrom);
     }

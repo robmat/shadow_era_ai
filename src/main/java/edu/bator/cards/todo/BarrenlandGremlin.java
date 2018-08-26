@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class BarrenlandGremlin extends Card {
 
+public BarrenlandGremlin() {};
+
     public BarrenlandGremlin(Card cloneFrom) {
         super(cloneFrom);
     }

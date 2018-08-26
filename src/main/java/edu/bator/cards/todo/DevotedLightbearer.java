@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class DevotedLightbearer extends Card {
 
+public DevotedLightbearer() {};
+
     public DevotedLightbearer(Card cloneFrom) {
         super(cloneFrom);
     }

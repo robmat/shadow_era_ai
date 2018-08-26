@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class ClericsMantle extends Card {
 
+    public ClericsMantle() {
+    }
+
+    ;
+
     public ClericsMantle(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class WoodenSpear extends Card {
 
+    public WoodenSpear() {
+    }
+
+    ;
+
     public WoodenSpear(Card cloneFrom) {
         super(cloneFrom);
     }

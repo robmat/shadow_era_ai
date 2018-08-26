@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class UrigonsFang extends Card {
 
+    public UrigonsFang() {
+    }
+
+    ;
+
     public UrigonsFang(Card cloneFrom) {
         super(cloneFrom);
     }

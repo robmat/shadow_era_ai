@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class UprootedTree extends Card {
 
+    public UprootedTree() {
+    }
+
+    ;
+
     public UprootedTree(Card cloneFrom) {
         super(cloneFrom);
     }

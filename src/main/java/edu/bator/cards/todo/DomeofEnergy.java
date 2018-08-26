@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class DomeofEnergy extends Card {
 
+    public DomeofEnergy() {
+    }
+
+    ;
+
     public DomeofEnergy(Card cloneFrom) {
         super(cloneFrom);
     }

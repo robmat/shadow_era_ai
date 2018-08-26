@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class VictorHeartstriker extends Card {
 
+public VictorHeartstriker() {};
+
     public VictorHeartstriker(Card cloneFrom) {
         super(cloneFrom);
     }

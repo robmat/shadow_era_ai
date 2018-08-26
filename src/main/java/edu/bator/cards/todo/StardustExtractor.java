@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class StardustExtractor extends Card {
 
+public StardustExtractor() {};
+
     public StardustExtractor(Card cloneFrom) {
         super(cloneFrom);
     }

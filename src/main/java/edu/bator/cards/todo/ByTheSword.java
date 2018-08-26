@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class ByTheSword extends Card {
 
+    public ByTheSword() {
+    }
+
+    ;
+
     public ByTheSword(Card cloneFrom) {
         super(cloneFrom);
     }

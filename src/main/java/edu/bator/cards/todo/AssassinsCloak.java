@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class AssassinsCloak extends Card {
 
+    public AssassinsCloak() {
+    }
+
+    ;
+
     public AssassinsCloak(Card cloneFrom) {
         super(cloneFrom);
     }

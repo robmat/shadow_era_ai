@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class LoneWolf extends Card {
 
+    public LoneWolf() {
+    }
+
+    ;
+
     public LoneWolf(Card cloneFrom) {
         super(cloneFrom);
     }

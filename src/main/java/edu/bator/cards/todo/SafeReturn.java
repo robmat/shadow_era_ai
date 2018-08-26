@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class SafeReturn extends Card {
 
+    public SafeReturn() {
+    }
+
+    ;
+
     public SafeReturn(Card cloneFrom) {
         super(cloneFrom);
     }

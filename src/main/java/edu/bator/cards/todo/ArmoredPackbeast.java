@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class ArmoredPackbeast extends Card {
 
+public ArmoredPackbeast() {};
+
     public ArmoredPackbeast(Card cloneFrom) {
         super(cloneFrom);
     }

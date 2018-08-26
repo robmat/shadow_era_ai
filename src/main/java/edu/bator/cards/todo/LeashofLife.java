@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class LeashofLife extends Card {
 
+    public LeashofLife() {
+    }
+
+    ;
+
     public LeashofLife(Card cloneFrom) {
         super(cloneFrom);
     }

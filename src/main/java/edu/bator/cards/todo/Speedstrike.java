@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class Speedstrike extends Card {
 
+    public Speedstrike() {
+    }
+
+    ;
+
     public Speedstrike(Card cloneFrom) {
         super(cloneFrom);
     }

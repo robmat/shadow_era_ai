@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class EmbersoftheJust extends Card {
 
+public EmbersoftheJust() {};
+
     public EmbersoftheJust(Card cloneFrom) {
         super(cloneFrom);
     }

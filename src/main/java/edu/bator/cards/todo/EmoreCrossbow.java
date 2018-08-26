@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class EmoreCrossbow extends Card {
 
+    public EmoreCrossbow() {
+    }
+
+    ;
+
     public EmoreCrossbow(Card cloneFrom) {
         super(cloneFrom);
     }

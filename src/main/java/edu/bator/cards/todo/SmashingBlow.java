@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class SmashingBlow extends Card {
 
+    public SmashingBlow() {
+    }
+
+    ;
+
     public SmashingBlow(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class FlamingArrow extends Card {
 
+    public FlamingArrow() {
+    }
+
+    ;
+
     public FlamingArrow(Card cloneFrom) {
         super(cloneFrom);
     }

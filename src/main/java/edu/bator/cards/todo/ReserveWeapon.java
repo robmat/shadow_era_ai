@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class ReserveWeapon extends Card {
 
+    public ReserveWeapon() {
+    }
+
+    ;
+
     public ReserveWeapon(Card cloneFrom) {
         super(cloneFrom);
     }

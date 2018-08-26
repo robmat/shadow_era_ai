@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class ForgottenHorror extends Card {
 
+public ForgottenHorror() {};
+
     public ForgottenHorror(Card cloneFrom) {
         super(cloneFrom);
     }

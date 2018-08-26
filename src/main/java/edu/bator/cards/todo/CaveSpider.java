@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class CaveSpider extends Card {
 
+    public CaveSpider() {
+    }
+
+    ;
+
     public CaveSpider(Card cloneFrom) {
         super(cloneFrom);
     }

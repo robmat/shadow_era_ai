@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class CorpseShifter extends Card {
 
+    public CorpseShifter() {
+    }
+
+    ;
+
     public CorpseShifter(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class CampfireStories extends Card {
 
+public CampfireStories() {};
+
     public CampfireStories(Card cloneFrom) {
         super(cloneFrom);
     }

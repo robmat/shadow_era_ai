@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class IncenseofAtonement extends Card {
 
+public IncenseofAtonement() {};
+
     public IncenseofAtonement(Card cloneFrom) {
         super(cloneFrom);
     }

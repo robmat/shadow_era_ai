@@ -4,6 +4,8 @@ import edu.bator.cards.Card;
 
 public class SholdTempestGorge extends Card {
 
+public SholdTempestGorge() {};
+
     public SholdTempestGorge(Card cloneFrom) {
         super(cloneFrom);
     }

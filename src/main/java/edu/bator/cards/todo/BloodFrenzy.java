@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class BloodFrenzy extends Card {
 
+    public BloodFrenzy() {
+    }
+
+    ;
+
     public BloodFrenzy(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class RainDelay extends Card {
 
+    public RainDelay() {
+    }
+
+    ;
+
     public RainDelay(Card cloneFrom) {
         super(cloneFrom);
     }

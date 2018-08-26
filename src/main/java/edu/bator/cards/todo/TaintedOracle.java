@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class TaintedOracle extends Card {
 
+    public TaintedOracle() {
+    }
+
+    ;
+
     public TaintedOracle(Card cloneFrom) {
         super(cloneFrom);
     }

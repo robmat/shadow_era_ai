@@ -4,6 +4,11 @@ import edu.bator.cards.Card;
 
 public class WaveCollapse extends Card {
 
+    public WaveCollapse() {
+    }
+
+    ;
+
     public WaveCollapse(Card cloneFrom) {
         super(cloneFrom);
     }
