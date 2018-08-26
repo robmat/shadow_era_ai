@@ -131,7 +131,7 @@ public class Card implements Cloneable {
 
     public void calculatePossibleAttackTarget(Card attackSource, GameState gameState) {
         boolean isNotStealth = !getAbilities().contains(Ability.STEALTH);
-        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState) && isNotStealth;
+        boolean possibleAllyTarget = calculatePossibleTargetProtectorIncluded(gameState) && isNotStealth;
 
         if (cardIsAHero()) {
             setPossibleAttackTarget(true);
@@ -140,14 +140,18 @@ public class Card implements Cloneable {
         }
     }
 
-    protected boolean calculatePossibleAllyTarget(GameState gameState) {
+    protected boolean calculatePossibleTargetProtectorIncluded(GameState gameState) {
+        return calculatePossibleTargetProtectorIncluded(this, gameState);
+    }
+
+    protected boolean calculatePossibleTargetProtectorIncluded(Card card, GameState gameState) {
         boolean otherAllyHasProtector = gameState.currentEnemyHeroAndAlliesBasedOnPhase()
                 .stream()
-                .filter(card -> !Objects.equals(card, this))
-                .anyMatch(card -> card.getAbilities().contains(Ability.PROTECTOR));
-        boolean hasProtector = getAbilities().contains(Ability.PROTECTOR);
-        boolean isAllyWithProtector = cardIsAnAlly() && hasProtector;
-        boolean isAllyAndNoOtherHasProtector = cardIsAnAlly() && !otherAllyHasProtector;
+                .filter(card1 -> !Objects.equals(card1, this))
+                .anyMatch(card1 -> card1.getAbilities().contains(Ability.PROTECTOR));
+        boolean hasProtector = card.getAbilities().contains(Ability.PROTECTOR);
+        boolean isAllyWithProtector = card.cardIsAnAlly() && hasProtector;
+        boolean isAllyAndNoOtherHasProtector = card.cardIsAnAlly() && !otherAllyHasProtector;
 
         return isAllyWithProtector || isAllyAndNoOtherHasProtector;
     }

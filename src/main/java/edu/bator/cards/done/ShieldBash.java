@@ -18,7 +18,7 @@ public class ShieldBash extends Ability {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        boolean possibleAllyTarget = calculatePossibleAllyTarget(gameState);
+        boolean possibleAllyTarget = calculatePossibleTargetProtectorIncluded(card, gameState);
         return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card) && possibleAllyTarget;
     }
 
