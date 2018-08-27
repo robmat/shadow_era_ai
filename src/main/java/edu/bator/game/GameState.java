@@ -81,8 +81,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Raven Wildheart"));
         yourHand.add(allCardsSet.cloneByName("Raven Wildheart"));
 
-        enemyHand.add(allCardsSet.cloneByName("Zoe Silversmith"));
-        yourHand.add(allCardsSet.cloneByName("Zoe Silversmith"));
+        enemyHand.add(allCardsSet.cloneByName("Priest of the Light"));
+        yourHand.add(allCardsSet.cloneByName("Priest of the Light"));
 
         enemyHand.add(allCardsSet.cloneByName("Shield Bash"));
         yourHand.add(allCardsSet.cloneByName("Shield Bash"));
@@ -218,5 +218,9 @@ public class GameState {
             return enemyHero;
         }
         return null;
+    }
+
+    public Card enemyHeroBasedOnPhase() {
+        return GamePhase.YOU_ACTION.equals(getGamePhase()) ? enemyHero : (GamePhase.ENEMY_ACTION.equals(getGamePhase())) ? yourHero : null;
     }
 }
