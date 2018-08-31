@@ -87,8 +87,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Shield Bash"));
         yourHand.add(allCardsSet.cloneByName("Shield Bash"));
 
-        enemyHand.add(allCardsSet.cloneByName("Aldon the Brave"));
-        yourHand.add(allCardsSet.cloneByName("Aldon the Brave"));
+        enemyHand.add(allCardsSet.cloneByName("Armored Sandworm"));
+        yourHand.add(allCardsSet.cloneByName("Armored Sandworm"));
 
         log.info("Init done.");
     }

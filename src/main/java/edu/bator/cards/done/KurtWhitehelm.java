@@ -34,9 +34,9 @@ public class KurtWhitehelm extends Ally {
     }
 
     @Override
-    public void applyAbility(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {
+    public void abilityAppliedToMe(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {
         int hpBefore = getCurrentHp();
-        super.applyAbility(abilityFunction, gameState);
+        super.abilityAppliedToMe(abilityFunction, gameState);
         if (hpBefore > getCurrentHp()) {
             setCurrentHp(getCurrentHp() + 1);
         }

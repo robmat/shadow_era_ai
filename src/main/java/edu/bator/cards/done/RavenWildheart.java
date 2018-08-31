@@ -17,7 +17,7 @@ public class RavenWildheart extends Ally {
     @Override
     public void attackTarget(BiConsumer<GameState, Card> attackEvent, Card target, GameState gameState) {
         int hpBefore = target.getCurrentHp();
-        attackEvent.accept(gameState, target);
+        super.attackTarget(attackEvent, target, gameState);
         if (hpBefore > target.getCurrentHp() && target.cardIsAnAlly()) {
             target.setBaseAttack(0);
         }

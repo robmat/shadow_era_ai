@@ -29,7 +29,7 @@ public class ShieldBash extends Ability {
                 target1.setCurrentHp(target1.getCurrentHp() - 3);
             }
         };
-        target.applyAbility(abilityFunction, gameState);
+        target.abilityAppliedToMe(abilityFunction, gameState);
         if (target.cardIsDead()) {
             new GameEngine().cardDied(target, gameState);
         }

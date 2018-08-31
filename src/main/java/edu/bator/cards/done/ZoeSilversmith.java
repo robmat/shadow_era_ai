@@ -4,7 +4,6 @@ import java.util.function.BiConsumer;
 
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
-import edu.bator.cards.effects.InLoveEffect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
@@ -45,6 +44,6 @@ public class ZoeSilversmith extends Ally {
             weapon.setCurrentHp(weapon.getCurrentHp() + 1);
             new GameEngine().decreaseCurrentPlayerResources(gameState, 2);
         };
-        target.applyAbility(abilityFunction, gameState);
+        target.abilityAppliedToMe(abilityFunction, gameState);
     }
 }

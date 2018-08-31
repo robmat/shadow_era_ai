@@ -51,6 +51,6 @@ public class BorisSkullcrusher extends Hero {
                 }
             }
         };
-        card.applyAbility(abilityFunction, gameState);
+        card.abilityAppliedToMe(abilityFunction, gameState);
     }
 }

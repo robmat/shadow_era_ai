@@ -180,7 +180,11 @@ public class Card implements Cloneable {
     }
 
     public void attackTarget(BiConsumer<GameState, Card> attackEvent, Card target, GameState gameState) {
-        attackEvent.accept(gameState, target);
+        target.attackedBy(attackEvent, this, gameState);
+    }
+
+    public void attackedBy(BiConsumer<GameState, Card> attackEvent, Card source, GameState gameState) {
+        attackEvent.accept(gameState, this);
     }
 
     void reduceWeaponHp(GameState gameState, Card weapon) {
@@ -207,7 +211,7 @@ public class Card implements Cloneable {
     public void applyAbility(Card target, GameState gameState) {
     }
 
-    public void applyAbility(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {
+    public void abilityAppliedToMe(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {
         abilityFunction.accept(this, gameState);
     }
 

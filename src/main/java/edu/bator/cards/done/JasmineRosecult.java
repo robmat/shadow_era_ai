@@ -52,6 +52,6 @@ public class JasmineRosecult extends Ally {
             }
             card1.getEffects().add(new InLoveEffect(turnWhenExpires, gamePhase));
         };
-       card.applyAbility(abilityFunction, gameState);
+       card.abilityAppliedToMe(abilityFunction, gameState);
     }
 }
