@@ -16,6 +16,22 @@ public class AldontheBrave extends Ally {
     }
 
     @Override
+    public void determineCastable(Card card, GameState gameState) {
+        super.determineCastable(card, gameState);
+        boolean castable = this.isCastable();
+        if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
+            boolean anotherAldonAlreadyInPlay = gameState.getYourAllies().stream()
+                .anyMatch(c -> c.getName().equals(getName()));
+            setCastable(castable && !anotherAldonAlreadyInPlay);
+        }
+        if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
+            boolean anotherAldonAlreadyInPlay = gameState.getEnemyAllies().stream()
+                .anyMatch(c -> c.getName().equals(getName()));
+            setCastable(castable && !anotherAldonAlreadyInPlay);
+        }
+    }
+
+    @Override
     public Integer modifiesAllyAttack(Ally ally, GameState gameState) {
         if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase()) &&
                 gameState.getYourAllies().contains(ally) &&

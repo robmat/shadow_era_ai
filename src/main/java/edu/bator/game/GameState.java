@@ -84,8 +84,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Priest of the Light"));
         yourHand.add(allCardsSet.cloneByName("Priest of the Light"));
 
-        enemyHand.add(allCardsSet.cloneByName("Shield Bash"));
-        yourHand.add(allCardsSet.cloneByName("Shield Bash"));
+        enemyHand.add(allCardsSet.cloneByName("Aldon the Brave"));
+        yourHand.add(allCardsSet.cloneByName("Aldon the Brave"));
 
         enemyHand.add(allCardsSet.cloneByName("Armored Sandworm"));
         yourHand.add(allCardsSet.cloneByName("Armored Sandworm"));
