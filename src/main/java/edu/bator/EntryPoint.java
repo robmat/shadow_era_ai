@@ -35,6 +35,7 @@ public class EntryPoint extends Application {
     private GameState gameState = new GameState();
     private GamePainter gamePainter = new GamePainter();
     public static ObjectMapper objectJsonMapper = new ObjectMapper();
+    public static AllCardsSet allCardsSet = new AllCardsSet();
 
     public static void main(String[] args) {
         log.info("Starting.");
@@ -96,7 +97,6 @@ public class EntryPoint extends Application {
 
         EventHandler<MouseEvent> loadEvent = (event) -> {
             try {
-                AllCardsSet allCardsSet = gameState.getAllCardsSet();
                 gameState = objectJsonMapper.readValue(new File("save.json"), GameState.class);
                 gameState.setGamePainter(gamePainter);
                 gameState.setEnemyHero(allCardsSet.replaceWithImplementingCard(gameState.getEnemyHero()));

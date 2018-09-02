@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;
+import edu.bator.EntryPoint;
 import edu.bator.cards.AllCardsSet;
 import edu.bator.cards.Card;
 import edu.bator.ui.GamePainter;
@@ -16,6 +17,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
+
+import static edu.bator.EntryPoint.allCardsSet;
 
 @Data
 @NoArgsConstructor
@@ -50,8 +53,6 @@ public class GameState {
     LinkedList<Card> enemySupport = new LinkedList<>();
     LinkedList<Card> yourSupport = new LinkedList<>();
 
-    AllCardsSet allCardsSet = new AllCardsSet();
-
     GamePhase gamePhase = GamePhase.YOU_PREPARE;
 
     @JsonIgnore
@@ -81,8 +82,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Raven Wildheart"));
         yourHand.add(allCardsSet.cloneByName("Raven Wildheart"));
 
-        enemyHand.add(allCardsSet.cloneByName("Priest of the Light"));
-        yourHand.add(allCardsSet.cloneByName("Priest of the Light"));
+        enemyHand.add(allCardsSet.cloneByName("Marshland Sentinel"));
+        yourHand.add(allCardsSet.cloneByName("Marshland Sentinel"));
 
         enemyHand.add(allCardsSet.cloneByName("Aldon the Brave"));
         yourHand.add(allCardsSet.cloneByName("Aldon the Brave"));

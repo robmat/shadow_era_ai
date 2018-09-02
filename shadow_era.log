@@ -1,11 +1,21 @@
-2018-08-31 22:18:06 INFO            edu.bator.EntryPoint:  40 - Starting.
-2018-08-31 22:18:09 INFO        edu.bator.game.GameState:  93 - Init done.
-2018-08-31 22:18:09 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='d0fe567e-643c-4471-a70d-c62a37998773'}
-2018-08-31 22:18:09 INFO            edu.bator.EntryPoint:  95 - Started.
-2018-08-31 22:18:17 INFO  r.ui.events.AttackClickedEvent:  35 - ArmoredSandworm{currentHp=5, uniqueId='b798dac7-2e0d-494e-ad96-e09c316deeb1'} ready to attack.
-2018-08-31 22:18:19 INFO  vents.AttackTargetClickedEvent:  34 - ArmoredSandworm{currentHp=5, uniqueId='e8dbef65-7a08-4ab2-b9ab-2898e2d8edaa'} attacked ArmoredSandworm{currentHp=5, uniqueId='b798dac7-2e0d-494e-ad96-e09c316deeb1'}
-2018-08-31 22:18:20 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='14dbecd3-c6ef-41ba-ba22-28d30a6a12cd'}
-2018-08-31 22:18:21 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='14dbecd3-c6ef-41ba-ba22-28d30a6a12cd'}
-2018-08-31 22:18:22 INFO  ui.events.CardCastClickedEvent:  62 - Casted: ShieldBash{currentHp=null, uniqueId='dc257932-a227-445d-bb5d-3a83aec3d616'}
-2018-08-31 22:18:26 INFO  r.ui.events.AttackClickedEvent:  35 - ArmoredSandworm{currentHp=5, uniqueId='e8dbef65-7a08-4ab2-b9ab-2898e2d8edaa'} ready to attack.
-2018-08-31 22:18:26 INFO  vents.AttackTargetClickedEvent:  34 - RavenWildheart{currentHp=4, uniqueId='918c392b-6c69-4018-8788-b44cdbe709b9'} attacked ArmoredSandworm{currentHp=4, uniqueId='e8dbef65-7a08-4ab2-b9ab-2898e2d8edaa'}
+2018-09-02 18:56:20 INFO            edu.bator.EntryPoint:  41 - Starting.
+2018-09-02 18:56:21 INFO        edu.bator.game.GameState:  94 - Init done.
+2018-09-02 18:56:21 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='c0ed6921-1921-439c-bbae-f6ea708600a1'}
+2018-09-02 18:56:21 INFO            edu.bator.EntryPoint:  96 - Started.
+2018-09-02 18:56:32 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='f9bc43a8-e9c9-42d0-963f-8f14295a84e4'}
+2018-09-02 18:56:33 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='f9bc43a8-e9c9-42d0-963f-8f14295a84e4'}
+2018-09-02 18:56:37 INFO  r.ui.events.AttackClickedEvent:  35 - MarshlandSentinel{currentHp=4, uniqueId='5c9e2c6e-194f-49ab-9ff9-deccbd230741'} ready to attack.
+2018-09-02 18:56:38 INFO  vents.AttackTargetClickedEvent:  34 - BirgitteSkullborn{currentHp=0, uniqueId='c3cad855-4c6b-4985-8afd-9c642217162b'} attacked MarshlandSentinel{currentHp=4, uniqueId='5c9e2c6e-194f-49ab-9ff9-deccbd230741'}
+2018-09-02 18:56:40 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='9afd8fb6-34d5-4678-ae50-26963f76d1c9'}
+2018-09-02 18:56:41 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='9afd8fb6-34d5-4678-ae50-26963f76d1c9'}
+2018-09-02 18:56:43 INFO  .ui.events.AbilityClickedEvent:  33 - MarshlandSentinel{currentHp=4, uniqueId='56223f71-0672-4dc5-82f0-3929b6a0fc2c'} ready to use ability.
+2018-09-02 18:56:46 INFO  r.ui.events.AttackClickedEvent:  35 - MarshlandSentinel{currentHp=4, uniqueId='56223f71-0672-4dc5-82f0-3929b6a0fc2c'} ready to attack.
+2018-09-02 18:56:47 INFO  vents.AttackTargetClickedEvent:  34 - MarshlandSentinel{currentHp=2, uniqueId='5c9e2c6e-194f-49ab-9ff9-deccbd230741'} attacked MarshlandSentinel{currentHp=4, uniqueId='56223f71-0672-4dc5-82f0-3929b6a0fc2c'}
+2018-09-02 18:56:48 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='c0d71001-d5a7-4750-80ca-11cd42a6a822'}
+2018-09-02 18:56:50 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: KatrintheShieldmaiden(target=null)
+2018-09-02 18:56:51 INFO  ui.events.CardCastClickedEvent:  62 - Casted: AldontheBrave{currentHp=4, uniqueId='cf96e712-6035-43fe-a35e-cb5bc08f857a'}
+2018-09-02 18:56:53 INFO  .ui.events.AbilityClickedEvent:  33 - MarshlandSentinel{currentHp=2, uniqueId='5c9e2c6e-194f-49ab-9ff9-deccbd230741'} ready to use ability.
+2018-09-02 18:56:55 INFO  r.ui.events.AttackClickedEvent:  35 - MarshlandSentinel{currentHp=2, uniqueId='5c9e2c6e-194f-49ab-9ff9-deccbd230741'} ready to attack.
+2018-09-02 18:56:56 INFO  vents.AttackTargetClickedEvent:  34 - MarshlandSentinel{currentHp=3, uniqueId='56223f71-0672-4dc5-82f0-3929b6a0fc2c'} attacked MarshlandSentinel{currentHp=2, uniqueId='5c9e2c6e-194f-49ab-9ff9-deccbd230741'}
+2018-09-02 18:56:59 INFO  r.ui.events.AttackClickedEvent:  35 - BorisSkullcrusher{currentHp=30, uniqueId='44967b27-3ac7-46d3-851b-93ba20f7481b'} ready to attack.
+2018-09-02 18:57:02 INFO  vents.AttackTargetClickedEvent:  34 - MarshlandSentinel{currentHp=2, uniqueId='56223f71-0672-4dc5-82f0-3929b6a0fc2c'} attacked BorisSkullcrusher{currentHp=30, uniqueId='44967b27-3ac7-46d3-851b-93ba20f7481b'}

@@ -5,6 +5,7 @@ import java.util.function.BiConsumer;
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.cards.effects.InLoveEffect;
+import edu.bator.cards.util.AbilityTargetUtil;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.NoArgsConstructor;
@@ -31,9 +32,8 @@ public class JasmineRosecult extends Ally {
     }
 
     @Override
-    public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        boolean possibleAllyTarget = calculatePossibleTargetProtectorIncluded(card, gameState);
-        return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card) && possibleAllyTarget;
+    public boolean ableToApplyAbilityTo(Card target, GameState gameState) {
+        return new AbilityTargetUtil().standardAllyTargetedAbilityProtectorIncluded(target, gameState, this);
     }
 
     @Override

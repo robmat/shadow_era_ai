@@ -7,6 +7,7 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.function.BiConsumer;
 
+import edu.bator.EntryPoint;
 import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
@@ -140,11 +141,11 @@ public class Card implements Cloneable {
         }
     }
 
-    protected boolean calculatePossibleTargetProtectorIncluded(GameState gameState) {
+    private boolean calculatePossibleTargetProtectorIncluded(GameState gameState) {
         return calculatePossibleTargetProtectorIncluded(this, gameState);
     }
 
-    protected boolean calculatePossibleTargetProtectorIncluded(Card card, GameState gameState) {
+    public boolean calculatePossibleTargetProtectorIncluded(Card card, GameState gameState) {
         boolean otherAllyHasProtector = gameState.currentEnemyHeroAndAlliesBasedOnPhase()
                 .stream()
                 .filter(card1 -> !Objects.equals(card1, this))
@@ -240,7 +241,7 @@ public class Card implements Cloneable {
 
     public void resetAttackAnHp() {
         currentHp = initialHp;
-        baseAttack = new AllCardsSet().cloneByName(name).getBaseAttack();
+        baseAttack = EntryPoint.allCardsSet.cloneByName(name).getBaseAttack();
     }
 
     @Override
