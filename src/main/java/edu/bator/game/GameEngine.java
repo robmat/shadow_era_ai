@@ -109,7 +109,7 @@ public class GameEngine {
         hand.forEach(card -> card.determineCastable(card, gameState));
     }
 
-    private void pickACard(LinkedList<Card> deck, LinkedList<Card> hand) {
+    public void pickACard(LinkedList<Card> deck, LinkedList<Card> hand) {
         if (!deck.isEmpty() && hand.size() < 7) {
             Card card = deck.poll();
             hand.push(card);
@@ -126,20 +126,24 @@ public class GameEngine {
         if (gameState.getEnemyAllies().remove(card)) {
             gameState.getEnemyGraveyard().add(card);
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+            card.cardHasDiedEvent(card, gameState);
         }
         if (gameState.getYourAllies().remove(card)) {
             gameState.getYourGraveyard().add(card);
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+            card.cardHasDiedEvent(card, gameState);
         }
         if (card.equals(gameState.getEnemyHero().getWeapon())) {
             gameState.getEnemyHero().setWeapon(null);
             gameState.getEnemyGraveyard().add(card);
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+            card.cardHasDiedEvent(card, gameState);
         }
         if (card.equals(gameState.getYourHero().getWeapon())) {
             gameState.getYourHero().setWeapon(null);
             gameState.getYourGraveyard().add(card);
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+            card.cardHasDiedEvent(card, gameState);
         }
     }
 

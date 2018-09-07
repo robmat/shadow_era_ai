@@ -1,5 +1,6 @@
 package edu.bator.cards;
 
+import edu.bator.cards.enums.Owner;
 import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -12,8 +13,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import org.apache.log4j.Logger;
-
-import static edu.bator.EntryPoint.objectJsonMapper;
 
 @Data
 @AllArgsConstructor
@@ -60,7 +59,7 @@ public class AllCardsSet {
         return constructor.newInstance(card);
     }
 
-    public Card cloneByName(String name) {
+    public Card cloneByName(String name, Owner owner) {
         Card found = allCards
                 .stream()
                 .filter(card -> Objects.equals(name, card.getName()))
@@ -68,6 +67,7 @@ public class AllCardsSet {
                 .orElse(null);
         if (Objects.nonNull(found)) {
             found.setCurrentHp(found.getInitialHp());
+            found.setOwner(owner);
         }
         try {
             return Objects.isNull(found) ? null : (Card) found.clone();

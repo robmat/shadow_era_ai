@@ -1,5 +1,6 @@
 package edu.bator.game;
 
+import edu.bator.cards.enums.Owner;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -8,8 +9,6 @@ import java.util.stream.Stream;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;
-import edu.bator.EntryPoint;
-import edu.bator.cards.AllCardsSet;
 import edu.bator.cards.Card;
 import edu.bator.ui.GamePainter;
 import lombok.AllArgsConstructor;
@@ -62,34 +61,34 @@ public class GameState {
     private Card abilitySource;
 
     public void init() {
-        enemyHero = allCardsSet.cloneByName("Boris Skullcrusher");
-        enemyHero.setWeapon(allCardsSet.cloneByName("Mournblade"));
+        enemyHero = allCardsSet.cloneByName("Boris Skullcrusher", Owner.ENEMY);
+        enemyHero.setWeapon(allCardsSet.cloneByName("Mournblade", Owner.ENEMY));
 
-        yourHero = allCardsSet.cloneByName("Boris Skullcrusher");
-        yourHero.setWeapon(allCardsSet.cloneByName("Mournblade"));
+        yourHero = allCardsSet.cloneByName("Boris Skullcrusher", Owner.YOU);
+        yourHero.setWeapon(allCardsSet.cloneByName("Mournblade", Owner.YOU));
 
         for (int i = 0; i < 40; i++) {
-            enemyDeck.add(allCardsSet.cloneByName("Birgitte Skullborn"));
-            yourDeck.add(allCardsSet.cloneByName("Birgitte Skullborn"));
+            enemyDeck.add(allCardsSet.cloneByName("Birgitte Skullborn", Owner.ENEMY));
+            yourDeck.add(allCardsSet.cloneByName("Birgitte Skullborn", Owner.YOU));
         }
 
-        enemyHand.add(allCardsSet.cloneByName("Katrin the Shieldmaiden"));
-        yourHand.add(allCardsSet.cloneByName("Katrin the Shieldmaiden"));
+        enemyHand.add(allCardsSet.cloneByName("Tainted Oracle", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Tainted Oracle", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
-        yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult"));
+        enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Raven Wildheart"));
-        yourHand.add(allCardsSet.cloneByName("Raven Wildheart"));
+        enemyHand.add(allCardsSet.cloneByName("Raven Wildheart", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Raven Wildheart", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Marshland Sentinel"));
-        yourHand.add(allCardsSet.cloneByName("Marshland Sentinel"));
+        enemyHand.add(allCardsSet.cloneByName("Marshland Sentinel", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Marshland Sentinel", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Aldon the Brave"));
-        yourHand.add(allCardsSet.cloneByName("Aldon the Brave"));
+        enemyHand.add(allCardsSet.cloneByName("Aldon the Brave", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Aldon the Brave", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Armored Sandworm"));
-        yourHand.add(allCardsSet.cloneByName("Armored Sandworm"));
+        enemyHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.YOU));
 
         log.info("Init done.");
     }

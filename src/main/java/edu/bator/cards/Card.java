@@ -1,5 +1,6 @@
 package edu.bator.cards;
 
+import edu.bator.cards.enums.Owner;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Objects;
@@ -60,6 +61,8 @@ public class Card implements Cloneable {
     Card weapon;
 
     Set<HeroClass> availableForHeroClasses = new HashSet<>();
+
+    Owner owner;
 
     String uniqueId = UUID.randomUUID().toString();
 
@@ -241,7 +244,7 @@ public class Card implements Cloneable {
 
     public void resetAttackAnHp() {
         currentHp = initialHp;
-        baseAttack = EntryPoint.allCardsSet.cloneByName(name).getBaseAttack();
+        baseAttack = EntryPoint.allCardsSet.cloneByName(name, Owner.ENEMY).getBaseAttack();
     }
 
     @Override
