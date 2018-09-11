@@ -1,27 +1,5 @@
-2018-09-11 16:19:23 INFO            edu.bator.EntryPoint:  41 - Starting.
-2018-09-11 16:19:24 INFO        edu.bator.game.GameState:  93 - Init done.
-2018-09-11 16:19:24 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='934a304d-3db4-482f-8188-a30bdbf83cd7'}
-2018-09-11 16:19:24 INFO            edu.bator.EntryPoint:  96 - Started.
-2018-09-11 16:19:26 INFO  ents.SkipSacrificeClickedEvent:  32 - Skipped sacrifice.
-2018-09-11 16:19:26 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='aa1fabb2-e34b-4ffd-8c86-95f0531b70da'}
-2018-09-11 16:19:27 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='aa1fabb2-e34b-4ffd-8c86-95f0531b70da'}
-2018-09-11 16:19:28 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='934a304d-3db4-482f-8188-a30bdbf83cd7'}
-2018-09-11 16:19:28 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='59ed6e7d-ee03-4173-996d-5f71c38582cf'}
-2018-09-11 16:19:30 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='59ed6e7d-ee03-4173-996d-5f71c38582cf'}
-2018-09-11 16:19:30 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='58d548e0-d301-47f1-a92c-d3d2a4319c72'}
-2018-09-11 16:19:30 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='58d548e0-d301-47f1-a92c-d3d2a4319c72'}
-2018-09-11 16:19:31 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='0af88a3e-6089-4149-87f6-ddee5582d389'}
-2018-09-11 16:19:31 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='0af88a3e-6089-4149-87f6-ddee5582d389'}
-2018-09-11 16:19:31 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='5878a1f4-f3b0-41fa-8405-cc75ca56a454'}
-2018-09-11 16:19:32 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='5878a1f4-f3b0-41fa-8405-cc75ca56a454'}
-2018-09-11 16:19:33 INFO  ui.events.CardCastClickedEvent:  62 - Casted: AldontheBrave{currentHp=4, uniqueId='958ace9d-4030-44e9-a2ac-b7d6f2a6b28a'}
-2018-09-11 16:19:33 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='66e17cb0-a77d-49d3-b09c-951586fdb417'}
-2018-09-11 16:19:34 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='66e17cb0-a77d-49d3-b09c-951586fdb417'}
-2018-09-11 16:19:35 INFO  ui.events.CardCastClickedEvent:  62 - Casted: MarshlandSentinel{currentHp=4, uniqueId='e20f0212-aa7d-49f7-9fce-f8cb319bccf9'}
-2018-09-11 16:19:37 INFO  .ui.events.AbilityClickedEvent:  33 - BorisSkullcrusher{currentHp=30, uniqueId='738a426f-fe38-4235-a740-f7f5c071b912'} ready to use ability.
-2018-09-11 16:19:38 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='193f9a7c-7ed3-42b2-82f6-6f437885d0a3'}
-2018-09-11 16:19:40 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='193f9a7c-7ed3-42b2-82f6-6f437885d0a3'}
-2018-09-11 16:19:42 INFO  ui.events.CardCastClickedEvent:  62 - Casted: MarshlandSentinel{currentHp=4, uniqueId='e3bddf49-01ea-4718-b424-ad7e83e63751'}
-2018-09-11 16:19:43 INFO  .ui.events.AbilityClickedEvent:  33 - BorisSkullcrusher{currentHp=30, uniqueId='41635e5e-bb29-452d-ac7a-120f76702bb3'} ready to use ability.
-2018-09-11 16:19:46 INFO  r.ui.events.AttackClickedEvent:  35 - BorisSkullcrusher{currentHp=30, uniqueId='41635e5e-bb29-452d-ac7a-120f76702bb3'} ready to attack.
-2018-09-11 16:19:48 INFO  vents.AttackTargetClickedEvent:  34 - BorisSkullcrusher{currentHp=28, uniqueId='738a426f-fe38-4235-a740-f7f5c071b912'} attacked BorisSkullcrusher{currentHp=28, uniqueId='41635e5e-bb29-452d-ac7a-120f76702bb3'}
+2018-09-11 16:39:25 INFO            edu.bator.EntryPoint:  46 - Starting.
+2018-09-11 16:39:25 INFO        edu.bator.game.GameState:  93 - Init done.
+2018-09-11 16:39:25 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='c6631943-99c6-42f8-8f40-806aad4415e6'}
+2018-09-11 16:39:25 INFO            edu.bator.EntryPoint: 104 - Started.
+2018-09-11 16:39:30 DEBUG events.NewRandomDecksGameEvent:  20 - New random game starting.

@@ -1,5 +1,6 @@
 package edu.bator;
 
+import edu.bator.ui.menu.MenuBuilder;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
@@ -19,11 +20,15 @@ import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCharacterCombination;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 
@@ -34,7 +39,7 @@ public class EntryPoint extends Application {
     private static final Logger log = getLogger(EntryPoint.class);
     private GameState gameState = new GameState();
     private GamePainter gamePainter = new GamePainter();
-    public static ObjectMapper objectJsonMapper = new ObjectMapper();
+    static ObjectMapper objectJsonMapper = new ObjectMapper();
     public static AllCardsSet allCardsSet = new AllCardsSet();
 
     public static void main(String[] args) {
@@ -55,7 +60,10 @@ public class EntryPoint extends Application {
         GridPane mainGridPane = new GridPane();
         mainGridPane.setPadding(new Insets(5));
         ScrollPane scrollPane = new ScrollPane(mainGridPane);
-        Scene scene = new Scene(scrollPane);
+        MenuBar menuBar = new MenuBar();
+
+        VBox root = new VBox(menuBar, scrollPane);
+        Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.setMaximized(true);
 
@@ -120,5 +128,11 @@ public class EntryPoint extends Application {
         scene.getAccelerators().put(new KeyCharacterCombination("s"), () -> saveEvent.handle(null));
         scene.getAccelerators().put(new KeyCharacterCombination("e"), () -> new TurnSkipClickedEvent(gameState).handle(null));
         scene.getAccelerators().put(new KeyCharacterCombination("s"), () -> new SkipSacrificeClickedEvent(gameState).handle(null));
+
+        new MenuBuilder().build(menuBar, this);
     }
+
+  public void setGameState(GameState gameState) {
+    this.gameState = gameState;
+  }
 }
