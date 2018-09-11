@@ -75,8 +75,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Tainted Oracle", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Tainted Oracle", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Earthen Protector", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Earthen Protector", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Raven Wildheart", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Raven Wildheart", Owner.YOU));
