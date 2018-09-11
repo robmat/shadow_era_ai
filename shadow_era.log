@@ -1,41 +1,27 @@
-2018-09-07 09:49:48 INFO            edu.bator.EntryPoint:  41 - Starting.
-2018-09-07 09:49:49 INFO        edu.bator.game.GameState:  93 - Init done.
-2018-09-07 09:49:49 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='6c0720da-b4be-4d28-925b-babc145f86a7'}
-2018-09-07 09:49:49 INFO            edu.bator.EntryPoint:  96 - Started.
-2018-09-07 09:49:51 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='6c0720da-b4be-4d28-925b-babc145f86a7'}
-2018-09-07 09:49:52 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='ecd7e440-39e6-4d42-ba89-fddf82330e1b'}
-2018-09-07 09:49:53 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='ecd7e440-39e6-4d42-ba89-fddf82330e1b'}
-2018-09-07 09:49:53 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='ef92a6b3-ef60-4ff5-8de2-e6460eb221f1'}
-2018-09-07 09:49:54 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='ef92a6b3-ef60-4ff5-8de2-e6460eb221f1'}
-2018-09-07 09:49:54 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='1a977526-f26b-45a4-8180-e49953086552'}
-2018-09-07 09:49:55 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='1a977526-f26b-45a4-8180-e49953086552'}
-2018-09-07 09:49:55 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='bb4c50e8-27dd-446e-bb4b-52e9e8b35966'}
-2018-09-07 09:49:56 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='bb4c50e8-27dd-446e-bb4b-52e9e8b35966'}
-2018-09-07 09:49:57 INFO  ui.events.CardCastClickedEvent:  62 - Casted: JasmineRosecult{currentHp=4, uniqueId='1e0f7deb-45f6-48d2-a939-0cf113125511'}
-2018-09-07 09:49:57 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='7e5f1aef-77f1-497a-80ed-880390ef7aaf'}
-2018-09-07 09:49:58 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='7e5f1aef-77f1-497a-80ed-880390ef7aaf'}
-2018-09-07 09:49:59 INFO  ui.events.CardCastClickedEvent:  62 - Casted: JasmineRosecult{currentHp=4, uniqueId='6dbde9fd-deef-449f-8e19-0b6ac3e32e9d'}
-2018-09-07 09:50:00 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='6d5f5422-c67f-4b94-9dd2-ec5d51ac4dc8'}
-2018-09-07 09:50:01 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='6d5f5422-c67f-4b94-9dd2-ec5d51ac4dc8'}
-2018-09-07 09:50:02 INFO  ui.events.CardCastClickedEvent:  62 - Casted: TaintedOracle{currentHp=2, uniqueId='7821797c-81c2-42cf-9124-48cbb798d277'}
-2018-09-07 09:50:05 INFO  r.ui.events.AttackClickedEvent:  35 - JasmineRosecult{currentHp=4, uniqueId='1e0f7deb-45f6-48d2-a939-0cf113125511'} ready to attack.
-2018-09-07 09:50:08 INFO  vents.AttackTargetClickedEvent:  34 - JasmineRosecult{currentHp=1, uniqueId='6dbde9fd-deef-449f-8e19-0b6ac3e32e9d'} attacked JasmineRosecult{currentHp=1, uniqueId='1e0f7deb-45f6-48d2-a939-0cf113125511'}
-2018-09-07 09:50:09 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='2c1672ff-a524-4229-a352-8d4509e08ed1'}
-2018-09-07 09:50:10 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='2c1672ff-a524-4229-a352-8d4509e08ed1'}
-2018-09-07 09:50:11 INFO  ui.events.CardCastClickedEvent:  62 - Casted: TaintedOracle{currentHp=2, uniqueId='235681aa-43d0-46ad-bb38-cf75439f43b1'}
-2018-09-07 09:50:13 INFO  r.ui.events.AttackClickedEvent:  35 - JasmineRosecult{currentHp=1, uniqueId='6dbde9fd-deef-449f-8e19-0b6ac3e32e9d'} ready to attack.
-2018-09-07 09:50:13 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='450f43ee-72b6-4aa0-9ddc-e48c881ef137'}
-2018-09-07 09:50:13 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='fc55506b-7ea1-40fe-845c-019a31a24719'}
-2018-09-07 09:50:13 INFO  vents.AttackTargetClickedEvent:  34 - TaintedOracle{currentHp=-1, uniqueId='7821797c-81c2-42cf-9124-48cbb798d277'} attacked JasmineRosecult{currentHp=1, uniqueId='6dbde9fd-deef-449f-8e19-0b6ac3e32e9d'}
-2018-09-07 09:50:17 INFO  r.ui.events.AttackClickedEvent:  35 - BorisSkullcrusher{currentHp=30, uniqueId='10265b9b-baaf-4f69-aa71-f3a12dc37486'} ready to attack.
-2018-09-07 09:50:18 INFO  vents.AttackTargetClickedEvent:  34 - JasmineRosecult{currentHp=0, uniqueId='1e0f7deb-45f6-48d2-a939-0cf113125511'} attacked BorisSkullcrusher{currentHp=30, uniqueId='10265b9b-baaf-4f69-aa71-f3a12dc37486'}
-2018-09-07 09:50:19 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='36f1ea1a-1465-4842-bc3f-341456d10ad5'}
-2018-09-07 09:50:22 INFO  ents.SkipSacrificeClickedEvent:  32 - Skipped sacrifice.
-2018-09-07 09:50:23 INFO  ui.events.CardCastClickedEvent:  62 - Casted: BirgitteSkullborn{currentHp=2, uniqueId='36f1ea1a-1465-4842-bc3f-341456d10ad5'}
-2018-09-07 09:50:24 INFO  ui.events.CardCastClickedEvent:  62 - Casted: BirgitteSkullborn{currentHp=2, uniqueId='450f43ee-72b6-4aa0-9ddc-e48c881ef137'}
-2018-09-07 09:50:25 INFO  ui.events.CardCastClickedEvent:  62 - Casted: BirgitteSkullborn{currentHp=2, uniqueId='fc55506b-7ea1-40fe-845c-019a31a24719'}
-2018-09-07 09:50:29 INFO  .ui.events.AbilityClickedEvent:  33 - BorisSkullcrusher{currentHp=30, uniqueId='dc43bfc1-467e-4a94-b33c-4b1653eb2f1e'} ready to use ability.
-2018-09-07 09:50:32 INFO  r.ui.events.AttackClickedEvent:  35 - BorisSkullcrusher{currentHp=30, uniqueId='dc43bfc1-467e-4a94-b33c-4b1653eb2f1e'} ready to attack.
-2018-09-07 09:50:33 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='2f77bfbf-5bee-4e43-82e8-54f013756740'}
-2018-09-07 09:50:33 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='7227152a-4ee1-4a37-9c5f-6b75d97ba867'}
-2018-09-07 09:50:33 INFO  vents.AttackTargetClickedEvent:  34 - TaintedOracle{currentHp=-1, uniqueId='235681aa-43d0-46ad-bb38-cf75439f43b1'} attacked BorisSkullcrusher{currentHp=30, uniqueId='dc43bfc1-467e-4a94-b33c-4b1653eb2f1e'}
+2018-09-11 16:19:23 INFO            edu.bator.EntryPoint:  41 - Starting.
+2018-09-11 16:19:24 INFO        edu.bator.game.GameState:  93 - Init done.
+2018-09-11 16:19:24 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='934a304d-3db4-482f-8188-a30bdbf83cd7'}
+2018-09-11 16:19:24 INFO            edu.bator.EntryPoint:  96 - Started.
+2018-09-11 16:19:26 INFO  ents.SkipSacrificeClickedEvent:  32 - Skipped sacrifice.
+2018-09-11 16:19:26 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='aa1fabb2-e34b-4ffd-8c86-95f0531b70da'}
+2018-09-11 16:19:27 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='aa1fabb2-e34b-4ffd-8c86-95f0531b70da'}
+2018-09-11 16:19:28 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='934a304d-3db4-482f-8188-a30bdbf83cd7'}
+2018-09-11 16:19:28 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='59ed6e7d-ee03-4173-996d-5f71c38582cf'}
+2018-09-11 16:19:30 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='59ed6e7d-ee03-4173-996d-5f71c38582cf'}
+2018-09-11 16:19:30 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='58d548e0-d301-47f1-a92c-d3d2a4319c72'}
+2018-09-11 16:19:30 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='58d548e0-d301-47f1-a92c-d3d2a4319c72'}
+2018-09-11 16:19:31 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='0af88a3e-6089-4149-87f6-ddee5582d389'}
+2018-09-11 16:19:31 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='0af88a3e-6089-4149-87f6-ddee5582d389'}
+2018-09-11 16:19:31 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='5878a1f4-f3b0-41fa-8405-cc75ca56a454'}
+2018-09-11 16:19:32 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='5878a1f4-f3b0-41fa-8405-cc75ca56a454'}
+2018-09-11 16:19:33 INFO  ui.events.CardCastClickedEvent:  62 - Casted: AldontheBrave{currentHp=4, uniqueId='958ace9d-4030-44e9-a2ac-b7d6f2a6b28a'}
+2018-09-11 16:19:33 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='66e17cb0-a77d-49d3-b09c-951586fdb417'}
+2018-09-11 16:19:34 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='66e17cb0-a77d-49d3-b09c-951586fdb417'}
+2018-09-11 16:19:35 INFO  ui.events.CardCastClickedEvent:  62 - Casted: MarshlandSentinel{currentHp=4, uniqueId='e20f0212-aa7d-49f7-9fce-f8cb319bccf9'}
+2018-09-11 16:19:37 INFO  .ui.events.AbilityClickedEvent:  33 - BorisSkullcrusher{currentHp=30, uniqueId='738a426f-fe38-4235-a740-f7f5c071b912'} ready to use ability.
+2018-09-11 16:19:38 INFO       edu.bator.game.GameEngine: 116 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='193f9a7c-7ed3-42b2-82f6-6f437885d0a3'}
+2018-09-11 16:19:40 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='193f9a7c-7ed3-42b2-82f6-6f437885d0a3'}
+2018-09-11 16:19:42 INFO  ui.events.CardCastClickedEvent:  62 - Casted: MarshlandSentinel{currentHp=4, uniqueId='e3bddf49-01ea-4718-b424-ad7e83e63751'}
+2018-09-11 16:19:43 INFO  .ui.events.AbilityClickedEvent:  33 - BorisSkullcrusher{currentHp=30, uniqueId='41635e5e-bb29-452d-ac7a-120f76702bb3'} ready to use ability.
+2018-09-11 16:19:46 INFO  r.ui.events.AttackClickedEvent:  35 - BorisSkullcrusher{currentHp=30, uniqueId='41635e5e-bb29-452d-ac7a-120f76702bb3'} ready to attack.
+2018-09-11 16:19:48 INFO  vents.AttackTargetClickedEvent:  34 - BorisSkullcrusher{currentHp=28, uniqueId='738a426f-fe38-4235-a740-f7f5c071b912'} attacked BorisSkullcrusher{currentHp=28, uniqueId='41635e5e-bb29-452d-ac7a-120f76702bb3'}

@@ -99,26 +99,6 @@ public class EntryPoint extends Application {
             try {
                 gameState = objectJsonMapper.readValue(new File("save.json"), GameState.class);
                 gameState.setGamePainter(gamePainter);
-                gameState.setEnemyHero(allCardsSet.replaceWithImplementingCard(gameState.getEnemyHero()));
-                gameState.setYourHero(allCardsSet.replaceWithImplementingCard(gameState.getYourHero()));
-
-                gameState.getEnemyHero().setWeapon(allCardsSet.replaceWithImplementingCard(gameState.getEnemyHero().getWeapon()));
-                gameState.getYourHero().setWeapon(allCardsSet.replaceWithImplementingCard(gameState.getYourHero().getWeapon()));
-
-                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyAllies());
-                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyDeck());
-                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyGraveyard());
-                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyHand());
-                replaceCardsWithImplementors(allCardsSet, gameState.getEnemyResources());
-                replaceCardsWithImplementors(allCardsSet, gameState.getEnemySupport());
-
-                replaceCardsWithImplementors(allCardsSet, gameState.getYourAllies());
-                replaceCardsWithImplementors(allCardsSet, gameState.getYourDeck());
-                replaceCardsWithImplementors(allCardsSet, gameState.getYourGraveyard());
-                replaceCardsWithImplementors(allCardsSet, gameState.getYourHand());
-                replaceCardsWithImplementors(allCardsSet, gameState.getYourResources());
-                replaceCardsWithImplementors(allCardsSet, gameState.getYourSupport());
-
                 gameState.repaint();
             } catch (Exception e) {
                 log.error("Load crashed.", e);
@@ -140,12 +120,5 @@ public class EntryPoint extends Application {
         scene.getAccelerators().put(new KeyCharacterCombination("s"), () -> saveEvent.handle(null));
         scene.getAccelerators().put(new KeyCharacterCombination("e"), () -> new TurnSkipClickedEvent(gameState).handle(null));
         scene.getAccelerators().put(new KeyCharacterCombination("s"), () -> new SkipSacrificeClickedEvent(gameState).handle(null));
-    }
-
-    private void replaceCardsWithImplementors(AllCardsSet allCardsSet, LinkedList<Card> originalCards)
-            throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
-        for (int i = 0; i < originalCards.size(); i++) {
-            originalCards.set(i, allCardsSet.replaceWithImplementingCard(originalCards.get(i)));
-        }
     }
 }
