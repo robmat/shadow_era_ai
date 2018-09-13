@@ -2,7 +2,6 @@ package edu.bator.cards.done;
 
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
-import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 
 public class PriestoftheLight extends Ally {

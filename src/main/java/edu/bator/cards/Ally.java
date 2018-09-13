@@ -1,11 +1,10 @@
 package edu.bator.cards;
 
-import java.util.function.BiConsumer;
+import static java.util.Objects.nonNull;
 
 import edu.bator.game.GameState;
+import java.util.function.BiConsumer;
 import lombok.NoArgsConstructor;
-
-import static java.util.Objects.nonNull;
 
 @NoArgsConstructor
 public class Ally extends Card {

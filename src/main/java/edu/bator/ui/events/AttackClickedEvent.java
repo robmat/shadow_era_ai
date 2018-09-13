@@ -1,9 +1,6 @@
 package edu.bator.ui.events;
 
-import java.util.stream.Stream;
-
 import edu.bator.cards.Card;
-import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;

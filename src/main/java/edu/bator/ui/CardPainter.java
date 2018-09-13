@@ -1,8 +1,6 @@
 package edu.bator.ui;
 
-import java.util.Objects;
-import java.util.Optional;
-import java.util.stream.Collectors;
+import static com.google.common.base.Strings.nullToEmpty;
 
 import edu.bator.cards.Card;
 import edu.bator.cards.effects.Effect;
@@ -14,6 +12,9 @@ import edu.bator.ui.events.AttackClickedEvent;
 import edu.bator.ui.events.AttackTargetClickedEvent;
 import edu.bator.ui.events.CardCastClickedEvent;
 import edu.bator.ui.events.CardSacrificeClickedEvent;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Collectors;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -26,9 +27,6 @@ import javafx.scene.layout.BorderStrokeStyle;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-import org.apache.log4j.Logger;
-
-import static com.google.common.base.Strings.nullToEmpty;
 
 class CardPainter {
 

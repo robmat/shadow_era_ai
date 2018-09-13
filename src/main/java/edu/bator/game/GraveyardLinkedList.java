@@ -1,8 +1,7 @@
 package edu.bator.game;
 
-import java.util.LinkedList;
-
 import edu.bator.cards.Card;
+import java.util.LinkedList;
 
 public class GraveyardLinkedList extends LinkedList<Card> {
 

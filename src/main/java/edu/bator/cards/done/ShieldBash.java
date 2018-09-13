@@ -1,12 +1,11 @@
 package edu.bator.cards.done;
 
-import java.util.Objects;
-import java.util.function.BiConsumer;
-
 import edu.bator.cards.Ability;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
+import java.util.Objects;
+import java.util.function.BiConsumer;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor

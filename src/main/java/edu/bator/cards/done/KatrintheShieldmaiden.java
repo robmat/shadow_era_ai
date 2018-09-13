@@ -1,12 +1,11 @@
 package edu.bator.cards.done;
 
-import java.util.Objects;
-import java.util.Optional;
-
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import java.util.Objects;
+import java.util.Optional;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

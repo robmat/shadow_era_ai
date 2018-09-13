@@ -2,15 +2,12 @@ package edu.bator.ui.menu;
 
 import edu.bator.EntryPoint;
 import edu.bator.ui.menu.events.NewRandomDecksGameEvent;
-import javafx.scene.Scene;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 public class MenuBuilder {
 

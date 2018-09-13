@@ -1,14 +1,13 @@
 package edu.bator.game;
 
+import static java.lang.String.format;
+
+import edu.bator.cards.Card;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
-
-import edu.bator.cards.Card;
 import org.apache.log4j.Logger;
-
-import static java.lang.String.format;
 
 public class GameEngine {
 

@@ -1,7 +1,5 @@
 package edu.bator.cards.done;
 
-import java.util.concurrent.Phaser;
-
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;

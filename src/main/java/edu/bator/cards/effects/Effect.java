@@ -1,9 +1,8 @@
 package edu.bator.cards.effects;
 
-import java.util.UUID;
-
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
+import java.util.UUID;
 import lombok.Data;
 
 @Data

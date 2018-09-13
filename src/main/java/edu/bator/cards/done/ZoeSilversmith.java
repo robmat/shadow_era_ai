@@ -1,15 +1,14 @@
 package edu.bator.cards.done;
 
-import java.util.function.BiConsumer;
+import static java.util.Objects.nonNull;
 
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import java.util.function.BiConsumer;
 import lombok.NoArgsConstructor;
-
-import static java.util.Objects.nonNull;
 
 @NoArgsConstructor
 public class ZoeSilversmith extends Ally {

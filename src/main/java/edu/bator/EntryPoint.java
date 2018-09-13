@@ -1,28 +1,24 @@
 package edu.bator;
 
-import edu.bator.ui.menu.MenuBuilder;
-import java.io.File;
-import java.lang.reflect.InvocationTargetException;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.util.LinkedList;
+import static org.apache.log4j.Logger.getLogger;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.bator.cards.AllCardsSet;
-import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.GamePainter;
 import edu.bator.ui.LogginExceptionHandler;
 import edu.bator.ui.events.SkipSacrificeClickedEvent;
 import edu.bator.ui.events.TurnSkipClickedEvent;
+import edu.bator.ui.menu.MenuBuilder;
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCharacterCombination;
@@ -35,8 +31,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import lombok.Data;
 import org.apache.log4j.Logger;
-
-import static org.apache.log4j.Logger.getLogger;
 
 @Data
 public class EntryPoint extends Application {
