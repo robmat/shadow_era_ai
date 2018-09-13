@@ -9,6 +9,7 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.Random;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -76,5 +77,9 @@ public class AllCardsSet {
             System.exit(1);
             return null;
         }
+    }
+
+    public Card randomCard(Owner owner) {
+        return cloneByName(allCards.get(new Random().nextInt(allCards.size())).getName(), owner);
     }
 }

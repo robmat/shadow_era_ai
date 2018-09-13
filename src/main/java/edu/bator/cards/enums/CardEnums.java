@@ -41,7 +41,7 @@ public class CardEnums {
     }
 
     public enum HeroClass {
-        WARRIOR, PRIEST, ROGUE, MAGE, HUNTER, VULVEN, ELEMENTAL, NEUTRAL;
+        WARRIOR, PRIEST, ROGUE, MAGE, HUNTER, WULVEN, ELEMENTAL, NEUTRAL;
 
         public static HeroClass parse(String str) {
             return new EnumParser<>(HeroClass.class).parse(str);

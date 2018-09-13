@@ -36,11 +36,11 @@ public class GamePainter {
     GridPane yourGraveyard = new GridPane();
     GridPane yourAllies = new GridPane();
 
-    Button endTurnButton = new Button("End turn.");
-    Button skipSacrificeButton = new Button("Skip sacrifice.");
+    Button endTurnButton = new Button("End turn. (E)");
+    Button skipSacrificeButton = new Button("Skip sacrifice. (S)");
 
-    Button saveButton = new Button("Save game.");
-    Button loadButton = new Button("Load game.");
+    Button saveButton = new Button("Save game. (Ctrl+S)");
+    Button loadButton = new Button("Load game. (Ctrl+L)");
 
     CardPainter cardPainter = new CardPainter();
 

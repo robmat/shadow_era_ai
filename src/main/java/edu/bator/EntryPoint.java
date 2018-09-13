@@ -26,14 +26,19 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCharacterCombination;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
+import javafx.scene.input.KeyCombination;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import lombok.Data;
 import org.apache.log4j.Logger;
 
 import static org.apache.log4j.Logger.getLogger;
 
+@Data
 public class EntryPoint extends Application {
 
     private static final Logger log = getLogger(EntryPoint.class);
@@ -108,6 +113,7 @@ public class EntryPoint extends Application {
                 gameState = objectJsonMapper.readValue(new File("save.json"), GameState.class);
                 gameState.setGamePainter(gamePainter);
                 gameState.repaint();
+                log.debug("Game loaded.");
             } catch (Exception e) {
                 log.error("Load crashed.", e);
             }
@@ -118,21 +124,18 @@ public class EntryPoint extends Application {
             try {
                 objectJsonMapper.writerWithDefaultPrettyPrinter()
                         .writeValue(new File("save.json"), gameState);
+                log.debug("Game saved.");
             } catch (Exception e) {
                 log.error("Save crashed.", e);
             }
         };
         gamePainter.getSaveButton().setOnMouseClicked(saveEvent);
 
-        scene.getAccelerators().put(new KeyCharacterCombination("l"), () -> loadEvent.handle(null));
-        scene.getAccelerators().put(new KeyCharacterCombination("s"), () -> saveEvent.handle(null));
+        scene.getAccelerators().put(new KeyCodeCombination(KeyCode.L, KeyCombination.CONTROL_DOWN), () -> loadEvent.handle(null));
+        scene.getAccelerators().put(new KeyCodeCombination(KeyCode.S, KeyCombination.CONTROL_DOWN), () -> saveEvent.handle(null));
         scene.getAccelerators().put(new KeyCharacterCombination("e"), () -> new TurnSkipClickedEvent(gameState).handle(null));
         scene.getAccelerators().put(new KeyCharacterCombination("s"), () -> new SkipSacrificeClickedEvent(gameState).handle(null));
 
         new MenuBuilder().build(menuBar, this);
     }
-
-  public void setGameState(GameState gameState) {
-    this.gameState = gameState;
-  }
 }

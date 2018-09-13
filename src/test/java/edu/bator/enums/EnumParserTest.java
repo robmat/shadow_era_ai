@@ -15,7 +15,7 @@ public class EnumParserTest {
     @Test
     @Ignore
     public void parse() throws IOException {
-        Files.list(Paths.get("src", "main", "java", "edu", "bator", "cards", "todo")).forEach(cardFile -> {
+        Files.list(Paths.get("src", "main", "java", "edu", "bator", "cards", "done")).forEach(cardFile -> {
             try {
                 List<String> lines = new ArrayList<>(Files.readAllLines(cardFile));
                 int index = -1;

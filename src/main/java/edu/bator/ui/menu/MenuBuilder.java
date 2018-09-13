@@ -6,6 +6,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
+import javafx.scene.input.KeyCombination;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -19,5 +22,6 @@ public class MenuBuilder {
     MenuItem newRandomGame = new MenuItem("New random decks game.");
     game.getItems().add(newRandomGame);
     newRandomGame.setOnAction(new NewRandomDecksGameEvent(entryPoint));
+    newRandomGame.setAccelerator(new KeyCodeCombination(KeyCode.N, KeyCombination.CONTROL_DOWN));
   }
 }
