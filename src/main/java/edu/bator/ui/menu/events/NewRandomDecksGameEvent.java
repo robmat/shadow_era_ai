@@ -43,10 +43,9 @@ public class NewRandomDecksGameEvent implements EventHandler<ActionEvent> {
           if (card.cardIsAHero()) {
             cardsYou.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
           } else {
-            cardsYou.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
-            cardsYou.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
-            cardsYou.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
-            cardsYou.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
+            for (int fourCards = 0; fourCards < 4; fourCards ++) {
+              cardsYou.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
+            }
           }
         });
 
