@@ -115,8 +115,12 @@ public class NewRandomDecksGameEvent implements EventHandler<ActionEvent> {
   }
 
   private boolean isDone(String name) {
-    return Files.isRegularFile(Paths.get("src", "main", "java", "edu", "bator", "cards", "done",
-        name.replaceAll("[ :'!,-]", "") + ".java"));
+    try {
+      Class.forName("edu.bator.cards.done." + name.replaceAll("[ :'!,-]", ""));
+    } catch (ClassNotFoundException e) {
+      return false;
+    }
+    return true;
   }
 
   private boolean deckContainsFourOfType(List<Card> deck, Card card) {

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.bator</groupId>
-    <artifactId>shadow_era_ai</artifactId>
+    <artifactId>shadow_era_game</artifactId>
     <version>0.1.alpha</version>
     <packaging>jar</packaging>
 
