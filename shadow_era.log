@@ -1,4 +1,6 @@
-2018-09-18 11:29:30 INFO            edu.bator.EntryPoint:  45 - Starting.
-2018-09-18 11:29:31 INFO        edu.bator.game.GameState:  92 - Init done.
-2018-09-18 11:29:31 INFO       edu.bator.game.GameEngine: 115 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='8b6e5d87-0d23-443c-a1fe-b03289fcca5a'}
-2018-09-18 11:29:31 INFO            edu.bator.EntryPoint: 103 - Started.
+2018-09-18 11:49:16 INFO            edu.bator.EntryPoint:  48 - Starting.
+2018-09-18 11:49:17 INFO        edu.bator.game.GameState:  92 - Init done.
+2018-09-18 11:49:17 INFO       edu.bator.game.GameEngine: 115 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='c2bcddd6-c5a7-488a-96f9-510a059431be'}
+2018-09-18 11:49:17 INFO            edu.bator.EntryPoint: 106 - Started.
+2018-09-18 11:49:19 DEBUG           edu.bator.EntryPoint: 113 - Game loaded.
+2018-09-18 11:49:21 DEBUG           edu.bator.EntryPoint: 126 - Game saved.

@@ -18,6 +18,9 @@ import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
@@ -108,6 +111,8 @@ public class EntryPoint extends Application {
                 gameState.setGamePainter(gamePainter);
                 gameState.repaint();
                 log.debug("Game loaded.");
+                Alert alert = new Alert(AlertType.NONE, "Game loaded.", ButtonType.CLOSE);
+                alert.show();
             } catch (Exception e) {
                 log.error("Load crashed.", e);
             }
@@ -119,6 +124,8 @@ public class EntryPoint extends Application {
                 objectJsonMapper.writerWithDefaultPrettyPrinter()
                         .writeValue(new File("save.json"), gameState);
                 log.debug("Game saved.");
+                Alert alert = new Alert(AlertType.NONE, "Game saved.", ButtonType.CLOSE);
+                alert.show();
             } catch (Exception e) {
                 log.error("Save crashed.", e);
             }
