@@ -77,8 +77,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Earthen Protector", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Earthen Protector", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Raven Wildheart", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Raven Wildheart", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Aeon Stormcaller", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Aeon Stormcaller", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Marshland Sentinel", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Marshland Sentinel", Owner.YOU));
