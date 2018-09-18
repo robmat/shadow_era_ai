@@ -3,6 +3,7 @@ package edu.bator.cards.done;
 import edu.bator.cards.Ability;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
+import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import java.util.Objects;
 import java.util.function.BiConsumer;
@@ -32,5 +33,6 @@ public class ShieldBash extends Ability {
         if (target.cardIsDead()) {
             new GameEngine().cardDied(target, gameState);
         }
+        new GameEngine().subtractResources(gameState, 3);
     }
 }

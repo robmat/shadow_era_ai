@@ -168,4 +168,13 @@ public class GameEngine {
             gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - 2);
         }
     }
+
+    public void subtractResources(GameState gameState, int cost) {
+        if (gameState.getGamePhase().equals(GamePhase.YOU_ACTION)) {
+            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - cost);
+        }
+        if (gameState.getGamePhase().equals(GamePhase.ENEMY_ACTION)) {
+            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - cost);
+        }
+    }
 }

@@ -2,6 +2,7 @@ package edu.bator.cards.done;
 
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
+import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import java.util.Objects;
@@ -36,13 +37,8 @@ public class AeonStormcaller extends Ally {
 
   @Override
   public void applyAbility(Card target, GameState gameState) {
-    if (gameState.getGamePhase().equals(GamePhase.YOU_ACTION)) {
-      gameState.setYourCurrentResources(gameState.getYourCurrentResources() - 3);
-    }
-    if (gameState.getGamePhase().equals(GamePhase.ENEMY_ACTION)) {
-      gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - 3);
-    }
     target.setCurrentHp(target.getCurrentHp() + 1);
     target.setBaseAttack(target.getBaseAttack() + 1);
+    new GameEngine().subtractResources(gameState, 3);
   }
 }
