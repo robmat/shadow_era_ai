@@ -31,7 +31,7 @@ public class AllCardsSet {
         try {
             LinkedList<Card> cardsList = new LinkedList<>();
             allCards = new ObjectMapper()
-                    .readValue(new File(this.getClass().getResource("/cards.json").toURI()),
+                    .readValue(this.getClass().getResource("/cards.json"),
                             new TypeReference<LinkedList<Card>>() {
                             });
             for (Card card : allCards) {
