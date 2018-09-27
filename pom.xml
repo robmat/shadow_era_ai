@@ -5,7 +5,7 @@
 
     <groupId>edu.bator</groupId>
     <artifactId>shadow_era_game</artifactId>
-    <version>0.1.alpha</version>
+    <version>0.3.alpha</version>
     <packaging>jar</packaging>
 
     <dependencies>
