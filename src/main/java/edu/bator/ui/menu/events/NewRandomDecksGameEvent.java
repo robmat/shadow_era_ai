@@ -75,12 +75,11 @@ public class NewRandomDecksGameEvent implements EventHandler<ActionEvent> {
         .filter(card -> isDone(card.getName()))
         .forEach(card -> {
           if (card.cardIsAHero()) {
-            cardsEnemy.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
+            cardsEnemy.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.ENEMY));
           } else {
-            cardsEnemy.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
-            cardsEnemy.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
-            cardsEnemy.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
-            cardsEnemy.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.YOU));
+            for (int fourCards = 0; fourCards < 4; fourCards ++) {
+              cardsEnemy.add(EntryPoint.allCardsSet.cloneByName(card.getName(), Owner.ENEMY));
+            }
           }
         });
 
