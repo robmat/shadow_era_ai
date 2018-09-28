@@ -27,7 +27,9 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
         if (gameState.cardIsInHand(card) && GameEngine.ACTION_PHASES
                 .contains(gameState.getGamePhase())) {
             if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-                if (card.cardIsAnAbility()) {
+                if (card.cardIsSupport()) {
+                    handleSupportCast();
+                } else if (card.cardIsAnAbility()) {
                     handleAbilityCast();
                 } else if (gameState.getEnemyHand().remove(card)) {
                     if (card.cardIsAnAlly()) {
@@ -43,7 +45,9 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                 }
             }
             if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-                if (card.cardIsAnAbility()) {
+                if (card.cardIsSupport()) {
+                    handleSupportCast();
+                } else if (card.cardIsAnAbility()) {
                     handleAbilityCast();
                 } else if (gameState.getYourHand().remove(card)) {
                     if (card.cardIsAnAlly()) {
@@ -61,6 +65,11 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
             gameState.repaint();
             log.info("Casted: " + card);
         }
+    }
+
+    private void handleSupportCast() {
+        new GameEngine().clearAllAbilityAndAttackTargets(gameState);
+        card.supportIsCast(gameState);
     }
 
     private void handleAbilityCast() {

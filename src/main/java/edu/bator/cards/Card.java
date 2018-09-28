@@ -167,6 +167,10 @@ public class Card implements Cloneable {
         return CardType.ABILITY.equals(cardType);
     }
 
+    public boolean cardIsSupport() {
+        return CardType.SUPPORT.equals(cardType);
+    }
+
     public boolean cardIsAHero() {
         return CardType.HERO.equals(cardType);
     }
@@ -244,6 +248,9 @@ public class Card implements Cloneable {
     public void resetAttackAnHp() {
         currentHp = initialHp;
         baseAttack = EntryPoint.allCardsSet.cloneByName(name, Owner.ENEMY).getBaseAttack();
+    }
+
+    public void supportIsCast(GameState gameState) {
     }
 
     @Override

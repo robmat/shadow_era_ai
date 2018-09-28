@@ -29,7 +29,7 @@ public class CardEnums {
     }
 
     public enum CardType {
-        HERO, ALLY, ITEM, ABILITY, LOCATION;
+        HERO, ALLY, ITEM, ABILITY, LOCATION, SUPPORT;
 
         public static CardType parse(String str) {
             return new EnumParser<>(CardType.class).parse(str);

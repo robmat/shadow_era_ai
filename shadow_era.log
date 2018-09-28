@@ -1,22 +1,14 @@
-2018-09-27 08:12:33 INFO            edu.bator.EntryPoint:  48 - Starting.
-2018-09-27 08:12:34 INFO        edu.bator.game.GameState:  92 - Init done.
-2018-09-27 08:12:34 INFO       edu.bator.game.GameEngine: 115 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='86b693f6-eaec-433f-b724-c031d80aa7df'}
-2018-09-27 08:12:34 INFO            edu.bator.EntryPoint: 106 - Started.
-2018-09-27 08:12:36 DEBUG           edu.bator.EntryPoint: 113 - Game loaded.
-2018-09-27 08:12:40 DEBUG           edu.bator.EntryPoint: 113 - Game loaded.
-2018-09-27 08:13:28 INFO  r.ui.events.AttackClickedEvent:  32 - BlakeWindrunner{currentHp=1, uniqueId='af79e352-bc22-4272-b070-a4f90c01ad31'} ready to attack.
-2018-09-27 08:13:56 INFO  vents.AttackTargetClickedEvent:  34 - PuwenBloodhelm{currentHp=5, uniqueId='329a11ab-0988-4374-bc8c-7a09c0e07a25'} attacked BlakeWindrunner{currentHp=1, uniqueId='af79e352-bc22-4272-b070-a4f90c01ad31'}
-2018-09-27 08:14:15 INFO  ui.events.CardCastClickedEvent:  62 - Casted: EarthenProtector{currentHp=5, uniqueId='4e3ea602-cc49-4e90-bbf3-c93613fcce55'}
-2018-09-27 08:14:17 INFO       edu.bator.game.GameEngine: 115 - Picked: ErikaShadowhunter{currentHp=3, uniqueId='56c3b96d-bcef-40f1-a08e-a39747ffe1ab'}
-2018-09-27 08:14:20 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: ShieldBash{currentHp=null, uniqueId='3d2accb2-09ba-44d3-95ec-5d8c4dc93a44'}
-2018-09-27 08:14:23 INFO  ui.events.CardCastClickedEvent:  62 - Casted: BlakeWindrunner{currentHp=1, uniqueId='93559a80-489b-432f-b3b9-efd1505f9805'}
-2018-09-27 08:14:26 DEBUG           edu.bator.EntryPoint: 126 - Game saved.
-2018-09-27 08:14:30 DEBUG           edu.bator.EntryPoint: 126 - Game saved.
-2018-09-27 08:14:34 INFO  r.ui.events.AttackClickedEvent:  32 - DirkSaber{currentHp=2, uniqueId='96601dfc-39d1-44bb-8dfb-e6a1f00876da'} ready to attack.
-2018-09-27 08:14:41 INFO  vents.AttackTargetClickedEvent:  34 - BlakeWindrunner{currentHp=1, uniqueId='af79e352-bc22-4272-b070-a4f90c01ad31'} attacked DirkSaber{currentHp=-1, uniqueId='96601dfc-39d1-44bb-8dfb-e6a1f00876da'}
-2018-09-27 08:14:50 DEBUG           edu.bator.EntryPoint: 113 - Game loaded.
-2018-09-27 08:14:54 INFO  r.ui.events.AttackClickedEvent:  32 - DirkSaber{currentHp=2, uniqueId='96601dfc-39d1-44bb-8dfb-e6a1f00876da'} ready to attack.
-2018-09-27 08:15:10 INFO  vents.AttackTargetClickedEvent:  34 - BlakeWindrunner{currentHp=1, uniqueId='af79e352-bc22-4272-b070-a4f90c01ad31'} attacked DirkSaber{currentHp=-1, uniqueId='96601dfc-39d1-44bb-8dfb-e6a1f00876da'}
-2018-09-27 08:15:26 DEBUG           edu.bator.EntryPoint: 113 - Game loaded.
-2018-09-27 08:15:30 INFO  r.ui.events.AttackClickedEvent:  32 - DirkSaber{currentHp=2, uniqueId='96601dfc-39d1-44bb-8dfb-e6a1f00876da'} ready to attack.
-2018-09-27 08:18:23 INFO  vents.AttackTargetClickedEvent:  34 - BlakeWindrunner{currentHp=1, uniqueId='af79e352-bc22-4272-b070-a4f90c01ad31'} attacked DirkSaber{currentHp=-1, uniqueId='96601dfc-39d1-44bb-8dfb-e6a1f00876da'}
+2018-09-28 21:36:19 INFO            edu.bator.EntryPoint:  48 - Starting.
+2018-09-28 21:36:20 INFO        edu.bator.game.GameState:  92 - Init done.
+2018-09-28 21:36:20 INFO       edu.bator.game.GameEngine: 115 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='b5593008-b527-4426-88ca-5f867d4303fc'}
+2018-09-28 21:36:20 INFO            edu.bator.EntryPoint: 106 - Started.
+2018-09-28 21:36:22 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='b5593008-b527-4426-88ca-5f867d4303fc'}
+2018-09-28 21:36:22 INFO       edu.bator.game.GameEngine: 115 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='0364c1ca-7bcf-4c60-b517-c34b308b655d'}
+2018-09-28 21:36:23 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='0364c1ca-7bcf-4c60-b517-c34b308b655d'}
+2018-09-28 21:36:23 INFO       edu.bator.game.GameEngine: 115 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='4aabc8c6-31eb-40ef-8d1b-2e030eaa29d6'}
+2018-09-28 21:36:24 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='4aabc8c6-31eb-40ef-8d1b-2e030eaa29d6'}
+2018-09-28 21:36:24 INFO       edu.bator.game.GameEngine: 115 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='c8c938eb-7fe8-4e9a-8d1c-46c4f1e17ec5'}
+2018-09-28 21:36:24 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='c8c938eb-7fe8-4e9a-8d1c-46c4f1e17ec5'}
+2018-09-28 21:36:25 INFO       edu.bator.game.GameEngine: 115 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='abbb4bca-8a51-4f6f-8895-4c203e20dfdc'}
+2018-09-28 21:36:25 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='abbb4bca-8a51-4f6f-8895-4c203e20dfdc'}
+2018-09-28 21:36:38 INFO  ui.events.CardCastClickedEvent:  66 - Casted: ValiantDefender{currentHp=null, uniqueId='4e58676c-71bf-48bc-afb1-ae6e02db84a2'}

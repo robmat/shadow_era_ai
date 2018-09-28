@@ -920,7 +920,7 @@
     "side": null,
     "heroClass": "WARRIOR",
     "description": "Friendly allies can't be attacked for the next 2 turns.",
-    "cardType": "ABILITY",
+    "cardType": "SUPPORT",
     "resourceCost": 2,
     "baseAttack": null,
     "initialHp": null,
