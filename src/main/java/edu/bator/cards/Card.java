@@ -20,6 +20,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 import java.util.function.BiConsumer;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -135,12 +136,23 @@ public class Card implements Cloneable {
     public void calculatePossibleAttackTarget(Card attackSource, GameState gameState) {
         boolean isNotStealth = !getAbilities().contains(Ability.STEALTH);
         boolean possibleAllyTarget = calculatePossibleTargetProtectorIncluded(gameState) && isNotStealth;
+        boolean askOtherCards = askOtherCards(attackSource, gameState);
 
         if (cardIsAHero()) {
             setPossibleAttackTarget(true);
         } else {
-            setPossibleAttackTarget(possibleAllyTarget);
+            setPossibleAttackTarget(possibleAllyTarget && askOtherCards);
         }
+    }
+
+    private boolean askOtherCards(Card attackSource, GameState gameState) {
+        return gameState.allCardsInPlay().stream()
+                .map(card -> card.influenceAttackTargetPossible(this, attackSource, gameState))
+                .reduce(true, (one, two) -> one && two);
+    }
+
+    protected boolean influenceAttackTargetPossible(Card target, Card attackSource, GameState gameState) {
+        return true;
     }
 
     private boolean calculatePossibleTargetProtectorIncluded(GameState gameState) {
@@ -251,6 +263,10 @@ public class Card implements Cloneable {
     }
 
     public void supportIsCast(GameState gameState) {
+    }
+
+    public void gamePhaseChangeEvent(GameState gameState) {
+
     }
 
     @Override

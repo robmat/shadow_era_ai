@@ -27,11 +27,14 @@ public class GameEngine {
                 expireEffects(gameState);
                 applyEffects(gameState.yourHeroAlliesAndSupportCards());
                 clearAbilityAndAttackTargets(gameState);
+                notifyAllCardInPlayAboutGamePhase(gameState);
+
                 gameState.setGamePhase(GamePhase.YOU_SACRIFICE);
                 checkGameState(gameState);
                 break;
             }
             case YOU_SACRIFICE: {
+                notifyAllCardInPlayAboutGamePhase(gameState);
                 break;
             }
             case YOU_ACTION: {
@@ -40,6 +43,7 @@ public class GameEngine {
                 }
                 gameState.setYourCurrentResources(gameState.yourResourcesSize());
                 readyHandCards(gameState.getYourHand(), gameState);
+                notifyAllCardInPlayAboutGamePhase(gameState);
                 break;
             }
 
@@ -52,21 +56,29 @@ public class GameEngine {
                 expireEffects(gameState);
                 applyEffects(gameState.enemyHeroAlliesAndSupportCards());
                 clearAbilityAndAttackTargets(gameState);
+                notifyAllCardInPlayAboutGamePhase(gameState);
+
                 gameState.setGamePhase(GamePhase.ENEMY_SACRIFICE);
                 checkGameState(gameState);
                 break;
             }
             case ENEMY_SACRIFICE: {
+                notifyAllCardInPlayAboutGamePhase(gameState);
                 break;
             }
             case ENEMY_ACTION: {
                 gameState.setEnemyCurrentResources(gameState.enemyResourcesSize());
                 gameState.increaseSE(gameState.getEnemyHero());
                 readyHandCards(gameState.getEnemyHand(), gameState);
+                notifyAllCardInPlayAboutGamePhase(gameState);
                 break;
             }
         }
         gameState.repaint();
+    }
+
+    private void notifyAllCardInPlayAboutGamePhase(GameState gameState) {
+        gameState.allCardsInPlay().forEach(card -> card.gamePhaseChangeEvent(gameState));
     }
 
     private void clearAbilityAndAttackTargets(GameState gameState) {
