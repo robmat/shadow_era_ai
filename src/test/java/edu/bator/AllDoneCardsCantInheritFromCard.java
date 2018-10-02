@@ -1,4 +1,4 @@
-package edu.bator.enums;
+package edu.bator;
 
 import java.io.IOException;
 import java.nio.file.Files;
