@@ -6,9 +6,11 @@ import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import java.util.Objects;
 import java.util.function.BiConsumer;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class ShieldBash extends Ability {
 
     public ShieldBash(Card cloneFrom) {

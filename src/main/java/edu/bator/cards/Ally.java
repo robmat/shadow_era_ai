@@ -4,9 +4,11 @@ import static java.util.Objects.nonNull;
 
 import edu.bator.game.GameState;
 import java.util.function.BiConsumer;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class Ally extends Card {
     public Ally(Card cloneFrom) {
         super(cloneFrom);

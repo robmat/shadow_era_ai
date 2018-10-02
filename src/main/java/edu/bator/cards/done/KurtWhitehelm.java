@@ -6,9 +6,11 @@ import edu.bator.game.GameState;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class KurtWhitehelm extends Ally {
 
     public KurtWhitehelm(Card cloneFrom) {

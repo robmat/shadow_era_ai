@@ -7,9 +7,11 @@ import edu.bator.cards.util.AbilityTargetUtil;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import java.util.function.BiConsumer;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class JasmineRosecult extends Ally {
 
     public JasmineRosecult(Card cloneFrom) {

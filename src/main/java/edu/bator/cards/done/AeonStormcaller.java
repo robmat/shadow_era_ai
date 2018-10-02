@@ -6,7 +6,9 @@ import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import java.util.Objects;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
 public class AeonStormcaller extends Ally {
 
   public AeonStormcaller() {

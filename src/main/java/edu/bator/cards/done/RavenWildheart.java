@@ -4,9 +4,11 @@ import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GameState;
 import java.util.function.BiConsumer;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class RavenWildheart extends Ally {
 
     public RavenWildheart(Card cloneFrom) {
