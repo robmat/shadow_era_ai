@@ -12,7 +12,7 @@ import edu.bator.cards.Card;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AllDOneCardsCantInheritFromCard {
+public class AllDoneCardsCantInheritFromCard {
 
     @Test
     public void shouldTest() throws IOException, ClassNotFoundException {

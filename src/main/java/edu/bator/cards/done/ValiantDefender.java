@@ -7,12 +7,14 @@ import edu.bator.cards.Support;
 import edu.bator.cards.enums.Owner;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import lombok.NoArgsConstructor;
 
 public class ValiantDefender extends Support {
 
     private int turnExpires;
     private GamePhase phaseExpires;
 
+    public ValiantDefender() {};
     public ValiantDefender(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -3,6 +3,9 @@ package edu.bator.cards;
 import edu.bator.game.GameState;
 
 public class Support extends Card {
+
+    public Support() {}
+
     public Support(Card cloneFrom) {
         super(cloneFrom);
     }
