@@ -1,13 +1,11 @@
 package edu.bator.cards.done;
 
-import java.util.Objects;
-
 import edu.bator.cards.Card;
 import edu.bator.cards.Support;
 import edu.bator.cards.enums.Owner;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
-import lombok.NoArgsConstructor;
+import java.util.Objects;
 
 public class ValiantDefender extends Support {
 

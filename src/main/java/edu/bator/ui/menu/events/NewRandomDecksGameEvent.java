@@ -8,8 +8,6 @@ import edu.bator.cards.Card;
 import edu.bator.cards.enums.Owner;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
