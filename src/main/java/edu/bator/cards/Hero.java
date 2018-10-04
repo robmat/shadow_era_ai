@@ -31,7 +31,7 @@ public class Hero extends Card {
         Card attackSource = this;
         BiConsumer<GameState, Card> attackEvent = (gameState1, card) -> {
             Card weapon = attackSource.getWeapon();
-            if (nonNull(weapon)) {
+            if (nonNull(weapon) && weapon.getAttack(gameState) > 0) {
                 target.setCurrentHp(target.getCurrentHp() - weapon.getAttack(gameState1));
                 reduceWeaponHp(gameState1, weapon);
             }
