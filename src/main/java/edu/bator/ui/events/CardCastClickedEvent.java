@@ -31,6 +31,8 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                     handleSupportCast();
                 } else if (card.cardIsAnAbility()) {
                     handleAbilityCast();
+                } else if (card.cardIsArtifact()) {
+                    handleArtifactCast();
                 } else if (gameState.getEnemyHand().remove(card)) {
                     if (card.cardIsAnAlly()) {
                         gameState.getEnemyAllies().add(card);
@@ -49,6 +51,8 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                     handleSupportCast();
                 } else if (card.cardIsAnAbility()) {
                     handleAbilityCast();
+                } else if (card.cardIsArtifact()) {
+                    handleArtifactCast();
                 } else if (gameState.getYourHand().remove(card)) {
                     if (card.cardIsAnAlly()) {
                         gameState.getYourAllies().add(card);
@@ -65,6 +69,11 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
             gameState.repaint();
             log.info("Casted: " + card);
         }
+    }
+
+    private void handleArtifactCast() {
+        new GameEngine().clearAllAbilityAndAttackTargets(gameState);
+        card.artifactIsCast(gameState);
     }
 
     private void handleSupportCast() {

@@ -28,7 +28,7 @@ public class Ally extends Card {
     public Integer getAttack(GameState gameState) {
         int bonus = gameState.allCardsInPlay()
                 .stream()
-                .mapToInt(card -> card.modifiesAllyAttack(this, gameState))
+                .mapToInt(card -> card.modifiesAttack(this, gameState))
                 .sum();
         return super.getAttack(gameState) + bonus;
     }

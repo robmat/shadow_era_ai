@@ -74,8 +74,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Tainted Oracle", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Tainted Oracle", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Earthen Protector", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Earthen Protector", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Reserve Weapon", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Reserve Weapon", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Aeon Stormcaller", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Aeon Stormcaller", Owner.YOU));

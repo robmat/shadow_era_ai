@@ -190,6 +190,10 @@ public class Card implements Cloneable {
         return ItemSubType.WEAPON.equals(getItemSubType());
     }
 
+    public boolean cardIsArtifact() {
+        return ItemSubType.ARTIFACT.equals(getItemSubType());
+    }
+
     public boolean cardIsDead() {
         return nonNull(getCurrentHp()) && getCurrentHp() <= 0;
     }
@@ -252,7 +256,7 @@ public class Card implements Cloneable {
     public void cardHasDiedEvent(Card card, GameState gameState) {
     }
 
-    public Integer modifiesAllyAttack(Ally ally, GameState gameState) {
+    public Integer modifiesAttack(Card card, GameState gameState) {
         return 0;
     }
 
@@ -267,6 +271,10 @@ public class Card implements Cloneable {
     public void gamePhaseChangeEvent(GameState gameState) {
 
     }
+
+    public void artifactIsCast(GameState gameState) {
+
+    };
 
     @Override
     public boolean equals(Object o) {

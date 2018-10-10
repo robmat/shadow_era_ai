@@ -32,14 +32,16 @@ public class AldontheBrave extends Ally {
     }
 
     @Override
-    public Integer modifiesAllyAttack(Ally ally, GameState gameState) {
+    public Integer modifiesAttack(Card card, GameState gameState) {
         if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase()) &&
-                gameState.getYourAllies().contains(ally) &&
+                card.cardIsAnAlly() &&
+                gameState.getYourAllies().contains(card) &&
                 gameState.getYourAllies().contains(this)) {
             return 1;
         }
         if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase()) &&
-                gameState.getEnemyAllies().contains(ally) &&
+                card.cardIsAnAlly() &&
+                gameState.getEnemyAllies().contains(card) &&
                 gameState.getEnemyAllies().contains(this)) {
             return 1;
         }

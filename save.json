@@ -1,5 +1,5 @@
 [ "edu.bator.game.GameState", {
-  "currentTurn" : 2,
+  "currentTurn" : 5,
   "enemyHero" : [ "edu.bator.cards.done.BorisSkullcrusher", {
     "code" : "se001",
     "rarity" : "H",
@@ -12,7 +12,7 @@
     "baseAttack" : null,
     "initialHp" : 30,
     "currentHp" : 30,
-    "shadowEnergy" : 2,
+    "shadowEnergy" : 4,
     "itemSubType" : null,
     "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ ] ],
@@ -47,13 +47,13 @@
       "unique" : false,
       "effects" : [ "java.util.LinkedList", [ ] ],
       "weapon" : null,
-      "availableForHeroClasses" : [ "java.util.HashSet", [ "PRIEST", "WARRIOR" ] ],
+      "availableForHeroClasses" : [ "java.util.HashSet", [ "WARRIOR", "PRIEST" ] ],
       "owner" : "ENEMY",
-      "uniqueId" : "75cb5862-bfc9-4b27-83e9-f6bf0ce1aad2"
+      "uniqueId" : "76d5d1a9-ad65-4763-b208-128647396764"
     } ],
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "9b457bc0-3b5b-4574-8ac4-06fd0721ef9d"
+    "uniqueId" : "aba110a8-4556-450b-aa90-5b3525bca4ee"
   } ],
   "yourHero" : [ "edu.bator.cards.done.BorisSkullcrusher", {
     "code" : "se001",
@@ -67,7 +67,7 @@
     "baseAttack" : null,
     "initialHp" : 30,
     "currentHp" : 30,
-    "shadowEnergy" : 1,
+    "shadowEnergy" : 4,
     "itemSubType" : null,
     "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ ] ],
@@ -102,13 +102,13 @@
       "unique" : false,
       "effects" : [ "java.util.LinkedList", [ ] ],
       "weapon" : null,
-      "availableForHeroClasses" : [ "java.util.HashSet", [ "PRIEST", "WARRIOR" ] ],
+      "availableForHeroClasses" : [ "java.util.HashSet", [ "WARRIOR", "PRIEST" ] ],
       "owner" : "YOU",
-      "uniqueId" : "5cef6e56-bbab-47f5-949f-a7a5be9926ce"
+      "uniqueId" : "420e814f-bdc3-473a-bf33-1349ad700423"
     } ],
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "6d50c8c1-5106-4c99-9c3e-211fe8d02e05"
+    "uniqueId" : "48109d65-df8e-4ed6-8702-50e4f85cb414"
   } ],
   "enemyDeck" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
@@ -136,7 +136,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "5dab10e4-aae9-4318-8872-66b05135f1a3"
+    "uniqueId" : "2ad15f30-204a-42d4-9509-03ed2411737f"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -163,7 +163,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "0a95481b-0701-4a6e-9fa4-5d074bff3afb"
+    "uniqueId" : "d420a6dc-28db-4ec2-8bdf-7d9bbc02b071"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -190,7 +190,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "876233d0-df08-4061-9fd2-5e3d67d82589"
+    "uniqueId" : "c8b420ce-3107-452f-8c65-fad4d1f7f67e"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -217,7 +217,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "4ed5b48c-0423-499d-ada4-d4b2e66379af"
+    "uniqueId" : "f4018621-4e0a-4343-b60c-0baa5b55b204"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -244,7 +244,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "d7753245-f8ed-4f11-9164-6fb79614acb7"
+    "uniqueId" : "a10fa3d5-e89c-4345-ac60-e0c327a38ba4"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -271,7 +271,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "84955945-1027-4937-993f-1e8158b01b0f"
+    "uniqueId" : "ac57d504-0f10-4322-a34d-d44028ab1860"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -298,7 +298,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "6d477f4d-765d-4a71-bcfb-721361e3dd33"
+    "uniqueId" : "f97be95e-7c24-4fd0-9ead-2fda920a71ea"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -325,7 +325,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "1e93662e-e2f6-447e-b37b-e2ed9b9c6461"
+    "uniqueId" : "2d9938b8-087c-4442-8b8f-35d5252d4ced"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -352,7 +352,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "19250641-924b-4204-bbc8-4dbea3072fea"
+    "uniqueId" : "a08f6a6b-b586-4a04-912e-a25cd8d9db8f"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -379,7 +379,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "c02a4914-57b4-4ecf-9391-f44e87e80d71"
+    "uniqueId" : "41251fe3-7d42-446e-85d5-78f13d6ff714"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -406,7 +406,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "f70d94a8-1d2e-4877-8c4c-10e904860dfd"
+    "uniqueId" : "0aa6dfed-fcd1-45d8-9a71-17a5328772c9"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -433,7 +433,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "9d59c406-8d4e-4016-ade1-537904358ad0"
+    "uniqueId" : "0b91056c-66fe-4c87-91f3-088abb510057"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -460,7 +460,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "015c844e-81d4-4755-a17b-1f67ad8925f6"
+    "uniqueId" : "c78c297a-fe8c-4361-abb6-b4a8cb08604f"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -487,7 +487,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "0faa79d7-e874-4d39-9332-5aa44af75bec"
+    "uniqueId" : "b82bfd96-9ba0-4757-9ed7-f1a1d053aa24"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -514,7 +514,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "276f3fb8-8e0a-4630-965e-7b75e30d4d89"
+    "uniqueId" : "60bdf552-e891-4e78-8ce1-4d637dde1a6e"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -541,7 +541,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "4c0ce8e8-265a-4119-94b5-f0bcfb0125ed"
+    "uniqueId" : "4d93b84a-dbbf-47d6-b4df-dd5bc8b4c692"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -568,7 +568,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "828ff7ee-176e-48fe-a299-e23432178d97"
+    "uniqueId" : "7d5f8210-a343-4265-a4e6-9f839a7d30e7"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -595,7 +595,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "22535218-b5f8-4c9d-bba9-7c38588d9649"
+    "uniqueId" : "7adfc0b2-78ae-4ccd-9609-c3a069d31ebf"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -622,7 +622,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "c2898190-a87a-4653-812f-15218ae18658"
+    "uniqueId" : "06c686ad-96f8-49ad-995e-f801f54ada8e"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -649,7 +649,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "06bb38e6-902a-4633-8c6a-dfaed7d1ed19"
+    "uniqueId" : "2bdd35b0-788f-4b04-b714-f3fa54f38dd9"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -676,7 +676,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "b0220841-6593-49e9-bf7d-5d09d9c629c2"
+    "uniqueId" : "1312ae3b-4171-4c41-baf1-dbf8f1d7a5fd"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -703,7 +703,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "dff4358b-5d3d-4dc5-a314-99bbb07bbba8"
+    "uniqueId" : "883ba77a-c64b-4c49-a2da-5f55144e1956"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -730,7 +730,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "1a89c5f5-7b37-4c0d-bd01-58da33af7374"
+    "uniqueId" : "8a50c9f2-0568-4a4b-b558-c2357c04bf25"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -757,7 +757,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "58c0e16a-1e85-4404-a427-82e029fefcf5"
+    "uniqueId" : "f6ae803f-75a7-4e93-9842-2f18038e46b0"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -784,7 +784,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "01e49efd-8770-4ab5-8515-23c08d9e3af5"
+    "uniqueId" : "10addea1-3956-4792-b503-0918a979b3d5"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -811,7 +811,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "7d4df9e4-cf6c-416d-b6fa-d1c0190785ab"
+    "uniqueId" : "382673fc-8d40-48a9-9a0b-5e7506d6826b"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -838,7 +838,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "a1147b0d-f396-445c-a128-eb9e45007bce"
+    "uniqueId" : "50c46520-2a43-4800-944d-a024192c1692"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -865,7 +865,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "714bb5f0-606f-40e5-a7fb-0bc1562ea6dc"
+    "uniqueId" : "ce6323c5-2381-4fb7-bb6c-8ccd2ef515bc"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -892,7 +892,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "0c75cf3c-a697-4846-afab-9426e11ba95f"
+    "uniqueId" : "aa55a089-d9e4-4de0-be38-f64ad0b20a68"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -919,7 +919,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "63d00922-c021-467f-9668-fd75d45493c5"
+    "uniqueId" : "545241e6-5cd8-4a32-b4b3-d54d000a0670"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -946,7 +946,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "830aa656-a94e-4244-9507-e2478442ec8a"
+    "uniqueId" : "338ad4c9-0a46-4a13-885a-90d8356a7136"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -973,7 +973,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "c69686b2-b3c7-498f-92ca-618bcd4bc6ad"
+    "uniqueId" : "0b1a5332-b58b-49c4-90f6-8f9ec8bd8f5f"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1000,7 +1000,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "9dd7b965-249f-47a9-b477-e12bebdfb08d"
+    "uniqueId" : "48ef0936-1ba1-40f0-9bef-fa15265d3d4a"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1027,7 +1027,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "605ec9c5-b61a-4ce1-b5f2-b898cbcf9e4b"
+    "uniqueId" : "1d3f3334-d952-4a39-b68c-3dd9de72d051"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1054,7 +1054,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "c10c7826-08a8-460a-8f3d-a3c609526cb8"
+    "uniqueId" : "812633ad-a127-4d57-808f-0325ab3522ee"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1081,61 +1081,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "d4781b45-1f3a-4031-93fd-07790f52b60d"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "ENEMY",
-    "uniqueId" : "07fc104b-6448-4d95-bd55-4cefba7b5b35"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "ENEMY",
-    "uniqueId" : "5f84b44b-49e6-4544-ace8-671e7add06ff"
+    "uniqueId" : "7a1d0018-054e-4206-8bcf-fb91bfb45895"
   } ] ] ],
   "yourDeck" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
@@ -1163,7 +1109,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "8fdb996d-4ad0-450a-b693-6697662d97c8"
+    "uniqueId" : "56cb7cba-e7fe-4ae4-b3a9-f5b42fc4ee32"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1190,7 +1136,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "6c2914bc-5b04-4d79-a888-571fe6e62465"
+    "uniqueId" : "f08df78c-16ea-4ced-b089-1f1aafb009c5"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1217,7 +1163,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "3d65e77d-755a-4911-9c93-6b1c089db44f"
+    "uniqueId" : "2a221699-5ae7-4d7f-bb71-87e58d0005bf"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1244,7 +1190,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "bcc44d8f-acfe-4afd-b983-a1f63e93de1f"
+    "uniqueId" : "d851c050-78cc-4923-b612-8f68fca17030"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1271,7 +1217,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "7d81592d-554b-4280-995a-09f9c42efe5c"
+    "uniqueId" : "493bcd58-c947-4b87-9448-5b3dc0f61f7c"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1298,7 +1244,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "236ade29-c9bc-4c89-9080-87d988f03685"
+    "uniqueId" : "d5fb8d1b-bb62-453a-b715-6f3cae68fce6"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1325,7 +1271,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "77a70b92-fe37-4e98-b945-d0a40a518fae"
+    "uniqueId" : "7da7dc28-20e6-4467-9383-799b092efe21"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1352,7 +1298,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "611d51eb-3d10-46fa-afe3-6f99d57b0f16"
+    "uniqueId" : "e0a11158-f377-4e95-8350-a9c0a61b028d"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1379,7 +1325,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "09828953-26a6-4e82-a686-9ce1c9f98905"
+    "uniqueId" : "09f1416b-a511-450a-8ef8-aa747284ba14"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1406,7 +1352,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "19005225-5a36-4311-a448-05d495e9ecf3"
+    "uniqueId" : "ab15b8c7-8d01-4762-ac6c-d06c77f89f8f"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1433,7 +1379,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "6d1928e2-1d4d-4273-903e-e175fd827d09"
+    "uniqueId" : "7e0c4236-94de-4452-ac17-5c9100300f8d"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1460,7 +1406,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "ccff110e-e204-4067-9bb8-5e9d8793a63a"
+    "uniqueId" : "77f63c1d-7730-4ae2-ab04-c04f003a6641"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1487,7 +1433,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "34fb0027-03b0-4be4-834f-32a77c1471e6"
+    "uniqueId" : "edbcbf1f-2d97-4fa8-9dfb-9137de3c7d3a"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1514,7 +1460,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "63855fd0-004e-4421-a7c5-8e4d729ad6c9"
+    "uniqueId" : "241ec079-ffac-4dd2-ab3d-fead7b06fc21"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1541,7 +1487,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "64dc0075-eb73-41a8-8d94-0353b2e97222"
+    "uniqueId" : "026ccae8-fa7a-4743-9c60-8fd4c13691ca"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1568,7 +1514,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "88e5fd1d-317a-4dc5-8a74-8dcc54e888fe"
+    "uniqueId" : "adaac766-3a1f-4a87-bbb2-96caf15e956f"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1595,7 +1541,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "d7f2ff1c-744c-49c7-adf6-f32fabfa7f9f"
+    "uniqueId" : "4bf25472-6456-4d98-b7d9-2134a7f1c9e9"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1622,7 +1568,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "5e898d7f-497a-4b25-a89e-bd78073700b1"
+    "uniqueId" : "09ef9620-377a-44ff-97b1-980c3ecea138"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1649,7 +1595,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "788e6b8f-bfd1-4d11-a8e2-adcdedfd532d"
+    "uniqueId" : "1602194a-8c4b-49a6-89d5-254bf22317d2"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1676,7 +1622,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "a7d5c424-d3b7-47a0-8d24-489fd0bb2584"
+    "uniqueId" : "bcfda617-088a-4b51-932c-0fd6e033286b"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1703,7 +1649,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "d49ecc36-f22c-42a0-8ca7-bb00d6a6e31c"
+    "uniqueId" : "e543ced0-4507-4c41-8a57-9345caef953c"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1730,7 +1676,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "a943f15e-4888-4f2b-a5cf-7d5f66bf5432"
+    "uniqueId" : "b5f95859-8411-4761-8acf-7d929c63961d"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1757,7 +1703,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "c086fd03-60ad-4b5f-99c3-dc7fe3d28ff8"
+    "uniqueId" : "6de06b7a-1497-4f52-a9ef-a5fb98c3bdf2"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1784,7 +1730,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "e3ca6112-61bf-4f34-8d4d-d2739a6b6f76"
+    "uniqueId" : "9bd6ae10-b214-4cd1-b780-367c6a1ce90c"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1811,7 +1757,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "9965fdf0-a795-45a0-8fed-149e77a918b4"
+    "uniqueId" : "b4fe0976-0320-4e36-bc53-14c0aa086b1f"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1838,7 +1784,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "3bf7d920-3642-4140-bfe6-d5f195e43d0e"
+    "uniqueId" : "61b92109-a4f4-4acd-a1d4-55e890450fe5"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1865,7 +1811,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "739b2c9a-250b-47aa-af67-37a2a1a88414"
+    "uniqueId" : "658e5670-b0d5-4de5-95a4-62ee341487f5"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1892,7 +1838,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "789c5dde-1c8f-4fb5-b37f-dabc86ae874f"
+    "uniqueId" : "f3a82b5f-2ac8-48cd-b9fe-a0df52dd2c94"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1919,7 +1865,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "9a6b02e4-d219-442f-ad7a-82cffef1ac81"
+    "uniqueId" : "69c33975-1290-4fc9-9842-da952b258967"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1946,7 +1892,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "7da7086d-8e66-43b8-954e-ac6069e5e98e"
+    "uniqueId" : "0ea487a3-27c2-4054-b1d9-17e41f5ac1e7"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1973,7 +1919,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "46c44095-a885-4ef0-96c6-5f37d0505d3a"
+    "uniqueId" : "a806b131-0e16-4d90-88d4-25140ad5ea9b"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2000,7 +1946,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "f09dcd5f-6a30-4c8b-aee4-d99a7f2a4115"
+    "uniqueId" : "63e54304-ea0d-4f91-8e2a-de35a5f53c51"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2027,7 +1973,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "2d3d6553-b133-4ba8-9781-e41a2ce696a6"
+    "uniqueId" : "d5034699-4b3a-411c-921d-67a2d99b5490"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2054,7 +2000,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "b81af448-fbcc-4025-9aea-730f6524c7d4"
+    "uniqueId" : "5bdd402d-5190-4273-9b22-0972d9d89e8a"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2081,88 +2027,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "654eaaea-333a-48e5-8e39-c54b42250155"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "YOU",
-    "uniqueId" : "d3a6fdf1-ddff-462f-a699-4c0b9660ae57"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "YOU",
-    "uniqueId" : "6df5033e-0f1d-4ae5-b2d0-a48a334c2e0a"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "YOU",
-    "uniqueId" : "c3c2e20e-5f27-4cb8-9d7a-09f055af5805"
+    "uniqueId" : "31becb75-41cd-424d-86c3-d13d973dc16a"
   } ] ] ],
   "enemyHand" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.TaintedOracle", {
     "code" : "se038",
@@ -2181,7 +2046,7 @@
     "attackType" : "SWORD",
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-    "castable" : false,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2190,22 +2055,22 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "71a66810-12c2-4575-8eb5-01890bcee747"
-  } ], [ "edu.bator.cards.done.EarthenProtector", {
-    "code" : "se039",
-    "rarity" : "R",
-    "name" : "Earthen Protector",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "When a friendly ally is killed while Earthen Protector is alive and can be damaged, that ally is returned to play with +2 base attack and +2 health, and Earthen Protector is killed.",
-    "cardType" : "ALLY",
+    "uniqueId" : "8bab7d50-e99c-450f-af96-c1aeedab4c27"
+  } ], [ "edu.bator.cards.done.ReserveWeapon", {
+    "code" : "se062",
+    "rarity" : "U",
+    "name" : "Reserve Weapon",
+    "side" : null,
+    "heroClass" : "WARRIOR",
+    "description" : "Your weapons have +1 attack while Reserve Weapon is in play. 0: Target weapon in your graveyard is returned to play with +1 base attack, and Reserve Weapon is destroyed.",
+    "cardType" : "ITEM",
     "resourceCost" : 5,
-    "baseAttack" : 4,
-    "initialHp" : 5,
-    "currentHp" : 5,
+    "baseAttack" : null,
+    "initialHp" : null,
+    "currentHp" : null,
     "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "CLAW",
+    "itemSubType" : "ARTIFACT",
+    "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
@@ -2217,7 +2082,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "8b517827-3437-48e6-9ea3-dc82dfcb470b"
+    "uniqueId" : "b05bea48-b62d-4a76-a1de-0e32096d8493"
   } ], [ "edu.bator.cards.done.AeonStormcaller", {
     "code" : "se040",
     "rarity" : "E",
@@ -2244,7 +2109,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "5d6627f2-8e5e-4356-96f3-330757940e84"
+    "uniqueId" : "9a3e4bfb-5468-4ac1-bc2a-e9315813aa05"
   } ], [ "edu.bator.cards.done.MarshlandSentinel", {
     "code" : "se037",
     "rarity" : "U",
@@ -2262,7 +2127,7 @@
     "attackType" : "CLAW",
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-    "castable" : false,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2271,7 +2136,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "8bc2dc9f-229e-4150-a542-f4b16df2f93c"
+    "uniqueId" : "1da44405-a900-4933-adf1-c4bafec9bb5d"
   } ], [ "edu.bator.cards.done.AldontheBrave", {
     "code" : "se032",
     "rarity" : "U",
@@ -2289,7 +2154,7 @@
     "attackType" : "SWORD",
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-    "castable" : false,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2298,7 +2163,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "656c10db-7fa9-4aa7-a7c1-c56eec13b0e4"
+    "uniqueId" : "9d2b8fb8-c1d3-4e76-975c-b7c540c7bb00"
   } ], [ "edu.bator.cards.done.ValiantDefender", {
     "code" : "se061",
     "rarity" : null,
@@ -2325,7 +2190,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "71e830e8-e4b7-4c90-9966-74f6e2b536a6",
+    "uniqueId" : "f4ce581c-14ee-4ef4-8970-45babc997a2a",
     "turnExpires" : 0,
     "phaseExpires" : null
   } ] ] ],
@@ -2346,7 +2211,7 @@
     "attackType" : "SWORD",
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-    "castable" : false,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2355,25 +2220,25 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "cb937192-c9e8-4f42-92ee-68ed29a50031"
-  } ], [ "edu.bator.cards.done.EarthenProtector", {
-    "code" : "se039",
-    "rarity" : "R",
-    "name" : "Earthen Protector",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "When a friendly ally is killed while Earthen Protector is alive and can be damaged, that ally is returned to play with +2 base attack and +2 health, and Earthen Protector is killed.",
-    "cardType" : "ALLY",
+    "uniqueId" : "3ebb8958-0952-4642-b032-85b2d4590535"
+  } ], [ "edu.bator.cards.done.ReserveWeapon", {
+    "code" : "se062",
+    "rarity" : "U",
+    "name" : "Reserve Weapon",
+    "side" : null,
+    "heroClass" : "WARRIOR",
+    "description" : "Your weapons have +1 attack while Reserve Weapon is in play. 0: Target weapon in your graveyard is returned to play with +1 base attack, and Reserve Weapon is destroyed.",
+    "cardType" : "ITEM",
     "resourceCost" : 5,
-    "baseAttack" : 4,
-    "initialHp" : 5,
-    "currentHp" : 5,
+    "baseAttack" : null,
+    "initialHp" : null,
+    "currentHp" : null,
     "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "CLAW",
+    "itemSubType" : "ARTIFACT",
+    "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-    "castable" : false,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2382,7 +2247,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "c1f976ab-9c9e-4a5b-8e25-0256cf1b4886"
+    "uniqueId" : "6c1311ad-d2f3-43e7-87cc-c2e579f94643"
   } ], [ "edu.bator.cards.done.AeonStormcaller", {
     "code" : "se040",
     "rarity" : "E",
@@ -2409,7 +2274,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "26040696-eb85-4581-8702-62b60cb8fadb"
+    "uniqueId" : "07455783-7ef4-43a7-920e-6ae220c5bed2"
   } ], [ "edu.bator.cards.done.MarshlandSentinel", {
     "code" : "se037",
     "rarity" : "U",
@@ -2427,7 +2292,7 @@
     "attackType" : "CLAW",
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-    "castable" : false,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2436,7 +2301,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "55989a8b-a468-478d-a5ee-57525702c730"
+    "uniqueId" : "7c89c98a-479c-4a08-93f8-28e2fa035970"
   } ], [ "edu.bator.cards.done.AldontheBrave", {
     "code" : "se032",
     "rarity" : "U",
@@ -2454,7 +2319,7 @@
     "attackType" : "SWORD",
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-    "castable" : false,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2463,7 +2328,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "b0eeca8b-832b-47be-929c-54aae4acdefa"
+    "uniqueId" : "de2fd4bc-e4c5-45a2-be20-9fa2d8ebbcdf"
   } ], [ "edu.bator.cards.done.ValiantDefender", {
     "code" : "se061",
     "rarity" : null,
@@ -2490,7 +2355,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "b71deb00-c16b-44fa-a351-1bd346fa8840",
+    "uniqueId" : "561aea67-6da0-4e3c-9a6c-947decda7c04",
     "turnExpires" : 0,
     "phaseExpires" : null
   } ] ] ],
@@ -2522,7 +2387,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "17e17c1e-9fe4-462f-952b-336dfd62f1a0"
+    "uniqueId" : "4de9249e-a674-4e59-ac76-3c4a43c12ff8"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2549,7 +2414,61 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-    "uniqueId" : "e4d731da-8cca-4a6c-9f53-5e59b8f16480"
+    "uniqueId" : "2224392e-55f5-41e5-a73e-ddb664134eeb"
+  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "baseAttack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "ENEMY",
+    "uniqueId" : "74976190-c641-4684-aadc-cfce4f22cd04"
+  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "baseAttack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "ENEMY",
+    "uniqueId" : "4897b652-8d2d-420b-bba4-2bcaf506c6df"
   } ] ] ],
   "yourResources" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
@@ -2577,7 +2496,7 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "97f66abd-6172-472f-968c-6f321ea67633"
+    "uniqueId" : "53ee7901-0e5e-4caf-b980-2dfe70aa5aae"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2604,15 +2523,96 @@
     "weapon" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-    "uniqueId" : "9562dce8-1308-44bf-8f9d-681b57396d11"
+    "uniqueId" : "a6985844-c854-4266-b083-127cdd628fb0"
+  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "baseAttack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "uniqueId" : "e2763b94-726f-4aeb-befa-ab5a5478f43a"
+  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "baseAttack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "uniqueId" : "2db60b04-5b76-4de5-b606-2ffc608a3bcc"
+  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "baseAttack" : 0,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "uniqueId" : "d3d0ce26-3a1f-4642-9b0b-73db65453a7e"
   } ] ] ],
-  "yourCurrentResources" : 2,
-  "enemyCurrentResources" : 2,
+  "yourCurrentResources" : 5,
+  "enemyCurrentResources" : 4,
   "enemyAllies" : [ "java.util.LinkedList", [ ] ],
   "yourAllies" : [ "java.util.LinkedList", [ ] ],
   "enemySupport" : [ "java.util.LinkedList", [ ] ],
   "yourSupport" : [ "java.util.LinkedList", [ ] ],
-  "gamePhase" : "ENEMY_ACTION",
+  "gamePhase" : "YOU_ACTION",
   "attackSource" : null,
   "abilitySource" : null
 } ]
