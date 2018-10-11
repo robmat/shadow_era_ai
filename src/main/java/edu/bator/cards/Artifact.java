@@ -1,4 +1,4 @@
-package edu.bator.cards.done;
+package edu.bator.cards;
 
 import edu.bator.cards.Card;
 import edu.bator.game.GameState;
