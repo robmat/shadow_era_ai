@@ -27,14 +27,14 @@ public class GameEngine {
                 expireEffects(gameState);
                 applyEffects(gameState.yourHeroAlliesAndSupportCards());
                 clearAbilityAndAttackTargets(gameState);
-                notifyAllCardInPlayAboutGamePhase(gameState);
+                notifyAllCardsInPlayAboutGamePhase(gameState);
 
                 gameState.setGamePhase(GamePhase.YOU_SACRIFICE);
                 checkGameState(gameState);
                 break;
             }
             case YOU_SACRIFICE: {
-                notifyAllCardInPlayAboutGamePhase(gameState);
+                notifyAllCardsInPlayAboutGamePhase(gameState);
                 break;
             }
             case YOU_ACTION: {
@@ -43,7 +43,7 @@ public class GameEngine {
                 }
                 gameState.setYourCurrentResources(gameState.yourResourcesSize());
                 readyHandCards(gameState.getYourHand(), gameState);
-                notifyAllCardInPlayAboutGamePhase(gameState);
+                notifyAllCardsInPlayAboutGamePhase(gameState);
                 break;
             }
 
@@ -56,28 +56,28 @@ public class GameEngine {
                 expireEffects(gameState);
                 applyEffects(gameState.enemyHeroAlliesAndSupportCards());
                 clearAbilityAndAttackTargets(gameState);
-                notifyAllCardInPlayAboutGamePhase(gameState);
+                notifyAllCardsInPlayAboutGamePhase(gameState);
 
                 gameState.setGamePhase(GamePhase.ENEMY_SACRIFICE);
                 checkGameState(gameState);
                 break;
             }
             case ENEMY_SACRIFICE: {
-                notifyAllCardInPlayAboutGamePhase(gameState);
+                notifyAllCardsInPlayAboutGamePhase(gameState);
                 break;
             }
             case ENEMY_ACTION: {
                 gameState.setEnemyCurrentResources(gameState.enemyResourcesSize());
                 gameState.increaseSE(gameState.getEnemyHero());
                 readyHandCards(gameState.getEnemyHand(), gameState);
-                notifyAllCardInPlayAboutGamePhase(gameState);
+                notifyAllCardsInPlayAboutGamePhase(gameState);
                 break;
             }
         }
         gameState.repaint();
     }
 
-    private void notifyAllCardInPlayAboutGamePhase(GameState gameState) {
+    private void notifyAllCardsInPlayAboutGamePhase(GameState gameState) {
         gameState.allCardsInPlay().forEach(card -> card.gamePhaseChangeEvent(gameState));
     }
 
@@ -116,7 +116,7 @@ public class GameEngine {
         hero.setAttackReadied(true);
     }
 
-    private void readyHandCards(LinkedList<Card> hand, GameState gameState) {
+    public void readyHandCards(LinkedList<Card> hand, GameState gameState) {
         hand.forEach(card -> card.determineCastable(card, gameState));
     }
 

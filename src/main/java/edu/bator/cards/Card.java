@@ -292,7 +292,9 @@ public class Card implements Cloneable {
     @Override
     public String toString() {
         return this.getClass().getSimpleName() + "{" +
-                "currentHp=" + currentHp +
+                "baseAttack=" + baseAttack +
+                ", initialHp=" + initialHp +
+                ", owner=" + owner +
                 ", uniqueId='" + uniqueId + '\'' +
                 '}';
     }

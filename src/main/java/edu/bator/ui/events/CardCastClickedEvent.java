@@ -29,10 +29,12 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
             if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
                 if (card.cardIsSupport()) {
                     handleSupportCast();
+                    decreaseEnemyResources();
                 } else if (card.cardIsAnAbility()) {
                     handleAbilityCast();
                 } else if (card.cardIsArtifact()) {
                     handleArtifactCast();
+                    decreaseEnemyResources();
                 } else if (gameState.getEnemyHand().remove(card)) {
                     if (card.cardIsAnAlly()) {
                         gameState.getEnemyAllies().add(card);
@@ -41,18 +43,19 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                         gameState.getEnemyHero().setWeapon(card);
                     }
 
-                    gameState.setEnemyCurrentResources(
-                            gameState.getEnemyCurrentResources() - card.getResourceCost());
-                    gameState.getEnemyHand().forEach(card -> card.determineCastable(card, gameState));
+                    decreaseEnemyResources();
                 }
+                gameState.getEnemyHand().forEach(card -> card.determineCastable(card, gameState));
             }
             if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
                 if (card.cardIsSupport()) {
                     handleSupportCast();
+                    decreaseYourResources();
                 } else if (card.cardIsAnAbility()) {
                     handleAbilityCast();
                 } else if (card.cardIsArtifact()) {
                     handleArtifactCast();
+                    decreaseYourResources();
                 } else if (gameState.getYourHand().remove(card)) {
                     if (card.cardIsAnAlly()) {
                         gameState.getYourAllies().add(card);
@@ -60,15 +63,24 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                     if (card.cardIsAWeapon()) {
                         gameState.getYourHero().setWeapon(card);
                     }
-                    gameState.setYourCurrentResources(
-                            gameState.getYourCurrentResources() - card.getResourceCost());
-                    gameState.getYourHand().forEach(card -> card.determineCastable(card, gameState));
+                    decreaseYourResources();
                 }
+                gameState.getYourHand().forEach(card -> card.determineCastable(card, gameState));
             }
             card.wasCasted(gameState);
             gameState.repaint();
             log.info("Casted: " + card);
         }
+    }
+
+    private void decreaseYourResources() {
+        gameState.setYourCurrentResources(
+                gameState.getYourCurrentResources() - card.getResourceCost());
+    }
+
+    private void decreaseEnemyResources() {
+        gameState.setEnemyCurrentResources(
+                gameState.getEnemyCurrentResources() - card.getResourceCost());
     }
 
     private void handleArtifactCast() {

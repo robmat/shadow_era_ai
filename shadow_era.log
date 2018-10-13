@@ -1,45 +1,55 @@
-2018-10-11 14:26:34 INFO            edu.bator.EntryPoint:  48 - Starting.
-2018-10-11 14:26:35 INFO        edu.bator.game.GameState:  92 - Init done.
-2018-10-11 14:26:35 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='58e96528-bd58-4cf3-b21d-5fd544f8fa53'}
-2018-10-11 14:26:35 INFO            edu.bator.EntryPoint: 106 - Started.
-2018-10-11 14:26:37 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='58e96528-bd58-4cf3-b21d-5fd544f8fa53'}
-2018-10-11 14:26:38 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='8d2f2ea9-6056-4a9c-a7a6-0a8d0bce8009'}
-2018-10-11 14:26:38 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='8d2f2ea9-6056-4a9c-a7a6-0a8d0bce8009'}
-2018-10-11 14:26:38 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='459d1b25-9dcb-46cd-bb04-24fccb0da58f'}
-2018-10-11 14:26:39 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='459d1b25-9dcb-46cd-bb04-24fccb0da58f'}
-2018-10-11 14:26:39 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='4c7683d1-881f-416d-a9bc-4f7efa3aa121'}
-2018-10-11 14:26:40 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='4c7683d1-881f-416d-a9bc-4f7efa3aa121'}
-2018-10-11 14:26:40 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='9c5c4b97-46c8-43e8-9155-9011f13ed477'}
-2018-10-11 14:26:40 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='9c5c4b97-46c8-43e8-9155-9011f13ed477'}
-2018-10-11 14:26:41 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='4d71a431-a3c6-4e04-b4db-afd9a52baf30'}
-2018-10-11 14:26:41 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='4d71a431-a3c6-4e04-b4db-afd9a52baf30'}
-2018-10-11 14:26:41 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='d27a74ea-3951-477e-a357-32a0c84a9be2'}
-2018-10-11 14:26:42 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='d27a74ea-3951-477e-a357-32a0c84a9be2'}
-2018-10-11 14:26:42 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='3c9ecfa2-565b-4b39-899b-c75f6d60bf4c'}
-2018-10-11 14:26:43 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='3c9ecfa2-565b-4b39-899b-c75f6d60bf4c'}
-2018-10-11 14:26:43 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='1e16a43c-784d-4837-8f38-e3cb096e4d4e'}
-2018-10-11 14:26:44 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='1e16a43c-784d-4837-8f38-e3cb096e4d4e'}
-2018-10-11 14:26:45 INFO  ui.events.CardCastClickedEvent:  70 - Casted: ValiantDefender(turnExpires=7, phaseExpires=ENEMY_ACTION)
-2018-10-11 14:26:46 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='32a117a4-53e3-43b6-956a-93ff1a31e7a8'}
-2018-10-11 14:26:46 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 5
-2018-10-11 14:26:46 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 5
-2018-10-11 14:26:46 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='32a117a4-53e3-43b6-956a-93ff1a31e7a8'}
-2018-10-11 14:26:46 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 5
-2018-10-11 14:26:48 INFO  ui.events.CardCastClickedEvent:  70 - Casted: ValiantDefender(turnExpires=7, phaseExpires=YOU_ACTION)
-2018-10-11 14:28:03 INFO  ui.events.CardCastClickedEvent:  70 - Casted: ReserveWeapon{currentHp=null, uniqueId='79f17e1e-b835-47bf-bc01-7bdaf26ce446'}
-2018-10-11 14:28:04 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='ffe9c0b4-53d9-4ff4-a377-8b127cd3714a'}
-2018-10-11 14:28:04 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:04 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:04 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:04 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:06 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{currentHp=2, uniqueId='ffe9c0b4-53d9-4ff4-a377-8b127cd3714a'}
-2018-10-11 14:28:06 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:06 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:07 INFO  ui.events.CardCastClickedEvent:  70 - Casted: AldontheBrave{currentHp=4, uniqueId='0a54f2b5-2d47-45a7-a246-cdbdbc2d62d9'}
-2018-10-11 14:28:10 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{currentHp=2, uniqueId='13ecca8c-2f1e-4e59-9c55-ef2e04c742d9'}
-2018-10-11 14:28:10 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:10 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:10 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:10 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 7, current: 6
-2018-10-11 14:28:16 DEBUG events.NewRandomDecksGameEvent:  31 - New random game starting.
-2018-10-11 14:28:16 INFO       edu.bator.game.GameEngine: 127 - Picked: LilyRosecult{currentHp=4, uniqueId='958b1300-cb29-437e-bcbe-de7a7ab314dc'}
+2018-10-13 13:12:10 INFO            edu.bator.EntryPoint:  48 - Starting.
+2018-10-13 13:12:13 INFO        edu.bator.game.GameState:  92 - Init done.
+2018-10-13 13:12:13 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='6f7d365e-f593-4f37-9e9f-e15763206329'}
+2018-10-13 13:12:14 INFO            edu.bator.EntryPoint: 106 - Started.
+2018-10-13 13:12:27 DEBUG           edu.bator.EntryPoint: 113 - Game loaded.
+2018-10-13 13:12:36 DEBUG events.NewRandomDecksGameEvent:  31 - New random game starting.
+2018-10-13 13:12:37 INFO       edu.bator.game.GameEngine: 127 - Picked: AldontheBrave{baseAttack=2, initialHp=4, owner=YOU, uniqueId='d8a433b8-db39-45f8-a6ee-fad6031c9fe5'}
+2018-10-13 13:12:40 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: RavenWildheart{baseAttack=3, initialHp=6, owner=YOU, uniqueId='682da824-2ab3-4273-ba42-dc07a3c99409'}
+2018-10-13 13:12:42 INFO  ui.events.CardCastClickedEvent:  72 - Casted: KristofferWyld{baseAttack=1, initialHp=1, owner=YOU, uniqueId='95d4f45c-02b1-4b9a-8d3a-e6cf4203f1e5'}
+2018-10-13 13:12:44 INFO  r.ui.events.AttackClickedEvent:  32 - KristofferWyld{baseAttack=1, initialHp=1, owner=YOU, uniqueId='95d4f45c-02b1-4b9a-8d3a-e6cf4203f1e5'} ready to attack.
+2018-10-13 13:12:44 INFO  vents.AttackTargetClickedEvent:  34 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='35e27a51-0ed2-4835-a3e3-6cf8e1578b74'} attacked KristofferWyld{baseAttack=1, initialHp=1, owner=YOU, uniqueId='95d4f45c-02b1-4b9a-8d3a-e6cf4203f1e5'}
+2018-10-13 13:12:56 INFO       edu.bator.game.GameEngine: 127 - Picked: ZoeSilversmith{baseAttack=2, initialHp=4, owner=ENEMY, uniqueId='1985dc68-07df-4c27-90c4-093a926817b0'}
+2018-10-13 13:12:56 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: ZoeSilversmith{baseAttack=2, initialHp=4, owner=ENEMY, uniqueId='1985dc68-07df-4c27-90c4-093a926817b0'}
+2018-10-13 13:12:57 INFO       edu.bator.game.GameEngine: 127 - Picked: KatrintheShieldmaiden(target=null)
+2018-10-13 13:12:58 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: KatrintheShieldmaiden(target=null)
+2018-10-13 13:12:58 INFO       edu.bator.game.GameEngine: 127 - Picked: ShieldBash{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='ac097c1e-ab44-44b0-b942-9ccbec24433b'}
+2018-10-13 13:12:59 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: ShieldBash{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='ac097c1e-ab44-44b0-b942-9ccbec24433b'}
+2018-10-13 13:12:59 INFO       edu.bator.game.GameEngine: 127 - Picked: KatrintheShieldmaiden(target=null)
+2018-10-13 13:13:00 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: KatrintheShieldmaiden(target=null)
+2018-10-13 13:13:00 INFO       edu.bator.game.GameEngine: 127 - Picked: MarshlandSentinel{baseAttack=2, initialHp=4, owner=ENEMY, uniqueId='30d9f52a-9b83-443c-b7cf-1be7f38f23a0'}
+2018-10-13 13:13:02 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: TaintedOracle{baseAttack=2, initialHp=2, owner=ENEMY, uniqueId='8aa0d5be-87ff-4994-a9ff-1daa15a5db26'}
+2018-10-13 13:13:02 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='8d723674-8725-4ace-a3cc-1883ba618aeb'}
+2018-10-13 13:13:03 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='8d723674-8725-4ace-a3cc-1883ba618aeb'}
+2018-10-13 13:13:04 INFO       edu.bator.game.GameEngine: 127 - Picked: AldontheBrave{baseAttack=2, initialHp=4, owner=ENEMY, uniqueId='632aaf3c-5b69-474e-8947-1cf71820d97b'}
+2018-10-13 13:13:05 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: AldontheBrave{baseAttack=2, initialHp=4, owner=ENEMY, uniqueId='632aaf3c-5b69-474e-8947-1cf71820d97b'}
+2018-10-13 13:13:06 INFO       edu.bator.game.GameEngine: 127 - Picked: PriestoftheLight{baseAttack=3, initialHp=3, owner=YOU, uniqueId='0aacf12c-c28c-4738-b57f-237230b990bf'}
+2018-10-13 13:13:08 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: RavenWildheart{baseAttack=3, initialHp=6, owner=YOU, uniqueId='e204607b-6d75-4f53-9856-e1cff78615f0'}
+2018-10-13 13:13:09 INFO       edu.bator.game.GameEngine: 127 - Picked: KurtWhitehelm{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='a37bf50c-3f3b-4037-9c46-617190145a90'}
+2018-10-13 13:13:10 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: KurtWhitehelm{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='a37bf50c-3f3b-4037-9c46-617190145a90'}
+2018-10-13 13:13:13 INFO  ui.events.CardCastClickedEvent:  72 - Casted: ReserveWeapon{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='920e7756-3b83-4a53-99d4-cdae33e3fdaf'}
+2018-10-13 13:13:27 INFO       edu.bator.game.GameEngine: 127 - Picked: ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='c123686e-05f1-4922-98f6-9e519be169f9'}
+2018-10-13 13:13:30 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='c123686e-05f1-4922-98f6-9e519be169f9'}
+2018-10-13 13:13:32 INFO  r.ui.events.AttackClickedEvent:  32 - KristofferWyld{baseAttack=1, initialHp=1, owner=YOU, uniqueId='95d4f45c-02b1-4b9a-8d3a-e6cf4203f1e5'} ready to attack.
+2018-10-13 13:13:32 INFO  vents.AttackTargetClickedEvent:  34 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='35e27a51-0ed2-4835-a3e3-6cf8e1578b74'} attacked KristofferWyld{baseAttack=1, initialHp=1, owner=YOU, uniqueId='95d4f45c-02b1-4b9a-8d3a-e6cf4203f1e5'}
+2018-10-13 13:13:33 INFO       edu.bator.game.GameEngine: 127 - Picked: JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='7d3293b0-4672-43ad-a4ec-17404b803be8'}
+2018-10-13 13:13:36 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ca71d6ce-a2ff-48b9-b9b9-39ce855d4d34'}
+2018-10-13 13:13:40 INFO  ui.events.CardCastClickedEvent:  72 - Casted: PriestoftheLight{baseAttack=3, initialHp=3, owner=ENEMY, uniqueId='45a1aa13-144a-42ac-b195-39f7892fde7b'}
+2018-10-13 13:13:40 INFO  ui.events.CardCastClickedEvent:  72 - Casted: JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='7d3293b0-4672-43ad-a4ec-17404b803be8'}
+2018-10-13 13:13:42 INFO  .ui.events.AbilityClickedEvent:  33 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='35e27a51-0ed2-4835-a3e3-6cf8e1578b74'} ready to use ability.
+2018-10-13 13:13:43 INFO       edu.bator.game.GameEngine: 127 - Picked: ErikaShadowhunter{baseAttack=4, initialHp=3, owner=YOU, uniqueId='7121c26d-46e0-4f91-b35b-51dbd447657e'}
+2018-10-13 13:13:44 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: ErikaShadowhunter{baseAttack=4, initialHp=3, owner=YOU, uniqueId='7121c26d-46e0-4f91-b35b-51dbd447657e'}
+2018-10-13 13:13:46 INFO  ui.events.CardCastClickedEvent:  72 - Casted: AldontheBrave{baseAttack=2, initialHp=4, owner=YOU, uniqueId='d8a433b8-db39-45f8-a6ee-fad6031c9fe5'}
+2018-10-13 13:13:47 INFO  ui.events.CardCastClickedEvent:  72 - Casted: PriestoftheLight{baseAttack=3, initialHp=3, owner=YOU, uniqueId='0aacf12c-c28c-4738-b57f-237230b990bf'}
+2018-10-13 13:13:49 INFO       edu.bator.game.GameEngine: 127 - Picked: BlakeWindrunner{baseAttack=3, initialHp=1, owner=ENEMY, uniqueId='b061be7f-46da-4970-89d9-5875e44fbf35'}
+2018-10-13 13:13:51 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BlakeWindrunner{baseAttack=3, initialHp=1, owner=ENEMY, uniqueId='b061be7f-46da-4970-89d9-5875e44fbf35'}
+2018-10-13 13:13:51 INFO       edu.bator.game.GameEngine: 127 - Picked: AldontheBrave{baseAttack=2, initialHp=4, owner=YOU, uniqueId='dfd29e5c-609f-4a52-8c8d-b23d5d9036e2'}
+2018-10-13 13:13:52 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: AldontheBrave{baseAttack=2, initialHp=4, owner=YOU, uniqueId='dfd29e5c-609f-4a52-8c8d-b23d5d9036e2'}
+2018-10-13 13:13:52 INFO       edu.bator.game.GameEngine: 127 - Picked: AldontheBrave{baseAttack=2, initialHp=4, owner=ENEMY, uniqueId='3855e683-cf24-405a-b5d6-23f706d1be8d'}
+2018-10-13 13:13:53 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: AldontheBrave{baseAttack=2, initialHp=4, owner=ENEMY, uniqueId='3855e683-cf24-405a-b5d6-23f706d1be8d'}
+2018-10-13 13:13:53 INFO       edu.bator.game.GameEngine: 127 - Picked: Mournblade{baseAttack=0, initialHp=4, owner=YOU, uniqueId='dfff6151-4f3f-4055-b0af-d360d50ac844'}
+2018-10-13 13:13:56 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: ZoeSilversmith{baseAttack=2, initialHp=4, owner=YOU, uniqueId='f1bac205-5028-4a04-bdd0-f3184dcaaf21'}
+2018-10-13 13:14:00 INFO  ui.events.CardCastClickedEvent:  72 - Casted: Mournblade{baseAttack=0, initialHp=4, owner=YOU, uniqueId='dfff6151-4f3f-4055-b0af-d360d50ac844'}
+2018-10-13 13:14:05 INFO  .ui.events.AbilityClickedEvent:  33 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='fa7a9ec1-14ea-4786-b266-579934372fd0'} ready to use ability.
+2018-10-13 13:14:10 INFO  r.ui.events.AttackClickedEvent:  32 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='fa7a9ec1-14ea-4786-b266-579934372fd0'} ready to attack.
+2018-10-13 13:14:13 INFO  vents.AttackTargetClickedEvent:  34 - PriestoftheLight{baseAttack=3, initialHp=3, owner=ENEMY, uniqueId='45a1aa13-144a-42ac-b195-39f7892fde7b'} attacked BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='fa7a9ec1-14ea-4786-b266-579934372fd0'}
