@@ -43,6 +43,7 @@ public class EntryPoint extends Application {
     private GamePainter gamePainter = new GamePainter();
     static ObjectMapper objectJsonMapper = new ObjectMapper();
     public static AllCardsSet allCardsSet = new AllCardsSet();
+    public static Stage primaryStage;
 
     public static void main(String[] args) {
         log.info("Starting.");
@@ -52,6 +53,7 @@ public class EntryPoint extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        this.primaryStage = primaryStage;
         Thread.setDefaultUncaughtExceptionHandler(new LogginExceptionHandler());
         try {
             primaryStage.getIcons().add(new Image(getClass().getResource("/icon.png").toURI().toURL().toString()));

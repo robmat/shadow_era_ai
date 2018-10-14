@@ -26,7 +26,7 @@ public class AbilityClickedEvent implements EventHandler<MouseEvent> {
                     target.setPossibleAbilityTarget(false);
                     target.calculatePossibleAbilityTarget(card, gameState);
                 });
-
+        card.abilityClickEvent(gameState);
         gameState.setAbilitySource(card);
         gameState.repaint();
 

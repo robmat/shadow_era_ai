@@ -28,7 +28,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 
-class CardPainter {
+public class CardPainter {
 
     private static final Border ORANGE_BORDER = new Border(
             new BorderStroke(Color.ORANGE, BorderStrokeStyle.DASHED, CornerRadii.EMPTY,
@@ -41,11 +41,11 @@ class CardPainter {
                     BorderStroke.MEDIUM));
 
     @SuppressWarnings("unchecked")
-    void paint(Card card, GridPane enemyHand, int index, GameState gameState) {
+    public GridPane paint(Card card, GridPane grid, int index, GameState gameState) {
         GridPane gridPane = new GridPane();
         gridPane.setId(card.getUniqueId());
         gridPane.setPadding(new Insets(3));
-        enemyHand.add(gridPane, index, 0);
+        grid.add(gridPane, index, 0);
 
         //Image image = new Image(getClass().getResourceAsStream("/images/" + card.getCode() + ".jpg"), 190, 265, false, true);
         Image image = new Image(getClass().getResourceAsStream("/images/" + card.getCode() + ".jpg"),
@@ -133,7 +133,7 @@ class CardPainter {
             gridPane.setOnMouseClicked(new CardCastClickedEvent(gameState, card));
             gridPane.setBorder(LIGHTGREEN_BORDER);
         }
-
+        return gridPane;
     }
 
     private void buildWeaponText(Card card, StringBuilder text, GameState gameState) {
