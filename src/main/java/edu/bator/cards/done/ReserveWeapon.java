@@ -70,8 +70,8 @@ public class ReserveWeapon extends Artifact {
             GridPane cardGrid = new CardPainter()
                 .paint(card, cardsGrid, index.getAndIncrement(), gameState);
             Button button = new Button("Target");
-            button.setOnMouseClicked(new ReserveWeaponClickedEvent(gameState, card));
-            cardGrid.add(button, 0, 1);
+            button.setOnMouseClicked(new ReserveWeaponClickedEvent(gameState, card, dialog, this));
+            cardGrid.add(button, 0, 2);
           });
     }
     if (isEnemy(gameState)) {
@@ -83,8 +83,8 @@ public class ReserveWeapon extends Artifact {
             GridPane cardGrid = new CardPainter()
                 .paint(card, cardsGrid, index.getAndIncrement(), gameState);
             Button button = new Button("Target");
-            button.setOnMouseClicked(new ReserveWeaponClickedEvent(gameState, card));
-            cardGrid.add(button, 0, 1);
+            button.setOnMouseClicked(new ReserveWeaponClickedEvent(gameState, card, dialog, this));
+            cardGrid.add(button, 0, 2);
           });
     }
 
@@ -112,10 +112,15 @@ public class ReserveWeapon extends Artifact {
 
     private final GameState gameState;
     private final Card target;
+    private final Stage dialog;
+    private final ReserveWeapon source;
 
-    ReserveWeaponClickedEvent(GameState gameState, Card target) {
+    ReserveWeaponClickedEvent(GameState gameState, Card target, Stage dialog,
+        ReserveWeapon reserveWeapon) {
       this.gameState = gameState;
       this.target = target;
+      this.dialog = dialog;
+      this.source = reserveWeapon;
     }
 
     @Override
@@ -124,10 +129,17 @@ public class ReserveWeapon extends Artifact {
       target.setBaseAttack(target.getBaseAttack() + 1);
       if (gameState.getYourGraveyard().remove(target)) {
         gameState.getYourHero().setWeapon(target);
+        if (gameState.getYourSupport().remove(source)) {
+          gameState.getYourGraveyard().add(source);
+        }
       }
       if (gameState.getEnemyGraveyard().remove(target)) {
         gameState.getEnemyHero().setWeapon(target);
+        if (gameState.getEnemySupport().remove(source)) {
+          gameState.getEnemyGraveyard().add(source);
+        }
       }
+      dialog.close();
     }
   }
 }

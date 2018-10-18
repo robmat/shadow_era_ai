@@ -1,4 +1,19 @@
-2018-10-18 10:42:28 INFO            edu.bator.EntryPoint:  49 - Starting.
-2018-10-18 10:42:30 INFO        edu.bator.game.GameState:  92 - Init done.
-2018-10-18 10:42:30 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='f5cf57d3-0674-45e7-8497-014ff916709c'}
-2018-10-18 10:42:30 INFO            edu.bator.EntryPoint: 108 - Started.
+2018-10-18 10:49:48 INFO            edu.bator.EntryPoint:  49 - Starting.
+2018-10-18 10:49:49 INFO        edu.bator.game.GameState:  92 - Init done.
+2018-10-18 10:49:49 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='d2679d4d-d3d1-4640-afc3-5bfc0a98c190'}
+2018-10-18 10:49:49 INFO            edu.bator.EntryPoint: 108 - Started.
+2018-10-18 10:49:51 DEBUG           edu.bator.EntryPoint: 115 - Game loaded.
+2018-10-18 10:50:13 INFO  .ui.events.AbilityClickedEvent:  33 - ReserveWeapon{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2431a6f7-9869-4319-86ab-5bf5e8c7c406'} ready to use ability.
+2018-10-18 10:50:23 INFO  r.ui.events.AttackClickedEvent:  32 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='1bd272d4-2af2-40fb-9a04-6f9268001a82'} ready to attack.
+2018-10-18 10:50:24 INFO  vents.AttackTargetClickedEvent:  34 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='3869c5e7-de1d-432e-84b3-7da053792cc7'} attacked BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='1bd272d4-2af2-40fb-9a04-6f9268001a82'}
+2018-10-18 10:50:25 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='958c6e97-2114-4c74-9d22-a0bb5108474e'}
+2018-10-18 10:50:25 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 6, current: 6
+2018-10-18 10:50:25 DEBUG tor.cards.done.ValiantDefender:  54 - phase expires: ENEMY_ACTION, current: ENEMY_PREPARE
+2018-10-18 10:50:25 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 6, current: 6
+2018-10-18 10:50:25 DEBUG tor.cards.done.ValiantDefender:  54 - phase expires: ENEMY_ACTION, current: ENEMY_SACRIFICE
+2018-10-18 10:50:26 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='958c6e97-2114-4c74-9d22-a0bb5108474e'}
+2018-10-18 10:50:26 DEBUG tor.cards.done.ValiantDefender:  52 - turn expires: 6, current: 6
+2018-10-18 10:50:26 DEBUG tor.cards.done.ValiantDefender:  54 - phase expires: ENEMY_ACTION, current: ENEMY_ACTION
+2018-10-18 10:50:35 INFO  .ui.events.AbilityClickedEvent:  33 - ReserveWeapon{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='c3a3f1b2-0beb-4262-8fa5-5d23a8a0b875'} ready to use ability.
+2018-10-18 10:50:37 INFO  r.ui.events.AttackClickedEvent:  32 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='3869c5e7-de1d-432e-84b3-7da053792cc7'} ready to attack.
+2018-10-18 10:50:38 INFO  vents.AttackTargetClickedEvent:  34 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='1bd272d4-2af2-40fb-9a04-6f9268001a82'} attacked BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='3869c5e7-de1d-432e-84b3-7da053792cc7'}
