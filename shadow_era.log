@@ -1,6 +1,4 @@
-2018-10-14 12:42:05 INFO            edu.bator.EntryPoint:  49 - Starting.
-2018-10-14 12:42:06 INFO        edu.bator.game.GameState:  92 - Init done.
-2018-10-14 12:42:06 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='4d291a9c-330e-478a-8da9-7d57d629ad97'}
-2018-10-14 12:42:06 INFO            edu.bator.EntryPoint: 108 - Started.
-2018-10-14 12:42:13 DEBUG           edu.bator.EntryPoint: 115 - Game loaded.
-2018-10-14 12:43:07 INFO  .ui.events.AbilityClickedEvent:  33 - ReserveWeapon{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='943f8973-4840-4817-83e5-b155d672f764'} ready to use ability.
+2018-10-18 10:42:28 INFO            edu.bator.EntryPoint:  49 - Starting.
+2018-10-18 10:42:30 INFO        edu.bator.game.GameState:  92 - Init done.
+2018-10-18 10:42:30 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='f5cf57d3-0674-45e7-8497-014ff916709c'}
+2018-10-18 10:42:30 INFO            edu.bator.EntryPoint: 108 - Started.
