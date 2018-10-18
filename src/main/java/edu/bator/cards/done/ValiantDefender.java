@@ -10,7 +10,6 @@ import edu.bator.game.GameState;
 import java.util.Objects;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.log4j.Logger;
 
 @Data

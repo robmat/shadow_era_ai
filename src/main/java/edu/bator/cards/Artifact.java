@@ -1,6 +1,5 @@
 package edu.bator.cards;
 
-import edu.bator.cards.Card;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
 
