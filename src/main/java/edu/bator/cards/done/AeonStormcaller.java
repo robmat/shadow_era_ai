@@ -33,6 +33,22 @@ public class AeonStormcaller extends Ally {
   }
 
   @Override
+  public void determineCastable(Card card, GameState gameState) {
+    super.determineCastable(card, gameState);
+    boolean castable = this.isCastable();
+    if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
+      boolean anotherAlreadyInPlay = gameState.getYourAllies().stream()
+          .anyMatch(c -> c.getName().equals(getName()));
+      setCastable(castable && !anotherAlreadyInPlay);
+    }
+    if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
+      boolean anotherAlreadyInPlay = gameState.getEnemyAllies().stream()
+          .anyMatch(c -> c.getName().equals(getName()));
+      setCastable(castable && !anotherAlreadyInPlay);
+    }
+  }
+
+  @Override
   public boolean ableToApplyAbilityTo(Card target, GameState gameState) {
     return !Objects.equals(this, target) && gameState.currentYourAlliesBasedOnPhase().contains(target);
   }

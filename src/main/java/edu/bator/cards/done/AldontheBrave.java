@@ -20,14 +20,14 @@ public class AldontheBrave extends Ally {
         super.determineCastable(card, gameState);
         boolean castable = this.isCastable();
         if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-            boolean anotherAldonAlreadyInPlay = gameState.getYourAllies().stream()
+            boolean anotherAlreadyInPlay = gameState.getYourAllies().stream()
                 .anyMatch(c -> c.getName().equals(getName()));
-            setCastable(castable && !anotherAldonAlreadyInPlay);
+            setCastable(castable && !anotherAlreadyInPlay);
         }
         if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-            boolean anotherAldonAlreadyInPlay = gameState.getEnemyAllies().stream()
+            boolean anotherAlreadyInPlay = gameState.getEnemyAllies().stream()
                 .anyMatch(c -> c.getName().equals(getName()));
-            setCastable(castable && !anotherAldonAlreadyInPlay);
+            setCastable(castable && !anotherAlreadyInPlay);
         }
     }
 
