@@ -59,6 +59,7 @@ public class CardPainter {
                 .append(card.getAbilities().isEmpty() ? "" : card.getAbilities());
 
         buildWeaponText(card, tooltipBuilder, gameState);
+        buildArmorText(card, tooltipBuilder, gameState);
 
         String tooltipText = tooltipBuilder.toString();
 
@@ -81,6 +82,7 @@ public class CardPainter {
         if (card.cardIsAHero()) {
             StringBuilder text = new StringBuilder("SE: " + card.getShadowEnergy());
             buildWeaponText(card, text, gameState);
+            buildArmorText(card, text, gameState);
 
             gridPane.add(new Label(text.toString()), 0, 2);
         }
@@ -145,6 +147,18 @@ public class CardPainter {
                     .append(weapon.getCurrentHp())
                     .append(" ATK: ")
                     .append(weapon.getAttack(gameState));
+        });
+    }
+
+    private void buildArmorText(Card card, StringBuilder text, GameState gameState) {
+        Optional.ofNullable(card.getArmor()).ifPresent(armor -> {
+            text
+                    .append("\nArmor: ")
+                    .append(armor.getName())
+                    .append(" DUR: ")
+                    .append(armor.getCurrentHp())
+                    .append(" DEF: ")
+                    .append(armor.getAttack(gameState));
         });
     }
 }

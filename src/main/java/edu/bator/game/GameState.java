@@ -62,17 +62,19 @@ public class GameState {
     public void init() {
         enemyHero = allCardsSet.cloneByName("Boris Skullcrusher", Owner.ENEMY);
         enemyHero.setWeapon(allCardsSet.cloneByName("Mournblade", Owner.ENEMY));
+        enemyHero.setArmor(allCardsSet.cloneByName("Snow Sapphire", Owner.ENEMY));
 
         yourHero = allCardsSet.cloneByName("Boris Skullcrusher", Owner.YOU);
         yourHero.setWeapon(allCardsSet.cloneByName("Mournblade", Owner.YOU));
+        yourHero.setArmor(allCardsSet.cloneByName("Snow Sapphire", Owner.YOU));
 
         for (int i = 0; i < 40; i++) {
             enemyDeck.add(allCardsSet.cloneByName("Birgitte Skullborn", Owner.ENEMY));
             yourDeck.add(allCardsSet.cloneByName("Birgitte Skullborn", Owner.YOU));
         }
 
-        enemyHand.add(allCardsSet.cloneByName("Tainted Oracle", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Tainted Oracle", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Snow Sapphire", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Snow Sapphire", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Reserve Weapon", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Reserve Weapon", Owner.YOU));

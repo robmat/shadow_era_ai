@@ -38,4 +38,14 @@ public class Hero extends Card {
         };
         attackTarget(attackEvent, target, gameState);
     }
+
+    @Override
+    public void attackedBy(BiConsumer<GameState, Card> attackEvent, Card source, GameState gameState) {
+        int hpBefore = getCurrentHp();
+        super.attackedBy(attackEvent, source, gameState);
+        if (getCurrentHp() < hpBefore && nonNull(getArmor())) {
+            int defence = getArmor().getBaseDefence();
+            setCurrentHp(hpBefore - getCurrentHp() > defence ? getCurrentHp() + defence : hpBefore);
+        }
+    }
 }

@@ -43,6 +43,7 @@ public class Card implements Cloneable {
 
     Integer resourceCost;
     Integer baseAttack;
+    Integer baseDefence;
     Integer initialHp;
     Integer currentHp;
     Integer shadowEnergy = 0;
@@ -57,7 +58,7 @@ public class Card implements Cloneable {
 
     LinkedList<Effect> effects = new LinkedList<>();
 
-    Card weapon;
+    Card weapon, armor;
 
     Set<HeroClass> availableForHeroClasses = new HashSet<>();
 
@@ -75,6 +76,7 @@ public class Card implements Cloneable {
         this.cardType = cloneFrom.cardType;
         this.resourceCost = cloneFrom.resourceCost;
         this.baseAttack = cloneFrom.baseAttack;
+        this.baseDefence = cloneFrom.baseDefence;
         this.initialHp = cloneFrom.initialHp;
         this.currentHp = cloneFrom.currentHp;
         this.itemSubType = cloneFrom.itemSubType;
@@ -91,6 +93,13 @@ public class Card implements Cloneable {
         try {
             if (nonNull(cloneFrom.weapon)) {
                 this.weapon = (Card) cloneFrom.weapon.clone();
+            }
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            if (nonNull(cloneFrom.armor)) {
+                this.armor = (Card) cloneFrom.armor.clone();
             }
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException(e);
@@ -188,6 +197,10 @@ public class Card implements Cloneable {
 
     public boolean cardIsAWeapon() {
         return ItemSubType.WEAPON.equals(getItemSubType());
+    }
+
+    public boolean cardIsAArmor() {
+        return ItemSubType.ARMOR.equals(getItemSubType());
     }
 
     public boolean cardIsArtifact() {

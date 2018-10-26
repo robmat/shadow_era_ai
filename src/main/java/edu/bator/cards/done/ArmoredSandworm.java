@@ -9,7 +9,9 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class ArmoredSandworm extends Ally {
 
-public ArmoredSandworm() {};
+    private static final int ARMOR = 2;
+
+    public ArmoredSandworm() {};
 
     public ArmoredSandworm(Card cloneFrom) {
         super(cloneFrom);
@@ -20,7 +22,7 @@ public ArmoredSandworm() {};
         Integer hpBefore = getCurrentHp();
         super.attackedBy(attackEvent, source, gameState);
         if (getCurrentHp() < hpBefore) {
-            setCurrentHp(hpBefore - getCurrentHp() > 2 ? getCurrentHp() + 2 : hpBefore);
+            setCurrentHp(hpBefore - getCurrentHp() > ARMOR ? getCurrentHp() + ARMOR : hpBefore);
         }
     }
 
@@ -29,7 +31,7 @@ public ArmoredSandworm() {};
         int hpBefore = getCurrentHp();
         super.abilityAppliedToMe(abilityFunction, gameState);
         if (hpBefore > getCurrentHp()) {
-            setCurrentHp(hpBefore - getCurrentHp() > 2 ? getCurrentHp() + 2 : hpBefore);
+            setCurrentHp(hpBefore - getCurrentHp() > ARMOR ? getCurrentHp() + ARMOR : hpBefore);
         }
     }
 }

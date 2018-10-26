@@ -8,6 +8,8 @@ import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import org.apache.log4j.Logger;
 
+import static java.util.Objects.nonNull;
+
 public class CardCastClickedEvent implements EventHandler<MouseEvent> {
 
     private static final Logger log = Logger.getLogger(CardCastClickedEvent.class);
@@ -40,9 +42,17 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                         gameState.getEnemyAllies().add(card);
                     }
                     if (card.cardIsAWeapon()) {
+                        if (nonNull(gameState.getEnemyHero().getWeapon())) {
+                            gameState.getEnemyGraveyard().add(gameState.getEnemyHero().getWeapon());
+                        }
                         gameState.getEnemyHero().setWeapon(card);
                     }
-
+                    if (card.cardIsAArmor()) {
+                        if (nonNull(gameState.getEnemyHero().getArmor())) {
+                            gameState.getEnemyGraveyard().add(gameState.getEnemyHero().getArmor());
+                        }
+                        gameState.getEnemyHero().setArmor(card);
+                    }
                     decreaseEnemyResources();
                 }
                 gameState.getEnemyHand().forEach(card -> card.determineCastable(card, gameState));
@@ -61,7 +71,16 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                         gameState.getYourAllies().add(card);
                     }
                     if (card.cardIsAWeapon()) {
+                        if (nonNull(gameState.getYourHero().getWeapon())) {
+                            gameState.getYourGraveyard().add(gameState.getYourHero().getWeapon());
+                        }
                         gameState.getYourHero().setWeapon(card);
+                    }
+                    if (card.cardIsAArmor()) {
+                        if (nonNull(gameState.getYourHero().getArmor())) {
+                            gameState.getYourGraveyard().add(gameState.getYourHero().getArmor());
+                        }
+                        gameState.getYourHero().setArmor(card);
                     }
                     decreaseYourResources();
                 }
