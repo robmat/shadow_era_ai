@@ -156,6 +156,18 @@ public class GameEngine {
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
             card.cardHasDiedEvent(card, gameState);
         }
+        if (card.equals(gameState.getEnemyHero().getArmor())) {
+            gameState.getEnemyHero().setArmor(null);
+            gameState.getEnemyGraveyard().add(card);
+            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+            card.cardHasDiedEvent(card, gameState);
+        }
+        if (card.equals(gameState.getYourHero().getArmor())) {
+            gameState.getYourHero().setArmor(null);
+            gameState.getYourGraveyard().add(card);
+            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+            card.cardHasDiedEvent(card, gameState);
+        }
     }
 
     public void moveToGraveYard(Card card, GameState gameState) {

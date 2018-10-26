@@ -2,6 +2,7 @@ package edu.bator.cards;
 
 import static java.util.Objects.nonNull;
 
+import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import java.util.Objects;
 import java.util.Optional;
@@ -47,6 +48,9 @@ public class Hero extends Card {
             int defence = getArmor().getBaseDefence();
             setCurrentHp(hpBefore - getCurrentHp() > defence ? getCurrentHp() + defence : hpBefore);
             getArmor().setCurrentHp(getArmor().getCurrentHp() - 1);
+            if (getArmor().cardIsDead()) {
+                new GameEngine().cardDied(getArmor(), gameState);
+            }
         }
     }
 }
