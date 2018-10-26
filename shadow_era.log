@@ -1,0 +1,6 @@
+2018-10-26 18:09:35 INFO            edu.bator.EntryPoint:  49 - Starting.
+2018-10-26 18:09:36 INFO        edu.bator.game.GameState:  94 - Init done.
+2018-10-26 18:09:36 INFO       edu.bator.game.GameEngine: 127 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='c1cf85ec-f49b-4243-a20e-0197984c5959'}
+2018-10-26 18:09:36 INFO            edu.bator.EntryPoint: 108 - Started.
+2018-10-26 18:09:38 DEBUG           edu.bator.EntryPoint: 115 - Game loaded.
+2018-10-26 18:09:42 INFO  vents.AttackTargetClickedEvent:  34 - BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='3225dc96-5793-4d5a-b1c3-c799944d7d9d'} attacked AeonStormcaller{baseAttack=3, initialHp=8, owner=YOU, uniqueId='7b954391-8a74-4892-bf58-52935becab86'}

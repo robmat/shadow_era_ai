@@ -46,6 +46,7 @@ public class Hero extends Card {
         if (getCurrentHp() < hpBefore && nonNull(getArmor())) {
             int defence = getArmor().getBaseDefence();
             setCurrentHp(hpBefore - getCurrentHp() > defence ? getCurrentHp() + defence : hpBefore);
+            getArmor().setCurrentHp(getArmor().getCurrentHp() - 1);
         }
     }
 }

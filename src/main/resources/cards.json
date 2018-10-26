@@ -2457,7 +2457,7 @@
     "cardType": "ITEM",
     "resourceCost": 6,
     "baseDefence": 2,
-    "initialHp": 2,
+    "initialHp": 4,
     "itemSubType": "ARMOR",
     "attackType": null,
     "abilities": []
