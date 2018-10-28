@@ -4,7 +4,9 @@ import static edu.bator.EntryPoint.allCardsSet;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;
+import edu.bator.cards.Armor;
 import edu.bator.cards.Card;
+import edu.bator.cards.Weapon;
 import edu.bator.cards.enums.Owner;
 import edu.bator.ui.GamePainter;
 import java.util.Arrays;
@@ -61,12 +63,12 @@ public class GameState {
 
     public void init() {
         enemyHero = allCardsSet.cloneByName("Boris Skullcrusher", Owner.ENEMY);
-        enemyHero.setWeapon(allCardsSet.cloneByName("Mournblade", Owner.ENEMY));
-        enemyHero.setArmor(allCardsSet.cloneByName("Snow Sapphire", Owner.ENEMY));
+        enemyHero.setWeapon((Weapon) allCardsSet.cloneByName("Mournblade", Owner.ENEMY));
+        enemyHero.setArmor((Armor) allCardsSet.cloneByName("Snow Sapphire", Owner.ENEMY));
 
         yourHero = allCardsSet.cloneByName("Boris Skullcrusher", Owner.YOU);
-        yourHero.setWeapon(allCardsSet.cloneByName("Mournblade", Owner.YOU));
-        yourHero.setArmor(allCardsSet.cloneByName("Snow Sapphire", Owner.YOU));
+        yourHero.setWeapon((Weapon) allCardsSet.cloneByName("Mournblade", Owner.YOU));
+        yourHero.setArmor((Armor) allCardsSet.cloneByName("Snow Sapphire", Owner.YOU));
 
         for (int i = 0; i < 40; i++) {
             enemyDeck.add(allCardsSet.cloneByName("Birgitte Skullborn", Owner.ENEMY));

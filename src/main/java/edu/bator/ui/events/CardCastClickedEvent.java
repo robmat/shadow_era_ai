@@ -1,6 +1,8 @@
 package edu.bator.ui.events;
 
+import edu.bator.cards.Armor;
 import edu.bator.cards.Card;
+import edu.bator.cards.Weapon;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
@@ -45,13 +47,13 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                         if (nonNull(gameState.getEnemyHero().getWeapon())) {
                             gameState.getEnemyGraveyard().add(gameState.getEnemyHero().getWeapon());
                         }
-                        gameState.getEnemyHero().setWeapon(card);
+                        gameState.getEnemyHero().setWeapon((Weapon) card);
                     }
                     if (card.cardIsAArmor()) {
                         if (nonNull(gameState.getEnemyHero().getArmor())) {
                             gameState.getEnemyGraveyard().add(gameState.getEnemyHero().getArmor());
                         }
-                        gameState.getEnemyHero().setArmor(card);
+                        gameState.getEnemyHero().setArmor((Armor) card);
                     }
                     decreaseEnemyResources();
                 }
@@ -74,13 +76,13 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                         if (nonNull(gameState.getYourHero().getWeapon())) {
                             gameState.getYourGraveyard().add(gameState.getYourHero().getWeapon());
                         }
-                        gameState.getYourHero().setWeapon(card);
+                        gameState.getYourHero().setWeapon((Weapon) card);
                     }
                     if (card.cardIsAArmor()) {
                         if (nonNull(gameState.getYourHero().getArmor())) {
                             gameState.getYourGraveyard().add(gameState.getYourHero().getArmor());
                         }
-                        gameState.getYourHero().setArmor(card);
+                        gameState.getYourHero().setArmor((Armor) card);
                     }
                     decreaseYourResources();
                 }

@@ -1,6 +1,7 @@
 package edu.bator.ui.events;
 
 import edu.bator.cards.Card;
+import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import javafx.event.EventHandler;
@@ -26,7 +27,7 @@ public class AttackTargetClickedEvent implements EventHandler<MouseEvent> {
 
         attackSource.attackTarget(gameState, attackTarget);
 
-        if (!moveToGraveyardIfDead(attackTarget)) {
+        if (!moveToGraveyardIfDead(attackTarget) && !effectForbidsCounterAttack(attackTarget)) {
             attackTarget.attackTarget(gameState, attackSource);
         }
         moveToGraveyardIfDead(attackSource);
@@ -37,6 +38,10 @@ public class AttackTargetClickedEvent implements EventHandler<MouseEvent> {
         attackSource.setAbilityReadied(false);
         gameState.setAttackSource(null);
         gameState.repaint();
+    }
+
+    private boolean effectForbidsCounterAttack(Card attackTarget) {
+        return attackTarget.getEffects().stream().anyMatch(Effect::forbidsCounterAttack);
     }
 
     private boolean moveToGraveyardIfDead(Card card) {

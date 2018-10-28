@@ -58,7 +58,8 @@ public class Card implements Cloneable {
 
     LinkedList<Effect> effects = new LinkedList<>();
 
-    Card weapon, armor;
+    Weapon weapon;
+    Armor armor;
 
     Set<HeroClass> availableForHeroClasses = new HashSet<>();
 
@@ -92,14 +93,14 @@ public class Card implements Cloneable {
         this.effects = new LinkedList<>(cloneFrom.effects);
         try {
             if (nonNull(cloneFrom.weapon)) {
-                this.weapon = (Card) cloneFrom.weapon.clone();
+                this.weapon = (Weapon) cloneFrom.weapon.clone();
             }
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException(e);
         }
         try {
             if (nonNull(cloneFrom.armor)) {
-                this.armor = (Card) cloneFrom.armor.clone();
+                this.armor = (Armor) cloneFrom.armor.clone();
             }
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException(e);

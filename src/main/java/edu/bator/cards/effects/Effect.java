@@ -15,5 +15,7 @@ public abstract class Effect {
 
     public abstract void applyEffect(Card card);
 
-    public enum EffectType {IN_LOVE, ON_FIRE, POISONED}
+    public abstract boolean forbidsCounterAttack();
+
+    public enum EffectType {IN_LOVE, ON_FIRE, POISONED, FROZEN}
 }

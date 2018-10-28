@@ -52,5 +52,8 @@ public class Hero extends Card {
                 new GameEngine().cardDied(getArmor(), gameState);
             }
         }
+        if (nonNull(getArmor())) {
+            getArmor().armorEffectDuringAttack(this, source, gameState);
+        }
     }
 }

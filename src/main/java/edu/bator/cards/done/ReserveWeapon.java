@@ -3,6 +3,7 @@ package edu.bator.cards.done;
 import edu.bator.EntryPoint;
 import edu.bator.cards.Artifact;
 import edu.bator.cards.Card;
+import edu.bator.cards.Weapon;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import edu.bator.ui.CardPainter;
@@ -128,13 +129,13 @@ public class ReserveWeapon extends Artifact {
       target.resetAttackAnHp();
       target.setBaseAttack(target.getBaseAttack() + 1);
       if (gameState.getYourGraveyard().remove(target)) {
-        gameState.getYourHero().setWeapon(target);
+        gameState.getYourHero().setWeapon((Weapon) target);
         if (gameState.getYourSupport().remove(source)) {
           gameState.getYourGraveyard().add(source);
         }
       }
       if (gameState.getEnemyGraveyard().remove(target)) {
-        gameState.getEnemyHero().setWeapon(target);
+        gameState.getEnemyHero().setWeapon((Weapon) target);
         if (gameState.getEnemySupport().remove(source)) {
           gameState.getEnemyGraveyard().add(source);
         }
