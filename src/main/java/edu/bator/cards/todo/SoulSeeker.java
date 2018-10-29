@@ -7,7 +7,7 @@ public class SoulSeeker extends Card {
     public SoulSeeker() {
     }
 
-    ;
+
 
     public SoulSeeker(Card cloneFrom) {
         super(cloneFrom);

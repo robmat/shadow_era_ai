@@ -7,7 +7,7 @@ public class AssumedCommand extends Card {
     public AssumedCommand() {
     }
 
-    ;
+
 
     public AssumedCommand(Card cloneFrom) {
         super(cloneFrom);

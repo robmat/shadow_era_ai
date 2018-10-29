@@ -7,7 +7,7 @@ public class Subdue extends Card {
     public Subdue() {
     }
 
-    ;
+
 
     public Subdue(Card cloneFrom) {
         super(cloneFrom);

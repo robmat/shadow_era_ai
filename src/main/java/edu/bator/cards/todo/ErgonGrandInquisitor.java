@@ -7,7 +7,7 @@ public class ErgonGrandInquisitor extends Card {
     public ErgonGrandInquisitor() {
     }
 
-    ;
+
 
     public ErgonGrandInquisitor(Card cloneFrom) {
         super(cloneFrom);

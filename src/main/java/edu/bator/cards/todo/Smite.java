@@ -7,7 +7,7 @@ public class Smite extends Card {
     public Smite() {
     }
 
-    ;
+
 
     public Smite(Card cloneFrom) {
         super(cloneFrom);

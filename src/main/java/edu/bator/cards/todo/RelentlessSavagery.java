@@ -7,7 +7,7 @@ public class RelentlessSavagery extends Card {
     public RelentlessSavagery() {
     }
 
-    ;
+
 
     public RelentlessSavagery(Card cloneFrom) {
         super(cloneFrom);

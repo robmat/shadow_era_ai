@@ -7,7 +7,7 @@ public class Groundshift extends Card {
     public Groundshift() {
     }
 
-    ;
+
 
     public Groundshift(Card cloneFrom) {
         super(cloneFrom);

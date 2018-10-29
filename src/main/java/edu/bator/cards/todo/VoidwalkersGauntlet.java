@@ -7,7 +7,7 @@ public class VoidwalkersGauntlet extends Card {
     public VoidwalkersGauntlet() {
     }
 
-    ;
+
 
     public VoidwalkersGauntlet(Card cloneFrom) {
         super(cloneFrom);

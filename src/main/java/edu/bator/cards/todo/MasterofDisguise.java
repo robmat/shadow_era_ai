@@ -7,7 +7,7 @@ public class MasterofDisguise extends Card {
     public MasterofDisguise() {
     }
 
-    ;
+
 
     public MasterofDisguise(Card cloneFrom) {
         super(cloneFrom);

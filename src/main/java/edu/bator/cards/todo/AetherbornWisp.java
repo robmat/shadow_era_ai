@@ -7,7 +7,7 @@ public class AetherbornWisp extends Card {
     public AetherbornWisp() {
     }
 
-    ;
+
 
     public AetherbornWisp(Card cloneFrom) {
         super(cloneFrom);

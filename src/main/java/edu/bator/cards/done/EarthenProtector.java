@@ -14,7 +14,7 @@ public class EarthenProtector extends Ally {
     public EarthenProtector() {
     }
 
-    ;
+
 
     public EarthenProtector(Card cloneFrom) {
         super(cloneFrom);

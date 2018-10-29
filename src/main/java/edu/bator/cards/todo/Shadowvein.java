@@ -7,7 +7,7 @@ public class Shadowvein extends Card {
     public Shadowvein() {
     }
 
-    ;
+
 
     public Shadowvein(Card cloneFrom) {
         super(cloneFrom);

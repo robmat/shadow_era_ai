@@ -7,7 +7,7 @@ public class ConsumingFear extends Card {
     public ConsumingFear() {
     }
 
-    ;
+
 
     public ConsumingFear(Card cloneFrom) {
         super(cloneFrom);

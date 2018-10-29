@@ -7,7 +7,7 @@ public class SliverofShadow extends Card {
     public SliverofShadow() {
     }
 
-    ;
+
 
     public SliverofShadow(Card cloneFrom) {
         super(cloneFrom);

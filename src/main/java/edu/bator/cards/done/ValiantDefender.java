@@ -25,7 +25,7 @@ public class ValiantDefender extends Support {
     public ValiantDefender() {
     }
 
-    ;
+
 
     public ValiantDefender(Card cloneFrom) {
         super(cloneFrom);

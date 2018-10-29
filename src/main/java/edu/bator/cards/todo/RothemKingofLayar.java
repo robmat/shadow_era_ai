@@ -7,7 +7,7 @@ public class RothemKingofLayar extends Card {
     public RothemKingofLayar() {
     }
 
-    ;
+
 
     public RothemKingofLayar(Card cloneFrom) {
         super(cloneFrom);

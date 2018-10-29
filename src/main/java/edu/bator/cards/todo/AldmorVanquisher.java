@@ -7,7 +7,7 @@ public class AldmorVanquisher extends Card {
     public AldmorVanquisher() {
     }
 
-    ;
+
 
     public AldmorVanquisher(Card cloneFrom) {
         super(cloneFrom);

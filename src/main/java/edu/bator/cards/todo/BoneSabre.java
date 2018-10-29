@@ -7,7 +7,7 @@ public class BoneSabre extends Card {
     public BoneSabre() {
     }
 
-    ;
+
 
     public BoneSabre(Card cloneFrom) {
         super(cloneFrom);

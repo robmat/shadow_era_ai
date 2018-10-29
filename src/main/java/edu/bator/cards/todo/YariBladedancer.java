@@ -7,7 +7,7 @@ public class YariBladedancer extends Card {
     public YariBladedancer() {
     }
 
-    ;
+
 
     public YariBladedancer(Card cloneFrom) {
         super(cloneFrom);

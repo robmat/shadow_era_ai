@@ -7,7 +7,7 @@ public class HigherGround extends Card {
     public HigherGround() {
     }
 
-    ;
+
 
     public HigherGround(Card cloneFrom) {
         super(cloneFrom);

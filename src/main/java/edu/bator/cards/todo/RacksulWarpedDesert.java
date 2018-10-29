@@ -7,7 +7,7 @@ public class RacksulWarpedDesert extends Card {
     public RacksulWarpedDesert() {
     }
 
-    ;
+
 
     public RacksulWarpedDesert(Card cloneFrom) {
         super(cloneFrom);

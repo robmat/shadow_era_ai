@@ -7,7 +7,7 @@ public class Soothjaw extends Card {
     public Soothjaw() {
     }
 
-    ;
+
 
     public Soothjaw(Card cloneFrom) {
         super(cloneFrom);

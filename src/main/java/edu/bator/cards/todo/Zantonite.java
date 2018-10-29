@@ -7,7 +7,7 @@ public class Zantonite extends Card {
     public Zantonite() {
     }
 
-    ;
+
 
     public Zantonite(Card cloneFrom) {
         super(cloneFrom);

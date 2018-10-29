@@ -7,7 +7,7 @@ public class RapaciousVermin extends Card {
     public RapaciousVermin() {
     }
 
-    ;
+
 
     public RapaciousVermin(Card cloneFrom) {
         super(cloneFrom);

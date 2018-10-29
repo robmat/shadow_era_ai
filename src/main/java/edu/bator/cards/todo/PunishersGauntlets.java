@@ -7,7 +7,7 @@ public class PunishersGauntlets extends Card {
     public PunishersGauntlets() {
     }
 
-    ;
+
 
     public PunishersGauntlets(Card cloneFrom) {
         super(cloneFrom);

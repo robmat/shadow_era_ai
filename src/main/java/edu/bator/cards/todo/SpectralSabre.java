@@ -7,7 +7,7 @@ public class SpectralSabre extends Card {
     public SpectralSabre() {
     }
 
-    ;
+
 
     public SpectralSabre(Card cloneFrom) {
         super(cloneFrom);

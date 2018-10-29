@@ -7,7 +7,7 @@ public class Brutalis extends Card {
     public Brutalis() {
     }
 
-    ;
+
 
     public Brutalis(Card cloneFrom) {
         super(cloneFrom);

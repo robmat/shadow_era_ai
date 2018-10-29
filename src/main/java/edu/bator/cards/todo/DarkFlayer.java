@@ -7,7 +7,7 @@ public class DarkFlayer extends Card {
     public DarkFlayer() {
     }
 
-    ;
+
 
     public DarkFlayer(Card cloneFrom) {
         super(cloneFrom);

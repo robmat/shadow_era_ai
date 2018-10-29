@@ -7,7 +7,7 @@ public class MeltDown extends Card {
     public MeltDown() {
     }
 
-    ;
+
 
     public MeltDown(Card cloneFrom) {
         super(cloneFrom);

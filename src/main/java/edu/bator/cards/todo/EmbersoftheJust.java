@@ -7,7 +7,7 @@ public class EmbersoftheJust extends Card {
     public EmbersoftheJust() {
     }
 
-    ;
+
 
     public EmbersoftheJust(Card cloneFrom) {
         super(cloneFrom);

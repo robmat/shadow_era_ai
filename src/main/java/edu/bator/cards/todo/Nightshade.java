@@ -7,7 +7,7 @@ public class Nightshade extends Card {
     public Nightshade() {
     }
 
-    ;
+
 
     public Nightshade(Card cloneFrom) {
         super(cloneFrom);

@@ -15,7 +15,7 @@ public class ArmoredSandworm extends Ally {
     public ArmoredSandworm() {
     }
 
-    ;
+
 
     public ArmoredSandworm(Card cloneFrom) {
         super(cloneFrom);

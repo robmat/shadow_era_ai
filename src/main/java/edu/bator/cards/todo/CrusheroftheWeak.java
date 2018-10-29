@@ -7,7 +7,7 @@ public class CrusheroftheWeak extends Card {
     public CrusheroftheWeak() {
     }
 
-    ;
+
 
     public CrusheroftheWeak(Card cloneFrom) {
         super(cloneFrom);

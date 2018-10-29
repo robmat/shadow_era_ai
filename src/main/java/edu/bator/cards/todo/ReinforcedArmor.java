@@ -7,7 +7,7 @@ public class ReinforcedArmor extends Card {
     public ReinforcedArmor() {
     }
 
-    ;
+
 
     public ReinforcedArmor(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class GuardianofUnaxio extends Card {
     public GuardianofUnaxio() {
     }
 
-    ;
+
 
     public GuardianofUnaxio(Card cloneFrom) {
         super(cloneFrom);

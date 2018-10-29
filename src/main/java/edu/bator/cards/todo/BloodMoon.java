@@ -7,7 +7,7 @@ public class BloodMoon extends Card {
     public BloodMoon() {
     }
 
-    ;
+
 
     public BloodMoon(Card cloneFrom) {
         super(cloneFrom);

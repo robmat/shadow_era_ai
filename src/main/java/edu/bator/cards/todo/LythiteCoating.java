@@ -7,7 +7,7 @@ public class LythiteCoating extends Card {
     public LythiteCoating() {
     }
 
-    ;
+
 
     public LythiteCoating(Card cloneFrom) {
         super(cloneFrom);

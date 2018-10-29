@@ -7,7 +7,7 @@ public class SwordofMight extends Card {
     public SwordofMight() {
     }
 
-    ;
+
 
     public SwordofMight(Card cloneFrom) {
         super(cloneFrom);

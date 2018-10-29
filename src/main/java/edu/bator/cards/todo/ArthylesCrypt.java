@@ -7,7 +7,7 @@ public class ArthylesCrypt extends Card {
     public ArthylesCrypt() {
     }
 
-    ;
+
 
     public ArthylesCrypt(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class TheHarderTheyFall extends Card {
     public TheHarderTheyFall() {
     }
 
-    ;
+
 
     public TheHarderTheyFall(Card cloneFrom) {
         super(cloneFrom);

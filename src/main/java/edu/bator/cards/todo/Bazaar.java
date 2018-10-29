@@ -7,7 +7,7 @@ public class Bazaar extends Card {
     public Bazaar() {
     }
 
-    ;
+
 
     public Bazaar(Card cloneFrom) {
         super(cloneFrom);

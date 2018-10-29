@@ -7,7 +7,7 @@ public class TemplarAdventist extends Card {
     public TemplarAdventist() {
     }
 
-    ;
+
 
     public TemplarAdventist(Card cloneFrom) {
         super(cloneFrom);

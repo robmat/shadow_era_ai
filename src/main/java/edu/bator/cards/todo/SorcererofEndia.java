@@ -7,7 +7,7 @@ public class SorcererofEndia extends Card {
     public SorcererofEndia() {
     }
 
-    ;
+
 
     public SorcererofEndia(Card cloneFrom) {
         super(cloneFrom);

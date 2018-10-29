@@ -7,7 +7,7 @@ public class RustWeevil extends Card {
     public RustWeevil() {
     }
 
-    ;
+
 
     public RustWeevil(Card cloneFrom) {
         super(cloneFrom);

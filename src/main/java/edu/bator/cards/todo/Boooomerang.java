@@ -7,7 +7,7 @@ public class Boooomerang extends Card {
     public Boooomerang() {
     }
 
-    ;
+
 
     public Boooomerang(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class AcidJet extends Card {
     public AcidJet() {
     }
 
-    ;
+
 
     public AcidJet(Card cloneFrom) {
         super(cloneFrom);

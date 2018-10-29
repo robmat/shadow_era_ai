@@ -7,7 +7,7 @@ public class ProcuredandRestored extends Card {
     public ProcuredandRestored() {
     }
 
-    ;
+
 
     public ProcuredandRestored(Card cloneFrom) {
         super(cloneFrom);

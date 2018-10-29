@@ -7,7 +7,7 @@ public class SabreenHandofUnaxio extends Card {
     public SabreenHandofUnaxio() {
     }
 
-    ;
+
 
     public SabreenHandofUnaxio(Card cloneFrom) {
         super(cloneFrom);

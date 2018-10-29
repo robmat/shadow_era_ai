@@ -7,7 +7,7 @@ public class Majiya extends Card {
     public Majiya() {
     }
 
-    ;
+
 
     public Majiya(Card cloneFrom) {
         super(cloneFrom);

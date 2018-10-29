@@ -7,7 +7,7 @@ public class DimensionRipper extends Card {
     public DimensionRipper() {
     }
 
-    ;
+
 
     public DimensionRipper(Card cloneFrom) {
         super(cloneFrom);

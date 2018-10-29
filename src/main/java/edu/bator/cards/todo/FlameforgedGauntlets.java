@@ -7,7 +7,7 @@ public class FlameforgedGauntlets extends Card {
     public FlameforgedGauntlets() {
     }
 
-    ;
+
 
     public FlameforgedGauntlets(Card cloneFrom) {
         super(cloneFrom);

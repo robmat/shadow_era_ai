@@ -7,7 +7,7 @@ public class Exaltation extends Card {
     public Exaltation() {
     }
 
-    ;
+
 
     public Exaltation(Card cloneFrom) {
         super(cloneFrom);

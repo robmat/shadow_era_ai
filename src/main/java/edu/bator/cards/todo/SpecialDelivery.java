@@ -7,7 +7,7 @@ public class SpecialDelivery extends Card {
     public SpecialDelivery() {
     }
 
-    ;
+
 
     public SpecialDelivery(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class ShriekofVengeance extends Card {
     public ShriekofVengeance() {
     }
 
-    ;
+
 
     public ShriekofVengeance(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class CapturedPrey extends Card {
     public CapturedPrey() {
     }
 
-    ;
+
 
     public CapturedPrey(Card cloneFrom) {
         super(cloneFrom);

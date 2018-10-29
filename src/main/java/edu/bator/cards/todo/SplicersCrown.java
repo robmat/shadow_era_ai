@@ -7,7 +7,7 @@ public class SplicersCrown extends Card {
     public SplicersCrown() {
     }
 
-    ;
+
 
     public SplicersCrown(Card cloneFrom) {
         super(cloneFrom);

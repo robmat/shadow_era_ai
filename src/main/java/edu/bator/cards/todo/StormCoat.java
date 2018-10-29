@@ -7,7 +7,7 @@ public class StormCoat extends Card {
     public StormCoat() {
     }
 
-    ;
+
 
     public StormCoat(Card cloneFrom) {
         super(cloneFrom);

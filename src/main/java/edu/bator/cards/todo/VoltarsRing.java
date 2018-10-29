@@ -7,7 +7,7 @@ public class VoltarsRing extends Card {
     public VoltarsRing() {
     }
 
-    ;
+
 
     public VoltarsRing(Card cloneFrom) {
         super(cloneFrom);

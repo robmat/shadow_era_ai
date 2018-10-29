@@ -7,7 +7,7 @@ public class Belladonna extends Card {
     public Belladonna() {
     }
 
-    ;
+
 
     public Belladonna(Card cloneFrom) {
         super(cloneFrom);

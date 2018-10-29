@@ -7,7 +7,7 @@ public class ErissFateweaver extends Card {
     public ErissFateweaver() {
     }
 
-    ;
+
 
     public ErissFateweaver(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class LayLow extends Card {
     public LayLow() {
     }
 
-    ;
+
 
     public LayLow(Card cloneFrom) {
         super(cloneFrom);

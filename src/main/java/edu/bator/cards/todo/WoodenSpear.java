@@ -7,7 +7,7 @@ public class WoodenSpear extends Card {
     public WoodenSpear() {
     }
 
-    ;
+
 
     public WoodenSpear(Card cloneFrom) {
         super(cloneFrom);

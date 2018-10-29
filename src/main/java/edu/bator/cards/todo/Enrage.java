@@ -7,7 +7,7 @@ public class Enrage extends Card {
     public Enrage() {
     }
 
-    ;
+
 
     public Enrage(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class DisruptorField extends Card {
     public DisruptorField() {
     }
 
-    ;
+
 
     public DisruptorField(Card cloneFrom) {
         super(cloneFrom);

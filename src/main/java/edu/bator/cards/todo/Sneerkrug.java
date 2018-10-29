@@ -7,7 +7,7 @@ public class Sneerkrug extends Card {
     public Sneerkrug() {
     }
 
-    ;
+
 
     public Sneerkrug(Card cloneFrom) {
         super(cloneFrom);

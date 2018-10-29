@@ -7,7 +7,7 @@ public class ExtraSharp extends Card {
     public ExtraSharp() {
     }
 
-    ;
+
 
     public ExtraSharp(Card cloneFrom) {
         super(cloneFrom);

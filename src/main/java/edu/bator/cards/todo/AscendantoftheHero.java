@@ -7,7 +7,7 @@ public class AscendantoftheHero extends Card {
     public AscendantoftheHero() {
     }
 
-    ;
+
 
     public AscendantoftheHero(Card cloneFrom) {
         super(cloneFrom);

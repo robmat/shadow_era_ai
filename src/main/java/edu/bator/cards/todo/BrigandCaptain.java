@@ -7,7 +7,7 @@ public class BrigandCaptain extends Card {
     public BrigandCaptain() {
     }
 
-    ;
+
 
     public BrigandCaptain(Card cloneFrom) {
         super(cloneFrom);

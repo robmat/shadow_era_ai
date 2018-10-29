@@ -7,7 +7,7 @@ public class WarCry extends Card {
     public WarCry() {
     }
 
-    ;
+
 
     public WarCry(Card cloneFrom) {
         super(cloneFrom);

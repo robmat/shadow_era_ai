@@ -7,7 +7,7 @@ public class DisruptAura extends Card {
     public DisruptAura() {
     }
 
-    ;
+
 
     public DisruptAura(Card cloneFrom) {
         super(cloneFrom);

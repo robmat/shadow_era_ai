@@ -7,7 +7,7 @@ public class CrescentofDoom extends Card {
     public CrescentofDoom() {
     }
 
-    ;
+
 
     public CrescentofDoom(Card cloneFrom) {
         super(cloneFrom);

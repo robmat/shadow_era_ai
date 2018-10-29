@@ -7,7 +7,7 @@ public class AvatarofTwilight extends Card {
     public AvatarofTwilight() {
     }
 
-    ;
+
 
     public AvatarofTwilight(Card cloneFrom) {
         super(cloneFrom);

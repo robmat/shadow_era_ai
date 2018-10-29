@@ -7,7 +7,7 @@ public class BlackenedHeart extends Card {
     public BlackenedHeart() {
     }
 
-    ;
+
 
     public BlackenedHeart(Card cloneFrom) {
         super(cloneFrom);

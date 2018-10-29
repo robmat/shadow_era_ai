@@ -7,7 +7,7 @@ public class BattleHardened extends Card {
     public BattleHardened() {
     }
 
-    ;
+
 
     public BattleHardened(Card cloneFrom) {
         super(cloneFrom);

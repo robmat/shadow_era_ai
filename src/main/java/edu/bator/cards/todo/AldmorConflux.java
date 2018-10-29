@@ -7,7 +7,7 @@ public class AldmorConflux extends Card {
     public AldmorConflux() {
     }
 
-    ;
+
 
     public AldmorConflux(Card cloneFrom) {
         super(cloneFrom);

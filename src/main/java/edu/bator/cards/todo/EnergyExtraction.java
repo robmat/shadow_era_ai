@@ -7,7 +7,7 @@ public class EnergyExtraction extends Card {
     public EnergyExtraction() {
     }
 
-    ;
+
 
     public EnergyExtraction(Card cloneFrom) {
         super(cloneFrom);

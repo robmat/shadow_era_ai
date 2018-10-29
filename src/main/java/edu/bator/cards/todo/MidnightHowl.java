@@ -7,7 +7,7 @@ public class MidnightHowl extends Card {
     public MidnightHowl() {
     }
 
-    ;
+
 
     public MidnightHowl(Card cloneFrom) {
         super(cloneFrom);

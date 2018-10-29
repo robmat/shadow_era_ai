@@ -7,7 +7,7 @@ public class AldmorChieftan extends Card {
     public AldmorChieftan() {
     }
 
-    ;
+
 
     public AldmorChieftan(Card cloneFrom) {
         super(cloneFrom);

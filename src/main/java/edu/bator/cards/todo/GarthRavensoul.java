@@ -7,7 +7,7 @@ public class GarthRavensoul extends Card {
     public GarthRavensoul() {
     }
 
-    ;
+
 
     public GarthRavensoul(Card cloneFrom) {
         super(cloneFrom);

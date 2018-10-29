@@ -7,7 +7,7 @@ public class Forgiveness extends Card {
     public Forgiveness() {
     }
 
-    ;
+
 
     public Forgiveness(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class WrathoftheForest extends Card {
     public WrathoftheForest() {
     }
 
-    ;
+
 
     public WrathoftheForest(Card cloneFrom) {
         super(cloneFrom);

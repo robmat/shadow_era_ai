@@ -7,7 +7,7 @@ public class SacredMartyr extends Card {
     public SacredMartyr() {
     }
 
-    ;
+
 
     public SacredMartyr(Card cloneFrom) {
         super(cloneFrom);

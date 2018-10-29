@@ -7,7 +7,7 @@ public class LayarianKnight extends Card {
     public LayarianKnight() {
     }
 
-    ;
+
 
     public LayarianKnight(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class FreezingGrip extends Card {
     public FreezingGrip() {
     }
 
-    ;
+
 
     public FreezingGrip(Card cloneFrom) {
         super(cloneFrom);

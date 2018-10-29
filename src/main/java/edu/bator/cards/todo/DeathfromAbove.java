@@ -7,7 +7,7 @@ public class DeathfromAbove extends Card {
     public DeathfromAbove() {
     }
 
-    ;
+
 
     public DeathfromAbove(Card cloneFrom) {
         super(cloneFrom);

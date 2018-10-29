@@ -7,7 +7,7 @@ public class DaggerofFate extends Card {
     public DaggerofFate() {
     }
 
-    ;
+
 
     public DaggerofFate(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class NightOwl extends Card {
     public NightOwl() {
     }
 
-    ;
+
 
     public NightOwl(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class CampfireStories extends Card {
     public CampfireStories() {
     }
 
-    ;
+
 
     public CampfireStories(Card cloneFrom) {
         super(cloneFrom);

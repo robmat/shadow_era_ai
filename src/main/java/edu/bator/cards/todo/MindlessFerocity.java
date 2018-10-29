@@ -7,7 +7,7 @@ public class MindlessFerocity extends Card {
     public MindlessFerocity() {
     }
 
-    ;
+
 
     public MindlessFerocity(Card cloneFrom) {
         super(cloneFrom);

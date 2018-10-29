@@ -7,7 +7,7 @@ public class Bloodfang extends Card {
     public Bloodfang() {
     }
 
-    ;
+
 
     public Bloodfang(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class LanceShadowstalker extends Card {
     public LanceShadowstalker() {
     }
 
-    ;
+
 
     public LanceShadowstalker(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class OldrosInfestedSwampland extends Card {
     public OldrosInfestedSwampland() {
     }
 
-    ;
+
 
     public OldrosInfestedSwampland(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class BrakkongMenaceofThriss extends Card {
     public BrakkongMenaceofThriss() {
     }
 
-    ;
+
 
     public BrakkongMenaceofThriss(Card cloneFrom) {
         super(cloneFrom);

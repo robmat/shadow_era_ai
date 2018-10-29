@@ -7,7 +7,7 @@ public class WordoftheProphet extends Card {
     public WordoftheProphet() {
     }
 
-    ;
+
 
     public WordoftheProphet(Card cloneFrom) {
         super(cloneFrom);

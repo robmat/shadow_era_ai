@@ -7,7 +7,7 @@ public class DreadWolf extends Card {
     public DreadWolf() {
     }
 
-    ;
+
 
     public DreadWolf(Card cloneFrom) {
         super(cloneFrom);

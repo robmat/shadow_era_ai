@@ -7,7 +7,7 @@ public class MindControl extends Card {
     public MindControl() {
     }
 
-    ;
+
 
     public MindControl(Card cloneFrom) {
         super(cloneFrom);

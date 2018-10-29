@@ -7,7 +7,7 @@ public class InnerStrength extends Card {
     public InnerStrength() {
     }
 
-    ;
+
 
     public InnerStrength(Card cloneFrom) {
         super(cloneFrom);

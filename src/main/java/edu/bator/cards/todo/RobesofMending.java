@@ -7,7 +7,7 @@ public class RobesofMending extends Card {
     public RobesofMending() {
     }
 
-    ;
+
 
     public RobesofMending(Card cloneFrom) {
         super(cloneFrom);

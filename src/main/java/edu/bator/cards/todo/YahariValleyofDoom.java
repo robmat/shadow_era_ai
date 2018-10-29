@@ -7,7 +7,7 @@ public class YahariValleyofDoom extends Card {
     public YahariValleyofDoom() {
     }
 
-    ;
+
 
     public YahariValleyofDoom(Card cloneFrom) {
         super(cloneFrom);

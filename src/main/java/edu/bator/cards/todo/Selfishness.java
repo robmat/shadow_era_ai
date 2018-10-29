@@ -7,7 +7,7 @@ public class Selfishness extends Card {
     public Selfishness() {
     }
 
-    ;
+
 
     public Selfishness(Card cloneFrom) {
         super(cloneFrom);

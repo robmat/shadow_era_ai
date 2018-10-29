@@ -7,7 +7,7 @@ public class ZailenCrusader extends Card {
     public ZailenCrusader() {
     }
 
-    ;
+
 
     public ZailenCrusader(Card cloneFrom) {
         super(cloneFrom);

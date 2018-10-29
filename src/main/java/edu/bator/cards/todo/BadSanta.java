@@ -7,7 +7,7 @@ public class BadSanta extends Card {
     public BadSanta() {
     }
 
-    ;
+
 
     public BadSanta(Card cloneFrom) {
         super(cloneFrom);

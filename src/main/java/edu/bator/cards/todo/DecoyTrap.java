@@ -7,7 +7,7 @@ public class DecoyTrap extends Card {
     public DecoyTrap() {
     }
 
-    ;
+
 
     public DecoyTrap(Card cloneFrom) {
         super(cloneFrom);

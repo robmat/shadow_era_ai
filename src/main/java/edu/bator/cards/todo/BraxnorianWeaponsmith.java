@@ -7,7 +7,7 @@ public class BraxnorianWeaponsmith extends Card {
     public BraxnorianWeaponsmith() {
     }
 
-    ;
+
 
     public BraxnorianWeaponsmith(Card cloneFrom) {
         super(cloneFrom);

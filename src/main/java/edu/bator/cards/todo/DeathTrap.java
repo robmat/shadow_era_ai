@@ -7,7 +7,7 @@ public class DeathTrap extends Card {
     public DeathTrap() {
     }
 
-    ;
+
 
     public DeathTrap(Card cloneFrom) {
         super(cloneFrom);

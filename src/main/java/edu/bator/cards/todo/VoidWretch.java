@@ -7,7 +7,7 @@ public class VoidWretch extends Card {
     public VoidWretch() {
     }
 
-    ;
+
 
     public VoidWretch(Card cloneFrom) {
         super(cloneFrom);

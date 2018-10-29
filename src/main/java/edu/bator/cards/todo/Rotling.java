@@ -7,7 +7,7 @@ public class Rotling extends Card {
     public Rotling() {
     }
 
-    ;
+
 
     public Rotling(Card cloneFrom) {
         super(cloneFrom);

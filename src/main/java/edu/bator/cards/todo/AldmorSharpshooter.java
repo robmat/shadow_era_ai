@@ -7,7 +7,7 @@ public class AldmorSharpshooter extends Card {
     public AldmorSharpshooter() {
     }
 
-    ;
+
 
     public AldmorSharpshooter(Card cloneFrom) {
         super(cloneFrom);

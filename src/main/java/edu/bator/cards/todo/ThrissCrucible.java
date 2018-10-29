@@ -7,7 +7,7 @@ public class ThrissCrucible extends Card {
     public ThrissCrucible() {
     }
 
-    ;
+
 
     public ThrissCrucible(Card cloneFrom) {
         super(cloneFrom);

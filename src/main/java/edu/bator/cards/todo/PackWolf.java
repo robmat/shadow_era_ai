@@ -7,7 +7,7 @@ public class PackWolf extends Card {
     public PackWolf() {
     }
 
-    ;
+
 
     public PackWolf(Card cloneFrom) {
         super(cloneFrom);

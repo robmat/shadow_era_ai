@@ -7,7 +7,7 @@ public class VioletThunderstorm extends Card {
     public VioletThunderstorm() {
     }
 
-    ;
+
 
     public VioletThunderstorm(Card cloneFrom) {
         super(cloneFrom);

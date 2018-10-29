@@ -7,7 +7,7 @@ public class KiruthThaddeusVault extends Card {
     public KiruthThaddeusVault() {
     }
 
-    ;
+
 
     public KiruthThaddeusVault(Card cloneFrom) {
         super(cloneFrom);

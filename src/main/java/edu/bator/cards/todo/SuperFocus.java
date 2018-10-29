@@ -7,7 +7,7 @@ public class SuperFocus extends Card {
     public SuperFocus() {
     }
 
-    ;
+
 
     public SuperFocus(Card cloneFrom) {
         super(cloneFrom);

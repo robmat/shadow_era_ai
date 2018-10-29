@@ -7,7 +7,7 @@ public class BlackAdder extends Card {
     public BlackAdder() {
     }
 
-    ;
+
 
     public BlackAdder(Card cloneFrom) {
         super(cloneFrom);

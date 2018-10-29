@@ -7,7 +7,7 @@ public class InfinityCore extends Card {
     public InfinityCore() {
     }
 
-    ;
+
 
     public InfinityCore(Card cloneFrom) {
         super(cloneFrom);

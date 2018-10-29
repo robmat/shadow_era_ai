@@ -7,7 +7,7 @@ public class BattlePlans extends Card {
     public BattlePlans() {
     }
 
-    ;
+
 
     public BattlePlans(Card cloneFrom) {
         super(cloneFrom);

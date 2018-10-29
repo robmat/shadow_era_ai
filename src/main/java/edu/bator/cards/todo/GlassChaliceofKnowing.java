@@ -7,7 +7,7 @@ public class GlassChaliceofKnowing extends Card {
     public GlassChaliceofKnowing() {
     }
 
-    ;
+
 
     public GlassChaliceofKnowing(Card cloneFrom) {
         super(cloneFrom);

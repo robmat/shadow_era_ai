@@ -7,7 +7,7 @@ public class BlackGarb extends Card {
     public BlackGarb() {
     }
 
-    ;
+
 
     public BlackGarb(Card cloneFrom) {
         super(cloneFrom);

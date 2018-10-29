@@ -7,7 +7,7 @@ public class AuralBattery extends Card {
     public AuralBattery() {
     }
 
-    ;
+
 
     public AuralBattery(Card cloneFrom) {
         super(cloneFrom);

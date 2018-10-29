@@ -7,7 +7,7 @@ public class LythKristansRidge extends Card {
     public LythKristansRidge() {
     }
 
-    ;
+
 
     public LythKristansRidge(Card cloneFrom) {
         super(cloneFrom);

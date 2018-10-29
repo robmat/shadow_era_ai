@@ -7,7 +7,7 @@ public class SuspendedAnimation extends Card {
     public SuspendedAnimation() {
     }
 
-    ;
+
 
     public SuspendedAnimation(Card cloneFrom) {
         super(cloneFrom);

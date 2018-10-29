@@ -7,7 +7,7 @@ public class Sanctuary extends Card {
     public Sanctuary() {
     }
 
-    ;
+
 
     public Sanctuary(Card cloneFrom) {
         super(cloneFrom);

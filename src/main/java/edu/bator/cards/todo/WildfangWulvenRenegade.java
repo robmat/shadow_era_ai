@@ -7,7 +7,7 @@ public class WildfangWulvenRenegade extends Card {
     public WildfangWulvenRenegade() {
     }
 
-    ;
+
 
     public WildfangWulvenRenegade(Card cloneFrom) {
         super(cloneFrom);

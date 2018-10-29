@@ -7,7 +7,7 @@ public class DistortionHarness extends Card {
     public DistortionHarness() {
     }
 
-    ;
+
 
     public DistortionHarness(Card cloneFrom) {
         super(cloneFrom);

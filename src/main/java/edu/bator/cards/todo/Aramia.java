@@ -7,7 +7,7 @@ public class Aramia extends Card {
     public Aramia() {
     }
 
-    ;
+
 
     public Aramia(Card cloneFrom) {
         super(cloneFrom);

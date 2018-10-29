@@ -7,7 +7,7 @@ public class TornApart extends Card {
     public TornApart() {
     }
 
-    ;
+
 
     public TornApart(Card cloneFrom) {
         super(cloneFrom);

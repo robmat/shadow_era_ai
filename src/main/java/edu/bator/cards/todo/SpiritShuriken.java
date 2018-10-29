@@ -7,7 +7,7 @@ public class SpiritShuriken extends Card {
     public SpiritShuriken() {
     }
 
-    ;
+
 
     public SpiritShuriken(Card cloneFrom) {
         super(cloneFrom);

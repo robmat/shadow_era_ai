@@ -7,7 +7,7 @@ public class Assassination extends Card {
     public Assassination() {
     }
 
-    ;
+
 
     public Assassination(Card cloneFrom) {
         super(cloneFrom);

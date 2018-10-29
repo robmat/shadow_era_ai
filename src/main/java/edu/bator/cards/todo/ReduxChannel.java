@@ -7,7 +7,7 @@ public class ReduxChannel extends Card {
     public ReduxChannel() {
     }
 
-    ;
+
 
     public ReduxChannel(Card cloneFrom) {
         super(cloneFrom);

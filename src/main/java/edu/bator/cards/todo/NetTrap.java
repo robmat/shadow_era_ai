@@ -7,7 +7,7 @@ public class NetTrap extends Card {
     public NetTrap() {
     }
 
-    ;
+
 
     public NetTrap(Card cloneFrom) {
         super(cloneFrom);

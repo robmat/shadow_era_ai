@@ -7,7 +7,7 @@ public class Darkclaw extends Card {
     public Darkclaw() {
     }
 
-    ;
+
 
     public Darkclaw(Card cloneFrom) {
         super(cloneFrom);

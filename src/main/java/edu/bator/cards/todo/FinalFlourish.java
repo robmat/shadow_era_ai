@@ -7,7 +7,7 @@ public class FinalFlourish extends Card {
     public FinalFlourish() {
     }
 
-    ;
+
 
     public FinalFlourish(Card cloneFrom) {
         super(cloneFrom);

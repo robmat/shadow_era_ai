@@ -7,7 +7,7 @@ public class LakmireTrainingOutpost extends Card {
     public LakmireTrainingOutpost() {
     }
 
-    ;
+
 
     public LakmireTrainingOutpost(Card cloneFrom) {
         super(cloneFrom);

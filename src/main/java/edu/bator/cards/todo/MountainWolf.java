@@ -7,7 +7,7 @@ public class MountainWolf extends Card {
     public MountainWolf() {
     }
 
-    ;
+
 
     public MountainWolf(Card cloneFrom) {
         super(cloneFrom);

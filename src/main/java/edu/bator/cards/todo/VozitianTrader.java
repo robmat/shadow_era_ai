@@ -7,7 +7,7 @@ public class VozitianTrader extends Card {
     public VozitianTrader() {
     }
 
-    ;
+
 
     public VozitianTrader(Card cloneFrom) {
         super(cloneFrom);

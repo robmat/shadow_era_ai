@@ -7,7 +7,7 @@ public class HellfireBesieger extends Card {
     public HellfireBesieger() {
     }
 
-    ;
+
 
     public HellfireBesieger(Card cloneFrom) {
         super(cloneFrom);

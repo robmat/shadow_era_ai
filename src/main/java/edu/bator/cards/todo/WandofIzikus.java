@@ -7,7 +7,7 @@ public class WandofIzikus extends Card {
     public WandofIzikus() {
     }
 
-    ;
+
 
     public WandofIzikus(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class KiontheMagnificent extends Card {
     public KiontheMagnificent() {
     }
 
-    ;
+
 
     public KiontheMagnificent(Card cloneFrom) {
         super(cloneFrom);

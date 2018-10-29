@@ -11,7 +11,7 @@ public class PriestoftheLight extends Ally {
     public PriestoftheLight() {
     }
 
-    ;
+
 
     public PriestoftheLight(Card cloneFrom) {
         super(cloneFrom);

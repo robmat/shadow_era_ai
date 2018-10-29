@@ -7,7 +7,7 @@ public class Feasterling extends Card {
     public Feasterling() {
     }
 
-    ;
+
 
     public Feasterling(Card cloneFrom) {
         super(cloneFrom);

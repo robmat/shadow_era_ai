@@ -7,7 +7,7 @@ public class GravediggersCloak extends Card {
     public GravediggersCloak() {
     }
 
-    ;
+
 
     public GravediggersCloak(Card cloneFrom) {
         super(cloneFrom);

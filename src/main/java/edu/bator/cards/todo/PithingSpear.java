@@ -7,7 +7,7 @@ public class PithingSpear extends Card {
     public PithingSpear() {
     }
 
-    ;
+
 
     public PithingSpear(Card cloneFrom) {
         super(cloneFrom);

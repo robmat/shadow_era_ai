@@ -7,7 +7,7 @@ public class Stoneskin extends Card {
     public Stoneskin() {
     }
 
-    ;
+
 
     public Stoneskin(Card cloneFrom) {
         super(cloneFrom);

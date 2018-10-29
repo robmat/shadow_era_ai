@@ -7,7 +7,7 @@ public class ThunderstrikeConstruct extends Card {
     public ThunderstrikeConstruct() {
     }
 
-    ;
+
 
     public ThunderstrikeConstruct(Card cloneFrom) {
         super(cloneFrom);

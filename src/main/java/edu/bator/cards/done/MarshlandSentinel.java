@@ -12,7 +12,7 @@ public class MarshlandSentinel extends Ally {
     public MarshlandSentinel() {
     }
 
-    ;
+
 
     public MarshlandSentinel(Card cloneFrom) {
         super(cloneFrom);

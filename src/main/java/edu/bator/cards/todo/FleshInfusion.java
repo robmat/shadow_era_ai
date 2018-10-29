@@ -7,7 +7,7 @@ public class FleshInfusion extends Card {
     public FleshInfusion() {
     }
 
-    ;
+
 
     public FleshInfusion(Card cloneFrom) {
         super(cloneFrom);

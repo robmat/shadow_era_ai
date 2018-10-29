@@ -7,7 +7,7 @@ public class DarkwoodWraith extends Card {
     public DarkwoodWraith() {
     }
 
-    ;
+
 
     public DarkwoodWraith(Card cloneFrom) {
         super(cloneFrom);

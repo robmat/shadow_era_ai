@@ -7,7 +7,7 @@ public class Mimic extends Card {
     public Mimic() {
     }
 
-    ;
+
 
     public Mimic(Card cloneFrom) {
         super(cloneFrom);

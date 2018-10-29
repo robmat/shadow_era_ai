@@ -7,7 +7,7 @@ public class LythianShackles extends Card {
     public LythianShackles() {
     }
 
-    ;
+
 
     public LythianShackles(Card cloneFrom) {
         super(cloneFrom);

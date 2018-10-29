@@ -7,7 +7,7 @@ public class TomeofBlessings extends Card {
     public TomeofBlessings() {
     }
 
-    ;
+
 
     public TomeofBlessings(Card cloneFrom) {
         super(cloneFrom);

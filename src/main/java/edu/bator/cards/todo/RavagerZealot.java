@@ -7,7 +7,7 @@ public class RavagerZealot extends Card {
     public RavagerZealot() {
     }
 
-    ;
+
 
     public RavagerZealot(Card cloneFrom) {
         super(cloneFrom);

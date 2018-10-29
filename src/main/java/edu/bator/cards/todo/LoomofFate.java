@@ -7,7 +7,7 @@ public class LoomofFate extends Card {
     public LoomofFate() {
     }
 
-    ;
+
 
     public LoomofFate(Card cloneFrom) {
         super(cloneFrom);

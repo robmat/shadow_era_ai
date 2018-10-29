@@ -7,7 +7,7 @@ public class Permeate extends Card {
     public Permeate() {
     }
 
-    ;
+
 
     public Permeate(Card cloneFrom) {
         super(cloneFrom);

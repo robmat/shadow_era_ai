@@ -7,7 +7,7 @@ public class WildBerserker extends Card {
     public WildBerserker() {
     }
 
-    ;
+
 
     public WildBerserker(Card cloneFrom) {
         super(cloneFrom);

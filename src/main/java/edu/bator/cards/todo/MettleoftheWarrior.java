@@ -7,7 +7,7 @@ public class MettleoftheWarrior extends Card {
     public MettleoftheWarrior() {
     }
 
-    ;
+
 
     public MettleoftheWarrior(Card cloneFrom) {
         super(cloneFrom);

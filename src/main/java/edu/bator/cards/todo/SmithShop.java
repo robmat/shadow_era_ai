@@ -7,7 +7,7 @@ public class SmithShop extends Card {
     public SmithShop() {
     }
 
-    ;
+
 
     public SmithShop(Card cloneFrom) {
         super(cloneFrom);

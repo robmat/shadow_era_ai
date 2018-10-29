@@ -7,7 +7,7 @@ public class ThrissDemolitionist extends Card {
     public ThrissDemolitionist() {
     }
 
-    ;
+
 
     public ThrissDemolitionist(Card cloneFrom) {
         super(cloneFrom);

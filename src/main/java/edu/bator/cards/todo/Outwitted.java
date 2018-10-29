@@ -7,7 +7,7 @@ public class Outwitted extends Card {
     public Outwitted() {
     }
 
-    ;
+
 
     public Outwitted(Card cloneFrom) {
         super(cloneFrom);

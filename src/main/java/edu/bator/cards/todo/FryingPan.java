@@ -7,7 +7,7 @@ public class FryingPan extends Card {
     public FryingPan() {
     }
 
-    ;
+
 
     public FryingPan(Card cloneFrom) {
         super(cloneFrom);

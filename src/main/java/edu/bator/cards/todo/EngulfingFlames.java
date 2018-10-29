@@ -7,7 +7,7 @@ public class EngulfingFlames extends Card {
     public EngulfingFlames() {
     }
 
-    ;
+
 
     public EngulfingFlames(Card cloneFrom) {
         super(cloneFrom);

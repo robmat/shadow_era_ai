@@ -7,7 +7,7 @@ public class AmberRain extends Card {
     public AmberRain() {
     }
 
-    ;
+
 
     public AmberRain(Card cloneFrom) {
         super(cloneFrom);

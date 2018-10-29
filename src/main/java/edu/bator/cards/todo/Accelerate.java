@@ -7,7 +7,7 @@ public class Accelerate extends Card {
     public Accelerate() {
     }
 
-    ;
+
 
     public Accelerate(Card cloneFrom) {
         super(cloneFrom);

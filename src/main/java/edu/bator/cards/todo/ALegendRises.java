@@ -7,7 +7,7 @@ public class ALegendRises extends Card {
     public ALegendRises() {
     }
 
-    ;
+
 
     public ALegendRises(Card cloneFrom) {
         super(cloneFrom);

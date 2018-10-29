@@ -7,7 +7,7 @@ public class PackanExtra extends Card {
     public PackanExtra() {
     }
 
-    ;
+
 
     public PackanExtra(Card cloneFrom) {
         super(cloneFrom);

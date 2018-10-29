@@ -7,7 +7,7 @@ public class Sinkhole extends Card {
     public Sinkhole() {
     }
 
-    ;
+
 
     public Sinkhole(Card cloneFrom) {
         super(cloneFrom);

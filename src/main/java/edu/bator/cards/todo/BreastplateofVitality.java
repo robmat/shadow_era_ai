@@ -7,7 +7,7 @@ public class BreastplateofVitality extends Card {
     public BreastplateofVitality() {
     }
 
-    ;
+
 
     public BreastplateofVitality(Card cloneFrom) {
         super(cloneFrom);

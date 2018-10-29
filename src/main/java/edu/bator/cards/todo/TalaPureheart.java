@@ -7,7 +7,7 @@ public class TalaPureheart extends Card {
     public TalaPureheart() {
     }
 
-    ;
+
 
     public TalaPureheart(Card cloneFrom) {
         super(cloneFrom);

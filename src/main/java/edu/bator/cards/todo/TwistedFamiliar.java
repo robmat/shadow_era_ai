@@ -7,7 +7,7 @@ public class TwistedFamiliar extends Card {
     public TwistedFamiliar() {
     }
 
-    ;
+
 
     public TwistedFamiliar(Card cloneFrom) {
         super(cloneFrom);

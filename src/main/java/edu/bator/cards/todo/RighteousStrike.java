@@ -7,7 +7,7 @@ public class RighteousStrike extends Card {
     public RighteousStrike() {
     }
 
-    ;
+
 
     public RighteousStrike(Card cloneFrom) {
         super(cloneFrom);

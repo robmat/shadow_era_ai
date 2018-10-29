@@ -7,7 +7,7 @@ public class ThrowingKnife extends Card {
     public ThrowingKnife() {
     }
 
-    ;
+
 
     public ThrowingKnife(Card cloneFrom) {
         super(cloneFrom);

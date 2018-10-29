@@ -7,7 +7,7 @@ public class WymertheLionheart extends Card {
     public WymertheLionheart() {
     }
 
-    ;
+
 
     public WymertheLionheart(Card cloneFrom) {
         super(cloneFrom);

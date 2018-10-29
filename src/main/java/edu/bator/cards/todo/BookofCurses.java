@@ -7,7 +7,7 @@ public class BookofCurses extends Card {
     public BookofCurses() {
     }
 
-    ;
+
 
     public BookofCurses(Card cloneFrom) {
         super(cloneFrom);

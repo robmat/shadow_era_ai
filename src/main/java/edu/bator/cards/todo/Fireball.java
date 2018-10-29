@@ -7,7 +7,7 @@ public class Fireball extends Card {
     public Fireball() {
     }
 
-    ;
+
 
     public Fireball(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class Praxix extends Card {
     public Praxix() {
     }
 
-    ;
+
 
     public Praxix(Card cloneFrom) {
         super(cloneFrom);

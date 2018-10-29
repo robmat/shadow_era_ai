@@ -7,7 +7,7 @@ public class LivingIceWall extends Card {
     public LivingIceWall() {
     }
 
-    ;
+
 
     public LivingIceWall(Card cloneFrom) {
         super(cloneFrom);

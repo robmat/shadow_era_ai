@@ -7,7 +7,7 @@ public class MorbidAcolyte extends Card {
     public MorbidAcolyte() {
     }
 
-    ;
+
 
     public MorbidAcolyte(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class GarthsConcoction extends Card {
     public GarthsConcoction() {
     }
 
-    ;
+
 
     public GarthsConcoction(Card cloneFrom) {
         super(cloneFrom);

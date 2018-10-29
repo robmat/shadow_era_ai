@@ -7,7 +7,7 @@ public class PoorQuality extends Card {
     public PoorQuality() {
     }
 
-    ;
+
 
     public PoorQuality(Card cloneFrom) {
         super(cloneFrom);

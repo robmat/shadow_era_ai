@@ -7,7 +7,7 @@ public class Retreat extends Card {
     public Retreat() {
     }
 
-    ;
+
 
     public Retreat(Card cloneFrom) {
         super(cloneFrom);

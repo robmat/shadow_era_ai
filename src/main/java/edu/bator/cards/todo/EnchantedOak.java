@@ -7,7 +7,7 @@ public class EnchantedOak extends Card {
     public EnchantedOak() {
     }
 
-    ;
+
 
     public EnchantedOak(Card cloneFrom) {
         super(cloneFrom);

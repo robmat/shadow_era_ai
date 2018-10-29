@@ -7,7 +7,7 @@ public class TreetopSpider extends Card {
     public TreetopSpider() {
     }
 
-    ;
+
 
     public TreetopSpider(Card cloneFrom) {
         super(cloneFrom);

@@ -7,7 +7,7 @@ public class InspiringFellowship extends Card {
     public InspiringFellowship() {
     }
 
-    ;
+
 
     public InspiringFellowship(Card cloneFrom) {
         super(cloneFrom);

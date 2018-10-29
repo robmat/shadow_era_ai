@@ -7,7 +7,7 @@ public class StrengthofConviction extends Card {
     public StrengthofConviction() {
     }
 
-    ;
+
 
     public StrengthofConviction(Card cloneFrom) {
         super(cloneFrom);

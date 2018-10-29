@@ -7,7 +7,7 @@ public class FeatheredLongbow extends Card {
     public FeatheredLongbow() {
     }
 
-    ;
+
 
     public FeatheredLongbow(Card cloneFrom) {
         super(cloneFrom);

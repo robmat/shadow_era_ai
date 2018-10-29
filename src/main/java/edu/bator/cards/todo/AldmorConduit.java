@@ -7,7 +7,7 @@ public class AldmorConduit extends Card {
     public AldmorConduit() {
     }
 
-    ;
+
 
     public AldmorConduit(Card cloneFrom) {
         super(cloneFrom);

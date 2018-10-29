@@ -7,7 +7,7 @@ public class LeyLineNexus extends Card {
     public LeyLineNexus() {
     }
 
-    ;
+
 
     public LeyLineNexus(Card cloneFrom) {
         super(cloneFrom);

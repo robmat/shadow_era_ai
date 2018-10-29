@@ -7,7 +7,7 @@ public class PillagingArsonist extends Card {
     public PillagingArsonist() {
     }
 
-    ;
+
 
     public PillagingArsonist(Card cloneFrom) {
         super(cloneFrom);

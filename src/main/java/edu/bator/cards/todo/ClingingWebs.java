@@ -7,7 +7,7 @@ public class ClingingWebs extends Card {
     public ClingingWebs() {
     }
 
-    ;
+
 
     public ClingingWebs(Card cloneFrom) {
         super(cloneFrom);

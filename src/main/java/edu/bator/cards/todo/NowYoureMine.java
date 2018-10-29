@@ -7,7 +7,7 @@ public class NowYoureMine extends Card {
     public NowYoureMine() {
     }
 
-    ;
+
 
     public NowYoureMine(Card cloneFrom) {
         super(cloneFrom);

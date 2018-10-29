@@ -7,7 +7,7 @@ public class RustyLongsword extends Card {
     public RustyLongsword() {
     }
 
-    ;
+
 
     public RustyLongsword(Card cloneFrom) {
         super(cloneFrom);

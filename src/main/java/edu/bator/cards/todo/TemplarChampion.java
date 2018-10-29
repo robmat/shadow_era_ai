@@ -7,7 +7,7 @@ public class TemplarChampion extends Card {
     public TemplarChampion() {
     }
 
-    ;
+
 
     public TemplarChampion(Card cloneFrom) {
         super(cloneFrom);

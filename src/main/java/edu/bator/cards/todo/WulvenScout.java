@@ -7,7 +7,7 @@ public class WulvenScout extends Card {
     public WulvenScout() {
     }
 
-    ;
+
 
     public WulvenScout(Card cloneFrom) {
         super(cloneFrom);

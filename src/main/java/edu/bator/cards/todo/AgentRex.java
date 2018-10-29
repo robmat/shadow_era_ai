@@ -7,7 +7,7 @@ public class AgentRex extends Card {
     public AgentRex() {
     }
 
-    ;
+
 
     public AgentRex(Card cloneFrom) {
         super(cloneFrom);

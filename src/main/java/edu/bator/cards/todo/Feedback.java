@@ -7,7 +7,7 @@ public class Feedback extends Card {
     public Feedback() {
     }
 
-    ;
+
 
     public Feedback(Card cloneFrom) {
         super(cloneFrom);

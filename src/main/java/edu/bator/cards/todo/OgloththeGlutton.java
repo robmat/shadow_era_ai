@@ -7,7 +7,7 @@ public class OgloththeGlutton extends Card {
     public OgloththeGlutton() {
     }
 
-    ;
+
 
     public OgloththeGlutton(Card cloneFrom) {
         super(cloneFrom);

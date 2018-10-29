@@ -7,7 +7,7 @@ public class RilardsBuckler extends Card {
     public RilardsBuckler() {
     }
 
-    ;
+
 
     public RilardsBuckler(Card cloneFrom) {
         super(cloneFrom);

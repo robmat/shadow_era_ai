@@ -7,7 +7,7 @@ public class AllHopeisLost extends Card {
     public AllHopeisLost() {
     }
 
-    ;
+
 
     public AllHopeisLost(Card cloneFrom) {
         super(cloneFrom);

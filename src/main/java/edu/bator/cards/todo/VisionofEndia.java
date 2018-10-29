@@ -7,7 +7,7 @@ public class VisionofEndia extends Card {
     public VisionofEndia() {
     }
 
-    ;
+
 
     public VisionofEndia(Card cloneFrom) {
         super(cloneFrom);

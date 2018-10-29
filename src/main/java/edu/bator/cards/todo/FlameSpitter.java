@@ -7,7 +7,7 @@ public class FlameSpitter extends Card {
     public FlameSpitter() {
     }
 
-    ;
+
 
     public FlameSpitter(Card cloneFrom) {
         super(cloneFrom);
