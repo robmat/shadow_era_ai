@@ -90,8 +90,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Aldon the Brave", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Aldon the Brave", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Valiant Defender", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Valiant Defender", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.YOU));
 
         log.info("Init done.");
     }

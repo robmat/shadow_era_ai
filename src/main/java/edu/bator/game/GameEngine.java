@@ -7,6 +7,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import org.apache.log4j.Logger;
 
 public class GameEngine {
@@ -92,18 +94,16 @@ public class GameEngine {
     private void applyEffects(LinkedList<Card> cards) {
         cards.stream()
                 .filter(card -> !card.getEffects().isEmpty())
-                .forEach(card -> {
-                    card.getEffects().forEach(effect -> effect.applyEffect(card));
-                });
+                .forEach(card -> card.getEffects().forEach(effect -> effect.applyEffect(card)));
     }
 
     private void expireEffects(GameState gameState) {
-        LinkedList<Card> cards = gameState.getGamePhase().equals(GamePhase.YOU_PREPARE) ?
-                gameState.yourHeroAlliesAndSupportCards() : gameState.enemyHeroAlliesAndSupportCards();
+        List<Card> cards = Stream.concat(gameState.yourHeroAlliesAndSupportCards().stream(), gameState.enemyHeroAlliesAndSupportCards().stream()).collect(
+            Collectors.toList());
         cards.stream()
                 .filter(card -> !card.getEffects().isEmpty())
                 .forEach(card -> {
-                    log.debug(format("Card %s has effects %s", card.getName(), card.getEffects()));
+                    log.debug(format("Card %s has effects %s", card.toString(), card.getEffects()));
                     log.debug(format("Turn %s pahse %s", gameState.getCurrentTurn(), gameState.getGamePhase()));
                     card.getEffects().removeIf(effect ->
                             Objects.equals(effect.getTurnEffectExpires(), gameState.getCurrentTurn()) &&
@@ -116,7 +116,7 @@ public class GameEngine {
         hero.setAttackReadied(true);
     }
 
-    public void readyHandCards(LinkedList<Card> hand, GameState gameState) {
+    private void readyHandCards(LinkedList<Card> hand, GameState gameState) {
         hand.forEach(card -> card.determineCastable(card, gameState));
     }
 
@@ -186,10 +186,10 @@ public class GameEngine {
 
     public void decreaseCurrentPlayerResources(GameState gameState, int resources) {
         if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - 2);
+            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - resources);
         }
         if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - 2);
+            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - resources);
         }
     }
 
