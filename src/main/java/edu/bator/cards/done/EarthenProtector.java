@@ -11,7 +11,10 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class EarthenProtector extends Ally {
 
-public EarthenProtector() {};
+    public EarthenProtector() {
+    }
+
+    ;
 
     public EarthenProtector(Card cloneFrom) {
         super(cloneFrom);
@@ -45,12 +48,12 @@ public EarthenProtector() {};
         boolean castable = this.isCastable();
         if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
             boolean anotherAlreadyInPlay = gameState.getYourAllies().stream()
-                .anyMatch(c -> c.getName().equals(getName()));
+                    .anyMatch(c -> c.getName().equals(getName()));
             setCastable(castable && !anotherAlreadyInPlay);
         }
         if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
             boolean anotherAlreadyInPlay = gameState.getEnemyAllies().stream()
-                .anyMatch(c -> c.getName().equals(getName()));
+                    .anyMatch(c -> c.getName().equals(getName()));
             setCastable(castable && !anotherAlreadyInPlay);
         }
     }

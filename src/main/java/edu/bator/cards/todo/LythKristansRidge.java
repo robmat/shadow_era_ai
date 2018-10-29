@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class LythKristansRidge extends Card {
 
-public LythKristansRidge() {};
+    public LythKristansRidge() {
+    }
+
+    ;
 
     public LythKristansRidge(Card cloneFrom) {
         super(cloneFrom);

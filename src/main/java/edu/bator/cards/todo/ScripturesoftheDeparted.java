@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class ScripturesoftheDeparted extends Card {
 
-public ScripturesoftheDeparted() {};
+    public ScripturesoftheDeparted() {
+    }
+
+    ;
 
     public ScripturesoftheDeparted(Card cloneFrom) {
         super(cloneFrom);

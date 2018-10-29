@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class EnslavetheBeast extends Card {
 
-public EnslavetheBeast() {};
+    public EnslavetheBeast() {
+    }
+
+    ;
 
     public EnslavetheBeast(Card cloneFrom) {
         super(cloneFrom);

@@ -4,12 +4,13 @@ import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
-import java.util.Objects;
-import java.util.Optional;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
+
+import java.util.Objects;
+import java.util.Optional;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -17,6 +18,7 @@ import org.apache.log4j.Logger;
 public class KatrintheShieldmaiden extends Ally {
 
     private static final Logger log = Logger.getLogger(KatrintheShieldmaiden.class);
+    private Card target;
 
     public KatrintheShieldmaiden(Card cloneFrom) {
         super(cloneFrom);
@@ -33,8 +35,6 @@ public class KatrintheShieldmaiden extends Ally {
                     }
                 });
     }
-
-    private Card target;
 
     @Override
     public boolean hasAbilityToUse(GameState gameState) {

@@ -3,11 +3,12 @@ package edu.bator.cards.done;
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GameState;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)

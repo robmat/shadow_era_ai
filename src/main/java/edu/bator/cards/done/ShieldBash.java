@@ -4,10 +4,11 @@ import edu.bator.cards.Ability;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
-import java.util.Objects;
-import java.util.function.BiConsumer;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+
+import java.util.Objects;
+import java.util.function.BiConsumer;
 
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)

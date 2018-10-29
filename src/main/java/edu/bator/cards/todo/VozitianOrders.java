@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class VozitianOrders extends Card {
 
-public VozitianOrders() {};
+    public VozitianOrders() {
+    }
+
+    ;
 
     public VozitianOrders(Card cloneFrom) {
         super(cloneFrom);

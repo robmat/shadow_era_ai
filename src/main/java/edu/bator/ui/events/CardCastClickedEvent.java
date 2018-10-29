@@ -1,7 +1,5 @@
 package edu.bator.ui.events;
 
-import static java.util.Objects.nonNull;
-
 import edu.bator.cards.Armor;
 import edu.bator.cards.Card;
 import edu.bator.cards.Weapon;
@@ -11,6 +9,8 @@ import edu.bator.game.GameState;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import org.apache.log4j.Logger;
+
+import static java.util.Objects.nonNull;
 
 public class CardCastClickedEvent implements EventHandler<MouseEvent> {
 
@@ -25,6 +25,7 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
     }
 
     @Override
+    @SuppressWarnings("unckecked")
     public void handle(MouseEvent event) {
         gameState.resetPossibleAbiltyTargets();
         gameState.resetPossibleAttackTargets();
@@ -116,7 +117,8 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
 
     private void handleAbilityCast() {
         new GameEngine().clearAllAbilityAndAttackTargets(gameState);
-        gameState.allCardsInPlay().forEach(target -> target.calculatePossibleAbilityTarget(card, gameState));
+        gameState.allCardsInPlay()
+                .forEach(target -> target.calculatePossibleAbilityTarget(card, gameState));
         gameState.setAbilitySource(card);
     }
 }

@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class PaladinofUnaxio extends Card {
 
-public PaladinofUnaxio() {};
+    public PaladinofUnaxio() {
+    }
+
+    ;
 
     public PaladinofUnaxio(Card cloneFrom) {
         super(cloneFrom);

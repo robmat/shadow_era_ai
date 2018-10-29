@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class AvengeroftheFallen extends Card {
 
-public AvengeroftheFallen() {};
+    public AvengeroftheFallen() {
+    }
+
+    ;
 
     public AvengeroftheFallen(Card cloneFrom) {
         super(cloneFrom);

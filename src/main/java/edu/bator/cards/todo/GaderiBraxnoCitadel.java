@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class GaderiBraxnoCitadel extends Card {
 
-public GaderiBraxnoCitadel() {};
+    public GaderiBraxnoCitadel() {
+    }
+
+    ;
 
     public GaderiBraxnoCitadel(Card cloneFrom) {
         super(cloneFrom);

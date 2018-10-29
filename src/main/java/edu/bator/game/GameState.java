@@ -1,7 +1,5 @@
 package edu.bator.game;
 
-import static edu.bator.EntryPoint.allCardsSet;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;
 import edu.bator.cards.Armor;
@@ -9,16 +7,19 @@ import edu.bator.cards.Card;
 import edu.bator.cards.Weapon;
 import edu.bator.cards.enums.Owner;
 import edu.bator.ui.GamePainter;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static edu.bator.EntryPoint.allCardsSet;
 
 @Data
 @NoArgsConstructor

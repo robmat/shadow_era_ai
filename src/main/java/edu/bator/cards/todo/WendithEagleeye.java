@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class WendithEagleeye extends Card {
 
-public WendithEagleeye() {};
+    public WendithEagleeye() {
+    }
+
+    ;
 
     public WendithEagleeye(Card cloneFrom) {
         super(cloneFrom);

@@ -10,9 +10,6 @@ public enum GamePhase {
     ENEMY_SACRIFICE,
     ENEMY_ACTION;
 
-    @Getter
-    private GamePhase oppositePhase;
-
     static {
         YOU_PREPARE.oppositePhase = ENEMY_PREPARE;
         YOU_SACRIFICE.oppositePhase = ENEMY_SACRIFICE;
@@ -21,4 +18,7 @@ public enum GamePhase {
         ENEMY_SACRIFICE.oppositePhase = YOU_SACRIFICE;
         ENEMY_ACTION.oppositePhase = YOU_ACTION;
     }
+
+    @Getter
+    private GamePhase oppositePhase;
 }

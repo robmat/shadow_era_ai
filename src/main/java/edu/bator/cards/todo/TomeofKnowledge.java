@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class TomeofKnowledge extends Card {
 
-public TomeofKnowledge() {};
+    public TomeofKnowledge() {
+    }
+
+    ;
 
     public TomeofKnowledge(Card cloneFrom) {
         super(cloneFrom);

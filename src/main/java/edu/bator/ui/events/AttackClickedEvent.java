@@ -20,11 +20,11 @@ public class AttackClickedEvent implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
-       gameState.currentEnemyHeroAndAlliesBasedOnPhase().forEach(target -> {
-           target.setPossibleAttackTarget(false);
-           target.setPossibleAbilityTarget(false);
-           target.calculatePossibleAttackTarget(card, gameState);
-       });
+        gameState.currentEnemyHeroAndAlliesBasedOnPhase().forEach(target -> {
+            target.setPossibleAttackTarget(false);
+            target.setPossibleAbilityTarget(false);
+            target.calculatePossibleAttackTarget(card, gameState);
+        });
 
         gameState.setAttackSource(card);
         gameState.repaint();

@@ -1,11 +1,12 @@
 package edu.bator.cards;
 
-import static java.util.Objects.nonNull;
-
 import edu.bator.game.GameState;
-import java.util.function.BiConsumer;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+
+import java.util.function.BiConsumer;
+
+import static java.util.Objects.nonNull;
 
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)

@@ -1,15 +1,16 @@
 package edu.bator.game;
 
-import static java.lang.String.format;
-
 import edu.bator.cards.Card;
+import org.apache.log4j.Logger;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.apache.log4j.Logger;
+
+import static java.lang.String.format;
 
 public class GameEngine {
 
@@ -99,7 +100,7 @@ public class GameEngine {
 
     private void expireEffects(GameState gameState) {
         List<Card> cards = Stream.concat(gameState.yourHeroAlliesAndSupportCards().stream(), gameState.enemyHeroAlliesAndSupportCards().stream()).collect(
-            Collectors.toList());
+                Collectors.toList());
         cards.stream()
                 .filter(card -> !card.getEffects().isEmpty())
                 .forEach(card -> {

@@ -1,16 +1,17 @@
 package edu.bator.cards.done;
 
-import static java.lang.String.format;
-
 import edu.bator.cards.Card;
 import edu.bator.cards.Support;
 import edu.bator.cards.enums.Owner;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
-import java.util.Objects;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.apache.log4j.Logger;
+
+import java.util.Objects;
+
+import static java.lang.String.format;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
@@ -21,7 +22,11 @@ public class ValiantDefender extends Support {
     private int turnExpires;
     private GamePhase phaseExpires;
 
-    public ValiantDefender() {};
+    public ValiantDefender() {
+    }
+
+    ;
+
     public ValiantDefender(Card cloneFrom) {
         super(cloneFrom);
     }
@@ -50,7 +55,7 @@ public class ValiantDefender extends Support {
     public void gamePhaseChangeEvent(GameState gameState) {
         log.debug(format("turn expires: %s, current: %s", turnExpires, gameState.getCurrentTurn()));
         if (Objects.equals(turnExpires, gameState.getCurrentTurn())) {
-          log.debug(format("phase expires: %s, current: %s", phaseExpires, gameState.getGamePhase()));
+            log.debug(format("phase expires: %s, current: %s", phaseExpires, gameState.getGamePhase()));
             if (Objects.equals(phaseExpires, gameState.getGamePhase())) {
                 if (Objects.equals(getOwner(), Owner.YOU)) {
                     gameState.getYourSupport().remove(this);

@@ -5,7 +5,6 @@ import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.events.SkipSacrificeClickedEvent;
 import edu.bator.ui.events.TurnSkipClickedEvent;
-import java.util.LinkedList;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
@@ -13,6 +12,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.LinkedList;
 
 @Data
 @NoArgsConstructor

@@ -1,14 +1,15 @@
 package edu.bator.cards;
 
-import static java.util.Objects.nonNull;
-
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
 import java.util.Objects;
 import java.util.Optional;
 import java.util.function.BiConsumer;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+
+import static java.util.Objects.nonNull;
 
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)

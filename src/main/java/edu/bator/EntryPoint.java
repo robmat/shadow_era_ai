@@ -1,7 +1,5 @@
 package edu.bator;
 
-import static org.apache.log4j.Logger.getLogger;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.bator.cards.AllCardsSet;
 import edu.bator.game.GameEngine;
@@ -11,9 +9,6 @@ import edu.bator.ui.LogginExceptionHandler;
 import edu.bator.ui.events.SkipSacrificeClickedEvent;
 import edu.bator.ui.events.TurnSkipClickedEvent;
 import edu.bator.ui.menu.MenuBuilder;
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -24,26 +19,28 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
-import javafx.scene.input.KeyCharacterCombination;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyCodeCombination;
-import javafx.scene.input.KeyCombination;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.input.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import lombok.Data;
 import org.apache.log4j.Logger;
 
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+
+import static org.apache.log4j.Logger.getLogger;
+
 @Data
 public class EntryPoint extends Application {
 
     private static final Logger log = getLogger(EntryPoint.class);
-    private GameState gameState = new GameState();
-    private GamePainter gamePainter = new GamePainter();
-    static ObjectMapper objectJsonMapper = new ObjectMapper();
     public static AllCardsSet allCardsSet = new AllCardsSet();
     public static Stage primaryStage;
+    static ObjectMapper objectJsonMapper = new ObjectMapper();
+    private GameState gameState = new GameState();
+    private GamePainter gamePainter = new GamePainter();
 
     public static void main(String[] args) {
         log.info("Starting.");

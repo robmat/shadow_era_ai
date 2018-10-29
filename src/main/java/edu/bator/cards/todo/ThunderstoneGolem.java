@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class ThunderstoneGolem extends Card {
 
-public ThunderstoneGolem() {};
+    public ThunderstoneGolem() {
+    }
+
+    ;
 
     public ThunderstoneGolem(Card cloneFrom) {
         super(cloneFrom);

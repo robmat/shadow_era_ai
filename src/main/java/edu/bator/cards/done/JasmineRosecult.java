@@ -6,9 +6,10 @@ import edu.bator.cards.effects.InLoveEffect;
 import edu.bator.cards.util.AbilityTargetUtil;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
-import java.util.function.BiConsumer;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+
+import java.util.function.BiConsumer;
 
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -53,6 +54,6 @@ public class JasmineRosecult extends Ally {
             }
             card1.getEffects().add(new InLoveEffect(turnWhenExpires, gamePhase));
         };
-       card.abilityAppliedToMe(abilityFunction, gameState);
+        card.abilityAppliedToMe(abilityFunction, gameState);
     }
 }

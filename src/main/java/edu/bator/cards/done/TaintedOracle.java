@@ -10,24 +10,24 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class TaintedOracle extends Ally {
 
-  public TaintedOracle() {
-  }
-
-  public TaintedOracle(Card cloneFrom) {
-    super(cloneFrom);
-  }
-
-  @Override
-  public void cardHasDiedEvent(Card card, GameState gameState) {
-    if (this.equals(card)) {
-      if (this.getOwner().equals(Owner.YOU)) {
-        new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand());
-        new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand());
-      }
-      if (this.getOwner().equals(Owner.ENEMY)) {
-        new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand());
-        new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand());
-      }
+    public TaintedOracle() {
     }
-  }
+
+    public TaintedOracle(Card cloneFrom) {
+        super(cloneFrom);
+    }
+
+    @Override
+    public void cardHasDiedEvent(Card card, GameState gameState) {
+        if (this.equals(card)) {
+            if (this.getOwner().equals(Owner.YOU)) {
+                new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand());
+                new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand());
+            }
+            if (this.getOwner().equals(Owner.ENEMY)) {
+                new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand());
+                new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand());
+            }
+        }
+    }
 }

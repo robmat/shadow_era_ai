@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class BreastplateofVitality extends Card {
 
-public BreastplateofVitality() {};
+    public BreastplateofVitality() {
+    }
+
+    ;
 
     public BreastplateofVitality(Card cloneFrom) {
         super(cloneFrom);

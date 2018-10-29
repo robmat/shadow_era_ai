@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class CrusheroftheWeak extends Card {
 
-public CrusheroftheWeak() {};
+    public CrusheroftheWeak() {
+    }
+
+    ;
 
     public CrusheroftheWeak(Card cloneFrom) {
         super(cloneFrom);

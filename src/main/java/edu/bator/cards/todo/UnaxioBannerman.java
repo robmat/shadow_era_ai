@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class UnaxioBannerman extends Card {
 
-public UnaxioBannerman() {};
+    public UnaxioBannerman() {
+    }
+
+    ;
 
     public UnaxioBannerman(Card cloneFrom) {
         super(cloneFrom);

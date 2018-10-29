@@ -8,7 +8,10 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class PriestoftheLight extends Ally {
 
-public PriestoftheLight() {};
+    public PriestoftheLight() {
+    }
+
+    ;
 
     public PriestoftheLight(Card cloneFrom) {
         super(cloneFrom);

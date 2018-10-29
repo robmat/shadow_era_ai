@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class PathfindersMachete extends Card {
 
-public PathfindersMachete() {};
+    public PathfindersMachete() {
+    }
+
+    ;
 
     public PathfindersMachete(Card cloneFrom) {
         super(cloneFrom);

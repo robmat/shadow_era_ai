@@ -6,7 +6,8 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class Artifact extends Card {
 
-    public Artifact() {}
+    public Artifact() {
+    }
 
     public Artifact(Card cloneFrom) {
         super(cloneFrom);

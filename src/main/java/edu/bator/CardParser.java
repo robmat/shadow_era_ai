@@ -1,26 +1,6 @@
 package edu.bator;
 
-import static edu.bator.EntryPoint.objectJsonMapper;
-import static edu.bator.cards.enums.CardEnums.Ability;
-import static edu.bator.cards.enums.CardEnums.AttackType;
-import static edu.bator.cards.enums.CardEnums.CardType;
-import static edu.bator.cards.enums.CardEnums.HeroClass;
-import static edu.bator.cards.enums.CardEnums.ItemSubType;
-import static edu.bator.cards.enums.CardEnums.Side;
-import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
-
 import edu.bator.cards.Card;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
@@ -29,6 +9,18 @@ import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
+
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
+import java.util.stream.Collectors;
+
+import static edu.bator.EntryPoint.objectJsonMapper;
+import static edu.bator.cards.enums.CardEnums.*;
+import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
 public class CardParser {
 

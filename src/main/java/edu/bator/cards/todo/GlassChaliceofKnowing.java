@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class GlassChaliceofKnowing extends Card {
 
-public GlassChaliceofKnowing() {};
+    public GlassChaliceofKnowing() {
+    }
+
+    ;
 
     public GlassChaliceofKnowing(Card cloneFrom) {
         super(cloneFrom);

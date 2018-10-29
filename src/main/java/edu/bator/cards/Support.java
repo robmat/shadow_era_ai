@@ -6,7 +6,8 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class Support extends Card {
 
-    public Support() {}
+    public Support() {
+    }
 
     public Support(Card cloneFrom) {
         super(cloneFrom);

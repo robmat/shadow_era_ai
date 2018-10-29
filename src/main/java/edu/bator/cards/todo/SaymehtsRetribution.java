@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class SaymehtsRetribution extends Card {
 
-public SaymehtsRetribution() {};
+    public SaymehtsRetribution() {
+    }
+
+    ;
 
     public SaymehtsRetribution(Card cloneFrom) {
         super(cloneFrom);

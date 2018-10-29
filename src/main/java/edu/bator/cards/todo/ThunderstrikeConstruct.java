@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class ThunderstrikeConstruct extends Card {
 
-public ThunderstrikeConstruct() {};
+    public ThunderstrikeConstruct() {
+    }
+
+    ;
 
     public ThunderstrikeConstruct(Card cloneFrom) {
         super(cloneFrom);

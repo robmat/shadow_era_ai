@@ -4,7 +4,10 @@ import edu.bator.cards.Card;
 
 public class GriffoncrestDagger extends Card {
 
-public GriffoncrestDagger() {};
+    public GriffoncrestDagger() {
+    }
+
+    ;
 
     public GriffoncrestDagger(Card cloneFrom) {
         super(cloneFrom);
