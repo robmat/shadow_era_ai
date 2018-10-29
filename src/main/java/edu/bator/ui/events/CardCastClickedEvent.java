@@ -1,5 +1,7 @@
 package edu.bator.ui.events;
 
+import static java.util.Objects.nonNull;
+
 import edu.bator.cards.Armor;
 import edu.bator.cards.Card;
 import edu.bator.cards.Weapon;
@@ -9,8 +11,6 @@ import edu.bator.game.GameState;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import org.apache.log4j.Logger;
-
-import static java.util.Objects.nonNull;
 
 public class CardCastClickedEvent implements EventHandler<MouseEvent> {
 
