@@ -227,4 +227,12 @@ public class GameState {
     public Card enemyHeroBasedOnPhase() {
         return GamePhase.YOU_ACTION.equals(getGamePhase()) ? enemyHero : (GamePhase.ENEMY_ACTION.equals(getGamePhase())) ? yourHero : null;
     }
+
+    public boolean yourAction() {
+        return GamePhase.YOU_ACTION.equals(getGamePhase());
+    }
+
+    public boolean enemyAction() {
+        return GamePhase.ENEMY_ACTION.equals(getGamePhase());
+    }
 }

@@ -118,7 +118,7 @@ public class GameEngine {
     }
 
     private void readyHandCards(LinkedList<Card> hand, GameState gameState) {
-        hand.forEach(card -> card.determineCastable(card, gameState));
+        hand.forEach(card -> card.determineCastable(gameState));
     }
 
     public void pickACard(LinkedList<Card> deck, LinkedList<Card> hand) {
@@ -135,16 +135,14 @@ public class GameEngine {
     }
 
     public void cardDied(Card card, GameState gameState) {
-        if (gameState.getEnemyAllies().remove(card)) {
-            gameState.getEnemyGraveyard().add(card);
-            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
-            card.cardHasDiedEvent(card, gameState);
-        }
-        if (gameState.getYourAllies().remove(card)) {
-            gameState.getYourGraveyard().add(card);
-            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
-            card.cardHasDiedEvent(card, gameState);
-        }
+        cardDied(card, gameState, gameState.getEnemyAllies(), gameState.getEnemyGraveyard());
+
+        cardDied(card, gameState, gameState.getYourAllies(), gameState.getYourGraveyard());
+
+        cardDied(card, gameState, gameState.getEnemyHand(), gameState.getEnemyGraveyard());
+
+        cardDied(card, gameState, gameState.getYourHand(), gameState.getYourGraveyard());
+
         if (card.equals(gameState.getEnemyHero().getWeapon())) {
             gameState.getEnemyHero().setWeapon(null);
             gameState.getEnemyGraveyard().add(card);
@@ -166,6 +164,14 @@ public class GameEngine {
         if (card.equals(gameState.getYourHero().getArmor())) {
             gameState.getYourHero().setArmor(null);
             gameState.getYourGraveyard().add(card);
+            gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
+            card.cardHasDiedEvent(card, gameState);
+        }
+    }
+
+    private void cardDied(Card card, GameState gameState, LinkedList<Card> diedFrom, GraveyardLinkedList graveyard) {
+        if (diedFrom.remove(card)) {
+            graveyard.add(card);
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
             card.cardHasDiedEvent(card, gameState);
         }

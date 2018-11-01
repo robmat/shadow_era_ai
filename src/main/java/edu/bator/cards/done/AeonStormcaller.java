@@ -34,8 +34,8 @@ public class AeonStormcaller extends Ally {
     }
 
     @Override
-    public void determineCastable(Card card, GameState gameState) {
-        super.determineCastable(card, gameState);
+    public void determineCastable(GameState gameState) {
+        super.determineCastable(gameState);
         boolean castable = this.isCastable();
         if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
             boolean anotherAlreadyInPlay = gameState.getYourAllies().stream()

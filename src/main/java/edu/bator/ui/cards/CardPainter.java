@@ -1,4 +1,4 @@
-package edu.bator.ui;
+package edu.bator.ui.cards;
 
 import edu.bator.cards.Card;
 import edu.bator.cards.effects.Effect;

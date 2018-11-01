@@ -19,6 +19,16 @@ public class ShieldBash extends Ability {
     }
 
     @Override
+    public void determineCastable(GameState gameState) {
+        super.determineCastable(gameState);
+        if (isCastable()) {
+            boolean you = gameState.yourAction() && gameState.getEnemyAllies().stream().anyMatch(ally -> ableToApplyAbilityTo(ally, gameState));
+            boolean enemy = gameState.yourAction() && gameState.getYourAllies().stream().anyMatch(ally -> ableToApplyAbilityTo(ally, gameState));
+            setCastable(you || enemy);
+        }
+    }
+
+    @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
         boolean possibleAllyTarget = calculatePossibleTargetProtectorIncluded(card, gameState);
         return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card) && possibleAllyTarget;

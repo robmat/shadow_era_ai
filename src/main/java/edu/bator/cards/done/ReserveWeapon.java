@@ -6,7 +6,9 @@ import edu.bator.cards.Card;
 import edu.bator.cards.Weapon;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
-import edu.bator.ui.CardPainter;
+import edu.bator.game.GraveyardLinkedList;
+import edu.bator.ui.cards.CardPainter;
+import edu.bator.ui.cards.CardUiHelper;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -17,6 +19,8 @@ import javafx.stage.Stage;
 import lombok.EqualsAndHashCode;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BiConsumer;
+import java.util.function.Function;
 
 @EqualsAndHashCode(callSuper = true)
 public class ReserveWeapon extends Artifact {
@@ -36,14 +40,18 @@ public class ReserveWeapon extends Artifact {
     @Override
     public Integer modifiesAttack(Card card, GameState gameState) {
         boolean cardIsAWeapon = card.cardIsAWeapon();
+        boolean yourHeroWeapon = card.equals(gameState.getYourHero().getWeapon());
+        boolean thisInYourSupport = gameState.getYourSupport().contains(this);
         if (cardIsAWeapon &&
-                card.equals(gameState.getYourHero().getWeapon()) &&
-                gameState.getYourSupport().contains(this)) {
+                yourHeroWeapon &&
+                thisInYourSupport) {
             return 1;
         }
+        boolean enemyHeroWeapon = card.equals(gameState.getEnemyHero().getWeapon());
+        boolean thisInEnemySupport = gameState.getEnemySupport().contains(this);
         if (cardIsAWeapon &&
-                card.equals(gameState.getEnemyHero().getWeapon()) &&
-                gameState.getEnemySupport().contains(this)) {
+                enemyHeroWeapon &&
+                thisInEnemySupport) {
             return 1;
         }
         return 0;
@@ -56,41 +64,30 @@ public class ReserveWeapon extends Artifact {
 
     @Override
     public void abilityClickEvent(GameState gameState) {
-        Stage dialog = new Stage();
-        dialog.initOwner(EntryPoint.primaryStage);
-        dialog.initModality(Modality.APPLICATION_MODAL);
-        GridPane cardsGrid = new GridPane();
-        Scene scene = new Scene(cardsGrid);
-        dialog.setScene(scene);
+        BiConsumer<Stage, GridPane> consumer = (d, g) -> paintUi(gameState, d, g);
+        CardUiHelper.showDialog(consumer);
+    }
 
+    private void paintUi(GameState gameState, Stage dialog, GridPane cardsGrid) {
+        GraveyardLinkedList graveyard = new GraveyardLinkedList();
         if (isYou(gameState)) {
-            AtomicInteger index = new AtomicInteger(0);
-            gameState.getYourGraveyard()
-                    .stream()
-                    .filter(Card::cardIsAWeapon)
-                    .forEach(card -> {
-                        GridPane cardGrid = new CardPainter()
-                                .paint(card, cardsGrid, index.getAndIncrement(), gameState);
-                        Button button = new Button("Target");
-                        button.setOnMouseClicked(new ReserveWeaponClickedEvent(gameState, card, dialog, this));
-                        cardGrid.add(button, 0, 2);
-                    });
+            graveyard = gameState.getYourGraveyard();
         }
         if (isEnemy(gameState)) {
-            AtomicInteger index = new AtomicInteger(0);
-            gameState.getEnemyGraveyard()
-                    .stream()
-                    .filter(Card::cardIsAWeapon)
-                    .forEach(card -> {
-                        GridPane cardGrid = new CardPainter()
-                                .paint(card, cardsGrid, index.getAndIncrement(), gameState);
-                        Button button = new Button("Target");
-                        button.setOnMouseClicked(new ReserveWeaponClickedEvent(gameState, card, dialog, this));
-                        cardGrid.add(button, 0, 2);
-                    });
+            graveyard = gameState.getEnemyGraveyard();
         }
+        AtomicInteger index = new AtomicInteger(0);
+        graveyard
+                .stream()
+                .filter(Card::cardIsAWeapon)
+                .forEach(card -> {
+                    GridPane cardGrid = new CardPainter()
+                            .paint(card, cardsGrid, index.getAndIncrement(), gameState);
+                    Button button = new Button("Target");
+                    button.setOnMouseClicked(new ReserveWeaponClickedEvent(gameState, card, dialog, this));
+                    cardGrid.add(button, 0, 2);
+                });
 
-        dialog.showAndWait();
     }
 
     private boolean isEnemy(GameState gameState) {

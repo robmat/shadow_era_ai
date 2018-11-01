@@ -120,11 +120,11 @@ public class Card implements Cloneable {
         return clone;
     }
 
-    public void determineCastable(Card card, GameState gameState) {
+    public void determineCastable(GameState gameState) {
         boolean you = gameState.getGamePhase().equals(GamePhase.YOU_ACTION)
-                && gameState.getYourCurrentResources() >= card.getResourceCost();
+                && gameState.getYourCurrentResources() >= getResourceCost();
         boolean enemy = gameState.getGamePhase().equals(GamePhase.ENEMY_ACTION)
-                && gameState.getEnemyCurrentResources() >= card.getResourceCost();
+                && gameState.getEnemyCurrentResources() >= getResourceCost();
         this.castable = you || enemy;
     }
 

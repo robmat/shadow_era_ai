@@ -58,7 +58,7 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                     }
                     decreaseEnemyResources();
                 }
-                gameState.getEnemyHand().forEach(card -> card.determineCastable(card, gameState));
+                gameState.getEnemyHand().forEach(card -> card.determineCastable(gameState));
             }
             if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
                 if (card.cardIsSupport()) {
@@ -87,7 +87,7 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
                     }
                     decreaseYourResources();
                 }
-                gameState.getYourHand().forEach(card -> card.determineCastable(card, gameState));
+                gameState.getYourHand().forEach(card -> card.determineCastable(gameState));
             }
             card.wasCasted(gameState);
             gameState.repaint();

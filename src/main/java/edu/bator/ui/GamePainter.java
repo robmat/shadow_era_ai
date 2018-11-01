@@ -3,6 +3,7 @@ package edu.bator.ui;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
+import edu.bator.ui.cards.CardPainter;
 import edu.bator.ui.events.SkipSacrificeClickedEvent;
 import edu.bator.ui.events.TurnSkipClickedEvent;
 import javafx.scene.control.Button;

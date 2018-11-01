@@ -10,6 +10,7 @@ import java.util.Optional;
 import java.util.function.BiConsumer;
 
 import static java.util.Objects.nonNull;
+import static java.util.Optional.ofNullable;
 
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -25,7 +26,8 @@ public class Hero extends Card {
 
     @Override
     public void cardHasDiedEvent(Card card, GameState gameState) {
-        Optional.ofNullable(weapon).ifPresent(w -> w.cardHasDiedEvent(card, gameState));
+        ofNullable(weapon).ifPresent(w -> w.cardHasDiedEvent(card, gameState));
+        ofNullable(armor).ifPresent(a -> a.cardHasDiedEvent(card, gameState));
     }
 
     @Override
