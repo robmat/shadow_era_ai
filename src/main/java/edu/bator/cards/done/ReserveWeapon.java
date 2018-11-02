@@ -81,11 +81,8 @@ public class ReserveWeapon extends Artifact {
                 .stream()
                 .filter(Card::cardIsAWeapon)
                 .forEach(card -> {
-                    GridPane cardGrid = new CardPainter()
-                            .paint(card, cardsGrid, index.getAndIncrement(), gameState);
-                    Button button = new Button("Target");
-                    button.setOnMouseClicked(new ReserveWeaponClickedEvent(gameState, card, dialog, this));
-                    cardGrid.add(button, 0, 2);
+                    EventHandler<MouseEvent> reserveWeaponClickedEvent = new ReserveWeaponClickedEvent(gameState, card, dialog, this);
+                    CardUiHelper.paintCardOnDialogGridPane(gameState, cardsGrid, index, card, reserveWeaponClickedEvent);
                 });
 
     }

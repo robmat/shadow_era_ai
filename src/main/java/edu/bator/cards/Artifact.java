@@ -15,14 +15,18 @@ public class Artifact extends Card {
 
     @Override
     public void artifactIsCast(GameState gameState) {
-        if (gameState.getYourHand().remove(this)) {
-            gameState.getYourSupport().add(this);
-            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - this.getResourceCost());
+        artifactOrSupportCast(gameState, this);
+    }
+
+    public static void artifactOrSupportCast(GameState gameState, Card card) {
+        if (gameState.getYourHand().remove(card)) {
+            gameState.getYourSupport().add(card);
+            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - card.getResourceCost());
 
         }
-        if (gameState.getEnemyHand().remove(this)) {
-            gameState.getEnemySupport().add(this);
-            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - this.getResourceCost());
+        if (gameState.getEnemyHand().remove(card)) {
+            gameState.getEnemySupport().add(card);
+            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - card.getResourceCost());
         }
     }
 }

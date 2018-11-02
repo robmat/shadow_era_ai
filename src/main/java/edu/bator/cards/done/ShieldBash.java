@@ -45,6 +45,6 @@ public class ShieldBash extends Ability {
         if (target.cardIsDead()) {
             new GameEngine().cardDied(target, gameState);
         }
-        new GameEngine().subtractResources(gameState, 3);
+        new GameEngine().decreaseCurrentPlayerResources(gameState, 3);
     }
 }

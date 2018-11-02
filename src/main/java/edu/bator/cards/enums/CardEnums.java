@@ -21,7 +21,7 @@ public class CardEnums {
     }
 
     public enum ItemSubType {
-        WEAPON, ARMOR, ARTIFACT, TRAP;
+        WEAPON, ARMOR, ARTIFACT, TRAP, ATTACHMENT;
 
         public static ItemSubType parse(String str) {
             return new EnumParser<>(ItemSubType.class).parse(str);

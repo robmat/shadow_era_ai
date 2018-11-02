@@ -58,6 +58,8 @@ public class Card implements Cloneable {
 
     Owner owner;
 
+    Set<Attachment> attachments = new HashSet<>();
+
     String uniqueId = UUID.randomUUID().toString();
 
     public Card(Card cloneFrom) {
@@ -100,6 +102,8 @@ public class Card implements Cloneable {
         }
         this.availableForHeroClasses = cloneFrom.availableForHeroClasses;
         this.unique = cloneFrom.unique;
+        this.owner = cloneFrom.owner;
+        this.attachments = new HashSet<>(cloneFrom.attachments);
     }
 
     public void tryToReadyAttack() {
@@ -129,7 +133,7 @@ public class Card implements Cloneable {
     }
 
     public void wasCasted(GameState gameState) {
-        if (abilities.contains(Ability.HASTE)) {
+        if (abilities.contains(Ability.HASTE) && cardIsAnAlly()) {
             setAttackReadied(true);
             setAbilityReadied(true);
         }
@@ -199,6 +203,10 @@ public class Card implements Cloneable {
 
     public boolean cardIsArtifact() {
         return ItemSubType.ARTIFACT.equals(getItemSubType());
+    }
+
+    public boolean cardIsAttachment() {
+        return ItemSubType.ATTACHMENT.equals(getItemSubType());
     }
 
     public boolean cardIsDead() {

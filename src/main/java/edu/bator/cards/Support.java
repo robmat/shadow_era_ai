@@ -3,6 +3,8 @@ package edu.bator.cards;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
 
+import static edu.bator.cards.Artifact.artifactOrSupportCast;
+
 @EqualsAndHashCode(callSuper = true)
 public class Support extends Card {
 
@@ -15,14 +17,6 @@ public class Support extends Card {
 
     @Override
     public void supportIsCast(GameState gameState) {
-        if (gameState.getYourHand().remove(this)) {
-            gameState.getYourSupport().add(this);
-            gameState.setYourCurrentResources(gameState.getYourCurrentResources() - this.getResourceCost());
-
-        }
-        if (gameState.getEnemyHand().remove(this)) {
-            gameState.getEnemySupport().add(this);
-            gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - this.getResourceCost());
-        }
+        artifactOrSupportCast(gameState, this);
     }
 }

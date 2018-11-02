@@ -984,7 +984,7 @@
     "resourceCost": 4,
     "baseAttack": null,
     "initialHp": null,
-    "itemSubType": null,
+    "itemSubType": "ATTACHMENT",
     "attackType": null,
     "abilities": []
   },

@@ -56,11 +56,8 @@ public class SmashingBlow extends Ability {
             }
             cardStream
                     .forEach(card -> {
-                        GridPane cardGrid = new CardPainter()
-                                .paint(card, gridPane, index.getAndIncrement(), gameState);
-                        Button button = new Button("Target");
-                        button.setOnMouseClicked(new SmashingBlow.SmashingBlowClickedEvent(gameState, card, stage, this));
-                        cardGrid.add(button, 0, 2);
+                        EventHandler<MouseEvent> smashingBlowClickedEvent = new SmashingBlowClickedEvent(gameState, card, stage, this);
+                        CardUiHelper.paintCardOnDialogGridPane(gameState, gridPane, index, card, smashingBlowClickedEvent);
                     });
         };
         CardUiHelper.showDialog(consumer);
