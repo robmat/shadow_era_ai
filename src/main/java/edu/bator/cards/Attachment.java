@@ -1,5 +1,6 @@
 package edu.bator.cards;
 
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -48,6 +49,10 @@ public class Attachment extends Card {
     public void modifiesAbilities(Set<CardEnums.Ability> abilities) {
     }
 
+    @Override
+    public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
+        return card.getAttachments().stream().noneMatch(attachment -> Objects.equals(getName(), attachment.getName()));
+    }
 
     private class AttachmentTargetClickedEvent implements EventHandler<MouseEvent> {
 

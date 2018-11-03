@@ -21,6 +21,7 @@ public class WarriorTraining extends Attachment {
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
         return card.cardIsAnAlly() &&
+                super.ableToApplyAbilityTo(card, gameState) &&
                 (gameState.getYourHand().contains(this) && gameState.getYourAllies().contains(card) ||
                         gameState.getEnemyHand().contains(this) && gameState.getEnemyAllies().contains(card));
     }

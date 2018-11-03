@@ -17,7 +17,10 @@ public class Enrage extends Attachment {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        return gameState.yourAction() && card.equals(gameState.getYourHero()) || gameState.enemyAction() && card.equals(gameState.getEnemyHero());
+        return gameState.yourAction() &&
+                super.ableToApplyAbilityTo(card, gameState) &&
+                card.equals(gameState.getYourHero()) ||
+                gameState.enemyAction() && card.equals(gameState.getEnemyHero());
     }
 
     @Override
