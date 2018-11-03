@@ -1,5 +1,6 @@
 package edu.bator.cards;
 
+import edu.bator.cards.util.BonusUtil;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -14,10 +15,6 @@ public class Weapon extends Card {
 
     @Override
     public Integer getAttack(GameState gameState) {
-        int bonus = gameState.allCardsInPlay()
-                .stream()
-                .mapToInt(card -> card.modifiesAttack(this, gameState))
-                .sum();
-        return super.getAttack(gameState) + bonus;
+        return super.getAttack(gameState) + + BonusUtil.attackBonus(gameState, this);
     }
 }

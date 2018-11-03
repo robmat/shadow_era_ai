@@ -47,7 +47,7 @@ public class AeonStormcaller extends Ally {
 
     @Override
     public void applyAbility(Card target, GameState gameState) {
-        target.setCurrentHp(target.getCurrentHp() + 1);
+        target.setCurrentHp(target.getCurrentHp(gameState) + 1);
         target.setBaseAttack(target.getBaseAttack() + 1);
         new GameEngine().decreaseCurrentPlayerResources(gameState, 3);
     }

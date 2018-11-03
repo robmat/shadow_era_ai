@@ -43,7 +43,7 @@ public class ZoeSilversmith extends Ally {
     public void applyAbility(Card target, GameState gameState) {
         BiConsumer<Card, GameState> abilityFunction = (target1, gameState1) -> {
             Card weapon = target1.getWeapon();
-            weapon.setCurrentHp(weapon.getCurrentHp() + 1);
+            weapon.setCurrentHp(weapon.getCurrentHp(gameState) + 1);
             new GameEngine().decreaseCurrentPlayerResources(gameState, 2);
         };
         target.abilityAppliedToMe(abilityFunction, gameState);

@@ -6,10 +6,13 @@ import edu.bator.cards.enums.Owner;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.*;
 import java.util.function.BiConsumer;
@@ -38,6 +41,7 @@ public class Card implements Cloneable {
     Integer baseAttack;
     Integer baseDefence;
     Integer initialHp;
+    @Getter(value = AccessLevel.PRIVATE)
     Integer currentHp;
     Integer shadowEnergy = 0;
 
@@ -264,14 +268,22 @@ public class Card implements Cloneable {
         return isAttackReadied() && nonNull(getAttack(gameState)) && getAttack(gameState).compareTo(0) > 0;
     }
 
+    public void cardHasDiedEvent(Card card, GameState gameState) {
+    }
+
     public Integer getAttack(GameState gameState) {
         return baseAttack;
     }
 
-    public void cardHasDiedEvent(Card card, GameState gameState) {
+    public Integer modifiesAttack(Card card, GameState gameState) {
+        return 0;
     }
 
-    public Integer modifiesAttack(Card card, GameState gameState) {
+    public Integer getCurrentHp(GameState gameState) {
+        return currentHp;
+    }
+
+    public Integer modifiesHp(Card card, GameState gameState) {
         return 0;
     }
 

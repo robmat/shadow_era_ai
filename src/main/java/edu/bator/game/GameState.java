@@ -1,14 +1,17 @@
 package edu.bator.game;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;
 import edu.bator.cards.Armor;
+import edu.bator.cards.Attachment;
 import edu.bator.cards.Card;
 import edu.bator.cards.Weapon;
 import edu.bator.cards.enums.Owner;
@@ -143,18 +146,20 @@ public class GameState {
         return cards;
     }
 
-    public List<Card> currentHeroAlliesAndSupportCardsBasedOnPhase() {
-        if (GamePhase.YOU_ACTION.equals(gamePhase)) return enemyHeroAlliesAndSupportCards();
-        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) return yourHeroAlliesAndSupportCards();
-        return new LinkedList<>();
-    }
-
     public void resetPossibleAbiltyTargets() {
         allCardsInPlay().forEach(card -> card.setPossibleAbilityTarget(false));
     }
 
     public List<Card> allCardsInPlay() {
-        return Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()).distinct().collect(Collectors.toList());
+        Set<Attachment> attachments = Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream())
+                .map(Card::getAttachments)
+                .reduce((a, b) -> new HashSet<>() {{
+                    addAll(a);
+                    addAll(b);
+                }}).orElse(new HashSet<>());
+        return Stream.concat(Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()), attachments.stream())
+                .distinct()
+                .collect(Collectors.toList());
     }
 
     public int enemyResourcesSize() {

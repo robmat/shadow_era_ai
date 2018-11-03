@@ -72,8 +72,8 @@ public class CardPainter {
             gridPane.add(new Label("DEF: " + card.getBaseDefence()), 0, 1);
         }
 
-        if (Objects.nonNull(card.getCurrentHp())) {
-            gridPane.add(new Label("  HP: " + card.getCurrentHp()), 1, 1);
+        if (Objects.nonNull(card.getCurrentHp(gameState))) {
+            gridPane.add(new Label("  HP: " + card.getCurrentHp(gameState)), 1, 1);
         }
 
         //row 3
@@ -163,7 +163,7 @@ public class CardPainter {
                     .append("\nWeapon: ")
                     .append(weapon.getName())
                     .append(" DUR: ")
-                    .append(weapon.getCurrentHp())
+                    .append(weapon.getCurrentHp(gameState))
                     .append(" ATK: ")
                     .append(weapon.getAttack(gameState));
         });
@@ -175,7 +175,7 @@ public class CardPainter {
                     .append("\nArmor: ")
                     .append(armor.getName())
                     .append(" DUR: ")
-                    .append(armor.getCurrentHp())
+                    .append(armor.getCurrentHp(gameState))
                     .append(" DEF: ")
                     .append(armor.getBaseDefence());
         });

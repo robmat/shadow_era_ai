@@ -1,12 +1,12 @@
 package edu.bator.cards;
 
+import edu.bator.cards.util.BonusUtil;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.Objects;
-import java.util.Optional;
 import java.util.function.BiConsumer;
 
 import static java.util.Objects.nonNull;
@@ -21,7 +21,7 @@ public class Hero extends Card {
     }
 
     public boolean canAttack(GameState gameState) {
-        return isAttackReadied() && Objects.nonNull(weapon) && weapon.getCurrentHp() > 0 && weapon.getAttack(gameState) > 0;
+        return isAttackReadied() && Objects.nonNull(weapon) && weapon.getCurrentHp(gameState) > 0 && weapon.getAttack(gameState) > 0;
     }
 
     @Override
@@ -36,7 +36,7 @@ public class Hero extends Card {
         BiConsumer<GameState, Card> attackEvent = (gameState1, card) -> {
             Card weapon = attackSource.getWeapon();
             if (nonNull(weapon) && weapon.getAttack(gameState) > 0) {
-                target.setCurrentHp(target.getCurrentHp() - weapon.getAttack(gameState1));
+                target.setCurrentHp(target.getCurrentHp(gameState) - weapon.getAttack(gameState1));
                 reduceWeaponHp(gameState1, weapon);
             }
         };
@@ -45,12 +45,12 @@ public class Hero extends Card {
 
     @Override
     public void attackedBy(BiConsumer<GameState, Card> attackEvent, Card source, GameState gameState) {
-        int hpBefore = getCurrentHp();
+        int hpBefore = getCurrentHp(gameState);
         super.attackedBy(attackEvent, source, gameState);
-        if (getCurrentHp() < hpBefore && nonNull(getArmor())) {
+        if (getCurrentHp(gameState) < hpBefore && nonNull(getArmor())) {
             int defence = getArmor().getBaseDefence();
-            setCurrentHp(hpBefore - getCurrentHp() > defence ? getCurrentHp() + defence : hpBefore);
-            getArmor().setCurrentHp(getArmor().getCurrentHp() - 1);
+            setCurrentHp(hpBefore - getCurrentHp(gameState) > defence ? getCurrentHp(gameState) + defence : hpBefore);
+            getArmor().setCurrentHp(getArmor().getCurrentHp(gameState) - 1);
             if (getArmor().cardIsDead()) {
                 new GameEngine().cardDied(getArmor(), gameState);
             }
@@ -58,5 +58,10 @@ public class Hero extends Card {
         if (nonNull(getArmor())) {
             getArmor().armorEffectDuringAttack(this, source, gameState);
         }
+    }
+
+    @Override
+    public Integer getCurrentHp(GameState gameState) {
+        return super.getCurrentHp(gameState) + BonusUtil.hpBonus(gameState, this);
     }
 }

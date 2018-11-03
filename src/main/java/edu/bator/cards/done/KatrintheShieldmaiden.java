@@ -61,8 +61,8 @@ public class KatrintheShieldmaiden extends Ally {
     @Override
     public void applyAbility(Card card, GameState gameState) {
         target = card;
-        if (Objects.nonNull(target.getCurrentHp())) {
-            target.setCurrentHp(target.getCurrentHp() + 2);
+        if (Objects.nonNull(target.getCurrentHp(gameState))) {
+            target.setCurrentHp(target.getCurrentHp(gameState) + 2);
         }
     }
 }

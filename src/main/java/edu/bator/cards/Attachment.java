@@ -44,8 +44,6 @@ public class Attachment extends Card {
     }
 
 
-
-
     private class AttachmentTargetClickedEvent implements EventHandler<MouseEvent> {
 
         GameState gameState;
@@ -64,6 +62,7 @@ public class Attachment extends Card {
         public void handle(MouseEvent event) {
             target.getAttachments().add(Attachment.this);
             new GameEngine().decreaseCurrentPlayerResources(gameState, getResourceCost());
+            new GameEngine().moveToGraveYard(Attachment.this, gameState);
             stage.close();
         }
     }
