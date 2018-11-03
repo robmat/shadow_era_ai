@@ -16,6 +16,7 @@ import lombok.Setter;
 
 import java.util.*;
 import java.util.function.BiConsumer;
+import java.util.stream.Stream;
 
 import static edu.bator.cards.enums.CardEnums.Ability;
 import static edu.bator.cards.enums.CardEnums.*;
@@ -280,7 +281,7 @@ public class Card implements Cloneable {
     }
 
     public Integer getCurrentHp(GameState gameState) {
-        return currentHp;
+        return Optional.ofNullable(currentHp).orElse(initialHp);
     }
 
     public Integer modifiesHp(Card card, GameState gameState) {
@@ -302,6 +303,12 @@ public class Card implements Cloneable {
     }
 
     public void abilityClickEvent(GameState gameState) {
+    }
+
+    public Set<Ability> getAbilities() {
+        Set<Ability> abilities = new HashSet<>(this.abilities);
+        getAttachments().forEach(attachment -> attachment.modifiesAbilities(abilities));
+        return abilities;
     }
 
     @Override

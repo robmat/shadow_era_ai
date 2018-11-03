@@ -85,8 +85,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Reserve Weapon", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Reserve Weapon", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Aeon Stormcaller", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Aeon Stormcaller", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Warrior Training", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Warrior Training", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Enrage", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Enrage", Owner.YOU));

@@ -1,7 +1,9 @@
 package edu.bator.cards;
 
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import edu.bator.cards.enums.CardEnums;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.cards.CardUiHelper;
@@ -43,6 +45,9 @@ public class Attachment extends Card {
         }, gameState);
     }
 
+    public void modifiesAbilities(Set<CardEnums.Ability> abilities) {
+    }
+
 
     private class AttachmentTargetClickedEvent implements EventHandler<MouseEvent> {
 
@@ -51,7 +56,7 @@ public class Attachment extends Card {
         Stage stage;
         Attachment attachmen;
 
-        public AttachmentTargetClickedEvent(GameState gameState, Card target, Stage stage, Attachment attachmen) {
+        AttachmentTargetClickedEvent(GameState gameState, Card target, Stage stage, Attachment attachmen) {
             this.gameState = gameState;
             this.target = target;
             this.stage = stage;

@@ -2,6 +2,7 @@ package edu.bator.ui.cards;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiConsumer;
+import java.util.stream.Collectors;
 
 import edu.bator.EntryPoint;
 import edu.bator.cards.Card;
@@ -37,6 +38,13 @@ public class CardUiHelper {
                 .paint(card, gridPane, index.getAndIncrement(), gameState);
         Button button = new Button("Target");
         button.setOnMouseClicked(onMouseClicked);
+
+        cardGrid.getChildren()
+                .stream()
+                .filter(child -> child instanceof Button)
+                .collect(Collectors.toList())
+                .forEach(child -> cardGrid.getChildren().remove(child));
+
         cardGrid.add(button, 0, 3, 2, 1);
     }
 }
