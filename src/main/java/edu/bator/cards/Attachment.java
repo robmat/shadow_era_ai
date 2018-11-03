@@ -73,6 +73,7 @@ public class Attachment extends Card {
             target.getAttachments().add(Attachment.this);
             new GameEngine().decreaseCurrentPlayerResources(gameState, getResourceCost());
             new GameEngine().moveToGraveYard(Attachment.this, gameState);
+            gameState.currentYourHandBasedOnPhase().forEach(card -> card.determineCastable(gameState));
             stage.close();
         }
     }

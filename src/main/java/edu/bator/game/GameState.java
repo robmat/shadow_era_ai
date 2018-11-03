@@ -82,8 +82,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Snow Sapphire", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Snow Sapphire", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Reserve Weapon", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Reserve Weapon", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Warrior Training", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Warrior Training", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Warrior Training", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Warrior Training", Owner.YOU));
@@ -91,8 +91,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Enrage", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Enrage", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Aldon the Brave", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Aldon the Brave", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Enrage", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Enrage", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.YOU));
@@ -173,6 +173,12 @@ public class GameState {
     public List<Card> currentEnemyHandBasedOnPhase() {
         if (GamePhase.YOU_ACTION.equals(gamePhase)) return getEnemyHand();
         if (GamePhase.ENEMY_ACTION.equals(gamePhase)) return getYourHand();
+        return new LinkedList<>();
+    }
+
+    public List<Card> currentYourHandBasedOnPhase() {
+        if (GamePhase.YOU_ACTION.equals(gamePhase)) return getYourHand();
+        if (GamePhase.ENEMY_ACTION.equals(gamePhase)) return getEnemyHand();
         return new LinkedList<>();
     }
 
