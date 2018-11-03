@@ -1,5 +1,6 @@
 package edu.bator.ui.cards;
 
+import edu.bator.cards.Attachment;
 import edu.bator.cards.Card;
 import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
@@ -52,6 +53,7 @@ public class CardPainter {
 
         buildWeaponText(card, tooltipBuilder, gameState);
         buildArmorText(card, tooltipBuilder, gameState);
+        buildAttachmentText(card, tooltipBuilder);
 
         String tooltipText = tooltipBuilder.toString();
 
@@ -118,8 +120,17 @@ public class CardPainter {
                     .toString();
             gridPane.add(new Label(effectsString.substring(1, effectsString.length() - 1)), 0, 4, 2, 1);
         }
-        //end row 5
 
+        //row 6
+        if (!card.getAttachments().isEmpty()) {
+            String attachments = card.getAttachments()
+                    .stream()
+                    .map(Attachment::getName)
+                    .collect(Collectors.toList())
+                    .toString();
+            gridPane.add(new Label("Attached: " + attachments.substring(1, attachments.length() - 1)), 0, 5, 2, 1);
+        }
+        //end row 6
         if (gameState.cardIsInHand(card) && GameEngine.SACRIFICE_PHASES
                 .contains(gameState.getGamePhase())) {
             gridPane.setOnMouseClicked(new CardSacrificeClickedEvent(card, gameState));
@@ -132,6 +143,18 @@ public class CardPainter {
             gridPane.setBorder(LIGHTGREEN_BORDER);
         }
         return gridPane;
+    }
+
+    private void buildAttachmentText(Card card, StringBuilder text) {
+        Optional.ofNullable(card.getAttachments()).ifPresent(attachments -> {
+            attachments.forEach(attachment -> {
+                text
+                        .append("\nAttachment: ")
+                        .append(attachment.getName())
+                        .append(" ")
+                        .append(attachment.getDescription());
+            });
+        });
     }
 
     private void buildWeaponText(Card card, StringBuilder text, GameState gameState) {

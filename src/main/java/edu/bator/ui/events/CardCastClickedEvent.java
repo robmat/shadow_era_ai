@@ -34,7 +34,7 @@ public class CardCastClickedEvent implements EventHandler<MouseEvent> {
             if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
                 if (card.cardIsSupport()) {
                     handleSupportCast();
-                } else if (card.cardIsAnAbility()) {
+                } else if (card.cardIsAnAbility() && !card.cardIsAttachment()) {
                     handleAbilityCast();
                 } else if (card.cardIsAttachment()) {
                     handleAttachmentCast();

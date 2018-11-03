@@ -40,7 +40,7 @@ public class Attachment extends Card {
                         EventHandler<MouseEvent> onMouseClicked = new AttachmentTargetClickedEvent(gameState, card, stage, this);
                         CardUiHelper.paintCardOnDialogGridPane(gameState, gridPane, index, card, onMouseClicked);
                     });
-        });
+        }, gameState);
     }
 
 

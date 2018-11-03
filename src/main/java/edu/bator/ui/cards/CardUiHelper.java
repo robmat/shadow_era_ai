@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 public class CardUiHelper {
 
-    public static void showDialog(BiConsumer<Stage, GridPane> consumer) {
+    public static void showDialog(BiConsumer<Stage, GridPane> consumer, GameState gameState) {
         Stage dialog = new Stage();
         dialog.initOwner(EntryPoint.primaryStage);
         dialog.initModality(Modality.APPLICATION_MODAL);
@@ -24,6 +24,11 @@ public class CardUiHelper {
         Scene scene = new Scene(cardsGrid);
         dialog.setScene(scene);
         consumer.accept(dialog, cardsGrid);
+        dialog.setOnCloseRequest(event -> {
+            gameState.setAbilitySource(null);
+            gameState.resetPossibleAbiltyTargets();
+            gameState.resetPossibleAttackTargets();
+        });
         dialog.showAndWait();
     }
 
@@ -32,6 +37,6 @@ public class CardUiHelper {
                 .paint(card, gridPane, index.getAndIncrement(), gameState);
         Button button = new Button("Target");
         button.setOnMouseClicked(onMouseClicked);
-        cardGrid.add(button, 0, 2);
+        cardGrid.add(button, 0, 3, 2, 1);
     }
 }

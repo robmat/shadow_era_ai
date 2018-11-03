@@ -60,7 +60,7 @@ public class SmashingBlow extends Ability {
                         CardUiHelper.paintCardOnDialogGridPane(gameState, gridPane, index, card, smashingBlowClickedEvent);
                     });
         };
-        CardUiHelper.showDialog(consumer);
+        CardUiHelper.showDialog(consumer, gameState);
     }
 
     private class SmashingBlowClickedEvent implements EventHandler<MouseEvent> {

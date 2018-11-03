@@ -65,7 +65,7 @@ public class ReserveWeapon extends Artifact {
     @Override
     public void abilityClickEvent(GameState gameState) {
         BiConsumer<Stage, GridPane> consumer = (d, g) -> paintUi(gameState, d, g);
-        CardUiHelper.showDialog(consumer);
+        CardUiHelper.showDialog(consumer, gameState);
     }
 
     private void paintUi(GameState gameState, Stage dialog, GridPane cardsGrid) {
