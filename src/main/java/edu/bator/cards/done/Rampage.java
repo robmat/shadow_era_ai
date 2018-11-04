@@ -30,7 +30,7 @@ public class Rampage extends Attachment {
             healTwoHp(gs, you, yourHero);
 
             Card enemyHero = gs.getEnemyHero();
-            boolean enemy = enemyHero.getAttachments().contains(this) &&
+            boolean enemy = enemyHero.getAttachments().contains(this) &
                     gs.getYourGraveyard().contains(card);
             healTwoHp(gs, enemy, enemyHero);
         }
