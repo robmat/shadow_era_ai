@@ -79,11 +79,11 @@ public class GameState {
             yourDeck.add(allCardsSet.cloneByName("Birgitte Skullborn", Owner.YOU));
         }
 
-        enemyHand.add(allCardsSet.cloneByName("Snow Sapphire", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Snow Sapphire", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Warrior Training", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Warrior Training", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Rampage", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Rampage", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Warrior Training", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Warrior Training", Owner.YOU));

@@ -42,7 +42,6 @@ public class Card implements Cloneable {
     Integer baseAttack;
     Integer baseDefence;
     Integer initialHp;
-    @Getter(value = AccessLevel.PRIVATE)
     Integer currentHp;
     Integer shadowEnergy = 0;
 
@@ -105,7 +104,7 @@ public class Card implements Cloneable {
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException(e);
         }
-        this.availableForHeroClasses = cloneFrom.availableForHeroClasses;
+        this.availableForHeroClasses = new HashSet<>(cloneFrom.availableForHeroClasses);
         this.unique = cloneFrom.unique;
         this.owner = cloneFrom.owner;
         this.attachments = new HashSet<>(cloneFrom.attachments);
@@ -126,6 +125,7 @@ public class Card implements Cloneable {
         clone.setUniqueId(UUID.randomUUID().toString());
         clone.setEffects(new LinkedList<>(effects));
         clone.setAvailableForHeroClasses(new HashSet<>(availableForHeroClasses));
+        clone.setAttachments(new HashSet<>(attachments));
         return clone;
     }
 
@@ -281,6 +281,10 @@ public class Card implements Cloneable {
     }
 
     public Integer getCurrentHp(GameState gameState) {
+        return Optional.ofNullable(currentHp).orElse(initialHp);
+    }
+
+    public Integer currentHpWithoutBonus() {
         return Optional.ofNullable(currentHp).orElse(initialHp);
     }
 

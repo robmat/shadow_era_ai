@@ -25,11 +25,14 @@ public class Attachment extends Card {
 
     @Override
     public void determineCastable(GameState gameState) {
-        setCastable(
-                gameState.allCardsInPlay()
-                        .stream()
-                        .anyMatch(c -> ableToApplyAbilityTo(c, gameState))
-        );
+        super.determineCastable(gameState);
+        if (isCastable()) {
+            setCastable(
+                    gameState.allCardsInPlay()
+                            .stream()
+                            .anyMatch(c -> ableToApplyAbilityTo(c, gameState))
+            );
+        }
     }
 
     @Override
@@ -59,20 +62,22 @@ public class Attachment extends Card {
         GameState gameState;
         Card target;
         Stage stage;
-        Attachment attachmen;
+        Attachment attachment;
 
-        AttachmentTargetClickedEvent(GameState gameState, Card target, Stage stage, Attachment attachmen) {
+        AttachmentTargetClickedEvent(GameState gameState, Card target, Stage stage, Attachment attachment) {
             this.gameState = gameState;
             this.target = target;
             this.stage = stage;
-            this.attachmen = attachmen;
+            this.attachment = attachment;
         }
 
         @Override
         public void handle(MouseEvent event) {
             target.getAttachments().add(Attachment.this);
             new GameEngine().decreaseCurrentPlayerResources(gameState, getResourceCost());
-            new GameEngine().moveToGraveYard(Attachment.this, gameState);
+            if (!gameState.currentYourHandBasedOnPhase().remove(Attachment.this)) {
+                throw new IllegalStateException("Attachment casted but not in casters hand?");
+            }
             gameState.currentYourHandBasedOnPhase().forEach(card -> card.determineCastable(gameState));
             stage.close();
         }

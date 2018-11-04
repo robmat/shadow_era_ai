@@ -1,111 +1,403 @@
-2018-11-03 21:50:02 INFO            edu.bator.EntryPoint:  46 - Starting.
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BorisSkullcrusher
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Mournblade
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BorisSkullcrusher
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Mournblade
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.WarriorTraining
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.WarriorTraining
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.WarriorTraining
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.WarriorTraining
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.CripplingBlow
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.CripplingBlow
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Enrage
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Enrage
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2018-11-03 21:50:04 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2018-11-03 21:50:04 INFO        edu.bator.game.GameState: 100 - Init done.
-2018-11-03 21:50:18 INFO       edu.bator.game.GameEngine: 128 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='f303a268-3345-4958-915f-20ca383f61b6'}
-2018-11-03 21:50:18 INFO            edu.bator.EntryPoint: 105 - Started.
-2018-11-03 21:50:27 DEBUG           edu.bator.EntryPoint: 112 - Game loaded.
-2018-11-03 21:50:31 INFO  ui.events.CardCastClickedEvent:  94 - Casted: CripplingBlow{baseAttack=null, initialHp=null, owner=YOU, uniqueId='c37a2558-c48d-4751-b088-f4d8804fd58e'}
-2018-11-03 21:50:38 DEBUG           edu.bator.EntryPoint: 112 - Game loaded.
-2018-11-03 21:50:41 INFO       edu.bator.game.GameEngine: 128 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='2129124f-badb-40ac-a2da-71925d0be06e'}
-2018-11-03 21:50:41 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: SnowSapphire{baseAttack=null, initialHp=4, owner=ENEMY, uniqueId='1a35a3f2-437f-4615-901a-04b64d32035d'}
-2018-11-03 21:50:42 INFO  ui.events.CardCastClickedEvent:  94 - Casted: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='2129124f-badb-40ac-a2da-71925d0be06e'}
-2018-11-03 21:50:43 INFO       edu.bator.game.GameEngine: 128 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='ce515aed-b74e-4cc6-89b1-6ea18d618e75'}
-2018-11-03 21:50:44 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='ce515aed-b74e-4cc6-89b1-6ea18d618e75'}
-2018-11-03 21:50:49 INFO  ui.events.CardCastClickedEvent:  94 - Casted: CripplingBlow{baseAttack=null, initialHp=null, owner=YOU, uniqueId='c37a2558-c48d-4751-b088-f4d8804fd58e'}
+2018-11-04 12:06:15 INFO            edu.bator.EntryPoint:  46 - Starting.
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BorisSkullcrusher
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Mournblade
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BorisSkullcrusher
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Mournblade
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ArmoredSandworm
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ArmoredSandworm
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Rampage
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Rampage
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.WarriorTraining
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.WarriorTraining
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.CripplingBlow
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.CripplingBlow
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Enrage
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Enrage
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2018-11-04 12:06:16 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2018-11-04 12:06:16 INFO        edu.bator.game.GameState: 100 - Init done.
+2018-11-04 12:06:16 INFO       edu.bator.game.GameEngine: 128 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='74798e59-dcc1-4dad-9cc6-90aa158eb732'}
+2018-11-04 12:06:16 INFO            edu.bator.EntryPoint: 105 - Started.
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:19 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:20 DEBUG           edu.bator.EntryPoint: 112 - Game loaded.
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:23 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:23 INFO  r.ui.events.AttackClickedEvent:  32 - JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'} ready to attack.
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:24 INFO  vents.AttackTargetClickedEvent:  35 - BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='521d0f33-0952-4434-993b-17af09c86286'} attacked JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:24 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:27 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:27 INFO  r.ui.events.AttackClickedEvent:  32 - ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'} ready to attack.
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:28 INFO  vents.AttackTargetClickedEvent:  35 - BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='b10754a1-0160-43ec-874c-1d944f87e0df'} attacked ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='00699b95-01e7-41ee-802a-cc017ad8281f'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='1c2bf81a-e561-4e3c-a796-02c500ef4186'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='9efb5fc3-0b68-4a31-8501-a84aee48144d'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='482e073f-039d-4745-9186-86a2ea3a6d95'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='205ea18d-2d21-4ccd-a4e4-2f8220e163f5'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=ENEMY, uniqueId='f7046997-7979-4ee6-9c54-cdee58f9733d'}, attachments [Rampage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='73a93cba-061f-412c-a963-1d3d550fb280'}, Enrage{baseAttack=null, initialHp=null, owner=ENEMY, uniqueId='5f53e2a7-1ae8-4798-918d-2408c147eb01'}], bonus 10
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=ENEMY, uniqueId='2ba470c4-05aa-412b-b072-af82d5ed8dcf'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=ENEMY, uniqueId='f93e9ce3-0e27-4db2-8da8-a609a99ede70'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=ENEMY, uniqueId='ab70b4cf-709b-4f34-9205-9191f8584ee0'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BirgitteSkullborn{baseAttack=0, initialHp=2, owner=YOU, uniqueId='2a1443d2-bc21-4ef0-959c-64bcf0901d21'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 10
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card BorisSkullcrusher{baseAttack=null, initialHp=30, owner=YOU, uniqueId='49976938-e06d-447d-b1b7-59ebb75729e3'}, attachments [Enrage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='2c74001b-1bc7-47cb-b0b9-54c62bcb56ea'}, Rampage{baseAttack=null, initialHp=null, owner=YOU, uniqueId='47af6eca-ee4d-463a-9910-05e398e7b346'}], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card JasmineRosecult{baseAttack=3, initialHp=4, owner=YOU, uniqueId='6b7dc34d-109f-400f-9401-2f0c9a3296f4'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0
+2018-11-04 12:06:28 DEBUG    edu.bator.cards.done.Enrage:  34 - card ArmoredSandworm{baseAttack=2, initialHp=5, owner=YOU, uniqueId='0797b57c-9e2b-46f2-8c2a-2e1887b4bc55'}, attachments [], bonus 0

@@ -38,7 +38,7 @@ public class ShieldBash extends Ability {
     public void applyAbility(Card target, GameState gameState) {
         BiConsumer<Card, GameState> abilityFunction = (target1, gameState1) -> {
             if (target1.cardIsAnAlly() && Objects.nonNull(target1.getCurrentHp(gameState))) {
-                target1.setCurrentHp(target1.getCurrentHp(gameState) - 3);
+                target1.setCurrentHp(target1.currentHpWithoutBonus() - 3);
             }
         };
         target.abilityAppliedToMe(abilityFunction, gameState);

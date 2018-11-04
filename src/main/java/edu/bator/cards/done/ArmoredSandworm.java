@@ -23,19 +23,21 @@ public class ArmoredSandworm extends Ally {
 
     @Override
     public void attackedBy(BiConsumer<GameState, Card> attackEvent, Card source, GameState gameState) {
-        Integer hpBefore = getCurrentHp(gameState);
+        int hpBefore = getCurrentHp(gameState);
+        int hpWithoutBonusBefore = currentHpWithoutBonus();
         super.attackedBy(attackEvent, source, gameState);
         if (getCurrentHp(gameState) < hpBefore) {
-            setCurrentHp(hpBefore - getCurrentHp(gameState) > ARMOR ? getCurrentHp(gameState) + ARMOR : hpBefore);
+            setCurrentHp(hpBefore - getCurrentHp(gameState) > ARMOR ? currentHpWithoutBonus() + ARMOR : hpWithoutBonusBefore);
         }
     }
 
     @Override
     public void abilityAppliedToMe(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {
         int hpBefore = getCurrentHp(gameState);
+        int hpWithoutBonusBefore = currentHpWithoutBonus();
         super.abilityAppliedToMe(abilityFunction, gameState);
         if (hpBefore > getCurrentHp(gameState)) {
-            setCurrentHp(hpBefore - getCurrentHp(gameState) > ARMOR ? getCurrentHp(gameState) + ARMOR : hpBefore);
+            setCurrentHp(hpBefore - getCurrentHp(gameState) > ARMOR ? currentHpWithoutBonus() + ARMOR : hpWithoutBonusBefore);
         }
     }
 }

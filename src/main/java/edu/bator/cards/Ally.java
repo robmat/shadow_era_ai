@@ -18,9 +18,9 @@ public class Ally extends Card {
 
     public void attackTarget(GameState gameState, Card target) {
         Card attackSource = this;
-        BiConsumer<GameState, Card> attackEvent = (gameState1, card) -> {
-            if (nonNull(attackSource.getAttack(gameState1)) && nonNull(target.getCurrentHp(gameState))) {
-                target.setCurrentHp(target.getCurrentHp(gameState) - attackSource.getAttack(gameState1));
+        BiConsumer<GameState, Card> attackEvent = (stateOfTheGame, card) -> {
+            if (nonNull(attackSource.getAttack(stateOfTheGame)) && nonNull(target.getCurrentHp(gameState))) {
+                target.setCurrentHp(target.currentHpWithoutBonus() - attackSource.getAttack(stateOfTheGame));
             }
         };
         attackTarget(attackEvent, target, gameState);
@@ -32,4 +32,8 @@ public class Ally extends Card {
         return attack < 0 ? 0 : attack;
     }
 
+    @Override
+    public Integer getCurrentHp(GameState gameState) {
+        return super.getCurrentHp(gameState) + BonusUtil.hpBonus(gameState, this);
+    }
 }
