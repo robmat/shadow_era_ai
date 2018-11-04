@@ -16,7 +16,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class AllDoneAttachmentsShouldHaveItemSubTypeAttachment {
+public class AllDoneAttachmentsShouldHaveItemSubTypeAttachmentTest {
 
     @Test
     public void shouldTest() throws IOException, ClassNotFoundException {

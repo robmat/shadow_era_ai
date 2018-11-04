@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AllDoneCardsHaveToHaveNoArgConstructor {
+public class AllDoneCardsHaveToHaveNoArgConstructorTest {
 
   @Test
   public void shouldTest() throws IOException, ClassNotFoundException {
