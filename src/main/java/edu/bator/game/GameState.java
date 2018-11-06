@@ -82,8 +82,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Rampage", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Rampage", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Cover of Night", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Cover of Night", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Warrior Training", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Warrior Training", Owner.YOU));

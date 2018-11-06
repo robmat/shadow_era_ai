@@ -49,7 +49,7 @@ public class CardPainter {
                 .append(" Cost: ")
                 .append(nullToEmpty(card.getResourceCost() + ""))
                 .append(" ")
-                .append(card.getAbilities().isEmpty() ? "" : card.getAbilities());
+                .append(card.getAbilities(gameState).isEmpty() ? "" : card.getAbilities(gameState));
 
         buildWeaponText(card, tooltipBuilder, gameState);
         buildArmorText(card, tooltipBuilder, gameState);

@@ -1984,7 +1984,7 @@
     "side": "HUMAN",
     "heroClass": null,
     "description": "Friendly allies have stealth (they can't be attacked) for the next 2 turns.",
-    "cardType": "ABILITY",
+    "cardType": "SUPPORT",
     "resourceCost": 3,
     "baseAttack": null,
     "initialHp": null,

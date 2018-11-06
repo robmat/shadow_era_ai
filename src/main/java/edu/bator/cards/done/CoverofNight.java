@@ -1,38 +1,29 @@
 package edu.bator.cards.done;
 
+import java.util.Set;
+
 import edu.bator.cards.Card;
 import edu.bator.cards.Expirable;
 import edu.bator.cards.Support;
+import edu.bator.cards.enums.CardEnums;
 import edu.bator.cards.util.SupportExpireUtil;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.apache.log4j.Logger;
-
-import static java.lang.String.format;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class ValiantDefender extends Support implements Expirable {
-
-    private static final Logger log = Logger.getLogger(ValiantDefender.class);
+public class CoverofNight extends Support implements Expirable {
 
     private int turnExpires;
     private GamePhase phaseExpires;
 
-    public ValiantDefender() {
+    public CoverofNight() {
     }
 
-
-
-    public ValiantDefender(Card cloneFrom) {
+    public CoverofNight(Card cloneFrom) {
         super(cloneFrom);
-    }
-
-    @Override
-    public void supportIsCast(GameState gameState) {
-        super.supportIsCast(gameState);
     }
 
     @Override
@@ -42,12 +33,13 @@ public class ValiantDefender extends Support implements Expirable {
     }
 
     @Override
-    protected boolean influenceAttackTargetPossible(Card target, Card attackSource, GameState gameState) {
-        if ((gameState.getYourSupport().contains(this) && gameState.getYourAllies().contains(target)) ||
-                (gameState.getEnemySupport().contains(this) && gameState.getEnemyAllies().contains(target))) {
-            return false;
+    public void modifiesAbilities(Set<CardEnums.Ability> abilities, Card card, GameState gameState) {
+        if (gameState.getYourSupport().contains(this) && gameState.getYourAllies().contains(card)) {
+            abilities.add(CardEnums.Ability.STEALTH);
         }
-        return true;
+        if (gameState.getEnemySupport().contains(this) && gameState.getEnemyAllies().contains(card)) {
+            abilities.add(CardEnums.Ability.STEALTH);
+        }
     }
 
     @Override

@@ -49,9 +49,6 @@ public class Attachment extends Card {
         }, gameState);
     }
 
-    public void modifiesAbilities(Set<CardEnums.Ability> abilities) {
-    }
-
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
         return card.getAttachments().stream().noneMatch(attachment -> Objects.equals(getName(), attachment.getName()));

@@ -10,13 +10,13 @@ import java.util.stream.Collectors;
 import edu.bator.cards.AllCardsSet;
 import edu.bator.cards.Attachment;
 import edu.bator.cards.Card;
+import edu.bator.cards.Support;
 import edu.bator.cards.enums.CardEnums;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
-public class AllDoneAttachmentsShouldHaveItemSubTypeAttachmentTest {
+public class AllDoneSupportsShouldHaveTypeSupportTest {
 
     @Test
     public void shouldTest() throws IOException, ClassNotFoundException {
@@ -25,8 +25,8 @@ public class AllDoneAttachmentsShouldHaveItemSubTypeAttachmentTest {
         for (Card card : allCardsSet.getAllCards()) {
             for (Path file : files) {
                 Class<?> clazz = Class.forName(file.toString().replace("src\\main\\java\\", "").replace(".java", "").replace("\\", "."));
-                if (card instanceof Attachment && clazz.getSimpleName().equals(card.getName().replaceAll("[ :'!,-]", ""))) {
-                    assertEquals(card.getName() + " should have sub type attachment.", card.getItemSubType(), CardEnums.ItemSubType.ATTACHMENT);
+                if (card instanceof Support && clazz.getSimpleName().equals(card.getName().replaceAll("[ :'!,-]", ""))) {
+                    assertEquals(card.getName() + " should of support type.", card.getCardType(), CardEnums.CardType.SUPPORT);
                 }
             }
         }

@@ -27,7 +27,9 @@ public class WarriorTraining extends Attachment {
     }
 
     @Override
-    public void modifiesAbilities(Set<CardEnums.Ability> abilities) {
-        abilities.add(CardEnums.Ability.PROTECTOR);
+    public void modifiesAbilities(Set<CardEnums.Ability> abilities, Card card, GameState gameState) {
+        if (card.getAttachments().contains(this)) {
+            abilities.add(CardEnums.Ability.PROTECTOR);
+        }
     }
 }

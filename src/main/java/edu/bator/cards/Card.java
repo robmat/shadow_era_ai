@@ -6,17 +6,13 @@ import edu.bator.cards.enums.Owner;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
-import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.util.*;
 import java.util.function.BiConsumer;
-import java.util.stream.Stream;
 
 import static edu.bator.cards.enums.CardEnums.Ability;
 import static edu.bator.cards.enums.CardEnums.*;
@@ -145,7 +141,7 @@ public class Card implements Cloneable {
     }
 
     public void calculatePossibleAttackTarget(Card attackSource, GameState gameState) {
-        boolean isNotStealth = !getAbilities().contains(Ability.STEALTH);
+        boolean isNotStealth = !getAbilities(gameState).contains(Ability.STEALTH);
         boolean possibleAllyTarget = calculatePossibleTargetProtectorIncluded(gameState) && isNotStealth;
         boolean askOtherCards = askOtherCards(attackSource, gameState);
 
@@ -174,8 +170,8 @@ public class Card implements Cloneable {
         boolean otherAllyHasProtector = gameState.currentEnemyHeroAndAlliesBasedOnPhase()
                 .stream()
                 .filter(card1 -> !Objects.equals(card1, this))
-                .anyMatch(card1 -> card1.getAbilities().contains(Ability.PROTECTOR));
-        boolean hasProtector = card.getAbilities().contains(Ability.PROTECTOR);
+                .anyMatch(card1 -> card1.getAbilities(gameState).contains(Ability.PROTECTOR));
+        boolean hasProtector = card.getAbilities(gameState).contains(Ability.PROTECTOR);
         boolean isAllyWithProtector = card.cardIsAnAlly() && hasProtector;
         boolean isAllyAndNoOtherHasProtector = card.cardIsAnAlly() && !otherAllyHasProtector;
 
@@ -309,11 +305,15 @@ public class Card implements Cloneable {
     public void abilityClickEvent(GameState gameState) {
     }
 
-    public Set<Ability> getAbilities() {
+    public Set<Ability> getAbilities(GameState gameState) {
         Set<Ability> abilities = new HashSet<>(this.abilities);
-        getAttachments().forEach(attachment -> attachment.modifiesAbilities(abilities));
+        gameState.allCardsInPlay().forEach(card -> card.modifiesAbilities(abilities, this, gameState));
         return abilities;
     }
+
+    public void modifiesAbilities(Set<Ability> abilities, Card card, GameState gameState) {
+    }
+
 
     @Override
     public boolean equals(Object o) {
