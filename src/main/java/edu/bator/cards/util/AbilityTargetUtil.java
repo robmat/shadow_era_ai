@@ -5,8 +5,13 @@ import edu.bator.game.GameState;
 
 public class AbilityTargetUtil {
 
-    public boolean standardAllyTargetedAbilityProtectorIncluded(Card target, GameState gameState, Card source) {
-        boolean possibleAllyTarget = source.calculatePossibleTargetProtectorIncluded(target, gameState);
+    public static boolean standardEnemyAllyTargetedAbilityProtectorIncluded(Card target, GameState gameState, Card source) {
+        boolean possibleAllyTarget = source.calculatePossibleEnemyTargetProtectorIncluded(target, gameState);
         return target.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(target) && possibleAllyTarget;
+    }
+
+    public static boolean standardYourAllyTargetedAbilityProtectorIncluded(Card target, GameState gameState, Card source) {
+        boolean possibleAllyTarget = source.calculatePossibleAllyTargetProtectorIncluded(target, gameState);
+        return target.cardIsAnAlly() && gameState.currentYourAlliesBasedOnPhase().contains(target) && possibleAllyTarget;
     }
 }

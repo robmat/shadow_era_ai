@@ -30,7 +30,7 @@ public class MarshlandSentinel extends Ally {
 
     @Override
     public boolean ableToApplyAbilityTo(Card target, GameState gameState) {
-        return new AbilityTargetUtil().standardAllyTargetedAbilityProtectorIncluded(target, gameState, this);
+        return AbilityTargetUtil.standardEnemyAllyTargetedAbilityProtectorIncluded(target, gameState, this);
     }
 
     @Override

@@ -91,8 +91,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Crippling Blow", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Crippling Blow", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Blood Frenzy", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Blood Frenzy", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Retreat!", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Retreat!", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.YOU));

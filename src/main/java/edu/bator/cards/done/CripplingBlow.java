@@ -22,7 +22,7 @@ public class CripplingBlow extends Attachment {
 
     @Override
     public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        boolean possibleAllyTarget = calculatePossibleTargetProtectorIncluded(card, gameState);
+        boolean possibleAllyTarget = calculatePossibleEnemyTargetProtectorIncluded(card, gameState);
         return super.ableToApplyAbilityTo(card, gameState) &&
                 card.cardIsAnAlly() &&
                 possibleAllyTarget &&

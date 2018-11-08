@@ -2,6 +2,7 @@ package edu.bator.cards;
 
 import edu.bator.EntryPoint;
 import edu.bator.cards.effects.Effect;
+import edu.bator.cards.enums.CardEnums;
 import edu.bator.cards.enums.Owner;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
@@ -163,11 +164,21 @@ public class Card implements Cloneable {
     }
 
     private boolean calculatePossibleTargetProtectorIncluded(GameState gameState) {
-        return calculatePossibleTargetProtectorIncluded(this, gameState);
+        return calculatePossibleEnemyTargetProtectorIncluded(this, gameState);
     }
 
-    public boolean calculatePossibleTargetProtectorIncluded(Card card, GameState gameState) {
-        boolean otherAllyHasProtector = gameState.currentEnemyHeroAndAlliesBasedOnPhase()
+    public boolean calculatePossibleEnemyTargetProtectorIncluded(Card card, GameState gameState) {
+        List<Card> enemyAllies = gameState.currentEnemyHeroAndAlliesBasedOnPhase();
+        return calculatePossibleTargetProtectorIncluded(card, gameState, enemyAllies);
+    }
+
+    public boolean calculatePossibleAllyTargetProtectorIncluded(Card card, GameState gameState) {
+        List<Card> yourAllies = gameState.currentYourAlliesBasedOnPhase();
+        return calculatePossibleTargetProtectorIncluded(card, gameState, yourAllies);
+    }
+
+    private boolean calculatePossibleTargetProtectorIncluded(Card card, GameState gameState, List<Card> allies) {
+        boolean otherAllyHasProtector = allies
                 .stream()
                 .filter(card1 -> !Objects.equals(card1, this))
                 .anyMatch(card1 -> card1.getAbilities(gameState).contains(Ability.PROTECTOR));
@@ -175,7 +186,7 @@ public class Card implements Cloneable {
         boolean isAllyWithProtector = card.cardIsAnAlly() && hasProtector;
         boolean isAllyAndNoOtherHasProtector = card.cardIsAnAlly() && !otherAllyHasProtector;
 
-        return isAllyWithProtector || isAllyAndNoOtherHasProtector;
+        return (isAllyWithProtector || isAllyAndNoOtherHasProtector) && allies.contains(card);
     }
 
     public boolean cardIsAnAlly() {
