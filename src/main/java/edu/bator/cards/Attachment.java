@@ -54,6 +54,10 @@ public class Attachment extends Card {
         return card.getAttachments().stream().noneMatch(attachment -> Objects.equals(getName(), attachment.getName()));
     }
 
+    public int armorModifier() {
+        return 0;
+    }
+
     private class AttachmentTargetClickedEvent implements EventHandler<MouseEvent> {
 
         GameState gameState;
@@ -76,6 +80,8 @@ public class Attachment extends Card {
                 throw new IllegalStateException("Attachment casted but not in casters hand?");
             }
             gameState.currentYourHandBasedOnPhase().forEach(card -> card.determineCastable(gameState));
+            gameState.resetPossibleAbiltyTargets();
+            gameState.resetPossibleAttackTargets();
             stage.close();
         }
     }

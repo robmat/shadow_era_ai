@@ -1,5 +1,6 @@
 package edu.bator.cards;
 
+import edu.bator.cards.util.ArmorUtil;
 import edu.bator.cards.util.BonusUtil;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
@@ -20,7 +21,7 @@ public class Ally extends Card {
         Card attackSource = this;
         BiConsumer<GameState, Card> attackEvent = (stateOfTheGame, card) -> {
             if (nonNull(attackSource.getAttack(stateOfTheGame)) && nonNull(target.getCurrentHp(gameState))) {
-                target.setCurrentHp(target.currentHpWithoutBonus() - attackSource.getAttack(stateOfTheGame));
+                target.setCurrentHp(target.currentHpWithoutBonus() - ArmorUtil.attachmentModifiesAttack(target, attackSource, gameState));
             }
         };
         attackTarget(attackEvent, target, gameState);
