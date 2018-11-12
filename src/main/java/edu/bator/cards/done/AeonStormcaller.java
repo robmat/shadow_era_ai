@@ -50,5 +50,6 @@ public class AeonStormcaller extends Ally {
         target.setCurrentHp(target.currentHpWithoutBonus() + 1);
         target.setBaseAttack(target.getBaseAttack() + 1);
         new GameEngine().decreaseCurrentPlayerResources(gameState, 3);
+        super.applyAbility(target, gameState);
     }
 }

@@ -267,6 +267,7 @@ public class Card implements Cloneable {
     }
 
     public void applyAbility(Card target, GameState gameState) {
+        new GameEngine().determineCurrentHandCardsCastable(gameState);
     }
 
     public void abilityAppliedToMe(BiConsumer<Card, GameState> abilityFunction, GameState gameState) {

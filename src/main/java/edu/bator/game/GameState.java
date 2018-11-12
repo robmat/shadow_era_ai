@@ -75,8 +75,9 @@ public class GameState {
         yourHero.setArmor((Armor) allCardsSet.cloneByName("Snow Sapphire", Owner.YOU));
 
         for (int i = 0; i < 40; i++) {
-            enemyDeck.add(allCardsSet.cloneByName("Birgitte Skullborn", Owner.ENEMY));
-            yourDeck.add(allCardsSet.cloneByName("Birgitte Skullborn", Owner.YOU));
+            String name = i % 2 == 1 ? "Jasmine Rosecult" : "Birgitte Skullborn";
+            enemyDeck.add(allCardsSet.cloneByName(name, Owner.ENEMY));
+            yourDeck.add(allCardsSet.cloneByName(name, Owner.YOU));
         }
 
         enemyHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.ENEMY));
@@ -85,8 +86,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Cover of Night", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Cover of Night", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Warrior Training", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Warrior Training", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Campfire Stories", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Campfire Stories", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Special Delivery", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Special Delivery", Owner.YOU));

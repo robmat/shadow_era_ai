@@ -24,7 +24,7 @@ public class GameEngine {
         switch (gameState.getGamePhase()) {
             case YOU_PREPARE: {
                 gameState.setCurrentTurn(gameState.getCurrentTurn() + 1);
-                pickACard(gameState.getYourDeck(), gameState.getYourHand());
+                pickACard(gameState.getYourDeck(), gameState.getYourHand(), gameState.getYourHero());
                 readyAllies(gameState.getEnemyAllies());
                 readyHero(gameState.getEnemyHero());
                 expireEffects(gameState);
@@ -51,7 +51,7 @@ public class GameEngine {
             }
 
             case ENEMY_PREPARE: {
-                pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand());
+                pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand(), gameState.getEnemyHero());
                 if (gameState.currentTurn != 1) {
                     readyAllies(gameState.getYourAllies());
                 }
@@ -121,11 +121,13 @@ public class GameEngine {
         hand.forEach(card -> card.determineCastable(gameState));
     }
 
-    public void pickACard(LinkedList<Card> deck, LinkedList<Card> hand) {
+    public void pickACard(LinkedList<Card> deck, LinkedList<Card> hand, Card hero) {
         if (!deck.isEmpty() && hand.size() < 7) {
             Card card = deck.poll();
             hand.push(card);
             log.info("Picked: " + card);
+        } else if (deck.isEmpty()) {
+            hero.setCurrentHp(hero.currentHpWithoutBonus() - 1);
         }
     }
 
@@ -197,6 +199,14 @@ public class GameEngine {
         }
         if (gameState.enemyAction()) {
             gameState.setEnemyCurrentResources(gameState.getEnemyCurrentResources() - resources);
+        }
+    }
+
+    public void determineCurrentHandCardsCastable(GameState gameState) {
+        if (gameState.enemyAction()) {
+            gameState.getEnemyHand().forEach(card -> card.determineCastable(gameState));
+        } else if (gameState.yourAction()) {
+            gameState.getYourHand().forEach(card -> card.determineCastable(gameState));
         }
     }
 }

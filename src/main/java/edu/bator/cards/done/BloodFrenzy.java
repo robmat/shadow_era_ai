@@ -29,12 +29,12 @@ public class BloodFrenzy extends Attachment {
         Card yourHero = gameState.getYourHero();
         if (GamePhase.YOU_PREPARE.equals(gameState.getGamePhase()) && yourHero.getAttachments().contains(this)) {
             yourHero.setCurrentHp(yourHero.currentHpWithoutBonus() - 1);
-            new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand());
+            new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand(), gameState.getYourHero());
         }
         Card enemyHero = gameState.getEnemyHero();
         if (GamePhase.ENEMY_PREPARE.equals(gameState.getGamePhase()) && enemyHero.getAttachments().contains(this)) {
             enemyHero.setCurrentHp(enemyHero.currentHpWithoutBonus() - 1);
-            new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand());
+            new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand(), gameState.getEnemyHero());
         }
     }
 }

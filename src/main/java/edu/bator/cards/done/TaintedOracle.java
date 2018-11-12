@@ -21,12 +21,12 @@ public class TaintedOracle extends Ally {
     public void cardHasDiedEvent(Card card, GameState gameState) {
         if (this.equals(card)) {
             if (this.getOwner().equals(Owner.YOU)) {
-                new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand());
-                new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand());
+                new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand(), gameState.getYourHero());
+                new GameEngine().pickACard(gameState.getYourDeck(), gameState.getYourHand(), gameState.getYourHero());
             }
             if (this.getOwner().equals(Owner.ENEMY)) {
-                new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand());
-                new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand());
+                new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand(), gameState.getEnemyHero());
+                new GameEngine().pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand(), gameState.getEnemyHero());
             }
         }
     }

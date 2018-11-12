@@ -47,5 +47,6 @@ public class ZoeSilversmith extends Ally {
             new GameEngine().decreaseCurrentPlayerResources(gameState, 2);
         };
         target.abilityAppliedToMe(abilityFunction, gameState);
+        super.applyAbility(target, gameState);
     }
 }
