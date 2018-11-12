@@ -1,26 +1,20 @@
 package edu.bator.cards.done;
 
-import edu.bator.EntryPoint;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BiConsumer;
+
 import edu.bator.cards.Artifact;
 import edu.bator.cards.Card;
 import edu.bator.cards.Weapon;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import edu.bator.game.GraveyardLinkedList;
-import edu.bator.ui.cards.CardPainter;
 import edu.bator.ui.cards.CardUiHelper;
 import javafx.event.EventHandler;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import lombok.EqualsAndHashCode;
-
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.BiConsumer;
-import java.util.function.Function;
 
 @EqualsAndHashCode(callSuper = true)
 public class ReserveWeapon extends Artifact {

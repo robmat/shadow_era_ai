@@ -1,5 +1,9 @@
 package edu.bator;
 
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.bator.cards.AllCardsSet;
 import edu.bator.game.GameEngine;
@@ -19,16 +23,16 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
-import javafx.scene.input.*;
+import javafx.scene.input.KeyCharacterCombination;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
+import javafx.scene.input.KeyCombination;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import lombok.Data;
 import org.apache.log4j.Logger;
-
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
 
 import static org.apache.log4j.Logger.getLogger;
 

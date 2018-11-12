@@ -1,13 +1,13 @@
 package edu.bator.cards;
 
+import java.util.Objects;
+import java.util.function.BiConsumer;
+
 import edu.bator.cards.util.BonusUtil;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
-import java.util.Objects;
-import java.util.function.BiConsumer;
 
 import static java.util.Objects.nonNull;
 import static java.util.Optional.ofNullable;

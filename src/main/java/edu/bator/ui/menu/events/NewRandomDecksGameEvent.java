@@ -1,5 +1,10 @@
 package edu.bator.ui.menu.events;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Random;
+
 import edu.bator.EntryPoint;
 import edu.bator.cards.Card;
 import edu.bator.cards.enums.Owner;
@@ -8,11 +13,6 @@ import edu.bator.game.GameState;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import org.apache.log4j.Logger;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Random;
 
 import static com.google.common.collect.Iterables.isEmpty;
 import static java.util.Objects.isNull;

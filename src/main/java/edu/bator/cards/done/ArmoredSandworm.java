@@ -1,11 +1,11 @@
 package edu.bator.cards.done;
 
+import java.util.function.BiConsumer;
+
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
-
-import java.util.function.BiConsumer;
 
 @EqualsAndHashCode(callSuper = true)
 public class ArmoredSandworm extends Ally {

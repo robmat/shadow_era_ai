@@ -1,8 +1,16 @@
 package edu.bator.cards;
 
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
+import java.util.UUID;
+import java.util.function.BiConsumer;
+
 import edu.bator.EntryPoint;
 import edu.bator.cards.effects.Effect;
-import edu.bator.cards.enums.CardEnums;
 import edu.bator.cards.enums.Owner;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
@@ -12,11 +20,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.*;
-import java.util.function.BiConsumer;
-
 import static edu.bator.cards.enums.CardEnums.Ability;
-import static edu.bator.cards.enums.CardEnums.*;
+import static edu.bator.cards.enums.CardEnums.AttackType;
+import static edu.bator.cards.enums.CardEnums.CardType;
+import static edu.bator.cards.enums.CardEnums.HeroClass;
+import static edu.bator.cards.enums.CardEnums.ItemSubType;
+import static edu.bator.cards.enums.CardEnums.Side;
 import static java.util.Objects.nonNull;
 
 @Data

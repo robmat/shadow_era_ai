@@ -1,10 +1,10 @@
 package edu.bator.cards.effects;
 
+import java.util.UUID;
+
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
 import lombok.Data;
-
-import java.util.UUID;
 
 @Data
 public abstract class Effect {

@@ -1,23 +1,32 @@
 package edu.bator.ui.cards;
 
+import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 import edu.bator.cards.Attachment;
 import edu.bator.cards.Card;
 import edu.bator.cards.effects.Effect;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
-import edu.bator.ui.events.*;
+import edu.bator.ui.events.AbilityClickedEvent;
+import edu.bator.ui.events.AbilityTargetClickedEvent;
+import edu.bator.ui.events.AttackClickedEvent;
+import edu.bator.ui.events.AttackTargetClickedEvent;
+import edu.bator.ui.events.CardCastClickedEvent;
+import edu.bator.ui.events.CardSacrificeClickedEvent;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
+import javafx.scene.layout.Border;
+import javafx.scene.layout.BorderStroke;
+import javafx.scene.layout.BorderStrokeStyle;
+import javafx.scene.layout.CornerRadii;
+import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-
-import java.util.Objects;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 import static com.google.common.base.Strings.nullToEmpty;
 

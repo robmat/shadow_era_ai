@@ -1,5 +1,8 @@
 package edu.bator.cards.done;
 
+import java.util.Objects;
+import java.util.Optional;
+
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.game.GamePhase;
@@ -8,9 +11,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
-
-import java.util.Objects;
-import java.util.Optional;
 
 @EqualsAndHashCode(callSuper = true)
 @Data

@@ -10,8 +10,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.apache.log4j.Logger;
 
-import static java.lang.String.format;
-
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class ValiantDefender extends Support implements Expirable {

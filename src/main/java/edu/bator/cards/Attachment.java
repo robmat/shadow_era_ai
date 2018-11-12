@@ -1,10 +1,8 @@
 package edu.bator.cards;
 
 import java.util.Objects;
-import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import edu.bator.cards.enums.CardEnums;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.cards.CardUiHelper;

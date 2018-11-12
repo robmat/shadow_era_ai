@@ -1,5 +1,7 @@
 package edu.bator.cards.done;
 
+import java.util.Objects;
+
 import edu.bator.cards.Ally;
 import edu.bator.cards.Card;
 import edu.bator.cards.util.PreventDuplicateCardUtil;
@@ -7,8 +9,6 @@ import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
-
-import java.util.Objects;
 
 @EqualsAndHashCode(callSuper = true)
 public class AeonStormcaller extends Ally {

@@ -1,5 +1,7 @@
 package edu.bator.ui;
 
+import java.util.LinkedList;
+
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
@@ -13,8 +15,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.LinkedList;
 
 @Data
 @NoArgsConstructor

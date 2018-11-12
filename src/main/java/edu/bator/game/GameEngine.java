@@ -1,14 +1,14 @@
 package edu.bator.game;
 
-import edu.bator.cards.Card;
-import org.apache.log4j.Logger;
-
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import edu.bator.cards.Card;
+import org.apache.log4j.Logger;
 
 import static java.lang.String.format;
 
