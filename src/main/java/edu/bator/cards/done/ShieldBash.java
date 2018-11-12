@@ -2,13 +2,9 @@ package edu.bator.cards.done;
 
 import edu.bator.cards.Ability;
 import edu.bator.cards.Card;
-import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
-import java.util.Objects;
-import java.util.function.BiConsumer;
 
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -36,15 +32,7 @@ public class ShieldBash extends Ability {
 
     @Override
     public void applyAbility(Card target, GameState gameState) {
-        BiConsumer<Card, GameState> abilityFunction = (target1, gameState1) -> {
-            if (target1.cardIsAnAlly() && Objects.nonNull(target1.getCurrentHp(gameState))) {
-                target1.setCurrentHp(target1.currentHpWithoutBonus() - 3);
-            }
-        };
-        target.abilityAppliedToMe(abilityFunction, gameState);
-        if (target.cardIsDead()) {
-            new GameEngine().cardDied(target, gameState);
-        }
-        new GameEngine().decreaseCurrentPlayerResources(gameState, 3);
+        applyAbilityDamage(target, gameState, 3);
     }
+
 }

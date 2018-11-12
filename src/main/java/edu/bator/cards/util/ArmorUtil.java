@@ -7,10 +7,18 @@ import edu.bator.game.GameState;
 public class ArmorUtil {
     public static int attachmentModifiesAttack(Card target, Card attackSource, GameState gameState) {
         int initialAttack = attackSource.getAttack(gameState);
+        return calculateDamage(target, initialAttack);
+    }
+
+    public static Integer attachmentModifiesAbilityDamage(Card target, int damage, GameState gameState) {
+        return calculateDamage(target, damage);
+    }
+
+    private static Integer calculateDamage(Card target, int damage) {
         int modifier = target.getAttachments().stream()
                 .map(Attachment::armorModifier)
                 .reduce(0, (a, b) -> a + b);
 
-        return modifier <= initialAttack ? initialAttack - modifier : 0;
+        return modifier <= damage ? damage - modifier : 0;
     }
 }

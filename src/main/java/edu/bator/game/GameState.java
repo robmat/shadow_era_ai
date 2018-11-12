@@ -88,8 +88,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Warrior Training", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Warrior Training", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Crippling Blow", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Crippling Blow", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Special Delivery", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Special Delivery", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Reinforced Armor", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Reinforced Armor", Owner.YOU));
