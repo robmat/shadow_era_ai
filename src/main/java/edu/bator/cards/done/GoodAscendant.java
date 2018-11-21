@@ -3,6 +3,7 @@ package edu.bator.cards.done;
 import edu.bator.cards.Artifact;
 import edu.bator.cards.Card;
 import edu.bator.cards.util.HealingUtil;
+import edu.bator.game.GameEngine;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
@@ -45,5 +46,11 @@ public class GoodAscendant extends Artifact {
                 gameState.getYourSupport().stream().anyMatch(c -> Objects.equals(c.getName(), "Evil Ascendant"));
 
         return you || enemy;
+    }
+
+    @Override
+    public void applyAbility(Card target, GameState gameState) { //TODO not tested, no evil ascendant yet
+        super.applyAbility(target, gameState);
+        new GameEngine().cardDied(target, gameState);
     }
 }
