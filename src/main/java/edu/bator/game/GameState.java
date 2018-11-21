@@ -92,8 +92,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Special Delivery", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Special Delivery", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Reinforced Armor", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Reinforced Armor", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Good Ascendant", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Good Ascendant", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.YOU));

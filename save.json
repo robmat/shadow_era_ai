@@ -1,5 +1,5 @@
 [ "edu.bator.game.GameState", {
-  "currentTurn": 5,
+  "currentTurn" : 6,
   "enemyHero" : [ "edu.bator.cards.done.BorisSkullcrusher", {
     "code" : "se001",
     "rarity" : "H",
@@ -13,7 +13,7 @@
     "baseDefence" : null,
     "initialHp" : 30,
     "currentHp" : 30,
-    "shadowEnergy": 5,
+    "shadowEnergy" : 6,
     "itemSubType" : null,
     "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ ] ],
@@ -50,16 +50,10 @@
       "effects" : [ "java.util.LinkedList", [ ] ],
       "weapon" : null,
       "armor" : null,
-      "availableForHeroClasses": [
-        "java.util.HashSet",
-        [
-          "PRIEST",
-          "WARRIOR"
-        ]
-      ],
+      "availableForHeroClasses" : [ "java.util.HashSet", [ "WARRIOR", "PRIEST" ] ],
       "owner" : "ENEMY",
       "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "accdeaca-00c9-4840-a888-2b93a4ffaca8"
+      "uniqueId" : "65534040-1b26-4d18-9c75-3e409d37e9df"
     } ],
     "armor" : [ "edu.bator.cards.done.SnowSapphire", {
       "code" : "se162",
@@ -90,12 +84,12 @@
       "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
       "owner" : "ENEMY",
       "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "4f5727d3-321e-44e4-8e11-7039e71bd1b8"
+      "uniqueId" : "4a1be094-e8e2-403f-947e-16260616c2d2"
     } ],
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-    "uniqueId": "0d516277-06ea-4e10-a64e-cd602f86af75"
+    "uniqueId" : "97dfc71d-36b7-4d75-a42e-7eed82ff8ce3"
   } ],
   "yourHero" : [ "edu.bator.cards.done.BorisSkullcrusher", {
     "code" : "se001",
@@ -110,7 +104,7 @@
     "baseDefence" : null,
     "initialHp" : 30,
     "currentHp" : 30,
-    "shadowEnergy": 4,
+    "shadowEnergy" : 5,
     "itemSubType" : null,
     "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ ] ],
@@ -147,16 +141,10 @@
       "effects" : [ "java.util.LinkedList", [ ] ],
       "weapon" : null,
       "armor" : null,
-      "availableForHeroClasses": [
-        "java.util.HashSet",
-        [
-          "PRIEST",
-          "WARRIOR"
-        ]
-      ],
+      "availableForHeroClasses" : [ "java.util.HashSet", [ "WARRIOR", "PRIEST" ] ],
       "owner" : "YOU",
       "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "8f9f8dde-118d-48dc-8bb9-491975bdc237"
+      "uniqueId" : "92068a71-9f27-4e25-a111-447de78b8f36"
     } ],
     "armor" : [ "edu.bator.cards.done.SnowSapphire", {
       "code" : "se162",
@@ -187,38 +175,30 @@
       "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
       "owner" : "YOU",
       "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "2a3b270a-ebed-4edd-8dd5-467f04f16dd3"
+      "uniqueId" : "d077cd06-263a-4172-b7bd-3b814832333e"
     } ],
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-    "uniqueId": "eb352f46-aaa4-46e1-8fa7-f017e4d1b900"
+    "uniqueId" : "f0cf4743-46e5-4c51-bbb9-ffe4d51724a4"
   } ],
-  "enemyDeck": [
-    "java.util.LinkedList",
-    [
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+  "enemyDeck" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "Protector (Allies without protector can't be targeted.)",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 1,
+    "baseAttack" : 0,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 2,
+    "currentHp" : 2,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -231,7 +211,37 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "0e72cc78-fd38-4777-bd71-8ea3259cd8f6"
+    "uniqueId" : "62fd811b-bbc7-464a-8b65-295e47580280"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "cardType" : "ALLY",
+    "resourceCost" : 3,
+    "baseAttack" : 3,
+    "baseDefence" : null,
+    "initialHp" : 4,
+    "currentHp" : 4,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "ENEMY",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "1e2f0e0c-a1ff-45cd-b66c-0519b8b70289"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -261,31 +271,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "20a677b9-d55d-427a-818a-79aa22a39f51"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "2a8011f0-a0a8-4500-9373-51d79adff248"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -298,7 +301,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "94a2d78d-bd40-4bc9-b8b6-a04d6aa684ed"
+    "uniqueId" : "a673fd19-d274-4aa4-a8cd-1f7743108823"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -328,31 +331,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "7129f266-8643-447c-8e97-9ffeee4ea76b"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "9d5e63a9-4709-4bd1-8388-71ce4daad6cd"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -365,7 +361,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "9a517c9d-670e-4329-920a-316836ae00d0"
+    "uniqueId" : "e5e82008-274d-4725-b4f9-e04806e1709b"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -395,31 +391,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "6c72ae29-9d11-4396-88fa-0d9d14a8ba0c"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "9006d46f-6343-47ea-b2ee-be4aa86415ed"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -432,7 +421,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "4d53daaa-c79a-475b-852f-f3a6819136f5"
+    "uniqueId" : "2556c381-3d90-40cf-b9d0-c5a1f1af4d92"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -462,31 +451,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "84338306-27d4-4df7-b240-99959f1fa45d"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "845bc104-ef5a-459b-8138-e64108c07e47"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -499,7 +481,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "544531d2-b216-40fe-9bdb-e8e251b81657"
+    "uniqueId" : "71001023-9b57-42c8-99ee-b196b31849a6"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -529,31 +511,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "3c1fbeb3-79be-430b-ae8f-d9e5123800b6"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "f6540833-4caa-41c8-84a1-b1ce5d3560a5"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -566,7 +541,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "74009276-3dff-48ab-8f80-13c1f89859d2"
+    "uniqueId" : "00b78359-d5cb-4481-9970-bdd889acf965"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -596,31 +571,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "da98e840-3dd7-4e3a-8348-111e8a3901f7"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "1280dc85-ab74-4e88-9d64-a600c57fc90f"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -633,7 +601,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "8188007b-e080-426a-99bc-665dc31d2a22"
+    "uniqueId" : "ebfd66ca-ce79-4e9e-b518-646abb8dc379"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -663,31 +631,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "c118ee66-8cfd-4648-ae13-fc93365debd7"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "50f4813d-9cc0-4abb-abc3-9eb37624d02a"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -700,7 +661,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "48e9acfa-b88d-4d6c-b2f1-d720ee9a59a1"
+    "uniqueId" : "4ef74976-2453-4dae-bfd9-77e1d5a5fb29"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -730,31 +691,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "c5275bab-fd17-4f4f-be60-2e5cbc741adf"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "070667f0-8dde-4fd2-a36f-53111c925294"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -767,7 +721,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "e35d8e36-f77f-42ff-9015-0b779a787d96"
+    "uniqueId" : "0d14a71e-e7ad-45f6-a1e2-8afd2113163a"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -797,31 +751,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "934d308d-072b-4b94-8eb0-b549394dd734"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "22eaf6c5-446e-4688-b002-8bf597cb9106"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -834,7 +781,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "ac35f4ca-d32b-4f06-ae5d-184558eec02c"
+    "uniqueId" : "23ce1a71-d8bb-4770-b11a-6d4bac2ec15d"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -864,31 +811,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "33325409-949f-4aac-9166-32129d7e3045"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "fbf48ed7-05e9-4a93-8ee1-fd6769938b4d"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -901,7 +841,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "d968f426-497e-414c-b353-d254b5bc5104"
+    "uniqueId" : "a236b3e8-7223-47ad-a823-5cc8b13c093d"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -931,53 +871,37 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "8b051280-c09c-42cb-b1df-0b12b82f1a3d"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
-          "side": "HUMAN",
-          "heroClass": null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
-          "cardType": "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
-          "baseDefence": null,
-          "initialHp": 4,
-          "currentHp": 4,
-          "shadowEnergy": 0,
-          "itemSubType": null,
-          "attackType": "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
-          "attackReadied": false,
-          "castable": false,
-          "possibleAttackTarget": false,
-          "possibleAbilityTarget": false,
-          "abilityReadied": false,
-          "unique": false,
-          "effects": [
-            "java.util.LinkedList",
-            []
-          ],
-          "weapon": null,
-          "armor": null,
-          "availableForHeroClasses": [
-            "java.util.HashSet",
-            []
-          ],
-          "owner": "ENEMY",
-          "attachments": [
-            "java.util.HashSet",
-            []
-          ],
-          "uniqueId": "94f9515c-9ebf-4a40-b2c9-bc52f2925017"
+    "uniqueId" : "b088fdcc-498b-4aa8-b3af-e960a86b17c6"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "cardType" : "ALLY",
+    "resourceCost" : 3,
+    "baseAttack" : 3,
+    "baseDefence" : null,
+    "initialHp" : 4,
+    "currentHp" : 4,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "ENEMY",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "8787bbf8-ec4b-4541-aa6b-d0bc64cb842c"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1007,53 +931,37 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "eeb42f4d-4a8a-4f32-b2dd-9b0078b0c822"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
-          "side": "HUMAN",
-          "heroClass": null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
-          "cardType": "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
-          "baseDefence": null,
-          "initialHp": 4,
-          "currentHp": 4,
-          "shadowEnergy": 0,
-          "itemSubType": null,
-          "attackType": "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
-          "attackReadied": false,
-          "castable": false,
-          "possibleAttackTarget": false,
-          "possibleAbilityTarget": false,
-          "abilityReadied": false,
-          "unique": false,
-          "effects": [
-            "java.util.LinkedList",
-            []
-          ],
-          "weapon": null,
-          "armor": null,
-          "availableForHeroClasses": [
-            "java.util.HashSet",
-            []
-          ],
-          "owner": "ENEMY",
-          "attachments": [
-            "java.util.HashSet",
-            []
-          ],
-          "uniqueId": "c76f2268-02d3-45c1-9b10-9a3fe6a0ef36"
+    "uniqueId" : "d0dd29a2-4693-462c-875d-e4123bbfc81a"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "cardType" : "ALLY",
+    "resourceCost" : 3,
+    "baseAttack" : 3,
+    "baseDefence" : null,
+    "initialHp" : 4,
+    "currentHp" : 4,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "ENEMY",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "07a24408-4b6f-4e3b-89f7-a725bc6376f7"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1083,31 +991,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "0fc6d3a1-a3e6-4f51-b1c7-ebf846a72727"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "9043b336-bf96-4691-ad7f-d3c431716a40"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1120,7 +1021,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "6c001b53-a488-46a8-b515-b6bd2b485d44"
+    "uniqueId" : "769a4999-deda-40cb-8aba-c6beafb3723c"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1150,31 +1051,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "6adb0bb5-a6a7-4003-a511-fc64682fd38b"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "65d806ae-8cd3-4bc9-b726-175ba105a961"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1187,7 +1081,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "89d9526c-673d-475e-8975-e0fa126e069a"
+    "uniqueId" : "9c0a6120-d8cc-430f-b236-ebb5bcd2ce70"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1217,31 +1111,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "a433657f-8541-40df-9a5d-f329caf8fefc"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "a471245c-a069-41fb-ad70-b33ed88af5bc"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1254,7 +1141,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "816caec8-78da-49cc-9196-e3db3e630e04"
+    "uniqueId" : "c810f97f-17fa-4a1b-b791-1977b8e618ee"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1284,31 +1171,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "505744ce-cc30-47e5-91e1-50c71c234bc5"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "12dc4495-56b6-4921-b5aa-8bc5edf314a8"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1321,100 +1201,25 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "ef64ec9d-c0ea-42b2-8ab2-7111563281c6"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
-    "baseDefence" : null,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "armor" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "ENEMY",
-    "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "a6a7bcd9-9e9a-4665-bf27-85fc02c767b3"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
-    "side" : "HUMAN",
-    "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
-    "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
-    "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "armor" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "ENEMY",
-    "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "64ff70cb-b3f6-44cb-80f2-60ffdd317c12"
+    "uniqueId" : "fd08a36a-afc7-420d-a613-af0593e40a4d"
   } ] ] ],
-  "yourDeck": [
-    "java.util.LinkedList",
-    [
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+  "yourDeck" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "Protector (Allies without protector can't be targeted.)",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 1,
+    "baseAttack" : 0,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 2,
+    "currentHp" : 2,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1427,7 +1232,37 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "03fade58-cc76-43c1-82da-92eae7ae7047"
+    "uniqueId" : "d16a2420-a799-4200-8887-1b00947680be"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "cardType" : "ALLY",
+    "resourceCost" : 3,
+    "baseAttack" : 3,
+    "baseDefence" : null,
+    "initialHp" : 4,
+    "currentHp" : 4,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "0db8f6cd-6658-47b4-958a-b5f950366352"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1457,31 +1292,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "a3f6c310-0722-448f-9f96-3d62474d6a69"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "49d9850f-e898-487f-8289-810b509d2a12"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1494,7 +1322,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "b2158ef1-1e50-42fe-8b49-39d6c0e67e44"
+    "uniqueId" : "03535d1e-c12a-4029-959f-7e863f54588f"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1524,31 +1352,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "0de8b159-cd11-4660-a6cd-bc0a4055d764"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "7bfa2432-7012-4e78-8c09-4e4ecdcf4b38"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1561,7 +1382,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "13a7187f-d18a-4517-99fd-d5b2785da052"
+    "uniqueId" : "1d5f678e-b850-453d-99d2-afe22b009e70"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1591,31 +1412,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "ba22566d-8be8-474a-b63b-0fae5402b80e"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "0ce55ce6-f357-4c49-8e1d-54ab632dfa38"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1628,7 +1442,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "06754279-c81d-4368-ab9f-fb44d636bcef"
+    "uniqueId" : "13eb471e-f5be-4ad5-bf1d-7e21e496c89b"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1658,31 +1472,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "27d0c7a7-f0af-42af-9e19-26c3edbe2ec0"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "b7ba5246-db18-49bd-9907-7ca68d637973"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1695,7 +1502,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "76298d29-2f62-4070-89c9-597ad1e6067a"
+    "uniqueId" : "0b5fffa6-6eed-43d5-8b55-b605fe8bf5c0"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1725,31 +1532,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "4b8638a2-7cce-4a7d-bba4-80ea6d19eece"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "65ef218a-7ff4-46a3-af87-1b9c32bba3ac"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1762,7 +1562,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "a83d740c-acc1-4699-bf1d-8e28516df2e2"
+    "uniqueId" : "a41e3fc3-62b6-4817-b98d-21db1f6fe6d8"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1792,31 +1592,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "a9bd7716-b73e-4bc6-afdb-c44a76837218"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "fc7de47c-9e2a-4a14-8d81-c9c065bfc7d0"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1829,7 +1622,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "bd35ed84-2177-401a-a7fd-ecefe73041c2"
+    "uniqueId" : "50087eef-b9d5-4024-9f07-1b42573b3483"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1859,31 +1652,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "fefc2fac-a7f8-4ddf-ba19-e93d3d193580"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "808e2d7f-f063-4a09-be24-4d04c4033801"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1896,7 +1682,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "189e58ef-2263-4a42-859e-d59ebcb6438b"
+    "uniqueId" : "4adfa307-b962-4680-90e9-8f7c08c3c946"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1926,31 +1712,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "baaf40de-cddc-48ed-a9c6-7a23f064b5c3"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "660416f9-2795-4d72-a84b-8ac65db7e1c8"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -1963,7 +1742,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "9b1d6e1b-54a9-4ea4-a5e6-3045c0cd72f2"
+    "uniqueId" : "4afcc69b-463f-4de2-a683-3d3c644d8371"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -1993,31 +1772,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "85d8b8ca-57ce-4920-a918-7c75a9f3486e"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "a103f953-b2d5-4a75-a077-0c34e251c7e7"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -2030,7 +1802,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "250808ba-8904-4e2a-bf74-50cacb059c67"
+    "uniqueId" : "fac1b61d-39f9-49e8-af0a-246a2d9c42cf"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2060,31 +1832,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "b03a2eb5-e9a6-4a9e-a17f-ebe48c8d7aaa"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "dc92182c-55dd-474e-9268-efe36aaf729e"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -2097,7 +1862,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "d17fcb52-f138-48e2-b21b-1d4fdf6f7d26"
+    "uniqueId" : "23326a85-8db8-432a-b98d-ea43ae4b33c9"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2127,31 +1892,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "eb402f19-8ece-46b3-a58d-2c6914671396"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "d5b0c934-a00a-40b3-be19-69122781519e"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -2164,7 +1922,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "2aa362f4-d2ac-4141-8e0d-8ffdaf893b51"
+    "uniqueId" : "2322ec69-0c3b-43c7-8b93-f3be70781831"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2194,31 +1952,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "ef79d662-ffb5-49f2-a0e1-fc4494d18a74"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "59962f4c-61d6-413e-b32d-d61e62fcb11c"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -2231,7 +1982,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "0d927676-1a7e-47a8-8df9-b9a2c18f7d3e"
+    "uniqueId" : "078b10d3-fa6a-4939-b426-bf08f6a0f35b"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2261,31 +2012,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "7d0fc528-089b-4761-ab17-d3a078efe29f"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "424696b4-b958-496c-aecf-19b110166a7d"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -2298,7 +2042,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "d9499323-346e-4b0e-be7b-9f6e698cee57"
+    "uniqueId" : "48b71022-7061-471b-9544-fc133fbe94df"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2328,31 +2072,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "fd10c67a-743c-430e-a818-0403973ab7ff"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "58f66d88-3a86-4263-aabe-dcb669da38ec"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -2365,7 +2102,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "ac22989e-a695-4c2d-804f-15c9b1da90c1"
+    "uniqueId" : "5486a795-2348-4db1-858c-2e672d8db0a0"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2395,31 +2132,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "659159e4-95bc-466e-9be2-f026d3b51597"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "6782d36b-68e7-4900-b7e6-55ff2b8178ef"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -2432,7 +2162,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "7d53b705-02ec-4d29-bcc2-370e3f3d7711"
+    "uniqueId" : "5dbb243f-87c0-4ab0-b66d-6d3145d22cd0"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -2462,70 +2192,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "6cea261d-17e6-4eb2-861d-71c1eeab2844"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
-          "side": "HUMAN",
-          "heroClass": null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
-          "cardType": "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
-          "baseDefence": null,
-          "initialHp": 4,
-          "currentHp": 4,
-          "shadowEnergy": 0,
-          "itemSubType": null,
-          "attackType": "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
-          "attackReadied": false,
-          "castable": false,
-          "possibleAttackTarget": false,
-          "possibleAbilityTarget": false,
-          "abilityReadied": false,
-          "unique": false,
-          "effects": [
-            "java.util.LinkedList",
-            []
-          ],
-          "weapon": null,
-          "armor": null,
-          "availableForHeroClasses": [
-            "java.util.HashSet",
-            []
-          ],
-          "owner": "YOU",
-          "attachments": [
-            "java.util.HashSet",
-            []
-          ],
-          "uniqueId": "f9be9989-7b2c-4a60-b2ed-a1d560315614"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
+    "uniqueId" : "93222fb1-e840-42f9-917a-7c17f81b0b6b"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-    "initialHp" : 2,
-    "currentHp" : 2,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -2538,84 +2222,27 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "d8b1f4de-69db-4eee-9d2d-afab2ffe9a95"
-    }
-    ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
+    "uniqueId" : "c47c51c3-28fb-4480-90fc-32f2efca0ebc"
+  } ] ] ],
+  "enemyHand" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.ArmoredSandworm", {
+    "code" : "se036",
+    "rarity" : "U",
+    "name" : "Armored Sandworm",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "All damage to Armored Sandworm is reduced by 2.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 5,
+    "baseAttack" : 2,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
+    "initialHp" : 5,
+    "currentHp" : 5,
     "shadowEnergy" : 0,
     "itemSubType" : null,
-    "attackType" : "SWORD",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
-          "attackReadied": false,
-          "castable": false,
-          "possibleAttackTarget": false,
-          "possibleAbilityTarget": false,
-          "abilityReadied": false,
-          "unique": false,
-          "effects": [
-            "java.util.LinkedList",
-            []
-          ],
-          "weapon": null,
-          "armor": null,
-          "availableForHeroClasses": [
-            "java.util.HashSet",
-            []
-          ],
-          "owner": "YOU",
-          "attachments": [
-            "java.util.HashSet",
-            []
-          ],
-          "uniqueId": "83217422-8a17-4947-bb26-4ffb25880db9"
-        }
-      ]
-    ]
-  ],
-  "enemyHand": [
-    "java.util.LinkedList",
-    [
-      [
-        "edu.bator.cards.done.ArmoredSandworm",
-        {
-          "code": "se036",
-          "rarity": "U",
-          "name": "Armored Sandworm",
-          "side": "HUMAN",
-          "heroClass": null,
-          "description": "All damage to Armored Sandworm is reduced by 2.",
-          "cardType": "ALLY",
-          "resourceCost": 5,
-          "baseAttack": 2,
-          "baseDefence": null,
-          "initialHp": 5,
-          "currentHp": 5,
-          "shadowEnergy": 0,
-          "itemSubType": null,
-          "attackType": "CLAW",
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "attackType" : "CLAW",
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-          "castable": true,
+    "castable" : false,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2626,7 +2253,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "ebe3ef86-e62f-4d21-9db8-6abc8ad7b833"
+    "uniqueId" : "0a58dbe0-307c-4292-b784-1e9cf19d0b4d"
   } ], [ "edu.bator.cards.done.CoverofNight", {
     "code" : "se131",
     "rarity" : null,
@@ -2645,7 +2272,7 @@
     "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ "STEALTH" ] ],
     "attackReadied" : false,
-      "castable": true,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2656,20 +2283,16 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "854c4599-2129-4ada-b630-9b3f9d02d785",
+    "uniqueId" : "1108134f-b920-4f3d-9a65-1a1f9872bfbf",
     "turnExpires" : 0,
     "phaseExpires" : null
-    }
-    ],
-      [
-        "edu.bator.cards.done.CampfireStories",
-        {
-          "code": "se135",
+  } ], [ "edu.bator.cards.done.CampfireStories", {
+    "code" : "se135",
     "rarity" : null,
-          "name": "Campfire Stories",
-          "side": "HUMAN",
-          "heroClass": null,
-          "description": "All friendly allies heal 2 damage. Draw a card.",
+    "name" : "Campfire Stories",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "All friendly allies heal 2 damage. Draw a card.",
     "cardType" : "ABILITY",
     "resourceCost" : 2,
     "baseAttack" : null,
@@ -2677,12 +2300,9 @@
     "initialHp" : null,
     "currentHp" : null,
     "shadowEnergy" : 0,
-          "itemSubType": null,
+    "itemSubType" : null,
     "attackType" : null,
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : true,
     "possibleAttackTarget" : false,
@@ -2695,20 +2315,16 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "f4aaa959-b30b-469b-bebe-4384dcd16450"
-        }
-      ],
-      [
-        "edu.bator.cards.done.SpecialDelivery",
-        {
-          "code": "se134",
+    "uniqueId" : "361d46f4-0602-429b-a0de-43e51a87db23"
+  } ], [ "edu.bator.cards.done.SpecialDelivery", {
+    "code" : "se134",
     "rarity" : null,
-          "name": "Special Delivery",
+    "name" : "Special Delivery",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "Target opposing hero or ally takes 3 damage.",
+    "description" : "Target opposing hero or ally takes 3 damage.",
     "cardType" : "ABILITY",
-          "resourceCost": 4,
+    "resourceCost" : 4,
     "baseAttack" : null,
     "baseDefence" : null,
     "initialHp" : null,
@@ -2718,7 +2334,7 @@
     "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-    "castable" : true,
+    "castable" : false,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2729,30 +2345,27 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "7c71b493-1533-4023-b112-e9f0af24221a"
-        }
-      ],
-      [
-        "edu.bator.cards.done.ReinforcedArmor",
-        {
-          "code": "se133",
-          "rarity": null,
-          "name": "Reinforced Armor",
+    "uniqueId" : "4646dcdb-0760-48e6-87a8-5fcfee7695d7"
+  } ] ] ],
+  "yourHand" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.ArmoredSandworm", {
+    "code" : "se036",
+    "rarity" : "U",
+    "name" : "Armored Sandworm",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "Target friendly ally has all damage to it reduced by 1 while Reinforced Armor is attached.",
-          "cardType": "ABILITY",
-          "resourceCost": 2,
-          "baseAttack": null,
+    "description" : "All damage to Armored Sandworm is reduced by 2.",
+    "cardType" : "ALLY",
+    "resourceCost" : 5,
+    "baseAttack" : 2,
     "baseDefence" : null,
-          "initialHp": null,
-          "currentHp": null,
+    "initialHp" : 5,
+    "currentHp" : 5,
     "shadowEnergy" : 0,
     "itemSubType" : null,
-          "attackType": null,
+    "attackType" : "CLAW",
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-          "castable": true,
+    "castable" : false,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2761,19 +2374,10 @@
     "weapon" : null,
     "armor" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-          "owner": "ENEMY",
+    "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "2566472a-9a5d-4c7e-bc41-26a34af5351d"
-        }
-      ]
-    ]
-  ],
-  "yourHand": [
-    "java.util.LinkedList",
-    [
-      [
-        "edu.bator.cards.done.CoverofNight",
-        {
+    "uniqueId" : "2a02eb76-d060-4dbc-a69f-c90d2ef446cc"
+  } ], [ "edu.bator.cards.done.CoverofNight", {
     "code" : "se131",
     "rarity" : null,
     "name" : "Cover of Night",
@@ -2791,7 +2395,7 @@
     "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ "STEALTH" ] ],
     "attackReadied" : false,
-          "castable": true,
+    "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2802,20 +2406,16 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "7447e907-110f-4a74-b6f1-3ce481615d36",
+    "uniqueId" : "3f7fac4a-212d-4de2-82e5-da58289bb004",
     "turnExpires" : 0,
     "phaseExpires" : null
-        }
-      ],
-      [
-        "edu.bator.cards.done.CampfireStories",
-        {
-          "code": "se135",
+  } ], [ "edu.bator.cards.done.CampfireStories", {
+    "code" : "se135",
     "rarity" : null,
-          "name": "Campfire Stories",
-          "side": "HUMAN",
-          "heroClass": null,
-          "description": "All friendly allies heal 2 damage. Draw a card.",
+    "name" : "Campfire Stories",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "All friendly allies heal 2 damage. Draw a card.",
     "cardType" : "ABILITY",
     "resourceCost" : 2,
     "baseAttack" : null,
@@ -2823,12 +2423,9 @@
     "initialHp" : null,
     "currentHp" : null,
     "shadowEnergy" : 0,
-          "itemSubType": null,
+    "itemSubType" : null,
     "attackType" : null,
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : true,
     "possibleAttackTarget" : false,
@@ -2841,30 +2438,26 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "4eee4f33-0d77-4fa6-b59f-041ce7075922"
-        }
-      ],
-      [
-        "edu.bator.cards.done.SpecialDelivery",
-        {
-          "code": "se134",
+    "uniqueId" : "0619180d-6ca6-43ec-80ac-56d338ff3d93"
+  } ], [ "edu.bator.cards.done.SpecialDelivery", {
+    "code" : "se134",
     "rarity" : null,
-          "name": "Special Delivery",
-          "side": "HUMAN",
-          "heroClass": null,
-          "description": "Target opposing hero or ally takes 3 damage.",
+    "name" : "Special Delivery",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Target opposing hero or ally takes 3 damage.",
     "cardType" : "ABILITY",
-          "resourceCost": 4,
+    "resourceCost" : 4,
     "baseAttack" : null,
     "baseDefence" : null,
     "initialHp" : null,
     "currentHp" : null,
     "shadowEnergy" : 0,
-          "itemSubType": null,
+    "itemSubType" : null,
     "attackType" : null,
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
-          "castable": true,
+    "castable" : false,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
     "abilityReadied" : false,
@@ -2875,87 +2468,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "f4ff8d82-5d36-4722-9d0d-2c4a43a95862"
-        }
-      ],
-      [
-        "edu.bator.cards.done.ReinforcedArmor",
-        {
-          "code": "se133",
-          "rarity": null,
-          "name": "Reinforced Armor",
-          "side": "HUMAN",
-          "heroClass": null,
-          "description": "Target friendly ally has all damage to it reduced by 1 while Reinforced Armor is attached.",
-          "cardType": "ABILITY",
-          "resourceCost": 2,
-          "baseAttack": null,
-          "baseDefence": null,
-          "initialHp": null,
-          "currentHp": null,
-          "shadowEnergy": 0,
-          "itemSubType": null,
-          "attackType": null,
-          "abilities": [
-            "java.util.HashSet",
-            []
-          ],
-          "attackReadied": false,
-          "castable": true,
-          "possibleAttackTarget": false,
-          "possibleAbilityTarget": false,
-          "abilityReadied": false,
-          "unique": false,
-          "effects": [
-            "java.util.LinkedList",
-            []
-          ],
-          "weapon": null,
-          "armor": null,
-          "availableForHeroClasses": [
-            "java.util.HashSet",
-            []
-          ],
-          "owner": "YOU",
-          "attachments": [
-            "java.util.HashSet",
-            []
-          ],
-          "uniqueId": "3121197f-9386-482d-b066-93d261350e7a"
-        }
-      ],
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
-          "rarity": "U",
-          "name": "Jasmine Rosecult",
-    "side" : "HUMAN",
-    "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
-          "cardType": "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
-    "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 4,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-          "attackType": "SWORD",
-    "abilities" : [ "java.util.HashSet", [ ] ],
-    "attackReadied" : false,
-    "castable" : true,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "armor" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "YOU",
-    "attachments" : [ "java.util.HashSet", [ ] ],
-          "uniqueId": "e44b6d40-fc8c-42a0-a61d-4652df63ab16"
+    "uniqueId" : "dae1e857-9e82-4330-aaf1-c98ea5922036"
   } ] ] ],
   "enemyGraveyard" : [ "edu.bator.game.GraveyardLinkedList", [ ] ],
   "yourGraveyard" : [ "edu.bator.game.GraveyardLinkedList", [ ] ],
@@ -2988,31 +2501,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-    "uniqueId": "ceb29944-a72c-49bc-b044-2c221a0c4587"
-  }
-  ],
-    [
-      "edu.bator.cards.done.JasmineRosecult",
-      {
-        "code": "se021",
-        "rarity": "U",
-        "name": "Jasmine Rosecult",
+    "uniqueId" : "4dd3b2c3-3d17-4130-b2d6-01ce77f6256c"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-        "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-        "resourceCost": 3,
-        "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-        "initialHp": 4,
-        "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-        "abilities": [
-          "java.util.HashSet",
-          []
-        ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -3025,7 +2531,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-        "uniqueId": "ebfc0aed-d94d-4bc2-9088-138767194ff4"
+    "uniqueId" : "ff6d64db-b94a-4dde-8718-019f9532dab1"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -3055,31 +2561,24 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "e3c2f2f7-145e-4190-bdf7-2d215a1f682f"
-    }
-    ],
-    [
-      "edu.bator.cards.done.JasmineRosecult",
-      {
-        "code": "se021",
-        "rarity": "U",
-        "name": "Jasmine Rosecult",
+    "uniqueId" : "251d06e4-ae29-4758-a8f3-09c47836774d"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-        "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-        "resourceCost": 3,
-        "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-        "initialHp": 4,
-        "currentHp": 4,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
     "attackType" : "SWORD",
-        "abilities": [
-          "java.util.HashSet",
-          []
-        ],
+    "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : false,
     "castable" : false,
     "possibleAttackTarget" : false,
@@ -3092,7 +2591,7 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-        "uniqueId": "bfc74c04-8a28-4b28-b06c-7707ebac4228"
+    "uniqueId" : "8523f2e3-b6b4-4061-9b52-831cb667f0cf"
   } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
     "rarity" : null,
@@ -3122,7 +2621,37 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
     "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "dd484030-293c-404b-903d-b1f2250c5607"
+    "uniqueId" : "2101a694-c816-4566-9b2e-da54a4bf8f8f"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "cardType" : "ALLY",
+    "resourceCost" : 3,
+    "baseAttack" : 3,
+    "baseDefence" : null,
+    "initialHp" : 4,
+    "currentHp" : 4,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "ENEMY",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "4bea272f-db76-4c59-8c0f-fbd33b05c3b6"
   } ] ] ],
   "yourResources" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.BirgitteSkullborn", {
     "code" : "se027",
@@ -3153,204 +2682,207 @@
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
     "attachments" : [ "java.util.HashSet", [ ] ],
-    "uniqueId": "a7973fd2-d5af-4ab1-b5ce-3eda6a5e25c9"
-  }
-  ],
-    [
-      "edu.bator.cards.done.JasmineRosecult",
-      {
-        "code": "se021",
-        "rarity": "U",
-        "name": "Jasmine Rosecult",
-    "side" : "HUMAN",
-    "heroClass" : null,
-        "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
-    "cardType" : "ALLY",
-        "resourceCost": 3,
-        "baseAttack": 3,
-    "baseDefence" : null,
-        "initialHp": 4,
-        "currentHp": 4,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-        "abilities": [
-          "java.util.HashSet",
-          []
-        ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "armor" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "YOU",
-    "attachments" : [ "java.util.HashSet", [ ] ],
-        "uniqueId": "51c02a14-8ad2-44ee-b5b4-6561d0a4f26e"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
-    "baseDefence" : null,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "armor" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "YOU",
-    "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "88b73b41-82b2-493b-b759-9758e961f07a"
-    }
-    ],
-    [
-      "edu.bator.cards.done.ArmoredSandworm",
-      {
-        "code": "se036",
-        "rarity": "U",
-        "name": "Armored Sandworm",
-    "side" : "HUMAN",
-    "heroClass" : null,
-        "description": "All damage to Armored Sandworm is reduced by 2.",
-    "cardType" : "ALLY",
-        "resourceCost": 5,
-        "baseAttack": 2,
-    "baseDefence" : null,
-        "initialHp": 5,
-        "currentHp": 5,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-        "attackType": "CLAW",
-        "abilities": [
-          "java.util.HashSet",
-          []
-        ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "armor" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "YOU",
-    "attachments" : [ "java.util.HashSet", [ ] ],
-        "uniqueId": "d1bc25db-210e-48f9-9889-96ad724b2424"
-  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
-    "code" : "se027",
-    "rarity" : null,
-    "name" : "Birgitte Skullborn",
-    "side" : "HUMAN",
-    "heroClass" : null,
-    "description" : "Protector (Allies without protector can't be targeted.)",
-    "cardType" : "ALLY",
-    "resourceCost" : 1,
-    "baseAttack" : 0,
-    "baseDefence" : null,
-    "initialHp" : 2,
-    "currentHp" : 2,
-    "shadowEnergy" : 0,
-    "itemSubType" : null,
-    "attackType" : "SWORD",
-    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
-    "attackReadied" : false,
-    "castable" : false,
-    "possibleAttackTarget" : false,
-    "possibleAbilityTarget" : false,
-    "abilityReadied" : false,
-    "unique" : false,
-    "effects" : [ "java.util.LinkedList", [ ] ],
-    "weapon" : null,
-    "armor" : null,
-    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
-    "owner" : "YOU",
-    "attachments" : [ "java.util.HashSet", [ ] ],
-      "uniqueId": "260061bb-c466-4456-97ed-8c4866919a5f"
-  } ] ] ],
-  "yourCurrentResources": 5,
-  "enemyCurrentResources": 5,
-  "enemyAllies": [
-    "java.util.LinkedList",
-    [
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
+    "uniqueId" : "842821c2-f34a-4ead-9a03-f55187545c64"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
     "rarity" : "U",
-          "name": "Jasmine Rosecult",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 1,
+    "initialHp" : 4,
+    "currentHp" : 4,
     "shadowEnergy" : 0,
     "itemSubType" : null,
-          "attackType": "SWORD",
+    "attackType" : "SWORD",
     "abilities" : [ "java.util.HashSet", [ ] ],
-    "attackReadied" : true,
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "d5764020-89bd-44fc-a970-51989a7909a1"
+  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "baseAttack" : 0,
+    "baseDefence" : null,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "db5572a8-41d5-4d5c-aa4f-a3fdd22a590f"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "cardType" : "ALLY",
+    "resourceCost" : 3,
+    "baseAttack" : 3,
+    "baseDefence" : null,
+    "initialHp" : 4,
+    "currentHp" : 4,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "9c0b4576-2f6b-4c5b-97ab-b90c1195245c"
+  } ], [ "edu.bator.cards.done.BirgitteSkullborn", {
+    "code" : "se027",
+    "rarity" : null,
+    "name" : "Birgitte Skullborn",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "Protector (Allies without protector can't be targeted.)",
+    "cardType" : "ALLY",
+    "resourceCost" : 1,
+    "baseAttack" : 0,
+    "baseDefence" : null,
+    "initialHp" : 2,
+    "currentHp" : 2,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ "PROTECTOR" ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "50cbf469-1645-4593-b384-4ee3d53a7d0c"
+  } ], [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "cardType" : "ALLY",
+    "resourceCost" : 3,
+    "baseAttack" : 3,
+    "baseDefence" : null,
+    "initialHp" : 4,
+    "currentHp" : 4,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "2baa8b69-148c-4930-8779-5588894f80e9"
+  } ] ] ],
+  "yourCurrentResources" : 3,
+  "enemyCurrentResources" : 3,
+  "enemyAllies" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
+    "rarity" : "U",
+    "name" : "Jasmine Rosecult",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "cardType" : "ALLY",
+    "resourceCost" : 3,
+    "baseAttack" : 3,
+    "baseDefence" : null,
+    "initialHp" : 4,
+    "currentHp" : 1,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : "SWORD",
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
     "castable" : true,
     "possibleAttackTarget" : false,
     "possibleAbilityTarget" : false,
-    "abilityReadied" : true,
+    "abilityReadied" : false,
     "unique" : false,
     "effects" : [ "java.util.LinkedList", [ ] ],
     "weapon" : null,
     "armor" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "ENEMY",
-          "attachments": [
-            "java.util.HashSet",
-            []
-          ],
-          "uniqueId": "a16af4a4-8931-4f04-a0fa-620cac642628"
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "303342ba-feb9-4b01-87fc-b7cd5546a425"
   } ] ] ],
-  "yourAllies": [
-    "java.util.LinkedList",
-    [
-      [
-        "edu.bator.cards.done.JasmineRosecult",
-        {
-          "code": "se021",
+  "yourAllies" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.JasmineRosecult", {
+    "code" : "se021",
     "rarity" : "U",
-          "name": "Jasmine Rosecult",
+    "name" : "Jasmine Rosecult",
     "side" : "HUMAN",
     "heroClass" : null,
-          "description": "2: Target opposing ally can't attack until the end of its controller's next turn.",
+    "description" : "2: Target opposing ally can't attack until the end of its controller's next turn.",
     "cardType" : "ALLY",
-          "resourceCost": 3,
-          "baseAttack": 3,
+    "resourceCost" : 3,
+    "baseAttack" : 3,
     "baseDefence" : null,
-          "initialHp": 4,
-          "currentHp": 1,
+    "initialHp" : 4,
+    "currentHp" : 1,
     "shadowEnergy" : 0,
     "itemSubType" : null,
-          "attackType": "SWORD",
+    "attackType" : "SWORD",
     "abilities" : [ "java.util.HashSet", [ ] ],
     "attackReadied" : true,
     "castable" : true,
@@ -3363,15 +2895,72 @@
     "armor" : null,
     "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
     "owner" : "YOU",
-          "attachments": [
-            "java.util.HashSet",
-            []
-          ],
-          "uniqueId": "deb8bc1e-0035-4d8d-b4e1-d4af2b17f799"
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "67d07e8f-6f47-482b-997f-eae71d3a0417"
   } ] ] ],
-  "enemySupport" : [ "java.util.LinkedList", [ ] ],
-  "yourSupport" : [ "java.util.LinkedList", [ ] ],
-  "gamePhase": "ENEMY_ACTION",
+  "enemySupport" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.GoodAscendant", {
+    "code" : "se136",
+    "rarity" : null,
+    "name" : "Good Ascendant",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "At the start of each of your turns while Good Ascendant is in play, all friendly allies heal 2 damage. 0: Target Evil Ascendant is destroyed.",
+    "cardType" : "ITEM",
+    "resourceCost" : 3,
+    "baseAttack" : null,
+    "baseDefence" : null,
+    "initialHp" : null,
+    "currentHp" : null,
+    "shadowEnergy" : 0,
+    "itemSubType" : "ARTIFACT",
+    "attackType" : null,
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : true,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "ENEMY",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "25ba2d12-4a23-421a-836d-3b04b1d0c3a3"
+  } ] ] ],
+  "yourSupport" : [ "java.util.LinkedList", [ [ "edu.bator.cards.done.GoodAscendant", {
+    "code" : "se136",
+    "rarity" : null,
+    "name" : "Good Ascendant",
+    "side" : "HUMAN",
+    "heroClass" : null,
+    "description" : "At the start of each of your turns while Good Ascendant is in play, all friendly allies heal 2 damage. 0: Target Evil Ascendant is destroyed.",
+    "cardType" : "ITEM",
+    "resourceCost" : 3,
+    "baseAttack" : null,
+    "baseDefence" : null,
+    "initialHp" : null,
+    "currentHp" : null,
+    "shadowEnergy" : 0,
+    "itemSubType" : "ARTIFACT",
+    "attackType" : null,
+    "abilities" : [ "java.util.HashSet", [ ] ],
+    "attackReadied" : false,
+    "castable" : true,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ "java.util.LinkedList", [ ] ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ "java.util.HashSet", [ ] ],
+    "owner" : "YOU",
+    "attachments" : [ "java.util.HashSet", [ ] ],
+    "uniqueId" : "129e2276-7a17-4a30-b1f6-a9d17bd7c140"
+  } ] ] ],
+  "gamePhase" : "ENEMY_ACTION",
   "attackSource" : null,
-  "abilitySource": null
+  "abilitySource" : null
 } ]

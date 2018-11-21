@@ -23,12 +23,12 @@ public class GoodAscendant extends Artifact {
     @Override
     public void gamePhaseChangeEvent(GameState gameState) {
         super.gamePhaseChangeEvent(gameState);
-        if (GamePhase.YOU_PREPARE.equals(gameState.getGamePhase())) {
+        if (GamePhase.YOU_PREPARE.equals(gameState.getGamePhase()) && gameState.getYourSupport().contains(this)) {
             gameState.getYourAllies().forEach(ally -> {
                 HealingUtil.heal(2, ally);
             });
         }
-        if (GamePhase.ENEMY_PREPARE.equals(gameState.getGamePhase())) {
+        if (GamePhase.ENEMY_PREPARE.equals(gameState.getGamePhase()) && gameState.getEnemySupport().contains(this)) {
             gameState.getEnemyAllies().forEach(ally -> {
                 HealingUtil.heal(2, ally);
             });

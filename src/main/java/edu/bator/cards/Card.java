@@ -354,6 +354,7 @@ public class Card implements Cloneable {
         return this.getClass().getSimpleName() + "{" +
                 "baseAttack=" + baseAttack +
                 ", initialHp=" + initialHp +
+                ", currentHp=" + currentHp +
                 ", owner=" + owner +
                 ", uniqueId='" + uniqueId + '\'' +
                 '}';
