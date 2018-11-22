@@ -21,6 +21,7 @@ public class Ability extends Card {
     @Override
     public void applyAbility(Card target, GameState gameState) {
         target.resetFlags();
+        new GameEngine().decreaseCurrentPlayerResources(gameState, getResourceCost());
         super.applyAbility(target, gameState);
     }
 
@@ -34,6 +35,5 @@ public class Ability extends Card {
         if (target.cardIsDead()) {
             new GameEngine().cardDied(target, gameState);
         }
-        new GameEngine().decreaseCurrentPlayerResources(gameState, getResourceCost());
     }
 }

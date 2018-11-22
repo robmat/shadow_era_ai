@@ -79,6 +79,7 @@ public class SmashingBlow extends Ability {
         public void handle(MouseEvent event) {
             new GameEngine().cardDied(target, gameState);
             new GameEngine().cardDied(smashingBlow, gameState);
+            smashingBlow.applyAbility(target, gameState);
             stage.close();
         }
     }

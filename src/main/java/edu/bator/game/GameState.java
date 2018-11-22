@@ -83,8 +83,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Cover of Night", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Cover of Night", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Shield Bash", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Shield Bash", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Campfire Stories", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Campfire Stories", Owner.YOU));
@@ -92,11 +92,11 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Special Delivery", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Special Delivery", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Good Ascendant", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Good Ascendant", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Radiant Sunlight", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Radiant Sunlight", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Jasmine Rosecult", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Smashing Blow", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Smashing Blow", Owner.YOU));
 
         log.info("Init done.");
     }

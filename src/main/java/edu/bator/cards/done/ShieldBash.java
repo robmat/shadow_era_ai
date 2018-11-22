@@ -32,6 +32,7 @@ public class ShieldBash extends Ability {
 
     @Override
     public void applyAbility(Card target, GameState gameState) {
+        super.applyAbility(target, gameState);
         applyAbilityDamage(target, gameState, 3);
     }
 
