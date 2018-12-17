@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 import edu.bator.EntryPoint;
 import edu.bator.cards.Card;
+import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -27,7 +28,7 @@ public class CardUiHelper {
         consumer.accept(dialog, cardsGrid);
         dialog.setOnCloseRequest(event -> {
             gameState.setAbilitySource(null);
-            gameState.resetPossibleAbiltyTargets();
+            gameState.resetPossibleAbilityTargets();
             gameState.resetPossibleAttackTargets();
         });
         dialog.showAndWait();
@@ -46,5 +47,16 @@ public class CardUiHelper {
                 .forEach(child -> cardGrid.getChildren().remove(child));
 
         cardGrid.add(button, 0, 3, 2, 1);
+    }
+
+    public static void closeDialogDetermineCastabeDecreseResources(Card card, GameState gameState, Stage stage) {
+        new GameEngine().decreaseCurrentPlayerResources(gameState, card.getResourceCost());
+        if (!gameState.currentYourHandBasedOnPhase().remove(card)) {
+            throw new IllegalStateException("Card casted but not in casters hand?");
+        }
+        gameState.currentYourHandBasedOnPhase().forEach(castable -> castable.determineCastable(gameState));
+        gameState.resetPossibleAbilityTargets();
+        gameState.resetPossibleAttackTargets();
+        stage.close();
     }
 }

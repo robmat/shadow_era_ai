@@ -23,7 +23,7 @@ public class AbilityTargetClickedEvent implements EventHandler<MouseEvent> {
     public void handle(MouseEvent event) {
         gameState.getAbilitySource().applyAbility(this.card, gameState);
         gameState.getAbilitySource().setAbilityReadied(false);
-        gameState.resetPossibleAbiltyTargets();
+        gameState.resetPossibleAbilityTargets();
         if (gameState.getAbilitySource().cardIsAnAbility()) {
             new GameEngine().moveToGraveYard(gameState.getAbilitySource(), gameState);
         }

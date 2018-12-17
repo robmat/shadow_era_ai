@@ -23,6 +23,7 @@ import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
 
 import static edu.bator.EntryPoint.allCardsSet;
+import static java.util.Objects.nonNull;
 
 @Data
 @NoArgsConstructor
@@ -92,11 +93,11 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Special Delivery", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Special Delivery", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Radiant Sunlight", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Radiant Sunlight", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Shrine of Negatia", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Shrine of Negatia", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Smashing Blow", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Smashing Blow", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("War Banner", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("War Banner", Owner.YOU));
 
         log.info("Init done.");
     }
@@ -118,7 +119,7 @@ public class GameState {
     }
 
     public void repaint() {
-        if (java.util.Objects.nonNull(gamePainter)) {
+        if (nonNull(gamePainter)) {
             gamePainter.paint(this);
         }
     }
@@ -147,7 +148,7 @@ public class GameState {
         return cards;
     }
 
-    public void resetPossibleAbiltyTargets() {
+    public void resetPossibleAbilityTargets() {
         allCardsInPlay().forEach(card -> card.setPossibleAbilityTarget(false));
     }
 
@@ -158,9 +159,22 @@ public class GameState {
                     addAll(a);
                     addAll(b);
                 }}).orElse(new HashSet<>());
-        return Stream.concat(Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()), attachments.stream())
+        List<Card> cardList = Stream.concat(Stream.concat(enemyHeroAlliesAndSupportCards().stream(), yourHeroAlliesAndSupportCards().stream()), attachments.stream())
                 .distinct()
                 .collect(Collectors.toList());
+        if (nonNull(getYourHero().getWeapon())) {
+            cardList.add(getYourHero().getWeapon());
+        }
+        if (nonNull(getYourHero().getArmor())) {
+            cardList.add(getYourHero().getArmor());
+        }
+        if (nonNull(getEnemyHero().getWeapon())) {
+            cardList.add(getEnemyHero().getWeapon());
+        }
+        if (nonNull(getEnemyHero().getArmor())) {
+            cardList.add(getEnemyHero().getArmor());
+        }
+        return cardList;
     }
 
     public int enemyResourcesSize() {

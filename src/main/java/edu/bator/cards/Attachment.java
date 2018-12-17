@@ -3,7 +3,6 @@ package edu.bator.cards;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.cards.CardUiHelper;
 import javafx.event.EventHandler;
@@ -72,15 +71,10 @@ public class Attachment extends Card {
 
         @Override
         public void handle(MouseEvent event) {
-            target.getAttachments().add(Attachment.this);
-            new GameEngine().decreaseCurrentPlayerResources(gameState, getResourceCost());
-            if (!gameState.currentYourHandBasedOnPhase().remove(Attachment.this)) {
-                throw new IllegalStateException("Attachment casted but not in casters hand?");
-            }
-            gameState.currentYourHandBasedOnPhase().forEach(card -> card.determineCastable(gameState));
-            gameState.resetPossibleAbiltyTargets();
-            gameState.resetPossibleAttackTargets();
-            stage.close();
+            Attachment attachment = Attachment.this;
+            Card card = attachment;
+            target.getAttachments().add(attachment);
+            CardUiHelper.closeDialogDetermineCastabeDecreseResources(card, gameState, stage);
         }
     }
 }
