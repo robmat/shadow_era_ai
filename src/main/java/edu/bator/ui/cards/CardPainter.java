@@ -60,8 +60,6 @@ public class CardPainter {
                 .append(" ")
                 .append(card.getAbilities(gameState).isEmpty() ? "" : card.getAbilities(gameState));
 
-        buildWeaponText(card, tooltipBuilder, gameState);
-        buildArmorText(card, tooltipBuilder, gameState);
         buildAttachmentText(card, tooltipBuilder);
 
         String tooltipText = tooltipBuilder.toString();
@@ -87,11 +85,7 @@ public class CardPainter {
 
         //row 3
         if (card.cardIsAHero()) {
-            StringBuilder text = new StringBuilder("SE: " + card.getShadowEnergy());
-            buildWeaponText(card, text, gameState);
-            buildArmorText(card, text, gameState);
-
-            gridPane.add(new Label(text.toString()), 0, 2);
+            gridPane.add(new Label("SE: " + card.getShadowEnergy()), 0, 2);
         }
         if (card.hasAbilityToUse(gameState)) {
             Button abilityButton = new Button("Ability.");
@@ -163,30 +157,6 @@ public class CardPainter {
                         .append(" ")
                         .append(attachment.getDescription());
             });
-        });
-    }
-
-    private void buildWeaponText(Card card, StringBuilder text, GameState gameState) {
-        Optional.ofNullable(card.getWeapon()).ifPresent(weapon -> {
-            text
-                    .append("\nWeapon: ")
-                    .append(weapon.getName())
-                    .append(" DUR: ")
-                    .append(weapon.getCurrentHp(gameState))
-                    .append(" ATK: ")
-                    .append(weapon.getAttack(gameState));
-        });
-    }
-
-    private void buildArmorText(Card card, StringBuilder text, GameState gameState) {
-        Optional.ofNullable(card.getArmor()).ifPresent(armor -> {
-            text
-                    .append("\nArmor: ")
-                    .append(armor.getName())
-                    .append(" DUR: ")
-                    .append(armor.getCurrentHp(gameState))
-                    .append(" DEF: ")
-                    .append(armor.getBaseDefence());
         });
     }
 }

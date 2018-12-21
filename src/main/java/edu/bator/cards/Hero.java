@@ -50,9 +50,9 @@ public class Hero extends Card {
         super.attackedBy(attackEvent, source, gameState);
         Armor armor = getArmor();
         if (getCurrentHp(gameState) < hpBefore && nonNull(armor)) {
-            int defence = armor.getBaseDefence();
+            int defence = armor.getBaseDefence() + BonusUtil.attackBonus(gameState, this);
             setCurrentHp(hpBefore - getCurrentHp(gameState) > defence ? currentHpWithoutBonus() + defence : hpWithoutBonusBefore);
-            armor.setCurrentHp(armor.getCurrentHp(gameState) - 1);
+            armor.setCurrentHp(armor.getCurrentHp(gameState) - 1 + armor.getAttachments().stream().map(Attachment::durabilityInCombatLost).reduce(0, (a, b) -> a + b));
             if (armor.cardIsDead()) {
                 new GameEngine().cardDied(armor, gameState);
             }

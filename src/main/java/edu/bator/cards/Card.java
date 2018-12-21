@@ -247,7 +247,7 @@ public class Card implements Cloneable {
 
     void reduceWeaponHp(GameState gameState, Card weapon) {
         if (nonNull(weapon.getCurrentHp())) {
-            weapon.setCurrentHp(weapon.getCurrentHp() - 1);
+            weapon.setCurrentHp(weapon.getCurrentHp() - 1 + weapon.getAttachments().stream().map(Attachment::durabilityInCombatLost).reduce(0, (a, b) -> a + b));
             if (weapon.cardIsDead()) {
                 new GameEngine().cardDied(weapon, gameState);
             }

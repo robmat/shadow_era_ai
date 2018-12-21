@@ -55,6 +55,10 @@ public class Attachment extends Card {
         return 0;
     }
 
+    public int durabilityInCombatLost() {
+        return 0;
+    }
+
     private class AttachmentTargetClickedEvent implements EventHandler<MouseEvent> {
 
         GameState gameState;
