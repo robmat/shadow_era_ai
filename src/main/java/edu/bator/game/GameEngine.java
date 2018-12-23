@@ -169,7 +169,15 @@ public class GameEngine {
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
             card.cardHasDiedEvent(card, gameState);
         }
+
+        if (gameState.yourAction()) {
+            readyHandCards(gameState.getYourHand(), gameState);
+        }
+        if (gameState.enemyAction()) {
+            readyHandCards(gameState.getEnemyHand(), gameState);
+        }
     }
+
 
     private void cardDied(Card card, GameState gameState, LinkedList<Card> diedFrom, GraveyardLinkedList graveyard) {
         if (diedFrom.remove(card)) {
