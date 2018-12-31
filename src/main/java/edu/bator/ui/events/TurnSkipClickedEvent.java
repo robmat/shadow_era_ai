@@ -18,11 +18,11 @@ public class TurnSkipClickedEvent implements EventHandler<MouseEvent> {
     public void handle(MouseEvent event) {
         if (GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
             if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-                gameState.setGamePhase(GamePhase.YOU_PREPARE);
+                gameState.setGamePhase(GamePhase.ENEMY_END);
                 new GameEngine().checkGameState(gameState);
             }
             if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-                gameState.setGamePhase(GamePhase.ENEMY_PREPARE);
+                gameState.setGamePhase(GamePhase.YOU_END);
                 new GameEngine().checkGameState(gameState);
             }
         }

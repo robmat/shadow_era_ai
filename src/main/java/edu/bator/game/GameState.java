@@ -87,8 +87,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Poor Quality", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Poor Quality", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Honored Dead", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Honored Dead", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Rain Delay", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Rain Delay", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Special Delivery", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Special Delivery", Owner.YOU));

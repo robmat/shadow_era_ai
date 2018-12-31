@@ -18,10 +18,11 @@ public class SupportExpireUtil {
         if (Objects.equals(expirable.getTurnExpires(), gameState.getCurrentTurn())) {
             log.debug(format("phase expires: %s, current: %s", expirable.getPhaseExpires(), gameState.getGamePhase()));
             if (Objects.equals(expirable.getPhaseExpires(), gameState.getGamePhase())) {
-                if (gameState.getYourSupport().remove((Card) expirable)) {
+                log.debug("Expired: " + expirable);
+                if (gameState.getYourSupport().remove(expirable)) {
                     gameState.getYourGraveyard().add((Card) expirable);
                 }
-                if (gameState.getEnemySupport().remove((Card) expirable)) {
+                if (gameState.getEnemySupport().remove(expirable)) {
                     gameState.getEnemyGraveyard().add((Card) expirable);
                 }
             }

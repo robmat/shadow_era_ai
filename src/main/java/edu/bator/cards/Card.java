@@ -116,8 +116,12 @@ public class Card implements Cloneable {
         this.attachments = new HashSet<>(cloneFrom.attachments);
     }
 
-    public void tryToReadyAttack() {
-        attackReadied = true;
+    public void tryToReadyAttack(GameState gameState) {
+        attackReadied = gameState.allCardsInPlay().stream().noneMatch(card -> card.preventsAllyFromReadyingAttack(this, gameState));
+    }
+
+    public boolean preventsAllyFromReadyingAttack(Card card, GameState gameState) {
+        return false;
     }
 
     public void tryToReadyAbility() {
