@@ -18,5 +18,5 @@ public abstract class Effect {
 
     public abstract boolean forbidsCounterAttack();
 
-    public enum EffectType {IN_LOVE, ON_FIRE, POISONED, FROZEN}
+    public enum EffectType {IN_LOVE, ON_FIRE, POISONED, FROZEN, NO_ABILTY}
 }

@@ -124,8 +124,12 @@ public class Card implements Cloneable {
         return false;
     }
 
-    public void tryToReadyAbility() {
-        abilityReadied = true;
+    public void tryToReadyAbility(GameState gameState) {
+        abilityReadied = gameState.allCardsInPlay().stream().noneMatch(card -> card.preventsAllyFromReadyingAbility(this, gameState));
+    }
+
+    private boolean preventsAllyFromReadyingAbility(Card card, GameState gameState) {
+        return false;
     }
 
     @Override

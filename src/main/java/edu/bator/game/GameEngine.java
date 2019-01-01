@@ -50,7 +50,7 @@ public class GameEngine {
             case YOU_END: {
                 notifyAllCardsInPlayAboutGamePhase(gameState);
                 readyAllies(gameState.getEnemyAllies(), gameState);
-                readyHero(gameState.getEnemyHero());
+                readyHero(gameState.getEnemyHero(), gameState);
                 gameState.setGamePhase(GamePhase.ENEMY_PREPARE);
                 checkGameState(gameState);
                 break;
@@ -82,7 +82,7 @@ public class GameEngine {
                 if (gameState.currentTurn != 1) {
                     readyAllies(gameState.getYourAllies(), gameState);
                 }
-                readyHero(gameState.getYourHero());
+                readyHero(gameState.getYourHero(), gameState);
                 gameState.setGamePhase(GamePhase.YOU_PREPARE);
                 checkGameState(gameState);
                 break;
@@ -123,9 +123,9 @@ public class GameEngine {
                 });
     }
 
-    private void readyHero(Card hero) {
-        hero.setAbilityReadied(true);
-        hero.setAttackReadied(true);
+    private void readyHero(Card hero, GameState gameState) {
+        hero.tryToReadyAttack(gameState);
+        hero.tryToReadyAbility(gameState);
     }
 
     private void readyHandCards(LinkedList<Card> hand, GameState gameState) {
@@ -144,7 +144,7 @@ public class GameEngine {
 
     private void readyAllies(LinkedList<Card> allies, GameState gameState) {
         allies.forEach(card -> card.tryToReadyAttack(gameState));
-        allies.forEach(Card::tryToReadyAbility);
+        allies.forEach(card -> card.tryToReadyAbility(gameState));
     }
 
     public void cardDied(Card card, GameState gameState) {
