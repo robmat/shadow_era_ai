@@ -2110,7 +2110,7 @@
     "resourceCost": 3,
     "baseAttack": null,
     "initialHp": null,
-    "itemSubType": null,
+    "itemSubType": "ATTACHMENT",
     "attackType": null,
     "abilities": []
   },
@@ -2289,7 +2289,7 @@
     "side": null,
     "heroClass": "NEUTRAL",
     "description": "Allies can't attack until the end of your next turn.",
-    "cardType": "ABILITY",
+    "cardType": "SUPPORT",
     "resourceCost": 2,
     "baseAttack": null,
     "initialHp": null,

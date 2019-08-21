@@ -16,6 +16,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import static java.util.Objects.nonNull;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -52,7 +54,16 @@ public class GamePainter {
         paintCardList(gameState.getEnemyHand(), enemyHand, gameState);
         enemyResources.add(new Label("Resources: " + gameState.getEnemyCurrentResources() + "/" + gameState.enemyResourcesSize()), 0, 0);
         cardPainter.paint(gameState.getEnemyHero(), enemyHero, 0, gameState);
-        paintCardList(gameState.getEnemySupport(), enemySupport, gameState);
+
+        LinkedList<Card> enemySupport = new LinkedList<>(gameState.getEnemySupport());
+        if (nonNull(gameState.getEnemyHero().getArmor())) {
+            enemySupport.add(gameState.getEnemyHero().getArmor());
+        }
+        if (nonNull(gameState.getEnemyHero().getWeapon())) {
+            enemySupport.add(gameState.getEnemyHero().getWeapon());
+        }
+        paintCardList(enemySupport, this.enemySupport, gameState);
+
         enemyGraveyard.add(new Label("Graveyard: " + gameState.getEnemyGraveyard().size()), 0, 0);
         paintCardList(gameState.getEnemyAllies(), enemyAllies, gameState);
 
@@ -60,9 +71,20 @@ public class GamePainter {
         paintCardList(gameState.getYourHand(), yourHand, gameState);
         yourResources.add(new Label("Resources: " + gameState.getYourCurrentResources() + "/" + gameState.yourResourcesSize()), 0, 0);
         cardPainter.paint(gameState.getYourHero(), yourHero, 0, gameState);
-        paintCardList(gameState.getYourSupport(), yourSupport, gameState);
+
+
+        LinkedList<Card> yourSupport = new LinkedList<>(gameState.getYourSupport());
+        if (nonNull(gameState.getYourHero().getArmor())) {
+            yourSupport.add(gameState.getYourHero().getArmor());
+        }
+        if (nonNull(gameState.getYourHero().getWeapon())) {
+            yourSupport.add(gameState.getYourHero().getWeapon());
+        }
+        paintCardList(yourSupport, this.yourSupport, gameState);
+
         yourGraveyard.add(new Label("Graveyard: " + gameState.getYourGraveyard().size()), 0, 0);
         paintCardList(gameState.getYourAllies(), yourAllies, gameState);
+
 
         endTurnButton.setVisible(GameEngine.ACTION_PHASES.contains(gameState.getGamePhase()));
         endTurnButton.setOnMouseClicked(new TurnSkipClickedEvent(gameState));

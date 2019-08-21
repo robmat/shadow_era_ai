@@ -84,11 +84,11 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Armored Sandworm", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Shield Bash", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Shield Bash", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Drain Power", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Drain Power", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Campfire Stories", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Campfire Stories", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Rain Delay", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Rain Delay", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Special Delivery", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Special Delivery", Owner.YOU));
@@ -164,15 +164,19 @@ public class GameState {
                 .collect(Collectors.toList());
         if (nonNull(getYourHero().getWeapon())) {
             cardList.add(getYourHero().getWeapon());
+            cardList.addAll(getYourHero().getWeapon().getAttachments());
         }
         if (nonNull(getYourHero().getArmor())) {
             cardList.add(getYourHero().getArmor());
+            cardList.addAll(getYourHero().getArmor().getAttachments());
         }
         if (nonNull(getEnemyHero().getWeapon())) {
             cardList.add(getEnemyHero().getWeapon());
+            cardList.addAll(getEnemyHero().getWeapon().getAttachments());
         }
         if (nonNull(getEnemyHero().getArmor())) {
             cardList.add(getEnemyHero().getArmor());
+            cardList.addAll(getEnemyHero().getArmor().getAttachments());
         }
         return cardList;
     }

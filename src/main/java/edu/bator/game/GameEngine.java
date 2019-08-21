@@ -25,8 +25,6 @@ public class GameEngine {
             case YOU_PREPARE: {
                 gameState.setCurrentTurn(gameState.getCurrentTurn() + 1);
                 pickACard(gameState.getYourDeck(), gameState.getYourHand(), gameState.getYourHero());
-                readyAllies(gameState.getEnemyAllies());
-                readyHero(gameState.getEnemyHero());
                 expireEffects(gameState);
                 applyEffects(gameState.yourHeroAlliesAndSupportCards());
                 clearAbilityAndAttackTargets(gameState);
@@ -49,13 +47,16 @@ public class GameEngine {
                 notifyAllCardsInPlayAboutGamePhase(gameState);
                 break;
             }
-
+            case YOU_END: {
+                notifyAllCardsInPlayAboutGamePhase(gameState);
+                readyAllies(gameState.getEnemyAllies(), gameState);
+                readyHero(gameState.getEnemyHero(), gameState);
+                gameState.setGamePhase(GamePhase.ENEMY_PREPARE);
+                checkGameState(gameState);
+                break;
+            }
             case ENEMY_PREPARE: {
                 pickACard(gameState.getEnemyDeck(), gameState.getEnemyHand(), gameState.getEnemyHero());
-                if (gameState.currentTurn != 1) {
-                    readyAllies(gameState.getYourAllies());
-                }
-                readyHero(gameState.getYourHero());
                 expireEffects(gameState);
                 applyEffects(gameState.enemyHeroAlliesAndSupportCards());
                 clearAbilityAndAttackTargets(gameState);
@@ -74,6 +75,16 @@ public class GameEngine {
                 gameState.increaseSE(gameState.getEnemyHero());
                 readyHandCards(gameState.getEnemyHand(), gameState);
                 notifyAllCardsInPlayAboutGamePhase(gameState);
+                break;
+            }
+            case ENEMY_END: {
+                notifyAllCardsInPlayAboutGamePhase(gameState);
+                if (gameState.currentTurn != 1) {
+                    readyAllies(gameState.getYourAllies(), gameState);
+                }
+                readyHero(gameState.getYourHero(), gameState);
+                gameState.setGamePhase(GamePhase.YOU_PREPARE);
+                checkGameState(gameState);
                 break;
             }
         }
@@ -112,9 +123,9 @@ public class GameEngine {
                 });
     }
 
-    private void readyHero(Card hero) {
-        hero.setAbilityReadied(true);
-        hero.setAttackReadied(true);
+    private void readyHero(Card hero, GameState gameState) {
+        hero.tryToReadyAttack(gameState);
+        hero.tryToReadyAbility(gameState);
     }
 
     private void readyHandCards(LinkedList<Card> hand, GameState gameState) {
@@ -131,9 +142,9 @@ public class GameEngine {
         }
     }
 
-    private void readyAllies(LinkedList<Card> allies) {
-        allies.forEach(Card::tryToReadyAttack);
-        allies.forEach(Card::tryToReadyAbility);
+    private void readyAllies(LinkedList<Card> allies, GameState gameState) {
+        allies.forEach(card -> card.tryToReadyAttack(gameState));
+        allies.forEach(card -> card.tryToReadyAbility(gameState));
     }
 
     public void cardDied(Card card, GameState gameState) {
@@ -169,7 +180,15 @@ public class GameEngine {
             gameState.allCardsInPlay().forEach(c -> c.cardHasDiedEvent(card, gameState));
             card.cardHasDiedEvent(card, gameState);
         }
+
+        if (gameState.yourAction()) {
+            readyHandCards(gameState.getYourHand(), gameState);
+        }
+        if (gameState.enemyAction()) {
+            readyHandCards(gameState.getEnemyHand(), gameState);
+        }
     }
+
 
     private void cardDied(Card card, GameState gameState, LinkedList<Card> diedFrom, GraveyardLinkedList graveyard) {
         if (diedFrom.remove(card)) {

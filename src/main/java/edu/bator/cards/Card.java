@@ -116,12 +116,20 @@ public class Card implements Cloneable {
         this.attachments = new HashSet<>(cloneFrom.attachments);
     }
 
-    public void tryToReadyAttack() {
-        attackReadied = true;
+    public void tryToReadyAttack(GameState gameState) {
+        attackReadied = gameState.allCardsInPlay().stream().noneMatch(card -> card.preventsAllyFromReadyingAttack(this, gameState));
     }
 
-    public void tryToReadyAbility() {
-        abilityReadied = true;
+    public boolean preventsAllyFromReadyingAttack(Card card, GameState gameState) {
+        return false;
+    }
+
+    public void tryToReadyAbility(GameState gameState) {
+        abilityReadied = gameState.allCardsInPlay().stream().noneMatch(card -> card.preventsAllyFromReadyingAbility(this, gameState));
+    }
+
+    private boolean preventsAllyFromReadyingAbility(Card card, GameState gameState) {
+        return false;
     }
 
     @Override
@@ -247,7 +255,7 @@ public class Card implements Cloneable {
 
     void reduceWeaponHp(GameState gameState, Card weapon) {
         if (nonNull(weapon.getCurrentHp())) {
-            weapon.setCurrentHp(weapon.getCurrentHp() - 1);
+            weapon.setCurrentHp(weapon.getCurrentHp() - 1 + weapon.getAttachments().stream().map(Attachment::durabilityInCombatLost).reduce(0, (a, b) -> a + b));
             if (weapon.cardIsDead()) {
                 new GameEngine().cardDied(weapon, gameState);
             }
