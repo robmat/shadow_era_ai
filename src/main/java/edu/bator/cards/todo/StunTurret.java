@@ -8,7 +8,6 @@ public class StunTurret extends Card {
     }
 
 
-
     public StunTurret(Card cloneFrom) {
         super(cloneFrom);
     }

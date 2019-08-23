@@ -8,7 +8,6 @@ public class AnmorsCall extends Card {
     }
 
 
-
     public AnmorsCall(Card cloneFrom) {
         super(cloneFrom);
     }

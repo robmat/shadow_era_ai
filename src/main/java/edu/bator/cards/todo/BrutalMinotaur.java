@@ -8,7 +8,6 @@ public class BrutalMinotaur extends Card {
     }
 
 
-
     public BrutalMinotaur(Card cloneFrom) {
         super(cloneFrom);
     }

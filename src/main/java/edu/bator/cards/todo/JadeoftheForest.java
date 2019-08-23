@@ -8,7 +8,6 @@ public class JadeoftheForest extends Card {
     }
 
 
-
     public JadeoftheForest(Card cloneFrom) {
         super(cloneFrom);
     }

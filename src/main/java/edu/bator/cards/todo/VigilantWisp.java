@@ -8,7 +8,6 @@ public class VigilantWisp extends Card {
     }
 
 
-
     public VigilantWisp(Card cloneFrom) {
         super(cloneFrom);
     }

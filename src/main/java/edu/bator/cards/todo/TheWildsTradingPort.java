@@ -8,7 +8,6 @@ public class TheWildsTradingPort extends Card {
     }
 
 
-
     public TheWildsTradingPort(Card cloneFrom) {
         super(cloneFrom);
     }

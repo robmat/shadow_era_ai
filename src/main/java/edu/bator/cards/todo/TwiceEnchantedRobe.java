@@ -8,7 +8,6 @@ public class TwiceEnchantedRobe extends Card {
     }
 
 
-
     public TwiceEnchantedRobe(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -192,11 +193,40 @@ public class CardParser {
         cards.stream()
                 .filter(card -> !card.getAbilities().isEmpty())
                 .forEach(log::info);
+        List<Map> oldCards = objectJsonMapper
+                .readValue(CardParser.class.getResourceAsStream("/cards.json"), List.class);
 
-        Path resultPath = Paths.get("result.txt");
+        cards = cards.stream().filter(c -> oldCards.stream()
+                .noneMatch(old -> c.getName().equals(old.get("name"))))
+                .collect(Collectors.toList());
+
+
+        for (Card card : cards) {
+            Path cardClassFile = Paths.get("src", "main", "java", "edu", "bator", "cards", "todo", card.getName().replaceAll("[ :'!,-]", ""), ".java");
+            if (!Files.exists(cardClassFile)) {
+                System.out.println(card.getName());
+                String name = card.getName().replaceAll("[ :'!,-]", "");
+                Files.write(Paths.get("src","main","java","edu","bator","cards","todo", name + ".java"), String.format("package edu.bator.cards.todo;\n" +
+                        "\n" +
+                        "import edu.bator.cards.Card;\n" +
+                        "\n" +
+                        "public class %s extends Card {\n" +
+                        "    public %s(Card cloneFrom) {\n" +
+                        "        super(cloneFrom);\n" +
+                        "    }\n" +
+                        "}", name, name).getBytes());
+            }
+        }
+
+        /*Files.write(Paths.get("src", "main", "resources", "new_cards.json"),
+                objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));*/
+
+       /* Path resultPath = Paths.get("result.txt");
         Files.write(resultPath, cards.stream().map(Card::toString).collect(Collectors.toList()));
         Files.write(Paths.get("src", "main", "resources", "cards.json"),
-                objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));
+                objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));*/
+
+
     }
 
     public static Integer parseIntInChildIfPresent(Node node) {

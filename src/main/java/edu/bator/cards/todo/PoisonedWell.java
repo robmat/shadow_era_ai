@@ -8,7 +8,6 @@ public class PoisonedWell extends Card {
     }
 
 
-
     public PoisonedWell(Card cloneFrom) {
         super(cloneFrom);
     }

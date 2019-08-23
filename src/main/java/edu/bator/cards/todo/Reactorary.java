@@ -8,7 +8,6 @@ public class Reactorary extends Card {
     }
 
 
-
     public Reactorary(Card cloneFrom) {
         super(cloneFrom);
     }

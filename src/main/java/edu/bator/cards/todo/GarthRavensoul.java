@@ -8,7 +8,6 @@ public class GarthRavensoul extends Card {
     }
 
 
-
     public GarthRavensoul(Card cloneFrom) {
         super(cloneFrom);
     }

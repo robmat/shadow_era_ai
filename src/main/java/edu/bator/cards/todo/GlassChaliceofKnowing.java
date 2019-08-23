@@ -8,7 +8,6 @@ public class GlassChaliceofKnowing extends Card {
     }
 
 
-
     public GlassChaliceofKnowing(Card cloneFrom) {
         super(cloneFrom);
     }

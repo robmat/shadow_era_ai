@@ -8,7 +8,6 @@ public class DomeofEnergy extends Card {
     }
 
 
-
     public DomeofEnergy(Card cloneFrom) {
         super(cloneFrom);
     }

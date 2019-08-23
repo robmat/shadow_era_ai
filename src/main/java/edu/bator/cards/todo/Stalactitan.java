@@ -8,7 +8,6 @@ public class Stalactitan extends Card {
     }
 
 
-
     public Stalactitan(Card cloneFrom) {
         super(cloneFrom);
     }

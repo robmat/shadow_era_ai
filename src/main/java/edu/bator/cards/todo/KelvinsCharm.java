@@ -8,7 +8,6 @@ public class KelvinsCharm extends Card {
     }
 
 
-
     public KelvinsCharm(Card cloneFrom) {
         super(cloneFrom);
     }

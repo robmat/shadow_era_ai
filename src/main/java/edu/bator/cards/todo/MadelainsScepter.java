@@ -8,7 +8,6 @@ public class MadelainsScepter extends Card {
     }
 
 
-
     public MadelainsScepter(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class WarFlail extends Card {
     }
 
 
-
     public WarFlail(Card cloneFrom) {
         super(cloneFrom);
     }

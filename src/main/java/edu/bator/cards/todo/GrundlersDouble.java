@@ -8,7 +8,6 @@ public class GrundlersDouble extends Card {
     }
 
 
-
     public GrundlersDouble(Card cloneFrom) {
         super(cloneFrom);
     }

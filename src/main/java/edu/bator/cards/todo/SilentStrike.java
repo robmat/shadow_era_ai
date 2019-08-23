@@ -8,7 +8,6 @@ public class SilentStrike extends Card {
     }
 
 
-
     public SilentStrike(Card cloneFrom) {
         super(cloneFrom);
     }

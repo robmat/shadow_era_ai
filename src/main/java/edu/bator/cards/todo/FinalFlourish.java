@@ -8,7 +8,6 @@ public class FinalFlourish extends Card {
     }
 
 
-
     public FinalFlourish(Card cloneFrom) {
         super(cloneFrom);
     }

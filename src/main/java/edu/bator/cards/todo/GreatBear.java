@@ -8,7 +8,6 @@ public class GreatBear extends Card {
     }
 
 
-
     public GreatBear(Card cloneFrom) {
         super(cloneFrom);
     }

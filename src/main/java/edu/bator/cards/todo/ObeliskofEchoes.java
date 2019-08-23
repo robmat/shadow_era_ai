@@ -8,7 +8,6 @@ public class ObeliskofEchoes extends Card {
     }
 
 
-
     public ObeliskofEchoes(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class PlightbredRunt extends Card {
     }
 
 
-
     public PlightbredRunt(Card cloneFrom) {
         super(cloneFrom);
     }

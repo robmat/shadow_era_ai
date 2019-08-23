@@ -8,7 +8,6 @@ public class FireSnake extends Card {
     }
 
 
-
     public FireSnake(Card cloneFrom) {
         super(cloneFrom);
     }

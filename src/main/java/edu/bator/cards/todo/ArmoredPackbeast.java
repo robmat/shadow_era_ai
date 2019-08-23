@@ -8,7 +8,6 @@ public class ArmoredPackbeast extends Card {
     }
 
 
-
     public ArmoredPackbeast(Card cloneFrom) {
         super(cloneFrom);
     }

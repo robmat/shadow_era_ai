@@ -8,7 +8,6 @@ public class Overwhelm extends Card {
     }
 
 
-
     public Overwhelm(Card cloneFrom) {
         super(cloneFrom);
     }

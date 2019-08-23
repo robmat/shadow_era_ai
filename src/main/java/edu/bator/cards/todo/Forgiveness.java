@@ -8,7 +8,6 @@ public class Forgiveness extends Card {
     }
 
 
-
     public Forgiveness(Card cloneFrom) {
         super(cloneFrom);
     }

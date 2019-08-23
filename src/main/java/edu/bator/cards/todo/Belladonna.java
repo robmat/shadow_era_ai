@@ -8,7 +8,6 @@ public class Belladonna extends Card {
     }
 
 
-
     public Belladonna(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class IceStorm extends Card {
     }
 
 
-
     public IceStorm(Card cloneFrom) {
         super(cloneFrom);
     }

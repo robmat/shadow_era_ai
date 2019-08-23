@@ -8,7 +8,6 @@ public class RavenscrestValleyofSecrets extends Card {
     }
 
 
-
     public RavenscrestValleyofSecrets(Card cloneFrom) {
         super(cloneFrom);
     }

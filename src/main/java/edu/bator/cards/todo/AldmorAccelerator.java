@@ -8,7 +8,6 @@ public class AldmorAccelerator extends Card {
     }
 
 
-
     public AldmorAccelerator(Card cloneFrom) {
         super(cloneFrom);
     }

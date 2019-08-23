@@ -8,7 +8,6 @@ public class JerichoSpellbane extends Card {
     }
 
 
-
     public JerichoSpellbane(Card cloneFrom) {
         super(cloneFrom);
     }

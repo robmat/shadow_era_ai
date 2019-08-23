@@ -8,7 +8,6 @@ public class ArcaneBurst extends Card {
     }
 
 
-
     public ArcaneBurst(Card cloneFrom) {
         super(cloneFrom);
     }

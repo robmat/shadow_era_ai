@@ -8,7 +8,6 @@ public class RapidFire extends Card {
     }
 
 
-
     public RapidFire(Card cloneFrom) {
         super(cloneFrom);
     }

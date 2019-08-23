@@ -8,7 +8,6 @@ public class FlamebornDefiler extends Card {
     }
 
 
-
     public FlamebornDefiler(Card cloneFrom) {
         super(cloneFrom);
     }

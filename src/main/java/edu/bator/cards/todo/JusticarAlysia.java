@@ -8,7 +8,6 @@ public class JusticarAlysia extends Card {
     }
 
 
-
     public JusticarAlysia(Card cloneFrom) {
         super(cloneFrom);
     }

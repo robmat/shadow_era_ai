@@ -8,7 +8,6 @@ public class RedEyedWorg extends Card {
     }
 
 
-
     public RedEyedWorg(Card cloneFrom) {
         super(cloneFrom);
     }

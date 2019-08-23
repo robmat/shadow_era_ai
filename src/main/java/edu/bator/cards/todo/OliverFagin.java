@@ -8,7 +8,6 @@ public class OliverFagin extends Card {
     }
 
 
-
     public OliverFagin(Card cloneFrom) {
         super(cloneFrom);
     }

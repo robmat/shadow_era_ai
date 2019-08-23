@@ -8,7 +8,6 @@ public class ZailsHymn extends Card {
     }
 
 
-
     public ZailsHymn(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class BrigandCaptain extends Card {
     }
 
 
-
     public BrigandCaptain(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class ShriekofRevulsion extends Card {
     }
 
 
-
     public ShriekofRevulsion(Card cloneFrom) {
         super(cloneFrom);
     }

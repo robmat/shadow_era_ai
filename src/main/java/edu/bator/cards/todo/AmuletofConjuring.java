@@ -8,7 +8,6 @@ public class AmuletofConjuring extends Card {
     }
 
 
-
     public AmuletofConjuring(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class LayarianDiplomat extends Card {
     }
 
 
-
     public LayarianDiplomat(Card cloneFrom) {
         super(cloneFrom);
     }

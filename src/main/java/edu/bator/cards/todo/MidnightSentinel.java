@@ -8,7 +8,6 @@ public class MidnightSentinel extends Card {
     }
 
 
-
     public MidnightSentinel(Card cloneFrom) {
         super(cloneFrom);
     }

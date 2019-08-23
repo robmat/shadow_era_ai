@@ -8,7 +8,6 @@ public class LightningHunter extends Card {
     }
 
 
-
     public LightningHunter(Card cloneFrom) {
         super(cloneFrom);
     }

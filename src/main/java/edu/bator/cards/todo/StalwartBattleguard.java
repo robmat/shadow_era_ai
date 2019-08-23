@@ -8,7 +8,6 @@ public class StalwartBattleguard extends Card {
     }
 
 
-
     public StalwartBattleguard(Card cloneFrom) {
         super(cloneFrom);
     }

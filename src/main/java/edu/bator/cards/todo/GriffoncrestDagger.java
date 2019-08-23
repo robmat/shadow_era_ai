@@ -8,7 +8,6 @@ public class GriffoncrestDagger extends Card {
     }
 
 
-
     public GriffoncrestDagger(Card cloneFrom) {
         super(cloneFrom);
     }

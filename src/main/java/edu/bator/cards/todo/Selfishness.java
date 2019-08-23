@@ -8,7 +8,6 @@ public class Selfishness extends Card {
     }
 
 
-
     public Selfishness(Card cloneFrom) {
         super(cloneFrom);
     }

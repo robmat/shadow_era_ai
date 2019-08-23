@@ -8,7 +8,6 @@ public class BeetleDemonBow extends Card {
     }
 
 
-
     public BeetleDemonBow(Card cloneFrom) {
         super(cloneFrom);
     }

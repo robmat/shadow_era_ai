@@ -8,7 +8,6 @@ public class ThrissCrucible extends Card {
     }
 
 
-
     public ThrissCrucible(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class TemporalDisturbance extends Card {
     }
 
 
-
     public TemporalDisturbance(Card cloneFrom) {
         super(cloneFrom);
     }

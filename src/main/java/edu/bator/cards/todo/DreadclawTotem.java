@@ -8,7 +8,6 @@ public class DreadclawTotem extends Card {
     }
 
 
-
     public DreadclawTotem(Card cloneFrom) {
         super(cloneFrom);
     }

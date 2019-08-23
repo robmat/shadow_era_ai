@@ -8,7 +8,6 @@ public class EntangledWisp extends Card {
     }
 
 
-
     public EntangledWisp(Card cloneFrom) {
         super(cloneFrom);
     }

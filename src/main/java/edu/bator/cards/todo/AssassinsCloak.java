@@ -8,7 +8,6 @@ public class AssassinsCloak extends Card {
     }
 
 
-
     public AssassinsCloak(Card cloneFrom) {
         super(cloneFrom);
     }

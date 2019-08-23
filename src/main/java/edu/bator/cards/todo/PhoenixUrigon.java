@@ -8,7 +8,6 @@ public class PhoenixUrigon extends Card {
     }
 
 
-
     public PhoenixUrigon(Card cloneFrom) {
         super(cloneFrom);
     }

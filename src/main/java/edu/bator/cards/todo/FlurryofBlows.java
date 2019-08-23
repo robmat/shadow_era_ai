@@ -8,7 +8,6 @@ public class FlurryofBlows extends Card {
     }
 
 
-
     public FlurryofBlows(Card cloneFrom) {
         super(cloneFrom);
     }

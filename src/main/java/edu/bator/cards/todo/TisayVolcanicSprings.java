@@ -8,7 +8,6 @@ public class TisayVolcanicSprings extends Card {
     }
 
 
-
     public TisayVolcanicSprings(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class TwilightOrphic extends Card {
     }
 
 
-
     public TwilightOrphic(Card cloneFrom) {
         super(cloneFrom);
     }

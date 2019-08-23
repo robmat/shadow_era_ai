@@ -8,7 +8,6 @@ public class ZailenScholar extends Card {
     }
 
 
-
     public ZailenScholar(Card cloneFrom) {
         super(cloneFrom);
     }

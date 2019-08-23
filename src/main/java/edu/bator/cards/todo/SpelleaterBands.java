@@ -8,7 +8,6 @@ public class SpelleaterBands extends Card {
     }
 
 
-
     public SpelleaterBands(Card cloneFrom) {
         super(cloneFrom);
     }

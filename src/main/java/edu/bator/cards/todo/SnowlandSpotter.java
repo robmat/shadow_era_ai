@@ -8,7 +8,6 @@ public class SnowlandSpotter extends Card {
     }
 
 
-
     public SnowlandSpotter(Card cloneFrom) {
         super(cloneFrom);
     }

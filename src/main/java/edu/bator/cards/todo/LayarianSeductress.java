@@ -8,7 +8,6 @@ public class LayarianSeductress extends Card {
     }
 
 
-
     public LayarianSeductress(Card cloneFrom) {
         super(cloneFrom);
     }

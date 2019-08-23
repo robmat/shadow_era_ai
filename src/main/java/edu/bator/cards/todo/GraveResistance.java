@@ -8,7 +8,6 @@ public class GraveResistance extends Card {
     }
 
 
-
     public GraveResistance(Card cloneFrom) {
         super(cloneFrom);
     }

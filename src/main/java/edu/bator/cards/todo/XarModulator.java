@@ -8,7 +8,6 @@ public class XarModulator extends Card {
     }
 
 
-
     public XarModulator(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class BoneSabre extends Card {
     }
 
 
-
     public BoneSabre(Card cloneFrom) {
         super(cloneFrom);
     }

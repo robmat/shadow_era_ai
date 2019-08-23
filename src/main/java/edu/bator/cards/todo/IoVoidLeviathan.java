@@ -8,7 +8,6 @@ public class IoVoidLeviathan extends Card {
     }
 
 
-
     public IoVoidLeviathan(Card cloneFrom) {
         super(cloneFrom);
     }

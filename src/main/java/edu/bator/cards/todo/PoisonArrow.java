@@ -8,7 +8,6 @@ public class PoisonArrow extends Card {
     }
 
 
-
     public PoisonArrow(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class UnaxioSquire extends Card {
     }
 
 
-
     public UnaxioSquire(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class DisarmingPersonality extends Card {
     }
 
 
-
     public DisarmingPersonality(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class SosiloBrothersLanding extends Card {
     }
 
 
-
     public SosiloBrothersLanding(Card cloneFrom) {
         super(cloneFrom);
     }

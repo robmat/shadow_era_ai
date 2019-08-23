@@ -8,7 +8,6 @@ public class DeathfromAbove extends Card {
     }
 
 
-
     public DeathfromAbove(Card cloneFrom) {
         super(cloneFrom);
     }

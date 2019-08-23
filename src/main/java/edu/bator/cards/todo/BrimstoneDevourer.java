@@ -8,7 +8,6 @@ public class BrimstoneDevourer extends Card {
     }
 
 
-
     public BrimstoneDevourer(Card cloneFrom) {
         super(cloneFrom);
     }

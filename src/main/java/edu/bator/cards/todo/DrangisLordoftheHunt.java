@@ -8,7 +8,6 @@ public class DrangisLordoftheHunt extends Card {
     }
 
 
-
     public DrangisLordoftheHunt(Card cloneFrom) {
         super(cloneFrom);
     }

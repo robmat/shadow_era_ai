@@ -8,7 +8,6 @@ public class Sinkhole extends Card {
     }
 
 
-
     public Sinkhole(Card cloneFrom) {
         super(cloneFrom);
     }

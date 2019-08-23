@@ -8,7 +8,6 @@ public class CorpseShifter extends Card {
     }
 
 
-
     public CorpseShifter(Card cloneFrom) {
         super(cloneFrom);
     }

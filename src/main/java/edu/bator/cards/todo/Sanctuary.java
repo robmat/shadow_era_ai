@@ -8,7 +8,6 @@ public class Sanctuary extends Card {
     }
 
 
-
     public Sanctuary(Card cloneFrom) {
         super(cloneFrom);
     }

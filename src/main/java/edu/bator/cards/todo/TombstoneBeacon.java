@@ -8,7 +8,6 @@ public class TombstoneBeacon extends Card {
     }
 
 
-
     public TombstoneBeacon(Card cloneFrom) {
         super(cloneFrom);
     }

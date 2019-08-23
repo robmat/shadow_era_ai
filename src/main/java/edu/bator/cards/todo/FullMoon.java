@@ -8,7 +8,6 @@ public class FullMoon extends Card {
     }
 
 
-
     public FullMoon(Card cloneFrom) {
         super(cloneFrom);
     }

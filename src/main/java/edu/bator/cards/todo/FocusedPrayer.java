@@ -8,7 +8,6 @@ public class FocusedPrayer extends Card {
     }
 
 
-
     public FocusedPrayer(Card cloneFrom) {
         super(cloneFrom);
     }

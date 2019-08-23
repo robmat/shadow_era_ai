@@ -8,7 +8,6 @@ public class NathaniasPeoplesChampion extends Card {
     }
 
 
-
     public NathaniasPeoplesChampion(Card cloneFrom) {
         super(cloneFrom);
     }

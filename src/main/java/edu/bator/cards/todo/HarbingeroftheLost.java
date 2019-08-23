@@ -8,7 +8,6 @@ public class HarbingeroftheLost extends Card {
     }
 
 
-
     public HarbingeroftheLost(Card cloneFrom) {
         super(cloneFrom);
     }

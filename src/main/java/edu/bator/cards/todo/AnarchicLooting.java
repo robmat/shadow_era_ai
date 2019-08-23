@@ -8,7 +8,6 @@ public class AnarchicLooting extends Card {
     }
 
 
-
     public AnarchicLooting(Card cloneFrom) {
         super(cloneFrom);
     }

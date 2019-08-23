@@ -8,7 +8,6 @@ public class AnmorGarinaRoad extends Card {
     }
 
 
-
     public AnmorGarinaRoad(Card cloneFrom) {
         super(cloneFrom);
     }

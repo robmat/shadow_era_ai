@@ -8,7 +8,6 @@ public class MasterSmith extends Card {
     }
 
 
-
     public MasterSmith(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class MockingArmor extends Card {
     }
 
 
-
     public MockingArmor(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class ShadowArmor extends Card {
     }
 
 
-
     public ShadowArmor(Card cloneFrom) {
         super(cloneFrom);
     }

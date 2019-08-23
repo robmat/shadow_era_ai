@@ -8,7 +8,6 @@ public class RiderofEllos extends Card {
     }
 
 
-
     public RiderofEllos(Card cloneFrom) {
         super(cloneFrom);
     }

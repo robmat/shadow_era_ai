@@ -8,7 +8,6 @@ public class TomeofKnowledge extends Card {
     }
 
 
-
     public TomeofKnowledge(Card cloneFrom) {
         super(cloneFrom);
     }

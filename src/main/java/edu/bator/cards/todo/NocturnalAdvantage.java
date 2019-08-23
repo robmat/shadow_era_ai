@@ -8,7 +8,6 @@ public class NocturnalAdvantage extends Card {
     }
 
 
-
     public NocturnalAdvantage(Card cloneFrom) {
         super(cloneFrom);
     }

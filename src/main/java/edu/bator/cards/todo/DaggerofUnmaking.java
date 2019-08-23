@@ -8,7 +8,6 @@ public class DaggerofUnmaking extends Card {
     }
 
 
-
     public DaggerofUnmaking(Card cloneFrom) {
         super(cloneFrom);
     }

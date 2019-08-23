@@ -8,7 +8,6 @@ public class FrostedUrigon extends Card {
     }
 
 
-
     public FrostedUrigon(Card cloneFrom) {
         super(cloneFrom);
     }

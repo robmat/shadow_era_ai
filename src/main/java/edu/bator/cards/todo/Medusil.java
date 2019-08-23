@@ -8,7 +8,6 @@ public class Medusil extends Card {
     }
 
 
-
     public Medusil(Card cloneFrom) {
         super(cloneFrom);
     }

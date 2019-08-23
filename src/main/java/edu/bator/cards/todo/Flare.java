@@ -8,7 +8,6 @@ public class Flare extends Card {
     }
 
 
-
     public Flare(Card cloneFrom) {
         super(cloneFrom);
     }

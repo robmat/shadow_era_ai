@@ -8,7 +8,6 @@ public class Replicate extends Card {
     }
 
 
-
     public Replicate(Card cloneFrom) {
         super(cloneFrom);
     }

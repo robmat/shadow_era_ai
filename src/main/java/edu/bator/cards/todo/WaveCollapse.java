@@ -8,7 +8,6 @@ public class WaveCollapse extends Card {
     }
 
 
-
     public WaveCollapse(Card cloneFrom) {
         super(cloneFrom);
     }

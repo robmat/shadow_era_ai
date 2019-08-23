@@ -8,7 +8,6 @@ public class AldmorScavenger extends Card {
     }
 
 
-
     public AldmorScavenger(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class LeashofLife extends Card {
     }
 
 
-
     public LeashofLife(Card cloneFrom) {
         super(cloneFrom);
     }

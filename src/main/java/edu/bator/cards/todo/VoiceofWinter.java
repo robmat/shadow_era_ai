@@ -8,7 +8,6 @@ public class VoiceofWinter extends Card {
     }
 
 
-
     public VoiceofWinter(Card cloneFrom) {
         super(cloneFrom);
     }

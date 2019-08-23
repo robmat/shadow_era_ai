@@ -8,7 +8,6 @@ public class VeraHighPriestess extends Card {
     }
 
 
-
     public VeraHighPriestess(Card cloneFrom) {
         super(cloneFrom);
     }

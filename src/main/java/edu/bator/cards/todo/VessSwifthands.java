@@ -8,7 +8,6 @@ public class VessSwifthands extends Card {
     }
 
 
-
     public VessSwifthands(Card cloneFrom) {
         super(cloneFrom);
     }

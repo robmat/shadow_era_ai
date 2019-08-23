@@ -8,7 +8,6 @@ public class Exaltation extends Card {
     }
 
 
-
     public Exaltation(Card cloneFrom) {
         super(cloneFrom);
     }

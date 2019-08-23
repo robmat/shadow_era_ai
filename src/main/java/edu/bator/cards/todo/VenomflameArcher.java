@@ -8,7 +8,6 @@ public class VenomflameArcher extends Card {
     }
 
 
-
     public VenomflameArcher(Card cloneFrom) {
         super(cloneFrom);
     }

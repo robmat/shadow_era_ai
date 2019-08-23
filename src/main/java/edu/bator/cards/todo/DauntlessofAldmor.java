@@ -8,7 +8,6 @@ public class DauntlessofAldmor extends Card {
     }
 
 
-
     public DauntlessofAldmor(Card cloneFrom) {
         super(cloneFrom);
     }

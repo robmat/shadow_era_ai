@@ -8,7 +8,6 @@ public class ViskaTheScarletBlade extends Card {
     }
 
 
-
     public ViskaTheScarletBlade(Card cloneFrom) {
         super(cloneFrom);
     }

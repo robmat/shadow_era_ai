@@ -8,7 +8,6 @@ public class AradaJewels extends Card {
     }
 
 
-
     public AradaJewels(Card cloneFrom) {
         super(cloneFrom);
     }

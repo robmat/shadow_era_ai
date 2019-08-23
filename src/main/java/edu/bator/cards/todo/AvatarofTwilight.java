@@ -8,7 +8,6 @@ public class AvatarofTwilight extends Card {
     }
 
 
-
     public AvatarofTwilight(Card cloneFrom) {
         super(cloneFrom);
     }

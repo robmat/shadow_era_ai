@@ -8,7 +8,6 @@ public class ArtfulSquire extends Card {
     }
 
 
-
     public ArtfulSquire(Card cloneFrom) {
         super(cloneFrom);
     }

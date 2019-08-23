@@ -8,7 +8,6 @@ public class Deathbone extends Card {
     }
 
 
-
     public Deathbone(Card cloneFrom) {
         super(cloneFrom);
     }

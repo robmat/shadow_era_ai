@@ -8,7 +8,6 @@ public class StardustDescender extends Card {
     }
 
 
-
     public StardustDescender(Card cloneFrom) {
         super(cloneFrom);
     }

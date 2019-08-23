@@ -8,7 +8,6 @@ public class DemetreyoTwilightExtremist extends Card {
     }
 
 
-
     public DemetreyoTwilightExtremist(Card cloneFrom) {
         super(cloneFrom);
     }

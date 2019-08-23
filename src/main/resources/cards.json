@@ -1049,7 +1049,9 @@
     "itemSubType": null,
     "attackType": null,
     "abilities": [],
-    "availableForHeroClasses": ["WARRIOR"]
+    "availableForHeroClasses": [
+      "WARRIOR"
+    ]
   },
   {
     "code": "se070",
@@ -2748,7 +2750,10 @@
     "itemSubType": "WEAPON",
     "attackType": "SWORD",
     "abilities": [],
-    "availableForHeroClasses": ["WARRIOR", "PRIEST"]
+    "availableForHeroClasses": [
+      "WARRIOR",
+      "PRIEST"
+    ]
   },
   {
     "code": "se182",
@@ -6501,10 +6506,10 @@
   {
     "code": "sf076",
     "rarity": null,
-    "name": "Thunderstone Golem",
+    "name": "Thunderstone Goliath",
     "side": null,
     "heroClass": "MAGE",
-    "description": "Once per turn, when a hero deals electrical damage, Thunderstone Golem gains +1 base attack and +1 health. Thunderstone Golem has immunity to electrical damage.",
+    "description": "Once per turn, when a hero deals electrical damage, Thunderstone Goliath gains +1 base attack and +1 health. Thunderstone Goliath has immunity to electrical damage.",
     "cardType": "ALLY",
     "resourceCost": 4,
     "baseAttack": 3,
@@ -9150,6 +9155,49 @@
     ]
   },
   {
+    "code": "ll058",
+    "rarity": "U",
+    "name": "Carnage",
+    "side": null,
+    "heroClass": "WARRIOR",
+    "description": "Attach to your hero. When Carnage is summoned, weapons you control gain +1 base attack. When your hero kills an ally in combat, all friendly allies gain +1 base attack.",
+    "cardType": "ABILITY",
+    "resourceCost": 2,
+    "baseAttack": null,
+    "initialHp": null,
+    "itemSubType": "ATTACHMENT",
+    "abilities": []
+  },
+  {
+    "code": "ll059",
+    "rarity": "R",
+    "name": "Fuzam, Yari Blademaster",
+    "side": "HUMAN",
+    "heroClass": "WARRIOR",
+    "description": "0: Exhaust Fuzam: Target weapon you control has +X attack until the end of your turn, where X is Fuzam's attack.",
+    "cardType": "ALLY",
+    "resourceCost": 2,
+    "baseAttack": 2,
+    "initialHp": 3,
+    "itemSubType": null,
+    "attackType": "SWORD",
+    "abilities": []
+  },
+  {
+    "code": "ll060",
+    "rarity": "R",
+    "name": "Nanaya, Yari Conqueror",
+    "side": "HUMAN",
+    "heroClass": "WARRIOR",
+    "description": "Friendly non-Yari Warrior allies have +1 attack. Once per turn, when another friendly ally leaves combat with an opposing ally, Nanaya attacks that opposing ally if able.",
+    "cardType": "ALLY",
+    "resourceCost": 6,
+    "baseAttack": 5,
+    "initialHp": 8,
+    "attackType": "SWORD",
+    "abilities": []
+  },
+  {
     "code": "ll061",
     "rarity": null,
     "name": "Popsickle",
@@ -9254,6 +9302,34 @@
     "initialHp": null,
     "itemSubType": null,
     "attackType": null,
+    "abilities": []
+  },
+  {
+    "code": "ll068",
+    "rarity": "U",
+    "name": "Shadowbolt",
+    "side": null,
+    "heroClass": "MAGE",
+    "description": "Target opposing ally takes 5+X electrical damage and your hero gains +1 shadow energy, where X is the number of copies of Shadowbolt in your graveyard.",
+    "cardType": "ABILITY",
+    "resourceCost": 4,
+    "baseAttack": null,
+    "initialHp": null,
+    "attackType": null,
+    "abilities": []
+  },
+  {
+    "code": "ll070",
+    "rarity": "R",
+    "name": "Lilyt of Orem",
+    "side": null,
+    "heroClass": "MAGE",
+    "description": "3: Target item in a graveyard is returned to play under your control as a Homunculus ally with 1 electrical base attack, 2 health and no abilities. All friendly Homunculus allies gain +1 base attack and +1 health.",
+    "cardType": "ALLY",
+    "resourceCost": 6,
+    "baseAttack": 3,
+    "initialHp": 9,
+    "attackType": "ELECTRIC",
     "abilities": []
   },
   {
@@ -9366,6 +9442,47 @@
     "abilities": []
   },
   {
+    "code" : "ll078",
+    "rarity" : "U",
+    "name" : "Double Back",
+    "side" : null,
+    "heroClass" : "HUNTER",
+    "description" : "Duration 1. Hunter allies cost 1 less resource to summon. 0: Target Trap in your hand is discarded: The bottom Hunter ally in your graveyard is shuffled into your deck and you draw 2 cards.",
+    "cardType" : "ABILITY",
+    "resourceCost" : 1,
+    "abilities" : [ ]
+  },
+  {
+    "code" : "ll079",
+    "rarity" : "R",
+    "name" : "Krugal Braggart",
+    "side" : null,
+    "heroClass" : "HUNTER",
+    "description" : "When Krugal Braggart is summoned, target opposing ally takes 1 damage. When Krugal Braggart kills an ally, he gains +2 base attack.",
+    "cardType" : "ALLY",
+    "resourceCost" : 2,
+    "baseAttack" : 1,
+    "initialHp" : 3,
+    "shadowEnergy" : 0,
+    "attackType" : "BOW",
+    "abilities" : [ ]
+  },
+  {
+    "code" : "ll080",
+    "rarity" : "R",
+    "name" : "Krugal Quickshot",
+    "side" : null,
+    "heroClass" : "HUNTER",
+    "description" : "0: Exhaust Krugal Quickshot: Up to X different target opposing allies take 2 damage, where X is Krugal Quickshot's attack value.",
+    "cardType" : "ALLY",
+    "resourceCost" : 4,
+    "baseAttack" : 2,
+    "initialHp" : 6,
+    "shadowEnergy" : 0,
+    "attackType" : "BOW",
+    "abilities" : [ ]
+  },
+  {
     "code": "ll081",
     "rarity": null,
     "name": "Zailen Scholar",
@@ -9469,6 +9586,37 @@
     "itemSubType": null,
     "attackType": "ARCANE",
     "abilities": []
+  },
+  {
+    "code" : "ll088",
+    "rarity" : "U",
+    "name" : "Temptation",
+    "side" : null,
+    "heroClass" : "PRIEST",
+    "description" : "Your hero takes 2 damage and gains +1 shadow energy. When Temptation is discarded from anywhere, your hero heals 2 damage and opposing heroes lose 1 shadow energy.",
+    "cardType" : "ABILITY",
+    "resourceCost" : 1,
+    "baseAttack" : null,
+    "baseDefence" : null,
+    "initialHp" : null,
+    "currentHp" : null,
+    "shadowEnergy" : 0,
+    "itemSubType" : null,
+    "attackType" : null,
+    "abilities" : [ ],
+    "attackReadied" : false,
+    "castable" : false,
+    "possibleAttackTarget" : false,
+    "possibleAbilityTarget" : false,
+    "abilityReadied" : false,
+    "unique" : false,
+    "effects" : [ ],
+    "weapon" : null,
+    "armor" : null,
+    "availableForHeroClasses" : [ ],
+    "owner" : null,
+    "attachments" : [ ],
+    "uniqueId" : "7ecf8a2f-b1d6-4b75-879f-da2a7d65d29a"
   },
   {
     "code": "ll091",

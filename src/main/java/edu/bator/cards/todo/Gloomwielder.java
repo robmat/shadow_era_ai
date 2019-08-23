@@ -8,7 +8,6 @@ public class Gloomwielder extends Card {
     }
 
 
-
     public Gloomwielder(Card cloneFrom) {
         super(cloneFrom);
     }

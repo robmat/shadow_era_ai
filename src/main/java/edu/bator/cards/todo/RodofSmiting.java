@@ -8,7 +8,6 @@ public class RodofSmiting extends Card {
     }
 
 
-
     public RodofSmiting(Card cloneFrom) {
         super(cloneFrom);
     }

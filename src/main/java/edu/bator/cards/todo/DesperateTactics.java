@@ -8,7 +8,6 @@ public class DesperateTactics extends Card {
     }
 
 
-
     public DesperateTactics(Card cloneFrom) {
         super(cloneFrom);
     }

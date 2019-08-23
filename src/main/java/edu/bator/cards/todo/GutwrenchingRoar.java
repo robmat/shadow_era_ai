@@ -8,7 +8,6 @@ public class GutwrenchingRoar extends Card {
     }
 
 
-
     public GutwrenchingRoar(Card cloneFrom) {
         super(cloneFrom);
     }

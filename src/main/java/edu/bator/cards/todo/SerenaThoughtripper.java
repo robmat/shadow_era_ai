@@ -8,7 +8,6 @@ public class SerenaThoughtripper extends Card {
     }
 
 
-
     public SerenaThoughtripper(Card cloneFrom) {
         super(cloneFrom);
     }

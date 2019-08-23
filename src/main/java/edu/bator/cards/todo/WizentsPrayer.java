@@ -8,7 +8,6 @@ public class WizentsPrayer extends Card {
     }
 
 
-
     public WizentsPrayer(Card cloneFrom) {
         super(cloneFrom);
     }

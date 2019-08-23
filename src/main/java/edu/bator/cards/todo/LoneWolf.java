@@ -8,7 +8,6 @@ public class LoneWolf extends Card {
     }
 
 
-
     public LoneWolf(Card cloneFrom) {
         super(cloneFrom);
     }

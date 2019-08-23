@@ -8,7 +8,6 @@ public class LorhonTwilightEncampment extends Card {
     }
 
 
-
     public LorhonTwilightEncampment(Card cloneFrom) {
         super(cloneFrom);
     }

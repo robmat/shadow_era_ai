@@ -8,7 +8,6 @@ public class LoestsBurden extends Card {
     }
 
 
-
     public LoestsBurden(Card cloneFrom) {
         super(cloneFrom);
     }

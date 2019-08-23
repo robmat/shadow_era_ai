@@ -8,7 +8,6 @@ public class ArmorofAges extends Card {
     }
 
 
-
     public ArmorofAges(Card cloneFrom) {
         super(cloneFrom);
     }

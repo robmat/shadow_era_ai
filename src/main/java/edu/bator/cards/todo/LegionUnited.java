@@ -8,7 +8,6 @@ public class LegionUnited extends Card {
     }
 
 
-
     public LegionUnited(Card cloneFrom) {
         super(cloneFrom);
     }

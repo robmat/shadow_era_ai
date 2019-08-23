@@ -8,7 +8,6 @@ public class LoestSaviorofLayar extends Card {
     }
 
 
-
     public LoestSaviorofLayar(Card cloneFrom) {
         super(cloneFrom);
     }

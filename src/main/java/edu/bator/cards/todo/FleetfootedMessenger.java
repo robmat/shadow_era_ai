@@ -8,7 +8,6 @@ public class FleetfootedMessenger extends Card {
     }
 
 
-
     public FleetfootedMessenger(Card cloneFrom) {
         super(cloneFrom);
     }

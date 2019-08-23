@@ -8,7 +8,6 @@ public class Mugged extends Card {
     }
 
 
-
     public Mugged(Card cloneFrom) {
         super(cloneFrom);
     }

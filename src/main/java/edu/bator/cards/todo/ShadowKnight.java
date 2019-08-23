@@ -8,7 +8,6 @@ public class ShadowKnight extends Card {
     }
 
 
-
     public ShadowKnight(Card cloneFrom) {
         super(cloneFrom);
     }

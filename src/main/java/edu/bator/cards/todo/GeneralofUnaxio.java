@@ -8,7 +8,6 @@ public class GeneralofUnaxio extends Card {
     }
 
 
-
     public GeneralofUnaxio(Card cloneFrom) {
         super(cloneFrom);
     }

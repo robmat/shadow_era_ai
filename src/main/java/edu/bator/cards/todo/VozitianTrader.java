@@ -8,7 +8,6 @@ public class VozitianTrader extends Card {
     }
 
 
-
     public VozitianTrader(Card cloneFrom) {
         super(cloneFrom);
     }

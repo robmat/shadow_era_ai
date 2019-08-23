@@ -8,7 +8,6 @@ public class BountyHunter extends Card {
     }
 
 
-
     public BountyHunter(Card cloneFrom) {
         super(cloneFrom);
     }

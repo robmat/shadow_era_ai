@@ -8,7 +8,6 @@ public class Stoneskin extends Card {
     }
 
 
-
     public Stoneskin(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class ALegendRises extends Card {
     }
 
 
-
     public ALegendRises(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class RestfortheWeary extends Card {
     }
 
 
-
     public RestfortheWeary(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class TidalWave extends Card {
     }
 
 
-
     public TidalWave(Card cloneFrom) {
         super(cloneFrom);
     }

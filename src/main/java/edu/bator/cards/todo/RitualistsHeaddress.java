@@ -8,7 +8,6 @@ public class RitualistsHeaddress extends Card {
     }
 
 
-
     public RitualistsHeaddress(Card cloneFrom) {
         super(cloneFrom);
     }

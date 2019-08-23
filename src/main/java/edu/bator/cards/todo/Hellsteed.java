@@ -8,7 +8,6 @@ public class Hellsteed extends Card {
     }
 
 
-
     public Hellsteed(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class ShardofPower extends Card {
     }
 
 
-
     public ShardofPower(Card cloneFrom) {
         super(cloneFrom);
     }

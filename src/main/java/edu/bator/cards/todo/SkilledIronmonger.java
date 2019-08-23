@@ -8,7 +8,6 @@ public class SkilledIronmonger extends Card {
     }
 
 
-
     public SkilledIronmonger(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class SacredFireWalker extends Card {
     }
 
 
-
     public SacredFireWalker(Card cloneFrom) {
         super(cloneFrom);
     }

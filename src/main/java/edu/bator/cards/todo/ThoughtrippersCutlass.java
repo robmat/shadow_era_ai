@@ -8,7 +8,6 @@ public class ThoughtrippersCutlass extends Card {
     }
 
 
-
     public ThoughtrippersCutlass(Card cloneFrom) {
         super(cloneFrom);
     }

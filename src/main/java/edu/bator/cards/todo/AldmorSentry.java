@@ -8,7 +8,6 @@ public class AldmorSentry extends Card {
     }
 
 
-
     public AldmorSentry(Card cloneFrom) {
         super(cloneFrom);
     }

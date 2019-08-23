@@ -8,7 +8,6 @@ public class RollingBoulders extends Card {
     }
 
 
-
     public RollingBoulders(Card cloneFrom) {
         super(cloneFrom);
     }

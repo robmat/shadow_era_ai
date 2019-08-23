@@ -8,7 +8,6 @@ public class WulvenProphet extends Card {
     }
 
 
-
     public WulvenProphet(Card cloneFrom) {
         super(cloneFrom);
     }

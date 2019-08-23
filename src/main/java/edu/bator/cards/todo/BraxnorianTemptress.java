@@ -8,7 +8,6 @@ public class BraxnorianTemptress extends Card {
     }
 
 
-
     public BraxnorianTemptress(Card cloneFrom) {
         super(cloneFrom);
     }

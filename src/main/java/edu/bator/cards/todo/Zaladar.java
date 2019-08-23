@@ -8,7 +8,6 @@ public class Zaladar extends Card {
     }
 
 
-
     public Zaladar(Card cloneFrom) {
         super(cloneFrom);
     }

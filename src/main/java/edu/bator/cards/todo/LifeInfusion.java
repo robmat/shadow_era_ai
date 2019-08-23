@@ -8,7 +8,6 @@ public class LifeInfusion extends Card {
     }
 
 
-
     public LifeInfusion(Card cloneFrom) {
         super(cloneFrom);
     }

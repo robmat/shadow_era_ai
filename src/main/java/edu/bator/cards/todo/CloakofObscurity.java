@@ -8,7 +8,6 @@ public class CloakofObscurity extends Card {
     }
 
 
-
     public CloakofObscurity(Card cloneFrom) {
         super(cloneFrom);
     }

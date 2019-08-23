@@ -8,7 +8,6 @@ public class TheLastHarvest extends Card {
     }
 
 
-
     public TheLastHarvest(Card cloneFrom) {
         super(cloneFrom);
     }

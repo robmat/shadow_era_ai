@@ -8,7 +8,6 @@ public class CaveSpider extends Card {
     }
 
 
-
     public CaveSpider(Card cloneFrom) {
         super(cloneFrom);
     }

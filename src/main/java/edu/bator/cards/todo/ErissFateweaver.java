@@ -8,7 +8,6 @@ public class ErissFateweaver extends Card {
     }
 
 
-
     public ErissFateweaver(Card cloneFrom) {
         super(cloneFrom);
     }

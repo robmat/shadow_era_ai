@@ -8,7 +8,6 @@ public class DeepwoodBobcat extends Card {
     }
 
 
-
     public DeepwoodBobcat(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class PathfindersMachete extends Card {
     }
 
 
-
     public PathfindersMachete(Card cloneFrom) {
         super(cloneFrom);
     }

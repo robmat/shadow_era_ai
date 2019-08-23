@@ -8,7 +8,6 @@ public class StardustTransfuser extends Card {
     }
 
 
-
     public StardustTransfuser(Card cloneFrom) {
         super(cloneFrom);
     }

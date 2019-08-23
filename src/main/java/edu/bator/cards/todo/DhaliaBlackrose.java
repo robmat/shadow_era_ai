@@ -8,7 +8,6 @@ public class DhaliaBlackrose extends Card {
     }
 
 
-
     public DhaliaBlackrose(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class InfinityCore extends Card {
     }
 
 
-
     public InfinityCore(Card cloneFrom) {
         super(cloneFrom);
     }

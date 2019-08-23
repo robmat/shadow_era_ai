@@ -8,7 +8,6 @@ public class ClericoftheAsyn extends Card {
     }
 
 
-
     public ClericoftheAsyn(Card cloneFrom) {
         super(cloneFrom);
     }

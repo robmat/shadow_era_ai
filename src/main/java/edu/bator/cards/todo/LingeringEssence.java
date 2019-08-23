@@ -8,7 +8,6 @@ public class LingeringEssence extends Card {
     }
 
 
-
     public LingeringEssence(Card cloneFrom) {
         super(cloneFrom);
     }

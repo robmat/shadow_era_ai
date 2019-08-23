@@ -8,7 +8,6 @@ public class Assassination extends Card {
     }
 
 
-
     public Assassination(Card cloneFrom) {
         super(cloneFrom);
     }

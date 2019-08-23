@@ -8,7 +8,6 @@ public class CamouflagedFoe extends Card {
     }
 
 
-
     public CamouflagedFoe(Card cloneFrom) {
         super(cloneFrom);
     }

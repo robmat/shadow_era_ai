@@ -8,7 +8,6 @@ public class PlateArmor extends Card {
     }
 
 
-
     public PlateArmor(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class KrugalButcher extends Card {
     }
 
 
-
     public KrugalButcher(Card cloneFrom) {
         super(cloneFrom);
     }

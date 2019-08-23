@@ -8,7 +8,6 @@ public class Darkclaw extends Card {
     }
 
 
-
     public Darkclaw(Card cloneFrom) {
         super(cloneFrom);
     }

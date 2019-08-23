@@ -8,7 +8,6 @@ public class SpiritofDevotion extends Card {
     }
 
 
-
     public SpiritofDevotion(Card cloneFrom) {
         super(cloneFrom);
     }

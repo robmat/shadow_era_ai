@@ -8,7 +8,6 @@ public class CurseoftheAldmor extends Card {
     }
 
 
-
     public CurseoftheAldmor(Card cloneFrom) {
         super(cloneFrom);
     }

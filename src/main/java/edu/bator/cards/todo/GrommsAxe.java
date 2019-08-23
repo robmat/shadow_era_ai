@@ -8,7 +8,6 @@ public class GrommsAxe extends Card {
     }
 
 
-
     public GrommsAxe(Card cloneFrom) {
         super(cloneFrom);
     }

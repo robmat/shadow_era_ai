@@ -8,7 +8,6 @@ public class ChainsofTorment extends Card {
     }
 
 
-
     public ChainsofTorment(Card cloneFrom) {
         super(cloneFrom);
     }

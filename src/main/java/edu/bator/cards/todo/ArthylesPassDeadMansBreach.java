@@ -8,7 +8,6 @@ public class ArthylesPassDeadMansBreach extends Card {
     }
 
 
-
     public ArthylesPassDeadMansBreach(Card cloneFrom) {
         super(cloneFrom);
     }

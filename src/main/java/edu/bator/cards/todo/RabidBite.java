@@ -8,7 +8,6 @@ public class RabidBite extends Card {
     }
 
 
-
     public RabidBite(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class TransmogrificationCurse extends Card {
     }
 
 
-
     public TransmogrificationCurse(Card cloneFrom) {
         super(cloneFrom);
     }

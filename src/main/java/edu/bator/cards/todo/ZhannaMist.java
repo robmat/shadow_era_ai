@@ -8,7 +8,6 @@ public class ZhannaMist extends Card {
     }
 
 
-
     public ZhannaMist(Card cloneFrom) {
         super(cloneFrom);
     }

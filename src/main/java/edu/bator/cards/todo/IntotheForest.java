@@ -8,7 +8,6 @@ public class IntotheForest extends Card {
     }
 
 
-
     public IntotheForest(Card cloneFrom) {
         super(cloneFrom);
     }

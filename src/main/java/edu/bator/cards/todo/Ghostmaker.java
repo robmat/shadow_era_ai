@@ -8,7 +8,6 @@ public class Ghostmaker extends Card {
     }
 
 
-
     public Ghostmaker(Card cloneFrom) {
         super(cloneFrom);
     }

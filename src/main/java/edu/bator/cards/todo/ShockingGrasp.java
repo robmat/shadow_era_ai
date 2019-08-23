@@ -8,7 +8,6 @@ public class ShockingGrasp extends Card {
     }
 
 
-
     public ShockingGrasp(Card cloneFrom) {
         super(cloneFrom);
     }

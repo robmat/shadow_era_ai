@@ -8,7 +8,6 @@ public class Plague extends Card {
     }
 
 
-
     public Plague(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class BloodpackShaman extends Card {
     }
 
 
-
     public BloodpackShaman(Card cloneFrom) {
         super(cloneFrom);
     }

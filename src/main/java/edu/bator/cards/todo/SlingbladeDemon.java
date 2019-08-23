@@ -8,7 +8,6 @@ public class SlingbladeDemon extends Card {
     }
 
 
-
     public SlingbladeDemon(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class GrimjawHydra extends Card {
     }
 
 
-
     public GrimjawHydra(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class Nishaven extends Card {
     }
 
 
-
     public Nishaven(Card cloneFrom) {
         super(cloneFrom);
     }

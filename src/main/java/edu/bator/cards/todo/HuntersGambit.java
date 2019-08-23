@@ -8,7 +8,6 @@ public class HuntersGambit extends Card {
     }
 
 
-
     public HuntersGambit(Card cloneFrom) {
         super(cloneFrom);
     }

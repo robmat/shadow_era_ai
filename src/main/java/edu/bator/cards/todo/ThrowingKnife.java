@@ -8,7 +8,6 @@ public class ThrowingKnife extends Card {
     }
 
 
-
     public ThrowingKnife(Card cloneFrom) {
         super(cloneFrom);
     }

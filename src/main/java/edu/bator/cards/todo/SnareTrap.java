@@ -8,7 +8,6 @@ public class SnareTrap extends Card {
     }
 
 
-
     public SnareTrap(Card cloneFrom) {
         super(cloneFrom);
     }

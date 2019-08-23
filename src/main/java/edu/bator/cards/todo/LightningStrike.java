@@ -8,7 +8,6 @@ public class LightningStrike extends Card {
     }
 
 
-
     public LightningStrike(Card cloneFrom) {
         super(cloneFrom);
     }

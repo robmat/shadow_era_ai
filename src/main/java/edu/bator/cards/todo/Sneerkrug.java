@@ -8,7 +8,6 @@ public class Sneerkrug extends Card {
     }
 
 
-
     public Sneerkrug(Card cloneFrom) {
         super(cloneFrom);
     }

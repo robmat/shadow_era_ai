@@ -8,7 +8,6 @@ public class NightOwl extends Card {
     }
 
 
-
     public NightOwl(Card cloneFrom) {
         super(cloneFrom);
     }

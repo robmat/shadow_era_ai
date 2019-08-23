@@ -8,7 +8,6 @@ public class StandFirm extends Card {
     }
 
 
-
     public StandFirm(Card cloneFrom) {
         super(cloneFrom);
     }

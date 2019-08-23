@@ -8,7 +8,6 @@ public class GoldLacedShield extends Card {
     }
 
 
-
     public GoldLacedShield(Card cloneFrom) {
         super(cloneFrom);
     }

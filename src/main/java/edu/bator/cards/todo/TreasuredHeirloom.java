@@ -8,7 +8,6 @@ public class TreasuredHeirloom extends Card {
     }
 
 
-
     public TreasuredHeirloom(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class WinthillAssailer extends Card {
     }
 
 
-
     public WinthillAssailer(Card cloneFrom) {
         super(cloneFrom);
     }

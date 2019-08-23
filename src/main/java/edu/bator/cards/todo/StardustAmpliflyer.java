@@ -8,7 +8,6 @@ public class StardustAmpliflyer extends Card {
     }
 
 
-
     public StardustAmpliflyer(Card cloneFrom) {
         super(cloneFrom);
     }

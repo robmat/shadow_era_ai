@@ -8,7 +8,6 @@ public class BattleCharge extends Card {
     }
 
 
-
     public BattleCharge(Card cloneFrom) {
         super(cloneFrom);
     }

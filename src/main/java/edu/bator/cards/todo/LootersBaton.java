@@ -8,7 +8,6 @@ public class LootersBaton extends Card {
     }
 
 
-
     public LootersBaton(Card cloneFrom) {
         super(cloneFrom);
     }

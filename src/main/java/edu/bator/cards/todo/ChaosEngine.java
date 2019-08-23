@@ -8,7 +8,6 @@ public class ChaosEngine extends Card {
     }
 
 
-
     public ChaosEngine(Card cloneFrom) {
         super(cloneFrom);
     }

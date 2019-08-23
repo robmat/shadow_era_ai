@@ -8,7 +8,6 @@ public class TigerWulf extends Card {
     }
 
 
-
     public TigerWulf(Card cloneFrom) {
         super(cloneFrom);
     }

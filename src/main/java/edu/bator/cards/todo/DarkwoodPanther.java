@@ -8,7 +8,6 @@ public class DarkwoodPanther extends Card {
     }
 
 
-
     public DarkwoodPanther(Card cloneFrom) {
         super(cloneFrom);
     }

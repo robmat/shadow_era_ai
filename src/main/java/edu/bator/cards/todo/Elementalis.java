@@ -8,7 +8,6 @@ public class Elementalis extends Card {
     }
 
 
-
     public Elementalis(Card cloneFrom) {
         super(cloneFrom);
     }

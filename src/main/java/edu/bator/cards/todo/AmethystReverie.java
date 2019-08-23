@@ -8,7 +8,6 @@ public class AmethystReverie extends Card {
     }
 
 
-
     public AmethystReverie(Card cloneFrom) {
         super(cloneFrom);
     }

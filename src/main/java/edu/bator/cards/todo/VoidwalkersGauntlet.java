@@ -8,7 +8,6 @@ public class VoidwalkersGauntlet extends Card {
     }
 
 
-
     public VoidwalkersGauntlet(Card cloneFrom) {
         super(cloneFrom);
     }

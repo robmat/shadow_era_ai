@@ -8,7 +8,6 @@ public class NecromancersShroud extends Card {
     }
 
 
-
     public NecromancersShroud(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class SwordGobbler extends Card {
     }
 
 
-
     public SwordGobbler(Card cloneFrom) {
         super(cloneFrom);
     }

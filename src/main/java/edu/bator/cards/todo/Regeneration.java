@@ -8,7 +8,6 @@ public class Regeneration extends Card {
     }
 
 
-
     public Regeneration(Card cloneFrom) {
         super(cloneFrom);
     }

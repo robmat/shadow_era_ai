@@ -8,7 +8,6 @@ public class AimedShot extends Card {
     }
 
 
-
     public AimedShot(Card cloneFrom) {
         super(cloneFrom);
     }

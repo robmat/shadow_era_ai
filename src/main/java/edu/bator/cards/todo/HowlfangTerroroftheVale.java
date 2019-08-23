@@ -8,7 +8,6 @@ public class HowlfangTerroroftheVale extends Card {
     }
 
 
-
     public HowlfangTerroroftheVale(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class SoulboundArmor extends Card {
     }
 
 
-
     public SoulboundArmor(Card cloneFrom) {
         super(cloneFrom);
     }

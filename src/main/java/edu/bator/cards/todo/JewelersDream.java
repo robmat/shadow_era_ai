@@ -8,7 +8,6 @@ public class JewelersDream extends Card {
     }
 
 
-
     public JewelersDream(Card cloneFrom) {
         super(cloneFrom);
     }

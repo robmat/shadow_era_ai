@@ -8,7 +8,6 @@ public class MoonlightBracers extends Card {
     }
 
 
-
     public MoonlightBracers(Card cloneFrom) {
         super(cloneFrom);
     }

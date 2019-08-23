@@ -8,7 +8,6 @@ public class TheBiggerTheyAre extends Card {
     }
 
 
-
     public TheBiggerTheyAre(Card cloneFrom) {
         super(cloneFrom);
     }

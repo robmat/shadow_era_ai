@@ -8,7 +8,6 @@ public class DevotedLightbearer extends Card {
     }
 
 
-
     public DevotedLightbearer(Card cloneFrom) {
         super(cloneFrom);
     }

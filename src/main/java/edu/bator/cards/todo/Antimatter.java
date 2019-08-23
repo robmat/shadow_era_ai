@@ -8,7 +8,6 @@ public class Antimatter extends Card {
     }
 
 
-
     public Antimatter(Card cloneFrom) {
         super(cloneFrom);
     }

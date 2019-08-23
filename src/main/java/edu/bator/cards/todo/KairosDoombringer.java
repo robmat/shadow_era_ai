@@ -8,7 +8,6 @@ public class KairosDoombringer extends Card {
     }
 
 
-
     public KairosDoombringer(Card cloneFrom) {
         super(cloneFrom);
     }

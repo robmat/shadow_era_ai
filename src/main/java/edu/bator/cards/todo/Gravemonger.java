@@ -8,7 +8,6 @@ public class Gravemonger extends Card {
     }
 
 
-
     public Gravemonger(Card cloneFrom) {
         super(cloneFrom);
     }

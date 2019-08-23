@@ -8,7 +8,6 @@ public class FangsofthePredator extends Card {
     }
 
 
-
     public FangsofthePredator(Card cloneFrom) {
         super(cloneFrom);
     }

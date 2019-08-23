@@ -8,7 +8,6 @@ public class Unstoppable extends Card {
     }
 
 
-
     public Unstoppable(Card cloneFrom) {
         super(cloneFrom);
     }

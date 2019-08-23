@@ -8,7 +8,6 @@ public class UnyieldingLight extends Card {
     }
 
 
-
     public UnyieldingLight(Card cloneFrom) {
         super(cloneFrom);
     }

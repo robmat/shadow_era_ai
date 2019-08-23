@@ -8,7 +8,6 @@ public class ToweringBrute extends Card {
     }
 
 
-
     public ToweringBrute(Card cloneFrom) {
         super(cloneFrom);
     }

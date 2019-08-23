@@ -8,7 +8,6 @@ public class HitList extends Card {
     }
 
 
-
     public HitList(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class PithingSpear extends Card {
     }
 
 
-
     public PithingSpear(Card cloneFrom) {
         super(cloneFrom);
     }

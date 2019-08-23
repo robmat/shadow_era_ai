@@ -8,7 +8,6 @@ public class Conversion extends Card {
     }
 
 
-
     public Conversion(Card cloneFrom) {
         super(cloneFrom);
     }

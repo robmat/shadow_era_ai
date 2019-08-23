@@ -8,7 +8,6 @@ public class FortifiedWisp extends Card {
     }
 
 
-
     public FortifiedWisp(Card cloneFrom) {
         super(cloneFrom);
     }

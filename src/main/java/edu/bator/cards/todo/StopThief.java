@@ -8,7 +8,6 @@ public class StopThief extends Card {
     }
 
 
-
     public StopThief(Card cloneFrom) {
         super(cloneFrom);
     }

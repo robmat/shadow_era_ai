@@ -8,7 +8,6 @@ public class VictorHeartstriker extends Card {
     }
 
 
-
     public VictorHeartstriker(Card cloneFrom) {
         super(cloneFrom);
     }

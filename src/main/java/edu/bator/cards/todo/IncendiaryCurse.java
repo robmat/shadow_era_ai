@@ -8,7 +8,6 @@ public class IncendiaryCurse extends Card {
     }
 
 
-
     public IncendiaryCurse(Card cloneFrom) {
         super(cloneFrom);
     }

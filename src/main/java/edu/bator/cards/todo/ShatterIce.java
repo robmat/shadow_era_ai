@@ -8,7 +8,6 @@ public class ShatterIce extends Card {
     }
 
 
-
     public ShatterIce(Card cloneFrom) {
         super(cloneFrom);
     }

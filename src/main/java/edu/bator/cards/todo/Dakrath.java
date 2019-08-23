@@ -8,7 +8,6 @@ public class Dakrath extends Card {
     }
 
 
-
     public Dakrath(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class BloodstainedMarauder extends Card {
     }
 
 
-
     public BloodstainedMarauder(Card cloneFrom) {
         super(cloneFrom);
     }

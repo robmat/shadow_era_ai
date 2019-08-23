@@ -8,7 +8,6 @@ public class TwilightEidolon extends Card {
     }
 
 
-
     public TwilightEidolon(Card cloneFrom) {
         super(cloneFrom);
     }

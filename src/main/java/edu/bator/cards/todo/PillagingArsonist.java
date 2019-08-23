@@ -8,7 +8,6 @@ public class PillagingArsonist extends Card {
     }
 
 
-
     public PillagingArsonist(Card cloneFrom) {
         super(cloneFrom);
     }

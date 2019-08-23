@@ -8,7 +8,6 @@ public class Skervox extends Card {
     }
 
 
-
     public Skervox(Card cloneFrom) {
         super(cloneFrom);
     }

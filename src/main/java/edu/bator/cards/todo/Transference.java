@@ -8,7 +8,6 @@ public class Transference extends Card {
     }
 
 
-
     public Transference(Card cloneFrom) {
         super(cloneFrom);
     }

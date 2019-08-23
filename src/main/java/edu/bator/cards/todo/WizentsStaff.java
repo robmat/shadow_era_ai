@@ -8,7 +8,6 @@ public class WizentsStaff extends Card {
     }
 
 
-
     public WizentsStaff(Card cloneFrom) {
         super(cloneFrom);
     }

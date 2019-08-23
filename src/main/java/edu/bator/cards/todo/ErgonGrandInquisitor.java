@@ -8,7 +8,6 @@ public class ErgonGrandInquisitor extends Card {
     }
 
 
-
     public ErgonGrandInquisitor(Card cloneFrom) {
         super(cloneFrom);
     }

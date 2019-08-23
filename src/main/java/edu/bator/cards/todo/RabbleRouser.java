@@ -8,7 +8,6 @@ public class RabbleRouser extends Card {
     }
 
 
-
     public RabbleRouser(Card cloneFrom) {
         super(cloneFrom);
     }

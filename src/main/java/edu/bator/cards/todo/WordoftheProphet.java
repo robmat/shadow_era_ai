@@ -8,7 +8,6 @@ public class WordoftheProphet extends Card {
     }
 
 
-
     public WordoftheProphet(Card cloneFrom) {
         super(cloneFrom);
     }

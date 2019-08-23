@@ -8,7 +8,6 @@ public class WeeviltippedCrossbow extends Card {
     }
 
 
-
     public WeeviltippedCrossbow(Card cloneFrom) {
         super(cloneFrom);
     }

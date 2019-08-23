@@ -8,7 +8,6 @@ public class DerkantheBoneKing extends Card {
     }
 
 
-
     public DerkantheBoneKing(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class ContaminatedWater extends Card {
     }
 
 
-
     public ContaminatedWater(Card cloneFrom) {
         super(cloneFrom);
     }

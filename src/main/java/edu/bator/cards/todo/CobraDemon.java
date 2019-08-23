@@ -8,7 +8,6 @@ public class CobraDemon extends Card {
     }
 
 
-
     public CobraDemon(Card cloneFrom) {
         super(cloneFrom);
     }

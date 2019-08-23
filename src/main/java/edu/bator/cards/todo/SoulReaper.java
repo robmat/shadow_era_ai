@@ -8,7 +8,6 @@ public class SoulReaper extends Card {
     }
 
 
-
     public SoulReaper(Card cloneFrom) {
         super(cloneFrom);
     }

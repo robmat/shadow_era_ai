@@ -8,7 +8,6 @@ public class Backstab extends Card {
     }
 
 
-
     public Backstab(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class YariMarksman extends Card {
     }
 
 
-
     public YariMarksman(Card cloneFrom) {
         super(cloneFrom);
     }

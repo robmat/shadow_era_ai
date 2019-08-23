@@ -8,7 +8,6 @@ public class SurpriseAttack extends Card {
     }
 
 
-
     public SurpriseAttack(Card cloneFrom) {
         super(cloneFrom);
     }

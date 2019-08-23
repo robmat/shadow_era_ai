@@ -8,7 +8,6 @@ public class Gravebone extends Card {
     }
 
 
-
     public Gravebone(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class IncenseofAtonement extends Card {
     }
 
 
-
     public IncenseofAtonement(Card cloneFrom) {
         super(cloneFrom);
     }

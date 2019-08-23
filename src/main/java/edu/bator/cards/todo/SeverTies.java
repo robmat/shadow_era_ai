@@ -8,7 +8,6 @@ public class SeverTies extends Card {
     }
 
 
-
     public SeverTies(Card cloneFrom) {
         super(cloneFrom);
     }

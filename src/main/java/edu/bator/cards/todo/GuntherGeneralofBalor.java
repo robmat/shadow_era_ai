@@ -8,7 +8,6 @@ public class GuntherGeneralofBalor extends Card {
     }
 
 
-
     public GuntherGeneralofBalor(Card cloneFrom) {
         super(cloneFrom);
     }

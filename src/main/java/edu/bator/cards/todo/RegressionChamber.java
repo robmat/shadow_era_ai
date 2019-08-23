@@ -8,7 +8,6 @@ public class RegressionChamber extends Card {
     }
 
 
-
     public RegressionChamber(Card cloneFrom) {
         super(cloneFrom);
     }

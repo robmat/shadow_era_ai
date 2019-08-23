@@ -8,7 +8,6 @@ public class StaticShock extends Card {
     }
 
 
-
     public StaticShock(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class PunishersGauntlets extends Card {
     }
 
 
-
     public PunishersGauntlets(Card cloneFrom) {
         super(cloneFrom);
     }

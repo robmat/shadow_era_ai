@@ -8,7 +8,6 @@ public class ThrissAssaultPlinth extends Card {
     }
 
 
-
     public ThrissAssaultPlinth(Card cloneFrom) {
         super(cloneFrom);
     }

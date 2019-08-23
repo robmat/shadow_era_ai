@@ -8,7 +8,6 @@ public class WandofIzikus extends Card {
     }
 
 
-
     public WandofIzikus(Card cloneFrom) {
         super(cloneFrom);
     }

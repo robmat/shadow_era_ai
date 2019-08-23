@@ -8,7 +8,6 @@ public class VoraciousArachnid extends Card {
     }
 
 
-
     public VoraciousArachnid(Card cloneFrom) {
         super(cloneFrom);
     }

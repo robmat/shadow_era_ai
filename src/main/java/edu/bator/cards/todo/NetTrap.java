@@ -8,7 +8,6 @@ public class NetTrap extends Card {
     }
 
 
-
     public NetTrap(Card cloneFrom) {
         super(cloneFrom);
     }

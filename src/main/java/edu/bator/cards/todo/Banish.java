@@ -8,7 +8,6 @@ public class Banish extends Card {
     }
 
 
-
     public Banish(Card cloneFrom) {
         super(cloneFrom);
     }

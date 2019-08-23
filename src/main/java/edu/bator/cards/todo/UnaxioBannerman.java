@@ -8,7 +8,6 @@ public class UnaxioBannerman extends Card {
     }
 
 
-
     public UnaxioBannerman(Card cloneFrom) {
         super(cloneFrom);
     }

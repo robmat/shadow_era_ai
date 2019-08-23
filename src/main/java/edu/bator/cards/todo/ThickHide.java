@@ -8,7 +8,6 @@ public class ThickHide extends Card {
     }
 
 
-
     public ThickHide(Card cloneFrom) {
         super(cloneFrom);
     }

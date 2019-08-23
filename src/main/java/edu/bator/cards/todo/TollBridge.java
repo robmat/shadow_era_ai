@@ -8,7 +8,6 @@ public class TollBridge extends Card {
     }
 
 
-
     public TollBridge(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class CrystalShards extends Card {
     }
 
 
-
     public CrystalShards(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class Synchronicity extends Card {
     }
 
 
-
     public Synchronicity(Card cloneFrom) {
         super(cloneFrom);
     }

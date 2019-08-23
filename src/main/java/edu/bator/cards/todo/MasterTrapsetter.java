@@ -8,7 +8,6 @@ public class MasterTrapsetter extends Card {
     }
 
 
-
     public MasterTrapsetter(Card cloneFrom) {
         super(cloneFrom);
     }

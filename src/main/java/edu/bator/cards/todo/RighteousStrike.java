@@ -8,7 +8,6 @@ public class RighteousStrike extends Card {
     }
 
 
-
     public RighteousStrike(Card cloneFrom) {
         super(cloneFrom);
     }

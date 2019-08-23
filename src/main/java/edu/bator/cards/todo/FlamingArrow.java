@@ -8,7 +8,6 @@ public class FlamingArrow extends Card {
     }
 
 
-
     public FlamingArrow(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class EvolvingAbomination extends Card {
     }
 
 
-
     public EvolvingAbomination(Card cloneFrom) {
         super(cloneFrom);
     }

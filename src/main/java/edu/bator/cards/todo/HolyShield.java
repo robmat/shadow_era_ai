@@ -8,7 +8,6 @@ public class HolyShield extends Card {
     }
 
 
-
     public HolyShield(Card cloneFrom) {
         super(cloneFrom);
     }

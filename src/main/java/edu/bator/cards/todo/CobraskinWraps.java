@@ -8,7 +8,6 @@ public class CobraskinWraps extends Card {
     }
 
 
-
     public CobraskinWraps(Card cloneFrom) {
         super(cloneFrom);
     }

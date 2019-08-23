@@ -8,7 +8,6 @@ public class RejuvenatingRitual extends Card {
     }
 
 
-
     public RejuvenatingRitual(Card cloneFrom) {
         super(cloneFrom);
     }

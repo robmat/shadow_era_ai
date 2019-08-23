@@ -8,7 +8,6 @@ public class RoadLessTraveled extends Card {
     }
 
 
-
     public RoadLessTraveled(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class Bloodlust extends Card {
     }
 
 
-
     public Bloodlust(Card cloneFrom) {
         super(cloneFrom);
     }

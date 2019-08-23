@@ -8,7 +8,6 @@ public class SpiritWarden extends Card {
     }
 
 
-
     public SpiritWarden(Card cloneFrom) {
         super(cloneFrom);
     }

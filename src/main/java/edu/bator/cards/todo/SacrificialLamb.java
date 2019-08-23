@@ -8,7 +8,6 @@ public class SacrificialLamb extends Card {
     }
 
 
-
     public SacrificialLamb(Card cloneFrom) {
         super(cloneFrom);
     }

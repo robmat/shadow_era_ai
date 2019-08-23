@@ -8,7 +8,6 @@ public class EternalTroll extends Card {
     }
 
 
-
     public EternalTroll(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class Shadowspawn extends Card {
     }
 
 
-
     public Shadowspawn(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class DarkInfiltrator extends Card {
     }
 
 
-
     public DarkInfiltrator(Card cloneFrom) {
         super(cloneFrom);
     }

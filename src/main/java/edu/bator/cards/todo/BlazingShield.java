@@ -8,7 +8,6 @@ public class BlazingShield extends Card {
     }
 
 
-
     public BlazingShield(Card cloneFrom) {
         super(cloneFrom);
     }

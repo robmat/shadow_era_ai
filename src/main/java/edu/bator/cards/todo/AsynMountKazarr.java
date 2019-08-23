@@ -8,7 +8,6 @@ public class AsynMountKazarr extends Card {
     }
 
 
-
     public AsynMountKazarr(Card cloneFrom) {
         super(cloneFrom);
     }

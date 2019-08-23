@@ -8,7 +8,6 @@ public class CinderbornFatebreaker extends Card {
     }
 
 
-
     public CinderbornFatebreaker(Card cloneFrom) {
         super(cloneFrom);
     }

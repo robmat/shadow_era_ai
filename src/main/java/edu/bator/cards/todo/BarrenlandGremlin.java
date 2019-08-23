@@ -8,7 +8,6 @@ public class BarrenlandGremlin extends Card {
     }
 
 
-
     public BarrenlandGremlin(Card cloneFrom) {
         super(cloneFrom);
     }

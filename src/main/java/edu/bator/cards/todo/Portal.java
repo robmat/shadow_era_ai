@@ -8,7 +8,6 @@ public class Portal extends Card {
     }
 
 
-
     public Portal(Card cloneFrom) {
         super(cloneFrom);
     }

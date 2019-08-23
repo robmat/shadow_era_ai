@@ -8,7 +8,6 @@ public class UprootedTree extends Card {
     }
 
 
-
     public UprootedTree(Card cloneFrom) {
         super(cloneFrom);
     }

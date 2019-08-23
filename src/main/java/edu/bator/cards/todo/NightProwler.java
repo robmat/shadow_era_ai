@@ -8,7 +8,6 @@ public class NightProwler extends Card {
     }
 
 
-
     public NightProwler(Card cloneFrom) {
         super(cloneFrom);
     }

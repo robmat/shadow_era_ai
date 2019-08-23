@@ -8,7 +8,6 @@ public class WingedRedeemer extends Card {
     }
 
 
-
     public WingedRedeemer(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class EnslavetheBeast extends Card {
     }
 
 
-
     public EnslavetheBeast(Card cloneFrom) {
         super(cloneFrom);
     }

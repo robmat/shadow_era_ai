@@ -8,7 +8,6 @@ public class SpectralSabre extends Card {
     }
 
 
-
     public SpectralSabre(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class ForestSerpent extends Card {
     }
 
 
-
     public ForestSerpent(Card cloneFrom) {
         super(cloneFrom);
     }

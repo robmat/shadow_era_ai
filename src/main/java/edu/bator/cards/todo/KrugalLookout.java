@@ -8,7 +8,6 @@ public class KrugalLookout extends Card {
     }
 
 
-
     public KrugalLookout(Card cloneFrom) {
         super(cloneFrom);
     }

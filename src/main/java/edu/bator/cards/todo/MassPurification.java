@@ -8,7 +8,6 @@ public class MassPurification extends Card {
     }
 
 
-
     public MassPurification(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class ShardofIthrund extends Card {
     }
 
 
-
     public ShardofIthrund(Card cloneFrom) {
         super(cloneFrom);
     }

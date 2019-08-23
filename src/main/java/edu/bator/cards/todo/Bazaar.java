@@ -8,7 +8,6 @@ public class Bazaar extends Card {
     }
 
 
-
     public Bazaar(Card cloneFrom) {
         super(cloneFrom);
     }

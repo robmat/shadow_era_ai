@@ -8,7 +8,6 @@ public class EllosResolve extends Card {
     }
 
 
-
     public EllosResolve(Card cloneFrom) {
         super(cloneFrom);
     }

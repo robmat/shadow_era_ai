@@ -8,7 +8,6 @@ public class ThePerfectShot extends Card {
     }
 
 
-
     public ThePerfectShot(Card cloneFrom) {
         super(cloneFrom);
     }

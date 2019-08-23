@@ -8,7 +8,6 @@ public class PackmastersHelm extends Card {
     }
 
 
-
     public PackmastersHelm(Card cloneFrom) {
         super(cloneFrom);
     }

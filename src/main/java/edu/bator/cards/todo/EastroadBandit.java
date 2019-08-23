@@ -8,7 +8,6 @@ public class EastroadBandit extends Card {
     }
 
 
-
     public EastroadBandit(Card cloneFrom) {
         super(cloneFrom);
     }

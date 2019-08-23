@@ -8,7 +8,6 @@ public class IllGottenGains extends Card {
     }
 
 
-
     public IllGottenGains(Card cloneFrom) {
         super(cloneFrom);
     }

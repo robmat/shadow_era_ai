@@ -8,7 +8,6 @@ public class DarklightTimelord extends Card {
     }
 
 
-
     public DarklightTimelord(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class YariPlunderer extends Card {
     }
 
 
-
     public YariPlunderer(Card cloneFrom) {
         super(cloneFrom);
     }

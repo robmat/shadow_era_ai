@@ -8,7 +8,6 @@ public class ScytheofFate extends Card {
     }
 
 
-
     public ScytheofFate(Card cloneFrom) {
         super(cloneFrom);
     }

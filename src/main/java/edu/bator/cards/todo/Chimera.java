@@ -8,7 +8,6 @@ public class Chimera extends Card {
     }
 
 
-
     public Chimera(Card cloneFrom) {
         super(cloneFrom);
     }

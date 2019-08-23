@@ -8,7 +8,6 @@ public class MagmaJackal extends Card {
     }
 
 
-
     public MagmaJackal(Card cloneFrom) {
         super(cloneFrom);
     }

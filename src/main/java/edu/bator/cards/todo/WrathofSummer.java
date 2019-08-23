@@ -8,7 +8,6 @@ public class WrathofSummer extends Card {
     }
 
 
-
     public WrathofSummer(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class EladwenFrostmire extends Card {
     }
 
 
-
     public EladwenFrostmire(Card cloneFrom) {
         super(cloneFrom);
     }

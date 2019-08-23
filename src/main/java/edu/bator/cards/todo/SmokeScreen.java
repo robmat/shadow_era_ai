@@ -8,7 +8,6 @@ public class SmokeScreen extends Card {
     }
 
 
-
     public SmokeScreen(Card cloneFrom) {
         super(cloneFrom);
     }

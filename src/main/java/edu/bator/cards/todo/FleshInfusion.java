@@ -8,7 +8,6 @@ public class FleshInfusion extends Card {
     }
 
 
-
     public FleshInfusion(Card cloneFrom) {
         super(cloneFrom);
     }

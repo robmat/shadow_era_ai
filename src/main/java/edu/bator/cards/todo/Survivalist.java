@@ -8,7 +8,6 @@ public class Survivalist extends Card {
     }
 
 
-
     public Survivalist(Card cloneFrom) {
         super(cloneFrom);
     }

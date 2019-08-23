@@ -8,7 +8,6 @@ public class CrystalTitan extends Card {
     }
 
 
-
     public CrystalTitan(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class PlatinumChainmail extends Card {
     }
 
 
-
     public PlatinumChainmail(Card cloneFrom) {
         super(cloneFrom);
     }

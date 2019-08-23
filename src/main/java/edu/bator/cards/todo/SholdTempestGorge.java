@@ -8,7 +8,6 @@ public class SholdTempestGorge extends Card {
     }
 
 
-
     public SholdTempestGorge(Card cloneFrom) {
         super(cloneFrom);
     }

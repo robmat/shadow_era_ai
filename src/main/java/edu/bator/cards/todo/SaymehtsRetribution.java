@@ -8,7 +8,6 @@ public class SaymehtsRetribution extends Card {
     }
 
 
-
     public SaymehtsRetribution(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class WendithEagleeye extends Card {
     }
 
 
-
     public WendithEagleeye(Card cloneFrom) {
         super(cloneFrom);
     }

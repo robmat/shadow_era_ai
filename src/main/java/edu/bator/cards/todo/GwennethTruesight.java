@@ -8,7 +8,6 @@ public class GwennethTruesight extends Card {
     }
 
 
-
     public GwennethTruesight(Card cloneFrom) {
         super(cloneFrom);
     }

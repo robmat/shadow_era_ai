@@ -8,7 +8,6 @@ public class Supernova extends Card {
     }
 
 
-
     public Supernova(Card cloneFrom) {
         super(cloneFrom);
     }

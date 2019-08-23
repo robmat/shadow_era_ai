@@ -8,7 +8,6 @@ public class CryptspawnTormentor extends Card {
     }
 
 
-
     public CryptspawnTormentor(Card cloneFrom) {
         super(cloneFrom);
     }

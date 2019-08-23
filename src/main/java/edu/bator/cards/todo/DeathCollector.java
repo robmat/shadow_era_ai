@@ -8,7 +8,6 @@ public class DeathCollector extends Card {
     }
 
 
-
     public DeathCollector(Card cloneFrom) {
         super(cloneFrom);
     }

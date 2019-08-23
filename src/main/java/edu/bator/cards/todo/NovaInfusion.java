@@ -8,7 +8,6 @@ public class NovaInfusion extends Card {
     }
 
 
-
     public NovaInfusion(Card cloneFrom) {
         super(cloneFrom);
     }

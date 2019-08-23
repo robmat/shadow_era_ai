@@ -8,7 +8,6 @@ public class AnmorsElixir extends Card {
     }
 
 
-
     public AnmorsElixir(Card cloneFrom) {
         super(cloneFrom);
     }

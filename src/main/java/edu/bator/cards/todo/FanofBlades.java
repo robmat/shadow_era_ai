@@ -8,7 +8,6 @@ public class FanofBlades extends Card {
     }
 
 
-
     public FanofBlades(Card cloneFrom) {
         super(cloneFrom);
     }

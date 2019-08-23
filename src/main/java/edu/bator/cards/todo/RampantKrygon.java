@@ -8,7 +8,6 @@ public class RampantKrygon extends Card {
     }
 
 
-
     public RampantKrygon(Card cloneFrom) {
         super(cloneFrom);
     }

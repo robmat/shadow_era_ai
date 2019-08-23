@@ -8,7 +8,6 @@ public class DisguiseKit extends Card {
     }
 
 
-
     public DisguiseKit(Card cloneFrom) {
         super(cloneFrom);
     }

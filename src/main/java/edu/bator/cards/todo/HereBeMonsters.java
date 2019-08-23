@@ -8,7 +8,6 @@ public class HereBeMonsters extends Card {
     }
 
 
-
     public HereBeMonsters(Card cloneFrom) {
         super(cloneFrom);
     }

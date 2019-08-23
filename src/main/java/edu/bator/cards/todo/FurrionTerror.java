@@ -8,7 +8,6 @@ public class FurrionTerror extends Card {
     }
 
 
-
     public FurrionTerror(Card cloneFrom) {
         super(cloneFrom);
     }

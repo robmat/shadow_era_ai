@@ -8,7 +8,6 @@ public class DarklightApprentice extends Card {
     }
 
 
-
     public DarklightApprentice(Card cloneFrom) {
         super(cloneFrom);
     }

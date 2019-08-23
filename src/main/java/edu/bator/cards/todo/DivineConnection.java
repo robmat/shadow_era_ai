@@ -8,7 +8,6 @@ public class DivineConnection extends Card {
     }
 
 
-
     public DivineConnection(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class EleanorPrincessofEllos extends Card {
     }
 
 
-
     public EleanorPrincessofEllos(Card cloneFrom) {
         super(cloneFrom);
     }

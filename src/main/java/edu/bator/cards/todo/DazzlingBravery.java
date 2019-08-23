@@ -8,7 +8,6 @@ public class DazzlingBravery extends Card {
     }
 
 
-
     public DazzlingBravery(Card cloneFrom) {
         super(cloneFrom);
     }

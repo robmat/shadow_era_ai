@@ -8,7 +8,6 @@ public class Turncoat extends Card {
     }
 
 
-
     public Turncoat(Card cloneFrom) {
         super(cloneFrom);
     }

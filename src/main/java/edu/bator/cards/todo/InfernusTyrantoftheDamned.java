@@ -8,7 +8,6 @@ public class InfernusTyrantoftheDamned extends Card {
     }
 
 
-
     public InfernusTyrantoftheDamned(Card cloneFrom) {
         super(cloneFrom);
     }

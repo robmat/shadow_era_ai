@@ -8,7 +8,6 @@ public class WarGiant extends Card {
     }
 
 
-
     public WarGiant(Card cloneFrom) {
         super(cloneFrom);
     }

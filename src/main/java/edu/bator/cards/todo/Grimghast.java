@@ -8,7 +8,6 @@ public class Grimghast extends Card {
     }
 
 
-
     public Grimghast(Card cloneFrom) {
         super(cloneFrom);
     }

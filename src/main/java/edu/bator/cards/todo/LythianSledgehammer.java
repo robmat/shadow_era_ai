@@ -8,7 +8,6 @@ public class LythianSledgehammer extends Card {
     }
 
 
-
     public LythianSledgehammer(Card cloneFrom) {
         super(cloneFrom);
     }

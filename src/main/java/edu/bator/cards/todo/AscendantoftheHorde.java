@@ -8,7 +8,6 @@ public class AscendantoftheHorde extends Card {
     }
 
 
-
     public AscendantoftheHorde(Card cloneFrom) {
         super(cloneFrom);
     }

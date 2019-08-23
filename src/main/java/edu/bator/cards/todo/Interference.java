@@ -8,7 +8,6 @@ public class Interference extends Card {
     }
 
 
-
     public Interference(Card cloneFrom) {
         super(cloneFrom);
     }

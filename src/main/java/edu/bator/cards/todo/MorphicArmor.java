@@ -8,7 +8,6 @@ public class MorphicArmor extends Card {
     }
 
 
-
     public MorphicArmor(Card cloneFrom) {
         super(cloneFrom);
     }

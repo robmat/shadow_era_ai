@@ -8,7 +8,6 @@ public class MeteorShower extends Card {
     }
 
 
-
     public MeteorShower(Card cloneFrom) {
         super(cloneFrom);
     }

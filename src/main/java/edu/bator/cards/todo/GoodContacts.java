@@ -8,7 +8,6 @@ public class GoodContacts extends Card {
     }
 
 
-
     public GoodContacts(Card cloneFrom) {
         super(cloneFrom);
     }

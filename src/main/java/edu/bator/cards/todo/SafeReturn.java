@@ -8,7 +8,6 @@ public class SafeReturn extends Card {
     }
 
 
-
     public SafeReturn(Card cloneFrom) {
         super(cloneFrom);
     }

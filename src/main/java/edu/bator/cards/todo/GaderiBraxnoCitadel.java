@@ -8,7 +8,6 @@ public class GaderiBraxnoCitadel extends Card {
     }
 
 
-
     public GaderiBraxnoCitadel(Card cloneFrom) {
         super(cloneFrom);
     }

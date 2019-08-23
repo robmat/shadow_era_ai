@@ -8,7 +8,6 @@ public class AssumedCommand extends Card {
     }
 
 
-
     public AssumedCommand(Card cloneFrom) {
         super(cloneFrom);
     }

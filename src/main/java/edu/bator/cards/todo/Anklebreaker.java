@@ -8,7 +8,6 @@ public class Anklebreaker extends Card {
     }
 
 
-
     public Anklebreaker(Card cloneFrom) {
         super(cloneFrom);
     }

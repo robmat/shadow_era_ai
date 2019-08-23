@@ -8,7 +8,6 @@ public class Carniboar extends Card {
     }
 
 
-
     public Carniboar(Card cloneFrom) {
         super(cloneFrom);
     }

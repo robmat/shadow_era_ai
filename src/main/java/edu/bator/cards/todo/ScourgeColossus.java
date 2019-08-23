@@ -8,7 +8,6 @@ public class ScourgeColossus extends Card {
     }
 
 
-
     public ScourgeColossus(Card cloneFrom) {
         super(cloneFrom);
     }

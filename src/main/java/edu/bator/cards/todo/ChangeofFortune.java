@@ -8,7 +8,6 @@ public class ChangeofFortune extends Card {
     }
 
 
-
     public ChangeofFortune(Card cloneFrom) {
         super(cloneFrom);
     }

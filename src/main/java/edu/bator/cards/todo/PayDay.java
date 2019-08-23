@@ -8,7 +8,6 @@ public class PayDay extends Card {
     }
 
 
-
     public PayDay(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class LoganStonebreaker extends Card {
     }
 
 
-
     public LoganStonebreaker(Card cloneFrom) {
         super(cloneFrom);
     }

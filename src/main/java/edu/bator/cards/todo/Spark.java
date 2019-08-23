@@ -8,7 +8,6 @@ public class Spark extends Card {
     }
 
 
-
     public Spark(Card cloneFrom) {
         super(cloneFrom);
     }

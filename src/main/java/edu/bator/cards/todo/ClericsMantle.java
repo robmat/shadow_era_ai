@@ -8,7 +8,6 @@ public class ClericsMantle extends Card {
     }
 
 
-
     public ClericsMantle(Card cloneFrom) {
         super(cloneFrom);
     }

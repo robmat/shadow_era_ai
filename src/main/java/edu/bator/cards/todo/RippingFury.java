@@ -8,7 +8,6 @@ public class RippingFury extends Card {
     }
 
 
-
     public RippingFury(Card cloneFrom) {
         super(cloneFrom);
     }

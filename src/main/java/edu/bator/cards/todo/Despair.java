@@ -8,7 +8,6 @@ public class Despair extends Card {
     }
 
 
-
     public Despair(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class FlameforgedScepter extends Card {
     }
 
 
-
     public FlameforgedScepter(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class RothemsVisage extends Card {
     }
 
 
-
     public RothemsVisage(Card cloneFrom) {
         super(cloneFrom);
     }

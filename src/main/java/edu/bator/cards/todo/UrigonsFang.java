@@ -8,7 +8,6 @@ public class UrigonsFang extends Card {
     }
 
 
-
     public UrigonsFang(Card cloneFrom) {
         super(cloneFrom);
     }

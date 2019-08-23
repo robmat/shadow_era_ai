@@ -8,7 +8,6 @@ public class WulvenTracker extends Card {
     }
 
 
-
     public WulvenTracker(Card cloneFrom) {
         super(cloneFrom);
     }

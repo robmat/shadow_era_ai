@@ -8,7 +8,6 @@ public class CagedSavage extends Card {
     }
 
 
-
     public CagedSavage(Card cloneFrom) {
         super(cloneFrom);
     }

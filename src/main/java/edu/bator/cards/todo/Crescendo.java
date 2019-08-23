@@ -8,7 +8,6 @@ public class Crescendo extends Card {
     }
 
 
-
     public Crescendo(Card cloneFrom) {
         super(cloneFrom);
     }

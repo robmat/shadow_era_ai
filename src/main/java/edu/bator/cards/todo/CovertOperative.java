@@ -8,7 +8,6 @@ public class CovertOperative extends Card {
     }
 
 
-
     public CovertOperative(Card cloneFrom) {
         super(cloneFrom);
     }

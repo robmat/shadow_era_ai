@@ -8,7 +8,6 @@ public class Speedstrike extends Card {
     }
 
 
-
     public Speedstrike(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class EternalRenewal extends Card {
     }
 
 
-
     public EternalRenewal(Card cloneFrom) {
         super(cloneFrom);
     }

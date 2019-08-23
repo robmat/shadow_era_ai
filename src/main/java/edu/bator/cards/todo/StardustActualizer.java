@@ -8,7 +8,6 @@ public class StardustActualizer extends Card {
     }
 
 
-
     public StardustActualizer(Card cloneFrom) {
         super(cloneFrom);
     }

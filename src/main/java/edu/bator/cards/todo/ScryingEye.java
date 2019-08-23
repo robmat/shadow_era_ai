@@ -8,7 +8,6 @@ public class ScryingEye extends Card {
     }
 
 
-
     public ScryingEye(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class BraxnorianVeteran extends Card {
     }
 
 
-
     public BraxnorianVeteran(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class Fireball extends Card {
     }
 
 
-
     public Fireball(Card cloneFrom) {
         super(cloneFrom);
     }

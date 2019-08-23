@@ -8,7 +8,6 @@ public class WidespreadDecay extends Card {
     }
 
 
-
     public WidespreadDecay(Card cloneFrom) {
         super(cloneFrom);
     }

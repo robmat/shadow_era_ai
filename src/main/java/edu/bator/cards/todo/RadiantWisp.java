@@ -8,7 +8,6 @@ public class RadiantWisp extends Card {
     }
 
 
-
     public RadiantWisp(Card cloneFrom) {
         super(cloneFrom);
     }

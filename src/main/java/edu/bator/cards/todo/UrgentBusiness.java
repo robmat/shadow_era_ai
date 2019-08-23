@@ -8,7 +8,6 @@ public class UrgentBusiness extends Card {
     }
 
 
-
     public UrgentBusiness(Card cloneFrom) {
         super(cloneFrom);
     }

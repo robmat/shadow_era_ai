@@ -8,7 +8,6 @@ public class BloodstoneAltar extends Card {
     }
 
 
-
     public BloodstoneAltar(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class RicochetTrap extends Card {
     }
 
 
-
     public RicochetTrap(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class PackAlpha extends Card {
     }
 
 
-
     public PackAlpha(Card cloneFrom) {
         super(cloneFrom);
     }

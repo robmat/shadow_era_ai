@@ -8,7 +8,6 @@ public class SpitfireHound extends Card {
     }
 
 
-
     public SpitfireHound(Card cloneFrom) {
         super(cloneFrom);
     }

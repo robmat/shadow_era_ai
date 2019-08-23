@@ -8,7 +8,6 @@ public class FalsebloodCultist extends Card {
     }
 
 
-
     public FalsebloodCultist(Card cloneFrom) {
         super(cloneFrom);
     }

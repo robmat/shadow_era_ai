@@ -8,7 +8,6 @@ public class VulltheInsatiable extends Card {
     }
 
 
-
     public VulltheInsatiable(Card cloneFrom) {
         super(cloneFrom);
     }

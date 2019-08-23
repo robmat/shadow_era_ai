@@ -8,7 +8,6 @@ public class ByTheSword extends Card {
     }
 
 
-
     public ByTheSword(Card cloneFrom) {
         super(cloneFrom);
     }

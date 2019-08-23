@@ -8,7 +8,6 @@ public class ZealousMystic extends Card {
     }
 
 
-
     public ZealousMystic(Card cloneFrom) {
         super(cloneFrom);
     }

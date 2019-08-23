@@ -8,7 +8,6 @@ public class Frostmare extends Card {
     }
 
 
-
     public Frostmare(Card cloneFrom) {
         super(cloneFrom);
     }

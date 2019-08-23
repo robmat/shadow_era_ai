@@ -8,7 +8,6 @@ public class TarwrittenScroll extends Card {
     }
 
 
-
     public TarwrittenScroll(Card cloneFrom) {
         super(cloneFrom);
     }

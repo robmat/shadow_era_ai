@@ -8,7 +8,6 @@ public class WilySmuggler extends Card {
     }
 
 
-
     public WilySmuggler(Card cloneFrom) {
         super(cloneFrom);
     }

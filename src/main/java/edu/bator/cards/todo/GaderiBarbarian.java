@@ -8,7 +8,6 @@ public class GaderiBarbarian extends Card {
     }
 
 
-
     public GaderiBarbarian(Card cloneFrom) {
         super(cloneFrom);
     }

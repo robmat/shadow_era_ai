@@ -8,7 +8,6 @@ public class IrinaGuardianoftheSwan extends Card {
     }
 
 
-
     public IrinaGuardianoftheSwan(Card cloneFrom) {
         super(cloneFrom);
     }

@@ -8,7 +8,6 @@ public class UndyingBond extends Card {
     }
 
 
-
     public UndyingBond(Card cloneFrom) {
         super(cloneFrom);
     }

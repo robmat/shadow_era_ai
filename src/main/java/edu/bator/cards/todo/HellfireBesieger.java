@@ -8,7 +8,6 @@ public class HellfireBesieger extends Card {
     }
 
 
-
     public HellfireBesieger(Card cloneFrom) {
         super(cloneFrom);
     }

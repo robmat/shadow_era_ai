@@ -8,7 +8,6 @@ public class Baduruu extends Card {
     }
 
 
-
     public Baduruu(Card cloneFrom) {
         super(cloneFrom);
     }

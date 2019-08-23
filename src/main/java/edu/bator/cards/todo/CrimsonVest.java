@@ -8,7 +8,6 @@ public class CrimsonVest extends Card {
     }
 
 
-
     public CrimsonVest(Card cloneFrom) {
         super(cloneFrom);
     }

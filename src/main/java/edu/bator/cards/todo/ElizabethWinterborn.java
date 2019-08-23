@@ -8,7 +8,6 @@ public class ElizabethWinterborn extends Card {
     }
 
 
-
     public ElizabethWinterborn(Card cloneFrom) {
         super(cloneFrom);
     }
