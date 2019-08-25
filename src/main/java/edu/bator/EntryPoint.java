@@ -40,7 +40,7 @@ import static org.apache.log4j.Logger.getLogger;
 public class EntryPoint extends Application {
 
     private static final Logger log = getLogger(EntryPoint.class);
-    public static AllCardsSet allCardsSet = null;// new AllCardsSet();
+    public static AllCardsSet allCardsSet = new AllCardsSet();
     public static Stage primaryStage;
     static ObjectMapper objectJsonMapper = new ObjectMapper();
     private GameState gameState = new GameState();
@@ -54,7 +54,7 @@ public class EntryPoint extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        this.primaryStage = primaryStage;
+        EntryPoint.primaryStage = primaryStage;
         Thread.setDefaultUncaughtExceptionHandler(new LogginExceptionHandler());
         try {
             primaryStage.getIcons().add(new Image(getClass().getResource("/icon.png").toURI().toURL().toString()));
