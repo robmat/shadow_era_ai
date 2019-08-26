@@ -1,26 +1,21 @@
 package edu.bator;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.Map;
-
-import static edu.bator.EntryPoint.objectJsonMapper;
 
 public class TempCode {
 
     public static void main(String[] args) throws IOException {
         //download images
-        /* AllCardsSet allCardsSet = new AllCardsSet();
+        /*AllCardsSet allCardsSet = new AllCardsSet();
         allCardsSet.getAllCards().forEach(card -> {
             try {
                 URL url = new URL("http://www.shadowera.com/cards/"+card.getCode()+".jpg");
                 URLConnection c = url.openConnection();
                 InputStream is = c.getInputStream();
                 byte[] bytes = IOUtils.toByteArray(is);
-                Files.write(Paths.get("src", "main", "resources", "images", card.getCode() + ".jpg"), bytes);
+                Path path = Paths.get("src", "main", "resources", "images", card.getCode() + ".jpg");
+                Files.write(path, bytes);
+                System.out.println("Written: " + path);
                 is.close();
             } catch (Exception e) {
                 e.printStackTrace();
@@ -45,7 +40,7 @@ public class TempCode {
                 }
             }*/
         //write card class files
-        List<Map> cards = objectJsonMapper
+        /*List<Map> cards = objectJsonMapper
                 .readValue(CardParser.class.getResourceAsStream("/cards.json"), List.class);
 
 
@@ -65,6 +60,6 @@ public class TempCode {
                         "    }\n" +
                         "}", name, name).getBytes());
             }
-        }
+        }*/
     }
 }
