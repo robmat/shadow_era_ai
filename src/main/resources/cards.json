@@ -9884,7 +9884,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "When you summon an ability, Isadora is readied. When Isadora attacks an ally on your turn, ability damage to opposing allies is increased by 1 until the end of the turn. 1: Target opposing hero or ally takes 2 electrical damage.",
+    "description": "When you summon a Mage ability, Isadora is readied. When Isadora attacks an ally on your turn, ability damage to opposing allies is increased by 1 until the end of the turn. 1: Target opposing hero or ally takes 2 electrical damage.",
     "cardType": "ALLY",
     "resourceCost": 5,
     "baseAttack": 1,
@@ -9900,11 +9900,11 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "3: Target item in a graveyard is returned to play under your control as a Homunculus ally with 1 electrical base attack, 2 health and no abilities. All friendly Homunculus allies gain +1 base attack and +1 health.",
+    "description": "2: Target item in a graveyard is returned to play under your control as a Homunculus ally with 1 electrical base attack, 2 health and no abilities. All friendly Homunculus allies gain +1 base attack and +1 health.",
     "cardType": "ALLY",
-    "resourceCost": 6,
-    "baseAttack": 3,
-    "initialHp": 9,
+    "resourceCost": 5,
+    "baseAttack": 2,
+    "initialHp": 7,
     "attackType": "ELECTRIC",
     "abilities": []
   },
@@ -10403,7 +10403,7 @@
     "cardType": "ALLY",
     "resourceCost": 6,
     "baseAttack": 3,
-    "initialHp": 6,
+    "initialHp": 7,
     "attackType": "SWORD",
     "abilities": []
   },
@@ -10721,7 +10721,7 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "2: Target ally in a graveyard enters play under your control with 1 base attack and its health reduced to 1. That ally is exiled when killed.",
+    "description": "1: Target ally in a graveyard enters play under your control with 1 base attack and its health reduced to 1. That ally is exiled when killed.",
     "cardType": "ALLY",
     "resourceCost": 5,
     "baseAttack": 3,
@@ -11211,12 +11211,12 @@
     "rarity": "R",
     "name": "Gemstone Javelin",
     "side": null,
-    "heroClass": null,
-    "description": "0SE: Target opposing ally takes X damage, where X is Gemstone Javelin's attack + durability. Gemstone Javelin is destroyed at the end of the turn.",
+    "heroClass": ["WARRIOR", "ELEMENTAL"],
+    "description": "0SE: Target opposing ally takes X damage, where X is Gemstone Javelin's attack + durability. Gemstone Javelin is destroyed.",
     "cardType": "ITEM",
     "resourceCost": 4,
     "baseAttack": 1,
-    "initialHp": 3,
+    "initialHp": 4,
     "itemSubType": "WEAPON",
     "attackType": "SWORD",
     "abilities": []
