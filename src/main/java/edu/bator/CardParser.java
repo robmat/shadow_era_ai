@@ -1,17 +1,5 @@
 package edu.bator;
 
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.stream.Collectors;
-
 import edu.bator.cards.Card;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
@@ -22,13 +10,10 @@ import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
 
-import static edu.bator.EntryPoint.objectJsonMapper;
-import static edu.bator.cards.enums.CardEnums.Ability;
-import static edu.bator.cards.enums.CardEnums.AttackType;
-import static edu.bator.cards.enums.CardEnums.CardType;
-import static edu.bator.cards.enums.CardEnums.HeroClass;
-import static edu.bator.cards.enums.CardEnums.ItemSubType;
-import static edu.bator.cards.enums.CardEnums.Side;
+import java.net.URL;
+import java.util.*;
+
+import static edu.bator.cards.enums.CardEnums.*;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
@@ -193,30 +178,6 @@ public class CardParser {
         cards.stream()
                 .filter(card -> !card.getAbilities().isEmpty())
                 .forEach(log::info);
-        List<Map> oldCards = objectJsonMapper
-                .readValue(CardParser.class.getResourceAsStream("/cards.json"), List.class);
-
-        cards = cards.stream().filter(c -> oldCards.stream()
-                .noneMatch(old -> c.getName().equals(old.get("name"))))
-                .collect(Collectors.toList());
-
-
-        for (Card card : cards) {
-            Path cardClassFile = Paths.get("src", "main", "java", "edu", "bator", "cards", "todo", card.getName().replaceAll("[ :'!,-]", ""), ".java");
-            if (!Files.exists(cardClassFile)) {
-                System.out.println(card.getName());
-                String name = card.getName().replaceAll("[ :'!,-]", "");
-                Files.write(Paths.get("src","main","java","edu","bator","cards","todo", name + ".java"), String.format("package edu.bator.cards.todo;\n" +
-                        "\n" +
-                        "import edu.bator.cards.Card;\n" +
-                        "\n" +
-                        "public class %s extends Card {\n" +
-                        "    public %s(Card cloneFrom) {\n" +
-                        "        super(cloneFrom);\n" +
-                        "    }\n" +
-                        "}", name, name).getBytes());
-            }
-        }
 
         /*Files.write(Paths.get("src", "main", "resources", "new_cards.json"),
                 objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));*/

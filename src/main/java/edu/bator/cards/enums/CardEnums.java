@@ -2,6 +2,8 @@ package edu.bator.cards.enums;
 
 import edu.bator.enums.EnumParser;
 
+import java.util.Set;
+
 public class CardEnums {
 
     public enum Ability {
@@ -43,8 +45,8 @@ public class CardEnums {
     public enum HeroClass {
         WARRIOR, PRIEST, ROGUE, MAGE, HUNTER, WULVEN, ELEMENTAL, NEUTRAL;
 
-        public static HeroClass parse(String str) {
-            return new EnumParser<>(HeroClass.class).parse(str);
+        public static Set<HeroClass> parse(String str) {
+            return new EnumParser<>(HeroClass.class).parseMany(str);
         }
     }
 }
