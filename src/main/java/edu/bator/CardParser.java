@@ -10,6 +10,7 @@ import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 
@@ -35,6 +36,23 @@ public class CardParser {
             "Blood Moon", "Midnight Sentinel");
 
     public static void main(String[] args) throws Exception {
+        List<Card> cards = getCards();
+        cards.stream()
+                .filter(card -> !card.getAbilities().isEmpty())
+                .forEach(log::info);
+
+        /*Files.write(Paths.get("src", "main", "resources", "new_cards.json"),
+                objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));*/
+
+       /* Path resultPath = Paths.get("result.txt");
+        Files.write(resultPath, cards.stream().map(Card::toString).collect(Collectors.toList()));
+        Files.write(Paths.get("src", "main", "resources", "cards.json"),
+                objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));*/
+
+
+    }
+
+    public static List<Card> getCards() throws IOException {
         List<Card> cards = new LinkedList<>();
 
         Document cardDoc = null;
@@ -175,19 +193,7 @@ public class CardParser {
                 cards.add(card);
             }
         }
-        cards.stream()
-                .filter(card -> !card.getAbilities().isEmpty())
-                .forEach(log::info);
-
-        /*Files.write(Paths.get("src", "main", "resources", "new_cards.json"),
-                objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));*/
-
-       /* Path resultPath = Paths.get("result.txt");
-        Files.write(resultPath, cards.stream().map(Card::toString).collect(Collectors.toList()));
-        Files.write(Paths.get("src", "main", "resources", "cards.json"),
-                objectJsonMapper.writerWithDefaultPrettyPrinter().writeValueAsBytes(cards));*/
-
-
+        return cards;
     }
 
     public static Integer parseIntInChildIfPresent(Node node) {

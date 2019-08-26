@@ -9877,6 +9877,22 @@
     "abilities": []
   },
   {
+    "code": "ll069",
+    "rarity": "R",
+    "name": "Isadora Stormrage",
+    "side": null,
+    "heroClass": [
+      "MAGE"
+    ],
+    "description": "When you summon an ability, Isadora is readied. When Isadora attacks an ally on your turn, ability damage to opposing allies is increased by 1 until the end of the turn. 1: Target opposing hero or ally takes 2 electrical damage.",
+    "cardType": "ALLY",
+    "resourceCost": 5,
+    "baseAttack": 1,
+    "initialHp": 7,
+    "attackType": "ELECTRIC",
+    "abilities": []
+  },
+  {
     "code": "ll070",
     "rarity": "R",
     "name": "Lilyt of Orem",
