@@ -24,6 +24,7 @@ public class MenuBuilder {
 
         MenuItem exit = new MenuItem("Exit.");
         game.getItems().add(exit);
+        exit.setAccelerator(new KeyCodeCombination(KeyCode.F4, KeyCombination.ALT_DOWN));
         exit.setOnAction(event -> System.exit(0));
     }
 }

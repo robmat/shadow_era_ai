@@ -1,0 +1,1 @@
+java --module-path "%PATH_TO_FX%" --add-modules javafx.controls,javafx.fxml -jar shadow_era_game.jar
