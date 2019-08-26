@@ -3678,7 +3678,7 @@
     "heroClass": [
       "WARRIOR"
     ],
-    "description": "Until the start of your next turn, target friendly ally has defender and +1 attack, and an additional +1 attack while&nbsp;it is the only friendly ally in play.",
+    "description": "Until the start of your next turn, target friendly ally has defender and +1 attack, and an additional +1 attack while it is the only friendly ally in play.",
     "cardType": "ABILITY",
     "resourceCost": 1,
     "baseAttack": null,
@@ -4113,7 +4113,7 @@
     "heroClass": [
       "HUNTER"
     ],
-    "description": "Play face down. The next opposing ability to be summoned has no effect&nbsp;and is returned to its owner's hand.&nbsp;",
+    "description": "Play face down. The next opposing ability to be summoned has no effect and is returned to its owner's hand. ",
     "cardType": "ITEM",
     "resourceCost": 2,
     "baseAttack": null,
@@ -4200,7 +4200,7 @@
     "heroClass": [
       "PRIEST"
     ],
-    "description": "Attach to target friendly ally. That ally has immunity to fire damage. When that ally enters combat with an opposing hero or ally, it deals 1 arcane damage and 1 fire damage to them.&nbsp;",
+    "description": "Attach to target friendly ally. That ally has immunity to fire damage. When that ally enters combat with an opposing hero or ally, it deals 1 arcane damage and 1 fire damage to them. ",
     "cardType": "ABILITY",
     "resourceCost": 3,
     "baseAttack": null,
@@ -4370,7 +4370,7 @@
     "heroClass": [
       "ROGUE"
     ],
-    "description": "While&nbsp;any opposing player controls allies greater than or equal to the number you control, Night Owl has stealth. When Night Owl is killed, draw a card.",
+    "description": "While any opposing player controls allies greater than or equal to the number you control, Night Owl has stealth. When Night Owl is killed, draw a card.",
     "cardType": "ALLY",
     "resourceCost": 3,
     "baseAttack": 3,
@@ -4820,7 +4820,7 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "Your hero's shadow energy is set to equal the hero with the greatest shadow energy.&nbsp;Opposing heroes can't activate their ability until the start of your next turn.",
+    "description": "Your hero's shadow energy is set to equal the hero with the greatest shadow energy. Opposing heroes can't activate their ability until the start of your next turn.",
     "cardType": "ABILITY",
     "resourceCost": 4,
     "baseAttack": null,
@@ -4947,7 +4947,7 @@
     "name": "Blessed Protection",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "Attach to target friendly ally. Ability damage to that ally is reduced by 1 for each attachment it has.&nbsp;",
+    "description": "Attach to target friendly ally. Ability damage to that ally is reduced by 1 for each attachment it has. ",
     "cardType": "ABILITY",
     "resourceCost": 2,
     "baseAttack": null,
@@ -5205,7 +5205,7 @@
     "name": "Assumed Command",
     "side": null,
     "heroClass": null,
-    "description": "Attach to target friendly ally. That ally has +1 health and allies you control have steadfast&nbsp;(they can't leave play unless they are killed).",
+    "description": "Attach to target friendly ally. That ally has +1 health and allies you control have steadfast (they can't leave play unless they are killed).",
     "cardType": "ABILITY",
     "resourceCost": 3,
     "baseAttack": null,
@@ -5485,7 +5485,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "At the start of each of your turns, your hero takes 1 damage. When an opposing player activates an ability with shadow energy, draw 2 cards. 0SE: Your hero takes 2 damage and you draw 2 cards.&nbsp;",
+    "description": "At the start of each of your turns, your hero takes 1 damage. When an opposing player activates an ability with shadow energy, draw 2 cards. 0SE: Your hero takes 2 damage and you draw 2 cards. ",
     "cardType": "ITEM",
     "resourceCost": 7,
     "baseAttack": null,
@@ -5570,7 +5570,7 @@
     "heroClass": [
       "HUNTER"
     ],
-    "description": "Your hero can attack opposing heroes and allies regardless of stealth.&nbsp;When you end your turn while there is only 1 friendly ally in play, draw a card.",
+    "description": "Your hero can attack opposing heroes and allies regardless of stealth. When you end your turn while there is only 1 friendly ally in play, draw a card.",
     "cardType": "ITEM",
     "resourceCost": 6,
     "baseAttack": 2,
@@ -5812,7 +5812,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "3SE: Until the start of your next turn, all damage to friendly allies is reduced by 1 and all damage from friendly allies&nbsp;to opposing heroes and allies&nbsp;is increased by 1.",
+    "description": "3SE: Until the start of your next turn, all damage to friendly allies is reduced by 1 and all damage from friendly allies to opposing heroes and allies is increased by 1.",
     "cardType": "HERO",
     "resourceCost": null,
     "baseAttack": null,
@@ -6518,7 +6518,7 @@
     "name": "Flameborn Defiler",
     "side": "SHADOW",
     "heroClass": null,
-    "description": "Flameborn Defiler has immunity to fire damage. Opposing allies that take fire damage are set ablaze.",
+    "description": "Flameborn Defiler has immunity to fire damage. When an opposing ally is dealt fire damage, that ally is set ablaze.",
     "cardType": "ALLY",
     "resourceCost": 5,
     "baseAttack": 4,
@@ -7274,7 +7274,7 @@
     "heroClass": [
       "PRIEST"
     ],
-    "description": "When an opposing ally enters combat with Sindarok Apprentice, that opposing ally takes&nbsp;1 arcane damage (or 2 arcane damage if you control at least 2 Templar allies).",
+    "description": "When an opposing ally enters combat with Sindarok Apprentice, that opposing ally takes 1 arcane damage (or 2 arcane damage if you control at least 2 Templar allies).",
     "cardType": "ALLY",
     "resourceCost": 3,
     "baseAttack": 2,
@@ -8183,7 +8183,7 @@
     "name": "Overwhelm",
     "side": null,
     "heroClass": null,
-    "description": "All opposing heroes and allies take 1 damage for each ally you control.",
+    "description": "All opposing heroes and allies take X damage, where X is the number of allies you control.",
     "cardType": "ABILITY",
     "resourceCost": 5,
     "baseAttack": null,
@@ -8365,7 +8365,7 @@
     "name": "Cleric's Mantle",
     "side": null,
     "heroClass": null,
-    "description": "1D: Target friendly Ravager ally has all negative effects removed, and that ally attacks a random opposing hero each time an item or ability is targeted and destroyed this turn, if able.",
+    "description": "1D: Target friendly Ravager ally has all negative effects removed, and that ally attacks a random opposing hero each time an item or ability is targeted and destroyed this turn if able.",
     "cardType": "ITEM",
     "resourceCost": 3,
     "baseAttack": null,
@@ -9100,7 +9100,7 @@
     "name": "Avatar of Twilight",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "When Avatar of Twilight is summoned, the&nbsp;top 2&nbsp;Twilight allies in your graveyard with cost 5 or less are returned to play with 1 base attack and their health reduced to 1.",
+    "description": "When Avatar of Twilight is summoned, the top 2 Twilight allies in your graveyard with cost 5 or less are returned to play with 1 base attack and their health reduced to 1.",
     "cardType": "ALLY",
     "resourceCost": 6,
     "baseAttack": 5,
