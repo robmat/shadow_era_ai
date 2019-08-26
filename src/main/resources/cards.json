@@ -9645,7 +9645,7 @@
     "heroClass": [
       "WARRIOR"
     ],
-    "description": "When Braxnorian Weaponsmith is summoned, you may seek a weapon with cost 4 or less.",
+    "description": "When Braxnorian Weaponsmith is summoned, you may seek a weapon with cost 4 or less and place it on top of your deck. If that weapon's cost is 3 or less, draw a card.",
     "cardType": "ALLY",
     "resourceCost": 3,
     "baseAttack": 2,
@@ -9731,7 +9731,7 @@
     "heroClass": [
       "WARRIOR"
     ],
-    "description": "Friendly non-Yari Warrior allies have +1 attack. Once per turn, when another friendly ally leaves combat with an opposing ally, Nanaya attacks that opposing ally if able.",
+    "description": "Your weapons and non-Yari Warrior allies have +1 attack. Once per turn, when another friendly ally leaves combat with an opposing ally, Nanaya attacks that opposing ally if able.",
     "cardType": "ALLY",
     "resourceCost": 6,
     "baseAttack": 5,
@@ -10372,7 +10372,7 @@
     "heroClass": [
       "ROGUE"
     ],
-    "description": "Allies, items and abilities you do not own cost you 2 less resources to summon. 4: Draw a card from target opponent's deck.",
+    "description": "Allies and items you do not own cost you 2 less resources to summon. 4: Draw a card from target opponent's deck.",
     "cardType": "ITEM",
     "resourceCost": 2,
     "itemSubType": "ARTIFACT",
@@ -10509,7 +10509,7 @@
     "cardType": "ALLY",
     "resourceCost": 6,
     "baseAttack": 6,
-    "initialHp": 5,
+    "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
     "abilities": []
@@ -10707,7 +10707,7 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "Attach to target friendly ally. That ally has +2 attack, +5 health and it is killed at the end of your turn. When Power Surge is summoned, that ally attacks target opposing ally if able.",
+    "description": "Attach to target friendly ally until the end of the turn. That ally has +2 attack and +5 health. When Power Surge is summoned, that ally takes 1 damage and attacks target opposing ally if able.",
     "cardType": "ABILITY",
     "resourceCost": 3,
     "itemSubType": "ATTACHMENT",
@@ -11197,11 +11197,11 @@
     "heroClass": [
       "ROGUE"
     ],
-    "description": "When a friendly ally with cost 4 or greater is summoned, Heavy Ballista and that ally gain +1 base attack.",
+    "description": "Once per turn, when a friendly ally with cost 4 or greater is summoned, Heavy Ballista and that ally gain +1 base attack.",
     "cardType": "ITEM",
     "resourceCost": 3,
     "baseAttack": 1,
-    "initialHp": 3,
+    "initialHp": 2,
     "itemSubType": "WEAPON",
     "attackType": "SWORD",
     "abilities": []
@@ -11212,7 +11212,7 @@
     "name": "Gemstone Javelin",
     "side": null,
     "heroClass": ["WARRIOR", "ELEMENTAL"],
-    "description": "0SE: Target opposing ally takes X damage, where X is Gemstone Javelin's attack + durability. Gemstone Javelin is destroyed.",
+    "description": "0SE: Target opposing ally takes X damage, where X is Gemstone Javelin's attack + durability. Gemstone Javelin is destroyed, or exiled if its base attack is 2 or greater.",
     "cardType": "ITEM",
     "resourceCost": 4,
     "baseAttack": 1,
