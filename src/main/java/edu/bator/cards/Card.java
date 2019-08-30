@@ -107,10 +107,10 @@ public class Card implements Cloneable {
     }
 
     public void tryToReadyAttack(GameState gameState) {
-        attackReadied = gameState.allCardsInPlay().stream().noneMatch(card -> card.preventsAllyFromReadyingAttack(this, gameState));
+        attackReadied = gameState.allCardsInPlay().stream().noneMatch(card -> card.preventsAllyOrHeroFromReadyingAttack(this, gameState));
     }
 
-    public boolean preventsAllyFromReadyingAttack(Card card, GameState gameState) {
+    public boolean preventsAllyOrHeroFromReadyingAttack(Card card, GameState gameState) {
         return false;
     }
 

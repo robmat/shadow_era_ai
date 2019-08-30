@@ -3,7 +3,6 @@ package edu.bator.cards.done;
 import edu.bator.cards.Card;
 import edu.bator.cards.Expirable;
 import edu.bator.cards.Support;
-import edu.bator.cards.util.SupportExpireUtil;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.Data;
@@ -46,10 +45,5 @@ public class ValiantDefender extends Support implements Expirable {
             return false;
         }
         return true;
-    }
-
-    @Override
-    public void gamePhaseChangeEvent(GameState gameState) {
-        SupportExpireUtil.expireCard(gameState, this);
     }
 }

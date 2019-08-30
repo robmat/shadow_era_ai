@@ -3,7 +3,6 @@ package edu.bator.cards.done;
 import edu.bator.cards.Card;
 import edu.bator.cards.Expirable;
 import edu.bator.cards.Support;
-import edu.bator.cards.util.SupportExpireUtil;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
@@ -35,13 +34,8 @@ public class RainDelay extends Support implements Expirable {
     }
 
     @Override
-    public boolean preventsAllyFromReadyingAttack(Card attackSource, GameState gameState) {
+    public boolean preventsAllyOrHeroFromReadyingAttack(Card attackSource, GameState gameState) {
         return attackSource.cardIsAnAlly();
-    }
-
-    @Override
-    public void gamePhaseChangeEvent(GameState gameState) {
-        SupportExpireUtil.expireCard(gameState, this);
     }
 
     @Override

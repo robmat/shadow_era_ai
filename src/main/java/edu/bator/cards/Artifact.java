@@ -18,7 +18,7 @@ public class Artifact extends Card {
         artifactOrSupportCast(gameState, this);
     }
 
-    public static void artifactOrSupportCast(GameState gameState, Card card) {
+    static void artifactOrSupportCast(GameState gameState, Card card) {
         if (gameState.getYourHand().remove(card)) {
             gameState.getYourSupport().add(card);
             gameState.setYourCurrentResources(gameState.getYourCurrentResources() - card.getResourceCost());

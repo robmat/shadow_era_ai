@@ -1,5 +1,6 @@
 package edu.bator.cards;
 
+import edu.bator.cards.util.SupportExpireUtil;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
 
@@ -18,5 +19,12 @@ public class Support extends Card {
     @Override
     public void supportIsCast(GameState gameState) {
         artifactOrSupportCast(gameState, this);
+    }
+
+    @Override
+    public void gamePhaseChangeEvent(GameState gameState) {
+        if (this instanceof Expirable) {
+            SupportExpireUtil.expireCard(gameState, (Expirable) this);
+        }
     }
 }
