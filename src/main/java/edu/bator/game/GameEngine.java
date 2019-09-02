@@ -1,14 +1,14 @@
 package edu.bator.game;
 
+import edu.bator.cards.Card;
+import org.apache.log4j.Logger;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-import edu.bator.cards.Card;
-import org.apache.log4j.Logger;
 
 import static java.lang.String.format;
 
@@ -116,7 +116,7 @@ public class GameEngine {
                 .filter(card -> !card.getEffects().isEmpty())
                 .forEach(card -> {
                     log.debug(format("Card %s has effects %s", card.toString(), card.getEffects()));
-                    log.debug(format("Turn %s pahse %s", gameState.getCurrentTurn(), gameState.getGamePhase()));
+                    log.debug(format("Turn %s phase %s", gameState.getCurrentTurn(), gameState.getGamePhase()));
                     card.getEffects().removeIf(effect ->
                             Objects.equals(effect.getTurnEffectExpires(), gameState.getCurrentTurn()) &&
                                     Objects.equals(effect.getGamePhaseWhenExpires(), gameState.getGamePhase()));
