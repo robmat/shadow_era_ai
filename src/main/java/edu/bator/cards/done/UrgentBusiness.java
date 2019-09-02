@@ -5,9 +5,11 @@ import edu.bator.cards.Expirable;
 import edu.bator.cards.Support;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import lombok.EqualsAndHashCode;
 
 import java.util.Objects;
 
+@EqualsAndHashCode(callSuper = true)
 public class UrgentBusiness extends Support implements Expirable {
 
     private int turnExpires;
