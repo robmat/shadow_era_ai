@@ -2483,7 +2483,7 @@
       "NEUTRAL"
     ],
     "description": "Heroes can't attack until the end of your next turn.",
-    "cardType": "ABILITY",
+    "cardType": "SUPPORT",
     "resourceCost": 2,
     "baseAttack": null,
     "initialHp": null,
