@@ -7,8 +7,10 @@ import edu.bator.cards.Expirable;
 import edu.bator.cards.Support;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+@Data
 @EqualsAndHashCode(callSuper = true)
 public class UrgentBusiness extends Support implements Expirable {
 
@@ -40,15 +42,5 @@ public class UrgentBusiness extends Support implements Expirable {
             phaseExpires = GamePhase.ENEMY_END;
             turnExpires = gameState.getCurrentTurn() + 1;
         }
-    }
-
-    @Override
-    public int getTurnExpires() {
-        return turnExpires;
-    }
-
-    @Override
-    public GamePhase getPhaseExpires() {
-        return phaseExpires;
     }
 }

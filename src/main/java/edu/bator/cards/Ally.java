@@ -30,7 +30,7 @@ public class Ally extends Card {
     @Override
     public Integer getAttack(GameState gameState) {
         int attack = super.getAttack(gameState) + BonusUtil.attackBonus(gameState, this);
-        return attack < 0 ? 0 : attack;
+        return Math.max(attack, 0);
     }
 
     @Override
