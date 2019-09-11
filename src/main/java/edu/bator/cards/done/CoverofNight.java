@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
 import java.util.Set;
 
 @Data
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, exclude = {"turnExpires", "phaseExpires"})
 public class CoverofNight extends Support implements Expirable {
 
     private int turnExpires;

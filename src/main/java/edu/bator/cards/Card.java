@@ -40,6 +40,7 @@ public class Card implements Cloneable {
     Integer initialHp;
     Integer currentHp;
     Integer shadowEnergy = 0;
+    Integer turnItWasCast;
 
     ItemSubType itemSubType;
 
@@ -104,6 +105,7 @@ public class Card implements Cloneable {
         this.unique = cloneFrom.unique;
         this.owner = cloneFrom.owner;
         this.attachments = new HashSet<>(cloneFrom.attachments);
+        this.turnItWasCast = cloneFrom.turnItWasCast;
     }
 
     public void tryToReadyAttack(GameState gameState) {
@@ -146,6 +148,7 @@ public class Card implements Cloneable {
             setAttackReadied(true);
             setAbilityReadied(true);
         }
+        turnItWasCast = gameState.getCurrentTurn();
     }
 
     public void calculatePossibleAttackTarget(Card attackSource, GameState gameState) {
@@ -281,7 +284,8 @@ public class Card implements Cloneable {
     }
 
     public boolean canAttack(GameState gameState) {
-        return isAttackReadied() && nonNull(getAttack(gameState)) && getAttack(gameState).compareTo(0) > 0;
+        Integer attack = getAttack(gameState);
+        return isAttackReadied() && nonNull(attack) && attack.compareTo(0) > 0;
     }
 
     public void cardHasDiedEvent(Card card, GameState gameState) {

@@ -1,9 +1,5 @@
 package edu.bator.ui.cards;
 
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.BiConsumer;
-import java.util.stream.Collectors;
-
 import edu.bator.EntryPoint;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
@@ -15,6 +11,10 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BiConsumer;
+import java.util.stream.Collectors;
 
 public class CardUiHelper {
 
@@ -49,7 +49,7 @@ public class CardUiHelper {
         cardGrid.add(button, 0, 3, 2, 1);
     }
 
-    public static void closeDialogDetermineCastabeDecreseResources(Card card, GameState gameState, Stage stage) {
+    public static void closeDialogDetermineCastableDecreaseResources(Card card, GameState gameState, Stage stage) {
         new GameEngine().decreaseCurrentPlayerResources(gameState, card.getResourceCost());
         if (!gameState.currentYourHandBasedOnPhase().remove(card)) {
             throw new IllegalStateException("Card casted but not in casters hand?");
@@ -58,5 +58,6 @@ public class CardUiHelper {
         gameState.resetPossibleAbilityTargets();
         gameState.resetPossibleAttackTargets();
         stage.close();
+        gameState.repaint();
     }
 }

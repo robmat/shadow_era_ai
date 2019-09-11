@@ -1,14 +1,15 @@
 package edu.bator.cards;
 
-import java.util.Objects;
-import java.util.concurrent.atomic.AtomicInteger;
-
+import edu.bator.cards.util.AttachmentExpireUtil;
 import edu.bator.game.GameState;
 import edu.bator.ui.cards.CardUiHelper;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import lombok.EqualsAndHashCode;
+
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @EqualsAndHashCode(callSuper = true)
 public class Attachment extends Card {
@@ -59,11 +60,23 @@ public class Attachment extends Card {
         return 0;
     }
 
+    protected void attachedTo(Card target, GameState gameState) {
+
+    }
+
+    @Override
+    public void gamePhaseChangeEvent(GameState gameState) {
+        if (this instanceof Expirable) {
+            AttachmentExpireUtil.expireCard(gameState, (Expirable) this);
+        }
+    }
+
     private class AttachmentTargetClickedEvent implements EventHandler<MouseEvent> {
 
         GameState gameState;
         Card target;
         Stage stage;
+
         Attachment attachment;
 
         AttachmentTargetClickedEvent(GameState gameState, Card target, Stage stage, Attachment attachment) {
@@ -72,13 +85,13 @@ public class Attachment extends Card {
             this.stage = stage;
             this.attachment = attachment;
         }
-
         @Override
         public void handle(MouseEvent event) {
             Attachment attachment = Attachment.this;
-            Card card = attachment;
             target.getAttachments().add(attachment);
-            CardUiHelper.closeDialogDetermineCastabeDecreseResources(card, gameState, stage);
+            attachment.attachedTo(target, gameState);
+            CardUiHelper.closeDialogDetermineCastableDecreaseResources(attachment, gameState, stage);
         }
+
     }
 }
