@@ -1,13 +1,5 @@
 package edu.bator.game;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;
 import edu.bator.cards.Armor;
@@ -21,6 +13,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.apache.log4j.Logger;
+
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static edu.bator.EntryPoint.allCardsSet;
 import static java.util.Objects.nonNull;
@@ -90,8 +86,8 @@ public class GameState {
         enemyHand.add(allCardsSet.cloneByName("Rain Delay", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Rain Delay", Owner.YOU));
 
-        enemyHand.add(allCardsSet.cloneByName("Special Delivery", Owner.ENEMY));
-        yourHand.add(allCardsSet.cloneByName("Special Delivery", Owner.YOU));
+        enemyHand.add(allCardsSet.cloneByName("Bazaar", Owner.ENEMY));
+        yourHand.add(allCardsSet.cloneByName("Bazaar", Owner.YOU));
 
         enemyHand.add(allCardsSet.cloneByName("Urgent Business", Owner.ENEMY));
         yourHand.add(allCardsSet.cloneByName("Urgent Business", Owner.YOU));

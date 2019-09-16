@@ -1,106 +1,129 @@
-2019-09-11 07:04:26 INFO            edu.bator.EntryPoint:  50 - Starting.
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BorisSkullcrusher
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Mournblade
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BorisSkullcrusher
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Mournblade
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ArmoredSandworm
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ArmoredSandworm
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.DrainPower
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.DrainPower
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.RainDelay
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.RainDelay
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SpecialDelivery
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SpecialDelivery
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.UrgentBusiness
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.UrgentBusiness
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ExtraSharp
-2019-09-11 07:04:27 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ExtraSharp
-2019-09-11 07:04:27 INFO        edu.bator.game.GameState: 102 - Init done.
-2019-09-11 07:04:27 INFO       edu.bator.game.GameEngine: 139 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='4cce6df7-ba0f-437a-bffd-cbe6736f7ca2'}
-2019-09-11 07:04:27 INFO            edu.bator.EntryPoint: 109 - Started.
-2019-09-11 07:04:28 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: ArmoredSandworm{baseAttack=2, initialHp=5, currentHp=5, owner=YOU, uniqueId='334e3817-b465-4f63-bf98-f542f2952601'}
-2019-09-11 07:04:29 INFO  ui.events.CardCastClickedEvent:  93 - Casted: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='4cce6df7-ba0f-437a-bffd-cbe6736f7ca2'}
-2019-09-11 07:04:30 DEBUG           edu.bator.EntryPoint: 129 - Game saved.
-2019-09-11 07:04:32 DEBUG           edu.bator.EntryPoint: 116 - Game loaded.
+2019-09-16 07:38:37 INFO            edu.bator.EntryPoint:  50 - Starting.
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BorisSkullcrusher
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Mournblade
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BorisSkullcrusher
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Mournblade
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.SnowSapphire
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.BirgitteSkullborn
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.JasmineRosecult
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ArmoredSandworm
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ArmoredSandworm
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.DrainPower
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.DrainPower
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.RainDelay
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.RainDelay
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Bazaar
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.Bazaar
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.UrgentBusiness
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.UrgentBusiness
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ExtraSharp
+2019-09-16 07:38:38 DEBUG    edu.bator.cards.AllCardsSet:  69 - Cloning edu.bator.cards.done.ExtraSharp
+2019-09-16 07:38:38 INFO        edu.bator.game.GameState: 102 - Init done.
+2019-09-16 07:38:38 INFO       edu.bator.game.GameEngine: 139 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='625a6fde-9484-4e04-a868-8a104547848d'}
+2019-09-16 07:38:38 INFO            edu.bator.EntryPoint: 109 - Started.
+2019-09-16 07:38:44 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: ArmoredSandworm{baseAttack=2, initialHp=5, currentHp=5, owner=YOU, uniqueId='1c201fda-2091-4710-bc8f-5e6d1c4d6cc6'}
+2019-09-16 07:38:45 INFO  ui.events.CardCastClickedEvent:  93 - Casted: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='625a6fde-9484-4e04-a868-8a104547848d'}
+2019-09-16 07:38:46 INFO       edu.bator.game.GameEngine: 139 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=ENEMY, uniqueId='0595456f-36d0-41f9-a8f8-f392fa040587'}
+2019-09-16 07:38:47 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: ArmoredSandworm{baseAttack=2, initialHp=5, currentHp=5, owner=ENEMY, uniqueId='e2bf07a3-287d-41aa-b920-8a145b36956d'}
+2019-09-16 07:38:47 INFO  ui.events.CardCastClickedEvent:  93 - Casted: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=ENEMY, uniqueId='0595456f-36d0-41f9-a8f8-f392fa040587'}
+2019-09-16 07:38:48 INFO       edu.bator.game.GameEngine: 139 - Picked: JasmineRosecult{baseAttack=3, initialHp=4, currentHp=4, owner=YOU, uniqueId='bfeba5b4-1d93-47df-8d25-b603e7cd17c0'}
+2019-09-16 07:38:50 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: DrainPower{baseAttack=null, initialHp=null, currentHp=null, owner=YOU, uniqueId='46fae10e-d59c-4394-8e8d-f01b620f6cca'}
+2019-09-16 07:38:51 INFO  ui.events.CardCastClickedEvent:  93 - Casted: Bazaar{baseAttack=null, initialHp=null, currentHp=null, owner=YOU, uniqueId='8be86c33-06b7-4999-a8ea-428b3c53b02d'}
+2019-09-16 07:38:54 INFO       edu.bator.game.GameEngine: 139 - Picked: JasmineRosecult{baseAttack=3, initialHp=4, currentHp=4, owner=ENEMY, uniqueId='edbcab0f-91ac-4c9d-8322-8ebba3a0eb47'}
+2019-09-16 07:38:55 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: DrainPower{baseAttack=null, initialHp=null, currentHp=null, owner=ENEMY, uniqueId='8a5ae58e-8788-45d6-81aa-c29b89a8244b'}
+2019-09-16 07:38:58 INFO  ui.events.CardCastClickedEvent:  93 - Casted: Bazaar{baseAttack=null, initialHp=null, currentHp=null, owner=ENEMY, uniqueId='42d6804e-2b81-4136-8e17-3e8d0c08952f'}
+2019-09-16 07:38:59 INFO       edu.bator.game.GameEngine: 139 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='aee7461c-b7ae-4ac5-a120-7fa118b5fda5'}
+2019-09-16 07:38:59 INFO       edu.bator.game.GameEngine: 139 - Picked: JasmineRosecult{baseAttack=3, initialHp=4, currentHp=4, owner=YOU, uniqueId='af1be59a-3174-4a86-a104-13b55cd758d3'}
+2019-09-16 07:39:01 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='aee7461c-b7ae-4ac5-a120-7fa118b5fda5'}
+2019-09-16 07:39:02 INFO  ui.events.CardCastClickedEvent:  93 - Casted: JasmineRosecult{baseAttack=3, initialHp=4, currentHp=4, owner=YOU, uniqueId='bfeba5b4-1d93-47df-8d25-b603e7cd17c0'}
+2019-09-16 07:39:05 INFO       edu.bator.game.GameEngine: 139 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=ENEMY, uniqueId='514ace25-747d-476b-b105-11c50d00cc16'}
+2019-09-16 07:39:05 INFO       edu.bator.game.GameEngine: 139 - Picked: JasmineRosecult{baseAttack=3, initialHp=4, currentHp=4, owner=ENEMY, uniqueId='9fc56824-2507-457d-85f7-d6184c915b22'}
+2019-09-16 07:39:06 INFO  ents.CardSacrificeClickedEvent:  36 - Sacrificed: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=ENEMY, uniqueId='514ace25-747d-476b-b105-11c50d00cc16'}
+2019-09-16 07:39:07 INFO  ui.events.CardCastClickedEvent:  93 - Casted: JasmineRosecult{baseAttack=3, initialHp=4, currentHp=4, owner=ENEMY, uniqueId='9fc56824-2507-457d-85f7-d6184c915b22'}
+2019-09-16 07:39:08 INFO       edu.bator.game.GameEngine: 139 - Picked: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='8e8369c3-5cae-42ba-be03-efe35382a28a'}
+2019-09-16 07:39:08 INFO       edu.bator.game.GameEngine: 139 - Picked: JasmineRosecult{baseAttack=3, initialHp=4, currentHp=4, owner=YOU, uniqueId='201cb3b5-9938-4e01-a14a-0230a7c143ff'}
+2019-09-16 07:39:09 INFO  ents.CardSacrificeClickedEvent:  30 - Sacrificed: BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='8e8369c3-5cae-42ba-be03-efe35382a28a'}
+2019-09-16 07:39:14 INFO  ui.events.CardCastClickedEvent:  93 - Casted: ExtraSharp(turnExpires=5, phaseExpires=YOU_PREPARE)
+2019-09-16 07:39:14 INFO  r.ui.events.AttackClickedEvent:  32 - BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='625a6fde-9484-4e04-a868-8a104547848d'} ready to attack.
+2019-09-16 07:39:15 INFO  vents.AttackTargetClickedEvent:  35 - BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=0, owner=ENEMY, uniqueId='0595456f-36d0-41f9-a8f8-f392fa040587'} attacked BirgitteSkullborn{baseAttack=0, initialHp=2, currentHp=2, owner=YOU, uniqueId='625a6fde-9484-4e04-a868-8a104547848d'}
+2019-09-16 07:39:16 INFO  r.ui.events.AttackClickedEvent:  32 - JasmineRosecult{baseAttack=3, initialHp=4, currentHp=4, owner=YOU, uniqueId='bfeba5b4-1d93-47df-8d25-b603e7cd17c0'} ready to attack.
+2019-09-16 07:39:17 INFO  vents.AttackTargetClickedEvent:  35 - JasmineRosecult{baseAttack=3, initialHp=4, currentHp=1, owner=ENEMY, uniqueId='9fc56824-2507-457d-85f7-d6184c915b22'} attacked JasmineRosecult{baseAttack=3, initialHp=4, currentHp=1, owner=YOU, uniqueId='bfeba5b4-1d93-47df-8d25-b603e7cd17c0'}
