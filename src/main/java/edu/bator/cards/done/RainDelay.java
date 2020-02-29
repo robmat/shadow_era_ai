@@ -7,7 +7,7 @@ import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
 import lombok.EqualsAndHashCode;
 
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, exclude = {"turnExpires", "phaseExpires"})
 public class RainDelay extends Support implements Expirable {
 
     private int turnExpires;

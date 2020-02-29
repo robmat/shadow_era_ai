@@ -1,8 +1,5 @@
 package edu.bator.cards.done;
 
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Stream;
-
 import edu.bator.cards.Ability;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
@@ -12,6 +9,9 @@ import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import lombok.EqualsAndHashCode;
+
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Stream;
 
 @EqualsAndHashCode(callSuper = true)
 public class ShrineofNegatia extends Ability {
@@ -99,7 +99,7 @@ public class ShrineofNegatia extends Ability {
         public void handle(MouseEvent event) {
             applyAbility(target, gameState);
             Card card = ShrineofNegatia.this;
-            CardUiHelper.closeDialogDetermineCastabeDecreseResources(card, gameState, stage);
+            CardUiHelper.closeDialogDetermineCastableDecreaseResources(card, gameState, stage);
         }
     }
 }

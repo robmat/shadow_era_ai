@@ -132,7 +132,7 @@ public class GameEngine {
         hand.forEach(card -> card.determineCastable(gameState));
     }
 
-    public void pickACard(LinkedList<Card> deck, LinkedList<Card> hand, Card hero) {
+    public static void pickACard(LinkedList<Card> deck, LinkedList<Card> hand, Card hero) {
         if (!deck.isEmpty() && hand.size() < 7) {
             Card card = deck.poll();
             hand.push(card);

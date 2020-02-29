@@ -1,7 +1,5 @@
 package edu.bator.cards.done;
 
-import java.util.Objects;
-
 import edu.bator.cards.Card;
 import edu.bator.cards.Expirable;
 import edu.bator.cards.Support;
@@ -10,8 +8,10 @@ import edu.bator.game.GameState;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.util.Objects;
+
 @Data
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, exclude = {"turnExpires", "phaseExpires"})
 public class UrgentBusiness extends Support implements Expirable {
 
     private int turnExpires;

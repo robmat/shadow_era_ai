@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 import org.apache.log4j.Logger;
 
 @Data
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, exclude = {"turnExpires", "phaseExpires"})
 public class ValiantDefender extends Support implements Expirable {
 
     private static final Logger log = Logger.getLogger(ValiantDefender.class);

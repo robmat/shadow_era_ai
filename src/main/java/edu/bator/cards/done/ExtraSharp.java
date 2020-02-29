@@ -9,7 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true, exclude = {"turnExpires", "phaseExpires"})
 public class ExtraSharp extends Attachment implements Expirable {
 
     private int turnExpires;
@@ -45,5 +45,13 @@ public class ExtraSharp extends Attachment implements Expirable {
     @Override
     public Integer modifiesAttack(Card card, GameState gameState) {
         return card.getAttachments().contains(this) ? 2 : 0;
+    }
+
+    @Override
+    protected void attachedTo(Card target, GameState gameState) {
+        super.attachedTo(target, gameState);
+        if (target.getTurnItWasCast() != gameState.getCurrentTurn()) {
+            target.tryToReadyAttack(gameState);
+        }
     }
 }
