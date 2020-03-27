@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class DaggerofUnmaking extends Card {
 
-    public DaggerofUnmaking() {
-    }
+  public DaggerofUnmaking() {
+  }
 
 
-    public DaggerofUnmaking(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DaggerofUnmaking(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

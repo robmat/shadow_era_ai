@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class SorcerousPoison extends Card {
 
-    public SorcerousPoison() {
-    }
+  public SorcerousPoison() {
+  }
 
 
-    public SorcerousPoison(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public SorcerousPoison(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

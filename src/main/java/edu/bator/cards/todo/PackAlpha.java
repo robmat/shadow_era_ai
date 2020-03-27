@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class PackAlpha extends Card {
 
-    public PackAlpha() {
-    }
+  public PackAlpha() {
+  }
 
 
-    public PackAlpha(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public PackAlpha(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class FurrionTerror extends Card {
 
-    public FurrionTerror() {
-    }
+  public FurrionTerror() {
+  }
 
 
-    public FurrionTerror(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public FurrionTerror(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

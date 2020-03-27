@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TwilightEidolon extends Card {
 
-    public TwilightEidolon() {
-    }
+  public TwilightEidolon() {
+  }
 
 
-    public TwilightEidolon(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TwilightEidolon(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

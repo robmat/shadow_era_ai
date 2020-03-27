@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class DevotedKnight extends Card {
 
-    public DevotedKnight() {
-    }
+  public DevotedKnight() {
+  }
 
 
-    public DevotedKnight(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DevotedKnight(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

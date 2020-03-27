@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CloakofObscurity extends Card {
 
-    public CloakofObscurity() {
-    }
+  public CloakofObscurity() {
+  }
 
 
-    public CloakofObscurity(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CloakofObscurity(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

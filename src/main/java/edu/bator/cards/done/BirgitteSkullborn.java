@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class BirgitteSkullborn extends Ally {
 
-    public BirgitteSkullborn(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public BirgitteSkullborn(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

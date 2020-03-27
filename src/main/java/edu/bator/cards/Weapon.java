@@ -9,13 +9,13 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class Weapon extends Card {
 
-    public Weapon(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Weapon(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    @Override
-    public Integer getAttack(GameState gameState) {
-        int attack = super.getAttack(gameState) + BonusUtil.attackBonus(gameState, this);
-        return attack < 0 ? 0 : attack;
-    }
+  @Override
+  public Integer getAttack(GameState gameState) {
+    int attack = super.getAttack(gameState) + BonusUtil.attackBonus(gameState, this);
+    return attack < 0 ? 0 : attack;
+  }
 }

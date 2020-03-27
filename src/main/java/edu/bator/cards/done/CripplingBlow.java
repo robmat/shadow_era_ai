@@ -8,24 +8,24 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class CripplingBlow extends Attachment {
 
-    public CripplingBlow() {
-    }
+  public CripplingBlow() {
+  }
 
-    public CripplingBlow(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CripplingBlow(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    @Override
-    public Integer modifiesAttack(Card card, GameState gameState) {
-        return card.getAttachments().contains(this) && card.cardIsAnAlly() ? Integer.MIN_VALUE : 0;
-    }
+  @Override
+  public Integer modifiesAttack(Card card, GameState gameState) {
+    return card.getAttachments().contains(this) && card.cardIsAnAlly() ? Integer.MIN_VALUE : 0;
+  }
 
-    @Override
-    public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        boolean possibleAllyTarget = calculatePossibleEnemyTargetProtectorIncluded(card, gameState);
-        return super.ableToApplyAbilityTo(card, gameState) &&
-                card.cardIsAnAlly() &&
-                possibleAllyTarget &&
-                gameState.currentEnemyAlliesBasedOnPhase().contains(card);
-    }
+  @Override
+  public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
+    boolean possibleAllyTarget = calculatePossibleEnemyTargetProtectorIncluded(card, gameState);
+    return super.ableToApplyAbilityTo(card, gameState) &&
+        card.cardIsAnAlly() &&
+        possibleAllyTarget &&
+        gameState.currentEnemyAlliesBasedOnPhase().contains(card);
+  }
 }

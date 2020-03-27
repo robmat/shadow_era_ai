@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class YahariValleyofDoom extends Card {
 
-    public YahariValleyofDoom() {
-    }
+  public YahariValleyofDoom() {
+  }
 
 
-    public YahariValleyofDoom(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public YahariValleyofDoom(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

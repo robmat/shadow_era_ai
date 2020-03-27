@@ -8,19 +8,19 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class PriestoftheLight extends Ally {
 
-    public PriestoftheLight() {
+  public PriestoftheLight() {
+  }
+
+
+  public PriestoftheLight(Card cloneFrom) {
+    super(cloneFrom);
+  }
+
+  @Override
+  public void wasCasted(GameState gameState) {
+    if (gameState.enemyHeroBasedOnPhase().getShadowEnergy() > 0) {
+      gameState.enemyHeroBasedOnPhase()
+          .setShadowEnergy(gameState.enemyHeroBasedOnPhase().getShadowEnergy() - 1);
     }
-
-
-
-    public PriestoftheLight(Card cloneFrom) {
-        super(cloneFrom);
-    }
-
-    @Override
-    public void wasCasted(GameState gameState) {
-        if (gameState.enemyHeroBasedOnPhase().getShadowEnergy() > 0) {
-            gameState.enemyHeroBasedOnPhase().setShadowEnergy(gameState.enemyHeroBasedOnPhase().getShadowEnergy() - 1);
-        }
-    }
+  }
 }

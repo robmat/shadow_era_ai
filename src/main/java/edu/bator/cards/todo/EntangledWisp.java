@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class EntangledWisp extends Card {
 
-    public EntangledWisp() {
-    }
+  public EntangledWisp() {
+  }
 
 
-    public EntangledWisp(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public EntangledWisp(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

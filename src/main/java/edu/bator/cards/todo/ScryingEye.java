@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ScryingEye extends Card {
 
-    public ScryingEye() {
-    }
+  public ScryingEye() {
+  }
 
 
-    public ScryingEye(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ScryingEye(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

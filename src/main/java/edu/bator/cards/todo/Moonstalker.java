@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Moonstalker extends Card {
 
-    public Moonstalker() {
-    }
+  public Moonstalker() {
+  }
 
 
-    public Moonstalker(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Moonstalker(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class KristofferWyld extends Ally {
 
-    public KristofferWyld(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public KristofferWyld(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

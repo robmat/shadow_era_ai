@@ -11,20 +11,25 @@ import javafx.scene.input.KeyCombination;
 
 public class MenuBuilder {
 
-    EntryPoint entryPoint;
+  EntryPoint entryPoint;
 
-    public void build(MenuBar menuBar, EntryPoint entryPoint) {
-        Menu game = new Menu("Game");
-        menuBar.getMenus().add(game);
+  public void build(MenuBar menuBar, EntryPoint entryPoint) {
+    Menu game = new Menu("Game");
+    menuBar.getMenus().add(game);
 
-        MenuItem newRandomGame = new MenuItem("New random decks game.");
-        game.getItems().add(newRandomGame);
-        newRandomGame.setOnAction(new NewRandomDecksGameEvent(entryPoint));
-        newRandomGame.setAccelerator(new KeyCodeCombination(KeyCode.N, KeyCombination.CONTROL_DOWN));
+    MenuItem newRandomGame = new MenuItem("New random decks game.");
+    game.getItems().add(newRandomGame);
+    newRandomGame.setOnAction(new NewRandomDecksGameEvent(entryPoint));
+    newRandomGame.setAccelerator(new KeyCodeCombination(KeyCode.N, KeyCombination.CONTROL_DOWN));
 
-        MenuItem exit = new MenuItem("Exit.");
-        game.getItems().add(exit);
-        exit.setAccelerator(new KeyCodeCombination(KeyCode.F4, KeyCombination.ALT_DOWN));
-        exit.setOnAction(event -> System.exit(0));
-    }
+    MenuItem saveGame = new MenuItem("Save game.");
+    game.getItems().add(saveGame);
+    saveGame.setOnAction(new NewRandomDecksGameEvent(entryPoint));
+    saveGame.setAccelerator(new KeyCodeCombination(KeyCode.S, KeyCombination.CONTROL_DOWN));
+
+    MenuItem exit = new MenuItem("Exit.");
+    game.getItems().add(exit);
+    exit.setAccelerator(new KeyCodeCombination(KeyCode.F4, KeyCombination.ALT_DOWN));
+    exit.setOnAction(event -> System.exit(0));
+  }
 }

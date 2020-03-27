@@ -11211,7 +11211,10 @@
     "rarity": "R",
     "name": "Gemstone Javelin",
     "side": null,
-    "heroClass": ["WARRIOR", "ELEMENTAL"],
+    "heroClass": [
+      "WARRIOR",
+      "ELEMENTAL"
+    ],
     "description": "0SE: Target opposing ally takes X damage, where X is Gemstone Javelin's attack + durability. Gemstone Javelin is destroyed, or exiled if its base attack is 2 or greater.",
     "cardType": "ITEM",
     "resourceCost": 4,

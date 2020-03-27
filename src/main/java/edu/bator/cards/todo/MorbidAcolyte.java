@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class MorbidAcolyte extends Card {
 
-    public MorbidAcolyte() {
-    }
+  public MorbidAcolyte() {
+  }
 
 
-    public MorbidAcolyte(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public MorbidAcolyte(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

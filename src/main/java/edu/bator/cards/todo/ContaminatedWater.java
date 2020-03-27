@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ContaminatedWater extends Card {
 
-    public ContaminatedWater() {
-    }
+  public ContaminatedWater() {
+  }
 
 
-    public ContaminatedWater(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ContaminatedWater(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CelestialArmor extends Card {
 
-    public CelestialArmor() {
-    }
+  public CelestialArmor() {
+  }
 
 
-    public CelestialArmor(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CelestialArmor(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

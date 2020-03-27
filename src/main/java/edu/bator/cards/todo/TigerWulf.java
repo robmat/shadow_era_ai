@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TigerWulf extends Card {
 
-    public TigerWulf() {
-    }
+  public TigerWulf() {
+  }
 
 
-    public TigerWulf(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TigerWulf(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

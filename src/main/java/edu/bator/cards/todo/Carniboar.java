@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Carniboar extends Card {
 
-    public Carniboar() {
-    }
+  public Carniboar() {
+  }
 
 
-    public Carniboar(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Carniboar(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

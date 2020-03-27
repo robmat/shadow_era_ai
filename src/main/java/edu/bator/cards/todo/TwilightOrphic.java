@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TwilightOrphic extends Card {
 
-    public TwilightOrphic() {
-    }
+  public TwilightOrphic() {
+  }
 
 
-    public TwilightOrphic(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TwilightOrphic(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

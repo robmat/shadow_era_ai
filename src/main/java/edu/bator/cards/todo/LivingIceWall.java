@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class LivingIceWall extends Card {
 
-    public LivingIceWall() {
-    }
+  public LivingIceWall() {
+  }
 
 
-    public LivingIceWall(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public LivingIceWall(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

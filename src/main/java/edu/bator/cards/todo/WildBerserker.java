@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class WildBerserker extends Card {
 
-    public WildBerserker() {
-    }
+  public WildBerserker() {
+  }
 
 
-    public WildBerserker(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public WildBerserker(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -15,9 +15,11 @@ public class AllDoneCardsHaveToHaveNoArgConstructorTest {
 
   @Test
   public void shouldTest() throws IOException, ClassNotFoundException {
-    List<Path> files = Files.list(Paths.get("src", "main", "java", "edu", "bator", "cards", "done")).collect(Collectors.toList());
+    List<Path> files = Files.list(Paths.get("src", "main", "java", "edu", "bator", "cards", "done"))
+        .collect(Collectors.toList());
     for (Path file : files) {
-      Class<?> clazz = Class.forName(file.toString().replace("src\\main\\java\\", "").replace(".java", "").replace("\\", "."));
+      Class<?> clazz = Class.forName(
+          file.toString().replace("src\\main\\java\\", "").replace(".java", "").replace("\\", "."));
       try {
         clazz.getConstructor().newInstance();
       } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {

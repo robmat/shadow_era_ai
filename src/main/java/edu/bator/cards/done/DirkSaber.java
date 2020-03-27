@@ -7,10 +7,10 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class DirkSaber extends Ally {
 
-    public DirkSaber() {
-    }
+  public DirkSaber() {
+  }
 
-    public DirkSaber(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DirkSaber(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class WilltoFight extends Card {
 
-    public WilltoFight() {
-    }
+  public WilltoFight() {
+  }
 
 
-    public WilltoFight(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public WilltoFight(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

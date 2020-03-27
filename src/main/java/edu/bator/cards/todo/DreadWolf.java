@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class DreadWolf extends Card {
 
-    public DreadWolf() {
-    }
+  public DreadWolf() {
+  }
 
 
-    public DreadWolf(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DreadWolf(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

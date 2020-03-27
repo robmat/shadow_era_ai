@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Permeate extends Card {
 
-    public Permeate() {
-    }
+  public Permeate() {
+  }
 
 
-    public Permeate(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Permeate(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

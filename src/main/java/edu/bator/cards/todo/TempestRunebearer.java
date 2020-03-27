@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TempestRunebearer extends Card {
 
-    public TempestRunebearer() {
-    }
+  public TempestRunebearer() {
+  }
 
 
-    public TempestRunebearer(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TempestRunebearer(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

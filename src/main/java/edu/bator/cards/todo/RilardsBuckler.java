@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class RilardsBuckler extends Card {
 
-    public RilardsBuckler() {
-    }
+  public RilardsBuckler() {
+  }
 
 
-    public RilardsBuckler(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public RilardsBuckler(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

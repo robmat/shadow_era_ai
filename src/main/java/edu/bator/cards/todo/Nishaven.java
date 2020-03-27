@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Nishaven extends Card {
 
-    public Nishaven() {
-    }
+  public Nishaven() {
+  }
 
 
-    public Nishaven(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Nishaven(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

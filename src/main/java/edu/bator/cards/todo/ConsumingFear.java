@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ConsumingFear extends Card {
 
-    public ConsumingFear() {
-    }
+  public ConsumingFear() {
+  }
 
 
-    public ConsumingFear(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ConsumingFear(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

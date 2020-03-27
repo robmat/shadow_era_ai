@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ChampionofIrum extends Card {
 
-    public ChampionofIrum() {
-    }
+  public ChampionofIrum() {
+  }
 
 
-    public ChampionofIrum(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ChampionofIrum(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

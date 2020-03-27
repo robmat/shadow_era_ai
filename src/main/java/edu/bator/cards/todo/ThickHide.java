@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ThickHide extends Card {
 
-    public ThickHide() {
-    }
+  public ThickHide() {
+  }
 
 
-    public ThickHide(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ThickHide(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

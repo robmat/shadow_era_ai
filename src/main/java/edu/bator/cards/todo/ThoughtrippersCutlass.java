@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ThoughtrippersCutlass extends Card {
 
-    public ThoughtrippersCutlass() {
-    }
+  public ThoughtrippersCutlass() {
+  }
 
 
-    public ThoughtrippersCutlass(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ThoughtrippersCutlass(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

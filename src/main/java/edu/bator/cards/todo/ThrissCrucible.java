@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ThrissCrucible extends Card {
 
-    public ThrissCrucible() {
-    }
+  public ThrissCrucible() {
+  }
 
 
-    public ThrissCrucible(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ThrissCrucible(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

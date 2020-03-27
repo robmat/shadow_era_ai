@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class MysticoftheVale extends Card {
 
-    public MysticoftheVale() {
-    }
+  public MysticoftheVale() {
+  }
 
 
-    public MysticoftheVale(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public MysticoftheVale(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

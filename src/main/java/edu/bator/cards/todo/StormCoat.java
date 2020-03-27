@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class StormCoat extends Card {
 
-    public StormCoat() {
-    }
+  public StormCoat() {
+  }
 
 
-    public StormCoat(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public StormCoat(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

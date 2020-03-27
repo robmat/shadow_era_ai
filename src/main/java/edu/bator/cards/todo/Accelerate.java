@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Accelerate extends Card {
 
-    public Accelerate() {
-    }
+  public Accelerate() {
+  }
 
 
-    public Accelerate(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Accelerate(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

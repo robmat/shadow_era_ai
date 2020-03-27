@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class PrideoftheMountain extends Card {
 
-    public PrideoftheMountain() {
-    }
+  public PrideoftheMountain() {
+  }
 
 
-    public PrideoftheMountain(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public PrideoftheMountain(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

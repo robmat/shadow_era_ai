@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ZealousMystic extends Card {
 
-    public ZealousMystic() {
-    }
+  public ZealousMystic() {
+  }
 
 
-    public ZealousMystic(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ZealousMystic(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

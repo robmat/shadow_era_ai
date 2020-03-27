@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class EleanorPrincessofEllos extends Card {
 
-    public EleanorPrincessofEllos() {
-    }
+  public EleanorPrincessofEllos() {
+  }
 
 
-    public EleanorPrincessofEllos(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public EleanorPrincessofEllos(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

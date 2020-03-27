@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class WulvenScout extends Card {
 
-    public WulvenScout() {
-    }
+  public WulvenScout() {
+  }
 
 
-    public WulvenScout(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public WulvenScout(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

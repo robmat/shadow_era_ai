@@ -4,6 +4,7 @@ import edu.bator.game.GamePhase;
 
 public interface Expirable {
 
-    int getTurnExpires();
-    GamePhase getPhaseExpires();
+  int getTurnExpires();
+
+  GamePhase getPhaseExpires();
 }

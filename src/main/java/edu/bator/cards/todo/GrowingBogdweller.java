@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class GrowingBogdweller extends Card {
 
-    public GrowingBogdweller() {
-    }
+  public GrowingBogdweller() {
+  }
 
 
-    public GrowingBogdweller(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public GrowingBogdweller(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

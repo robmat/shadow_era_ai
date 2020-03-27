@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class StrengthofConviction extends Card {
 
-    public StrengthofConviction() {
-    }
+  public StrengthofConviction() {
+  }
 
 
-    public StrengthofConviction(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public StrengthofConviction(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

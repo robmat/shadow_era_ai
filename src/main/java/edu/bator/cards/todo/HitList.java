@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class HitList extends Card {
 
-    public HitList() {
-    }
+  public HitList() {
+  }
 
 
-    public HitList(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public HitList(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

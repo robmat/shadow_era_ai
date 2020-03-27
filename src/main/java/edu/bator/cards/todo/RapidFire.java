@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class RapidFire extends Card {
 
-    public RapidFire() {
-    }
+  public RapidFire() {
+  }
 
 
-    public RapidFire(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public RapidFire(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

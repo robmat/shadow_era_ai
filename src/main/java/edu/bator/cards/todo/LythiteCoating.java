@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class LythiteCoating extends Card {
 
-    public LythiteCoating() {
-    }
+  public LythiteCoating() {
+  }
 
 
-    public LythiteCoating(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public LythiteCoating(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

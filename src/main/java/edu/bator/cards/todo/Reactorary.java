@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Reactorary extends Card {
 
-    public Reactorary() {
-    }
+  public Reactorary() {
+  }
 
 
-    public Reactorary(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Reactorary(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

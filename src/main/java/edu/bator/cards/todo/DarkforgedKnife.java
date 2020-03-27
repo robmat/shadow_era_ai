@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class DarkforgedKnife extends Card {
 
-    public DarkforgedKnife() {
-    }
+  public DarkforgedKnife() {
+  }
 
 
-    public DarkforgedKnife(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DarkforgedKnife(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

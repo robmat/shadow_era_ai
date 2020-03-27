@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class DarkwoodPanther extends Card {
 
-    public DarkwoodPanther() {
-    }
+  public DarkwoodPanther() {
+  }
 
 
-    public DarkwoodPanther(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DarkwoodPanther(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

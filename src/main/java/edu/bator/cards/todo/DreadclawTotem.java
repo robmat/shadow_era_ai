@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class DreadclawTotem extends Card {
 
-    public DreadclawTotem() {
-    }
+  public DreadclawTotem() {
+  }
 
 
-    public DreadclawTotem(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DreadclawTotem(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -11,22 +11,22 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class NoAbilityEffect extends Effect {
 
-    public NoAbilityEffect() {
-    }
+  public NoAbilityEffect() {
+  }
 
-    public NoAbilityEffect(Integer turn, GamePhase gamePhase) {
-        setEffectType(EffectType.NO_ABILTY);
-        setGamePhaseWhenExpires(gamePhase);
-        setTurnEffectExpires(turn);
-    }
+  public NoAbilityEffect(Integer turn, GamePhase gamePhase) {
+    setEffectType(EffectType.NO_ABILTY);
+    setGamePhaseWhenExpires(gamePhase);
+    setTurnEffectExpires(turn);
+  }
 
-    @Override
-    public void applyEffect(Card card) {
-        card.setAbilityReadied(false);
-    }
+  @Override
+  public void applyEffect(Card card) {
+    card.setAbilityReadied(false);
+  }
 
-    @Override
-    public boolean forbidsCounterAttack() {
-        return false;
-    }
+  @Override
+  public boolean forbidsCounterAttack() {
+    return false;
+  }
 }

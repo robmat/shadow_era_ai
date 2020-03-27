@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class AimedShot extends Card {
 
-    public AimedShot() {
-    }
+  public AimedShot() {
+  }
 
 
-    public AimedShot(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public AimedShot(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

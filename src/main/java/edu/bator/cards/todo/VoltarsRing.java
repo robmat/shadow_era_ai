@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class VoltarsRing extends Card {
 
-    public VoltarsRing() {
-    }
+  public VoltarsRing() {
+  }
 
 
-    public VoltarsRing(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public VoltarsRing(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

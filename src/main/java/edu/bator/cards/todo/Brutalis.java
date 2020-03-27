@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Brutalis extends Card {
 
-    public Brutalis() {
-    }
+  public Brutalis() {
+  }
 
 
-    public Brutalis(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Brutalis(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

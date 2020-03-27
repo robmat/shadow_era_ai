@@ -8,23 +8,23 @@ import javafx.scene.input.MouseEvent;
 
 public class TurnSkipClickedEvent implements EventHandler<MouseEvent> {
 
-    private final GameState gameState;
+  private final GameState gameState;
 
-    public TurnSkipClickedEvent(GameState gameState) {
-        this.gameState = gameState;
-    }
+  public TurnSkipClickedEvent(GameState gameState) {
+    this.gameState = gameState;
+  }
 
-    @Override
-    public void handle(MouseEvent event) {
-        if (GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
-            if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
-                gameState.setGamePhase(GamePhase.ENEMY_END);
-                new GameEngine().checkGameState(gameState);
-            }
-            if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
-                gameState.setGamePhase(GamePhase.YOU_END);
-                new GameEngine().checkGameState(gameState);
-            }
-        }
+  @Override
+  public void handle(MouseEvent event) {
+    if (GameEngine.ACTION_PHASES.contains(gameState.getGamePhase())) {
+      if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase())) {
+        gameState.setGamePhase(GamePhase.ENEMY_END);
+        new GameEngine().checkGameState(gameState);
+      }
+      if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase())) {
+        gameState.setGamePhase(GamePhase.YOU_END);
+        new GameEngine().checkGameState(gameState);
+      }
     }
+  }
 }

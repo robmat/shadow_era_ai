@@ -11,40 +11,39 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class EarthenProtector extends Ally {
 
-    public EarthenProtector() {
-    }
+  public EarthenProtector() {
+  }
 
 
+  public EarthenProtector(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    public EarthenProtector(Card cloneFrom) {
-        super(cloneFrom);
-    }
-
-    @Override
-    public void cardHasDiedEvent(Card card, GameState gameState) {
-        if (card.cardIsAnAlly()) {
-            if (gameState.getYourAllies().contains(this) && card.getOwner().equals(Owner.YOU)) {
-                if (gameState.getYourGraveyard().remove(card)) {
-                    gameState.getYourAllies().add(card);
-                    card.setBaseAttack(card.getBaseAttack() + 2);
-                    card.setCurrentHp(card.getInitialHp() + 2);
-                }
-                new GameEngine().cardDied(this, gameState);
-            }
-            if (gameState.getEnemyAllies().contains(this) && card.getOwner().equals(Owner.ENEMY)) {
-                if (gameState.getEnemyGraveyard().remove(card)) {
-                    gameState.getEnemyAllies().add(card);
-                    card.setBaseAttack(card.getBaseAttack() + 2);
-                    card.setCurrentHp(card.getInitialHp() + 2);
-                }
-                new GameEngine().cardDied(this, gameState);
-            }
+  @Override
+  public void cardHasDiedEvent(Card card, GameState gameState) {
+    if (card.cardIsAnAlly()) {
+      if (gameState.getYourAllies().contains(this) && card.getOwner().equals(Owner.YOU)) {
+        if (gameState.getYourGraveyard().remove(card)) {
+          gameState.getYourAllies().add(card);
+          card.setBaseAttack(card.getBaseAttack() + 2);
+          card.setCurrentHp(card.getInitialHp() + 2);
         }
+        new GameEngine().cardDied(this, gameState);
+      }
+      if (gameState.getEnemyAllies().contains(this) && card.getOwner().equals(Owner.ENEMY)) {
+        if (gameState.getEnemyGraveyard().remove(card)) {
+          gameState.getEnemyAllies().add(card);
+          card.setBaseAttack(card.getBaseAttack() + 2);
+          card.setCurrentHp(card.getInitialHp() + 2);
+        }
+        new GameEngine().cardDied(this, gameState);
+      }
     }
+  }
 
-    @Override
-    public void determineCastable(GameState gameState) {
-        super.determineCastable(gameState);
-        PreventDuplicateCardUtil.preventDuplicates(this, gameState);
-    }
+  @Override
+  public void determineCastable(GameState gameState) {
+    super.determineCastable(gameState);
+    PreventDuplicateCardUtil.preventDuplicates(this, gameState);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class UndyingBond extends Card {
 
-    public UndyingBond() {
-    }
+  public UndyingBond() {
+  }
 
 
-    public UndyingBond(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public UndyingBond(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

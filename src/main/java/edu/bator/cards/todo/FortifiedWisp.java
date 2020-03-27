@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class FortifiedWisp extends Card {
 
-    public FortifiedWisp() {
-    }
+  public FortifiedWisp() {
+  }
 
 
-    public FortifiedWisp(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public FortifiedWisp(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

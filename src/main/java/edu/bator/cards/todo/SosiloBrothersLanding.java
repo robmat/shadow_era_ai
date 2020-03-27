@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class SosiloBrothersLanding extends Card {
 
-    public SosiloBrothersLanding() {
-    }
+  public SosiloBrothersLanding() {
+  }
 
 
-    public SosiloBrothersLanding(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public SosiloBrothersLanding(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class VozitianTrader extends Card {
 
-    public VozitianTrader() {
-    }
+  public VozitianTrader() {
+  }
 
 
-    public VozitianTrader(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public VozitianTrader(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

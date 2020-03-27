@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class WulvenPredator extends Card {
 
-    public WulvenPredator() {
-    }
+  public WulvenPredator() {
+  }
 
 
-    public WulvenPredator(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public WulvenPredator(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

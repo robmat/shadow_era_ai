@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class PlightbredRunt extends Card {
 
-    public PlightbredRunt() {
-    }
+  public PlightbredRunt() {
+  }
 
 
-    public PlightbredRunt(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public PlightbredRunt(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

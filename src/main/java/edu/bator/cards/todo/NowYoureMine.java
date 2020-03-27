@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class NowYoureMine extends Card {
 
-    public NowYoureMine() {
-    }
+  public NowYoureMine() {
+  }
 
 
-    public NowYoureMine(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public NowYoureMine(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

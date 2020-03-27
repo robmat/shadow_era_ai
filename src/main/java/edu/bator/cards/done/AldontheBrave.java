@@ -12,30 +12,30 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class AldontheBrave extends Ally {
 
-    public AldontheBrave(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public AldontheBrave(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    @Override
-    public void determineCastable(GameState gameState) {
-        super.determineCastable(gameState);
-        PreventDuplicateCardUtil.preventDuplicates(this, gameState);
-    }
+  @Override
+  public void determineCastable(GameState gameState) {
+    super.determineCastable(gameState);
+    PreventDuplicateCardUtil.preventDuplicates(this, gameState);
+  }
 
-    @Override
-    public Integer modifiesAttack(Card card, GameState gameState) {
-        if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase()) &&
-                card.cardIsAnAlly() &&
-                gameState.getYourAllies().contains(card) &&
-                gameState.getYourAllies().contains(this)) {
-            return 1;
-        }
-        if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase()) &&
-                card.cardIsAnAlly() &&
-                gameState.getEnemyAllies().contains(card) &&
-                gameState.getEnemyAllies().contains(this)) {
-            return 1;
-        }
-        return 0;
+  @Override
+  public Integer modifiesAttack(Card card, GameState gameState) {
+    if (GamePhase.YOU_ACTION.equals(gameState.getGamePhase()) &&
+        card.cardIsAnAlly() &&
+        gameState.getYourAllies().contains(card) &&
+        gameState.getYourAllies().contains(this)) {
+      return 1;
     }
+    if (GamePhase.ENEMY_ACTION.equals(gameState.getGamePhase()) &&
+        card.cardIsAnAlly() &&
+        gameState.getEnemyAllies().contains(card) &&
+        gameState.getEnemyAllies().contains(this)) {
+      return 1;
+    }
+    return 0;
+  }
 }

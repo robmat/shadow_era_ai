@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TreetopSpider extends Card {
 
-    public TreetopSpider() {
-    }
+  public TreetopSpider() {
+  }
 
 
-    public TreetopSpider(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TreetopSpider(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }
