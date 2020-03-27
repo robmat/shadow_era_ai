@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CaravanSmuggler extends Card {
 
-    public CaravanSmuggler() {
-    }
+  public CaravanSmuggler() {
+  }
 
 
-    public CaravanSmuggler(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CaravanSmuggler(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

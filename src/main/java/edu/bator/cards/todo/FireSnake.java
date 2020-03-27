@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class FireSnake extends Card {
 
-    public FireSnake() {
-    }
+  public FireSnake() {
+  }
 
 
-    public FireSnake(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public FireSnake(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

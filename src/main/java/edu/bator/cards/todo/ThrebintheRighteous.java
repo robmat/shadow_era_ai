@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ThrebintheRighteous extends Card {
 
-    public ThrebintheRighteous() {
-    }
+  public ThrebintheRighteous() {
+  }
 
 
-    public ThrebintheRighteous(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ThrebintheRighteous(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

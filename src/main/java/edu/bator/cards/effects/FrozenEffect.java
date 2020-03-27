@@ -11,23 +11,23 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class FrozenEffect extends Effect {
 
-    public FrozenEffect() {
-    }
+  public FrozenEffect() {
+  }
 
-    public FrozenEffect(Integer turn, GamePhase gamePhase) {
-        setEffectType(EffectType.FROZEN);
-        setGamePhaseWhenExpires(gamePhase);
-        setTurnEffectExpires(turn);
-    }
+  public FrozenEffect(Integer turn, GamePhase gamePhase) {
+    setEffectType(EffectType.FROZEN);
+    setGamePhaseWhenExpires(gamePhase);
+    setTurnEffectExpires(turn);
+  }
 
-    @Override
-    public void applyEffect(Card card) {
-        card.setAttackReadied(false);
-        card.setAbilityReadied(false);
-    }
+  @Override
+  public void applyEffect(Card card) {
+    card.setAttackReadied(false);
+    card.setAbilityReadied(false);
+  }
 
-    @Override
-    public boolean forbidsCounterAttack() {
-        return true;
-    }
+  @Override
+  public boolean forbidsCounterAttack() {
+    return true;
+  }
 }

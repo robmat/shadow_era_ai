@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class DesperateTactics extends Card {
 
-    public DesperateTactics() {
-    }
+  public DesperateTactics() {
+  }
 
 
-    public DesperateTactics(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DesperateTactics(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

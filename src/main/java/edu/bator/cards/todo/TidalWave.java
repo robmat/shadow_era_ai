@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TidalWave extends Card {
 
-    public TidalWave() {
-    }
+  public TidalWave() {
+  }
 
 
-    public TidalWave(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TidalWave(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

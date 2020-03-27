@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class FleshInfusion extends Card {
 
-    public FleshInfusion() {
-    }
+  public FleshInfusion() {
+  }
 
 
-    public FleshInfusion(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public FleshInfusion(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

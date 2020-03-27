@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ThoughtfulInvestment extends Card {
 
-    public ThoughtfulInvestment() {
-    }
+  public ThoughtfulInvestment() {
+  }
 
 
-    public ThoughtfulInvestment(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ThoughtfulInvestment(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

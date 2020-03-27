@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Reconnaissance extends Card {
 
-    public Reconnaissance() {
-    }
+  public Reconnaissance() {
+  }
 
 
-    public Reconnaissance(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Reconnaissance(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

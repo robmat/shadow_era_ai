@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class RabidBite extends Card {
 
-    public RabidBite() {
-    }
+  public RabidBite() {
+  }
 
 
-    public RabidBite(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public RabidBite(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

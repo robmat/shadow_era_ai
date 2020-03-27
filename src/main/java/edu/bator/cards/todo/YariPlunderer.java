@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class YariPlunderer extends Card {
 
-    public YariPlunderer() {
-    }
+  public YariPlunderer() {
+  }
 
 
-    public YariPlunderer(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public YariPlunderer(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

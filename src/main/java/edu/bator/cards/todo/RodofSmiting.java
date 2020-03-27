@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class RodofSmiting extends Card {
 
-    public RodofSmiting() {
-    }
+  public RodofSmiting() {
+  }
 
 
-    public RodofSmiting(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public RodofSmiting(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

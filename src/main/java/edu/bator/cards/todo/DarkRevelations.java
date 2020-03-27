@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class DarkRevelations extends Card {
 
-    public DarkRevelations() {
-    }
+  public DarkRevelations() {
+  }
 
 
-    public DarkRevelations(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public DarkRevelations(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

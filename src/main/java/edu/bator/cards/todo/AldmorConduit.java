@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class AldmorConduit extends Card {
 
-    public AldmorConduit() {
-    }
+  public AldmorConduit() {
+  }
 
 
-    public AldmorConduit(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public AldmorConduit(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

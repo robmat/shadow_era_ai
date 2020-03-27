@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class VenomflameArcher extends Card {
 
-    public VenomflameArcher() {
-    }
+  public VenomflameArcher() {
+  }
 
 
-    public VenomflameArcher(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public VenomflameArcher(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

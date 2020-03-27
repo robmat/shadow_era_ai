@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TornApart extends Card {
 
-    public TornApart() {
-    }
+  public TornApart() {
+  }
 
 
-    public TornApart(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TornApart(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

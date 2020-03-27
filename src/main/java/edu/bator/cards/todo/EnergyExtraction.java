@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class EnergyExtraction extends Card {
 
-    public EnergyExtraction() {
-    }
+  public EnergyExtraction() {
+  }
 
 
-    public EnergyExtraction(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public EnergyExtraction(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

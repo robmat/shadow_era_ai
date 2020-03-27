@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class HereBeMonsters extends Card {
 
-    public HereBeMonsters() {
-    }
+  public HereBeMonsters() {
+  }
 
 
-    public HereBeMonsters(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public HereBeMonsters(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

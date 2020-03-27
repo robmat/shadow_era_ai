@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TalaPureheart extends Card {
 
-    public TalaPureheart() {
-    }
+  public TalaPureheart() {
+  }
 
 
-    public TalaPureheart(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TalaPureheart(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TransmogrificationCurse extends Card {
 
-    public TransmogrificationCurse() {
-    }
+  public TransmogrificationCurse() {
+  }
 
 
-    public TransmogrificationCurse(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TransmogrificationCurse(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

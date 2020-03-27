@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TwilightChampion extends Card {
 
-    public TwilightChampion() {
-    }
+  public TwilightChampion() {
+  }
 
 
-    public TwilightChampion(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TwilightChampion(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

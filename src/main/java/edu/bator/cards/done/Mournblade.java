@@ -10,14 +10,14 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class Mournblade extends Weapon {
 
-    public Mournblade(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Mournblade(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    @Override
-    public void cardHasDiedEvent(Card card, GameState gameState) {
-        if (card.cardIsAnAlly() && getAttack(gameState) < 5) {
-            setBaseAttack(getAttack(gameState) + 1);
-        }
+  @Override
+  public void cardHasDiedEvent(Card card, GameState gameState) {
+    if (card.cardIsAnAlly() && getAttack(gameState) < 5) {
+      setBaseAttack(getAttack(gameState) + 1);
     }
+  }
 }

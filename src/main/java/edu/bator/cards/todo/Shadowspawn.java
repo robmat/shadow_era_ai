@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Shadowspawn extends Card {
 
-    public Shadowspawn() {
-    }
+  public Shadowspawn() {
+  }
 
 
-    public Shadowspawn(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Shadowspawn(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

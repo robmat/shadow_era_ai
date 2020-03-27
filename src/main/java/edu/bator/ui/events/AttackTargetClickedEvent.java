@@ -10,45 +10,45 @@ import org.apache.log4j.Logger;
 
 public class AttackTargetClickedEvent implements EventHandler<MouseEvent> {
 
-    private static final Logger log = Logger.getLogger(AttackTargetClickedEvent.class);
+  private static final Logger log = Logger.getLogger(AttackTargetClickedEvent.class);
 
-    private final GameState gameState;
-    private final Card card;
+  private final GameState gameState;
+  private final Card card;
 
-    public AttackTargetClickedEvent(GameState gameState, Card card) {
-        this.gameState = gameState;
-        this.card = card;
+  public AttackTargetClickedEvent(GameState gameState, Card card) {
+    this.gameState = gameState;
+    this.card = card;
+  }
+
+  @Override
+  public void handle(MouseEvent event) {
+    Card attackTarget = this.card;
+    Card attackSource = gameState.getAttackSource();
+
+    attackSource.attackTarget(gameState, attackTarget);
+
+    if (!moveToGraveyardIfDead(attackTarget) && !effectForbidsCounterAttack(attackTarget)) {
+      attackTarget.attackTarget(gameState, attackSource);
     }
+    moveToGraveyardIfDead(attackSource);
 
-    @Override
-    public void handle(MouseEvent event) {
-        Card attackTarget = this.card;
-        Card attackSource = gameState.getAttackSource();
+    log.info(String.format("%s attacked %s", attackTarget, attackSource));
+    gameState.resetPossibleAttackTargets();
+    attackSource.setAttackReadied(false);
+    attackSource.setAbilityReadied(false);
+    gameState.setAttackSource(null);
+    gameState.repaint();
+  }
 
-        attackSource.attackTarget(gameState, attackTarget);
+  private boolean effectForbidsCounterAttack(Card attackTarget) {
+    return attackTarget.getEffects().stream().anyMatch(Effect::forbidsCounterAttack);
+  }
 
-        if (!moveToGraveyardIfDead(attackTarget) && !effectForbidsCounterAttack(attackTarget)) {
-            attackTarget.attackTarget(gameState, attackSource);
-        }
-        moveToGraveyardIfDead(attackSource);
-
-        log.info(String.format("%s attacked %s", attackTarget, attackSource));
-        gameState.resetPossibleAttackTargets();
-        attackSource.setAttackReadied(false);
-        attackSource.setAbilityReadied(false);
-        gameState.setAttackSource(null);
-        gameState.repaint();
+  private boolean moveToGraveyardIfDead(Card card) {
+    if (card.cardIsDead()) {
+      new GameEngine().cardDied(card, gameState);
+      return true;
     }
-
-    private boolean effectForbidsCounterAttack(Card attackTarget) {
-        return attackTarget.getEffects().stream().anyMatch(Effect::forbidsCounterAttack);
-    }
-
-    private boolean moveToGraveyardIfDead(Card card) {
-        if (card.cardIsDead()) {
-            new GameEngine().cardDied(card, gameState);
-            return true;
-        }
-        return false;
-    }
+    return false;
+  }
 }

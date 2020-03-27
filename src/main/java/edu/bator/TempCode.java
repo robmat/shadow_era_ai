@@ -4,8 +4,8 @@ import java.io.IOException;
 
 public class TempCode {
 
-    public static void main(String[] args) throws IOException {
-        //download images
+  public static void main(String[] args) throws IOException {
+    //download images
         /*AllCardsSet allCardsSet = new AllCardsSet();
         allCardsSet.getAllCards().forEach(card -> {
             try {
@@ -22,7 +22,7 @@ public class TempCode {
             }
         });*/
 
-        //write specific card classes
+    //write specific card classes
         /* for (Card card : new AllCardsSet().getAllCards()) {
                 try {
                     String name = card.getName().replaceAll("[ :'!,-]", "");
@@ -39,7 +39,7 @@ public class TempCode {
                     e.printStackTrace();
                 }
             }*/
-        //write card class files
+    //write card class files
         /*List<Map> cards = objectJsonMapper
                 .readValue(CardParser.class.getResourceAsStream("/cards.json"), List.class);
 
@@ -61,5 +61,5 @@ public class TempCode {
                         "}", name, name).getBytes());
             }
         }*/
-    }
+  }
 }

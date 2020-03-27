@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class KiontheMagnificent extends Card {
 
-    public KiontheMagnificent() {
-    }
+  public KiontheMagnificent() {
+  }
 
 
-    public KiontheMagnificent(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public KiontheMagnificent(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

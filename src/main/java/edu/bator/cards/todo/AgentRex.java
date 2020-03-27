@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class AgentRex extends Card {
 
-    public AgentRex() {
-    }
+  public AgentRex() {
+  }
 
 
-    public AgentRex(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public AgentRex(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

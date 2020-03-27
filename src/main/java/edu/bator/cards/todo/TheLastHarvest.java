@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TheLastHarvest extends Card {
 
-    public TheLastHarvest() {
-    }
+  public TheLastHarvest() {
+  }
 
 
-    public TheLastHarvest(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TheLastHarvest(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

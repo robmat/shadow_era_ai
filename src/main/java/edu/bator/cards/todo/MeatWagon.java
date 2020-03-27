@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class MeatWagon extends Card {
 
-    public MeatWagon() {
-    }
+  public MeatWagon() {
+  }
 
 
-    public MeatWagon(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public MeatWagon(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

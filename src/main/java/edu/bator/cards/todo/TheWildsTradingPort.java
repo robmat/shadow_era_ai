@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TheWildsTradingPort extends Card {
 
-    public TheWildsTradingPort() {
-    }
+  public TheWildsTradingPort() {
+  }
 
 
-    public TheWildsTradingPort(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TheWildsTradingPort(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ThrowingKnife extends Card {
 
-    public ThrowingKnife() {
-    }
+  public ThrowingKnife() {
+  }
 
 
-    public ThrowingKnife(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ThrowingKnife(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

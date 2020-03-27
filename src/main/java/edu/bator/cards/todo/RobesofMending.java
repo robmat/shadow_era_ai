@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class RobesofMending extends Card {
 
-    public RobesofMending() {
-    }
+  public RobesofMending() {
+  }
 
 
-    public RobesofMending(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public RobesofMending(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

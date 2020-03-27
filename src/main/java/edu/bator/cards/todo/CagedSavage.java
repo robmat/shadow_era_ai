@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CagedSavage extends Card {
 
-    public CagedSavage() {
-    }
+  public CagedSavage() {
+  }
 
 
-    public CagedSavage(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CagedSavage(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

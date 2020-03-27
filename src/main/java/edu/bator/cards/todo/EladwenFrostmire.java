@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class EladwenFrostmire extends Card {
 
-    public EladwenFrostmire() {
-    }
+  public EladwenFrostmire() {
+  }
 
 
-    public EladwenFrostmire(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public EladwenFrostmire(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

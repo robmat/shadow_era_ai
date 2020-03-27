@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CrystalShards extends Card {
 
-    public CrystalShards() {
-    }
+  public CrystalShards() {
+  }
 
 
-    public CrystalShards(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CrystalShards(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

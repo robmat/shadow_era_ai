@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class WingedRedeemer extends Card {
 
-    public WingedRedeemer() {
-    }
+  public WingedRedeemer() {
+  }
 
 
-    public WingedRedeemer(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public WingedRedeemer(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

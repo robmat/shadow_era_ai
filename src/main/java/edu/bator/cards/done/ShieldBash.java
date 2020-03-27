@@ -10,30 +10,33 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class ShieldBash extends Ability {
 
-    public ShieldBash(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ShieldBash(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    @Override
-    public void determineCastable(GameState gameState) {
-        super.determineCastable(gameState);
-        if (isCastable()) {
-            boolean you = gameState.yourAction() && gameState.getEnemyAllies().stream().anyMatch(ally -> ableToApplyAbilityTo(ally, gameState));
-            boolean enemy = gameState.yourAction() && gameState.getYourAllies().stream().anyMatch(ally -> ableToApplyAbilityTo(ally, gameState));
-            setCastable(you || enemy);
-        }
+  @Override
+  public void determineCastable(GameState gameState) {
+    super.determineCastable(gameState);
+    if (isCastable()) {
+      boolean you = gameState.yourAction() && gameState.getEnemyAllies().stream()
+          .anyMatch(ally -> ableToApplyAbilityTo(ally, gameState));
+      boolean enemy = gameState.yourAction() && gameState.getYourAllies().stream()
+          .anyMatch(ally -> ableToApplyAbilityTo(ally, gameState));
+      setCastable(you || enemy);
     }
+  }
 
-    @Override
-    public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
-        boolean possibleAllyTarget = calculatePossibleEnemyTargetProtectorIncluded(card, gameState);
-        return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card) && possibleAllyTarget;
-    }
+  @Override
+  public boolean ableToApplyAbilityTo(Card card, GameState gameState) {
+    boolean possibleAllyTarget = calculatePossibleEnemyTargetProtectorIncluded(card, gameState);
+    return card.cardIsAnAlly() && gameState.currentEnemyAlliesBasedOnPhase().contains(card)
+        && possibleAllyTarget;
+  }
 
-    @Override
-    public void applyAbility(Card target, GameState gameState) {
-        super.applyAbility(target, gameState);
-        applyAbilityDamage(target, gameState, 3);
-    }
+  @Override
+  public void applyAbility(Card target, GameState gameState) {
+    super.applyAbility(target, gameState);
+    applyAbilityDamage(target, gameState, 3);
+  }
 
 }

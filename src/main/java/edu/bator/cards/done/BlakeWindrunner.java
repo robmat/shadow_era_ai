@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class BlakeWindrunner extends Ally {
 
-    public BlakeWindrunner(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public BlakeWindrunner(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

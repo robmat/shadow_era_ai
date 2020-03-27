@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TheKingsPride extends Card {
 
-    public TheKingsPride() {
-    }
+  public TheKingsPride() {
+  }
 
 
-    public TheKingsPride(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TheKingsPride(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

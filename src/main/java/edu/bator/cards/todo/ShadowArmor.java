@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ShadowArmor extends Card {
 
-    public ShadowArmor() {
-    }
+  public ShadowArmor() {
+  }
 
 
-    public ShadowArmor(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ShadowArmor(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

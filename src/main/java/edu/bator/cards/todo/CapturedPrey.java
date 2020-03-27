@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CapturedPrey extends Card {
 
-    public CapturedPrey() {
-    }
+  public CapturedPrey() {
+  }
 
 
-    public CapturedPrey(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CapturedPrey(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

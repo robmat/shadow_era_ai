@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class ErikaShadowhunter extends Ally {
 
-    public ErikaShadowhunter(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ErikaShadowhunter(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

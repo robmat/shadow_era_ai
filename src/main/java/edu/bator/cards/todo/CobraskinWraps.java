@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CobraskinWraps extends Card {
 
-    public CobraskinWraps() {
-    }
+  public CobraskinWraps() {
+  }
 
 
-    public CobraskinWraps(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CobraskinWraps(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class PoisonedWell extends Card {
 
-    public PoisonedWell() {
-    }
+  public PoisonedWell() {
+  }
 
 
-    public PoisonedWell(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public PoisonedWell(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

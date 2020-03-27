@@ -5,42 +5,42 @@ import edu.bator.cards.Expirable;
 import edu.bator.cards.Support;
 import edu.bator.game.GamePhase;
 import edu.bator.game.GameState;
+import java.util.Objects;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-
-import java.util.Objects;
 
 @Data
 @EqualsAndHashCode(callSuper = true, exclude = {"turnExpires", "phaseExpires"})
 public class UrgentBusiness extends Support implements Expirable {
 
-    private int turnExpires;
-    private GamePhase phaseExpires;
+  private int turnExpires;
+  private GamePhase phaseExpires;
 
-    public UrgentBusiness() {
-    }
+  public UrgentBusiness() {
+  }
 
-    public UrgentBusiness(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public UrgentBusiness(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    @Override
-    public boolean preventsAllyOrHeroFromReadyingAttack(Card card, GameState gameState) {
-        return card.cardIsAHero() && gameState.allCardsInPlay().stream().anyMatch(c -> Objects.equals(this, c));
-    }
+  @Override
+  public boolean preventsAllyOrHeroFromReadyingAttack(Card card, GameState gameState) {
+    return card.cardIsAHero() && gameState.allCardsInPlay().stream()
+        .anyMatch(c -> Objects.equals(this, c));
+  }
 
-    @Override
-    public void wasCasted(GameState gameState) {
-        super.wasCasted(gameState);
-        gameState.getYourHero().setAttackReadied(false);
-        gameState.getEnemyHero().setAttackReadied(false);
-        if (gameState.getGamePhase().equals(GamePhase.YOU_ACTION)) {
-            phaseExpires = GamePhase.YOU_END;
-            turnExpires = gameState.getCurrentTurn() + 1;
-        }
-        if (gameState.getGamePhase().equals(GamePhase.ENEMY_ACTION)) {
-            phaseExpires = GamePhase.ENEMY_END;
-            turnExpires = gameState.getCurrentTurn() + 1;
-        }
+  @Override
+  public void wasCasted(GameState gameState) {
+    super.wasCasted(gameState);
+    gameState.getYourHero().setAttackReadied(false);
+    gameState.getEnemyHero().setAttackReadied(false);
+    if (gameState.getGamePhase().equals(GamePhase.YOU_ACTION)) {
+      phaseExpires = GamePhase.YOU_END;
+      turnExpires = gameState.getCurrentTurn() + 1;
     }
+    if (gameState.getGamePhase().equals(GamePhase.ENEMY_ACTION)) {
+      phaseExpires = GamePhase.ENEMY_END;
+      turnExpires = gameState.getCurrentTurn() + 1;
+    }
+  }
 }

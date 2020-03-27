@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class MaskedBandit extends Card {
 
-    public MaskedBandit() {
-    }
+  public MaskedBandit() {
+  }
 
 
-    public MaskedBandit(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public MaskedBandit(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

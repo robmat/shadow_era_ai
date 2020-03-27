@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class EngulfingFlames extends Card {
 
-    public EngulfingFlames() {
-    }
+  public EngulfingFlames() {
+  }
 
 
-    public EngulfingFlames(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public EngulfingFlames(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

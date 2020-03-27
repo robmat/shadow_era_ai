@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class SpiritWarden extends Card {
 
-    public SpiritWarden() {
-    }
+  public SpiritWarden() {
+  }
 
 
-    public SpiritWarden(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public SpiritWarden(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

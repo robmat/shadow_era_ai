@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TisayVolcanicSprings extends Card {
 
-    public TisayVolcanicSprings() {
-    }
+  public TisayVolcanicSprings() {
+  }
 
 
-    public TisayVolcanicSprings(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TisayVolcanicSprings(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

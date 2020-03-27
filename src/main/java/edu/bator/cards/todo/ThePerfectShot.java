@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ThePerfectShot extends Card {
 
-    public ThePerfectShot() {
-    }
+  public ThePerfectShot() {
+  }
 
 
-    public ThePerfectShot(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ThePerfectShot(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class WarCry extends Card {
 
-    public WarCry() {
-    }
+  public WarCry() {
+  }
 
 
-    public WarCry(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public WarCry(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

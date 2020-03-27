@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class RavagerZealot extends Card {
 
-    public RavagerZealot() {
-    }
+  public RavagerZealot() {
+  }
 
 
-    public RavagerZealot(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public RavagerZealot(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

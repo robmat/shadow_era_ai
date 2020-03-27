@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class ElizabethWinterborn extends Card {
 
-    public ElizabethWinterborn() {
-    }
+  public ElizabethWinterborn() {
+  }
 
 
-    public ElizabethWinterborn(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public ElizabethWinterborn(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

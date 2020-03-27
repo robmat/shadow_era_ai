@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class BloodstainedMarauder extends Card {
 
-    public BloodstainedMarauder() {
-    }
+  public BloodstainedMarauder() {
+  }
 
 
-    public BloodstainedMarauder(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public BloodstainedMarauder(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CamouflagedFoe extends Card {
 
-    public CamouflagedFoe() {
-    }
+  public CamouflagedFoe() {
+  }
 
 
-    public CamouflagedFoe(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CamouflagedFoe(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

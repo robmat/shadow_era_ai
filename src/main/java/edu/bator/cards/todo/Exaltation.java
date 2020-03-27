@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Exaltation extends Card {
 
-    public Exaltation() {
-    }
+  public Exaltation() {
+  }
 
 
-    public Exaltation(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Exaltation(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

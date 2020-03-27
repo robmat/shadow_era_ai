@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class FinalFlourish extends Card {
 
-    public FinalFlourish() {
-    }
+  public FinalFlourish() {
+  }
 
 
-    public FinalFlourish(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public FinalFlourish(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

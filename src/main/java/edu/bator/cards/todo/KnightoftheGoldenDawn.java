@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class KnightoftheGoldenDawn extends Card {
 
-    public KnightoftheGoldenDawn() {
-    }
+  public KnightoftheGoldenDawn() {
+  }
 
 
-    public KnightoftheGoldenDawn(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public KnightoftheGoldenDawn(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

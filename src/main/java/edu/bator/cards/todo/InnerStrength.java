@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class InnerStrength extends Card {
 
-    public InnerStrength() {
-    }
+  public InnerStrength() {
+  }
 
 
-    public InnerStrength(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public InnerStrength(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class LoomofFate extends Card {
 
-    public LoomofFate() {
-    }
+  public LoomofFate() {
+  }
 
 
-    public LoomofFate(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public LoomofFate(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

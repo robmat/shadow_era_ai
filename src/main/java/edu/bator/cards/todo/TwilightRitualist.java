@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TwilightRitualist extends Card {
 
-    public TwilightRitualist() {
-    }
+  public TwilightRitualist() {
+  }
 
 
-    public TwilightRitualist(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TwilightRitualist(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

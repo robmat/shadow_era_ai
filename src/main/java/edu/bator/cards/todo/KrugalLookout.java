@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class KrugalLookout extends Card {
 
-    public KrugalLookout() {
-    }
+  public KrugalLookout() {
+  }
 
 
-    public KrugalLookout(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public KrugalLookout(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

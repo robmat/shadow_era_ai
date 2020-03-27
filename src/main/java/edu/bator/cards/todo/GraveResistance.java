@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class GraveResistance extends Card {
 
-    public GraveResistance() {
-    }
+  public GraveResistance() {
+  }
 
 
-    public GraveResistance(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public GraveResistance(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

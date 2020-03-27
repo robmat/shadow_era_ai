@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class MasterofDisguise extends Card {
 
-    public MasterofDisguise() {
-    }
+  public MasterofDisguise() {
+  }
 
 
-    public MasterofDisguise(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public MasterofDisguise(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

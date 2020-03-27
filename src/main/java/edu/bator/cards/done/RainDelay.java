@@ -10,41 +10,42 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true, exclude = {"turnExpires", "phaseExpires"})
 public class RainDelay extends Support implements Expirable {
 
-    private int turnExpires;
-    private GamePhase phaseExpires;
+  private int turnExpires;
+  private GamePhase phaseExpires;
 
 
-    public RainDelay() {
-    }
+  public RainDelay() {
+  }
 
-    public RainDelay(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public RainDelay(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    @Override
-    public void supportIsCast(GameState gameState) {
-        super.supportIsCast(gameState);
-    }
+  @Override
+  public void supportIsCast(GameState gameState) {
+    super.supportIsCast(gameState);
+  }
 
-    @Override
-    public void wasCasted(GameState gameState) {
-        this.turnExpires = gameState.getCurrentTurn() + 1;
-        this.phaseExpires = gameState.yourAction() ? GamePhase.YOU_END : GamePhase.ENEMY_END;
-        gameState.allCardsInPlay().stream().filter(Card::cardIsAnAlly).forEach(card -> card.setAttackReadied(false));
-    }
+  @Override
+  public void wasCasted(GameState gameState) {
+    this.turnExpires = gameState.getCurrentTurn() + 1;
+    this.phaseExpires = gameState.yourAction() ? GamePhase.YOU_END : GamePhase.ENEMY_END;
+    gameState.allCardsInPlay().stream().filter(Card::cardIsAnAlly)
+        .forEach(card -> card.setAttackReadied(false));
+  }
 
-    @Override
-    public boolean preventsAllyOrHeroFromReadyingAttack(Card attackSource, GameState gameState) {
-        return attackSource.cardIsAnAlly();
-    }
+  @Override
+  public boolean preventsAllyOrHeroFromReadyingAttack(Card attackSource, GameState gameState) {
+    return attackSource.cardIsAnAlly();
+  }
 
-    @Override
-    public int getTurnExpires() {
-        return turnExpires;
-    }
+  @Override
+  public int getTurnExpires() {
+    return turnExpires;
+  }
 
-    @Override
-    public GamePhase getPhaseExpires() {
-        return phaseExpires;
-    }
+  @Override
+  public GamePhase getPhaseExpires() {
+    return phaseExpires;
+  }
 }

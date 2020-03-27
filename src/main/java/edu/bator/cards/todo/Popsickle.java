@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Popsickle extends Card {
 
-    public Popsickle() {
-    }
+  public Popsickle() {
+  }
 
 
-    public Popsickle(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Popsickle(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

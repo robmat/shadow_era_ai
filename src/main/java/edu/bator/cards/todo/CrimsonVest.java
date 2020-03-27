@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class CrimsonVest extends Card {
 
-    public CrimsonVest() {
-    }
+  public CrimsonVest() {
+  }
 
 
-    public CrimsonVest(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public CrimsonVest(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

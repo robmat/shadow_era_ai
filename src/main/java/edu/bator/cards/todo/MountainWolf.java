@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class MountainWolf extends Card {
 
-    public MountainWolf() {
-    }
+  public MountainWolf() {
+  }
 
 
-    public MountainWolf(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public MountainWolf(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

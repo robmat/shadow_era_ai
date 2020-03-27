@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Darkclaw extends Card {
 
-    public Darkclaw() {
-    }
+  public Darkclaw() {
+  }
 
 
-    public Darkclaw(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Darkclaw(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

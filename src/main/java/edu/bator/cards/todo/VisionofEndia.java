@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class VisionofEndia extends Card {
 
-    public VisionofEndia() {
-    }
+  public VisionofEndia() {
+  }
 
 
-    public VisionofEndia(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public VisionofEndia(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class GwennethTruesight extends Card {
 
-    public GwennethTruesight() {
-    }
+  public GwennethTruesight() {
+  }
 
 
-    public GwennethTruesight(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public GwennethTruesight(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

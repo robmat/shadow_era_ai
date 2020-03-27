@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class LakmireTrainingOutpost extends Card {
 
-    public LakmireTrainingOutpost() {
-    }
+  public LakmireTrainingOutpost() {
+  }
 
 
-    public LakmireTrainingOutpost(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public LakmireTrainingOutpost(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

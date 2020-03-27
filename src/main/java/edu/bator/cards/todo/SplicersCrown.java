@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class SplicersCrown extends Card {
 
-    public SplicersCrown() {
-    }
+  public SplicersCrown() {
+  }
 
 
-    public SplicersCrown(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public SplicersCrown(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

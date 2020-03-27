@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class TenaciousBuccaneer extends Card {
 
-    public TenaciousBuccaneer() {
-    }
+  public TenaciousBuccaneer() {
+  }
 
 
-    public TenaciousBuccaneer(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public TenaciousBuccaneer(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

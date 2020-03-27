@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class AmberRain extends Card {
 
-    public AmberRain() {
-    }
+  public AmberRain() {
+  }
 
 
-    public AmberRain(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public AmberRain(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

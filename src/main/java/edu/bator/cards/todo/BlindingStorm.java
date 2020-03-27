@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class BlindingStorm extends Card {
 
-    public BlindingStorm() {
-    }
+  public BlindingStorm() {
+  }
 
 
-    public BlindingStorm(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public BlindingStorm(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

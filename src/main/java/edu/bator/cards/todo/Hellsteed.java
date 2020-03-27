@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Hellsteed extends Card {
 
-    public Hellsteed() {
-    }
+  public Hellsteed() {
+  }
 
 
-    public Hellsteed(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Hellsteed(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

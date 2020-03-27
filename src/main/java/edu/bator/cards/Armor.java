@@ -6,14 +6,14 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class Armor extends Card {
 
-    public Armor() {
-    }
+  public Armor() {
+  }
 
-    public Armor(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Armor(Card cloneFrom) {
+    super(cloneFrom);
+  }
 
-    public void armorEffectDuringAttack(Card target, Card source, GameState gameState) {
+  public void armorEffectDuringAttack(Card target, Card source, GameState gameState) {
 
-    }
+  }
 }

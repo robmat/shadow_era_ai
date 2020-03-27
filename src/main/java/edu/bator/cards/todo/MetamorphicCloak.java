@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class MetamorphicCloak extends Card {
 
-    public MetamorphicCloak() {
-    }
+  public MetamorphicCloak() {
+  }
 
 
-    public MetamorphicCloak(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public MetamorphicCloak(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

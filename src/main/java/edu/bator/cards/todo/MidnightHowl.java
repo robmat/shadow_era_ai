@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class MidnightHowl extends Card {
 
-    public MidnightHowl() {
-    }
+  public MidnightHowl() {
+  }
 
 
-    public MidnightHowl(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public MidnightHowl(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

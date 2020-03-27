@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class BlackAdder extends Card {
 
-    public BlackAdder() {
-    }
+  public BlackAdder() {
+  }
 
 
-    public BlackAdder(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public BlackAdder(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

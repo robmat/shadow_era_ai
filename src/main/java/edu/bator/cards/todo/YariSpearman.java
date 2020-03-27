@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class YariSpearman extends Card {
 
-    public YariSpearman() {
-    }
+  public YariSpearman() {
+  }
 
 
-    public YariSpearman(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public YariSpearman(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

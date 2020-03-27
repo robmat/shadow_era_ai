@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Bloodlust extends Card {
 
-    public Bloodlust() {
-    }
+  public Bloodlust() {
+  }
 
 
-    public Bloodlust(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Bloodlust(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

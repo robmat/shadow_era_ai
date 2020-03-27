@@ -11,22 +11,22 @@ import lombok.ToString;
 @ToString(callSuper = true)
 public class InLoveEffect extends Effect {
 
-    public InLoveEffect() {
-    }
+  public InLoveEffect() {
+  }
 
-    public InLoveEffect(Integer turn, GamePhase gamePhase) {
-        setEffectType(EffectType.IN_LOVE);
-        setGamePhaseWhenExpires(gamePhase);
-        setTurnEffectExpires(turn);
-    }
+  public InLoveEffect(Integer turn, GamePhase gamePhase) {
+    setEffectType(EffectType.IN_LOVE);
+    setGamePhaseWhenExpires(gamePhase);
+    setTurnEffectExpires(turn);
+  }
 
-    @Override
-    public void applyEffect(Card card) {
-        card.setAttackReadied(false);
-    }
+  @Override
+  public void applyEffect(Card card) {
+    card.setAttackReadied(false);
+  }
 
-    @Override
-    public boolean forbidsCounterAttack() {
-        return false;
-    }
+  @Override
+  public boolean forbidsCounterAttack() {
+    return false;
+  }
 }

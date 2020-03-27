@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class Crescendo extends Card {
 
-    public Crescendo() {
-    }
+  public Crescendo() {
+  }
 
 
-    public Crescendo(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public Crescendo(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

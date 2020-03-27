@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class RabbleRouser extends Card {
 
-    public RabbleRouser() {
-    }
+  public RabbleRouser() {
+  }
 
 
-    public RabbleRouser(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public RabbleRouser(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }

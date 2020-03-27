@@ -4,11 +4,11 @@ import edu.bator.cards.Card;
 
 public class VoidWretch extends Card {
 
-    public VoidWretch() {
-    }
+  public VoidWretch() {
+  }
 
 
-    public VoidWretch(Card cloneFrom) {
-        super(cloneFrom);
-    }
+  public VoidWretch(Card cloneFrom) {
+    super(cloneFrom);
+  }
 }
