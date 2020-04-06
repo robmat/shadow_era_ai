@@ -5876,7 +5876,7 @@
     "name": "Ascetic of Aldmor",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "0SE: Target opposing ally loses 1 base attack if its controller has resources greater than or equal to yours.",
+    "description": "While no ability was activated with shadow energy this turn, Ascetic of Aldmor has +1 attack. 0SE: Target opposing ally loses 1 base attack if its controller has resources greater than or equal to yours.",
     "cardType": "ALLY",
     "resourceCost": 1,
     "baseAttack": 0,
@@ -7189,7 +7189,7 @@
     "heroClass": [
       "PRIEST"
     ],
-    "description": "2SE: Put the bottom 3 cards of your deck into your hand and then shuffle 2 of them back into your deck.",
+    "description": "2SE: Put the bottom 2 cards of your deck into your hand and then shuffle 1 of them back into your deck.",
     "cardType": "ITEM",
     "resourceCost": 2,
     "baseAttack": null,
@@ -9038,7 +9038,7 @@
     "name": "General of Unaxio",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "When General of Unaxio is summoned, you may seek an attachment that can't attach to a hero.",
+    "description": "When General of Unaxio is summoned, you may seek an attachment that can't attach to a hero and place it on top of your deck: if you control no attachments, draw a card.",
     "cardType": "ALLY",
     "resourceCost": 5,
     "baseAttack": 2,
@@ -9190,7 +9190,7 @@
     "name": "Towering Brute",
     "side": "SHADOW",
     "heroClass": null,
-    "description": "Towering Brute has +2 attack while damaged. Opposing allies have -2 attack the turn they enter play.",
+    "description": "Towering Brute has +2 attack while damaged. Opposing allies have -2 attack and meek the turn they enter play.",
     "cardType": "ALLY",
     "resourceCost": 4,
     "baseAttack": 1,
@@ -9851,7 +9851,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "Target item in a graveyard is returned to play under your control as a Homunculus ally with 2 ice base attack, 3 health and no abilities: all opposing allies are frozen for 1 turn.",
+    "description": "Target item or ally with ice attack in a graveyard is returned to play under your control as a Homunculus ally with 2 ice base attack, 3 health and no abilities: all opposing allies are frozen for 1 turn.",
     "cardType": "ABILITY",
     "resourceCost": 4,
     "baseAttack": null,
@@ -10217,7 +10217,7 @@
     "heroClass": [
       "PRIEST"
     ],
-    "description": "When damage is dealt to Knight of the Crimson Dusk, your hero heals 2 damage. Once per turn, when damage is dealt to your hero, Knight of the Crimson Dusk gains +1 health and has +2 attack until the start of your next turn.",
+    "description": "Once per turn, when damage is dealt to Knight of the Crimson Dusk, your hero heals 2 damage. Once per turn, when damage is dealt to your hero, Knight of the Crimson Dusk gains +1 health and has +2 attack until the start of your next turn.",
     "cardType": "ALLY",
     "resourceCost": 5,
     "baseAttack": 4,
@@ -10237,7 +10237,7 @@
     "cardType": "ALLY",
     "resourceCost": 7,
     "baseAttack": 2,
-    "initialHp": 8,
+    "initialHp": 6,
     "attackType": "ARCANE",
     "abilities": []
   },
@@ -11277,7 +11277,7 @@
     "name": "Anmor: Garina Road",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "Allies with cost 4 or greater cost you 1 less resource to summon. 2SE: If you control no allies, seek an ally with cost 5 or greater. // Allies with cost 4 or greater cost you 1 less resource to summon. 0SE: If there are no opposing allies, take control of this location.",
+    "description": "The first ally with cost 5 or greater you summon each turn costs you 1 less resource. 2SE: If you control no allies, seek an ally with cost 5 or greater. // The first ally with cost 5 or greater you summon each turn costs you 1 less resource. 0SE: If there are no opposing allies, take control of this location.",
     "cardType": "LOCATION",
     "resourceCost": null,
     "baseAttack": null,
