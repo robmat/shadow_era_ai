@@ -194,7 +194,7 @@
     "heroClass": [
       "WARRIOR"
     ],
-    "description": "4SE: Until the end of your turn, your weapons gain +1 attack, and if Logan deals combat damage to an ally, that ally is killed.",
+    "description": "4SE: Until the end of your turn, your weapons have +1 attack, and if Logan deals combat damage to an ally, that ally is killed.",
     "cardType": "HERO",
     "resourceCost": null,
     "baseAttack": null,
@@ -619,7 +619,7 @@
     "name": "Earthen Protector",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "When a friendly ally is killed while Earthen Protector is alive and can be damaged, that ally is returned to play with +2 base attack and +2 health, and Earthen Protector is killed.",
+    "description": "When a friendly ally is killed while Earthen Protector is alive, Earthen Protector is killed: that ally is returned to play with +2 base attack and +2 health.",
     "cardType": "ALLY",
     "resourceCost": 5,
     "baseAttack": 4,
@@ -957,7 +957,7 @@
     "heroClass": [
       "WARRIOR"
     ],
-    "description": "Friendly allies can't be attacked for the next 2 turns.",
+    "description": "Duration 2. Friendly allies can't be attacked.",
     "cardType": "SUPPORT",
     "resourceCost": 2,
     "baseAttack": null,
@@ -1389,7 +1389,7 @@
     "heroClass": [
       "HUNTER"
     ],
-    "description": "Your hero is hidden (it and its attachments can't be targeted) until the start of your next turn.",
+    "description": "Attach to target friendly ally until the start of your next turn. That ally has stealth.",
     "cardType": "ABILITY",
     "resourceCost": 1,
     "baseAttack": null,
@@ -1578,7 +1578,7 @@
     "heroClass": [
       "PRIEST"
     ],
-    "description": "Target friendly hero or ally takes no damage and can't be killed until the start of your next turn.",
+    "description": "Attach to target friendly hero or ally. When that hero or ally is dealt damage, that damage is reduced to 0 and Holy Shield is destroyed.",
     "cardType": "ABILITY",
     "resourceCost": 3,
     "baseAttack": null,
@@ -1769,7 +1769,7 @@
     "heroClass": [
       "ROGUE"
     ],
-    "description": "Your hero and allies can't attack and are hidden (they and their attachments can't be targeted) until the end of your next turn.",
+    "description": "Duration 1. Friendly allies have +1 attack, ambush and stealth.",
     "cardType": "ABILITY",
     "resourceCost": 3,
     "baseAttack": null,
@@ -1911,7 +1911,7 @@
     "name": "Full Moon",
     "side": null,
     "heroClass": null,
-    "description": "Until the start of your next turn, friendly allies have +2 attack and your hero takes no damage.",
+    "description": "Duration 1. Friendly allies have +2 attack. Combat damage to your hero is reduced by 1. Ability damage to your hero is reduced by 2.",
     "cardType": "ABILITY",
     "resourceCost": 4,
     "baseAttack": null,
@@ -2007,9 +2007,9 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "Remove all ally cards in your graveyard from the game. Your hero heals 2 damage for each card removed.",
+    "description": "Remove all ally cards in your graveyard from the game. Your hero heals 1 damage for each card removed.",
     "cardType": "ABILITY",
-    "resourceCost": 3,
+    "resourceCost": 4,
     "baseAttack": null,
     "initialHp": null,
     "itemSubType": null,
@@ -2092,7 +2092,7 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "Your allies have +2 attack and a maximum of 1 health while Shard of Power is in play.",
+    "description": "Friendly allies have +2 attack. When a friendly ally is dealt damage, it is killed.",
     "cardType": "ITEM",
     "resourceCost": 3,
     "baseAttack": null,
@@ -2665,7 +2665,7 @@
     "cardType": "ITEM",
     "resourceCost": 6,
     "baseAttack": null,
-    "initialHp": 6,
+    "initialHp": 3,
     "itemSubType": "ARMOR",
     "attackType": null,
     "abilities": []
@@ -2890,9 +2890,9 @@
     "heroClass": null,
     "description": "At the start of each of your turns, Crescendo gains +1 defense. At the end of your turn, if Crescendo has 5 defense, it is destroyed and all opposing allies are killed.",
     "cardType": "ITEM",
-    "resourceCost": 6,
+    "resourceCost": 7,
     "baseAttack": null,
-    "initialHp": 1,
+    "initialHp": 4,
     "itemSubType": "ARMOR",
     "attackType": null,
     "abilities": []
@@ -3678,7 +3678,7 @@
     "heroClass": [
       "WARRIOR"
     ],
-    "description": "Until the start of your next turn, target friendly ally has defender and +1 attack, and an additional +1 attack while it is the only friendly ally in play.",
+    "description": "Attach to target friendly ally until the start of your next turn. That ally has defender and +1 attack, and an additional +1 attack while it is the only friendly ally in play.",
     "cardType": "ABILITY",
     "resourceCost": 1,
     "baseAttack": null,
@@ -3697,7 +3697,7 @@
     "heroClass": [
       "WARRIOR"
     ],
-    "description": "Until the start of your next turn, friendly allies have defender and all damage to them is reduced by 1.",
+    "description": "Duration 1. Friendly allies have defender and all damage to them is reduced by 1.",
     "cardType": "ABILITY",
     "resourceCost": 2,
     "baseAttack": null,
@@ -3909,7 +3909,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "The top 2 allies in your graveyard are returned to your hand. Friendly Undead allies have +1 attack until the start of your next turn.",
+    "description": "Duration 1. When Undying Bond is summoned, the top 2 allies in your graveyard are returned to your hand. Friendly Undead allies have +1 attack.",
     "cardType": "ABILITY",
     "resourceCost": 4,
     "baseAttack": null,
@@ -4130,7 +4130,7 @@
     "heroClass": [
       "HUNTER"
     ],
-    "description": "2SE: Until the start of your next turn, Jade of the Forest is hidden.",
+    "description": "2SE: Until the start of your next turn, Jade of the Forest and her attachments can't be targeted.",
     "cardType": "ALLY",
     "resourceCost": 3,
     "baseAttack": 3,
@@ -4153,7 +4153,7 @@
     "baseAttack": 3,
     "initialHp": 5,
     "itemSubType": null,
-    "attackType": "SWORD",
+    "attackType": "BOW",
     "abilities": [
       "AMBUSH"
     ]
@@ -4590,7 +4590,7 @@
     "name": "Lost in the Woods",
     "side": null,
     "heroClass": null,
-    "description": "Attach to target ally until the end of its controller's next turn. That ally has all other attachments removed, and it is hidden and disabled.",
+    "description": "Attach to target ally until the end of its controller's next turn. That ally has all other attachments removed, it and its attachments can't be targeted and it is disabled.",
     "cardType": "ABILITY",
     "resourceCost": 2,
     "baseAttack": null,
@@ -4786,7 +4786,7 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "Zantonite's health can't be reduced by artifacts you control. 0: Target artifact you control is destroyed and Zantonite gains +1 base attack and +1 health.",
+    "description": "When you target and destroy an artifact you control, draw a card. 0: Target artifact you control is destroyed and Zantonite gains +1 base attack and +1 health.",
     "cardType": "ALLY",
     "resourceCost": 3,
     "baseAttack": 3,
@@ -4820,7 +4820,7 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "Your hero's shadow energy is set to equal the hero with the greatest shadow energy. Opposing heroes can't activate their ability until the start of your next turn.",
+    "description": "Duration 1. When Interference is summoned, your hero's shadow energy is set to equal the hero with the greatest shadow energy. Opposing heroes can't activate their ability.",
     "cardType": "ABILITY",
     "resourceCost": 4,
     "baseAttack": null,
@@ -4899,7 +4899,7 @@
     "name": "Nowhere To Hide",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "Attach to target opposing hero or ally. That hero or ally loses stealth and protector, and opposing allies lose hidden.",
+    "description": "Attach to target opposing hero or ally. That hero or ally loses stealth and protector.",
     "cardType": "ABILITY",
     "resourceCost": 3,
     "baseAttack": null,
@@ -5052,7 +5052,7 @@
     "name": "Nocturnal Advantage",
     "side": "SHADOW",
     "heroClass": null,
-    "description": "Until the end of your turn, opposing heroes and allies lose stealth and hidden, and allies you control have +1 attack and ambush.",
+    "description": "Until the end of your turn, opposing heroes and allies lose stealth, and allies you control have +1 attack and ambush.",
     "cardType": "ABILITY",
     "resourceCost": 3,
     "baseAttack": null,
@@ -5966,11 +5966,11 @@
     "name": "Midnight Sentinel",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "When Midnight Sentinel is summoned, target other friendly ally gains ambush (or +1 base attack if it already had ambush) and +2 health.",
+    "description": "Ambush. When Midnight Sentinel is summoned, target other friendly ally gains ambush or +1 base attack if it already had ambush, and +2 health.",
     "cardType": "ALLY",
-    "resourceCost": 3,
-    "baseAttack": 1,
-    "initialHp": 5,
+    "resourceCost": 2,
+    "baseAttack": 2,
+    "initialHp": 1,
     "itemSubType": null,
     "attackType": "SWORD",
     "abilities": []
@@ -5981,11 +5981,11 @@
     "name": "Sorcerer of Endia",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "0: If a player controls at least 3 items and/or abilities, target and exile one of them: Sorcerer of Endia is returned to your hand at the end of the turn.",
+    "description": "Sorcerer of Endia's ability costs 1 less shadow energy to activate for each item and ability opposing players control. 5SE: Target enemy item or ability is exiled and its controller takes 2 damage.",
     "cardType": "ALLY",
-    "resourceCost": 3,
-    "baseAttack": 1,
-    "initialHp": 6,
+    "resourceCost": 4,
+    "baseAttack": 3,
+    "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
     "abilities": []
@@ -6272,7 +6272,7 @@
     "name": "Rapacious Vermin",
     "side": "SHADOW",
     "heroClass": null,
-    "description": "Sustain: 1HP. 2: If a player controls at least 3 items and/or abilities, target and destroy one of them.",
+    "description": "While there are no items or abilities in play, Rapacious Vermin has Sustain: 1HP. 2: If a player controls at least 3 items and/or abilities, target and destroy one of them.",
     "cardType": "ALLY",
     "resourceCost": 2,
     "baseAttack": 1,
@@ -7136,7 +7136,7 @@
     "heroClass": [
       "HUNTER"
     ],
-    "description": "Ambush. Other friendly Hunter allies have +1 attack, +1 health and ambush.",
+    "description": "Ambush. Each other Hunter ally or Wild ally you control has +1 attack, +1 health and ambush.",
     "cardType": "ALLY",
     "resourceCost": 6,
     "baseAttack": 4,
@@ -8275,7 +8275,7 @@
     "name": "Startleshell Vest",
     "side": null,
     "heroClass": null,
-    "description": "While your hero has been dealt damage this turn, Startleshell Vest has +2 defense.",
+    "description": "While your hero has been dealt damage this turn, Startleshell Vest has +2 defense. 2D: Target ally takes X damage, where X is Startleshell Vest's defense.",
     "cardType": "ITEM",
     "resourceCost": 2,
     "baseAttack": null,
@@ -8305,7 +8305,7 @@
     "name": "Gold-Laced Shield",
     "side": null,
     "heroClass": null,
-    "description": "1D: Target friendly ally has +2 attack until the end of your turn.",
+    "description": "1D: Target friendly ally gains +1 base attack and 1 health. If that ally has 8 or more health, draw a card.",
     "cardType": "ITEM",
     "resourceCost": 4,
     "baseAttack": null,
@@ -8627,7 +8627,7 @@
     "name": "Wooden Spear",
     "side": null,
     "heroClass": null,
-    "description": "While Wooden Spear has exactly 1 durability, it has +1 attack.",
+    "description": "While Wooden Spear has exactly 1 durability, it has +2 attack.",
     "cardType": "ITEM",
     "resourceCost": 3,
     "baseAttack": 1,
@@ -8689,7 +8689,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "0SE: If a card was discarded from anywhere this turn, Dagger of Fate has +2 attack while in combat with allies until the end of your turn.",
+    "description": "0SE: If a card was discarded from anywhere this turn, Dagger of Fate has +2 attack while in combat with allies and +1 attack while in combat with heroes until the end of your turn.",
     "cardType": "ITEM",
     "resourceCost": 3,
     "baseAttack": 1,
@@ -8959,7 +8959,7 @@
     "name": "Vigilant Wisp",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "Meek (this ally can't attack heroes). 2SE: Seek a Homunculus ally (if your hand is not full, reveal a Homunculus ally from your deck and place it in your hand; shuffle your deck).",
+    "description": "2SE: Seek a Homunculus ally. Until the end of your turn, Vigilant Wisp has meek.",
     "cardType": "ALLY",
     "resourceCost": 2,
     "baseAttack": 1,
@@ -9068,7 +9068,7 @@
     "name": "Twilight Luminary",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "Friendly Twilight allies with cost 2 or less have haste. 2SE: Seek a Twilight ally (if your hand is not full, reveal a Twilight ally from your deck and place it in your hand; shuffle your deck).",
+    "description": "On the turn they are summoned, all allies without Twilight alignment have meek and friendly allies with cost 2 or less have haste. 2SE: Seek a Twilight ally.",
     "cardType": "ALLY",
     "resourceCost": 4,
     "baseAttack": 2,
@@ -9235,7 +9235,7 @@
     "name": "Kiruth Devotee",
     "side": "SHADOW",
     "heroClass": null,
-    "description": "Meek (this ally can't attack heroes). 3: When target other ally is killed, it is returned to play under your control with no abilities and Undead alignment.",
+    "description": "While there are no allies in your graveyard, Kiruth Devotee has meek. 3: When target other ally is killed, it is returned to play under your control with no abilities and Undead alignment.",
     "cardType": "ALLY",
     "resourceCost": 2,
     "baseAttack": 1,
@@ -9747,7 +9747,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "Popsickle has +1 attack while there is a frozen ally in play. 0: Popsickle attacks target opposing frozen ally if able.",
+    "description": "Popsickle has +1 attack for each frozen ally in play. 1: Target opposing ally takes X ice damage where X is Popsickle's attack.",
     "cardType": "ALLY",
     "resourceCost": 2,
     "baseAttack": 1,
@@ -9815,7 +9815,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "While Living Ice Wall is a frozen ally, it has protector. 0SE: If Living Ice Wall is an artifact, it becomes an ally with 2 ice base attack and 5 health and it is frozen for 2 turns.",
+    "description": "0SE: If Living Ice Wall is an artifact, it becomes an ally with 2 ice base attack, 5 health, protector and it is frozen for 2 turns.",
     "cardType": "ITEM",
     "resourceCost": 3,
     "baseAttack": null,
@@ -9884,7 +9884,7 @@
     "heroClass": [
       "MAGE"
     ],
-    "description": "When you summon a Mage ability, Isadora is readied. When Isadora attacks an ally on your turn, ability damage to opposing allies is increased by 1 until the end of the turn. 1: Target opposing hero or ally takes 2 electrical damage.",
+    "description": "When you summon an ability with cost 2 or greater, Isadora is readied. 1: Target opposing hero or ally takes 2 electrical damage. Ability damage to opposing allies is increased by 1 until the end of your turn.",
     "cardType": "ALLY",
     "resourceCost": 5,
     "baseAttack": 1,
@@ -9902,9 +9902,9 @@
     ],
     "description": "2: Target item in a graveyard is returned to play under your control as a Homunculus ally with 1 electrical base attack, 2 health and no abilities. All friendly Homunculus allies gain +1 base attack and +1 health.",
     "cardType": "ALLY",
-    "resourceCost": 5,
+    "resourceCost": 4,
     "baseAttack": 2,
-    "initialHp": 7,
+    "initialHp": 6,
     "attackType": "ELECTRIC",
     "abilities": []
   },
@@ -10430,7 +10430,7 @@
     "name": "Wulven Prophet",
     "side": null,
     "heroClass": null,
-    "description": "When Wulven Prophet is summoned, you may seek an attachment and place it on top of your deck.",
+    "description": "When Wulven Prophet is summoned, you may seek an attachment and place it on top of your deck: if any opposing player has resources equal or greater than yours and you control no attachments, draw a card.",
     "cardType": "ALLY",
     "resourceCost": 2,
     "baseAttack": 1,
@@ -10592,10 +10592,10 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "Steadfast. When Stardust Transfuser is summoned, target other ally gains +1 base attack and +1 health.",
+    "description": "Steadfast. When Stardust Transfuser is summoned, target other ally gains +1 base attack and +1 health: Stardust Transfuser has its base attack reduced by 1.",
     "cardType": "ALLY",
     "resourceCost": 2,
-    "baseAttack": 1,
+    "baseAttack": 2,
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "CLAW",
@@ -10721,7 +10721,7 @@
     "heroClass": [
       "ELEMENTAL"
     ],
-    "description": "1: Target ally in a graveyard enters play under your control with 1 base attack and its health reduced to 1. That ally is exiled when killed.",
+    "description": "Axiom can't be frozen or disabled. 1: Target ally in a graveyard enters play under your control with 1 base attack and its health reduced to 1.",
     "cardType": "ALLY",
     "resourceCost": 5,
     "baseAttack": 3,
@@ -10780,7 +10780,7 @@
     "name": "Dazzling Bravery",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "Attach to target friendly Human ally. When that ally enters combat with an opposing ally, all opposing players discard a card from their deck (or 2 cards if attached to an ally with cost 5 or greater).",
+    "description": "Attach to target friendly Human ally. When that ally enters combat with an opposing ally, all opposing players discard 2 cards from their deck.",
     "cardType": "ABILITY",
     "resourceCost": 1,
     "baseAttack": null,
@@ -10870,7 +10870,7 @@
     "name": "Gruesome Brutality",
     "side": "SHADOW",
     "heroClass": null,
-    "description": "Attach to target friendly Shadow ally. When that ally enters combat with an opposing ally, all opposing heroes take 1 damage (or 2 damage if attached to an ally with cost 5 or greater).",
+    "description": "Attach to target friendly Shadow ally. When that ally enters combat with an opposing ally, all opposing heroes take 2 damage.",
     "cardType": "ABILITY",
     "resourceCost": 1,
     "baseAttack": null,
@@ -11082,7 +11082,7 @@
     "name": "Amethyst Reverie",
     "side": null,
     "heroClass": null,
-    "description": "2SE: Renew 3 used resources.",
+    "description": "2SE: Renew 3 used resources. Ability damage to friendly heroes and allies from opposing abilities with cost 5 or greater is reduced to 0 until the start of your next turn.",
     "cardType": "ITEM",
     "resourceCost": 5,
     "baseAttack": null,
@@ -11146,7 +11146,7 @@
     "name": "Pathfinder's Machete",
     "side": null,
     "heroClass": null,
-    "description": "When Pathfinder's Machete is summoned while you control a location, it gains +1 base attack and +1 durability. While you control a location, opposing heroes and allies lose stealth and hidden. ",
+    "description": "When Pathfinder's Machete is summoned while you control a location, it gains +1 base attack and +1 durability. While you control a location, opposing heroes and allies lose stealth.",
     "cardType": "ITEM",
     "resourceCost": 3,
     "baseAttack": 1,
@@ -11537,11 +11537,11 @@
     "name": "Layarian Sentinel",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "Defender (When this ally is attacked, the attacker takes combat damage first.) Layarian Sentinel does -2 combat damage while attacking.",
+    "description": "Defender (When this ally is attacked, the attacker takes combat damage first.) Layarian Sentinel does -1 combat damage while attacking.",
     "cardType": "ALLY",
-    "resourceCost": 3,
-    "baseAttack": 3,
-    "initialHp": 4,
+    "resourceCost": 2,
+    "baseAttack": 2,
+    "initialHp": 3,
     "itemSubType": null,
     "attackType": "SWORD",
     "abilities": [
@@ -11879,7 +11879,7 @@
     "name": "Higher Ground",
     "side": null,
     "heroClass": null,
-    "description": "Duration 3. Friendly allies with defender have +1 attack. 2: Target opposing ally attacks target friendly ally if able.",
+    "description": "Duration 3. Higher Ground costs 1 less resource to summon if you control an ally with defender. Friendly allies with defender have +1 attack. 2: Target opposing ally attacks target friendly ally if able.",
     "cardType": "ABILITY",
     "resourceCost": 2,
     "baseAttack": null,
@@ -11896,7 +11896,7 @@
     "name": "By The Sword",
     "side": null,
     "heroClass": null,
-    "description": "Duration 3. Friendly allies with sword attack gain +1 base attack and +1 health at the end of the turn they were summoned.",
+    "description": "Duration 4. Friendly allies with sword attack gain +1 base attack and +1 health at the end of the turn they were summoned.",
     "cardType": "ABILITY",
     "resourceCost": 2,
     "baseAttack": null,
@@ -11911,7 +11911,7 @@
     "name": "Kion the Magnificent",
     "side": "HUMAN",
     "heroClass": null,
-    "description": "Steadfast. Opposing heroes and allies lose stealth and hidden on the turn Kion enters play. All damage to friendly allies is reduced by 1.",
+    "description": "Steadfast. Opposing heroes and allies lose stealth on the turn Kion enters play. All damage to friendly allies is reduced by 1.",
     "cardType": "ALLY",
     "resourceCost": 7,
     "baseAttack": 4,
@@ -11928,7 +11928,7 @@
     "name": "Vull the Insatiable",
     "side": "SHADOW",
     "heroClass": null,
-    "description": "Steadfast. Opposing heroes and allies lose stealth and hidden on the turn Vull enters play. All damage to opposing allies is increased by 1.",
+    "description": "Steadfast. Opposing heroes and allies lose stealth on the turn Vull enters play. All damage to opposing allies is increased by 1.",
     "cardType": "ALLY",
     "resourceCost": 7,
     "baseAttack": 4,
