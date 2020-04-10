@@ -658,7 +658,8 @@
     "initialHp": 2,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "se042",
@@ -673,7 +674,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "se043",
@@ -778,7 +780,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "se050",
@@ -840,7 +843,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "se054",
@@ -870,7 +874,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "se056",
@@ -932,7 +937,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "se060",
@@ -1843,7 +1849,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "se113",
@@ -3231,7 +3238,8 @@
     "initialHp": 1,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "ex002",
@@ -3368,7 +3376,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ELECTRIC",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ex011",
@@ -3413,7 +3422,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ex014",
@@ -3443,7 +3453,8 @@
     "initialHp": 9,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ex016",
@@ -3458,7 +3469,8 @@
     "initialHp": 1,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ex017",
@@ -3503,7 +3515,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "ex020",
@@ -3518,7 +3531,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "ex021",
@@ -3533,7 +3547,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ex022",
@@ -3608,7 +3623,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ELECTRIC",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "ex027",
@@ -3623,7 +3639,8 @@
     "initialHp": 2,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "ex028",
@@ -4627,7 +4644,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "ex087",
@@ -4644,7 +4662,8 @@
     "attackType": "CLAW",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "WULVEN"
   },
   {
     "code": "ex088",
@@ -4691,7 +4710,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "ex091",
@@ -5883,7 +5903,8 @@
     "initialHp": 2,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "sf012",
@@ -5898,7 +5919,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ELECTRIC",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf013",
@@ -5913,7 +5935,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "sf014",
@@ -5928,7 +5951,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "sf015",
@@ -5943,7 +5967,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf016",
@@ -5958,7 +5983,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf017",
@@ -6003,7 +6029,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf020",
@@ -6018,7 +6045,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf021",
@@ -6050,7 +6078,8 @@
     "attackType": "ARCANE",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf023",
@@ -6067,7 +6096,8 @@
     "attackType": "SWORD",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "sf024",
@@ -6082,7 +6112,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "sf025",
@@ -6097,7 +6128,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "sf026",
@@ -6112,7 +6144,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "sf027",
@@ -6127,7 +6160,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf028",
@@ -6159,7 +6193,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf030",
@@ -6204,7 +6239,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ELECTRIC",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf033",
@@ -6219,7 +6255,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "ELECTRIC",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf034",
@@ -6264,7 +6301,8 @@
     "initialHp": 1,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf037",
@@ -6279,7 +6317,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "sf038",
@@ -6296,7 +6335,8 @@
     "attackType": "ICE",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "UNDEAD"
   },
   {
     "code": "sf039",
@@ -6311,7 +6351,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "sf040",
@@ -6326,7 +6367,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "FIRE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "sf041",
@@ -6341,7 +6383,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "sf042",
@@ -6356,7 +6399,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "sf043",
@@ -6371,7 +6415,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "sf044",
@@ -6386,7 +6431,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf045",
@@ -6401,7 +6447,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "sf046",
@@ -6435,7 +6482,8 @@
     "attackType": "SWORD",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "RAVAGER"
   },
   {
     "code": "sf048",
@@ -6465,7 +6513,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf050",
@@ -6480,7 +6529,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "sf051",
@@ -6495,7 +6545,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "sf052",
@@ -6510,7 +6561,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "sf053",
@@ -6525,7 +6577,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "FIRE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf054",
@@ -6540,7 +6593,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "FIRE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf055",
@@ -6585,7 +6639,8 @@
     "initialHp": 7,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "sf058",
@@ -6600,7 +6655,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "sf059",
@@ -6630,7 +6686,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "sf061",
@@ -6851,7 +6908,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "FIRE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf074",
@@ -6902,7 +6960,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "ELECTRIC",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf077",
@@ -6936,7 +6995,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "sf079",
@@ -7230,7 +7290,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf096",
@@ -7281,7 +7342,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf099",
@@ -7315,7 +7377,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "sf101",
@@ -7519,7 +7582,8 @@
     "initialHp": 1,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "sf113",
@@ -7583,7 +7647,8 @@
     "attackType": "CLAW",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "WULVEN"
   },
   {
     "code": "sf117",
@@ -7613,7 +7678,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "sf119",
@@ -7630,7 +7696,8 @@
     "attackType": "CLAW",
     "abilities": [
       "PROTECTOR"
-    ]
+    ],
+    "affinity": "WULVEN"
   },
   {
     "code": "sf120",
@@ -7645,7 +7712,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "sf121",
@@ -8966,7 +9034,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ELECTRIC",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll002",
@@ -8981,7 +9050,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ELECTRIC",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll003",
@@ -8996,7 +9066,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll004",
@@ -9013,7 +9084,8 @@
     "attackType": "SWORD",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll005",
@@ -9030,7 +9102,8 @@
     "attackType": "ARCANE",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll006",
@@ -9045,7 +9118,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll007",
@@ -9060,7 +9134,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "ll008",
@@ -9077,7 +9152,8 @@
     "attackType": "SWORD",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "ll009",
@@ -9092,7 +9168,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "ll010",
@@ -9107,7 +9184,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "ll011",
@@ -9122,7 +9200,8 @@
     "initialHp": 7,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TWILIGHT"
   },
   {
     "code": "ll016",
@@ -9137,7 +9216,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "FIRE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll017",
@@ -9152,7 +9232,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll018",
@@ -9167,7 +9248,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "ll019",
@@ -9182,7 +9264,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "ll020",
@@ -9197,7 +9280,8 @@
     "initialHp": 7,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "ll021",
@@ -9212,7 +9296,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "FIRE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "ll022",
@@ -9227,7 +9312,8 @@
     "initialHp": 7,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "RAVAGER"
   },
   {
     "code": "ll023",
@@ -9242,7 +9328,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "ll024",
@@ -9257,7 +9344,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "ll025",
@@ -9274,7 +9362,8 @@
     "attackType": "CLAW",
     "abilities": [
       "AMBUSH"
-    ]
+    ],
+    "affinity": "WULVEN"
   },
   {
     "code": "ll026",
@@ -9291,7 +9380,8 @@
     "attackType": "CLAW",
     "abilities": [
       "AMBUSH"
-    ]
+    ],
+    "affinity": "WULVEN"
   },
   {
     "code": "ll031",
@@ -9306,7 +9396,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll032",
@@ -9321,7 +9412,8 @@
     "initialHp": 2,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll033",
@@ -9336,7 +9428,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll034",
@@ -9351,7 +9444,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll035",
@@ -9366,7 +9460,8 @@
     "initialHp": 8,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "HOMUNCULUS"
   },
   {
     "code": "ll036",
@@ -9381,7 +9476,8 @@
     "initialHp": 1,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll037",
@@ -9398,7 +9494,8 @@
     "attackType": "SWORD",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll038",
@@ -9413,7 +9510,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll039",
@@ -9428,7 +9526,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll040",
@@ -9443,7 +9542,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll041",
@@ -9460,7 +9560,8 @@
     "attackType": "SWORD",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll042",
@@ -9475,7 +9576,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll043",
@@ -9490,7 +9592,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll044",
@@ -9507,7 +9610,8 @@
     "attackType": "SWORD",
     "abilities": [
       "DEFENDER"
-    ]
+    ],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll045",
@@ -9522,7 +9626,8 @@
     "initialHp": 9,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll046",
@@ -9537,7 +9642,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "BOW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll047",
@@ -9552,7 +9658,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll048",
@@ -9567,7 +9674,8 @@
     "initialHp": 6,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "ALDMOR"
   },
   {
     "code": "ll051",
@@ -9754,7 +9862,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ICE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "UNDEAD"
   },
   {
     "code": "ll062",
@@ -10093,7 +10202,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll082",
@@ -10127,7 +10237,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll084",
@@ -10178,7 +10289,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll087",
@@ -10195,7 +10307,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll088",
@@ -10239,7 +10352,8 @@
     "baseAttack": 2,
     "initialHp": 6,
     "attackType": "ARCANE",
-    "abilities": []
+    "abilities": [],
+    "affinity": "TEMPLAR"
   },
   {
     "code": "ll091",
@@ -10437,7 +10551,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "ll103",
@@ -10452,7 +10567,8 @@
     "initialHp": 3,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "ll104",
@@ -10467,7 +10583,8 @@
     "initialHp": 5,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "ll105",
@@ -10512,7 +10629,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "CLAW",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "ll108",
@@ -10530,7 +10648,8 @@
     "attackType": "CLAW",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "WULVEN"
   },
   {
     "code": "ll109",
@@ -10565,7 +10684,8 @@
     "attackType": "CLAW",
     "abilities": [
       "DEFENDER"
-    ]
+    ],
+    "affinity": "WULVEN"
   },
   {
     "code": "ll111",
@@ -11826,7 +11946,8 @@
     "attackType": "CLAW",
     "abilities": [
       "HASTE"
-    ]
+    ],
+    "affinity": "ALDMOR"
   },
   {
     "code": "cp027",
@@ -11952,7 +12073,8 @@
     "initialHp": 4,
     "itemSubType": null,
     "attackType": "SWORD",
-    "abilities": []
+    "abilities": [],
+    "affinity": "WULVEN"
   },
   {
     "code": "cp054",

@@ -1,4 +1,4 @@
-package edu.bator.enums;
+package edu.bator.tools;
 
 import java.util.HashSet;
 import java.util.Set;

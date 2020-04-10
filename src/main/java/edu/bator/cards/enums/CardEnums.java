@@ -1,6 +1,6 @@
 package edu.bator.cards.enums;
 
-import edu.bator.enums.EnumParser;
+import edu.bator.tools.EnumParser;
 import java.util.Set;
 
 public class CardEnums {

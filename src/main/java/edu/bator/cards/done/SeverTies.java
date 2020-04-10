@@ -1,13 +1,12 @@
 package edu.bator.cards.done;
 
-import static java.util.Objects.nonNull;
-
 import edu.bator.cards.Ability;
 import edu.bator.cards.Card;
 import edu.bator.game.GameEngine;
 import edu.bator.game.GameState;
 import edu.bator.ui.cards.CardUiHelper;
-import java.util.Objects;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiConsumer;
 import java.util.stream.Stream;
@@ -18,12 +17,12 @@ import javafx.stage.Stage;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode(callSuper = true)
-public class SmashingBlow extends Ability {
+public class SeverTies extends Ability {
 
-  public SmashingBlow() {
+  public SeverTies() {
   }
 
-  public SmashingBlow(Card cloneFrom) {
+  public SeverTies(Card cloneFrom) {
     super(cloneFrom);
   }
 
@@ -31,13 +30,7 @@ public class SmashingBlow extends Ability {
   public void determineCastable(GameState gameState) {
     super.determineCastable(gameState);
     if (isCastable()) {
-      boolean enemy =
-          gameState.enemyAction() && (nonNull(gameState.getYourHero().getWeapon()) || nonNull(
-              gameState.getYourHero().getArmor()));
-      boolean you =
-          gameState.yourAction() && (nonNull(gameState.getEnemyHero().getWeapon()) || nonNull(
-              gameState.getEnemyHero().getArmor()));
-      setCastable(you || enemy);
+      setCastable(gameState.allCardsInPlay().stream().anyMatch(card -> !card.getAttachments().isEmpty()));
     }
   }
 
@@ -46,20 +39,13 @@ public class SmashingBlow extends Ability {
     super.wasCasted(gameState);
     BiConsumer<Stage, GridPane> consumer = (stage, gridPane) -> {
       AtomicInteger index = new AtomicInteger(0);
-      Stream<Card> cardStream = Stream.empty();
-      if (gameState.yourAction()) {
-        cardStream = Stream
-            .of(gameState.getEnemyHero().getWeapon(), gameState.getEnemyHero().getArmor())
-            .filter(Objects::nonNull);
-      }
-      if (gameState.enemyAction()) {
-        cardStream = Stream
-            .of(gameState.getYourHero().getWeapon(), gameState.getYourHero().getArmor())
-            .filter(Objects::nonNull);
-      }
+      Set<Card> targets = new HashSet<>();
+      gameState.allCardsInPlay().forEach(card -> targets.addAll(card.getAttachments()));
+      Stream<Card> cardStream = targets.stream();
+
       cardStream
           .forEach(card -> {
-            EventHandler<MouseEvent> smashingBlowClickedEvent = new SmashingBlowClickedEvent(
+            EventHandler<MouseEvent> smashingBlowClickedEvent = new SeverTiesClickedEvent(
                 gameState, card, stage, this);
             CardUiHelper.paintCardOnDialogGridPane(gameState, gridPane, index, card,
                 smashingBlowClickedEvent);
@@ -68,26 +54,26 @@ public class SmashingBlow extends Ability {
     CardUiHelper.showDialog(consumer, gameState);
   }
 
-  private static class SmashingBlowClickedEvent implements EventHandler<MouseEvent> {
+  private static class SeverTiesClickedEvent implements EventHandler<MouseEvent> {
 
     private final GameState gameState;
     private final Card target;
     private final Stage stage;
-    private final SmashingBlow smashingBlow;
+    private final SeverTies severTies;
 
-    SmashingBlowClickedEvent(GameState gameState, Card target, Stage stage,
-        SmashingBlow smashingBlow) {
+    SeverTiesClickedEvent(GameState gameState, Card target, Stage stage,
+        SeverTies severTies) {
       this.gameState = gameState;
       this.target = target;
       this.stage = stage;
-      this.smashingBlow = smashingBlow;
+      this.severTies = severTies;
     }
 
     @Override
     public void handle(MouseEvent event) {
       new GameEngine().cardDied(target, gameState);
-      new GameEngine().cardDied(smashingBlow, gameState);
-      smashingBlow.applyAbility(target, gameState);
+      new GameEngine().cardDied(severTies, gameState);
+      severTies.applyAbility(target, gameState);
       stage.close();
     }
   }

@@ -9,6 +9,7 @@ import static edu.bator.cards.enums.CardEnums.Side;
 import static java.util.Objects.nonNull;
 
 import edu.bator.EntryPoint;
+import edu.bator.cards.Ally.Affinity;
 import edu.bator.cards.effects.Effect;
 import edu.bator.cards.enums.Owner;
 import edu.bator.game.GameEngine;
@@ -68,6 +69,8 @@ public class Card implements Cloneable {
 
   Set<Attachment> attachments = new HashSet<>();
 
+  Affinity affinity;
+
   String uniqueId = UUID.randomUUID().toString();
 
   public Card(Card cloneFrom) {
@@ -113,6 +116,7 @@ public class Card implements Cloneable {
     this.owner = cloneFrom.owner;
     this.attachments = new HashSet<>(cloneFrom.attachments);
     this.turnItWasCast = cloneFrom.turnItWasCast;
+    this.affinity = cloneFrom.affinity;
   }
 
   public void tryToReadyAttack(GameState gameState) {

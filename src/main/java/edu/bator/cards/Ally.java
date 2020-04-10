@@ -13,6 +13,10 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class Ally extends Card {
 
+  public enum Affinity {
+    UNDEAD, WULVEN, TWILIGHT, HOMUNCULUS, TEMPLAR, RAVAGER, ALDMOR
+  }
+
   public Ally(Card cloneFrom) {
     super(cloneFrom);
   }
